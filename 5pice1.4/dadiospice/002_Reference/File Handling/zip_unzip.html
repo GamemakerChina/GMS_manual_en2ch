@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>zip_unzip</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../../style.css" type="text/css" media="screen" title="style" charset="utf-8"/>
+	</head>
+<body>
+
+<h1>zip_unzip</h1>
+  
+<h2>Unzip a given zip file to a specific location.</h2>
+
+<h3>Syntax:</h3>
+<p class="code">zip_unzip(zip_file, target_directory)</p>
+
+<p>
+<br>
+</p>
+
+<div class="param">
+<table>
+	<tr><th>Argument</th><th>Description</th></tr>
+
+	<tr><td>zip_file</td>
+	<td>The zip file to open</i></td></tr>
+	
+	<tr class="alt"><td>target_directory</td>
+	<td>The target directory to extract the files to</i></td></tr>
+</table>
+</div>
+
+<p>
+<br>
+</p>
+
+<p>
+<b>Returns: </b>Real
+</p>
+
+ <p>
+<br>
+</p>
+
+<h3>Description</h3>
+<p>
+This function will open a stored zip file and extract its contents to the given directory, within the sandboxed working directory for the game. The zip must be either part of the game bundle (ie: an 
+<a href="">Included File</a>) or have been downloaded to the storage area using <a href="../Asynchronous%20Functions/http_get_file.html">http_get_file</a>, and you need to give the full path 
+within the working directory to save the file to.
+<br>
+<br>
+
+The function will return a value indicating the number of files extracted, or it will return 0 or less if the extraction has failed.
+<br>
+<br>
+
+<p>
+<br>
+</p>
+
+<h3>Example:</h3>
+<p class="code">
+var num = zip_unzip("/downloads/level_data.zip", "/extracted/");<br>
+if num &lt;= 0<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;show_debug_message("Extraction Failed!");<br>
+&nbsp;&nbsp;&nbsp;}<br>
+</p>
+<p>
+The above code will open the zip file stored in the directory "downloads" and extract its contents to the directory "extracted" (creating that directory if it doesn't already exist) and then check to see that the extraction 
+has been correct, showing a debug message should it fail.
+</p>
+
+<p>
+<br>
+</p>
+<p>
+
+<div class="clear">
+	<div style="float:left">
+		Back: <a href="index.html">File Handling</a>
+	</div>
+	<!--<div style="float:right">
+		Next: <a href="zip_zip.html">zip_zip</a>
+	</div>-->
+</div>
+</p>
+
+<h5>&copy; Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5></body>
+</html>
+
+<!-- KEYWORDS
+zip_unzip
+unzip files
+--> 
