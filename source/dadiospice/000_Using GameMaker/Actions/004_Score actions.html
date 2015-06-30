@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="online documentation, web online help, web help, gamemaker:studio" />
+<meta name="keywords" content="game maker studio" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -16,13 +16,13 @@ media="screen" title="style" charset="utf-8">
 
 <script type="text/JavaScript" src="../../../../files/supply.js"></script>
 <script type="text/JavaScript">
-chmtop.c2wtopf.pageid = "dadiospice/000_using gamemaker/actions/004_score actions.html";
+chmtop.c2wtopf.pageid = "dadiospice/000_Using GameMaker/Actions/004_Score actions.html";
 </script>
 
 </head>
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
-  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F000_using%20gamemaker%2Factions%2F004_score%20actions.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F000_using%20gamemaker%2Factions%2F004_score%20actions.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F000_Using%20GameMaker%2FActions%2F004_Score%20actions.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F000_Using%20GameMaker%2FActions%2F004_Score%20actions.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
 </script>
 <!-- !chm2web! -->
 
@@ -41,12 +41,12 @@ corresponding actions, which are detailed in this section.<br>
 
 <h3>Score</h3>
 
-<p><img src="../../images/set_score.png" align="left"> <b>Set
+<p><img src="../../Images/set_score.png" align="left"> <b>Set
 Score</b><br>
 With this action you can set the score to a value of your choice.
 Note that "score" is a <i>global</i> variable (see this section for
 more information: <a href=
-"../../002_reference/001_gml%20language%20overview/variables/index.html">
+"../../002_Reference/001_GML%20Language%20Overview/Variables/index.html">
 Variables And Variable Scope</a>) and as such, this action can be
 placed in any object, meaning that (for example) you could have a
 destroy event for an enemy object that sets the score to 10
@@ -57,7 +57,7 @@ score to 10! You would normally un-check the relative flag and
 place this action at the start of a game to set the score to 0, for
 instance.<br>
 <br>
-<img src="../../images/if_score.png" align="left"> <b>Test
+<img src="../../Images/if_score.png" align="left"> <b>Test
 Score</b><br>
 This action will check the value of the score against the value you
 input and return true if it meets the condition. The condition can
@@ -65,14 +65,14 @@ be either equal to, greater than or less than and in this way you
 can have specific behaviours for an instance depending on the
 current value of the score variable.<br>
 <br>
-<img src="../../images/draw_score.png" align="left"> <b>Draw
+<img src="../../Images/draw_score.png" align="left"> <b>Draw
 Score</b><br>
 You can use this action to draw the score variable anywhere on the
 screen, just provide the position and the caption to be shown
 beside the value. Please note that this action will only be valid
 when used in the <b>Draw Event</b>.<br>
 <br>
-<img src="../../images/highscore_clear.png" align="left"> <b>Clear
+<img src="../../Images/highscore_clear.png" align="left"> <b>Clear
 Highscore</b><br>
 With this action you are telling <i>GameMaker: Studio</i> to clear
 the high score table. <i>Warning!</i> This cannot be undone!<br>
@@ -80,12 +80,12 @@ the high score table. <i>Warning!</i> This cannot be undone!<br>
 
 <h3>Lives</h3>
 
-<p><img src="../../images/set_life.png" align="left"> <b>Set
+<p><img src="../../Images/set_life.png" align="left"> <b>Set
 Lives</b><br>
 Another global variable included with <i>GameMaker: Studio</i> is
 the one for lives (for more information on global variables see:
 <a href=
-"../../002_reference/001_gml%20language%20overview/variables/index.html">
+"../../002_Reference/001_GML%20Language%20Overview/Variables/index.html">
 Variables And Variable Scope</a>). Normally you would set it to
 some value like 3 at the beginning of the game and then decrease or
 increase the number depending on what happens as the player
@@ -94,7 +94,7 @@ want to add or subtract from the number of lives. At the moment the
 number of lives becomes 0 (or less than 0) a "no more lives" event
 is generated.<br>
 <br>
-<img src="../../images/if_life.png" align="left"> <b>Test
+<img src="../../Images/if_life.png" align="left"> <b>Test
 Lives</b><br>
 With this question action you can check whether the number of lives
 has reached a particular value. You indicate the value and whether
@@ -103,7 +103,7 @@ larger than the value. This can be used, for example, to limit the
 lives that a player can pickup while playing a game and so keep
 them from going above a maximum value.<br>
 <br>
-<img src="../../images/draw_life.png" align="left"> <b>Draw
+<img src="../../Images/draw_life.png" align="left"> <b>Draw
 Lives</b><br>
 You can use this action to draw the number of lives directly to the
 screen. You provide the position and the caption that must be
@@ -111,7 +111,7 @@ placed in front of the number of lives, and then number of lives is
 drawn in the current font. Please note that this action will only
 be valid when used in the <b>Draw Event</b>.<br>
 <br>
-<img src="../../images/draw_life_images.png" align="left"> <b>Draw
+<img src="../../Images/draw_life_images.png" align="left"> <b>Draw
 Life Images</b><br>
 Many games prefer to represent lives with some sort of graphic
 rather than straight text, and so <i>GameMaker: Studio</i> provides
@@ -124,11 +124,11 @@ Event</b>.<br>
 
 <h3>Health</h3>
 
-<p><img src="../../images/set_health.png" align="left"> <b>Set
+<p><img src="../../Images/set_health.png" align="left"> <b>Set
 Health</b><br>
 <i>GameMaker</i> includes a built-in health global variable (for
 more information on global variables see: <a href=
-"../../002_reference/001_gml%20language%20overview/variables/index.html">
+"../../002_Reference/001_GML%20Language%20Overview/Variables/index.html">
 Variables And Variable Scope</a>), and like the previous actions
 for score and lives, you can use this action to set and change the
 health value. To set the health to a specific value, leave the
@@ -139,7 +139,7 @@ that this variable is clamped to be within the range of 0 to 100
 health becomes less than or equal to 0 an "out of health" event is
 generated.<br>
 <br>
-<img src="../../images/if_health.png" align="left"> <b>Test
+<img src="../../Images/if_health.png" align="left"> <b>Test
 Health</b><br>
 With this question action you can check whether the health has
 reached a particular value. You indicate the value and whether the
@@ -148,7 +148,7 @@ use for this is that when the player health gets below a certain
 amount you could make some object flash to draw their attention to
 the fact.<br>
 <br>
-<img src="../../images/draw_health.png" align="left"> <b>Draw
+<img src="../../Images/draw_health.png" align="left"> <b>Draw
 Health</b><br>
 We have all seen a players health drawn in the game in the form of
 a bar that increases or decreases as the status of the player
@@ -158,7 +158,7 @@ and when it is at 0 the bar is empty, and you can indicate the
 position and size of the health bar as well as the colour of the
 bar and its background.<br>
 <br>
-<img src="../../images/set_caption.png" align="left"> <b>Score
+<img src="../../Images/set_caption.png" align="left"> <b>Score
 Caption</b><br>
 Normally in the window caption the name of the room and the score
 is displayed, but with this action you can change this to show the
@@ -175,7 +175,7 @@ Windows, Ubuntu (Linux) and MacOS targets.<br>
 "index.html">Actions</a></div>
 
 <div style="float:right">Next: <a href=
-"005_extra%20actions.html">Extra Actions</a></div>
+"005_Extra%20actions.html">Extra Actions</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
