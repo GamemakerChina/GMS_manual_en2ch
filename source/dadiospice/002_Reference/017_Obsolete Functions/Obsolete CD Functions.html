@@ -26,123 +26,157 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>Obsolete CD Functions</h1>
+<h1>Obsolete CD Functions 被淘汰的CD函数</h1>
 
 <h2>These functions are for dealing with the Windows CD
 reader.</h2>
-
-<h3><b>Function List:</b>
-</h3>
-
+<h2>这些函数用于处理Windows下的CD播放</h2>
+<h3><b>Function List</b>:</h3>
+<h3><b>函数列表：</b></h3>
 <div class="param">
-<table>
+  <table>
 <tr>
-<th>Function</th>
-<th>Description</th>
+<th>Function 函数</th>
+<th>Description 描述</th>
 </tr>
 
 <tr>
-<td>cd_init</td>
+<td height="44">cd_init</td>
 <td>Must be called before using the other functions. Should also be
-called when a CD is changed (or simply from time to time).</td>
+called when a CD is changed (or simply from time to time).
+<br>
+需要在使用其他函数之前调用，更换CD时也需要调用（亦或者是循环时）。
+</td>
 </tr>
 
 <tr class="alt">
 <td>cd_present</td>
-<td>Returns whether a CD is present in the default CD drive.</td>
+<td>Returns whether a CD is present in the default CD drive.
+<br>
+返回在默认光驱中是否已经有碟片。
+</td>
 </tr>
 
 <tr>
 <td>cd_number</td>
-<td>Returns the number of tracks on the CD.</td>
+<td>Returns the number of tracks on the CD.
+<br>
+返回当前CD音轨数量。</td>
 </tr>
 
 <tr class="alt">
 <td>cd_playing</td>
-<td>Returns whether the CD is playing.</td>
+<td>Returns whether the CD is playing.
+<br>
+返回当前CD是否正在播放。</td>
 </tr>
 
 <tr>
 <td>cd_paused</td>
-<td>Returns whether the CD is paused or stopped.</td>
+<td>Returns whether the CD is paused or stopped.
+<br>
+返回当前CD是否暂停或停止。</td>
 </tr>
 
 <tr class="alt">
 <td>cd_track</td>
-<td>Returns the number of the current track (1=the first).</td>
+<td>Returns the number of the current track (1=the first).
+<br>
+返回当前音轨序号（1代表第一个）。</td>
 </tr>
 
 <tr>
 <td>cd_length</td>
-<td>Returns the length of the total CD in milliseconds.</td>
+<td>Returns the length of the total CD in milliseconds.
+<br>
+以毫秒为单位返回整个CD的长度。</td>
 </tr>
 
 <tr class="alt">
 <td>cd_track_length</td>
-<td>Returns the length of track n of the CD in milliseconds.</td>
+<td>Returns the length of track n of the CD in milliseconds.
+<br>
+以毫秒为单位返回当前音轨的长度。</td>
 </tr>
 
 <tr>
 <td>cd_position</td>
-<td>Returns the current position on the CD in milliseconds.</td>
+<td>Returns the current position on the CD in milliseconds.
+<br>
+以毫秒为单位返回相对于整张CD的目前播放位置。</td>
 </tr>
 
 <tr class="alt">
 <td>cd_track_position</td>
 <td>Returns the current position in the track being played in
-milliseconds.</td>
+milliseconds.
+<br>
+以毫秒为单位返回相对于对应音轨的目前播放位置。</td>
 </tr>
 
 <tr>
 <td>cd_play</td>
 <td>Tells the CD to play tracks first until last. If you want to
-play the full CD give 1 and 1000 as arguments.</td>
+play the full CD give 1 and 1000 as arguments.
+<br>
+从第一个音轨开始播放CD。如果想要播放整张CD需将1和1000作为参数。</td>
 </tr>
 
 <tr class="alt">
 <td>cd_stop</td>
-<td>Stops playing</td>
+<td>Stops playing
+<br>
+停止播放。</td>
 </tr>
 
 <tr>
 <td>cd_pause</td>
-<td>Pauses the playing.</td>
+<td>Pauses the playing.
+<br>
+暂停播放。</td>
 </tr>
 
 <tr class="alt">
 <td>cd_resume</td>
-<td>Resumes the playing.</td>
+<td>Resumes the playing.
+<br>恢复播放。</td>
 </tr>
 
 <tr>
 <td>cd_set_position</td>
-<td>Sets the position on the CD in milliseconds.</td>
+<td>Sets the position on the CD in milliseconds.
+<br>
+以毫秒为单位设定相对于整张CD的播放位置。</td>
 </tr>
 
 <tr class="alt">
 <td>cd_set_track_position</td>
-<td>Sets the position in the current track in milliseconds.</td>
+<td>Sets the position in the current track in milliseconds.
+<br>以毫秒为单位设定相对于当前音轨的播放位置。</td>
 </tr>
 
 <tr>
 <td>cd_open_door</td>
-<td>Opens the door of the CD player</td>
+<td>Opens the door of the CD player
+<br>弹出光驱。</td>
 </tr>
 
 <tr class="alt">
 <td>cd_close_door</td>
-<td>Closes the door of the CD player</td>
+<td>Closes the door of the CD player
+<br>关闭光驱。</td>
 </tr>
 </table>
 </div>
 
 <p>The following function has also been removed:</p>
+<p>以下函数同样被淘汰：</p>
 
 <div class="param">
 <table>
 <tr>
-<th>Function</th>
-<th>Description</th>
+<th>Function 函数</th>
+<th>Description 描述</th>
 </tr>
 
 <tr>
@@ -153,17 +187,21 @@ returns the return string. You can use this to control all sorts of
 multimedia devices. See the Windows documentation for information
 in how to use this command. For example MCI_command('play cdaudio
 from 1') plays a CD (after you have correctly initialized it using
-other commands). This function is only for advanced use!</td>
+other commands). This function is only for advanced use!
+<br>
+该函数将通过 媒体控制接口（MCI） 向Windows多媒体系统发送命令串。该函数将返回被返回的字符串。用户可以使用它来控制所有的多媒体设备。详细的使用方法请参照Windows提供的文档。例子：MCI_command('play cdaudio from 1')将播放CD（前提是你已经用其他命令正确完成了初始化）。该函数仅供进阶使用。</td>
 </tr>
 </table>
 </div>
 
-<h3><b>Why These Are Obsolete</b>
+<h3><b>Why These Are Obsolete 被淘汰的原因</b>
 </h3>
 
 <p>These are Windows only functions and no longer applicable to any
-other device.<br>
-<br></p>
+other device.</p>
+<p>这些是专门针对Windows的函数，无法适用于其他任何平台<br>
+  <br>
+</p>
 
 <p><br>
 </p>
