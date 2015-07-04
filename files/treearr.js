@@ -58,7 +58,7 @@ var TITEMS = [
    ["Settings Tab", "source/dadiospice/000_Using GameMaker/Rooms/Settings Tab.html", "11"]
   ]
  ],
- ["Advanced Use", "source/dadiospice/001_Advanced Use/index.html", "1",
+ ["高级应用", "source/dadiospice/001_Advanced Use/index.html", "1",
   ["Including files", "source/dadiospice/001_Advanced Use/002_Including files.html", "11"],
   ["Fonts", "source/dadiospice/001_Advanced Use/003_Fonts.html", "11"],
   ["Paths", "source/dadiospice/001_Advanced Use/004_Paths.html", "11"],
@@ -147,7 +147,7 @@ var TITEMS = [
     ["View Menu", "source/dadiospice/001_Advanced Use/More about sprites/Edit Menus/View Menu.html", "11"]
    ]
   ],
-  ["Preferences", "source/dadiospice/001_Advanced Use/Preferences/index.html", "1",
+  ["首选项", "source/dadiospice/001_Advanced Use/Preferences/index.html", "1",
    ["Android Preferences", "source/dadiospice/001_Advanced Use/Preferences/Android Preferences.html", "11"],
    ["Editor Preferences", "source/dadiospice/001_Advanced Use/Preferences/Editor Preferences.html", "11"],
    ["Form Preferences", "source/dadiospice/001_Advanced Use/Preferences/Form Preferences.html", "11"],
@@ -169,7 +169,7 @@ var TITEMS = [
    ["Using Source Control", "source/dadiospice/001_Advanced Use/Source Control/Using Source Control.html", "11"]
   ]
  ],
- ["Reference", "source/dadiospice/002_Reference/index.html", "1",
+ ["GML参考", "source/dadiospice/002_Reference/index.html", "1",
   ["GML Language Overview", "source/dadiospice/002_Reference/001_GML Language Overview/index.html", "1",
    ["program", "source/dadiospice/002_Reference/001_GML Language Overview/401_01_program.html", "11"],
    ["assignments", "source/dadiospice/002_Reference/001_GML Language Overview/401_03_assignments.html", "11"],
@@ -1978,7 +1978,7 @@ var TITEMS = [
    ["string_width", "source/dadiospice/002_Reference/Strings/string_width.html", "11"],
    ["string_width_ext", "source/dadiospice/002_Reference/Strings/string_width_ext.html", "11"]
   ],
-  ["Surfaces", "source/dadiospice/002_Reference/Surfaces/index.html", "1",
+  ["表面", "source/dadiospice/002_Reference/Surfaces/index.html", "1",
    ["application_get_position", "source/dadiospice/002_Reference/Surfaces/application_get_position.html", "11"],
    ["application_surface", "source/dadiospice/002_Reference/Surfaces/application_surface.html", "11"],
    ["application_surface_draw_enable", "source/dadiospice/002_Reference/Surfaces/application_surface_draw_enable.html", "11"],
