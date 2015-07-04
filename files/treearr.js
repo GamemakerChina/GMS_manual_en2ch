@@ -1,5 +1,5 @@
 var TITEMS = [ 
- ["Introduction", "source/dadiospice/index.html", "11"],
+ ["Introduction 简介", "source/dadiospice/index.html", "11"],
  ["Using GameMaker", "source/dadiospice/000_Using GameMaker/index.html", "1",
   ["Introduction", "source/dadiospice/000_Using GameMaker/000_Introduction.html", "11"],
   ["Installation", "source/dadiospice/000_Using GameMaker/001_Installation.html", "11"],
