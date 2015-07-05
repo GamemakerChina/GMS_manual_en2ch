@@ -28,10 +28,9 @@ if (window.name != "content")
 
 <h1>browser_height</h1>
 
-<h2>This variable returns the height, in pixels, of the current
-area of the browser (if applicable).</h2>
+<h2>返回当前浏览器显示区域的高度/像素，如果是其他平台，可能的话，返回游戏窗口的高度。</h2>
 
-<h3><b>Syntax:</b>
+<h3><b>语法：</b>
 </h3>
 
 <p class="code">browser_height</p>
@@ -39,27 +38,22 @@ area of the browser (if applicable).</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回：</b> 实数</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>说明</h3>
 
-<p>This variable holds the height (in pixels) of the browser the
-game is being run in. If no browser is present then the window size
-is returned. the following image illustrates how this variable
-relates to the rest of the positioning functions available through
-the <a href=
-"../Windows%20And%20Views/The%20Game%20Window/index.html">Window
-Functions</a>.<br>
+<p>这个变量存储着浏览器显示区域的高度/像素，如果运行平台不是浏览器，则返回窗口的高度。下图说明了这个变量涉及的用途，图中剩余的变量可参考
+<a href="../Windows%20And%20Views/The%20Game%20Window/index.html">窗口</a>.<br>
 <br>
 <img class="center" src="../../Images/window_position.png"></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>示例：</h3>
 
 <p class="code">if browser_height &gt; window_get_height() ||
 browser_width &gt; window_get_width()<br>
@@ -86,18 +80,15 @@ window_get_height()) / 2;<br>
 &nbsp;&nbsp;&nbsp;window_set_position(xx, yy);<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code checks the width and height of the browser to see
-if either is larger than the current window width and height. If
-either of them are, it then calculates a new position for the game
-window within the browser.</p>
+<p>上面的脚本，进行了浏览器与游戏窗口大小规格的比较，并改变游戏窗口位于浏览器中的位置</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">HTML5</a></div>
+<div style="float:left">上一页: <a href="index.html">HTML5</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "browser_width.html">browser_width</a></div>
 </div>
 
