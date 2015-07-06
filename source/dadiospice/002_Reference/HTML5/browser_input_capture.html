@@ -28,10 +28,9 @@ if (window.name != "content")
 
 <h1>browser_input_capture</h1>
 
-<h2>Set whether the GameMaker: Studio game should get input or the
-browser.</h2>
+<h2>设置捕获用户输入的对象</h2>
 
-<h3><b>Syntax:</b>
+<h3><b>语法：</b>
 </h3>
 
 <p class="code">browser_input_capture(enable)</p>
@@ -39,36 +38,36 @@ browser.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>说明</h3>
 
-<p>With this function you can set whether the browser window should
-capture all input (set it to <tt>false</tt>) or whether the game
-should capture the input (set it to <tt>true</tt>). Note that this
-function is for use with the HTML5 module only.<br>
-<br></p>
-
+<p>如果参数为 <tt>false</tt>，用户的所有输入被浏览器捕获，否则被游戏捕获。
+<br>
+举个例子：在Chrome浏览器中，用户输入按键“ctrl+j”可打开chrome的“下载内容”，
+如果我们调用browser_input_capture(true),chrome 将不会打开“下载内容”（屏蔽浏览器快捷键），用户的所有输入被我们的游戏捕获。
+<br>
+<br>
+这个函数只能用于HTML5平台</p>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>示例：</h3>
 
 <p class="code">browser_input_capture(true);</p>
 
-<p>The above code sets the game to capture al browser input on the
-HTML5 target platform.</p>
+<p>以上代码设置游戏捕获所有的用户输入。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">HTML5</a></div>
+<div style="float:left">返回iu： <a href="index.html">HTML5</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "webgl_enabled.html">webgl_enabled</a></div>
 </div>
 
