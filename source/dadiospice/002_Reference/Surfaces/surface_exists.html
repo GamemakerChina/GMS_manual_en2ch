@@ -46,7 +46,7 @@ if (window.name != "content")
 </table>
 </div>
 <p>&nbsp;</p>
-<p><strong>Returns:</strong> 布尔值</p>
+<p><strong>返回:</strong> 布尔值</p>
 <p>&nbsp;</p>
 <h3>描述</h3>
 <p>由于表面图层的不稳定性，在使用到表面时，这个函数还是有必要的。表面一直保存在显存里，这意味着从这一刻到另一刻（比如，电脑启动屏幕时，或者安卓设备最小化时），它可能会被破坏，所以在做与表面图层相关的操作之前，你一直都需要检测是否存在一个表面（包括向屏幕绘制表面）。下面是这个命令在实例绘制事件中检测表面图层的典型使用，如果发现被破坏了就会重新创建（注意，表面将在创建事件中提前创建好）。</p>
@@ -54,6 +54,7 @@ if (window.name != "content")
 <h3>例子：</h3>
 <p class="code">if !surface_exists(surf)<br /> &nbsp;&nbsp;&nbsp;{<br /> &nbsp;&nbsp;&nbsp;surf = surface_create(1024, 1024);<br /> &nbsp;&nbsp;&nbsp;}<br /> else<br /> &nbsp;&nbsp;&nbsp;{<br /> &nbsp;&nbsp;&nbsp;if view_current = 1<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;draw_surface(surf,0,0);<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /> &nbsp;&nbsp;&nbsp;}</p>
 <p>上面的例子中将检测变量为&nbsp;"surf"的表面图层是否存在，如果不存在，将重新创建一个。如果存在，然后会检测当前视野是哪一个，是&nbsp;view[1]的话就绘制表面。</p>
+<p>翻译 by 断水</p>
 <p>&nbsp;</p>
 <div class="clear">
 <div style="float: left;">返回: <a href="index.html">表面</a></div>
