@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>surface_get_width</h1>
 
-<h2>Finds the pixel width of a surface.</h2>
+<h2>获取表面图层的像素宽度。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">surface_get_width(surface_id);</p>
 
@@ -40,13 +40,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>surface_id</td>
-<td>The ID of the surface to get the width of.</td>
+<td>将要获取宽度的表面层ID。</td>
 </tr>
 </table>
 </div>
@@ -54,47 +54,39 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回：</b>实数</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function simply returns the width, in pixels, of the
-indexed surface.<br>
+<p>这个函数简单的返回索引表面的像素宽度。<br>
 <br>
-<i><b>NOTE:</b> When working with surfaces there is the possibility
-that they can cease to exist at any time due to them being stored
-in texture memory. You should <b>ALWAYS</b> check that a surface
-exists using <a href=
-"surface_exists.html"><tt>surface_exists</tt></a> before
-referencing them directly. For further information see <a href=
-"index.html">Surfaces</a>.</i><br>
+<i><b>注意 :</b>
+由于储存在显存里，表面层运行时存在随时停止并退出的可能性。在直接引用他们之前， 你需要 <b>一直</b>使用 <a href="surface_exists.html"><tt>surface_exists</tt></a>检测表面层是否退出。更多信息请查阅 <a href="index.html">表面层</a>.</i><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>例如：</h3>
 
 <p class="code">sw = surface_get_width(surf);</p>
 
-<p>The above code will store the width of the surface indexed in
-the variable "surf" in the variable "sw".</p>
+<p>上述代码将在变量sw中储存索引变量为surf的表面图层的宽度。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href=
-"index.html">Surfaces</a></div>
+<div style="float:left">返回: <a href="index.html">表面层</a></div>
 
-<div style="float:right">Next: <a href=
-"surface_get_texture.html">surface_get_texture</a></div>
+<div style="float:right">下一页： <a href="surface_get_texture.html">surface_get_texture</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);

@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>surface_save_part</h1>
 
-<h2>Saves a part of a surface to disc.</h2>
+<h2>对一个表面层的一部分进行存盘。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">surface_save_part(surface_id, fname, x, y, width,
 height);</p>
@@ -41,38 +41,38 @@ height);</p>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>surface_id</td>
-<td>The ID of the surface to set as the drawing target.</td>
+<td>作为绘制目标的表面层的ID。</td>
 </tr>
 
 <tr class="alt">
 <td>fname</td>
-<td>The name of the saved image file.</td>
+<td>保存的图像文件的名称。</td>
 </tr>
 
 <tr>
 <td>x</td>
-<td>The starting x position within the surface.</td>
+<td>表面层内的起始x位置。</td>
 </tr>
 
 <tr class="alt">
 <td>y</td>
-<td>The starting y position within the surface.</td>
+<td>表面层内的起始y位置。</td>
 </tr>
 
 <tr>
 <td>width</td>
-<td>The width of the part to save.</td>
+<td>保存部分的宽度。</td>
 </tr>
 
 <tr class="alt">
 <td>height</td>
-<td>The height of the part to save.</td>
+<td>保存部分的高度</td>
 </tr>
 </table>
 </div>
@@ -80,47 +80,40 @@ height);</p>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function will save a part of a surface to disc using the
-given filename. The surface <i>must</i> be saved as a
-<tt>*.png</tt> format file, and the (x,y) position must be given as
-local coordinates to the surface, bearing in mind that the top left
-corner of the surface is always (0,0).<br>
+<p>此函数将使用给定的文件名保存表面层到硬盘上。表面层<i>必须</i>被保存为<tt>*.png</tt>格式的文件，必须给定相对于表面本地坐标的 (x,y)坐标，铭记的表面的左上角总是（0,0）。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>例如：</h3>
 
 <p class="code">if keyboard_check_pressed(ord("S")<br>
-&nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;surface_save_part(surf, "test.png", 0, 0, 100,
+   {<br>
+   surface_save_part(surf, "test.png", 0, 0, 100,
 100);<br>
-&nbsp;&nbsp;&nbsp;}<br></p>
+   }<br></p>
 
-<p>The above code will check to see if the user presses the "S" key
-on the keyboard and if they do it will save a part of the surface
-indexed in the variable "surf" to disc.</p>
+<p>上面的代码将检查是否用户按下键盘上的“S”键，如果他们这样操作了，将对变量“surf”索引的表面层的一部分进行存盘保存。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href=
-"index.html">Surfaces</a></div>
+<div style="float:left">返回: <a href="index.html">表面层</a></div>
 
-<div style="float:right">Next: <a href=
-"surface_exists.html">surface_exists</a></div>
+<div style="float:right">下一页： <a href="surface_exists.html">surface_exists</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);

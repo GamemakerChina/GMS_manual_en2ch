@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>surface_free</h1>
 
-<h2>Destroys the surface, freeing it from memory.</h2>
+<h2>销毁表面层，从内存中释放它。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">surface_free(surface_id);</p>
 
@@ -40,13 +40,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>surface_id</td>
-<td>The ID of the surface to be freed.</td>
+<td>将被释放的表面图的索引。</td>
 </tr>
 </table>
 </div>
@@ -54,56 +54,43 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>When you are working with surfaces, you should always use this
-function whenever you are finished using them. Surfaces take up
-space in memory and so need to be removed, normally at the end of a
-room, but it can be done at any time depending on the use you put
-them to. Failure to do so can cause memory leaks which will
-eventually slow down and crash your game.<br>
+<p>当你用到表面图层时，不论是否结束使用，你应该一直使用这个函数。表面图层会占据内存空间，通常需要在房间结束工作时清除它们，可以在任何时间执行这个过程，取决于你使用的方式。如果不这样做，可能会导致内存泄漏，最终放慢游戏甚至游戏崩溃。<br>
 <br>
-<i><b>NOTE:</b> When working with surfaces there is the possibility
-that they can cease to exist at any time due to them being stored
-in texture memory. You should <b>ALWAYS</b> check that a surface
-exists using <a href=
-"surface_exists.html"><tt>surface_exists</tt></a> before
-referencing them directly. For further information see <a href=
-"index.html">Surfaces</a>.</i><br>
+<i><b>注意 :</b>
+由于储存在显存里，表面层运行时存在随时停止并退出的可能性。在直接引用他们之前， 你需要 <b>一直</b>使用 <a href="surface_exists.html"><tt>surface_exists</tt></a>检测表面层是否退出。更多信息请查阅 <a href="index.html">表面层</a>.</i><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>例如：</h3>
 
 <p class="code">if keyboard_check_pressed(vk_escape)<br>
-&nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;surface_free(surf);<br>
-&nbsp;&nbsp;&nbsp;room_goto(rm_Menu);<br>
-&nbsp;&nbsp;&nbsp;}<br></p>
+   {<br>
+   surface_free(surf);<br>
+   room_goto(rm_Menu);<br>
+   }<br></p>
 
-<p>The above code checks for a key press and if it detects one it
-frees the memory reserved for the surface indexed in the variable
-"surf" and then changes room.</p>
+<p>上述代码将检测一个键是否按下，如果检测到了，则对索引为变量surf的表面图层所预留的那部分内存进行释放，然后切换一个房间。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href=
-"index.html">Surfaces</a></div>
+<div style="float:left">返回: <a href="index.html">表面层</a></div>
 
-<div style="float:right">Next: <a href=
-"surface_save.html">surface_save</a></div>
+<div style="float:right">下一页： <a href="surface_save.html">surface_save</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);

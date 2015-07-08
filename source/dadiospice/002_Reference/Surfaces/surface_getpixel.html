@@ -28,10 +28,9 @@ if (window.name != "content")
 
 <h1>surface_getpixel</h1>
 
-<h2>Returns the colour of the pixel corresponding a position in the
-surface.</h2>
+<h2>返回表面层对应位置的像素颜色。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">surface_getpixel(surface_id, x, y);</p>
 
@@ -41,23 +40,23 @@ surface.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>surface_id</td>
-<td>The ID of the surface.</td>
+<td>表面层的ID。</td>
 </tr>
 
 <tr>
 <td>x</td>
-<td>The x position on the surface from which to get the pixel.</td>
+<td>表面上的x坐标，用于获取对应的像素。</td>
 </tr>
 
 <tr>
 <td>y</td>
-<td>The y position on the surface from which to get the pixel.</td>
+<td>表面上的y坐标，用于获取对应的像素。</td>
 </tr>
 </table>
 </div>
@@ -65,50 +64,39 @@ surface.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回：</b>实数</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function can be used to get the colour of a specific pixel
-from a surface, using the local coordinates of the surface where
-(0,0) is the top left corner. This function should <i>not</i> be
-used very often as it is extremely slow and may cause a pause in
-your game.<br>
+<p>此函数使用局部坐标，可用于从一个表面获取特定像素的颜色，其中（0,0）是表面层的左上角。此函数建议<i>不要</i>经常使用，因为它是极其缓慢，并且可能导致游戏停滞。<br>
 <br>
-<i><b>NOTE:</b> When working with surfaces there is the possibility
-that they can cease to exist at any time due to them being stored
-in texture memory. You should <b>ALWAYS</b> check that a surface
-exists using <a href=
-"surface_exists.html"><tt>surface_exists</tt></a> before
-referencing them directly. For further information see <a href=
-"index.html">Surfaces</a>.</i><br>
+<i><b>注意 :</b>
+由于储存在显存里，表面层运行时存在随时停止并退出的可能性。在直接引用他们之前， 你需要 <b>一直</b>使用 <a href="surface_exists.html"><tt>surface_exists</tt></a>检测表面层是否退出。更多信息请查阅 <a href="index.html">表面层</a>.</i><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>例如：</h3>
 
 <p class="code">col = surface_getpixel(surf, 56, 78 );</p>
 
-<p>This will return the colour of the pixel at coordinates (56,78)
-of the surface indexed in the variable "surf".</p>
+<p>这将返回索引为“surf”的表面在在坐标（56,78）位置的像素的颜色。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href=
-"index.html">Surfaces</a></div>
+<div style="float:left">返回: <a href="index.html">表面层</a></div>
 
-<div style="float:right">Next: <a href=
-"surface_getpixel_ext.html">surface_getpixel_ext</a></div>
+<div style="float:right">下一页： <a href="surface_getpixel_ext.html">surface_getpixel_ext</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
