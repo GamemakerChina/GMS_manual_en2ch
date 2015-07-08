@@ -77,7 +77,7 @@ if (window.name != "content")
 HTML5 标签</a>中 将这个 <a href="../../001_Advanced Use/Global game settings/index.html">html</a> 文件作为游戏的默认页面。接下来应该做的是设置房间和视野，因为每个表面层都需要关联一个特定的视野以捕捉游戏画面 (查阅视野变量
 <a href="../Windows And Views/Views/view_surface_id.html"><tt>view_surface_id[0...7]</tt></a>).下面的图片展示的是如何为上面的画布例子设置游戏房间的参数： <img class="center" src="surface_ext_2.png"> 
 最后，你可以再使用这个函数来创建表面图层，名称和画布元素使用的相同，大小符合同一个画布的尺寸。这个函数将返回表面的索引名称，并储存在一个变量上，方便将来函数调用。当这个表面首次被创建的时候，它可能会包含“噪音”，因为基本上它只是一个为特别的目的而搁置的内存区域（这个内存可能仍然包含信息），
-所以在使用前需要用 <a href="../Drawing/colour And Blending/draw_clear_alpha.html"><tt>draw_clear_alpha</tt></a>这个函数清理这个表面。<br>
+所以在使用前需要用 <a href="../Drawing/Colour And Blending/draw_clear_alpha.html"><tt>draw_clear_alpha</tt></a>这个函数清理这个表面。<br>
 
 <br></p>
 
