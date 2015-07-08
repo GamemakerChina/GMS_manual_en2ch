@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>surface_create_ext</h1>
 
-<h2>Creates a surface and links it to an HTML5 canvas element.</h2>
+<h2>创建一个表面层，并将其链接到HTML5的画布(canvas)元素上。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">surface_create_ext(name, w, h);</p>
 
@@ -40,23 +40,23 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>name</td>
-<td>The name of the canvas element to link the surface to.</td>
+<td>所链接的画布元素名称。</td>
 </tr>
 
 <tr class="alt">
 <td>w</td>
-<td>The width of the surface to be created.</td>
+<td>要创建的表面层的宽度。</td>
 </tr>
 
 <tr>
 <td>h</td>
-<td>The height of the surface to be created.</td>
+<td>要创建的表面层的高度。</td>
 </tr>
 </table>
 </div>
@@ -64,82 +64,46 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回：</b>实数</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p><i><b>NOTE:</b> This function is only available for use with the
-HTML5 module!</i><br>
-<br>
-This function allows you to attach a surface to a canvas element
-that already exists in your web page, meaning that you can
-effectively split up portions of your game to be drawn at various
-different places within the page. To that end, you <i>must</i> have
-defined the canvas element correctly within the <tt>*.html</tt>
-page of your game using the correct sizes and names that correspond
-to the surfaces you wish to create. So, you would have your "main"
-canvas, and then your secondary surface canvas elements, which will
-be assigned using this function to the correct surfaces. The
-following image is an example of how a page with three canvas
-elements would be set up: <img class="center" src=
-"surface_ext_1.png"> The page layout can be tricky, especially if
-you wish all the elements to line up correctly, but once the hard
-task of creating the layout has been completed, you can then add
-this <tt>html</tt> file as the default page file for the game using
-the <a href=
-"../../001_Advanced%20Use/Global%20game%20settings/HTML5%20Tab.html">
-HTML5 Tab</a> of the <a href=
-"../../001_Advanced%20Use/Global%20game%20settings/index.html">Global
-Game Settings</a>. The next thing you should do is set up your room
-and views, as each surface will need to be associated with a
-specific view to "capture" the game images (see the view variable
-<a href=
-"../Windows%20And%20Views/Views/view_surface_id.html"><tt>view_surface_id[0...7]</tt></a>).
-The image below shows how the game room for the above canvas
-example would be set out: <img class="center" src=
-"surface_ext_2.png"> Finally you would then use this function to
-create the surfaces, with the name being the same as that used for
-the canvas elements and the size corresponding to the size of that
-same canvas. The function will return the index of the surface
-which should be stored in a variable for future function calls.
-When the surface is first created, it may contain "noise" as
-basically it is just an area of memory that is put aside for the
-purpose (and that memory may still contain information), so you may
-want to clear the surface before use with a function like <a href=
-"../Drawing/colour%20And%20Blending/draw_clear_alpha.html"><tt>draw_clear_alpha</tt></a>.<br>
+<p><i><b>注：</b>此功能仅适用于与HTML5模块一起使用！</i><br>
+<br>这个函数允许你为已经存在网页上的canvas元素附著一个表面图层，意味着可以有效的分割游戏的部分页面，绘制到页面内的不同地方。为此，你必须准确的定义*.html游戏页面的画布元素，使用正确的大小和名称，以符合想要创建的表面。所以，你会有一个“主”画布，然后是辅助的表面层canvas元素，通过这个函数指定到正确的表面层。下面的图片是一个例子展示了怎么设置一个三个画布元素的页面： <img class="center" src="surface_ext_1.png"> 页面布局可能会比较棘手， 特别是你希望所有的元素都可以正确的排列，
+一旦创建布局这个艰巨的任务已经完成，你可以在 <tt>全局游戏设定</tt>的 <a href="../../001_Advanced Use/Global game settings/HTML5 Tab.html">
+HTML5 标签</a>中 将这个 <a href="../../001_Advanced Use/Global game settings/index.html">html</a> 文件作为游戏的默认页面。接下来应该做的是设置房间和视野，因为每个表面层都需要关联一个特定的视野以捕捉游戏画面 (查阅视野变量
+<a href="../Windows And Views/Views/view_surface_id.html"><tt>view_surface_id[0...7]</tt></a>).下面的图片展示的是如何为上面的画布例子设置游戏房间的参数： <img class="center" src="surface_ext_2.png"> 
+最后，你可以再使用这个函数来创建表面图层，名称和画布元素使用的相同，大小符合同一个画布的尺寸。这个函数将返回表面的索引名称，并储存在一个变量上，方便将来函数调用。当这个表面首次被创建的时候，它可能会包含“噪音”，因为基本上它只是一个为特别的目的而搁置的内存区域（这个内存可能仍然包含信息），
+所以在使用前需要用 <a href="../Drawing/colour And Blending/draw_clear_alpha.html"><tt>draw_clear_alpha</tt></a>这个函数清理这个表面。<br>
 
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>例如：</h3>
 
 <p class="code">s1 = surface_create_ext("surface1", 192, 550);<br>
 s2 = surface_create_ext("surface2", 608, 186);<br>
 view_surface_id[1] = s1;<br>
 view_surface_id[2] = s2;<br></p>
 
-<p>The above code creates two surfaces of different sizes,
-assigning each one to a different canvas element, and then those
-surfaces are assigned to two views so that the correct part of the
-room is captured.</p>
+<p>上述代码创建了两个不同大小的表面，并给他们每个都指定了不同的画布元素，然后为了在房间里捕捉正确的部分，给这两个表面层指定了两个视野。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href=
-"index.html">Surfaces</a></div>
+<div style="float:left">返回: <a href="index.html">表面层</a></div>
 
-<div style="float:right">Next: <a href=
-"surface_resize.html">surface_resize</a></div>
+<div style="float:right">下一个: <a href="surface_resize.html">surface_resize</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
