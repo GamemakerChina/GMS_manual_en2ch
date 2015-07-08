@@ -25,7 +25,7 @@ var TITEMS = [
    ["绘制动作", "source/dadiospice/000_Using GameMaker/Actions/006_Draw actions.html", "11"],
    ["在动作中使用变量和表达式", "source/dadiospice/000_Using GameMaker/Actions/007_Using expressions and variables.html", "11"]
   ],
-  ["下接菜单", "source/dadiospice/000_Using GameMaker/Drop Down Menus/index.html", "1",
+  ["下拉菜单", "source/dadiospice/000_Using GameMaker/Drop Down Menus/index.html", "1",
    ["编辑菜单", "source/dadiospice/000_Using GameMaker/Drop Down Menus/The Edit Menu.html", "11"],
    ["文件菜单", "source/dadiospice/000_Using GameMaker/Drop Down Menus/The File Menu.html", "11"],
    ["帮助菜单", "source/dadiospice/000_Using GameMaker/Drop Down Menus/The Help Menu.html", "11"],
