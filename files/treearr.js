@@ -59,20 +59,20 @@ var TITEMS = [
   ]
  ],
  ["高级应用", "source/dadiospice/001_Advanced Use/index.html", "1",
-  ["Including files", "source/dadiospice/001_Advanced Use/002_Including files.html", "11"],
-  ["Fonts", "source/dadiospice/001_Advanced Use/003_Fonts.html", "11"],
-  ["Paths", "source/dadiospice/001_Advanced Use/004_Paths.html", "11"],
-  ["Time lines", "source/dadiospice/001_Advanced Use/005_Time lines.html", "11"],
-  ["Scripts", "source/dadiospice/001_Advanced Use/006_Scripts.html", "11"],
-  ["Configurations", "source/dadiospice/001_Advanced Use/007_Configurations.html", "11"],
-  ["Exporting and importing resources", "source/dadiospice/001_Advanced Use/008_Exporting and importing resources.html", "11"],
-  ["Shaders", "source/dadiospice/001_Advanced Use/009_Shaders.html", "11"],
-  ["Macros", "source/dadiospice/001_Advanced Use/010_Macros.html", "11"],
-  ["Debugging", "source/dadiospice/001_Advanced Use/011_Debugging.html", "11"],
-  ["Marketplace", "source/dadiospice/001_Advanced Use/Marketplace.html", "11"],
-  ["Profiling", "source/dadiospice/001_Advanced Use/Profiling.html", "11"],
-  ["The Debug Module", "source/dadiospice/001_Advanced Use/The Debug Module.html", "11"],
-  ["Extensions", "source/dadiospice/001_Advanced Use/Extensions/index.html", "1",
+  ["包含文件", "source/dadiospice/001_Advanced Use/002_Including files.html", "11"],
+  ["字体", "source/dadiospice/001_Advanced Use/003_Fonts.html", "11"],
+  ["路径", "source/dadiospice/001_Advanced Use/004_Paths.html", "11"],
+  ["时间轴", "source/dadiospice/001_Advanced Use/005_Time lines.html", "11"],
+  ["脚本", "source/dadiospice/001_Advanced Use/006_Scripts.html", "11"],
+  ["配置", "source/dadiospice/001_Advanced Use/007_Configurations.html", "11"],
+  ["输出和导入资源", "source/dadiospice/001_Advanced Use/008_Exporting and importing resources.html", "11"],
+  ["着色器", "source/dadiospice/001_Advanced Use/009_Shaders.html", "11"],
+  ["宏", "source/dadiospice/001_Advanced Use/010_Macros.html", "11"],
+  ["调试", "source/dadiospice/001_Advanced Use/011_Debugging.html", "11"],
+  ["插件市场", "source/dadiospice/001_Advanced Use/Marketplace.html", "11"],
+  ["调试分析", "source/dadiospice/001_Advanced Use/Profiling.html", "11"],
+  ["调试模块", "source/dadiospice/001_Advanced Use/The Debug Module.html", "11"],
+  ["扩展", "source/dadiospice/001_Advanced Use/Extensions/index.html", "1",
    ["Android Extensions", "source/dadiospice/001_Advanced Use/Extensions/Android Extensions.html", "11"],
    ["Creating Extensions", "source/dadiospice/001_Advanced Use/Extensions/Creating Extensions.html", "11"],
    ["iOS Extensions", "source/dadiospice/001_Advanced Use/Extensions/iOS Extensions.html", "11"],
@@ -80,7 +80,7 @@ var TITEMS = [
    ["Proxy Files", "source/dadiospice/001_Advanced Use/Extensions/Proxy Files.html", "11"],
    ["Using Extensions", "source/dadiospice/001_Advanced Use/Extensions/Using Extensions.html", "11"]
   ],
-  ["Global game settings", "source/dadiospice/001_Advanced Use/Global game settings/index.html", "1",
+  ["全局游戏设定", "source/dadiospice/001_Advanced Use/Global game settings/index.html", "1",
    ["Advertising Tab", "source/dadiospice/001_Advanced Use/Global game settings/Advertising Tab.html", "11"],
    ["Analytics Tab", "source/dadiospice/001_Advanced Use/Global game settings/Analytics Tab.html", "11"],
    ["Android Tab", "source/dadiospice/001_Advanced Use/Global game settings/Android Tab.html", "11"],
@@ -103,7 +103,7 @@ var TITEMS = [
    ["Win8 Tab", "source/dadiospice/001_Advanced Use/Global game settings/Win8 Tab.html", "11"],
    ["Windows Tab", "source/dadiospice/001_Advanced Use/Global game settings/Windows Tab.html", "11"]
   ],
-  ["More About Async Events", "source/dadiospice/001_Advanced Use/More About Async Events/index.html", "1",
+  ["关于异步事件", "source/dadiospice/001_Advanced Use/More About Async Events/index.html", "1",
    ["Audio Playback", "source/dadiospice/001_Advanced Use/More About Async Events/Audio Playback.html", "11"],
    ["Audio Recording", "source/dadiospice/001_Advanced Use/More About Async Events/Audio Recording.html", "11"],
    ["Cloud", "source/dadiospice/001_Advanced Use/More About Async Events/Cloud.html", "11"],
@@ -118,20 +118,20 @@ var TITEMS = [
    ["Steam", "source/dadiospice/001_Advanced Use/More About Async Events/Steam.html", "11"],
    ["System Event", "source/dadiospice/001_Advanced Use/More About Async Events/System Event.html", "11"]
   ],
-  ["More about backgrounds", "source/dadiospice/001_Advanced Use/More about backgrounds/index.html", "1",
+  ["关于背景", "source/dadiospice/001_Advanced Use/More about backgrounds/index.html", "1",
    ["Designing Tiles", "source/dadiospice/001_Advanced Use/More about backgrounds/Designing Tiles.html", "11"],
    ["Texture Pages", "source/dadiospice/001_Advanced Use/More about backgrounds/Texture Pages.html", "11"]
   ],
-  ["More about objects", "source/dadiospice/001_Advanced Use/More about objects/index.html", "1",
+  ["关于物体", "source/dadiospice/001_Advanced Use/More about objects/index.html", "1",
    ["Parents", "source/dadiospice/001_Advanced Use/More about objects/Parents.html", "11"],
    ["Physics", "source/dadiospice/001_Advanced Use/More about objects/Physics.html", "11"]
   ],
-  ["More about rooms", "source/dadiospice/001_Advanced Use/More about rooms/index.html", "1",
+  ["关于房间", "source/dadiospice/001_Advanced Use/More about rooms/index.html", "1",
    ["Physics", "source/dadiospice/001_Advanced Use/More about rooms/Physics.html", "11"],
    ["Tiles", "source/dadiospice/001_Advanced Use/More about rooms/Tiles.html", "11"],
    ["Views", "source/dadiospice/001_Advanced Use/More about rooms/Views.html", "11"]
   ],
-  ["More about sprites", "source/dadiospice/001_Advanced Use/More about sprites/index.html", "1",
+  ["关于精灵图像", "source/dadiospice/001_Advanced Use/More about sprites/index.html", "1",
    ["Advanced Tools", "source/dadiospice/001_Advanced Use/More about sprites/Advanced Tools.html", "11"],
    ["Drawing Tools", "source/dadiospice/001_Advanced Use/More about sprites/Drawing Tools.html", "11"],
    ["Editing Collision Masks", "source/dadiospice/001_Advanced Use/More about sprites/Editing Collision Masks.html", "11"],
@@ -163,14 +163,14 @@ var TITEMS = [
    ["Windows Phone Preferences", "source/dadiospice/001_Advanced Use/Preferences/Windows Phone Preferences.html", "11"],
    ["Windows8 Preferences", "source/dadiospice/001_Advanced Use/Preferences/Windows8 Preferences.html", "11"]
   ],
-  ["Source Control", "source/dadiospice/001_Advanced Use/Source Control/index.html", "1",
+  ["源代码控制", "source/dadiospice/001_Advanced Use/Source Control/index.html", "1",
    ["Getting Started With Source Control", "source/dadiospice/001_Advanced Use/Source Control/Getting Started With Source Control.html", "11"],
    ["Setting Up GM For Source Control", "source/dadiospice/001_Advanced Use/Source Control/Setting Up GM For Source Control.html", "11"],
    ["Using Source Control", "source/dadiospice/001_Advanced Use/Source Control/Using Source Control.html", "11"]
   ]
  ],
  ["GML参考", "source/dadiospice/002_Reference/index.html", "1",
-  ["GML Language Overview", "source/dadiospice/002_Reference/001_GML Language Overview/index.html", "1",
+  ["GML语言概述", "source/dadiospice/002_Reference/001_GML Language Overview/index.html", "1",
    ["program", "source/dadiospice/002_Reference/001_GML Language Overview/401_01_program.html", "11"],
    ["assignments", "source/dadiospice/002_Reference/001_GML Language Overview/401_03_assignments.html", "11"],
    ["expressions", "source/dadiospice/002_Reference/001_GML Language Overview/401_04_expressions.html", "11"],
@@ -211,7 +211,7 @@ var TITEMS = [
     ["score", "source/dadiospice/002_Reference/001_GML Language Overview/Variables/score.html", "11"]
    ]
   ],
-  ["Obsolete Functions", "source/dadiospice/002_Reference/017_Obsolete Functions/index.html", "1",
+  ["废弃函数", "source/dadiospice/002_Reference/017_Obsolete Functions/index.html", "1",
    ["Obsolete CD Functions", "source/dadiospice/002_Reference/017_Obsolete Functions/Obsolete CD Functions.html", "11"],
    ["Obsolete Display Functions", "source/dadiospice/002_Reference/017_Obsolete Functions/Obsolete Display Functions.html", "11"],
    ["Obsolete Dynamic Functions", "source/dadiospice/002_Reference/017_Obsolete Functions/Obsolete Dynamic Functions.html", "11"],
@@ -226,7 +226,7 @@ var TITEMS = [
    ["Obsolete Transition Functions", "source/dadiospice/002_Reference/017_Obsolete Functions/Obsolete Transition Functions.html", "11"],
    ["Triggers", "source/dadiospice/002_Reference/017_Obsolete Functions/Triggers.html", "11"]
   ],
-  ["Advertising and Analytics", "source/dadiospice/002_Reference/Advertising and Analytics/index.html", "1",
+  ["广告和分析", "source/dadiospice/002_Reference/Advertising and Analytics/index.html", "1",
    ["ads_disable", "source/dadiospice/002_Reference/Advertising and Analytics/ads_disable.html", "11"],
    ["ads_enable", "source/dadiospice/002_Reference/Advertising and Analytics/ads_enable.html", "11"],
    ["ads_engagement_active", "source/dadiospice/002_Reference/Advertising and Analytics/ads_engagement_active.html", "11"],
@@ -250,7 +250,7 @@ var TITEMS = [
    ["pocketchange_display_reward", "source/dadiospice/002_Reference/Advertising and Analytics/pocketchange_display_reward.html", "11"],
    ["pocketchange_display_shop", "source/dadiospice/002_Reference/Advertising and Analytics/pocketchange_display_shop.html", "11"]
   ],
-  ["Asynchronous Functions", "source/dadiospice/002_Reference/Asynchronous Functions/index.html", "1",
+  ["异步函数", "source/dadiospice/002_Reference/Asynchronous Functions/index.html", "1",
    ["get_integer_async", "source/dadiospice/002_Reference/Asynchronous Functions/get_integer_async.html", "11"],
    ["get_login_async", "source/dadiospice/002_Reference/Asynchronous Functions/get_login_async.html", "11"],
    ["get_string_async", "source/dadiospice/002_Reference/Asynchronous Functions/get_string_async.html", "11"],
@@ -261,7 +261,7 @@ var TITEMS = [
    ["show_message_async", "source/dadiospice/002_Reference/Asynchronous Functions/show_message_async.html", "11"],
    ["show_question_async", "source/dadiospice/002_Reference/Asynchronous Functions/show_question_async.html", "11"]
   ],
-  ["Buffers", "source/dadiospice/002_Reference/Buffers/index.html", "1",
+  ["缓存区", "source/dadiospice/002_Reference/Buffers/index.html", "1",
    ["Buffer Examples", "source/dadiospice/002_Reference/Buffers/Buffer Examples.html", "11"],
    ["buffer_async_group_begin", "source/dadiospice/002_Reference/Buffers/buffer_async_group_begin.html", "11"],
    ["buffer_async_group_end", "source/dadiospice/002_Reference/Buffers/buffer_async_group_end.html", "11"],
@@ -295,15 +295,15 @@ var TITEMS = [
    ["buffer_write", "source/dadiospice/002_Reference/Buffers/buffer_write.html", "11"],
    ["Using Buffers", "source/dadiospice/002_Reference/Buffers/Using Buffers.html", "11"]
   ],
-  ["Cloud Services", "source/dadiospice/002_Reference/Cloud Services/index.html", "1",
+  ["云服务", "source/dadiospice/002_Reference/Cloud Services/index.html", "1",
    ["cloud_file_save", "source/dadiospice/002_Reference/Cloud Services/cloud_file_save.html", "11"],
    ["cloud_string_save", "source/dadiospice/002_Reference/Cloud Services/cloud_string_save.html", "11"],
    ["cloud_synchronise", "source/dadiospice/002_Reference/Cloud Services/cloud_synchronise.html", "11"]
   ],
-  ["Data Structures", "source/dadiospice/002_Reference/Data Structures/index.html", "1",
+  ["数据结构", "source/dadiospice/002_Reference/Data Structures/index.html", "1",
    ["ds_exists", "source/dadiospice/002_Reference/Data Structures/ds_exists.html", "11"],
    ["ds_set_precision", "source/dadiospice/002_Reference/Data Structures/ds_set_precision.html", "11"],
-   ["DS Grids", "source/dadiospice/002_Reference/Data Structures/DS Grids/index.html", "1",
+   ["栅格数据", "source/dadiospice/002_Reference/Data Structures/DS Grids/index.html", "1",
     ["ds_grid_add", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_add.html", "11"],
     ["ds_grid_add_disk", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_add_disk.html", "11"],
     ["ds_grid_add_grid_region", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_add_grid_region.html", "11"],
@@ -343,7 +343,7 @@ var TITEMS = [
     ["ds_grid_width", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_width.html", "11"],
     ["ds_grid_write", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_write.html", "11"]
    ],
-   ["DS Lists", "source/dadiospice/002_Reference/Data Structures/DS Lists/index.html", "1",
+   ["列表数据", "source/dadiospice/002_Reference/Data Structures/DS Lists/index.html", "1",
     ["ds_list_add", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_add.html", "11"],
     ["ds_list_clear", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_clear.html", "11"],
     ["ds_list_copy", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_copy.html", "11"],
@@ -363,7 +363,7 @@ var TITEMS = [
     ["ds_list_sort", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_sort.html", "11"],
     ["ds_list_write", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_write.html", "11"]
    ],
-   ["DS Maps", "source/dadiospice/002_Reference/Data Structures/DS Maps/index.html", "1",
+   ["配对数据", "source/dadiospice/002_Reference/Data Structures/DS Maps/index.html", "1",
     ["ds_map_add", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_add.html", "11"],
     ["ds_map_add_list", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_add_list.html", "11"],
     ["ds_map_add_map", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_add_map.html", "11"],
@@ -388,7 +388,7 @@ var TITEMS = [
     ["ds_map_size", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_size.html", "11"],
     ["ds_map_write", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_write.html", "11"]
    ],
-   ["DS Priority Queues", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/index.html", "1",
+   ["优先级序列", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/index.html", "1",
     ["ds_priority_add", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/ds_priority_add.html", "11"],
     ["ds_priority_change_priority", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/ds_priority_change_priority.html", "11"],
     ["ds_priority_clear", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/ds_priority_clear.html", "11"],
@@ -406,7 +406,7 @@ var TITEMS = [
     ["ds_priority_size", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/ds_priority_size.html", "11"],
     ["ds_priority_write", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/ds_priority_write.html", "11"]
    ],
-   ["DS Queues", "source/dadiospice/002_Reference/Data Structures/DS Queues/index.html", "1",
+   ["队列数据", "source/dadiospice/002_Reference/Data Structures/DS Queues/index.html", "1",
     ["ds_queue_clear", "source/dadiospice/002_Reference/Data Structures/DS Queues/ds_queue_clear.html", "11"],
     ["ds_queue_copy", "source/dadiospice/002_Reference/Data Structures/DS Queues/ds_queue_copy.html", "11"],
     ["ds_queue_create", "source/dadiospice/002_Reference/Data Structures/DS Queues/ds_queue_create.html", "11"],
@@ -420,7 +420,7 @@ var TITEMS = [
     ["ds_queue_tail", "source/dadiospice/002_Reference/Data Structures/DS Queues/ds_queue_tail.html", "11"],
     ["ds_queue_write", "source/dadiospice/002_Reference/Data Structures/DS Queues/ds_queue_write.html", "11"]
    ],
-   ["DS Stacks", "source/dadiospice/002_Reference/Data Structures/DS Stacks/index.html", "1",
+   ["堆栈数据", "source/dadiospice/002_Reference/Data Structures/DS Stacks/index.html", "1",
     ["ds_stack_clear", "source/dadiospice/002_Reference/Data Structures/DS Stacks/ds_stack_clear.html", "11"],
     ["ds_stack_copy", "source/dadiospice/002_Reference/Data Structures/DS Stacks/ds_stack_copy.html", "11"],
     ["ds_stack_create", "source/dadiospice/002_Reference/Data Structures/DS Stacks/ds_stack_create.html", "11"],
@@ -434,7 +434,7 @@ var TITEMS = [
     ["ds_stack_write", "source/dadiospice/002_Reference/Data Structures/DS Stacks/ds_stack_write.html", "11"]
    ]
   ],
-  ["Date and Time", "source/dadiospice/002_Reference/Date and Time/index.html", "1",
+  ["日期和时间", "source/dadiospice/002_Reference/Date and Time/index.html", "1",
    ["current_day", "source/dadiospice/002_Reference/Date and Time/current_day.html", "11"],
    ["current_hour", "source/dadiospice/002_Reference/Date and Time/current_hour.html", "11"],
    ["current_minute", "source/dadiospice/002_Reference/Date and Time/current_minute.html", "11"],
@@ -489,7 +489,7 @@ var TITEMS = [
    ["delta_time", "source/dadiospice/002_Reference/Date and Time/delta_time.html", "11"],
    ["get_timer", "source/dadiospice/002_Reference/Date and Time/get_timer.html", "11"]
   ],
-  ["Debugging", "source/dadiospice/002_Reference/Debugging/index.html", "1",
+  ["调试", "source/dadiospice/002_Reference/Debugging/index.html", "1",
    ["code_is_compiled", "source/dadiospice/002_Reference/Debugging/code_is_compiled.html", "11"],
    ["Compile Errors", "source/dadiospice/002_Reference/Debugging/Compile Errors.html", "11"],
    ["debug_mode", "source/dadiospice/002_Reference/Debugging/debug_mode.html", "11"],
@@ -504,7 +504,7 @@ var TITEMS = [
    ["show_message", "source/dadiospice/002_Reference/Debugging/show_message.html", "11"],
    ["show_question", "source/dadiospice/002_Reference/Debugging/show_question.html", "11"]
   ],
-  ["Drawing", "source/dadiospice/002_Reference/Drawing/index.html", "1",
+  ["绘制", "source/dadiospice/002_Reference/Drawing/index.html", "1",
    ["draw_enable_drawevent", "source/dadiospice/002_Reference/Drawing/draw_enable_drawevent.html", "11"],
    ["draw_texture_flush", "source/dadiospice/002_Reference/Drawing/draw_texture_flush.html", "11"],
    ["texture_get_height", "source/dadiospice/002_Reference/Drawing/texture_get_height.html", "11"],
@@ -517,7 +517,7 @@ var TITEMS = [
    ["texture_set_repeat", "source/dadiospice/002_Reference/Drawing/texture_set_repeat.html", "11"],
    ["texture_set_repeat_ext", "source/dadiospice/002_Reference/Drawing/texture_set_repeat_ext.html", "11"],
    ["texture_set_stage", "source/dadiospice/002_Reference/Drawing/texture_set_stage.html", "11"],
-   ["Colour And Blending", "source/dadiospice/002_Reference/Drawing/Colour And Blending/index.html", "1",
+   ["颜色和混合", "source/dadiospice/002_Reference/Drawing/Colour And Blending/index.html", "1",
     ["colour_get_blue", "source/dadiospice/002_Reference/Drawing/Colour And Blending/colour_get_blue.html", "11"],
     ["colour_get_green", "source/dadiospice/002_Reference/Drawing/Colour And Blending/colour_get_green.html", "11"],
     ["colour_get_hue", "source/dadiospice/002_Reference/Drawing/Colour And Blending/colour_get_hue.html", "11"],
@@ -544,7 +544,7 @@ var TITEMS = [
     ["make_colour_rgb", "source/dadiospice/002_Reference/Drawing/Colour And Blending/make_colour_rgb.html", "11"],
     ["merge_colour", "source/dadiospice/002_Reference/Drawing/Colour And Blending/merge_colour.html", "11"]
    ],
-   ["Drawing 3D", "source/dadiospice/002_Reference/Drawing/Drawing 3D/index.html", "1",
+   ["3D绘制", "source/dadiospice/002_Reference/Drawing/Drawing 3D/index.html", "1",
     ["3D Drawing", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/index.html", "1",
      ["d3d_draw_block", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/d3d_draw_block.html", "11"],
      ["d3d_draw_cone", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/d3d_draw_cone.html", "11"],
@@ -639,7 +639,7 @@ var TITEMS = [
      ["matrix_set", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Transformations/matrix_set.html", "11"]
     ]
    ],
-   ["Drawing Basic Forms", "source/dadiospice/002_Reference/Drawing/Drawing Basic Forms/index.html", "1",
+   ["绘制基本形状", "source/dadiospice/002_Reference/Drawing/Drawing Basic Forms/index.html", "1",
     ["draw_arrow", "source/dadiospice/002_Reference/Drawing/Drawing Basic Forms/draw_arrow.html", "11"],
     ["draw_button", "source/dadiospice/002_Reference/Drawing/Drawing Basic Forms/draw_button.html", "11"],
     ["draw_circle", "source/dadiospice/002_Reference/Drawing/Drawing Basic Forms/draw_circle.html", "11"],
@@ -664,7 +664,7 @@ var TITEMS = [
     ["draw_triangle", "source/dadiospice/002_Reference/Drawing/Drawing Basic Forms/draw_triangle.html", "11"],
     ["draw_triangle_colour", "source/dadiospice/002_Reference/Drawing/Drawing Basic Forms/draw_triangle_colour.html", "11"]
    ],
-   ["Drawing Primitives", "source/dadiospice/002_Reference/Drawing/Drawing Primitives/index.html", "1",
+   ["图元绘制", "source/dadiospice/002_Reference/Drawing/Drawing Primitives/index.html", "1",
     ["draw_primitive_begin", "source/dadiospice/002_Reference/Drawing/Drawing Primitives/draw_primitive_begin.html", "11"],
     ["draw_primitive_begin_texture", "source/dadiospice/002_Reference/Drawing/Drawing Primitives/draw_primitive_begin_texture.html", "11"],
     ["draw_primitive_end", "source/dadiospice/002_Reference/Drawing/Drawing Primitives/draw_primitive_end.html", "11"],
@@ -673,7 +673,7 @@ var TITEMS = [
     ["draw_vertex_texture", "source/dadiospice/002_Reference/Drawing/Drawing Primitives/draw_vertex_texture.html", "11"],
     ["draw_vertex_texture_colour", "source/dadiospice/002_Reference/Drawing/Drawing Primitives/draw_vertex_texture_colour.html", "11"]
    ],
-   ["Drawing Sprites And Backgrounds", "source/dadiospice/002_Reference/Drawing/Drawing Sprites And Backgrounds/index.html", "1",
+   ["绘制精灵和背景", "source/dadiospice/002_Reference/Drawing/Drawing Sprites And Backgrounds/index.html", "1",
     ["draw_background", "source/dadiospice/002_Reference/Drawing/Drawing Sprites And Backgrounds/draw_background.html", "11"],
     ["draw_background_ext", "source/dadiospice/002_Reference/Drawing/Drawing Sprites And Backgrounds/draw_background_ext.html", "11"],
     ["draw_background_general", "source/dadiospice/002_Reference/Drawing/Drawing Sprites And Backgrounds/draw_background_general.html", "11"],
@@ -701,7 +701,7 @@ var TITEMS = [
     ["draw_sprite_tiled", "source/dadiospice/002_Reference/Drawing/Drawing Sprites And Backgrounds/draw_sprite_tiled.html", "11"],
     ["draw_sprite_tiled_ext", "source/dadiospice/002_Reference/Drawing/Drawing Sprites And Backgrounds/draw_sprite_tiled_ext.html", "11"]
    ],
-   ["Drawing Surfaces", "source/dadiospice/002_Reference/Drawing/Drawing Surfaces/index.html", "1",
+   ["绘制表面图层", "source/dadiospice/002_Reference/Drawing/Drawing Surfaces/index.html", "1",
     ["draw_surface", "source/dadiospice/002_Reference/Drawing/Drawing Surfaces/draw_surface.html", "11"],
     ["draw_surface_ext", "source/dadiospice/002_Reference/Drawing/Drawing Surfaces/draw_surface_ext.html", "11"],
     ["draw_surface_general", "source/dadiospice/002_Reference/Drawing/Drawing Surfaces/draw_surface_general.html", "11"],
@@ -712,7 +712,7 @@ var TITEMS = [
     ["draw_surface_tiled", "source/dadiospice/002_Reference/Drawing/Drawing Surfaces/draw_surface_tiled.html", "11"],
     ["draw_surface_tiled_ext", "source/dadiospice/002_Reference/Drawing/Drawing Surfaces/draw_surface_tiled_ext.html", "11"]
    ],
-   ["Drawing Text", "source/dadiospice/002_Reference/Drawing/Drawing Text/index.html", "1",
+   ["文字绘制", "source/dadiospice/002_Reference/Drawing/Drawing Text/index.html", "1",
     ["draw_highscore", "source/dadiospice/002_Reference/Drawing/Drawing Text/draw_highscore.html", "11"],
     ["draw_set_font", "source/dadiospice/002_Reference/Drawing/Drawing Text/draw_set_font.html", "11"],
     ["draw_set_halign", "source/dadiospice/002_Reference/Drawing/Drawing Text/draw_set_halign.html", "11"],
@@ -727,7 +727,7 @@ var TITEMS = [
     ["draw_text_transformed_colour", "source/dadiospice/002_Reference/Drawing/Drawing Text/draw_text_transformed_colour.html", "11"]
    ]
   ],
-  ["File Handling", "source/dadiospice/002_Reference/File Handling/index.html", "1",
+  ["文件处理", "source/dadiospice/002_Reference/File Handling/index.html", "1",
    ["base64_decode", "source/dadiospice/002_Reference/File Handling/base64_decode.html", "11"],
    ["base64_encode", "source/dadiospice/002_Reference/File Handling/base64_encode.html", "11"],
    ["directory_create", "source/dadiospice/002_Reference/File Handling/directory_create.html", "11"],
@@ -745,7 +745,7 @@ var TITEMS = [
    ["temp_directory", "source/dadiospice/002_Reference/File Handling/temp_directory.html", "11"],
    ["working_directory", "source/dadiospice/002_Reference/File Handling/working_directory.html", "11"],
    ["zip_unzip", "source/dadiospice/002_Reference/File Handling/zip_unzip.html", "11"],
-   ["Binary Files", "source/dadiospice/002_Reference/File Handling/Binary Files/index.html", "1",
+   ["二进制文件", "source/dadiospice/002_Reference/File Handling/Binary Files/index.html", "1",
     ["file_bin_close", "source/dadiospice/002_Reference/File Handling/Binary Files/file_bin_close.html", "11"],
     ["file_bin_open", "source/dadiospice/002_Reference/File Handling/Binary Files/file_bin_open.html", "11"],
     ["file_bin_position", "source/dadiospice/002_Reference/File Handling/Binary Files/file_bin_position.html", "11"],
@@ -755,7 +755,7 @@ var TITEMS = [
     ["file_bin_size", "source/dadiospice/002_Reference/File Handling/Binary Files/file_bin_size.html", "11"],
     ["file_bin_write_byte", "source/dadiospice/002_Reference/File Handling/Binary Files/file_bin_write_byte.html", "11"]
    ],
-   ["File System", "source/dadiospice/002_Reference/File Handling/File System/index.html", "1",
+   ["文件系统", "source/dadiospice/002_Reference/File Handling/File System/index.html", "1",
     ["file_attributes", "source/dadiospice/002_Reference/File Handling/File System/file_attributes.html", "11"],
     ["file_copy", "source/dadiospice/002_Reference/File Handling/File System/file_copy.html", "11"],
     ["file_delete", "source/dadiospice/002_Reference/File Handling/File System/file_delete.html", "11"],
@@ -775,7 +775,7 @@ var TITEMS = [
     ["get_save_filename", "source/dadiospice/002_Reference/File Handling/File System/get_save_filename.html", "11"],
     ["get_save_filename_ext", "source/dadiospice/002_Reference/File Handling/File System/get_save_filename_ext.html", "11"]
    ],
-   ["Files", "source/dadiospice/002_Reference/File Handling/Files/index.html", "1",
+   ["文件", "source/dadiospice/002_Reference/File Handling/Files/index.html", "1",
     ["file_text_close", "source/dadiospice/002_Reference/File Handling/Files/file_text_close.html", "11"],
     ["file_text_eof", "source/dadiospice/002_Reference/File Handling/Files/file_text_eof.html", "11"],
     ["file_text_eoln", "source/dadiospice/002_Reference/File Handling/Files/file_text_eoln.html", "11"],
@@ -790,7 +790,7 @@ var TITEMS = [
     ["file_text_write_string", "source/dadiospice/002_Reference/File Handling/Files/file_text_write_string.html", "11"],
     ["file_text_writeln", "source/dadiospice/002_Reference/File Handling/Files/file_text_writeln.html", "11"]
    ],
-   ["Ini files", "source/dadiospice/002_Reference/File Handling/Ini files/index.html", "1",
+   ["Ini文件", "source/dadiospice/002_Reference/File Handling/Ini files/index.html", "1",
     ["ini_close", "source/dadiospice/002_Reference/File Handling/Ini files/ini_close.html", "11"],
     ["ini_key_delete", "source/dadiospice/002_Reference/File Handling/Ini files/ini_key_delete.html", "11"],
     ["ini_key_exists", "source/dadiospice/002_Reference/File Handling/Ini files/ini_key_exists.html", "11"],
@@ -804,10 +804,10 @@ var TITEMS = [
     ["ini_write_string", "source/dadiospice/002_Reference/File Handling/Ini files/ini_write_string.html", "11"]
    ]
   ],
-  ["Game Assets", "source/dadiospice/002_Reference/Game Assets/index.html", "1",
+  ["游戏资源", "source/dadiospice/002_Reference/Game Assets/index.html", "1",
    ["asset_get_index", "source/dadiospice/002_Reference/Game Assets/asset_get_index.html", "11"],
    ["asset_get_type", "source/dadiospice/002_Reference/Game Assets/asset_get_type.html", "11"],
-   ["Backgrounds", "source/dadiospice/002_Reference/Game Assets/Backgrounds/index.html", "1",
+   ["背景", "source/dadiospice/002_Reference/Game Assets/Backgrounds/index.html", "1",
     ["background_index", "source/dadiospice/002_Reference/Game Assets/Backgrounds/background_index.html", "11"],
     ["background_add", "source/dadiospice/002_Reference/Game Assets/Backgrounds/background_add.html", "11"],
     ["background_alpha", "source/dadiospice/002_Reference/Game Assets/Backgrounds/background_alpha.html", "11"],
@@ -841,7 +841,7 @@ var TITEMS = [
     ["background_xscale", "source/dadiospice/002_Reference/Game Assets/Backgrounds/background_xscale.html", "11"],
     ["background_y", "source/dadiospice/002_Reference/Game Assets/Backgrounds/background_y.html", "11"],
     ["background_yscale", "source/dadiospice/002_Reference/Game Assets/Backgrounds/background_yscale.html", "11"],
-    ["Background Tiles", "source/dadiospice/002_Reference/Game Assets/Backgrounds/Background Tiles/index.html", "1",
+    ["背景图块", "source/dadiospice/002_Reference/Game Assets/Backgrounds/Background Tiles/index.html", "1",
      ["tile_add", "source/dadiospice/002_Reference/Game Assets/Backgrounds/Background Tiles/tile_add.html", "11"],
      ["tile_delete", "source/dadiospice/002_Reference/Game Assets/Backgrounds/Background Tiles/tile_delete.html", "11"],
      ["tile_exists", "source/dadiospice/002_Reference/Game Assets/Backgrounds/Background Tiles/tile_exists.html", "11"],
@@ -879,7 +879,7 @@ var TITEMS = [
      ["tile_set_visible", "source/dadiospice/002_Reference/Game Assets/Backgrounds/Background Tiles/tile_set_visible.html", "11"]
     ]
    ],
-   ["Fonts", "source/dadiospice/002_Reference/Game Assets/Fonts/index.html", "1",
+   ["字体", "source/dadiospice/002_Reference/Game Assets/Fonts/index.html", "1",
     ["font_add", "source/dadiospice/002_Reference/Game Assets/Fonts/font_add.html", "11"],
     ["font_add_sprite", "source/dadiospice/002_Reference/Game Assets/Fonts/font_add_sprite.html", "11"],
     ["font_add_sprite_ext", "source/dadiospice/002_Reference/Game Assets/Fonts/font_add_sprite_ext.html", "11"],
@@ -901,7 +901,7 @@ var TITEMS = [
     ["font_tables", "source/dadiospice/002_Reference/Game Assets/Fonts/font_tables.html", "11"],
     ["font_utf8_table", "source/dadiospice/002_Reference/Game Assets/Fonts/font_utf8_table.html", "11"]
    ],
-   ["Sounds", "source/dadiospice/002_Reference/Game Assets/Sounds/index.html", "1",
+   ["声音", "source/dadiospice/002_Reference/Game Assets/Sounds/index.html", "1",
     ["Audio Buffers", "source/dadiospice/002_Reference/Game Assets/Sounds/Audio Buffers.html", "11"],
     ["Audio Emitters", "source/dadiospice/002_Reference/Game Assets/Sounds/Audio Emitters.html", "11"],
     ["Audio Groups", "source/dadiospice/002_Reference/Game Assets/Sounds/Audio Groups.html", "11"],
@@ -999,7 +999,7 @@ var TITEMS = [
     ["audio_sync_group_debug", "source/dadiospice/002_Reference/Game Assets/Sounds/audio_sync_group_debug.html", "11"],
     ["audio_sync_group_get_track_pos", "source/dadiospice/002_Reference/Game Assets/Sounds/audio_sync_group_get_track_pos.html", "11"],
     ["audio_system", "source/dadiospice/002_Reference/Game Assets/Sounds/audio_system.html", "11"],
-    ["Legacy Sound", "source/dadiospice/002_Reference/Game Assets/Sounds/Legacy Sound/index.html", "1",
+    ["传统声音引擎", "source/dadiospice/002_Reference/Game Assets/Sounds/Legacy Sound/index.html", "1",
      ["sound_add", "source/dadiospice/002_Reference/Game Assets/Sounds/Legacy Sound/sound_add.html", "11"],
      ["sound_delete", "source/dadiospice/002_Reference/Game Assets/Sounds/Legacy Sound/sound_delete.html", "11"],
      ["sound_exists", "source/dadiospice/002_Reference/Game Assets/Sounds/Legacy Sound/sound_exists.html", "11"],
@@ -1015,7 +1015,7 @@ var TITEMS = [
      ["sound_volume", "source/dadiospice/002_Reference/Game Assets/Sounds/Legacy Sound/sound_volume.html", "11"]
     ]
    ],
-   ["Sprites", "source/dadiospice/002_Reference/Game Assets/Sprites/index.html", "1",
+   ["精灵", "source/dadiospice/002_Reference/Game Assets/Sprites/index.html", "1",
     ["sprite_add", "source/dadiospice/002_Reference/Game Assets/Sprites/sprite_add.html", "11"],
     ["sprite_add_from_surface", "source/dadiospice/002_Reference/Game Assets/Sprites/sprite_add_from_surface.html", "11"],
     ["sprite_assign", "source/dadiospice/002_Reference/Game Assets/Sprites/sprite_assign.html", "11"],
@@ -1045,7 +1045,7 @@ var TITEMS = [
     ["sprite_set_cache_size", "source/dadiospice/002_Reference/Game Assets/Sprites/sprite_set_cache_size.html", "11"],
     ["sprite_set_cache_size_ext", "source/dadiospice/002_Reference/Game Assets/Sprites/sprite_set_cache_size_ext.html", "11"],
     ["sprite_set_offset", "source/dadiospice/002_Reference/Game Assets/Sprites/sprite_set_offset.html", "11"],
-    ["Skeletal Animations", "source/dadiospice/002_Reference/Game Assets/Sprites/Skeletal Animations/index.html", "1",
+    ["骨骼动画", "source/dadiospice/002_Reference/Game Assets/Sprites/Skeletal Animations/index.html", "1",
      ["skeleton_animation_clear", "source/dadiospice/002_Reference/Game Assets/Sprites/Skeletal Animations/skeleton_animation_clear.html", "11"],
      ["skeleton_animation_get", "source/dadiospice/002_Reference/Game Assets/Sprites/Skeletal Animations/skeleton_animation_get.html", "11"],
      ["skeleton_animation_get_duration", "source/dadiospice/002_Reference/Game Assets/Sprites/Skeletal Animations/skeleton_animation_get_duration.html", "11"],
@@ -1086,7 +1086,7 @@ var TITEMS = [
    ["url_open_full", "source/dadiospice/002_Reference/HTML5/url_open_full.html", "11"],
    ["webgl_enabled", "source/dadiospice/002_Reference/HTML5/webgl_enabled.html", "11"]
   ],
-  ["In App Purchases", "source/dadiospice/002_Reference/In App Purchases/index.html", "1",
+  ["应用内购", "source/dadiospice/002_Reference/In App Purchases/index.html", "1",
    ["iap_acquire", "source/dadiospice/002_Reference/In App Purchases/iap_acquire.html", "11"],
    ["iap_activate", "source/dadiospice/002_Reference/In App Purchases/iap_activate.html", "11"],
    ["iap_consume", "source/dadiospice/002_Reference/In App Purchases/iap_consume.html", "11"],
@@ -1103,7 +1103,7 @@ var TITEMS = [
    ["iap_status", "source/dadiospice/002_Reference/In App Purchases/iap_status.html", "11"],
    ["iap_store_status", "source/dadiospice/002_Reference/In App Purchases/iap_store_status.html", "11"]
   ],
-  ["Maths", "source/dadiospice/002_Reference/Maths/index.html", "1",
+  ["数学", "source/dadiospice/002_Reference/Maths/index.html", "1",
    ["Real valued functions", "source/dadiospice/002_Reference/Maths/Real valued functions/index.html", "1",
     ["abs", "source/dadiospice/002_Reference/Maths/Real valued functions/abs.html", "11"],
     ["arccos", "source/dadiospice/002_Reference/Maths/Real valued functions/arccos.html", "11"],
@@ -1153,7 +1153,7 @@ var TITEMS = [
     ["sqrt", "source/dadiospice/002_Reference/Maths/Real valued functions/sqrt.html", "11"],
     ["tan", "source/dadiospice/002_Reference/Maths/Real valued functions/tan.html", "11"]
    ],
-   ["Vector Functions", "source/dadiospice/002_Reference/Maths/Vector Functions/index.html", "1",
+   ["矢量函数", "source/dadiospice/002_Reference/Maths/Vector Functions/index.html", "1",
     ["angle_difference", "source/dadiospice/002_Reference/Maths/Vector Functions/angle_difference.html", "11"],
     ["dot_product", "source/dadiospice/002_Reference/Maths/Vector Functions/dot_product.html", "11"],
     ["dot_product_3d", "source/dadiospice/002_Reference/Maths/Vector Functions/dot_product_3d.html", "11"],
@@ -1166,7 +1166,7 @@ var TITEMS = [
     ["vectors", "source/dadiospice/002_Reference/Maths/Vector Functions/vectors.html", "11"]
    ]
   ],
-  ["Miscellaneous", "source/dadiospice/002_Reference/Miscellaneous/index.html", "1",
+  ["杂项函数", "source/dadiospice/002_Reference/Miscellaneous/index.html", "1",
    ["cursor_sprite", "source/dadiospice/002_Reference/Miscellaneous/cursor_sprite.html", "11"],
    ["environment_get_variable", "source/dadiospice/002_Reference/Miscellaneous/environment_get_variable.html", "11"],
    ["external_call", "source/dadiospice/002_Reference/Miscellaneous/external_call.html", "11"],
@@ -1191,8 +1191,8 @@ var TITEMS = [
    ["script_exists", "source/dadiospice/002_Reference/Miscellaneous/script_exists.html", "11"],
    ["script_get_name", "source/dadiospice/002_Reference/Miscellaneous/script_get_name.html", "11"]
   ],
-  ["Mouse, Keyboard and Other Controls", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/index.html", "1",
-   ["Device Input", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Device Input/index.html", "1",
+  ["鼠标、键盘和其它操作控制", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/index.html", "1",
+   ["设备输入", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Device Input/index.html", "1",
     ["device_get_tilt_x", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Device Input/device_get_tilt_x.html", "11"],
     ["device_get_tilt_y", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Device Input/device_get_tilt_y.html", "11"],
     ["device_get_tilt_z", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Device Input/device_get_tilt_z.html", "11"],
@@ -1208,7 +1208,7 @@ var TITEMS = [
     ["device_mouse_y", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Device Input/device_mouse_y.html", "11"],
     ["device_mouse_y_to_gui", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Device Input/device_mouse_y_to_gui.html", "11"]
    ],
-   ["GamePad Input", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/GamePad Input/index.html", "1",
+   ["游戏手柄输入", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/GamePad Input/index.html", "1",
     ["gamepad_axis_count", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/GamePad Input/gamepad_axis_count.html", "11"],
     ["gamepad_axis_value", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/GamePad Input/gamepad_axis_value.html", "11"],
     ["gamepad_button_check", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/GamePad Input/gamepad_button_check.html", "11"],
@@ -1226,11 +1226,11 @@ var TITEMS = [
     ["gamepad_set_colour", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/GamePad Input/gamepad_set_colour.html", "11"],
     ["gamepad_set_vibration", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/GamePad Input/gamepad_set_vibration.html", "11"]
    ],
-   ["Immersion Haptics", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Immersion Haptics/index.html", "1",
+   ["触控", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Immersion Haptics/index.html", "1",
     ["immersion_play_effect", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Immersion Haptics/immersion_play_effect.html", "11"],
     ["immersion_stop", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Immersion Haptics/immersion_stop.html", "11"]
    ],
-   ["Joystick Input", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Joystick Input/index.html", "1",
+   ["游戏摇杆输入", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Joystick Input/index.html", "1",
     ["joystick_axes", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Joystick Input/joystick_axes.html", "11"],
     ["joystick_buttons", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Joystick Input/joystick_buttons.html", "11"],
     ["joystick_check_button", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Joystick Input/joystick_check_button.html", "11"],
@@ -1246,7 +1246,7 @@ var TITEMS = [
     ["joystick_ypos", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Joystick Input/joystick_ypos.html", "11"],
     ["joystick_zpos", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Joystick Input/joystick_zpos.html", "11"]
    ],
-   ["Keyboard Input", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Keyboard Input/index.html", "1",
+   ["键盘输入", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Keyboard Input/index.html", "1",
     ["io_clear", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Keyboard Input/io_clear.html", "11"],
     ["keyboard_check", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Keyboard Input/keyboard_check.html", "11"],
     ["keyboard_check_direct", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Keyboard Input/keyboard_check_direct.html", "11"],
@@ -1265,7 +1265,7 @@ var TITEMS = [
     ["keyboard_string", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Keyboard Input/keyboard_string.html", "11"],
     ["keyboard_unset_map", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Keyboard Input/keyboard_unset_map.html", "11"]
    ],
-   ["Mouse Input", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Mouse Input/index.html", "1",
+   ["鼠标输入", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Mouse Input/index.html", "1",
     ["mouse_button", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Mouse Input/mouse_button.html", "11"],
     ["mouse_check_button", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Mouse Input/mouse_check_button.html", "11"],
     ["mouse_check_button_pressed", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Mouse Input/mouse_check_button_pressed.html", "11"],
@@ -1277,14 +1277,14 @@ var TITEMS = [
     ["mouse_x", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Mouse Input/mouse_x.html", "11"],
     ["mouse_y", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Mouse Input/mouse_y.html", "11"]
    ],
-   ["Virtual Keys", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Virtual Keys/index.html", "1",
+   ["虚拟键", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Virtual Keys/index.html", "1",
     ["virtual_key_add", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Virtual Keys/virtual_key_add.html", "11"],
     ["virtual_key_delete", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Virtual Keys/virtual_key_delete.html", "11"],
     ["virtual_key_hide", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Virtual Keys/virtual_key_hide.html", "11"],
     ["virtual_key_show", "source/dadiospice/002_Reference/Mouse, Keyboard and Other Controls/Virtual Keys/virtual_key_show.html", "11"]
    ]
   ],
-  ["Movement and Collisions", "source/dadiospice/002_Reference/Movement and Collisions/index.html", "1",
+  ["移动和碰撞", "source/dadiospice/002_Reference/Movement and Collisions/index.html", "1",
    ["Collisions", "source/dadiospice/002_Reference/Movement and Collisions/Collisions/index.html", "1",
     ["collision_circle", "source/dadiospice/002_Reference/Movement and Collisions/Collisions/collision_circle.html", "11"],
     ["collision_ellipse", "source/dadiospice/002_Reference/Movement and Collisions/Collisions/collision_ellipse.html", "11"],
@@ -1305,7 +1305,7 @@ var TITEMS = [
     ["rectangle_in_rectangle", "source/dadiospice/002_Reference/Movement and Collisions/Collisions/rectangle_in_rectangle.html", "11"],
     ["rectangle_in_triangle", "source/dadiospice/002_Reference/Movement and Collisions/Collisions/rectangle_in_triangle.html", "11"]
    ],
-   ["Motion Planning", "source/dadiospice/002_Reference/Movement and Collisions/Motion Planning/index.html", "1",
+   ["运动设计", "source/dadiospice/002_Reference/Movement and Collisions/Motion Planning/index.html", "1",
     ["mp_grid_add_cell", "source/dadiospice/002_Reference/Movement and Collisions/Motion Planning/mp_grid_add_cell.html", "11"],
     ["mp_grid_add_instances", "source/dadiospice/002_Reference/Movement and Collisions/Motion Planning/mp_grid_add_instances.html", "11"],
     ["mp_grid_add_rectangle", "source/dadiospice/002_Reference/Movement and Collisions/Motion Planning/mp_grid_add_rectangle.html", "11"],
@@ -1328,7 +1328,7 @@ var TITEMS = [
     ["mp_potential_step", "source/dadiospice/002_Reference/Movement and Collisions/Motion Planning/mp_potential_step.html", "11"],
     ["mp_potential_step_object", "source/dadiospice/002_Reference/Movement and Collisions/Motion Planning/mp_potential_step_object.html", "11"]
    ],
-   ["Movement", "source/dadiospice/002_Reference/Movement and Collisions/Movement/index.html", "1",
+   ["移动", "source/dadiospice/002_Reference/Movement and Collisions/Movement/index.html", "1",
     ["direction", "source/dadiospice/002_Reference/Movement and Collisions/Movement/direction.html", "11"],
     ["distance_to_object", "source/dadiospice/002_Reference/Movement and Collisions/Movement/distance_to_object.html", "11"],
     ["distance_to_point", "source/dadiospice/002_Reference/Movement and Collisions/Movement/distance_to_point.html", "11"],
@@ -1359,7 +1359,7 @@ var TITEMS = [
     ["ystart", "source/dadiospice/002_Reference/Movement and Collisions/Movement/ystart.html", "11"]
    ]
   ],
-  ["Networking", "source/dadiospice/002_Reference/Networking/index.html", "1",
+  ["联网", "source/dadiospice/002_Reference/Networking/index.html", "1",
    ["network_connect", "source/dadiospice/002_Reference/Networking/network_connect.html", "11"],
    ["network_connect_raw", "source/dadiospice/002_Reference/Networking/network_connect_raw.html", "11"],
    ["network_create_server", "source/dadiospice/002_Reference/Networking/network_create_server.html", "11"],
@@ -1375,8 +1375,8 @@ var TITEMS = [
    ["network_set_config", "source/dadiospice/002_Reference/Networking/network_set_config.html", "11"],
    ["network_set_timeout", "source/dadiospice/002_Reference/Networking/network_set_timeout.html", "11"]
   ],
-  ["Objects and Instances", "source/dadiospice/002_Reference/Objects and Instances/index.html", "1",
-   ["Instances", "source/dadiospice/002_Reference/Objects and Instances/Instances/index.html", "1",
+  ["物体和实例", "source/dadiospice/002_Reference/Objects and Instances/index.html", "1",
+   ["实例", "source/dadiospice/002_Reference/Objects and Instances/Instances/index.html", "1",
     ["Deactivating Instances", "source/dadiospice/002_Reference/Objects and Instances/Instances/Deactivating Instances/index.html", "1",
      ["instance_activate_all", "source/dadiospice/002_Reference/Objects and Instances/Instances/Deactivating Instances/instance_activate_all.html", "11"],
      ["instance_activate_object", "source/dadiospice/002_Reference/Objects and Instances/Instances/Deactivating Instances/instance_activate_object.html", "11"],
@@ -1385,7 +1385,7 @@ var TITEMS = [
      ["instance_deactivate_object", "source/dadiospice/002_Reference/Objects and Instances/Instances/Deactivating Instances/instance_deactivate_object.html", "11"],
      ["instance_deactivate_region", "source/dadiospice/002_Reference/Objects and Instances/Instances/Deactivating Instances/instance_deactivate_region.html", "11"]
     ],
-    ["Instance Functions", "source/dadiospice/002_Reference/Objects and Instances/Instances/Instance Functions/index.html", "1",
+    ["实例函数", "source/dadiospice/002_Reference/Objects and Instances/Instances/Instance Functions/index.html", "1",
      ["instance_change", "source/dadiospice/002_Reference/Objects and Instances/Instances/Instance Functions/instance_change.html", "11"],
      ["instance_copy", "source/dadiospice/002_Reference/Objects and Instances/Instances/Instance Functions/instance_copy.html", "11"],
      ["instance_count", "source/dadiospice/002_Reference/Objects and Instances/Instances/Instance Functions/instance_count.html", "11"],
@@ -1400,7 +1400,7 @@ var TITEMS = [
      ["instance_place", "source/dadiospice/002_Reference/Objects and Instances/Instances/Instance Functions/instance_place.html", "11"],
      ["instance_position", "source/dadiospice/002_Reference/Objects and Instances/Instances/Instance Functions/instance_position.html", "11"]
     ],
-    ["Instance Properties", "source/dadiospice/002_Reference/Objects and Instances/Instances/Instance Properties/index.html", "1",
+    ["实例属性", "source/dadiospice/002_Reference/Objects and Instances/Instances/Instance Properties/index.html", "1",
      ["alarm", "source/dadiospice/002_Reference/Objects and Instances/Instances/Instance Properties/alarm.html", "11"],
      ["bbox_bottom", "source/dadiospice/002_Reference/Objects and Instances/Instances/Instance Properties/bbox_bottom.html", "11"],
      ["bbox_left", "source/dadiospice/002_Reference/Objects and Instances/Instances/Instance Properties/bbox_left.html", "11"],
@@ -1428,7 +1428,7 @@ var TITEMS = [
      ["visible", "source/dadiospice/002_Reference/Objects and Instances/Instances/Instance Properties/visible.html", "11"]
     ]
    ],
-   ["Objects", "source/dadiospice/002_Reference/Objects and Instances/Objects/index.html", "1",
+   ["物体", "source/dadiospice/002_Reference/Objects and Instances/Objects/index.html", "1",
     ["object_exists", "source/dadiospice/002_Reference/Objects and Instances/Objects/object_exists.html", "11"],
     ["object_get_depth", "source/dadiospice/002_Reference/Objects and Instances/Objects/object_get_depth.html", "11"],
     ["object_get_mask", "source/dadiospice/002_Reference/Objects and Instances/Objects/object_get_mask.html", "11"],
@@ -1458,7 +1458,7 @@ var TITEMS = [
     ]
    ]
   ],
-  ["Operating System", "source/dadiospice/002_Reference/Operating System/index.html", "1",
+  ["操作系统", "source/dadiospice/002_Reference/Operating System/index.html", "1",
    ["os_browser", "source/dadiospice/002_Reference/Operating System/os_browser.html", "11"],
    ["os_device", "source/dadiospice/002_Reference/Operating System/os_device.html", "11"],
    ["os_get_config", "source/dadiospice/002_Reference/Operating System/os_get_config.html", "11"],
@@ -1472,7 +1472,7 @@ var TITEMS = [
    ["os_type", "source/dadiospice/002_Reference/Operating System/os_type.html", "11"],
    ["os_version", "source/dadiospice/002_Reference/Operating System/os_version.html", "11"]
   ],
-  ["Particles", "source/dadiospice/002_Reference/Particles/index.html", "1",
+  ["粒子", "source/dadiospice/002_Reference/Particles/index.html", "1",
    ["Particle Emitters", "source/dadiospice/002_Reference/Particles/Particle Emitters/index.html", "1",
     ["part_emitter_burst", "source/dadiospice/002_Reference/Particles/Particle Emitters/part_emitter_burst.html", "11"],
     ["part_emitter_clear", "source/dadiospice/002_Reference/Particles/Particle Emitters/part_emitter_clear.html", "11"],
@@ -1483,7 +1483,7 @@ var TITEMS = [
     ["part_emitter_region", "source/dadiospice/002_Reference/Particles/Particle Emitters/part_emitter_region.html", "11"],
     ["part_emitter_stream", "source/dadiospice/002_Reference/Particles/Particle Emitters/part_emitter_stream.html", "11"]
    ],
-   ["Particle Systems", "source/dadiospice/002_Reference/Particles/Particle Systems/index.html", "1",
+   ["粒子系统", "source/dadiospice/002_Reference/Particles/Particle Systems/index.html", "1",
     ["part_particles_clear", "source/dadiospice/002_Reference/Particles/Particle Systems/part_particles_clear.html", "11"],
     ["part_particles_count", "source/dadiospice/002_Reference/Particles/Particle Systems/part_particles_count.html", "11"],
     ["part_particles_create", "source/dadiospice/002_Reference/Particles/Particle Systems/part_particles_create.html", "11"],
@@ -1500,7 +1500,7 @@ var TITEMS = [
     ["part_system_position", "source/dadiospice/002_Reference/Particles/Particle Systems/part_system_position.html", "11"],
     ["part_system_update", "source/dadiospice/002_Reference/Particles/Particle Systems/part_system_update.html", "11"]
    ],
-   ["Particle Types", "source/dadiospice/002_Reference/Particles/Particle Types/index.html", "1",
+   ["粒子类型", "source/dadiospice/002_Reference/Particles/Particle Types/index.html", "1",
     ["part_type_alpha1", "source/dadiospice/002_Reference/Particles/Particle Types/part_type_alpha1.html", "11"],
     ["part_type_alpha2", "source/dadiospice/002_Reference/Particles/Particle Types/part_type_alpha2.html", "11"],
     ["part_type_alpha3", "source/dadiospice/002_Reference/Particles/Particle Types/part_type_alpha3.html", "11"],
@@ -1527,7 +1527,7 @@ var TITEMS = [
     ["part_type_sprite", "source/dadiospice/002_Reference/Particles/Particle Types/part_type_sprite.html", "11"],
     ["part_type_step", "source/dadiospice/002_Reference/Particles/Particle Types/part_type_step.html", "11"]
    ],
-   ["Simple Effects", "source/dadiospice/002_Reference/Particles/Simple Effects/index.html", "1",
+   ["简单特效", "source/dadiospice/002_Reference/Particles/Simple Effects/index.html", "1",
     ["ef_cloud", "source/dadiospice/002_Reference/Particles/Simple Effects/ef_cloud.html", "11"],
     ["ef_ellipse", "source/dadiospice/002_Reference/Particles/Simple Effects/ef_ellipse.html", "11"],
     ["ef_explosion", "source/dadiospice/002_Reference/Particles/Simple Effects/ef_explosion.html", "11"],
@@ -1545,7 +1545,7 @@ var TITEMS = [
     ["effect_create_below", "source/dadiospice/002_Reference/Particles/Simple Effects/effect_create_below.html", "11"]
    ]
   ],
-  ["Paths", "source/dadiospice/002_Reference/Paths/index.html", "1",
+  ["路径", "source/dadiospice/002_Reference/Paths/index.html", "1",
    ["path_index", "source/dadiospice/002_Reference/Paths/path_index.html", "11"],
    ["path_end", "source/dadiospice/002_Reference/Paths/path_end.html", "11"],
    ["path_endaction", "source/dadiospice/002_Reference/Paths/path_endaction.html", "11"],
@@ -1555,7 +1555,7 @@ var TITEMS = [
    ["path_scale", "source/dadiospice/002_Reference/Paths/path_scale.html", "11"],
    ["path_speed", "source/dadiospice/002_Reference/Paths/path_speed.html", "11"],
    ["path_start", "source/dadiospice/002_Reference/Paths/path_start.html", "11"],
-   ["Changing Paths", "source/dadiospice/002_Reference/Paths/Changing Paths/index.html", "1",
+   ["改变路径", "source/dadiospice/002_Reference/Paths/Changing Paths/index.html", "1",
     ["path_add", "source/dadiospice/002_Reference/Paths/Changing Paths/path_add.html", "11"],
     ["path_add_point", "source/dadiospice/002_Reference/Paths/Changing Paths/path_add_point.html", "11"],
     ["path_append", "source/dadiospice/002_Reference/Paths/Changing Paths/path_append.html", "11"],
@@ -1576,7 +1576,7 @@ var TITEMS = [
     ["path_set_precision", "source/dadiospice/002_Reference/Paths/Changing Paths/path_set_precision.html", "11"],
     ["path_shift", "source/dadiospice/002_Reference/Paths/Changing Paths/path_shift.html", "11"]
    ],
-   ["Path Information", "source/dadiospice/002_Reference/Paths/Path Information/index.html", "1",
+   ["路径信息", "source/dadiospice/002_Reference/Paths/Path Information/index.html", "1",
     ["path_exists", "source/dadiospice/002_Reference/Paths/Path Information/path_exists.html", "11"],
     ["path_get_closed", "source/dadiospice/002_Reference/Paths/Path Information/path_get_closed.html", "11"],
     ["path_get_kind", "source/dadiospice/002_Reference/Paths/Path Information/path_get_kind.html", "11"],
@@ -1592,7 +1592,7 @@ var TITEMS = [
     ["path_get_y", "source/dadiospice/002_Reference/Paths/Path Information/path_get_y.html", "11"]
    ]
   ],
-  ["Physics", "source/dadiospice/002_Reference/Physics/index.html", "1",
+  ["物理", "source/dadiospice/002_Reference/Physics/index.html", "1",
    ["physics_mass_properties", "source/dadiospice/002_Reference/Physics/physics_mass_properties.html", "11"],
    ["physics_test_overlap", "source/dadiospice/002_Reference/Physics/physics_test_overlap.html", "11"],
    ["Fixtures", "source/dadiospice/002_Reference/Physics/Fixtures/index.html", "1",
@@ -1732,13 +1732,13 @@ var TITEMS = [
     ["physics_world_update_speed", "source/dadiospice/002_Reference/Physics/The Physics World/physics_world_update_speed.html", "11"]
    ]
   ],
-  ["Push Notifications", "source/dadiospice/002_Reference/Push Notifications/index.html", "1",
+  ["消息推送", "source/dadiospice/002_Reference/Push Notifications/index.html", "1",
    ["push_cancel_local_notification", "source/dadiospice/002_Reference/Push Notifications/push_cancel_local_notification.html", "11"],
    ["push_get_first_local_notification", "source/dadiospice/002_Reference/Push Notifications/push_get_first_local_notification.html", "11"],
    ["push_get_next_local_notification", "source/dadiospice/002_Reference/Push Notifications/push_get_next_local_notification.html", "11"],
    ["push_local_notification", "source/dadiospice/002_Reference/Push Notifications/push_local_notification.html", "11"]
   ],
-  ["Rooms", "source/dadiospice/002_Reference/Rooms/index.html", "1",
+  ["房间", "source/dadiospice/002_Reference/Rooms/index.html", "1",
    ["room", "source/dadiospice/002_Reference/Rooms/room.html", "11"],
    ["room_add", "source/dadiospice/002_Reference/Rooms/room_add.html", "11"],
    ["room_assign", "source/dadiospice/002_Reference/Rooms/room_assign.html", "11"],
@@ -1771,7 +1771,7 @@ var TITEMS = [
    ["room_tile_clear", "source/dadiospice/002_Reference/Rooms/room_tile_clear.html", "11"],
    ["room_width", "source/dadiospice/002_Reference/Rooms/room_width.html", "11"]
   ],
-  ["Shaders", "source/dadiospice/002_Reference/Shaders/index.html", "1",
+  ["着色器", "source/dadiospice/002_Reference/Shaders/index.html", "1",
    ["shader_enable_corner_id", "source/dadiospice/002_Reference/Shaders/shader_enable_corner_id.html", "11"],
    ["shader_get_sampler_index", "source/dadiospice/002_Reference/Shaders/shader_get_sampler_index.html", "11"],
    ["shader_get_uniform", "source/dadiospice/002_Reference/Shaders/shader_get_uniform.html", "11"],
@@ -1821,7 +1821,7 @@ var TITEMS = [
     ["vertex_format_end", "source/dadiospice/002_Reference/Shaders/Vertex Formats/vertex_format_end.html", "11"]
    ]
   ],
-  ["Social Gaming", "source/dadiospice/002_Reference/Social Gaming/index.html", "1",
+  ["社会化模块", "source/dadiospice/002_Reference/Social Gaming/index.html", "1",
    ["shop_leave_rating", "source/dadiospice/002_Reference/Social Gaming/shop_leave_rating.html", "11"],
    ["Achievements and Leaderboards", "source/dadiospice/002_Reference/Social Gaming/Achievements and Leaderboards/index.html", "1",
     ["achievement_available", "source/dadiospice/002_Reference/Social Gaming/Achievements and Leaderboards/achievement_available.html", "11"],
@@ -1945,7 +1945,7 @@ var TITEMS = [
     ["steam_ugc_unsubscribe_item", "source/dadiospice/002_Reference/Steam API/User Generated Content/steam_ugc_unsubscribe_item.html", "11"]
    ]
   ],
-  ["Strings", "source/dadiospice/002_Reference/Strings/index.html", "1",
+  ["字符串", "source/dadiospice/002_Reference/Strings/index.html", "1",
    ["ansi_char", "source/dadiospice/002_Reference/Strings/ansi_char.html", "11"],
    ["chr", "source/dadiospice/002_Reference/Strings/chr.html", "11"],
    ["clipboard_get_text", "source/dadiospice/002_Reference/Strings/clipboard_get_text.html", "11"],
@@ -2003,7 +2003,7 @@ var TITEMS = [
    ["surface_set_target_ext", "source/dadiospice/002_Reference/Surfaces/surface_set_target_ext.html", "11"],
    ["The Application Surface", "source/dadiospice/002_Reference/Surfaces/The Application Surface.html", "11"]
   ],
-  ["Timelines", "source/dadiospice/002_Reference/Timelines/index.html", "1",
+  ["时间轴", "source/dadiospice/002_Reference/Timelines/index.html", "1",
    ["timeline_index", "source/dadiospice/002_Reference/Timelines/timeline_index.html", "11"],
    ["timeline_add", "source/dadiospice/002_Reference/Timelines/timeline_add.html", "11"],
    ["timeline_clear", "source/dadiospice/002_Reference/Timelines/timeline_clear.html", "11"],
@@ -2019,7 +2019,7 @@ var TITEMS = [
    ["timeline_size", "source/dadiospice/002_Reference/Timelines/timeline_size.html", "11"],
    ["timeline_speed", "source/dadiospice/002_Reference/Timelines/timeline_speed.html", "11"]
   ],
-  ["Windows And Views", "source/dadiospice/002_Reference/Windows And Views/index.html", "1",
+  ["窗口和视野", "source/dadiospice/002_Reference/Windows And Views/index.html", "1",
    ["display_get_dpi_x", "source/dadiospice/002_Reference/Windows And Views/display_get_dpi_x.html", "11"],
    ["display_get_dpi_y", "source/dadiospice/002_Reference/Windows And Views/display_get_dpi_y.html", "11"],
    ["display_get_gui_height", "source/dadiospice/002_Reference/Windows And Views/display_get_gui_height.html", "11"],
