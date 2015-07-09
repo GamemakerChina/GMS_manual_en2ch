@@ -1623,7 +1623,7 @@ var TITEMS = [
     ["physics_set_friction", "source/dadiospice/002_Reference/Physics/Fixtures/physics_set_friction.html", "11"],
     ["physics_set_restitution", "source/dadiospice/002_Reference/Physics/Fixtures/physics_set_restitution.html", "11"]
    ],
-   ["Forces", "source/dadiospice/002_Reference/Physics/Forces/index.html", "1",
+   ["力", "source/dadiospice/002_Reference/Physics/Forces/index.html", "1",
     ["physics_apply_angular_impulse", "source/dadiospice/002_Reference/Physics/Forces/physics_apply_angular_impulse.html", "11"],
     ["physics_apply_force", "source/dadiospice/002_Reference/Physics/Forces/physics_apply_force.html", "11"],
     ["physics_apply_impulse", "source/dadiospice/002_Reference/Physics/Forces/physics_apply_impulse.html", "11"],
