@@ -29,12 +29,12 @@ if (window.name != "content")
 <h1>ds_grid_get_disk_mean</h1>
 
 <h2>Gets the mean value from all the values within a circular
-region.</h2>
+region.从一个圆形区域所有值中获取一个均值</h2>
 
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>Syntax语法:</h3>
 
 <p class="code">ds_grid_get_disk_mean(index, xm, ym, r);</p>
 
@@ -44,28 +44,28 @@ region.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>Argument参数</th>
+<th>Description描述</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the grid.</td>
+<td>The index of the grid.栅格结构的索引</td>
 </tr>
 
 <tr class="alt">
 <td>xm</td>
-<td>The x position of the disk on the grid.</td>
+<td>The x position of the disk on the grid.圆盘在栅格中的x位置。</td>
 </tr>
 
 <tr>
 <td>ym</td>
-<td>The y position of the disk on the grid.</td>
+<td>The y position of the disk on the grid.圆盘在栅格中的y位置。</td>
 </tr>
 
 <tr class="alt">
 <td>r</td>
-<td>The radius of the disk on the grid.</td>
+<td>The radius of the disk on the grid.栅格结构中圆盘的半径。</td>
 </tr>
 </table>
 </div>
@@ -73,39 +73,45 @@ region.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real or String</p>
+<p><b>Returns返回值:</b> Real or String实数型 或者 字符串型</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>Description描述</h3>
 
 <p>This function can be used to find the mean value for all the
 cells found within the defined disk area of a grid (all cell values
 are added together and then divided by the total number of cells
-that make up the disk), as shown in the image below: <img class=
+that make up the disk), as shown in the image below: 
+    这个函数能够被用于从一个栅格结构中被定义的圆盘区域中所有单元格的
+平均值（所有单元格的值被加在一起然后除以形成圆盘区域的单元格总数），
+正如下图所示：<img class=
 "center" src="ds_grid_get_disk_mean.png"><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>Example举例:</h3>
 
 <p class="code">val = ds_grid_get_disk_mean(grid, 5, 5, 2);</p>
 
 <p>The above code will set the variable "val" to the mean value
 contained within the given disk of the ds_grid indexed in the
-variable "grid".</p>
+variable "grid".
+    上述代码将会设定变量"val"为索引为变量"grid"的栅格中被定义的
+圆盘区域内的所有单元格的平均值。
+</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">DS
-Grids</a></div>
+<div style="float:left">Back上一个: <a href="index.html">DS
+Grids栅格结构</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">Next下一个: <a href=
 "ds_grid_get_disk_min.html">ds_grid_get_disk_min</a></div>
 </div>
 
