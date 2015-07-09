@@ -28,10 +28,9 @@ if (window.name != "content")
 
 <h1>webgl_enabled</h1>
 
-<h2>Returns whether the browser supports WebGL functionality and
-hardware acceleration.</h2>
+<h2>返回浏览器是否支持webGL相关特性以及硬件加速</h2>
 
-<h3><b>Syntax:</b>
+<h3><b>语法：</b>
 </h3>
 
 <p class="code">webgl_enabled</p>
@@ -39,37 +38,33 @@ hardware acceleration.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Boolean</p>
+<p><b>返回：</b> 布尔值</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>说明</h3>
 
-<p>This <b>read-only</b> variable will return whether WebGL is
-enabled (<tt>true</tt>) or not (<tt>false</tt>) for your game. It
-will only work for those games running through a browser (ie:
-HTML5), and for all other platforms it will return true.<br>
+<p>该变量为 <b>只读</b> 变量，如果浏览器支持WebGL,返回真(<tt>true</tt>)，否则返回假 (<tt>false</tt>)。在其他平台，该变量只会返回真(<tt>true</tt>)<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>示例：</h3>
 
 <p class="code">if webgl_enabled global.quality = 1 else
 global.quality = 0;</p>
 
-<p>The above code checks the WebGL flag and then sets the global
-variable "quality" accordingly.</p>
+<p>以上代码判断webGL支持情况，并将其状态赋值给全局变量"quality"</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">HTML5</a></div>
+<div style="float:left">返回：<a href="index.html">HTML5</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页：<a href=
 "clickable_add.html">clickable_add</a></div>
 </div>
 
