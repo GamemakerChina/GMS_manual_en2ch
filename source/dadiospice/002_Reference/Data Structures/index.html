@@ -26,10 +26,13 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>Data structures</h1>
+<h1>Data structures数据结构</h1>
 
 <h2>This section deals with the different, specialist functions
-that you can use to store different types of data.</h2>
+that you can use to store different types of data.
+<br>
+    这一节处理不同的、特殊的你能够用于存储不同类型数据的函数
+</h2>
 
 <p>In games you often need to store information in a precise and
 ordered way. For example, you may need to store lists of items that
@@ -39,6 +42,11 @@ this, but if you want to do more complicated operations, like
 sorting the data or searching for a particular item, you need to
 write large pieces of GML code which can be slow to execute,
 difficult to debug and a real pain to write!<br>
+在游戏中你通常需要以一个精确的、有序的方式存储信息。比如说，你可能需
+要存储一个人物携带物品的列表或者你可能想要存储一个仍然需要被访问的地
+点的矩阵。现在你<i>能够</i>使用使用数组来做这件事情，但是如果你想要执
+行更复杂的操作，比如分类这些数据或者搜索一个特定的项目你需要写一大篇
+会拖慢执行的、难以调试的并且写起来十分痛苦的GML代码！<br>
 <br>
 To remedy this, <i>GameMaker: Studio</i> has a number of built-in
 <b>data structures</b> that can be accessed through specialist
@@ -47,6 +55,10 @@ available, each one having its own benefits depending on the type
 of information that you are looking to store and how you wish to
 manipulate it later: stacks, queues, lists, maps, priority queues,
 and grids.<br>
+为了改进这个，<i>GameMaker: Studio</i>有许多内置的<b>数据结构</b>能
+够通过特殊的函数被访问。有六种不同类型的数据结构是可用的，每一个都有
+取决于自己的优势，这取决于你打算存储信息的类型以及你接下来如何分配：
+堆栈、队列、列表、比对、优先队列、矩阵。<br>
 <br>
 Essentially, all data structures work in the same way - You create
 a data structure and store its <i>index value</i> in a variable.
@@ -56,35 +68,43 @@ once you are done you destroy the data structure again to remove it
 from memory. You can use as many of the structures at the same time
 as you need, and all structures can store both strings and real
 values.<br>
+必要地，所有的数据结构工作方式都是同理的——不成功押宝规划部宇哥数据结
+构并且把他的<i>索引值</i>存入一个变量。之后，你就可以用这个索引表示
+该数据结构，以便对其进行操作。最终，一旦你完成了，你就又销毁这个这个
+数据结构并将其移出内存。你可以同时使用你所想要的尽可能多的结构并且所
+有结构都既能存储字符串又能存储实数<br>
 <br>
-<i><b>NOTE:</b> As with all dynamic resources, data structures take
+<i><b>NOTE注意:</b> As with all dynamic resources, data structures take
 up memory and so should <b>always</b> be destroyed when no longer
 needed to prevent memory leaks which will slow down and eventually
-crash your game.</i><br>
+crash your game.<br>由于伴随所有的动态资源，数据结构将会占用内存并因此应
+该在不再被使用的时候被销毁以防止内存泄漏将拖慢你的游戏并且最终使你的游戏崩溃</i><br>
 <br></p>
 
 <p>Information on the different data structures can be found in the
-following sections:</p>
+following sections:<br>
+    关于不同数据结构的信息可以在以下章节中被找到：
+</p>
 
 <blockquote>
 <ol>
-<li><a href="DS%20Stacks/index.html">Stacks</a><br>
+<li><a href="DS%20Stacks/index.html">Stacks堆栈结构</a><br>
 </li>
 
-<li><a href="DS%20Queues/index.html">Queues</a><br>
+<li><a href="DS%20Queues/index.html">Queues队列结构</a><br>
 </li>
 
-<li><a href="DS%20Lists/index.html">Lists</a><br>
+<li><a href="DS%20Lists/index.html">Lists列表结构</a><br>
 </li>
 
-<li><a href="DS%20Maps/index.html">Maps</a><br>
+<li><a href="DS%20Maps/index.html">Maps比对结构</a><br>
 </li>
 
-<li><a href="DS%20Priority%20Queues/index.html">Priority
+<li><a href="DS%20Priority%20Queues/index.html">Priority优先队列结构
 Queues</a><br>
 </li>
 
-<li><a href="DS%20Grids/index.html">Grids</a><br>
+<li><a href="DS%20Grids/index.html">Grids矩阵结构</a><br>
 </li>
 </ol>
 </blockquote>
@@ -93,7 +113,11 @@ Queues</a><br>
 aware that there are certain moments when, due to rounding errors,
 you may get a result that is not what you expected. This may be
 resolved by changing the DS precision using the following
-function:</p>
+function:<br>
+    在在你游戏中使用数据结构之前，你应该也要提防有一些特定的时刻当，
+    因为取舍错误，你可能会得到并不是你想要的结果。这可能会通过使用下
+    面这个函数来修改数据结构的精度来重新被解决。<br>
+</p>
 
 <blockquote>
 <ol>
@@ -103,7 +127,9 @@ function:</p>
 </blockquote>
 
 <p>Finally, there is also a special function for checking to see
-whether a data structure of any given type exists:</p>
+whether a data structure of any given type exists:<br>
+    最后，这里还有一个特殊的函数用来检测一个被给定类型的数据结构是否存在：
+</p>
 
 <blockquote>
 <ol>
@@ -116,8 +142,8 @@ whether a data structure of any given type exists:</p>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../index.html">Reference</a></div>
+<div style="float:left">Back上一个: <a href=
+"../index.html">Reference语言参考</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
