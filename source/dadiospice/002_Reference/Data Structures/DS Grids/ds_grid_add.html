@@ -28,7 +28,7 @@ if (window.name != "content")
 
 <h1>ds_grid_add</h1>
 
-<h2>Adds a value to a cell in a grid.将一个值叠加到栅格的一个单元格中。</h2>
+<h2>Adds a value to a cell in a grid.将一个值叠加到矩阵的一个单元格中。</h2>
 
 <h3>Syntax语法:</h3>
 
@@ -46,22 +46,22 @@ if (window.name != "content")
 
 <tr>
 <td>index</td>
-<td>The index of the grid.栅格结构的索引</td>
+<td>The index of the grid.矩阵结构的索引</td>
 </tr>
 
 <tr class="alt">
 <td>x</td>
-<td>The x position of the cell in the grid.栅格中单元格的x位置。</td>
+<td>The x position of the cell in the grid.矩阵中单元格的x位置。</td>
 </tr>
 
 <tr>
 <td>y</td>
-<td>The y position of the cell in the grid.栅格中单元格的y位置</td>
+<td>The y position of the cell in the grid.矩阵中单元格的y位置</td>
 </tr>
 
 <tr class="alt">
 <td>val</td>
-<td>The value to add to the cell.待叠加到栅格中的值</td>
+<td>The value to add to the cell.待叠加到矩阵中的值</td>
 </tr>
 </table>
 </div>
@@ -81,7 +81,7 @@ to the value of the given cell within the grid. The value to be
 added must be the same type as that held within the grid cell, ie:
 you cannot add a string to a real or vice-versa, and for strings
 this corresponds to concatenation.
-    这个函数能够被用于叠加一个被给定的值（实数或字符串）到栅格中被
+    这个函数能够被用于叠加一个被给定的值（实数或字符串）到矩阵中被
 给定的单元格中。这个值必须和单元格内承载的值的类型相同，比如说：你
 不能把一个字符串叠加给一个实数值，反之亦然，并且对于字符串来说这将
 对应到串接字符串的位置。<br>
@@ -103,7 +103,7 @@ by the variable "grid".这将把6叠加到被给定的在被变量grid引用的d
 
 <div class="clear">
 <div style="float:left">Back上一个: <a href="index.html">DS
-Grids栅格结构</a></div>
+Grids矩阵结构</a></div>
 
 <div style="float:right">Next下一个: <a href=
 "ds_grid_add_region.html">ds_grid_add_region</a></div>
