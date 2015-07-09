@@ -29,7 +29,7 @@ if (window.name != "content")
 <h1>ds_grid_add_grid_region</h1>
 
 <h2>Adds the contents of the cells in a source grid to the cells in
-a destination grid.将一个源栅格中包含的单元格叠加给靶栅格中。</h2>
+a destination grid.<br>将一个源栅格中包含的单元格叠加给靶栅格中。</h2>
 
 <h3>Syntax语法:</h3>
 
@@ -106,12 +106,12 @@ to.靶栅格上待叠加源栅格区域的y位置。</td>
 
 <p>This function can be used to add all the values of all the cells
 found within the source area of a grid to the values within the
-destination grid, as illustrated below:
+destination grid, as illustrated below:<br>
     这个函数能够被用于将从源栅格的区域内找到的所有值叠加给靶栅格，
 正如下面的插图：<img class="center" src=
 "ds_grid_add_grid_region.png"> <i><b>NOTE注意:</b> You can also use
 this function on the same grid to add values from one region of the
-grid to those stored in another (see code example below).
+grid to those stored in another (see code example below).<br>
     你也能使用这个函数给同一个的栅格中将来自于被存储在一片区域的值叠
 加给另一片区域（参见下方的代码举例）：
     
@@ -128,7 +128,7 @@ grid to those stored in another (see code example below).
 
 <p>The above code would copy the region of cells from (0,0) to
 (1,5) of the ds-grid indexed in the variable "grid" and add them to
-the cells from position (2,0) of the same ds_grid.
+the cells from position (2,0) of the same ds_grid.<br>
     上方代码能够拷贝索引为变量"grid"的栅格结构中从(0,0)到(1,5)的区域中单
 元格的值并将其叠加给同一栅格结构中(2,0)的位置。
 </p>
