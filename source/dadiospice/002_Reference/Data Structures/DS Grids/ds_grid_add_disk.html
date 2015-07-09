@@ -29,8 +29,8 @@ if (window.name != "content")
 <h1>ds_grid_add_disk</h1>
 
 <h2>Adds to all the cells in a circular region in a grid to an
-indicated value (can both be a number or a string).将一个指定的
-值叠加给栅格中一个圆形区域内所有的单元格。</h2>
+indicated value (can both be a number or a string).<br>将一个指定的
+值叠加给矩阵中一个圆形区域内所有的单元格。</h2>
 
 <h3>Syntax语法:</h3>
 
@@ -48,22 +48,22 @@ indicated value (can both be a number or a string).将一个指定的
 
 <tr>
 <td>index</td>
-<td>The index of the grid.栅格结构的索引</td>
+<td>The index of the grid.矩阵结构的索引</td>
 </tr>
 
 <tr class="alt">
 <td>xm</td>
-<td>The x position of the disk on the grid.栅格中圆盘区域中心的x位置</td>
+<td>The x position of the disk on the grid.矩阵中圆盘区域中心的x位置</td>
 </tr>
 
 <tr>
 <td>ym</td>
-<td>The y position of the disk on the grid.栅格中圆盘区域中心的y位置</td>
+<td>The y position of the disk on the grid.矩阵中圆盘区域中心的y位置</td>
 </tr>
 
 <tr class="alt">
 <td>r</td>
-<td>The radius of the disk on the grid.栅格中圆盘区域的半径</td>
+<td>The radius of the disk on the grid.矩阵中圆盘区域的半径</td>
 </tr>
 
 <tr>
@@ -88,7 +88,7 @@ to all the values of the cells found within the defined disk area
 of a grid. The value to be added must be of the same type as that
 held within the grid cells, ie: you cannot add a string to a real
 or vice-versa, and for strings this corresponds to concatenation.
-    这个函数能够被用于将一个给定的值（实数或者字符串）叠加给栅格中
+    <br>这个函数能够被用于将一个给定的值（实数或者字符串）叠加给矩阵中
 在一个被定义的圆盘区域内的所有单元格。这个将被叠加出去的值必须和单
 元格承载的值的类型相同比如说：你 不能把一个字符串叠加给一个实数值，
 反之亦然，并且对于字符串来说这将 对应到串接字符串的位置。<br>
@@ -103,8 +103,8 @@ or vice-versa, and for strings this corresponds to concatenation.
 
 <p>This would add 2 to all the values held in the cells within the
 defined disk area of the ds_grid referenced by the variable
-"grid".
-    这将会把2叠加给由变量"grid"所引用的栅格结构中被指定的圆盘区域
+"grid".<br>
+    这将会把2叠加给由变量"grid"所引用的矩阵结构中被指定的圆盘区域
 中所有单元格所承载的值。</p>
 
 <p><br>
@@ -112,7 +112,7 @@ defined disk area of the ds_grid referenced by the variable
 
 <div class="clear">
 <div style="float:left">Back上一个: <a href="index.html">DS
-Grids栅格结构</a></div>
+Grids矩阵结构</a></div>
 
 <div style="float:right">Next下一个: <a href=
 "ds_grid_add_grid_region.html">ds_grid_add_grid_region</a></div>
