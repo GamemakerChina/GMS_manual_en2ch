@@ -29,9 +29,9 @@ if (window.name != "content")
 <h1>ds_grid_get_disk_sum</h1>
 
 <h2>Gets the sum of all the values within a circular region. Only
-works when the cells are numbers.</h2>
+works when the cells are numbers.<br>获取圆形区域内所有数字的加和。只在单元格为数字时生效。</h2>
 
-<h3>Syntax:</h3>
+<h3>Syntax语法:</h3>
 
 <p class="code">ds_grid_get_disk_sum(index, xm, ym, r);</p>
 
@@ -41,28 +41,28 @@ works when the cells are numbers.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>Argument参数</th>
+<th>Description描述</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the grid.</td>
+<td>The index of the grid.矩阵的索引</td>
 </tr>
 
 <tr class="alt">
 <td>xm</td>
-<td>The x position of the disk on the grid.</td>
+<td>The x position of the disk on the grid.圆盘在矩阵上的x位置</td>
 </tr>
 
 <tr>
 <td>ym</td>
-<td>The y position of the disk on the grid.</td>
+<td>The y position of the disk on the grid.圆盘在矩阵上的y位置</td>
 </tr>
 
 <tr class="alt">
 <td>r</td>
-<td>The radius of the disk on the grid.</td>
+<td>The radius of the disk on the grid.圆盘在矩阵上的半径</td>
 </tr>
 </table>
 </div>
@@ -70,7 +70,7 @@ works when the cells are numbers.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real or String</p>
+<p><b>Returns返回值:</b> Real or String实数型 或者 字符串</p>
 
 <p><br>
 </p>
@@ -79,27 +79,28 @@ works when the cells are numbers.</h2>
 
 <p>This function can be used to add all the values all the cells
 found within the defined disk area of a grid together, as shown in
-the image below: <img class="center" src=
+the image below:
+<br>这个函数可以被用于加和在一个矩阵中被定义的圆盘区域内所有单元格内的值，正如下图所示<img class="center" src=
 "ds_grid_get_disk_sum.png"><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>Example举例:</h3>
 
 <p class="code">val = ds_grid_get_disk_sum(grid, 5, 5, 2);</p>
 
 <p>The above code will set the variable "val" to the sum of all
 values contained within the given disk of the ds_grid indexed in
-the variable "grid".</p>
+the variable "grid".<br>上述代码将会设定变量"val"为索引为"grid"的矩阵的被给定的圆盘区域内的所有数值之和</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">DS
-Grids</a></div>
+<div style="float:left">Back上一个: <a href="index.html">DS
+Grids矩阵结构</a></div>
 
 <div style="float:right">Next: <a href=
 "ds_grid_add.html">ds_grid_add</a></div>

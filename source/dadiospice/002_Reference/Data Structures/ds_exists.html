@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>ds_exists</h1>
 
-<h2>Check to see if a data structure of a given type exists.</h2>
+<h2>Check to see if a data structure of a given type exists.<br>检测一个被给定类型的一个数据结构是否存在。</h2>
 
-<h3>Syntax:</h3>
+<h3>Syntax语法:</h3>
 
 <p class="code">ds_exists(ind, type);</p>
 
@@ -40,19 +40,21 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>Argument参数</th>
+<th>Description描述</th>
 </tr>
 
 <tr>
 <td>ind</td>
-<td>The variable index to check for the data structure</td>
+<td>The variable index to check for the data structure.待进行
+数据结构检测的变量索引。</td>
 </tr>
 
 <tr class="alt">
 <td>type</td>
 <td>The type of data structure to check for (see the list of
-constants below)</td>
+constants below)待检测的数据类型（参见下文的常量表）
+</td>
 </tr>
 </table>
 </div>
@@ -60,58 +62,62 @@ constants below)</td>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Boolean</p>
+<p><b>Returns返回值:</b> Boolean布尔型</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>Description描述</h3>
 
 <p>With this function you can check to see if a data structure of
 the given type exists. You supply the "index" value (as held in a
 variable) and the ds "type", which can be any of the constants
 listed below, and the function will return <tt>true</tt> if the
-data structure exists and <tt>false</tt> otherwise.<br>
+data structure exists and <tt>false</tt> otherwise.
+<br>使用这个函数你能够检测观察一个属于该类型的数据结构是否存在。你提供
+这个“索引”的值（被承载给一个变量）以及这个数据结构的“类型”，可以是
+下方常量列表中的任意一个，并且如果这个数据结构存在这个函数将会返回
+<tt>true</tt>（真），否则返回<tt>false</tt>（假）<br>
 <br></p>
 
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
-<th>Description</th>
+<th>Constant常量</th>
+<th>Description描述</th>
 </tr>
 
 <tr>
 <td>ds_type_map</td>
-<td>A <a href="DS%20Maps/index.html">map</a> data structure</td>
+<td>A <a href="DS%20Maps/index.html">map</a> data structure.一个<a href="DS%20Maps/index.html">比对</a>数据结构。</td>
 </tr>
 
 <tr class="alt">
 <td>ds_type_list</td>
-<td>A <a href="DS%20Lists/index.html">list</a> data structure</td>
+<td>A <a href="DS%20Lists/index.html">list</a> data structure.一个<a href="DS%20Lists/index.html">列表</a>数据结构。</td>
 </tr>
 
 <tr>
 <td>ds_type_stack</td>
 <td>A <a href="DS%20Stacks/index.html">stack</a> data
-structure</td>
+structure.一个<a href="DS%20Stacks/index.html">堆栈</a>数据结构。</td>
 </tr>
 
 <tr class="alt">
 <td>ds_type_grid</td>
-<td>A <a href="DS%20Grids/index.html">grid</a> data structure</td>
+<td>A <a href="DS%20Grids/index.html">grid</a> data structure.一个<a href="DS%20Grids/index.html">栅格</a>数据结构。</td>
 </tr>
 
 <tr>
 <td>ds_type_queue</td>
 <td>A <a href="DS%20Queues/index.html">queue</a> data
-structure</td>
+structure.一个<a href="DS%20Queues/index.html">队列</a>数据结构。</td>
 </tr>
 
 <tr class="alt">
 <td>ds_type_priority</td>
 <td>A <a href="DS%20Priority%20Queues/index.html">priority</a> data
-structure</td>
+structure.一个<a href="DS%20Priority%20Queues/index.html">优先队列</a>数据结构。</td>
 </tr>
 </table>
 </div>
@@ -119,7 +125,7 @@ structure</td>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>Example举例:</h3>
 
 <p class="code">if !ds_exists(ai_grid, ds_type_grid)<br>
 &nbsp;&nbsp;&nbsp;{<br>
@@ -130,16 +136,20 @@ room_height / 32);<br>
 <p>The above code checks the (previously initialised) variable
 "ai_grid" to see if it indexes a ds_grid type data structure, and
 if it does not then it creates one and stores its index in the
-variable.</p>
+variable.
+    <br>上述代码检测变量"ai_grid"（需要提前初始化）来检测它是否索引着
+一个栅格类型的数据结构，并且如果它不是，那么它就创建一个并把它的索
+引存给这个变量。
+</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Data
-Structures</a></div>
+<div style="float:left">Back上一个: <a href="index.html">Data
+Structures数据结构</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">Next下一个: <a href=
 "ds_set_precision.html">ds_set_precision</a></div>
 </div>
 

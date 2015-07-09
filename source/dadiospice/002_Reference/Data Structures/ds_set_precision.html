@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>ds_set_precision</h1>
 
-<h2>Sets the precision used for comparisons.</h2>
+<h2>Sets the precision used for comparisons.<br>设定用于比较的精度。</h2>
 
-<h3>Syntax:</h3>
+<h3>Syntax语法:</h3>
 
 <p class="code">ds_set_precision(prec);</p>
 
@@ -40,13 +40,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>Argument参数</th>
+<th>Description描述</th>
 </tr>
 
 <tr>
 <td>prec</td>
-<td>The precision value (default 0.0000001)</td>
+<td>The precision value (default 0.0000001)精度大小（默认为0.0000001）</td>
 </tr>
 </table>
 </div>
@@ -54,12 +54,12 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>Returns返回值:</b> N/A无</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>Description描述</h3>
 
 <p>When comparing values, for example when searching in a map or
 sorting a list, <i>GameMaker: Studio</i> must decide when two
@@ -71,30 +71,40 @@ avoid this, a precision value is used on all real number functions,
 and when the <i>difference between two numbers is smaller</i> than
 this precision they are considered equal. The default a precision
 of 0.0000001 is used for all data structure functions unless
-changed by this function.<br>
+changed by this function.
+    <br>当比较一些值的时候，例如当我们在一个比对中搜查或者在一个列表
+中分类，<i>GameMaker: Studio</i>必须决定两个值是否相等。对于字符串以
+及整数值这很清晰但是对于实数，因为浮点的取舍错误，似乎相等的值很容易
+变得不相等。比如说，<b>(5 / 3) * 3</b>将和<b>5</b><i>不</i>相等！为
+了帮助避免这个问题，一个精度值被用于所有实数函数中，并且当这<i>两个值的
+差小于这个精度</i>则他们被认为是相等的。默认的精度0.0000001被用于所有数
+据结构中除非通过这个函数改变这个值<br>
 <br>
-<i><b>NOTE:</b> This precision is used in all data structures but
-not in other comparisons in GML!</i><br>
+<i><b>NOTE注意:</b> This precision is used in all data structures but
+not in other comparisons in GML!<br>
+这个精度被用于所有数据结构中而非GML中的其他比较。
+</i><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>Example举例:</h3>
 
 <p class="code">ds_set_precision(0.0001);</p>
 
 <p>The above code will change the default precision setting for all
-data structure functions.</p>
+data structure functions.<br>上述代码将改变所有数据结构函数中默认的精度
+设定。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Data
-Structures</a></div>
+<div style="float:left">Back上一个: <a href="index.html">Data
+Structures数据结构</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">Next下一个: <a href=
 "ds_exists.html">ds_exists</a></div>
 </div>
 

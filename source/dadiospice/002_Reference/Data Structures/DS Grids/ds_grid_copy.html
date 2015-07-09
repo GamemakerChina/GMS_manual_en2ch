@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>ds_grid_copy</h1>
 
-<h2>Copies one grid into another grid.</h2>
+<h2>Copies one grid into another grid.<br>将一个矩阵里面的值拷贝给另一个矩阵。</h2>
 
-<h3>Syntax:</h3>
+<h3>Syntax语法:</h3>
 
 <p class="code">ds_grid_copy(destination, source);</p>
 
@@ -40,18 +40,18 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>Argument参数</th>
+<th>Description描述</th>
 </tr>
 
 <tr>
 <td>destination</td>
-<td>This index of the grid to copy to.</td>
+<td>This index of the grid to copy to.待拷贝到的靶矩阵。</td>
 </tr>
 
 <tr>
 <td>source</td>
-<td>This index of the grid to copy from.</td>
+<td>This index of the grid to copy from.待拷贝于的源矩阵。</td>
 </tr>
 </table>
 </div>
@@ -59,23 +59,25 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>Returns返回值:</b> N/A无</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>Description描述</h3>
 
 <p>With this function you can copy the contents of one grid into
 another one. Both grids must have been created previously using the
 <a href="ds_grid_create.html"><tt>ds_grid_create</tt></a>
 function.<br>
+使用这个函数你能够拷贝一个矩阵结构内的内容到另一个矩阵。两个矩阵必须
+都已经被提前使用<a href="ds_grid_create.html"><tt>ds_grid_create</tt></a>函数创建。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>Example举例:</h3>
 
 <p class="code">n_grid = ds_grid_create(ds_grid_width(a_grid),
 ds_grid_height(a_grid));<br>
@@ -84,17 +86,21 @@ ds_grid_clear(a_grid, -1);<br></p>
 
 <p>The above code creates a new ds_grid, based on the width and
 height of a previously created grid, then copies the information
-form the previous grid to the new one. Finally it clears the old
-grid so that all cells have a value of -1.</p>
+【form】 the previous grid to the new one. Finally it clears the old
+grid so that all cells have a value of -1.<br>
+    上述代码创建了一个新的矩阵结构，基于之前被创建的一个矩阵的宽
+度和高度，然后【从】之前的内容中拷贝内容给新的矩阵。最终，它清空了旧
+矩阵以便于所有单元格有值-1。
+</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">DS
-Grids</a></div>
+<div style="float:left">Back上一个: <a href="index.html">DS
+Grids矩阵结构</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">Next下一个: <a href=
 "ds_grid_read.html">ds_grid_read</a></div>
 </div>
 

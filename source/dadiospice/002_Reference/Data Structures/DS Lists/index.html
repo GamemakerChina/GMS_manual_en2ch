@@ -26,10 +26,10 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>DS Lists</h1>
+<h1>DS Lists列表结构</h1>
 
 <h2>A ds_list stores a collection of values in a particular
-order.</h2>
+order.<br>一个列表结构存储一系列按一定顺序排列的值。</h2>
 
 <p>A ds_list is a data-structure that stores information
 sequentially as it is added (much like a <a href=
@@ -39,6 +39,11 @@ you to add values at the end or insert them somewhere in the middle
 of the list, as well as giving you the ability to shuffle the order
 (to randomize the values) or sort them in an ascending or
 descending order.<br>
+一个列表结构是一个随着被添加而按顺序地存储着信息的数据结构
+（十分像一个<a href=
+"../../001_GML%20Language%20Overview/401_06_arrays.html">1D数组</a>
+）。列表结构是十分灵活的数据结构允许你在末端添加值或者在列表中间某个
+位置插入值，同时也给予你能够打乱排序（随机化值）或者按照升序或降序排序。<br>
 <br>
 When accessing DS list data structures, you should always try to
 use <b>integer values</b> for the list position, and all
@@ -46,13 +51,18 @@ non-integer indices will be floored by GameMaker: Studio if you do
 not. If that is not what you require, then you will need to do the
 rounding yourself previously before passing the index that you wish
 to check.<br>
+当接触列表数据结构，你应该尽量使用<b>整数数值</b>作为列表的位置，并
+且如果你不这么做的话所有的非整数都会被GameMaker: Studio向下取整。
+如果这不是你所要求的事情，那么你就需要在传入你想要检测的索引时提前自行取整<br>
 <br>
-<i><b>NOTE:</b> As with all dynamic resources, data structures take
+<i><b>NOTE注意:</b> As with all dynamic resources, data structures take
 up memory and so should <b>always</b> be destroyed when no longer
 needed to prevent memory leaks which will slow down and eventually
-crash your game.</i><br>
+crash your game.<br>由于全部使用动态资源，数据结构会占据内存并且因此应该
+在不再被使用的时候被销毁以防止内存泄漏将拖慢你的游戏并最终使你的游戏崩溃。</i><br>
 <br>
-The following functions exist that deal with DS lists.</p>
+The following functions exist that deal with DS lists.<br>
+下面存在一些函数用于处理列表结构。</p>
 
 <blockquote>
 <ol>
@@ -111,7 +121,13 @@ only for use in conjunction with the <a href=
 "../../File%20Handling/json_encode.html"><tt>json_encode</tt></a>
 function. This requires that you "flag" or "mark" the entry within
 the list so that it can be encoded correctly using the following
-special functions:</p>
+special functions:
+<br>列表结构也能够被用于承载比对结构或者其他的列表结构，但是只能和
+<a href=
+"../../File%20Handling/json_encode.html"><tt>json_encode</tt></a>函数关联使用.
+这要求你在列表内“公示”或“标记”入口以便于它能够通过使用下面这个函数被被正确的加密
+</p>
+
 
 <blockquote>
 <ol>
@@ -127,30 +143,36 @@ special functions:</p>
 <p>Apart from these specific functions you can all use an
 expression (called an <i>accessor</i>) to add or modify the
 contents of your <tt>ds_list</tt>. This accessor looks similar to a
-1D array with the following syntax:</p>
+1D array with the following syntax:<br>
+除了这些特殊的函数，你也可以全都用一个表达式（被叫做一个<i>存储器</i>）
+来增加或调节你的列表结构的内容。这个存储器看起来和1D数组十分相似并有如下的语法规则</p>
 
 <p class="code">list_index[| index]</p>
 
 <p>You can find more information, plus examples, from from the GML
 Overview page on <a href=
 "../../001_GML%20Language%20Overview/Accessors.html">Accessors</a>.<br>
-
+你可以从GML概览页面中 <a href=
+"../../001_GML%20Language%20Overview/Accessors.html">存储器</a>章节找到更多信息、更多范例。<br>
 <br></p>
 
-<blockquote><i><b>NOTE:</b> if you need to check if a data
+<blockquote><i><b>NOTE注意:</b> if you need to check if a data
 structure exists, you can use the <a href=
-"../ds_exists.html"><tt>ds_exists()</tt></a> function.</i>
+"../ds_exists.html"><tt>ds_exists()</tt></a> function.
+<br>如果你需要检测一个数据结构是否存在，你可以使用函数 <a href=
+"../ds_exists.html"><tt>ds_exists()</tt></a> 
+</i>
 </blockquote>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="../index.html">Data
-Structures</a></div>
+<div style="float:left">Back上一个: <a href="../index.html">Data
+Structures数据结构</a></div>
 
-<div style="float:right">Next: <a href="../DS%20Maps/index.html">DS
-Maps</a></div>
+<div style="float:right">Next下一个: <a href="../DS%20Maps/index.html">DS
+Maps比对结构</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>

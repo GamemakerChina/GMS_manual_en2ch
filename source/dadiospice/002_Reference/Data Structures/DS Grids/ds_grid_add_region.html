@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>ds_grid_add_region</h1>
 
-<h2>Adds the given value to all cells in a region.</h2>
+<h2>Adds the given value to all cells in a region.<br>将一个给定的值叠加给一片区域内所有单元格。</h2>
 
-<h3>Syntax:</h3>
+<h3>Syntax语法:</h3>
 
 <p class="code">ds_grid_add_region(index, x1, y1, x2, y2, val);</p>
 
@@ -40,38 +40,38 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>Argument参数</th>
+<th>Description描述</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the grid.</td>
+<td>The index of the grid.矩阵结构的索引</td>
 </tr>
 
 <tr class="alt">
 <td>x1</td>
-<td>The x position of the left of the region in the grid.</td>
+<td>The x position of the left of the region in the grid.矩阵中区域的左端x位置。</td>
 </tr>
 
 <tr>
 <td>y1</td>
-<td>The y position of the top of the region in the grid.</td>
+<td>The y position of the top of the region in the grid.矩阵中区域的顶端y位置。</td>
 </tr>
 
 <tr class="alt">
 <td>x2</td>
-<td>The x position of the right of the region in the grid.</td>
+<td>The x position of the right of the region in the grid.矩阵中区域的右端x位置。</td>
 </tr>
 
 <tr>
 <td>y2</td>
-<td>The y position of the bottom of the region in the grid.</td>
+<td>The y position of the bottom of the region in the grid.矩阵中区域的底端y位置。</td>
 </tr>
 
 <tr class="alt">
 <td>val</td>
-<td>The value to add to the region cells.</td>
+<td>The value to add to the region cells.待叠加到区域中单元格的值。</td>
 </tr>
 </table>
 </div>
@@ -79,39 +79,46 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>Returns返回值:</b> N/A无</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>Description描述</h3>
 
 <p>This function can be used to add a given value (real or string)
 to all the values of the cells found within the defined area of a
 grid. The value to be added must be of the same type as that held
 within the grid cells, ie: you cannot add a string to a real or
 vice-versa, and for strings this corresponds to concatenation.<br>
+    这个函数可以被用于将一个给定的值（实数或字符串）叠加给在矩阵中
+被定义的区域中所有单元格的值中，这个值必须和单元格内承载的值的类型
+相同，比如说：你 不能把一个字符串叠加给一个实数值，反之亦然，并且
+对于字符串来说这将 对应到串接字符串的位置。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>Example举例:</h3>
 
 <p class="code">ds_grid_add_region(grid, 2, 4, 5, 5, ".");</p>
 
 <p>This would add "." to all the strings held in the cells within
 the defined region of the ds_grid referenced by the variable
-"grid".</p>
+"grid".<br>
+    这将会把"."叠加给由变量"grid"所引用的矩阵结构中在被定义的区域
+内所有单元格所承载的字符串中。
+</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">DS
-Grids</a></div>
+<div style="float:left">Back上一个: <a href="index.html">DS
+Grids矩阵结构</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">Next下一个: <a href=
 "ds_grid_add_disk.html">ds_grid_add_disk</a></div>
 </div>
 
