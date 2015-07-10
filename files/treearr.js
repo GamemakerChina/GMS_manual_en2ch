@@ -1104,7 +1104,7 @@ var TITEMS = [
    ["iap_store_status", "source/dadiospice/002_Reference/In App Purchases/iap_store_status.html", "11"]
   ],
   ["数学", "source/dadiospice/002_Reference/Maths/index.html", "1",
-   ["Real valued functions", "source/dadiospice/002_Reference/Maths/Real valued functions/index.html", "1",
+   ["实数值函数", "source/dadiospice/002_Reference/Maths/Real valued functions/index.html", "1",
     ["abs", "source/dadiospice/002_Reference/Maths/Real valued functions/abs.html", "11"],
     ["arccos", "source/dadiospice/002_Reference/Maths/Real valued functions/arccos.html", "11"],
     ["arcsin", "source/dadiospice/002_Reference/Maths/Real valued functions/arcsin.html", "11"],
