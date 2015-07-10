@@ -47,7 +47,7 @@ if (window.name != "content")
 
 <tr>
 <td>index</td>
-<td>This index of the grid to clear.待清除的栅格数据的索引。</td>
+<td>This index of the grid to clear.待清除的栅格结构的索引。</td>
 </tr>
 
 <tr class="alt">
@@ -71,7 +71,7 @@ if (window.name != "content")
 value. All cells within the grid will then contain this value,
 which can be a real number or a string. The image below illustrates
 how this works: <br>
-这个函数可以被用于用一个值清空一个给定栅格数据，这个栅格内的所有单元
+这个函数可以被用于用一个值清空一个给定栅格结构，这个栅格内的所有单元
 格接下来都将会包含这个既可以是字符串又可以是实数的值。下面的插图展现
 了这是如何生效的：<img class="center" src="ds_grid_clear.png"><br>
 <br></p>
@@ -88,7 +88,7 @@ ds_grid_clear(global.Grid, -1);<br></p>
 <p>The above code will resize the ds_grid indexed in the global
 variable "Grid" and then clear it so that each cell holds the value
 -1.<br>
-    上述代码将会重新设定被索引为全局变量"Grid"的栅格数据并且接下来
+    上述代码将会重新设定被索引为全局变量"Grid"的栅格结构并且接下来
 清空它以便于每一个单元格都承载值-1。
 </p>
 
@@ -97,7 +97,7 @@ variable "Grid" and then clear it so that each cell holds the value
 
 <div class="clear">
 <div style="float:left">Back上一个: <a href="index.html">DS
-Grids栅格数据</a></div>
+Grids栅格结构</a></div>
 
 <div style="float:right">Next下一个: <a href=
 "ds_grid_set.html">ds_grid_set</a></div>
