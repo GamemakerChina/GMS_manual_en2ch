@@ -46,7 +46,7 @@ if (window.name != "content")
 
 <tr>
 <td>index</td>
-<td>This index of the grid to destroy.待销毁的矩阵结构的索引。</td>
+<td>This index of the grid to destroy.待销毁的栅格数据的索引。</td>
 </tr>
 </table>
 </div>
@@ -67,7 +67,7 @@ values that it contained. This function should always be used when
 you are finished using the ds_grid to prevent memory leaks that can
 slow down and crash your game.<br>
     这个函数将从内存中移除被给定的矩阵数据结构，释放它所使用的资源并
-且移除所有它包含的值。这个函数应当总是在你完成使用矩阵结构的时候被
+且移除所有它包含的值。这个函数应当总是在你完成使用栅格数据的时候被
 使用来组织内存溢出继而使你的游戏被拖慢或者崩溃。<br>
 <br></p>
 
@@ -86,7 +86,7 @@ slow down and crash your game.<br>
 variable "lives" and if it is 0, it destroys the ds_grid indexed in
 the variable "Wall_Grid" and then changes rooms.<br>
     上述代码将会检测内置变量"lives"的值并且如果是0，则将销毁索引为变
-量"Wall_Grid"的矩阵结构并且接下来更换房间。
+量"Wall_Grid"的栅格数据并且接下来更换房间。
 </p>
 
 <p><br>
@@ -94,7 +94,7 @@ the variable "Wall_Grid" and then changes rooms.<br>
 
 <div class="clear">
 <div style="float:left">Back上一个: <a href="index.html">DS
-Grids矩阵结构</a></div>
+Grids栅格数据</a></div>
 
 <div style="float:right">Next下一个: <a href=
 "ds_grid_width.html">ds_grid_width</a></div>
