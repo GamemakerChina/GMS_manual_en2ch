@@ -30,7 +30,7 @@ if (window.name != "content")
 
 <h2>This section explains the various functions that can be used to
 create and manipulate ds_grids<br>
-这一章节解释了各种各样的能够被用于创建和调配矩阵的函数。</h2>
+这一章节解释了各种各样的能够被用于创建和调配栅格的函数。</h2>
 
 <p>A ds_grid is basically a type of <a href=
 "../../001_GML%20Language%20Overview/401_06_arrays.html">two-dimensional
@@ -38,10 +38,10 @@ array</a>. You define the grid by setting its integer width and
 height, which then sets the total number of "cells" within the grid
 (the width and height multiplied) and these cells are then used to
 hold different data values (real numbers or strings).<br>
-一个矩阵数据结构是一个基本的<a href=
+一个栅格数据结构是一个基本的<a href=
 "../../001_GML%20Language%20Overview/401_06_arrays.html">二维数组
-</a>你能够通过设定他的整数宽度和高度来定义矩阵，这将接下来设定
-矩阵内“单元格”的总数（宽度和高度被相乘）并且这些单元格将被用于
+</a>你能够通过设定他的整数宽度和高度来定义栅格，这将接下来设定
+栅格内“单元格”的总数（宽度和高度被相乘）并且这些单元格将被用于
 承载不同的数据值（实数或者字符串）。<br>
 <br>
 <img class="center" src="ds_grid_basic.png"> This type of structure
@@ -53,7 +53,7 @@ values, and retrieve the sum, maximum, minimum, and mean value over
 a given region, making this data structure the most versatile of
 all those available to you.<br>
 这种类型的结构允许你通过给定它的x和y索引（xy两轴都从0开始并进
-入到-1）设定并检索单元格里面的值。但是你也能设定在特定的矩阵区域
+入到-1）设定并检索单元格里面的值。但是你也能设定在特定的栅格区域
 内的值，叠加单个值、以及检索一个被给定区域内求和、最大值、最小值
 和平均值，使得这个数据结构是你所能选择的功能最多的结构。<br>
 <br>
@@ -63,7 +63,7 @@ non-integer indices will be floored by GameMaker: Studio if you do
 not. If that is not what you require, then you will need to do the
 rounding yourself previously before passing the index that you wish
 to check.<br>
-当接近矩阵数据结构时，你应该总是尽量使用<b>整数数值</b>作为单元格
+当接近栅格数据结构时，你应该总是尽量使用<b>整数数值</b>作为单元格
 位置，并且如果你不这么做的话，所有非整数索引都会被GameMaker: Studio
 自动取整。如果这不是你所要求的，那么你将需要在传入你想要检测的索引
 之前自行取整。<br>
