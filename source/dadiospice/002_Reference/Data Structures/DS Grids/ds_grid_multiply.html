@@ -29,9 +29,10 @@ if (window.name != "content")
 <h1>ds_grid_multiply</h1>
 
 <h2>Multiplies the value of a given grid cell by a given
-amount.</h2>
+amount.<br>
+将被给定的矩阵的单元格中的值和一个被给定的值相乘。</h2>
 
-<h3>Syntax:</h3>
+<h3>Syntax  语法:</h3>
 
 <p class="code">ds_grid_multiply(index, x, y, val);</p>
 
@@ -41,28 +42,28 @@ amount.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>Argument参数</th>
+<th>Description描述</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the grid.</td>
+<td>The index of the grid.矩阵结构的索引</td>
 </tr>
 
 <tr class="alt">
 <td>x</td>
-<td>The x position of the cell in the grid.</td>
+<td>The x position of the cell in the grid.矩阵中单元格的x位置。</td>
 </tr>
 
 <tr>
 <td>y</td>
-<td>The y position of the cell in the grid.</td>
+<td>The y position of the cell in the grid.矩阵中单元格的y位置。</td>
 </tr>
 
 <tr class="alt">
 <td>val</td>
-<td>The value to multiply with the cell.</td>
+<td>The value to multiply with the cell.待与单元格相乘的值。</td>
 </tr>
 </table>
 </div>
@@ -70,38 +71,39 @@ amount.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>Returns  返回值:</b> N/A  无</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>Description  描述</h3>
 
 <p>This function will multiply the value of a the given grid cell
-by the specified amount.<br>
+by the specified amount.<br>这个函数将会用一个特定的值乘以矩阵中被给定的单元格的值。<br>
 <br>
-<i><b>NOTE:</b> This function will only work with real numbers, not
-strings.</i><br>
+<i><b>NOTE  注意:</b> This function will only work with real numbers, not
+strings.<br>这个函数将只对实数生效，而不是字符串。</i><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>Example  举例:</h3>
 
 <p class="code">ds_grid_multiply(mygrid, 5, 5, 2);</p>
 
 <p>the above code will multiply the value stored in the given
-ds_grid cell by 2.</p>
+ds_grid cell by 2.
+<br>上述代码将会把存储在被给定矩阵单元格的值乘以2</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">DS
-Grids</a></div>
+<div style="float:left">Back上一个: <a href="index.html">DS
+Grids矩阵结构</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">Next下一个: <a href=
 "ds_grid_multiply_disk.html">ds_grid_multiply_disk</a></div>
 </div>
 
