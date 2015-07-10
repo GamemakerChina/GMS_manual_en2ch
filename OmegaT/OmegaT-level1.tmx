@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.1.9_2" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Introduction</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="danping" changedate="20150710T102140Z" creationid="danping" creationdate="20150710T102043Z">
+        <seg>GMS介绍</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using GameMaker</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="danping" changedate="20150710T102122Z" creationid="danping" creationdate="20150710T102122Z">
+        <seg>使用 GameMaker</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> GameMaker Studio Overview</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="danping" changedate="20150710T102234Z" creationid="danping" creationdate="20150710T102234Z">
+        <seg> GameMaker Studio 概述</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> The Graphical User Interface</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="danping" changedate="20150710T102245Z" creationid="danping" creationdate="20150710T102245Z">
+        <seg> 图形用户界面</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> Loading Sprites</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="danping" changedate="20150710T102259Z" creationid="danping" creationdate="20150710T102259Z">
+        <seg> 载入精灵</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> Introduction</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="danping" changedate="20150710T102133Z" creationid="danping" creationdate="20150710T102133Z">
+        <seg> 简介</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> Installation</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="danping" changedate="20150710T102146Z" creationid="danping" creationdate="20150710T102146Z">
+        <seg> 安装</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> Activation</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="danping" changedate="20150710T102156Z" creationid="danping" creationdate="20150710T102156Z">
+        <seg> 激活</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>

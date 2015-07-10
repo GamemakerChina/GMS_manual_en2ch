@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>Debugging</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../style.css" type="text/css" media=
+"screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/001_Advanced Use/011_Debugging.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../index.html?page=source%2Fdadiospice%2F001_Advanced%20Use%2F011_Debugging.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../index.html?page=source%2Fdadiospice%2F001_Advanced%20Use%2F011_Debugging.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script><!-- !chm2web! -->
+
+
+<h1>Debugging</h1>
+
+<h2>This section outlines the debug tool and how to correct and
+detect errors in your game.</h2>
+
+<p><i>GameMaker: Studio</i> has a built-in programming language
+called GML, and once you become more familiar with how
+<i>GameMaker</i> works, you will want to use it to its fullest
+extent, meaning that you will need to program aspects of your game
+in this language.<br>
+<br>
+However, when programming code it can be very easy to make mistakes
+- using the wrong variables, passing the wrong arguments, or using
+the wrong functions - which are not always detected by the syntax
+checker that is included with the script editor (for more
+information on the script editor see <a href=
+"../001_Advanced%20Use/006_Scripts.html">Scripts</a>). This means
+that these mistakes will only become apparent when you actually run
+your game, and even then it can sometimes be difficult to know
+exactly what is going wrong! It can therefore be of vital
+importance to know how your game is performing on the chosen
+device, as well as see what instances are in the room, what global
+variables have been created and a whole host of other details.<br>
+<br>
+Now, you can check a lot of these things yourself by adding in
+"debug code" to your games to display on-screen the information you
+require, or that shows messages when there is an error, but this is
+often a lot of work and if you aren't sure where the problem is in
+the first place then it can be a time consuming case of trial and
+error to track down your bug. For that, <i>GameMaker: Studio</i>
+has a special run mode called <b>Debug Mode</b> which will start
+the <i>Debug Module</i>, and there is also a comprehensive error
+reporting system which displays messages at run time to help you
+track down any problems with your game.<br>
+<br></p>
+
+<h3>Error Reporting</h3>
+
+<p>When an error occurs during the execution of a script this is
+reported with an onscreen message, much like the one shown below:
+<img class="center" src="../Images/ErrorReport.png"> Most error
+messages follow the same outline, with a message stating the type
+of error, the instance and event in which the error was
+encountered, then a series of compiler details that explain the
+error in a lot more depth and, finally, a list of all the declared
+global, instance and local variables in your game at that point. At
+the very bottom is the <b>Abort</b> button which will abort the
+game, as well as the <b>Copy</b> button (which copies the error
+into the clipboard) and the <b>Clear</b> button which clears the
+error messages from the window. The information provided by the
+error reporting is very important as it detects and reports the
+large, syntax related bugs that are going to cause your finished
+game to crash, but it won't report more subtle bugs, nor does it
+give feedback on performance... for that you need to use the
+<b>Debug Mode</b>.<br>
+<br>
+Apart from these compile errors, you can sometimes get compiler
+errors. These will be shown (where possible) in a separate window,
+with a list of the possible problems. These types of errors are
+more general than compiler errors and may be due to some subtle
+error in the game.<br>
+<br>
+You can find further information on the different compiler errors
+and runner errors that are shown from <a href=
+"../002_Reference/Debugging/index.html">here</a>.<br>
+<br></p>
+
+<h3>Debug Mode</h3>
+
+<p>If you need to check things more carefully, you can run the game
+in debug mode. When you do, the <b>Debug Module</b> will open along
+with your game. This module permits you to monitor how everything
+is working in your game, from the global performance, right down to
+the values of individual variables in individual instances. You can
+find out further information about the Debug Module and it's
+possibilities and how to use it from the following page:</p>
+
+<blockquote>
+<ol>
+<li><a href="The%20Debug%20Module.html">The Debug Module</a><br>
+</li>
+</ol>
+</blockquote>
+
+<h3>Checking Performance</h3>
+
+<p>When running a game for debugging, you can also see how your
+game performs and get an overview of how everything is performing
+by using the <b>Profile</b> option in the <b>Debug Module</b>. This
+will give very detailed information on how a game is performing and
+how long it takes to perform specific function calls or events (see
+the section on <a href="Profiling.html">Profiling</a> for further
+details). However this requires that the debug module is running
+which may not be what you want, especially if you wish to test
+final executables on devices etc...<br>
+<br>
+In these cases, and as a compliment to the profiler too, you can
+display the <b>debug bar</b> in your game, which will display much
+memory, CPU power and GPU power your game is using.<br>
+<br>
+<img class="center" src="../Images/DebugBar.png"><br>
+<br>
+This Debug Bar shows in a helpful graphic of CPU/GPU usage in the
+actual game window itself, and this can be toggled on and off in
+your game using the function <a href=
+"../002_Reference/Debugging/show_debug_overlay.html"><tt>show_debug_overlay()</tt></a>.
+This bar is split into sections, with each section being 1/60th of
+a second. As you can see from the image below, the bar is made up
+of various colours, with each one signifying a different aspect of
+the games performance, where the larger the bar, the more time that
+aspect requires and the larger the performance hit from it:</p>
+
+<blockquote>
+<ul>
+<li><b>Green</b> - Input / Output processing (ie: keyboard, mouse,
+gamepad, networking etc...)</li>
+
+<li><b>Red</b> - The update speed of the step event</li>
+
+<li><b>Yellow</b> - The time required for the draw event</li>
+
+<li><b>Orange</b> - Debug update time, which is only normally
+visible when you use the debug module</li>
+
+<li><b>White</b> - GPU left over time, which is the time spent
+waiting for the GPU to finish the rendering of the frame before the
+next one can start</li>
+
+<li><b>Cyan</b> - The text rendering time</li>
+
+<li><b>Grey</b> - The time required to clear screen each draw
+step</li>
+
+<li><b>Dark Red</b> - The GPU flush, which is how long the GPU
+takes to clear images from memory</li>
+</ul>
+</blockquote>
+
+<p>Apart from the coloured bars, there are also a few values at the
+top. These values represent the following:<br>
+<br></p>
+
+<ul>
+<li><b>FPS</b> - This is the "Frames per Second" of your game, and
+basically shows how fast your game is running. This value is
+<i>not</i> clamped to the room speed of your game, and so shows you
+how much "overhead" you have to play with. The larger this value
+compared to your room speed, the smoother your game will run and
+the more overhead you have for adding further things. Note that
+this value may vary a lot during a session, but when you close your
+game, the compiler window within <i>GameMaker: Studio</i> will show
+you the minimum and maximum as well as the average values for this
+(note that the minimum value <i>can</i> be negative! this is not a
+bug, but due to the startup times and the way that the game is
+processed when initialised).</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>Texture Swaps</b> - This number shows how many times your
+game is swapping textures per game tick (the time it takes
+<i>GameMaker: Studio</i> to run all events is a game tick, and the
+number of game ticks per second is set by the room speed). Textures
+(sprites and backgrounds) are stored on texture pages, and if you
+have a lot of image assets in your game, then <i>GameMaker:
+Studio</i> has to swap between texture pages to draw them all,
+therefore if this value is high (over 15-20, for example) you
+really should look into ways to optimise this as it will affect the
+performance of your game.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>Vertex Batches</b> - This is how many times the game is
+sending off texture batches to the GPU per game tick, and (as with
+Texture Swaps) you want this to be as low as possible. Texture
+batches, are basically bundles of data that are sent all at once to
+the GPU for rendering. The batch is "broken" when you change a
+font, a colour, a blend mode, or any other draw status that affects
+how things are drawn on a global scale, so you should try to limit
+these things to as few objects as possible since a high number of
+batches will adversely affect your games performance.</li>
+
+<li style="list-style: none"><br>
+</li>
+</ul>
+
+<blockquote><i><b>NOTE:</b> texture swaps and vertex batches will
+never be zero and will normally show values of 2 or 3, since even
+with an empty room an no objects</i> GameMaker: Studio still has to
+draw and batch things.</blockquote>
+
+<p>With these tools you can see how well your game is performing
+and what areas need "tweaked" to increase this performance. You can
+find out more information on performance issues and ways to
+optimise your game on the <b>YoYo Games Helpdesk</b> - <a href=
+"http://help.yoyogames.com/entries/27617403" target=
+"_blank">Optimising Your Games</a>.<br>
+<br></p>
+
+<h3>Clearing the Cache</h3>
+
+<p><i>GameMaker: Studio</i> has an <b>asset compiler cache</b>
+which stores sprites, sounds, object data, etc... between builds of
+your game. This greatly increases build time as each asset only has
+to be re-created only when it has changed. However, this cache can
+become "stale" and odd behaviour can creep into your games, like
+the wrong sound playing when something happens, or graphics
+becoming corrupted. When this happens it's time to clear the asset
+compiler cache using the "broom" icon at the top of the screen:
+<img class="center" src="../Images/Debug_ClearCache.png"> This will
+clear all cached files and the next test run or final build will
+recreate all the files for your game from scratch. Note that you
+should generally do this anyway every few builds, and <b>always</b>
+before building a final executable package.<br>
+<br></p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">Back: <a href="index.html">Advanced Use
+Index</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table><!-- /CHM2WEB --> 
+
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+music	音乐	音乐和声音(sound)不同，音乐一般指背景音乐，声音包含音乐和音效。
+sounds	声音
+objects	物体	对象或者物体，统一用物体这种表达。
+Player	玩家	个别情况也指玩家市场，如GMS Player市场
+Workshop	创意工坊
+Actions	动作	也指行为，在此特指事件中的动作。涉及到游戏中角色的内容，根据情况译为“行为”
+Versions	版本
