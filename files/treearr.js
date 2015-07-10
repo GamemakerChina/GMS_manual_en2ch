@@ -303,7 +303,7 @@ var TITEMS = [
   ["数据结构", "source/dadiospice/002_Reference/Data Structures/index.html", "1",
    ["ds_exists", "source/dadiospice/002_Reference/Data Structures/ds_exists.html", "11"],
    ["ds_set_precision", "source/dadiospice/002_Reference/Data Structures/ds_set_precision.html", "11"],
-   ["矩阵结构", "source/dadiospice/002_Reference/Data Structures/DS Grids/index.html", "1",
+   ["栅格结构", "source/dadiospice/002_Reference/Data Structures/DS Grids/index.html", "1",
     ["ds_grid_add", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_add.html", "11"],
     ["ds_grid_add_disk", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_add_disk.html", "11"],
     ["ds_grid_add_grid_region", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_add_grid_region.html", "11"],
