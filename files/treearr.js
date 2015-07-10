@@ -73,12 +73,12 @@ var TITEMS = [
   ["调试分析", "source/dadiospice/001_Advanced Use/Profiling.html", "11"],
   ["调试模块", "source/dadiospice/001_Advanced Use/The Debug Module.html", "11"],
   ["扩展", "source/dadiospice/001_Advanced Use/Extensions/index.html", "1",
-   ["Android Extensions", "source/dadiospice/001_Advanced Use/Extensions/Android Extensions.html", "11"],
-   ["Creating Extensions", "source/dadiospice/001_Advanced Use/Extensions/Creating Extensions.html", "11"],
-   ["iOS Extensions", "source/dadiospice/001_Advanced Use/Extensions/iOS Extensions.html", "11"],
-   ["Legacy Extensions", "source/dadiospice/001_Advanced Use/Extensions/Legacy Extensions.html", "11"],
+   ["安卓扩展", "source/dadiospice/001_Advanced Use/Extensions/Android Extensions.html", "11"],
+   ["创建扩展", "source/dadiospice/001_Advanced Use/Extensions/Creating Extensions.html", "11"],
+   ["iOS 扩展", "source/dadiospice/001_Advanced Use/Extensions/iOS Extensions.html", "11"],
+   ["传统扩展", "source/dadiospice/001_Advanced Use/Extensions/Legacy Extensions.html", "11"],
    ["Proxy Files", "source/dadiospice/001_Advanced Use/Extensions/Proxy Files.html", "11"],
-   ["Using Extensions", "source/dadiospice/001_Advanced Use/Extensions/Using Extensions.html", "11"]
+   ["使用扩展", "source/dadiospice/001_Advanced Use/Extensions/Using Extensions.html", "11"]
   ],
   ["全局游戏设定", "source/dadiospice/001_Advanced Use/Global game settings/index.html", "1",
    ["Advertising Tab", "source/dadiospice/001_Advanced Use/Global game settings/Advertising Tab.html", "11"],
