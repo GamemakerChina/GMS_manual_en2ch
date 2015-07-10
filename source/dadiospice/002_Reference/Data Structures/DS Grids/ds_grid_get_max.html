@@ -29,9 +29,9 @@ if (window.name != "content")
 <h1>ds_grid_get_max</h1>
 
 <h2>Returns the max value from all the cells within a region on a
-grid.</h2>
+grid.<br>返回一个矩阵中一片区域内所有单元格的最大值</h2>
 
-<h3>Syntax:</h3>
+<h3>Syntax语法:</h3>
 
 <p class="code">ds_grid_get_max(index, x1, y1, x2, y2);</p>
 
@@ -41,33 +41,33 @@ grid.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>Argument参数</th>
+<th>Description描述</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the grid.</td>
+<td>The index of the grid.矩阵结构的索引</td>
 </tr>
 
 <tr class="alt">
 <td>x1</td>
-<td>The left cell column of the region.</td>
+<td>The left cell column of the region.区域的左端单元格列。</td>
 </tr>
 
 <tr>
 <td>y1</td>
-<td>The top cell row of the region.</td>
+<td>The top cell row of the region.区域的顶端单元格行</td>
 </tr>
 
 <tr class="alt">
 <td>x2</td>
-<td>The right cell column of the region.</td>
+<td>The right cell column of the region.区域的右端单元格列</td>
 </tr>
 
 <tr>
 <td>y2</td>
-<td>The bottom cell row of the region.</td>
+<td>The bottom cell row of the region.区域的底端单元格行</td>
 </tr>
 </table>
 </div>
@@ -75,37 +75,41 @@ grid.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real or String</p>
+<p><b>Returns返回值:</b> Real or String实数型 或者 字符串</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>Description描述</h3>
 
 <p>This function can be used to find the maximum value for all the
 cells found within the defined region of a grid, as shown in the
-image below: <img class="center" src="ds_grid_get_max.png"><br>
+image below:<br>
+这个函数可以被用于在一个矩阵结构中被定义的区域内寻找所有单元格的最
+大值，正如下图所示：<img class="center" src="ds_grid_get_max.png"><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>Example举例:</h3>
 
 <p class="code">val = ds_grid_get_max(grid, 0, 0, 5, 5);</p>
 
 <p>The above code will set the variable "val" to the maximum value
 contained within the given region of the ds_grid indexed in the
-variable "grid".</p>
+variable "grid".<br>
+上述代码将设定变量"val"为索引为变量"grid"的矩阵结构中被给定区域内所
+包含的最大值</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">DS
-Grids</a></div>
+<div style="float:left">Back上一个: <a href="index.html">DS
+Grids矩阵结构</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">Next下一个: <a href=
 "ds_grid_get_mean.html">ds_grid_get_mean</a></div>
 </div>
 
