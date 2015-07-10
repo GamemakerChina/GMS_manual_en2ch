@@ -303,7 +303,7 @@ var TITEMS = [
   ["数据结构", "source/dadiospice/002_Reference/Data Structures/index.html", "1",
    ["ds_exists", "source/dadiospice/002_Reference/Data Structures/ds_exists.html", "11"],
    ["ds_set_precision", "source/dadiospice/002_Reference/Data Structures/ds_set_precision.html", "11"],
-   ["栅格数据", "source/dadiospice/002_Reference/Data Structures/DS Grids/index.html", "1",
+   ["矩阵结构", "source/dadiospice/002_Reference/Data Structures/DS Grids/index.html", "1",
     ["ds_grid_add", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_add.html", "11"],
     ["ds_grid_add_disk", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_add_disk.html", "11"],
     ["ds_grid_add_grid_region", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_add_grid_region.html", "11"],
@@ -343,7 +343,7 @@ var TITEMS = [
     ["ds_grid_width", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_width.html", "11"],
     ["ds_grid_write", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_write.html", "11"]
    ],
-   ["列表数据", "source/dadiospice/002_Reference/Data Structures/DS Lists/index.html", "1",
+   ["列表结构", "source/dadiospice/002_Reference/Data Structures/DS Lists/index.html", "1",
     ["ds_list_add", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_add.html", "11"],
     ["ds_list_clear", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_clear.html", "11"],
     ["ds_list_copy", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_copy.html", "11"],
@@ -363,7 +363,7 @@ var TITEMS = [
     ["ds_list_sort", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_sort.html", "11"],
     ["ds_list_write", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_write.html", "11"]
    ],
-   ["配对数据", "source/dadiospice/002_Reference/Data Structures/DS Maps/index.html", "1",
+   ["比对结构", "source/dadiospice/002_Reference/Data Structures/DS Maps/index.html", "1",
     ["ds_map_add", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_add.html", "11"],
     ["ds_map_add_list", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_add_list.html", "11"],
     ["ds_map_add_map", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_add_map.html", "11"],
@@ -388,7 +388,7 @@ var TITEMS = [
     ["ds_map_size", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_size.html", "11"],
     ["ds_map_write", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_write.html", "11"]
    ],
-   ["优先级序列", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/index.html", "1",
+   ["优先队列结构", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/index.html", "1",
     ["ds_priority_add", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/ds_priority_add.html", "11"],
     ["ds_priority_change_priority", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/ds_priority_change_priority.html", "11"],
     ["ds_priority_clear", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/ds_priority_clear.html", "11"],
@@ -406,7 +406,7 @@ var TITEMS = [
     ["ds_priority_size", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/ds_priority_size.html", "11"],
     ["ds_priority_write", "source/dadiospice/002_Reference/Data Structures/DS Priority Queues/ds_priority_write.html", "11"]
    ],
-   ["队列数据", "source/dadiospice/002_Reference/Data Structures/DS Queues/index.html", "1",
+   ["队列结构", "source/dadiospice/002_Reference/Data Structures/DS Queues/index.html", "1",
     ["ds_queue_clear", "source/dadiospice/002_Reference/Data Structures/DS Queues/ds_queue_clear.html", "11"],
     ["ds_queue_copy", "source/dadiospice/002_Reference/Data Structures/DS Queues/ds_queue_copy.html", "11"],
     ["ds_queue_create", "source/dadiospice/002_Reference/Data Structures/DS Queues/ds_queue_create.html", "11"],
@@ -420,7 +420,7 @@ var TITEMS = [
     ["ds_queue_tail", "source/dadiospice/002_Reference/Data Structures/DS Queues/ds_queue_tail.html", "11"],
     ["ds_queue_write", "source/dadiospice/002_Reference/Data Structures/DS Queues/ds_queue_write.html", "11"]
    ],
-   ["堆栈数据", "source/dadiospice/002_Reference/Data Structures/DS Stacks/index.html", "1",
+   ["堆栈结构", "source/dadiospice/002_Reference/Data Structures/DS Stacks/index.html", "1",
     ["ds_stack_clear", "source/dadiospice/002_Reference/Data Structures/DS Stacks/ds_stack_clear.html", "11"],
     ["ds_stack_copy", "source/dadiospice/002_Reference/Data Structures/DS Stacks/ds_stack_copy.html", "11"],
     ["ds_stack_create", "source/dadiospice/002_Reference/Data Structures/DS Stacks/ds_stack_create.html", "11"],
