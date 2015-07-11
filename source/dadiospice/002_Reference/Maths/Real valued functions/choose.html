@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>choose</h1>
 
-<h2>Randomly chooses one of up to 16 arguments.</h2>
+<h2>Randomly chooses one of up to 16 arguments.随机地从16个参数中选出一个</h2>
 
-<h3><b>Syntax:</b>
+<h3><b>Syntax  语法:</b>
 </h3>
 
 <p class="code">choose(val0, val1, val2... val15);</p>
@@ -41,14 +41,14 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>Argument参数</th>
+<th>Description描述</th>
 </tr>
 
 <tr>
 <td>val0... val15</td>
 <td>An input value that can be string, integer, variable or
-constant.</td>
+constant.一个可以是字符串、整数、变量或者常量的输入值</td>
 </tr>
 </table>
 </div>
@@ -56,12 +56,12 @@ constant.</td>
 <p><br>
 </p>
 
-<p><b>Returns:</b> One of the given arguments.</p>
+<p><b>Returns  返回值:</b> One of the given arguments.  被给定的参数之一</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>Description  描述</h3>
 
 <p>Sometimes you want to specify something other than numbers for a
 random selection, or the numbers you want are not in any real order
@@ -70,18 +70,24 @@ generate a random result. For example, say you want to create an
 object with a random sprite at the start, then you could use this
 function to set the sprite index to one of up to 16 sprites.<br>
 <br>
-<i><b>NOTE:</b> This function will return the same value every time
+有时候你希望指定某些不是数字内容的随即选项，或者这些数字你希望不是以任何一种真实的顺序或者在任意被设定的范围之内。
+在这些情况中你将使用choose()来生成一个随机结果。
+比如，说你想要创建的物体在开始的时候带有一个随机的精灵，那么你就可以使用这个函数来把精灵索引设置为16个精灵中的一个。<br>
+<i><b>NOTE  注意:</b> This function will return the same value every time
 the game is run afresh due to the fact that GameMaker: Studio
 generates the same initial random seed every time to make debugging
 code a far easier task. To avoid this behaviour use <a href=
 "randomize.html"><tt>randomize</tt></a> at the start of your
 game.</i><br>
+这个函数每次重新运行游戏都将返回同一套结果因为GameMaker:
+Studio每次都生成同一套初始随机数种子来让调试更方便。为了避免这种行为在你游戏开始的时候使用函数<a href=
+"randomize.html"><tt>randomize</tt></a>.<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3><b>Example:</b>
+<h3><b>Example  举例:</b>
 </h3>
 
 <p class="code">sprite_index = choose(spr_Cactus, spr_Flower,
@@ -90,16 +96,17 @@ hp = choose(5, 8, 15, 32, 40); name = choose("John", "Steven",
 "Graham", "Jack", "Emily", "Tina", "Jill", "Helen");</p>
 
 <p>The above code uses choose to set a number of properties for the
-instance.</p>
+instance.<br>
+上述代码使用choose来设定这个实例的一系列属性。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Real Number
-Functions</a></div>
+<div style="float:left">Back上一个: <a href="index.html">Real Number
+Functions实数函数</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">Next下一个: <a href=
 "random.html">random</a></div>
 </div>
 
