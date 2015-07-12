@@ -28,56 +28,51 @@ if (window.name != "content")
 
 <h1>audio_system</h1>
 
-<h2>Checks whether the legacy sound or normal audio is in use.</h2>
+<h2>检查正在使用的是传统声音系统还是常规声音系统</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">audio_system();</p>
 
 <p><br>
 </p>
 
-<p><b>Returns:</b> Constant</p>
+<p><b>返回值:</b> 常量</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function returns whether the current sound system is the
-legacy or the normal one. The return value can be one of the
-following two constants:</p>
+<p>这个函数返回当前的声音系统是否是传统的还是常规的。返回值可以是下列两个常数之一：</p>
 
 <div class="compat">
 <table class="compat">
 <tr>
-<th>Constant</th>
-<th>Description</th>
+<th width="34%">常量</th>
+<th width="66%">描述</th>
 </tr>
 
 <tr>
 <td>audio_old_system</td>
-<td>the legacy sound system is in use</td>
+<td>正在使用传统声音系统</td>
 </tr>
 
 <tr class="alt">
 <td>audio_new_system</td>
-<td>the normal sound system is in use</td>
+<td>正在使用常规声音系统</td>
 </tr>
 </table>
 </div>
 
 <p><br>
-This function is important only if you are using the HTML5 target
-module, as some browsers are not compatible with the new audio
-system, and so <i>GameMaker: Studio</i> will automatically switch
-back to the legacy audio.<br>
+如果你使用的是html5的目标模块，那么这个函数非常重要。一些浏览器无法与新声音系统兼容，因此Gamemaker:Studio将会自动换回传统声音引擎。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>例子:</h3>
 
 <p class="code">if audio_system() == audio_old_system<br>
 &nbsp;&nbsp;&nbsp;{<br>
@@ -88,9 +83,7 @@ else<br>
 &nbsp;&nbsp;&nbsp;global.SS = true;<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code checks to see if the sound system being used is
-the legacy or the new one, and sets a global variable
-accordingly.</p>
+<p>上面的代码检查所使用音响系统的是传统的或新的之中的哪一个，并相应地设置全局变量。</p>
 
 <p><br>
 </p>

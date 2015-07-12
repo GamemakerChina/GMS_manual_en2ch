@@ -28,7 +28,7 @@ if (window.name != "content")
 
 <h1>audio_exists</h1>
 
-<h2>Checks whether the given sound exists.</h2>
+<h2>检查给定的声音是否存在。</h2>
 
 <h3>Syntax:</h3>
 
@@ -40,13 +40,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the sound to check the existence of.</td>
+<td>用来检查是否存在的声音的索引。</td>
 </tr>
 </table>
 </div>
@@ -54,37 +54,27 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> Boolean</p>
+<p><b>返回值:</b>布尔</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述:</h3>
 
-<p>This function returns whether a sound exists (<tt>true</tt>) or
-not (<tt>false</tt>). Note that if the index you search for has not
-been initialised previously, this function will cause an error as
-it is searching for non-existent asset indices. The sound to check
-can either be a single instance of a sound (the index for
-individual sounds being played can be stored in a variable when
-using the <a href=
-"audio_play_sound.html"><tt>audio_play_sound</tt></a> or <a href=
-"audio_play_sound_at.html"><tt>audio_play_sound_at</tt></a>
-functions) or a sound asset.<br>
+<p>这个函数返回一个声音是否存在（true or false）。请注意，如果您调用索引以前没有初始化，这个函数会导致错误,因为它调用了不存在的资源索引.要检查的声音可以是单个的声音实例(使用<a href="audio_play_sound.html">audio_play_sound</a>或<a href="audio_play_sound_at.html">audio_play_sound_at</a>函数时,存储在一个变量的单个声音) 或者是一个声音资源<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>例子:</h3>
 
 <p class="code">if audio_exists(global.Music)<br>
 &nbsp;&nbsp;&nbsp;{<br>
 &nbsp;&nbsp;&nbsp;audio_play_music(global.Music, true);<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code checks to see if a sound exists. If it does it is
-set to play in a loop.</p>
+<p>上述代码检查一个声音是否存在。如果是,则它将被循环播放。</p>
 
 <p><br>
 </p>

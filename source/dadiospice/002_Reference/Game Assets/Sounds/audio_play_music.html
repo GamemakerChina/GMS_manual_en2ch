@@ -19,6 +19,12 @@ type="text/css">
 chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Game Assets/Sounds/audio_play_music.html";
 </script>
 
+<style type="text/css">
+<!--
+.STYLE21 {font-style: italic}
+.STYLE30 {font-style: italic}
+-->
+</style>
 </head>
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
@@ -26,19 +32,18 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>audio_play_music</h1>
+<h1><em>audio_play_music</em></h1>
 
-<h2>Plays the indicated background music either once or in a
-continuous loop (OBSOLETE).</h2>
+<h2 align="left">将指定背景音乐播放一次或循环播放</h2>
 
-<h3>Syntax:</h3>
+<h3><em>Syntax:</em></h3>
 
-<p class="code">audio_play_music(index, loop);</p>
+<p class="code"><em>audio_play_music(index, loop);</em></p>
 
-<p><br>
-</p>
+<p><em><br>
+</em></p>
 
-<div class="param">
+<div class="param STYLE21">
 <table>
 <tr>
 <th>Argument</th>
@@ -47,64 +52,49 @@ continuous loop (OBSOLETE).</h2>
 
 <tr>
 <td>index</td>
-<td>The index of the music to play.</td>
+<td>播放背景音乐的索引</td>
 </tr>
 
 <tr class="alt">
 <td>loop</td>
-<td>Flags the music as looping or not.</td>
+<td>标志音乐是否循环播放</td>
 </tr>
 </table>
 </div>
 
-<p><br>
-</p>
+<p><em><br>
+</em></p>
 
-<p><b>Returns:</b> N/A</p>
+<p><em><b>返回值:</b> N/A</em></p>
 
-<p><br>
-</p>
+<p><em><br>
+</em></p>
 
-<h3>Description</h3>
+<h3><em>描述</em></h3>
 
-<p><i><b>WARNING!</b> This function has been obsoleted and you
-should use <a href=
-"audio_play_sound.html"><tt>audio_play_sound</tt> and</a> <a href=
-"audio_stop_sound.html"><tt>audio_stop_sound</tt></a>
-instead.</i><br>
-<br>
-This function can be used to start a piece of background music
-playing. You can only have one piece of background playing at a
-time when using this function, and starting a sound while a
-previous one is playing will end the previous one directly. You can
-also choose whether the sound should loop back to the beginning by
-setting the loop flag to <tt>true</tt>, or only to play once by
-setting it to <tt>false</tt>.<br>
-<br></p>
+<p><em><b>注意!</b> 这个函数已经淘汰，你应该使用audio_play_sound和audio_stop_sound代替。<br>
+  <br>
+这个函数常常被用来开始播放一段背景音乐。当你使用此函数时只能依次播放一段背景音，开始播放一段新音乐时将直接结束前一个正在播放的音乐，您还可以选择将loop标记为true使音乐循环播放，或者设置为false令其仅播放一次</em></p>
 
-<p><br>
-</p>
+<p><em><br>
+</em></p>
 
-<h3>Example:</h3>
+<h3><em>Example:</em></h3>
 
-<p class="code">if !global.Music<br>
+<p class="code"><em>if !global.Music<br>
 &nbsp;&nbsp;&nbsp;{<br>
 &nbsp;&nbsp;&nbsp;audio_stop_music();<br>
 &nbsp;&nbsp;&nbsp;}<br>
 else<br>
 &nbsp;&nbsp;&nbsp;{<br>
 &nbsp;&nbsp;&nbsp;audio_play_music(snd_MusicIntro, true);<br>
-&nbsp;&nbsp;&nbsp;}<br></p>
+&nbsp;&nbsp;&nbsp;}<br>
+</em></p>
 
-<p>The above code checks the global variable "Music" and if it
-returns false, it will stop all background music that is currently
-playing, and if it returns true, it will loop the music indexed in
-the variable "snd_MusicIntro".</p>
+<p><em>上述代码检查全局变量“<span class="code">Music</span>”，如果返回false，则停止所有正在播放的背景音乐，如果返回true，它会循环播放在变量“snd_MusicIntro”中的音乐。<br>
+</em></p>
 
-<p><br>
-</p>
-
-<div class="clear">
+<div class="clear STYLE30">
 <div style="float:left">Back: <a href="index.html">Audio</a></div>
 
 <div style="float:right">Next: <a href=
@@ -130,6 +120,5 @@ style="margin-top: 0pt; border-collapse: collapse;">
 <a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
 </td></tr></table> 
 <!-- /CHM2WEB -->
-
 </body>
 </html>
