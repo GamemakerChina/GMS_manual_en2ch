@@ -91,21 +91,8 @@ if (window.name != "content")
 调用这个函数，你能够创建一个可自定义属性，可触发点击事件的 图标，并返回这个元素的id，以备后面操作的正常进行 。
 这个图标就像一个按钮，对于让浏览器创建一个弹出窗口很有用，并且我们能够很方便的在GMS中操作。<br>
 <br>
-You must first set the position, which is relative to the (0,0) of
-the browser window (top left corner) and then give the texture page
-entry for the sprite you wish the button icon to have (see:
-<a href="../Game%20Assets/Sprites/sprite_get_tpe.html"><tt>sprite_get_tpe</tt></a>).
-You can then specify either a URL to open or a script (from the
-resource tree of <i>GameMaker: Studio</i>) to be opened or run. The
-"target" parameter that you specify is the same as the standard
-JavaScript "name" value when you use the <tt>open()</tt> method (be
-aware that all but '_self' may result in the browser blocking, or
-asking the user if they wish to allow it) and the "params" argument
-is the same as the JavaScript "specs" parameter for controlling
-what properties the new window/tab should display (not all browsers
-may support all features). If you are using the icon to run an
-internal script, these last two arguments can be left as empty
-strings "".<br>
+如果，你调用的脚本，那么后面的两个参数可以留空字符串("").
+<br>
 <br>
 可用的窗口打开方式(targets)：</p>
 
@@ -169,51 +156,45 @@ strings "".<br>
 
 <tr>
 <td><b>'location=[</b>boolean<b>]'</b></td>
-<td>Whether or not to display the address field (default is
-1).</td>
+<td>地址栏是否显示（默认值为1）.</td>
 </tr>
 
 <tr class="alt">
 <td><b>'menubar=[</b>boolean<b>]'</b></td>
-<td>Whether or not to display the menu bar (default is 1).</td>
+<td>菜单栏是否显示（默认值为1）.</td>
 </tr>
 
 <tr>
 <td><b>'resizable=[</b>boolean<b>]'</b></td>
-<td>Whether or not the window is resizable (default is 1).</td>
+<td>窗口是否可任意缩放（默认值为1）.</td>
 </tr>
 
 <tr class="alt">
 <td><b>'scrollbars=[</b>boolean<b>]'</b></td>
-<td>Whether or not to display scroll bars (default is 1).</td>
+<td>滚动条是否显示（默认值为1）.</td>
 </tr>
 
 <tr>
 <td><b>'status=[</b>boolean<b>]'</b></td>
-<td>Whether or not to add a status bar (default is 1).</td>
+<td>状态栏是否显示（默认值为1）.</td>
 </tr>
 
 <tr class="alt">
 <td><b>'titlebar=[</b>boolean<b>]'</b></td>
-<td>Whether or not to display the title bar. This is ignored unless
-the calling application is an HTML Application or a trusted dialog
-box (default is 1);</td>
+<td>标题栏是否显示。浏览器一般会忽略这个属性，除非
+调用应用程序为HTML应用程序或值得信赖的对话框
+框（默认值为1）;</td>
 </tr>
 
 <tr>
 <td><b>'toolbar=[</b>boolean<b>]'</b></td>
-<td>Whether or not to display the browser toolbar (default is
-yes).</td>
+<td>工具栏是否显示 （默认显示）.</td>
 </tr>
 </table>
 </div>
 
-<p>It is also worth noting that if the URL argument you pass in is
-the name of a script (ie: it doesn't start with "http://") AND the
-script is called <tt><b>gmcallback_*</b></tt> then you can get
-direct feeds into an html5 event. <i>GameMaker: Studio</i> function
-names are <i>not</i> obfuscated if they begin with
-<tt>gmcallback_</tt>.<br>
+<p>如果你想访问URL，那么前缀必须是<tt><b>http://</b></tt> 
+，如果你想调用脚本，那么GMS脚本名的前缀必须是<tt><b>gmcallback_</b></tt>
 <br></p>
 
 <p><br>
