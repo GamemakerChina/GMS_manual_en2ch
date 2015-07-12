@@ -18,7 +18,6 @@ type="text/css">
 <script type="text/JavaScript">
 chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Game Assets/Sounds/audio_pause_music.html";
 </script>
-
 </head>
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
@@ -28,7 +27,7 @@ if (window.name != "content")
 
 <h1>audio_pause_music</h1>
 
-<h2>Pauses the indicated music track (OBSOLETED).</h2>
+<h2>暂停指定的音乐（淘汰）。</h2>
 
 <h3>Syntax:</h3>
 
@@ -37,26 +36,22 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回值:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述:</h3>
 
-<p><i><b>WARNING!</b> This function has been obsoleted and you
-should use <a href=
-"audio_pause_sound.html"><tt>audio_pause_sound</tt></a>
-instead.</i><br>
+<p><i><b>注意!</b> </i>这个功能已经过时，你应该使用audio_pause_sound代替。<br>
 <br>
-With this function you can pause a music track that is currently
-playing.<br>
-<br></p>
+使用此函数，你可以暂停当前正在播放的音乐。<br>
+</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>例子:</h3>
 
 <p class="code">if keyboard_check_pressed(ord("P"))<br>
 &nbsp;&nbsp;&nbsp;{<br>
@@ -71,10 +66,7 @@ playing.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code checks for a press of the keyboard key "P" and if
-it detects one it sets the global variable "Pause" to <tt>true</tt>
-or false and then either pauses the music or it resumes the music
-from its paused state depending on the returned value.</p>
+<p>上述代码检查按键“P”是否被按下， 并且如果检测到，则将全局变量“Pause”设置为true，然后根据“Pause”的值暂停或恢复音乐</p>
 
 <p><br>
 </p>
