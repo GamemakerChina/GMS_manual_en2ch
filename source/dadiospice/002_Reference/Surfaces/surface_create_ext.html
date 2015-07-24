@@ -4,7 +4,7 @@
 <head>
 <meta name="keywords" content="game maker studio" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>surface_create_ext</title>
@@ -23,8 +23,8 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Surfaces/surface_create_ext.ht
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FSurfaces%2Fsurface_create_ext.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FSurfaces%2Fsurface_create_ext.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
+
 
 <h1>surface_create_ext</h1>
 
@@ -51,12 +51,12 @@ if (window.name != "content")
 
 <tr class="alt">
 <td>w</td>
-<td>要创建的表面层的宽度。</td>
+<td>创建的表面层的宽度。</td>
 </tr>
 
 <tr>
 <td>h</td>
-<td>要创建的表面层的高度。</td>
+<td>创建的表面层的高度。</td>
 </tr>
 </table>
 </div>
@@ -64,27 +64,27 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回：</b>实数</p>
+<p><b>返回：</b> 实数</p>
 
 <p><br>
 </p>
 
 <h3>描述</h3>
 
-<p><i><b>注：</b>此功能仅适用于与HTML5模块一起使用！</i><br>
-<br>这个函数允许你为已经存在网页上的canvas元素附著一个表面图层，意味着可以有效的分割游戏的部分页面，绘制到页面内的不同地方。为此，你必须准确的定义*.html游戏页面的画布元素，使用正确的大小和名称，以符合想要创建的表面。所以，你会有一个“主”画布，然后是辅助的表面层canvas元素，通过这个函数指定到正确的表面层。下面的图片是一个例子展示了怎么设置一个三个画布元素的页面： <img class="center" src="surface_ext_1.png"> 页面布局可能会比较棘手， 特别是你希望所有的元素都可以正确的排列，
-一旦创建布局这个艰巨的任务已经完成，你可以在 <tt>全局游戏设定</tt>的 <a href="../../001_Advanced Use/Global game settings/HTML5 Tab.html">
-HTML5 标签</a>中 将这个 <a href="../../001_Advanced Use/Global game settings/index.html">html</a> 文件作为游戏的默认页面。接下来应该做的是设置房间和视野，因为每个表面层都需要关联一个特定的视野以捕捉游戏画面 (查阅视野变量
-<a href="../Windows And Views/Views/view_surface_id.html"><tt>view_surface_id[0...7]</tt></a>).下面的图片展示的是如何为上面的画布例子设置游戏房间的参数： <img class="center" src="surface_ext_2.png"> 
-最后，你可以再使用这个函数来创建表面图层，名称和画布元素使用的相同，大小符合同一个画布的尺寸。这个函数将返回表面的索引名称，并储存在一个变量上，方便将来函数调用。当这个表面首次被创建的时候，它可能会包含“噪音”，因为基本上它只是一个为特别的目的而搁置的内存区域（这个内存可能仍然包含信息），
-所以在使用前需要用 <a href="../Drawing/Colour And Blending/draw_clear_alpha.html"><tt>draw_clear_alpha</tt></a>这个函数清理这个表面。<br>
+<p><i><b>注：</b> 此函数仅适用于与HTML5模块一起使用！</i><br><br>这个函数允许你为已经存在网页上的canvas元素附著一个表面图层，意味着可以有效的分割游戏的部分页面，绘制到页面内的不同地方。为此，你 <i>必须</i>准确定的定义 <tt>*.html</tt> 游戏页面的画布元素，使用正确的大小和名称，以符合要创建的表面层。所以，你会有一个“主”画布，然后是辅助的表面层canvas元素，通过这个函数指定到正确的表面层。下面的图片是一个例子展示了怎么设置一个三个画布元素的页面： <img class="center" src=
+"surface_ext_1.png"> 页面布局可能会比较棘手， 特别是你希望所有的元素都可以正确的排列， 一旦创建布局这个艰巨的任务已经完成，你可以为游戏加入 这个<tt>html</tt> 文件作为默认的页面，这个操作在全局游戏设定的 <a href=
+"../../001_Advanced%20Use/Global%20game%20settings/HTML5%20Tab.html"> HTML5 选项卡</a><a href=
+"../../001_Advanced%20Use/Global%20game%20settings/index.html">上（Global Game Settings</a> ）。. 下面你是设置房间和视野，因为每个表面层都需要关联一个特定的视野以捕捉游戏画面（查阅视野变量 <a href=
+"../Windows%20And%20Views/Views/view_surface_id.html"><tt>view_surface_id[0...7]</tt></a>）。下面的图片展示的是如何为上面的画布例子设置游戏房间的参数：<img class="center" src=
+"surface_ext_2.png">最后，你可以再使用这个函数来创建表面图，名称和画布元素使用的相同，大小符合同一个画布的尺寸。这个函数将返回表面的索引名称，并储存在一个变量上，方便将来函数调用。当这个表面首次被创建的时候，它可能会包含“噪音”，因为基本上它只是一个为特别的目的而搁置的内存区域（这个内存可能仍然包含信息），所以你可以会用到这个函数 <a href=
+"../Drawing/colour%20And%20Blending/draw_clear_alpha.html"><tt>draw_clear_alpha</tt></a>清理表面层。<br>
 
 <br></p>
 
 <p><br>
 </p>
 
-<h3>例如：</h3>
+<h3>举例：</h3>
 
 <p class="code">s1 = surface_create_ext("surface1", 192, 550);<br>
 s2 = surface_create_ext("surface2", 608, 186);<br>
@@ -97,13 +97,14 @@ view_surface_id[2] = s2;<br></p>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">表面层</a></div>
+<div style="float:left">返回: <a href=
+"index.html">表面层</a></div>
 
-<div style="float:right">下一个: <a href="surface_resize.html">surface_resize</a></div>
+<div style="float:right">下一页: <a href=
+"surface_resize.html">surface_resize</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
-
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -111,17 +112,17 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
   if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
-</script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
      WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+
+
+
 <table width="100%" cellspacing="0" cellpadding="0" 
 style="margin-top: 0pt; border-collapse: collapse;"> 
 <tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
 <a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
+</td></tr></table><!-- /CHM2WEB --> 
+
 
 </body>
 </html>

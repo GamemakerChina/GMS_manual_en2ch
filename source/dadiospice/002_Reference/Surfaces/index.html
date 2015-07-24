@@ -4,10 +4,10 @@
 <head>
 <meta name="keywords" content="game maker studio" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Surfaces</title>
+<title>表面层</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../style.css" type="text/css"
 media="screen" title="style" charset="utf-8">
@@ -23,62 +23,130 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Surfaces/index.html";
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FSurfaces%2Findex.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FSurfaces%2Findex.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
 
-<h1>Surfaces 表面</h1>
-<h2>本章节讨论关于创建和操作表面的函数。</h2>
-<p>普通的绘制绘制，GameMaker: Studio 实际上不是直接绘制到屏幕上，而上绘制到一个叫&ldquo;应用表面(<em>application surface 简称as表面</em>)&rdquo;的<strong>表面</strong>图层上。这个表面通常是一个空的&ldquo;画布&rdquo;，在绘制到屏幕之前可以根据你的需要对这个画布进行操作，多数情况下GameMaker: Studio已经为你作了处理（尽管如此，你仍然可以在代码中控制它，使用到着色器，放大或者其它的操作，详细信息下面会讲到）。</p>
-<p>此外，除了应用表面，你还可以创建你自己的表面，用来创建一些华丽的特效。例如，您可以使用表面来&ldquo;捕捉&rdquo;实例，然后摧毁它，并以这种方式，在表面(surfaces)上，实例的精灵显示的位置，创建一个贴花效果，就好像它仍然存在一样，以此来制作一些图像效果，如碎片，血液等.. 这上面没有任何真实的处理进程。另外就是使用表面作为需要操作的纹理贴图，或者创建&ldquo;在飞&rdquo;的精灵，或者创建复杂的叠加。事实上，表面的用途是无穷的！</p>
-<p>表面使用很简单，但在使用的时候，也有几个应遵循的基本规则。</p>
-<p>&nbsp;</p>
+
+<h1>表面层</h1>
+
+<h2>这一节讨论了创建与操作表面的一系列函数。</h2>
+
+<p>在普通绘制事件中，GameMaker: Studio实际上并未直接绘制到屏幕上，而是绘制到一个称作<b>应用表面</b>的<i>表面层</i>上。表面层基本上是一个空的“画布”，创建后在绘制到屏幕之前，根据你的需要进行操作。多数情况下， GameMaker: Studio 已经为你作了处理（然而你也可以在代码中自己处理，使用到着色器、缩放或其它操作，详细下面会讲到）。<br><br>此外，除了应用表面，也可以创建自己的表面层，游戏中用来设计一些华丽的特效。例如，您可以使用表面来“捕捉”实例，然后摧毁它，并以这种方式，在表面(surfaces)上，实例的精灵显示的位置，创建一个贴花效果，就好像它仍然存在一样，以此来制作一些图像效果，如碎片，血液等.. 这上面没有任何真实的处理进程。另外就是使用表面作为需要操作的纹理贴图，或者创建“在飞”的精灵，或者创建复杂的叠加。事实上，表面的用途是无穷的！<br><br>表面使用很简单，但在使用的时候，也有几个应遵循的基本规则：</p>
+
 <blockquote>
 <ul>
-<li>首先，你应该明白，表面上是&ldquo;不稳定的&rdquo;。这意味着，如果设备或窗口失去焦点或最小化（很好的例子是，当屏Windows弹出屏幕保护程序或Android 设备来电话时应用程序失去焦点的情况），表面可能会被破坏。这是因为它是存储在显存里，目标平台可能需要其往显存里写入其它内容，这意味着，你应该<strong>始终</strong>在恰当的位置放置某种类型的故障安全码，通常是使用<a href="surface_exists.html"><tt>surface_exists</tt></a><a href="http://deciia.wang/GMS_help/002_Reference/Surfaces/surface_exists.html">&nbsp;</a>这个函数。</li>
-<li>其次，你应该注意，使用表面需要大量的显存，所以你应该尽可能的让它们更小，通常不要超过视野或者显示窗口的大小。</li>
-<li>第三，你应该尽可能的在绘制事件中向表面绘制内容。并不强求如此，但根据 <em>GameMaker:Studio</em>在屏幕上绘制的优化方式，建议你保持在绘制事件中使用绘制函数。</li>
-<li>第四，当手动绘制表面时，表面总是在房间内的（0,0）位置。这意味着你可能需要为表面转换坐标，从绝对坐标转换到局部坐标系。例如，如果你有一个视野尺寸大小的表面，并希望在当前视野上往表面里绘制一些东西，你应该从实际的X/Y坐标减去视角的X/Y坐标，得到表面（ 0,0）的相对位置。因此，代码可以这样写:<br /> <br />
-<p class="code">if view_current = 0<br /> &nbsp;&nbsp;&nbsp;{<br /> &nbsp;&nbsp;&nbsp;surface_set_target(surf);<br /> &nbsp;&nbsp;&nbsp;with (obj_Effect)<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;draw_sprite(sprite_index, image_index, x - view_xview[1], y - view_yview[1]);<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /> &nbsp;&nbsp;&nbsp;surface_reset_target();<br /> &nbsp;&nbsp;&nbsp;}<br /> else<br /> &nbsp;&nbsp;&nbsp;{<br /> &nbsp;&nbsp;&nbsp;draw_surface(surf, 0, 0);<br /> &nbsp;&nbsp;&nbsp;}</p>
-</li>
+<li>首先，应该认识到表面层（<i>除了</i> 应用表面层）是“不稳定的 ” are "volatile". 这意味着，如果设备或窗口失去焦点或最小化（很好的例子是，当Windows弹出屏幕保护程序或Android 设备来电话时应用程序失去焦点的情况），表面可能会被破坏。这是因为它储存在显存里，目标平台往内存里写入其它东西时就有可能会重写，所以你需要<i><b>一直</b></i> 在某些位置入置安全的代码，通常是 <a href="surface_exists.html"><tt>surface_exists</tt></a> 函数。<br>
+<br></li>
+
+<li>其次，你应该注意，使用表面需要大量的显存，所以你应该尽可能的让它们更小。通常不要超过视野或者显示窗口的大小。<br>
+<br></li>
+
+<li>第三，你应该尽可能的在绘制事件中向表面层绘制内容。并不强求这样，但是根据<i>GameMaker: Studio</i> 绘制到屏幕的优化方式，建议<i>绘制事件中</i>使用所有的绘制函数。<br>
+<br></li>
+
+<li>第四，手动绘制表面层时，表面 <i>始终</i> 在 (0,0)的位置。这意味着你可能需要为表面转换坐标，从绝对坐标转换到局部坐标系。例如，如果你有一个视野尺寸大小的表面，并希望在当前视野上往表面里绘制一些东西，你应该从实际的X/Y坐标减去视角的X/Y坐标，得到表面（ 0,0）的相对位置因此，代码可以这样写：<br>
+<br>
+
+<p class="code">if view_current = 0<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;surface_set_target(surf);<br>
+&nbsp;&nbsp;&nbsp;with (obj_Effect)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;draw_sprite(sprite_index,
+image_index, x - view_xview[1], y - view_yview[1]);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;surface_reset_target();<br>
+&nbsp;&nbsp;&nbsp;}<br>
+else<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;draw_surface(surf, 0, 0);<br>
+&nbsp;&nbsp;&nbsp;}<br></p></li>
 </ul>
 </blockquote>
-<p>表面的基本用法如下-首先创建一个表面，给它的索引分配给一个变量。然后你可以设置绘图目标到表面上，而不是显示器，往里面绘制内容并进行一些调整。一旦完成，重置绘制目标，再让进一步的绘制发生在屏幕上。一点要注意的是，如果你要求向表面绘制整个显示内容（包括图块、背景等等&hellip;&hellip;），你应该使用变量 <a href="../Windows%20And%20Views/Views/view_surface_id.html"><tt>view_surface_id[0..7]</tt></a>，将表面指定给一个视野。以这种方式，视野中可见的内容将被绘制到相应的表面。</p>
-<p>存在以下函数用来处理表面的问题：</p>
+
+<p>表面层的基本用法如下 - 首先创建一个表面，给它的索引分配给一个变量。然后你可以设置绘图目标到表面上，而不是显示器，往里面绘制内容并进行一些调整。一旦完成，重置绘制目标，再让进一步的绘制发生在屏幕上。应当注意一件事，当你需要绘制整个显示器的内容到表面上（图块、背景等），你可以简单的访问应用表面层（下面会详述）或者使用变量 <a href=
+"../Windows%20And%20Views/Views/view_surface_id.html"><tt>view_surface_id[0..7]</tt></a>将表面绑定到一个视野，视野中显示的所有内容都会绘制到给定的表面上。<br><br>存在以下函数处理表面层的问题：</p>
+
 <blockquote>
 <ol>
-<li><a href="surface_exists.html">surface_exists</a></li>
-<li><a href="surface_create.html">surface_create</a></li>
-<li><a href="surface_create_ext.html">surface_create_ext</a></li>
-<li><a href="surface_resize.html">surface_resize</a></li>
-<li><a href="surface_set_target.html">surface_set_target</a></li>
-<li><a href="surface_set_target_ext.html">surface_set_target_ext</a></li>
-<li><a href="surface_reset_target.html">surface_reset_target</a></li>
-<li><a href="surface_copy.html">surface_copy</a></li>
-<li><a href="surface_copy_part.html">surface_copy_part</a></li>
-<li><a href="surface_get_height.html">surface_get_height</a></li>
-<li><a href="surface_get_width.html">surface_get_width</a></li>
-<li><a href="surface_get_texture.html">surface_get_texture</a></li>
-<li><a href="surface_getpixel.html">surface_getpixel</a></li>
-<li><a href="surface_getpixel_ext.html">surface_getpixel_ext</a></li>
-<li><a href="surface_free.html">surface_free</a></li>
-<li><a href="surface_save.html">surface_save</a></li>
-<li><a href="surface_save_part.html">surface_save_part</a></li>
+<li><a href="surface_exists.html">surface_exists</a><br>
+</li>
+
+<li><a href="surface_create.html">surface_create</a><br>
+</li>
+
+<li><a href="surface_create_ext.html">surface_create_ext</a><br>
+</li>
+
+<li><a href="surface_resize.html">surface_resize</a><br>
+</li>
+
+<li><a href="surface_set_target.html">surface_set_target</a><br>
+</li>
+
+<li><a href=
+"surface_set_target_ext.html">surface_set_target_ext</a><br>
+</li>
+
+<li><a href=
+"surface_reset_target.html">surface_reset_target</a><br>
+</li>
+
+<li><a href="surface_copy.html">surface_copy</a><br>
+</li>
+
+<li><a href="surface_copy_part.html">surface_copy_part</a><br>
+</li>
+
+<li><a href="surface_get_height.html">surface_get_height</a><br>
+</li>
+
+<li><a href="surface_get_width.html">surface_get_width</a><br>
+</li>
+
+<li><a href="surface_get_texture.html">surface_get_texture</a><br>
+</li>
+
+<li><a href="surface_getpixel.html">surface_getpixel</a><br>
+</li>
+
+<li><a href=
+"surface_getpixel_ext.html">surface_getpixel_ext</a><br>
+</li>
+
+<li><a href="surface_free.html">surface_free</a><br>
+</li>
+
+<li><a href="surface_save.html">surface_save</a><br>
+</li>
+
+<li><a href="surface_save_part.html">surface_save_part</a><br>
+</li>
 </ol>
 </blockquote>
-<p>这些函数是专门用于创建和调整表面，但要真正绘制到屏幕上，你应该使用特定的绘制函数，可以在 <a href="../Drawing/Drawing%20Surfaces/index.html">Drawing Surfaces</a>&nbsp;这一节找到相关内容。</p>
-<h3>应用表面</h3>
-<p>正如上面提过的，所有普通绘制都是在应用表面里进行的，这个表面可以像通常的表面一样改变或控制，然而，它并不是普通的表面。专业的用户会发现在&nbsp; <em>GameMaker: Studio</em>&nbsp;它允许控制绘制的方式和时机。更多具体的内容，以及一些特性函数，请查阅如下的章节：</p>
+
+<p>这些函数是专门用于创建和调整表面，但要真正绘制到屏幕上，你应该使用特定的绘制函数，可以在 <a href="../Drawing/Drawing%20Surfaces/index.html">Drawing Surfaces</a>这一节找到相关内容。 <br>
+<br></p>
+
+<h3>应用表面层</h3>
+
+<p>正如上面提过的，所有普通绘制都是在<i>应用表面层</i>里进行的，这个表面可以像通常的表面层一样改变或控制。然而，这 <i>并不是</i> 一个普通的表面层，专业的用户会发现 <i>GameMaker: Studio</i>中允许在绘制的方式和时机上对它有完全的控制。更多具体的内容，以及一些特性函数，请查阅如下的章节：</p>
+
 <blockquote>
 <ol>
-<li><a href="The%20Application%20Surface.html">The Application Surface</a></li>
+<li><a href="The%20Application%20Surface.html">应用表面层</a><br>
+</li>
 </ol>
 </blockquote>
-<p>&nbsp;</p>
-<p>翻译 by 断水</p>
+
+<p><br>
+</p>
+
 <div class="clear">
-<div style="float: left;">返回: <a href="../index.html">GML参考</a></div>
+<div style="float:left">返回: <a href=
+"../index.html">GML参考</a></div>
 </div>
-<h5>&copy; Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -86,17 +154,17 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
   if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
-</script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
      WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+
+
+
 <table width="100%" cellspacing="0" cellpadding="0" 
 style="margin-top: 0pt; border-collapse: collapse;"> 
 <tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
 <a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
+</td></tr></table><!-- /CHM2WEB --> 
+
 
 </body>
 </html>
