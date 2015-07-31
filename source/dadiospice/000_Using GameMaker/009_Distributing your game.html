@@ -4,10 +4,10 @@
 <head>
 <meta name="keywords" content="game maker studio" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Distributing Your Game</title>
+<title>发布您的游戏</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../style.css" type="text/css" media=
 "screen" title="style" charset="utf-8">
@@ -23,179 +23,89 @@ chmtop.c2wtopf.pageid = "dadiospice/000_Using GameMaker/009_Distributing your ga
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../index.html?page=source%2Fdadiospice%2F000_Using%20GameMaker%2F009_Distributing%20your%20game.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../index.html?page=source%2Fdadiospice%2F000_Using%20GameMaker%2F009_Distributing%20your%20game.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
 
-<h1>Distributing Your Game</h1>
 
-<h2>Here we talk about how you can distribute your finished
-game.</h2>
+<h1>发布您的游戏</h1>
 
-<p>With the information in the preceding sections of this manual
-you can begin to create your games, but when your game is finished
-you obviously want other people to play it. You can of course
-export a *.gmz file and let them use <i>GameMaker: Studio</i> to
-play it but this is normally not what you want! First of all, you
-don't want others to be able to change the game or get access to
-all your hard work, and secondly you also want people to play the
-game even if they do not have a copy of <i>GameMaker: Studio</i>.
-So you would like to create a stand-alone application or package of
-your game, or upload it as HTML5 to a site on the internet so that
-everyone can play it!<br>
+<h2>在这里讨论的是如何发布你的作品。</h2>
+
+<p>手册前面的部分讲解了如何创建一个游戏，但是当游戏完成时你肯定希望其他人可以玩它。当然你可以导出 *.gmz 资源文件并且让他们使用 <i>GameMaker: Studio</i> 来玩你的游戏，但是这通常并不是你想要的！首先，你不希望别人能够改变游戏或得到你所有的辛勤工作，其次你也希望即使别人没有 <i>GameMaker: Studio</i> 也可以玩你的游戏。所以你想创建一个独立的应用程序或把你的游戏打包，或者上传到互联网作为 HTML5 的网站给大家玩！<br>
 <br></p>
 
-<h3>Creating Your Stand Alone Game</h3>
+<h3>创建你的独立游戏</h3>
 
-<p>Creating stand-alone applications is very easy with
-<i>GameMaker: Studio</i>. First you have to choose the "target" for
-the files to be made which means choosing whether you wish to
-create an *.exe for Windows, generate JavaScript and HTML for use
-in a browser, or create a package for one of the other target
-modules. Each of the individual targets has their own settings and
-you must ensure that they are correctly configured in the <a href=
-"../001_Advanced%20Use/Global%20game%20settings/index.html">Global
-Game Settings</a> and <a href=
-"../001_Advanced%20Use/Preferences/index.html">Preferences</a>
-before you continue.<br>
-<br>
-Once everything is correct, you then go into the <b>File</b> menu
-and select the item <b>Create Executable</b> or you can press the
-following button, found on the main IDE toolbar beside the Play and
-Debug buttons:<br>
-<img src="../Images/createEXE.png" align="left"> <b>Create
-Executable For Target</b><br>
-Either option will open a save window where you can give the final
-name that you wish to use for your game file. Once you have done
-this, the necessary files will be generated so that you can
-distribute it as you wish.</p>
+<p>使用 <i>GameMaker: Studio</i> 创建独立游戏十分简单。首先你要在 "target" 里选择到底需要生成什么类型的文件，每一个类型都在 <a href=
+"../001_Advanced%20Use/Global%20game%20settings/index.html">Global game settings(游戏全局设置)</a> 和 <a href=
+"../001_Advanced%20Use/Preferences/index.html">Preferences(配置)</a> 里有单独的设置。<br><br>一旦选择完毕，你可以点击 <b>File</b> 菜单并选择 <b>Create Executable</b> 按钮 (或者工具栏上相应的按钮):<br><img src="../Images/createEXE.png" align="left"> <b>生成目标程序 </b><br>两者都会打开保存窗口，在这里你可以选择文件名。点击确定后会生成目标程序，就可以如你所愿地发布了。</p>
 
-<blockquote><i><b>NOTE:</b> Before doing a final build of your
-project for release, you should always clear the Asset Compiler
-Cache (using the green "broom" icon at the top of the IDE) to
-ensure that all cached files are recreated and no stale files
-corrupt your final game.</i>
+<blockquote><i><b>注意:</b> 在生成最终文件之前需要清理资源编辑缓存 (点击使用工具栏里的绿色 "扫帚" 图标)来确保生成最终游戏的正确性。</i>
 </blockquote>
 
-<h3>Target Platform Formats</h3>
+<h3>目标平台格式</h3>
 
-<p>Each target option saves to a platform specific format:</p>
+<p>每个目标平台都有一些特殊的格式:</p>
 
 <blockquote>
 <ul>
-<li>If you have the setting as "Windows" in the main <i>GameMaker:
-Studio</i> window, then <b>only</b> a Windows compatible file will
-be made. This can be an installer, a stand-alone <tt>*.exe</tt> or
-a <tt>*.zip</tt>. The export file type is chosen from a drop-down
-menu within the "Save" dialogue itself, as shown by the image
-below: <img class="center" src="Windows_Export.png"></li>
+<li>• 如果在 <i>GameMaker: Studio</i> 窗口 target 设置了 "Windows" ，那么就 <b>只能</b> 生成兼容 Windows 的文件。可以是一个安装包、一个独立的 <tt>*.exe</tt> 程序或者 <tt>*.zip</tt> 压缩包。导出文件类型在 "保存" 对话框的下面选择，如下图:  <img class="center" src="Windows_Export.png"></li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>If you have chosen to build HTML5, then an index.html (default
-name, but you can give your own name too) along with a folder
-containing your game's files will be created and saved to the
-specified location. For your game to work you will need <b>both</b>
-of these to be uploaded to a server. The index.html can also be
-customised to show your game with a different background colour, or
-at a different position etc... but a knowledge of the HTML language
-is necessary for this (see the <a href=
-"../001_Advanced%20Use/Global%20game%20settings/HTML5%20Tab.html">HTML5
-Tab</a> of the <a href=
-"../001_Advanced%20Use/Global%20game%20settings/index.html">Global
-Game Settings</a>).</li>
+<li>•如果你选择生成 HTML5，那么会生成一个含有 index.html (默认名称，可更改) 的包含你的游戏的文件夹，并保存到指定位置。你需要将整个文件夹 <b>both</b> 上传到服务器。index.html 网页还可以自定义背景颜色或位置等...但是 HTML 语言必要的知识请查阅 <a href=
+"../001_Advanced%20Use/Global%20game%20settings/index.html">Global game settings (游戏全局设置)</a> 里的 <a href=
+"../001_Advanced%20Use/Global%20game%20settings/HTML5%20Tab.html">HTML5 Tab (HTML5 选项卡)</a></li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>For Android devices, a *.apk file will be generated which can
-be used directly on any Android devices or uploaded to the Google
-Play or Amazon stores (or any other site that accepts Android
-apps).</li>
+<li>选择了安卓设备，就会生成 *.apk 文件，你可以直接在任何 Android 设备上使用，或者上传到 Google Play 或 Amazon stores (或任意接受 Android 应用程序的网站)。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>For an iOS or Mac build you will need all the appropriate
-developer permissions and an Apple Mac computer. <i>GameMaker:
-Studio</i> will create a *.dish file which you will then need to
-prepare in the <b>Application Oven</b> app on a Mac. This will then
-generate your iOS or Mac app for you.</li>
+<li>生成 iOS 或 Mac 应用软件需要 苹果开发者许可和一台苹果 MAC 电脑。<i>GameMaker: Studio</i> 将创建 MAC 电脑上 <b>Application Oven</b> 所需的 *.dish 文件。这将生成你的 iOS 或 MAC 应用软件。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>For the Windows 8 (JS and Native) module an <tt>*.appx</tt>
-file will be created, along with its manifest and a number of other
-files that are needed for your game to work as a native Windows 8
-app. These will all be stored in a folder in the location (and with
-the name) of your choice.</li>
+<li>•Windows 8 (JS 和 本地) 模块会生成 <tt>*.appx</tt> 文件，还会附带生成一些 win8 app 必须的文件。这些文件都将被储存在你选择的文件夹里。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>For the Windows Phone device target module, an <tt>*.xap</tt>
-file is generated which can then be used by all compatible devices
-or uploaded to the MS Store.</li>
+<li>•Windows Phone 模块会生成 <tt>*.xap</tt> 文件，可在所有兼容设备上运行或发布到 MS Store。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>For the Tizen target module, a <tt>*.wgt</tt> file is generated
-which can then be used by all compatible devices or uploaded to the
-Tizen app stores.</li>
+<li>•Tizen 模块会生成 <tt>*.wgt</tt> 文件，可在所有兼容设备上运行或发布到 Tizen 应用商店。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>If you have bought <i>GameMaker: Studio</i> through
-<b>Steam</b> then you can also compile to the <b>Steam
-Workshop</b>. For more information see <a href=
-"Steam%20Workshop.html">here</a>.</li>
+<li>•如果你在 <b>Steam</b> 上购买了 <i>GameMaker: Studio</i> 则可以编译到 <b>Steam 创意工坊</b>。更多信息请查阅 <a href=
+"Steam%20Workshop.html">这里</a>。</li>
 </ul>
 </blockquote>
 
-<p><i><b>Please note:</b> GameMaker: Studio uses a C++ runner to
-create all final games and apps. The previous GameMaker versions
-used Delphi, so this means that any game imported from previous
-versions <b>may not work</b> without certain changes.</i><br>
-<br>
-For further information on how to compile a final game for your
-target platform, and for details on how to upload these to the
-various app stores available, please see the <a href=
-"http://help.yoyogames.com/home" target="_blank">YoYo Knowledge
-Base</a>.<br>
+<p><i><b>请注意:</b> GameMaker: Studio 使用 C++ 创建最终游戏。老版本的 GameMaker 使用的是 Delphi，这意味着从老版本导入的游戏 <b>可能不会工作</b>，除非你作出正确的修改。</i><br><br>更多如何生成目标平台最终游戏和上传 app 到应用商店的细节请登陆 <a href=
+"http://help.yoyogames.com/home" target="_blank">YoYo 知识库</a>。<br>
 <br></p>
 
-<h3>Distribution</h3>
+<h3>发布</h3>
 
-<p>Once you have created a stand-alone application or package for
-your game you can then give the file to other people or place it on
-your website to download. You can also upload these files to the
-different hosting services for individual distribution or to online
-stores (like Google Play, iTunes or the MS Store) for general
-distribution and retail.<br>
-<br>
-Further information on these formats and file creation can be found
-on the <a href="http://help.yoyogames.com/categories/20060442"
-target="_blank">YoYo Knowledge Base</a>.<br>
-<br>
-You are free to distribute the games you create with <i>GameMaker:
-Studio</i> in any way you like, and this means that you can even
-sell them! Of course, this assumes that the sprites, images, and
-sounds you used to make it can be distributed or sold as well and
-that you have the legal rights to all assets. See the enclosed
-license agreement for more information on this (available on the
-<a href="004_The%20Graphical%20User%20Interface.html">Licences
-Tab</a>).<br>
+<p>一旦你创建了独立应用程序或打包了你的游戏，你就可以把你的文件提供给别人或者发布到网站上供别人下载。你也可以上传这些文件到不同主机服务器或在线商店 (如 Google Play、iTunes 或 MS Store) 发布和销售。 
+<br>有关这些格式和文件创建的详情请查阅 <a href="http://help.yoyogames.com/categories/20060442"
+target="_blank">YoYo 知识库</a>。<br><br>你可以用任何你喜欢的方式发布你用 <i>GameMaker: Studio</i> 创建的游戏，这意味着可以卖给别人！当然，前提是所有的游戏资源都是你自己制作的。有关许可的更多信息请查阅 <a href="004_The%20Graphical%20User%20Interface.html">Licences Tab(许可标签)</a>)。<br>
 <br></p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Using GameMaker:
-Studio</a></div>
+<div style="float:left">返回： <a href="index.html">使用 GameMaker: Studio</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
@@ -206,17 +116,17 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
   if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
-</script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
      WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+
+
+
 <table width="100%" cellspacing="0" cellpadding="0" 
 style="margin-top: 0pt; border-collapse: collapse;"> 
 <tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
 <a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
+</td></tr></table><!-- /CHM2WEB --> 
+
 
 </body>
 </html>

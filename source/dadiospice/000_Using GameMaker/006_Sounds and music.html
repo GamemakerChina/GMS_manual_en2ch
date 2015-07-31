@@ -4,10 +4,10 @@
 <head>
 <meta name="keywords" content="game maker studio" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Sounds And Music</title>
+<title>声音和音乐</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../style.css" type="text/css" media=
 "screen" title="style" charset="utf-8">
@@ -23,170 +23,68 @@ chmtop.c2wtopf.pageid = "dadiospice/000_Using GameMaker/006_Sounds and music.htm
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../index.html?page=source%2Fdadiospice%2F000_Using%20GameMaker%2F006_Sounds%20and%20music.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../index.html?page=source%2Fdadiospice%2F000_Using%20GameMaker%2F006_Sounds%20and%20music.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
 
-<h1>Sounds And Music</h1>
 
-<h2>This section explains how to add a sound resource to your
-game.</h2>
+<h1>声音和音乐</h1>
 
-<p>To add a sound resource to your game, use the <a href=
-"Drop%20Down%20Menus/The%20Resources%20Menu.html">Resource</a> menu
-or right-click on the resource tree and select <b>Create Sound</b>,
-or you can use the corresponding button on the toolbar. Any of
-those will bring up the following window: <img class="center" src=
-"../Images/form_sound.png"> To load a sound, press the <b>Load
-Sound</b> button to the right of the sound name. A file selector
-dialogue pops up in which you can select the sound file, which can
-<i>only</i> be either a wave file or an MP3 file. In general, Wave
-files (<tt>*.wav</tt>) are used for the short sound effects as even
-though they are generally larger files they will play
-instantaneously due to the fact that they do not need any type of
-decoding for playing. You can also have multiple wave files playing
-at once, which is why you should use these for all the sound
-effects in your game.<br>
-<br>
-MP3 (<tt>*.mp3</tt>) files should be used for background music as
-GameMaker: Studio only permits you to play <b>one</b> music track
-at a time. These files are much smaller than a wave file would be
-but have a small CPU overhead as they have to be decoded before
-being played, hence the limit of only one MP3 file being played at
-time (however, you can have multiple music tracks in your game, and
-you would just switch between them when necessary).<br>
-Once you have loaded your file you can preview the sound by using
-the play button which will loop it continuously. This is very handy
-as it means you can make changes to the volume using the slider at
-the bottom of the window and hear what the effect it will have on
-the sound. There is a stop button too, so you can stop the preview
-at any time.<br>
+<h2>本节说明了如何为你的游戏添加声音资源。</h2>
+
+<p>你可以使用 <a href=
+"Drop%20Down%20Menus/The%20Resources%20Menu.html">Resource</a> 菜单或右键点击资源树选择 <b>Create Sound</b> 或使用工具栏上相应的按钮添加声音资源。无论以哪种方式都将打开下面的窗口:<img class="center" src=
+"../Images/form_sound.png">按下声音名称右边的 <b>Load Sound</b> 按钮。文件选择对话框将会弹出，你可以选择声音文件。<i>只能</i> 选择 wave 或者 MP3文件。通常 Wave 文件 (<tt>*.wav</tt>) 用于短的音效。尽管它们通常较大但播放时不需要任何类型的解码，会瞬间播放。你也可以同时播放多个 wave 文件。这就是为什么你应该使用 wave 文件作为音效的原因。 
+<br><br>MP3 (<tt>*.mp3</tt>) 文件用于背景音乐，GameMaker: Studio 只允许同时播放 <b>一个</b> 音乐这些文件比 wave 文件小得多，但是有小的 CPU 消耗，因为它们在播放前会解码，因此同时只能播放一个 MP3 文件(不过，在你的游戏中可以有多个音乐曲目以便在需要时切换着使用)。<br>加载好文件后可以使用播放按钮预览音乐，这将循环播放音乐。这使得你可以使用窗口底部的音量按钮调整音量大小。也有停止按钮，所以你可以在任何时候停止预览。
 <br></p>
 
-<blockquote><i><b>NOTE:</b> Previous versions of</i> GameMaker
-accepted MIDI file format but that is not the case with
-<i>GameMaker: Studio</i>. You cannot use MIDI any longer and any
-imported files from legacy versions which use these may cause the
-program to crash. These files should be removed or changed before
-testing!<br>
+<blockquote><i><b>注意:</b> 老版本的</i> GameMaker 支持 MIDI 格式文件但是 <i>GameMaker: Studio</i> 并不支持。你不能再使用 MIDI，并且从老版本中导入这些文件可能会导致程序崩溃。这些文件应该在测试前被删除或替换！<br>
 <br></blockquote>
 
-<p>The sound window also has other options which are explained
-below.<br>
+<p>声音窗口还有如下选项。<br>
 <br></p>
 
-<h3>Audio Groups</h3>
+<h3>音频组</h3>
 
-<p>You can assign your audio file to a specific <b>Audio group</b>.
-These are created from the Global Game Settings <a href=
-"../001_Advanced%20Use/Global%20game%20settings/Audio%20Groups%20Tab.html">
-Audio Groups Tab</a> and are used to to group audio assets together
-for easier memory management and volume control. Once an audio file
-has been assigned to a group you can then use the specific audio
-group functions to change them and lo load/unload them from memory.
-See the section on <a href=
-"../002_Reference/Game%20Assets/Sounds/index.html">Audio
-Functions</a> for further information. Note that while the rest of
-the audio properties are configuration specific, the audio group
-setting is <i>not</i> and a sound will belong to the same group on
-all configurations that you use.</p>
+<p>你可以将你的音频文件分到一个特定的 <b>Audio group (音频组)</b>。这需要在 Global Game Settings (游戏全局设置) 的 <a href=
+"../001_Advanced%20Use/Global%20game%20settings/Audio%20Groups%20Tab.html">Audio Groups Tab (音频组选项卡)</a> 设置，把音频资源放在一组更容易管理内存和控制音量。一旦音频文件被分到了一组，你就可以使用特定的音频组函数改变它们或从内存中加载/卸载它们。更多信息请查看 <a href=
+"../002_Reference/Game%20Assets/Sounds/index.html">Audio Functions (声音函数)</a>。注意，当其余的音频属性是特定的配置，音频组设置和它们的设置 <i>not</i> 一样，而是只使用音频组设置。</p>
 
-<blockquote><i><b>NOTE:</b> Audio groups can only be used when
-working with the normal audio system, but will not work with legacy
-audio.</i>
+<blockquote><i><b>注意:</b> 音频组只能与当前音频系统工作，但不会与传统音频工作。</i>
 </blockquote>
 
-<h3>Compression</h3>
+<h3>压缩</h3>
 
-<p>The above rules for file types are for the default configuration
-of <b>Uncompressed</b> audio. However, you can select to
-<b>Compressed</b> audio should you wish to use that. What this will
-do is force all your sound files (irrespective of whether they are
-<tt>*.wav</tt> or <tt>*.mp3</tt>) to be compressed down to <i>Ogg
-Vorbis</i> <tt>*.ogg</tt> format files for all platforms.<br>
-<br>
-These sounds are smaller on disc, but will have a slight CPU
-overhead due to the need to be uncompressed before being played, so
-you should keep that in mind if you wish to use compression in an
-already CPU intensive game.<br>
+<p>上述文件类型是 <b>Uncompressed (未压缩)</b> 音频的默认配置。你也可以选择 <b>Compressed (压缩)</b> 音频。压缩会使得你所有的声音文件 (无论是 <tt>*.wav</tt> 还是 <tt>*.mp3</tt>) 被压缩成适用于所有平台的 <i>Ogg Vorbis</i> 格式的 <tt>*.ogg</tt> 文件。<br><br>这些文件占用空间较小，但是CPU开销较大，请自行取舍。<br>
 <br></p>
 
-<h3>Streaming</h3>
+<h3>流</h3>
 
-<p>If you have chosen <b>compressed</b> audio, you can then also
-choose to have your sound as <b>streamed</b> or <b>not
-streamed</b>. A streamed sound will be one that is uncompressed and
-played in real time, streamed from the disc. Streaming is ideal for
-music as it reduces the one off overhead of uncompressing the whole
-file, which may cause a pause in the game, but is not recommended
-for simple sound effects where the hit on the CPU is much less.<br>
+<p>如果 你选择了 <b>compressed</b> 音频，你可以选择用 <b>streamed</b> 的方式播放或者 <b>不是 </b>。流式传输的声音未压缩，从磁盘按流实时播放。流媒体是最理想的，因为他减少了一次性解压整个文件的开销(可能会导致游戏暂停)，但是不推荐用于 CPU 消耗较小的简单音效。<br>
 <br></p>
 
-<h3>Quality And Volume</h3>
+<h3>品质和音量</h3>
 
-<p>If you have loaded an <tt>*.ogg</tt> file or an <tt>*.mp3</tt>
-file into the IDE, you will be presented with a "quality" slider.
-Changing this will change the encoding that is used and therefore
-reduce (or improve) the final quality of the sound. Note that the
-better the quality, the larger the file, and that increasing this
-on a low quality audio file will <i>not</i> improve the quality
-noticeably and only bloat the final game. In general the default
-value is fine for most games.<br>
-<br>
-Beside the quality bar for all file types, you can set the maximum
-volume for a sound, ie: if the slider is at 0.5 then the max volume
-for that sound when the gain is 1, will be half the recorded volume
-for the sound. Note that if you are using the legacy audio system
-to play the sound (or are working on the HTML5 target), this slider
-is simply the <i>initial</i> volume of the sound and can be changed
-by setting the volume using the appropriate legacy function.<br>
+<p>如果你从 IDE 加载 <tt>*.ogg</tt> 或者 <tt>*.mp3</tt> 文件，你会看到 "品质" 滑块。这将会改变所使用的编码，从而减少 (或提高) 声音的最终品质。注意品质越高，文件越大，如果作用于本身就是低品质的音频文件，<i>不会</i> 提升品质，而只会使得游戏变得庞大。通常来说默认值适用于大多数游戏。<br><br>在品质的旁边，可以设置声音最大音量，即:如果滑块是 0.5，那么播放时就只有一半的声音。注意如果你打算使用传统声音系统播放音乐 (或工作于 HTML5 目标)，滑块是 <i>初始</i> 音量，可以通过适当的函数来改变。
 <br></p>
 
-<h3>Target Options</h3>
+<h3>目标选项</h3>
 
-<p>The <b>Target Options</b> panel is where you set the conversion
-rates for your game. These settings will affect how the sound is
-exported for the target platform, and <i>GameMaker: Studio</i> will
-automatically convert your sound files for you - you simply control
-the final quality of those sounds when converted. Generally the
-default settings of 16 bit, 44100kHz and 192kbps are perfectly
-adequate, but it may be that you wish sound effects (for example)
-to have a lower quality and music to have a higher quality, in
-which case these settings can be changed.<br>
-<br>
-You can also choose whether the conversion should be mono, stereo
-or 3D. If you plan on using the audio emitter functions to create
-3D sound effects, you should indicate this here, otherwise choose
-mono or stereo depending on the use that the sounds are going to be
-put to.<br>
-<br>
-<i><b>NOTE:</b> The higher the quality, the larger the file, and
-this should be taken into account when deciding what bitrate to
-choose.</i><br>
+<p><b>Target Options</b> 面板设置转换率。这些设置将会影响声音输出到目标平台 <i>GameMaker: Studio</i> 将会自动转换你的音频文件。一般默认设置 16 bit, 44100kHz and 192kbps 即可，但如果你希望你的音效质量较低、音乐质量较高，也可以改变设置以达到目的。<br><br>你还可以选择是否转换为单声道、立体声或 3D。如果你打算使用音频发射器功能来创建 3D 音效，你应该指明位置，否则在声音播放时将使用单声道或立体声。<br><br><i><b>注意:</b> 质量越高文件越大，请自行取舍。</i><br>
 <br></p>
 
-<h3>External Editor</h3>
+<h3>外部编辑器</h3>
 
-<p><i>GameMaker: Studio</i> does not have a built-in sound editor.
-But, in the <a href=
-"../001_Advanced%20Use/Preferences/Editor%20Preferences.html">Editor
-Preferences</a>, you can indicate external editors that you want to
-use for editing sounds. If you selected these you can press the
-button labelled <b>Edit Sound</b> to open the chosen editor and
-change the current sound. The <i>GameMaker: Studio</i> window will
-be hidden while you edit the sound and returns when you close the
-sound editor (you must save the sound in the editor first otherwise
-it will not be saved in <i>GameMaker: Studio</i>).<br>
+<p><i>GameMaker: Studio</i> 不内置声音编辑器。但是在 <a href=
+"../001_Advanced%20Use/Preferences/Editor%20Preferences.html">Editor Preferences (编辑器配置)</a> 你可以选择你想使用的外部编辑器。如果设置妥当，你可以按下 <b>Edit Sound</b> 按钮打开外部编辑器。<i>GameMaker: Studio</i> 窗口会自动隐藏，关闭编辑器就会返回 (你必须在编辑器里保存好音频文件而不是 <i>GameMaker: Studio</i> 里)。<br>
 <br></p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Using GameMaker:
-Studio</a></div>
+<div style="float:left">返回： <a href="index.html">使用 GameMaker: Studio</a></div>
 
-<div style="float:right">Next: <a href=
-"007_Backgrounds.html">Backgrounds</a></div>
+<div style="float:right">下一章: <a href=
+"007_Backgrounds.html">背景</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
@@ -197,17 +95,17 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
   if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
-</script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
      WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+
+
+
 <table width="100%" cellspacing="0" cellpadding="0" 
 style="margin-top: 0pt; border-collapse: collapse;"> 
 <tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
 <a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
+</td></tr></table><!-- /CHM2WEB --> 
+
 
 </body>
 </html>

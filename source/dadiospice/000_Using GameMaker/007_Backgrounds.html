@@ -4,10 +4,10 @@
 <head>
 <meta name="keywords" content="game maker studio" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Backgrounds</title>
+<title>背景</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../style.css" type="text/css" media=
 "screen" title="style" charset="utf-8">
@@ -23,113 +23,40 @@ chmtop.c2wtopf.pageid = "dadiospice/000_Using GameMaker/007_Backgrounds.html";
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../index.html?page=source%2Fdadiospice%2F000_Using%20GameMaker%2F007_Backgrounds.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../index.html?page=source%2Fdadiospice%2F000_Using%20GameMaker%2F007_Backgrounds.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
 
-<h1>Backgrounds</h1>
 
-<h2>Backgrounds are another of the basic resources that you can use
-in <i>GameMaker: Studio</i>.</h2>
+<h1>背景</h1>
 
-<p>These are usually large images that are used as backgrounds (or
-foregrounds) for the rooms in which the game takes place, but they
-can also be large images composed of many smaller ones called
-<i>tiles</i> which you can then place individually in your room to
-create complex visual designs for levels with far less processing
-overhead than you would get with objects and sprites.<br>
-<br>
-To create a background resource in your game, use the <b>Create
-Background</b> option from the drop-down <b>Resources</b> menu or
-use the corresponding button on the toolbar. Either of those will
-cause the following window to open: <img class="center" src=
-"../Images/form_background.png"> As with all resources, you must
-give a name to your backgrounds for reference within <i>GameMaker:
-Studio</i> and so you can identify them easily, although you should
-note that the actual name itself is really just a variable which
-holds a number that "points" to the resource, in this case a
-background. It's best to give each background a descriptive name so
-that you can identify at a glance whether a particular resource is
-a background or an object or anything else, and many people do this
-by prefixing or suffixing the resource with the letters "bck". For
-example, the above image could be called <b>bck_Horizon</b> or
-<b>Horizon_bck</b>.<br>
-<br>
-Below the "Name" section are the buttons that enable you to load,
-save or edit a background image. If you select "Load Background",
-you will get the standard file selector where you can choose
-supported image file (PNG, GIF, BMP, JPG.) and also tell GM to make
-that image opaque (remove transparency), or make it transparent
-(this takes the colour from the bottom left hand corner pixel as
-the base colour to make transparent) or to smooth the edges of the
-background (only when it is transparent). Once you have selected
-the file and the options, clicking the "Open" button will load the
-background into <i>GameMaker: Studio</i> ready to be used in your
-games. Editing the background can be done within <i>GameMaker:
-Studio</i> too, and we have a whole section in the Advanced Use
-part of the manual that deals with this <a href=
-"../001_Advanced%20Use/More%20about%20backgrounds/index.html">here</a>.<br>
+<h2>背景是 <i>GameMaker: Studio</i> 中另一个基础资源。</h2>
 
-<br>
-Be careful with using large backgrounds, especially if your target
-device is HTML5 or one of the smaller mobile devices, as large
-backgrounds need more memory and this could be a problem later when
-you try to compile your game. You should also be aware that
-backgrounds in <i>GameMaker: Studio</i> are designed to tile and
-this means they have overlapping pixels on either side, so if you
-see any strange artefacts (transparent lines, extra pixels, etc.)
-then you should possibly be using sprites instead for the graphical
-effect you wish to achieve.<br>
+<p>通常用大图像作为房间的背景。但它们也可以是由许多名为 <i>tiles (磁贴)</i> 的小图像组成，它们只需要更小的开销。你会得到比物体和精灵更复杂的视觉设计。 <br><br>用 <b>Resources</b> 下拉菜单的 <b>Create Background</b> 选项或者工具栏上相应的按钮创建背景。无论以哪种方式都将打开下面的窗口: <img class="center" src=
+"../Images/form_background.png"> 如同所有的资源，你必须为 backgrounds 取一个名字使得 <i>GameMaker: Studio</i> 和你可以轻松地辨认它们,实际上你需要知道在这种情况下真实的名字只是一个包含了大量的 "点" 的变量资源。最好给背景一个描述性的名称以便你可以一目了然地区分它和其他类型的资源，许多人通过添加 "bck" 前缀或后缀来区分。例如，上图可以叫做 <b>bck_Horizon</b> 或者 <b>Horizon_bck</b>。<br><br>名字下面的部分是加载、保存和编辑背景图片。如果你选择 "Load Background (加载背景)"，会打开标准的文件选择器以选择支持的图像 (PNG、GIF、BMP、JPG)。在这里你还可以选择不透明 (去除任何透明部分)、去除背景色 (如果有使其透明)或者平滑边缘(如果它是透明的)。选好了这些选项按下 Open 按钮把背景载入 <i>GameMaker: Studio</i>。背景编辑可以在 <i>GameMaker: Studio</i> 内完成。进一步的信息请点击 <a href=
+"../001_Advanced%20Use/More%20about%20backgrounds/index.html">这里</a>。<br><br>谨慎使用大背景，特别是如果你想制作HTML5或较小的设备的时候，大背景会需要更多的内存，当你编译游戏的时候可能会出现问题。你应该知道 <i>GameMaker: Studio</i> 里的背景是为了磁贴设计的，这意味着它们的两边有重复的像素，所以如果你看到了奇怪的东西 (透明线、额外的像素等等) 尽可能使用精灵替代这些图形效果以达到目的。<br>
 <br></p>
 
-<h3>Editing Backgrounds</h3>
+<h3>编辑背景</h3>
 
-<p>For editing backgrounds, <i>GameMaker: Studio</i> has its own
-included Image Editor which is quite powerful, although not as
-complete as many dedicated art packages available. For information
-on how to use it, please see the section <a href=
-"../001_Advanced%20Use/More%20about%20sprites/Editing%20Subimages.html">
-More About Sprites: Editing Subimages</a> as there is exactly the
-same set of tools available for backgrounds as for sprites.<br>
+<p><i>GameMaker: Studio</i> 内置了强大的图像编辑器，尽管并不是万能的。关于如何使用它，请查看  <a href=
+"../001_Advanced%20Use/More%20about%20sprites/Editing%20Subimages.html">More About Sprites: Editing Subimages (更多关于精灵: 编辑子图像)</a> 章节。<br>
 <br></p>
 
-<h3>Backgrounds as Tiles</h3>
+<h3>背景作为磁贴</h3>
 
-<p>Sometimes you want to have a background image broken up into a
-set of tiles, which basically means, one large image composed of
-different sub images that can all be linked together. When creating
-rooms you can then add these subimages at different places to
-create beautiful levels with graphical effects that are "cheap" in
-that they use very little processing power to draw. Please note
-that tiles are <i>purely graphical</i> and do not have most of the
-properties you would find in an object or a sprite which is why
-they are fast. To use a background as a tile set, check the box
-labelled <b>Use as tile set</b> and the background window now
-changes to look as follows: <img class="center" src=
-"../Images/form_background_advanced.png"> Now you can indicate a
-number of settings for the tile set, like the width and height for
-each tile (only one size can be given, so better make sure that all
-tiles in the set have the same size. If you have different sizes,
-create two or more tile sets). You can also indicate an offset (in
-pixels) where the top left-most tile starts as well as a separation
-between the tiles (in pixels) between the tiles themselves. For
-more information on tiles see the section in the Advanced Use part
-of the manual <a href=
-"../001_Advanced%20Use/More%20about%20backgrounds/index.html">More
-About Backgrounds</a>, and for information on how to use tiles in
-the room editor you can go to the section <a href=
-"../001_Advanced%20Use/More%20about%20rooms/index.html">More About
-Rooms</a>.<br>
+<p>Sometimes you want to have a background image broken up into a set of tiles, which basically means, one large image composed of different sub images that can all be linked together. 有时候你想要把背景分解成一系列磁贴，这意味着，一个大的图像可以由小图像组合在一起。当创建房间时你可以添加这些子图像来做出很棒的关卡而不需要占用大量系统资源来绘制图像。要注意磁贴是 <i>纯粹的图像</i> 而没有更多的属性所以它们能够被快速处理。要使用磁贴，勾选 <b>Use as tile set</b> ，背景窗口就会变成下面这样: <img class="center" src=
+"../Images/form_background_advanced.png"> 你可以设置磁贴的宽度和高度。如果有不同的尺寸，创建两套或更多磁贴。你也可以设置左方和上方的偏移量 (像素为单位) 以及磁贴之间的分离量 (像素为单位)。更多关于磁贴的使用请查阅本手册的高级部分 <a href=
+"../001_Advanced%20Use/More%20about%20backgrounds/index.html">更多关于背景</a>，如何在房间编辑器编辑器使用磁贴请查阅  <a href=
+"../001_Advanced%20Use/More%20about%20rooms/index.html">更多关于房间</a>。<br>
 <br></p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Using GameMaker:
-Studio</a></div>
+<div style="float:left">返回： <a href="index.html">使用 GameMaker: Studio</a></div>
 
-<div style="float:right">Next: <a href=
-"008_Defining%20objects.html">Defining Objects</a></div>
+<div style="float:right">下一章: <a href=
+"008_Defining%20objects.html">定义物体</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
@@ -140,17 +67,17 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
   if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
-</script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
      WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+
+
+
 <table width="100%" cellspacing="0" cellpadding="0" 
 style="margin-top: 0pt; border-collapse: collapse;"> 
 <tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
 <a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
+</td></tr></table><!-- /CHM2WEB --> 
+
 
 </body>
 </html>
