@@ -4,10 +4,10 @@
 <head>
 <meta name="keywords" content="game maker studio" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>cloud_file_save</title>
+<title>cloud_file_save 云端文件保存</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../style.css" type="text/css"
 media="screen" title="style" charset="utf-8">
@@ -23,14 +23,14 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Cloud Services/cloud_file_save
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FCloud%20Services%2Fcloud_file_save.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FCloud%20Services%2Fcloud_file_save.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
 
-<h1>cloud_file_save</h1>
 
-<h2>Save a file (as a string) to the chosen cloud service.</h2>
+<h1>cloud_file_save 云端文件保存</h1>
 
-<h3>Syntax:</h3>
+<h2>保存文件（同字符串）到所选的云服务器中。</h2>
+
+<h3>语法：</h3>
 
 <p class="code">cloud_file_save(file, description);</p>
 
@@ -40,18 +40,18 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>string</td>
-<td>The file to be uploaded (as a string).</td>
+<td>将被上传的文件(同i符串)。</td>
 </tr>
 
 <tr class="alt">
 <td>description</td>
-<td>A brief description of the data being stored.</td>
+<td>所存储数据的简要说明。</td>
 </tr>
 </table>
 </div>
@@ -59,34 +59,21 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回：</b> 实数</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function will commit a file to the chosen cloud service for
-storage. The function will return a unique <b>id</b> value that
-should then be used in the appropriate asynchronous event to
-identify the ds_map that is returned as a "call back" from the
-cloud service. The file should contain <i>all</i> the information
-that you need to save for your game as you can only store one
-single "data blob" to the cloud, and running this function again
-will over-write any previously stored values (as will using the
-<a href="cloud_string_save.html"><tt>cloud_string_save</tt></a>
-function). The description should be a short string of information
-that describes the save, eg: "Level2, Stage2".<br>
-<br>
-For further information on the returned asynchronous data, please
-see the function <a href=
+<p>这个函数将提交一个文件到所选云服务用于存储。该函数将返回惟一的<b>id</b> 值，那么应该使用适当的异步事件识别 ds_map 返回作为云服务的“回调（call back）”。该文件应该包含你所需要保存的游戏的 <i>全部</i> 信息，你只能上传一个二进制数据（ "data blob" ）到服务器上, 并且再次运行这个函数将覆盖之前存储的值 (如同使用 <a href="cloud_string_save.html"><tt>cloud_string_save</tt></a> 一样). 描述文字应该尽量的短，用于描述保存操作, 例如： "Level2, Stage2".<br><br>想要进一步了解异步函数返回的数据，请查阅函数 <a href=
 "cloud_synchronise.html"><tt>cloud_synchronise</tt></a>.<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">var t_str = "";<br>
 for (var i = 0; i &lt; 10; i++;)<br>
@@ -99,10 +86,7 @@ file_text_close(file);<br>
 save_check = cloud_file_save("Highscores.txt", "Current
 Highscores");<br></p>
 
-<p>The above code creates a string from the values stored in the
-global array "Highscores" and then writes this string to a file for
-local storage. The file is then sent to the cloud service for
-storage.</p>
+<p>以上的代码创建了一个字符串的值存储在全局数组“Highscores”中,然后将该字符串写入本地存储。该文件之后被提交到云端服务器中存储。</p>
 
 <p><br>
 </p>
@@ -123,17 +107,17 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
   if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
-</script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
      WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+
+
+
 <table width="100%" cellspacing="0" cellpadding="0" 
 style="margin-top: 0pt; border-collapse: collapse;"> 
 <tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
 <a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
+</td></tr></table><!-- /CHM2WEB --> 
+
 
 </body>
 </html>
