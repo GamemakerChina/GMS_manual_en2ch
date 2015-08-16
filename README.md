@@ -6,7 +6,7 @@
 ------|:------:|------:
 Using GameMaker: Studio  | 15/53,28% | tp正在进行
 GML概述  | 0/39,0% | 已预定
-Advanced Use  | 0/101,0% | 小狐狸正在进行（调试2节由礼程进行）
+Advanced Use  | 5/101,5% | 小狐狸正在进行（调试2节由礼程进行）
 Obsolete Functions  | 1/14,7% | 娜娜米已暂停
 HTML5  | 16/16,100% | AU 已完成
 Surfaces  | 23/23,100% | 断水已完成
