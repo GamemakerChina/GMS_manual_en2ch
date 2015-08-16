@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>clickable_set_style</h1>
 
-<h2>Set the button style from a ds_map.</h2>
+<h2>引用 ds_map 结构的数据，来设置图标的风格.</h2>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">clickable_set_style(index, map)</p>
 
@@ -40,61 +40,57 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>说明</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the clickable icon to style.</td>
+<td>图标的id.</td>
 </tr>
 
 <tr class="alt">
 <td>map</td>
-<td>The index of the <tt>ds_map</tt> to set the style from.</td>
-</tr>
+<td>存储图标风格的<tt>ds_map</tt>的 id .</td>
+</tr
 </table>
 </div>
 
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>说明</h3>
 
-<p>This function lets you set the CSS style properties for the
-given button via the key/value pairs in the provided
-<tt>ds_map</tt>. You need to have previously created the both the
-button element (using <a href=
-"clickable_add.html"><tt>clickable_add()</tt></a>) and the
-<tt>ds_map</tt> previously and supply the stored indices as
-arguments.<br>
+<p>这个函数，能够读取以键值对的形式存储的CSS style 属性，来设置图标的风格. 
+<br>
+在这之前，你必须创建好图标（调用函数<a href=
+"clickable_add.html"><tt>clickable_add()</tt></a>）以及<tt>ds_map</tt>提供的css style 信息.<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>示例：</h3>
 
 <p class="code">var map = ds_map_create();<br>
 ds_map_add(map, "opacity", "0.5");<br>
 clickable_set_style(button, map);<br>
 ds_map_destroy();<br></p>
 
-<p>The above code will change the style of the clickable button
-with the index stored in the variable "button".</p>
+<p>以上代码将读取map中存储的信息，用于改变按钮"button"的样式.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">HTML5</a></div>
+<div style="float:left">返回：<a href="index.html">HTML5</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页：<a href=
 "clickable_delete.html">clickable_delete</a></div>
 </div>
 
