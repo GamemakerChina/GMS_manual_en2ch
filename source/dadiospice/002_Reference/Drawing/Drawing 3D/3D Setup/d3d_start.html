@@ -28,49 +28,38 @@ if (window.name != "content")
 
 <h1>d3d_start</h1>
 
-<h2>Tells <i>GameMaker: Studio</i> that all further drawing is to
-be done in 3D mode.</h2>
+<h2>设置 <i>GameMaker: Studio</i> 之后的绘制都采用 3D 模式。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">d3d_start()</p>
 
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回：:</b> 实数</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>说明</h3>
 
-<p>With this function you can tell <i>GameMaker: Studio</i> that
-all further drawing should be done in 3D mode. This function can be
-called in any event, but will affect <i>all drawing</i> done after,
-so if your game is not completely done in 3D you may need to switch
-it off using <a href="d3d_end.html"><tt>d3d_end</tt></a> to draw
-certain parts (and then use this function again to switch 3D mode
-back on).<br>
+<p>这个函数可以在任何事件中调用，并影响随后的绘制效果。如果你的游戏不是完全由 3D 绘制组成，你可以随时调用<a href="d3d_end.html"><tt>d3d_end</tt></a>，执行剩余的 2D 绘制。<br>
 <br>
-Starting 3D mode will result in the following changes:</p>
+开启3D模式后，以下部分会发生变化：</p>
 
 <blockquote>
 <ul>
-<li>First of all depth testing (also known as Z Buffering) is
-switched on (using a 24-bit z-buffer). This means that for each
-pixel on the screen only the drawing with the smallest z-value (=
-depth value) is drawn. If instances have the same depth then you
-will get what is known as Z-fighting. This occurs as the 2
-instances attempt to draw at the same level, and inaccuracies in
-the rendering due to very close Z value cause ugly effects. To
-avoid this, try and make sure instances that might overlap do not
-have the same depth value!</li>
+<li>第一点，深度测试（也叫做 z-buffer）被开启，而GMS支持 24-bit 的 z-buffer。
+这意味着，屏幕上的每一个坐标，如果存在多个像素点，只绘制深度值（z-value）最小的那个像素点。
+如果这几个像素点的深度值相同，那么这几个像素点都会被绘制到屏幕上，导致丑陋的画面效果。
+人们把这个问题称作深度冲突（Z-fighting），要解决这个问题，尝试确保实例间的深度不要重叠。
+</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>Secondly, the normal orthographic projection is replaced by a
+<li>第二点， the normal orthographic projection is replaced by a
 perspective one. This means the following. Normally the size of
 instances on the screen is independent on its depth. With a
 perspective projection instances that have a greater depth will
@@ -95,22 +84,20 @@ the (0,0) position is at the top-left of the view, in 3D mode the
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>示例：</h3>
 
 <p class="code">d3d_start();</p>
 
-<p>This code has been placed in the create event of an instance to
-tell <i>GameMaker: Studio</i> that all further drawing should be
-done in 3D mode.</p>
+<p>这段代码放在 create 事件，设置 <i>GameMaker: Studio</i> 之后的绘制都采用 3D 模式。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">3D
+<div style="float:left">返回：<a href="index.html">3D
 Setup</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页：<a href=
 "d3d_end.html">d3d_end</a></div>
 </div>
 
