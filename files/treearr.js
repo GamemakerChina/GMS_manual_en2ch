@@ -545,7 +545,7 @@ var TITEMS = [
     ["merge_colour", "source/dadiospice/002_Reference/Drawing/Colour And Blending/merge_colour.html", "11"]
    ],
    ["3D绘制", "source/dadiospice/002_Reference/Drawing/Drawing 3D/index.html", "1",
-    ["3D Drawing", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/index.html", "1",
+    ["3D 绘图", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/index.html", "1",
      ["d3d_draw_block", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/d3d_draw_block.html", "11"],
      ["d3d_draw_cone", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/d3d_draw_cone.html", "11"],
      ["d3d_draw_cylinder", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/d3d_draw_cylinder.html", "11"],
@@ -560,7 +560,7 @@ var TITEMS = [
      ["d3d_vertex_texture", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/d3d_vertex_texture.html", "11"],
      ["d3d_vertex_texture_colour", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/d3d_vertex_texture_colour.html", "11"]
     ],
-    ["3D Lighting and Fog", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/index.html", "1",
+    ["3D 灯光和雾", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/index.html", "1",
      ["d3d_light_define_ambient", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/d3d_light_define_ambient.html", "11"],
      ["d3d_light_define_direction", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/d3d_light_define_direction.html", "11"],
      ["d3d_light_define_point", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/d3d_light_define_point.html", "11"],
@@ -573,7 +573,7 @@ var TITEMS = [
      ["d3d_vertex_normal_texture", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/d3d_vertex_normal_texture.html", "11"],
      ["d3d_vertex_normal_texture_colour", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/d3d_vertex_normal_texture_colour.html", "11"]
     ],
-    ["3D models", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/index.html", "1",
+    ["3D 模型", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/index.html", "1",
      ["d3d_model_block", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/d3d_model_block.html", "11"],
      ["d3d_model_clear", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/d3d_model_clear.html", "11"],
      ["d3d_model_cone", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/d3d_model_cone.html", "11"],
@@ -597,13 +597,13 @@ var TITEMS = [
      ["d3d_model_vertex_texture_colour", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/d3d_model_vertex_texture_colour.html", "11"],
      ["d3d_model_wall", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/d3d_model_wall.html", "11"]
     ],
-    ["3D Projections", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Projections/index.html", "1",
+    ["3D 投影", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Projections/index.html", "1",
      ["d3d_set_projection", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Projections/d3d_set_projection.html", "11"],
      ["d3d_set_projection_ext", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Projections/d3d_set_projection_ext.html", "11"],
      ["d3d_set_projection_ortho", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Projections/d3d_set_projection_ortho.html", "11"],
      ["d3d_set_projection_perspective", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Projections/d3d_set_projection_perspective.html", "11"]
     ],
-    ["3D Setup", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/index.html", "1",
+    ["3D 建立", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/index.html", "1",
      ["d3d_end", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/d3d_end.html", "11"],
      ["d3d_set_culling", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/d3d_set_culling.html", "11"],
      ["d3d_set_depth", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/d3d_set_depth.html", "11"],
@@ -612,7 +612,7 @@ var TITEMS = [
      ["d3d_set_zwriteenable", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/d3d_set_zwriteenable.html", "11"],
      ["d3d_start", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/d3d_start.html", "11"]
     ],
-    ["3D Transformations", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Transformations/index.html", "1",
+    ["3D 变换", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Transformations/index.html", "1",
      ["d3d_transform_add_rotation_axis", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Transformations/d3d_transform_add_rotation_axis.html", "11"],
      ["d3d_transform_add_rotation_x", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Transformations/d3d_transform_add_rotation_x.html", "11"],
      ["d3d_transform_add_rotation_y", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Transformations/d3d_transform_add_rotation_y.html", "11"],
