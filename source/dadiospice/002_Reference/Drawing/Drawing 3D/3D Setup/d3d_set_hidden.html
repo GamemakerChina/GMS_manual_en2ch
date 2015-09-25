@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>d3d_set_hidden</h1>
 
-<h2>This function is used to enable or disable depth testing.</h2>
+<h2>开启或者关闭深度测试</h2>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">d3d_set_hidden(enable)</p>
 
@@ -40,13 +40,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>说明</th>
 </tr>
 
 <tr>
 <td>enable</td>
-<td>Enables (true) or disables (false) depth testing</td>
+<td>开启 (true) 或者关闭 (false) 深度测试</td>
 </tr>
 </table>
 </div>
@@ -54,34 +54,33 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回值：</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>说明</h3>
 
-<p>When enabled this function performs depth tests on all surfaces
-and removes those that are hidden in the current projection.<br>
+<p>默认情况下，将需要绘制的新像素的z值与深度缓冲区中对应位置的z值进行比较，如果比深度缓存中的值小，那么用新像素的颜色值更新帧缓存中对应像素的颜色值。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>示例：</h3>
 
 <p class="code">d3d_set_hidden(true);</p>
 
-<p>The above code switches on hidden surface removal.</p>
+<p>开启深度测试</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">3D
+<div style="float:left">返回：<a href="index.html">3D
 Setup</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页：<a href=
 "d3d_set_perspective.html">d3d_set_perspective</a></div>
 </div>
 
