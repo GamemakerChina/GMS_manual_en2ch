@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>d3d_set_culling</h1>
 
-<h2>Sets the depth used for drawing.</h2>
+<h2>开启 或 关闭 背面剔除</h2>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">d3d_set_culling(enable)</p>
 
@@ -40,13 +40,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>说明</th>
 </tr>
 
 <tr>
 <td>enable</td>
-<td>Switches on (true) or off (false) back-face culling</td>
+<td>开启 (true) 或 关闭 (false) 背面剔除</td>
 </tr>
 </table>
 </div>
@@ -54,28 +54,22 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回值：</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>说明</h3>
 
-<p>A 3D triangle has a front and a back side. The <i>front</i> side
-is said to be the side where the vertices are defined in
-counter-clockwise order. Now, normally <i>both</i> sides are drawn,
-but if you make a closed shape then this is a waste of processing
-power because the back side of the triangle can never be seen. It's
-in these cases that you can switch on backface culling. This saves
-about half the amount of drawing time but it means you have the
-task of defining your polygons in the correct way to prevent
-issues.<br>
+<p>一个三角形图元，具有前、后两面，顶点按逆时针排列的那一面为正面（表面的法向量的正方向）。默认情况下，两个面都会被绘制。
+当你绘制一个密封的实体时，背面的绘制将是相当的浪费，而且我们看不到背面，比如正方体内部的面，在开启背面剔除后，你跑进这个正方体内，你会发现正方体消失了。
+<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>示例:</h3>
 
 <p class="code">d3d_set_culling(true);<br>
 d3d_primitive_begin(pr_trianglelist);<br>
@@ -93,17 +87,16 @@ d3d_vertex(100, 200, 0);<br>
 d3d_vertex(200, 200, 0);<br>
 d3d_primitive_end();<br></p>
 
-<p>The above code will draw a pyramid with the back faces (interior
-faces) being culled (not drawn).</p>
+<p>绘制一个金字塔，背面是被剔除的。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">3D
+<div style="float:left">返回：<a href="index.html">3D
 Setup</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页：<a href=
 "d3d_set_zwriteenable.html">d3d_set_zwriteenable</a></div>
 </div>
 
