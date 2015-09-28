@@ -62,22 +62,11 @@ if (window.name != "content")
 <h3>说明</h3>
 
 <p>这个函数能够开启 (<tt>true</tt>) 和关闭
-(<tt>false</tt>) 使用 Z-Buffer 进行 深度排序。 The
-default value is that z-buffering is enabled.<br>
+(<tt>false</tt>) 缓存，以便进行深度测试。默认开启。<br>
 <br>
-When drawing in 3D, you normally want things to be drawn with
-<i>depth</i> along the z axis, so that an object "close" to the
-player is drawn over an object that is "further" away. When an
-object is rendered, the depth of a generated pixel (its z
-coordinate) is stored in the z-buffer, then, if another object of
-the scene must be rendered in the same pixel, the two depths are
-compared the one closer to the observer is then saved to the
-z-buffer, replacing the old one. However, this is not always what
-you wish to happen and there are moments when you may want
-something to be drawn over everything else, no matter what its z
-value is. In those cases you can use this function to switch off
-writing to the z-buffer and so force whatever is being drawn to be
-drawn over everything else.<br>
+3D模式下的绘制，屏幕上的每个像素都存在一个深度值，被存在深度缓存中。每次绘制会进行深度测试，新的深度会与当前位置缓存的深度值进行比较，并更新为深度最小的。
+并非任何情况下，深度缓存是我们所需要，你可以关闭它。
+<br> 
 <br></p>
 
 <p><br>
@@ -87,17 +76,16 @@ drawn over everything else.<br>
 
 <p class="code">d3d_set_zwriteenable(false);<br></p>
 
-<p>The above code will switch off the z-buffer for all further
-drawing.</p>
+<p>以上代码关闭深度缓存，影响之后的所有绘制</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">3D
+<div style="float:left">返回：<a href="index.html">3D
 Setup</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页：<a href=
 "d3d_start.html">d3d_start</a></div>
 </div>
 
