@@ -61,16 +61,11 @@ if (window.name != "content")
 
 <h3>说明</h3>
 
-<p>开启 (true) or 关闭 (false) 透视投影。开启透视投影后，实例的深度越大，看上起越小。
-当深度为0时，大小等于原始大小。
-perspective projection instances that have a greater depth will
-appear smaller, so when the depth is 0 it is equal to the original
-size and the viewpoint for the camera is placed at a distance above
-the room. This default distance is equal to the width of the room
-as that gives a reasonable starting projection, and only instances
-in front of the camera are drawn. Don't use instances with a depth
-smaller than 0 (or at least not smaller than -w where w is the
-width of the room or the view).<br>
+<p>开启 (true) or 关闭 (false) 透视投影。开启透视投影后，呈现在屏幕上的物体大小随深
+度发生变化，深度越大， 大小越小。物体的深度为0，那么呈现出大小为原始大小（除非你做了修改）。  
+摄像机的位置在房间上方（距离等于房间的宽度）,只有处于摄像机前方的物体（深度大于0）
+才会被绘制。因此不要绘制深度小于0，或者说，不要小于-w（w 表示房间或者视野的宽度）。
+<br>
 <br></p>
 
 <p><br>
