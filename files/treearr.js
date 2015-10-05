@@ -363,7 +363,7 @@ var TITEMS = [
     ["ds_list_sort", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_sort.html", "11"],
     ["ds_list_write", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_write.html", "11"]
    ],
-   ["比对结构", "source/dadiospice/002_Reference/Data Structures/DS Maps/index.html", "1",
+   ["映射结构", "source/dadiospice/002_Reference/Data Structures/DS Maps/index.html", "1",
     ["ds_map_add", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_add.html", "11"],
     ["ds_map_add_list", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_add_list.html", "11"],
     ["ds_map_add_map", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_add_map.html", "11"],
