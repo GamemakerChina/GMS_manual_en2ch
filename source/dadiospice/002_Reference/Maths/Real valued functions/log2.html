@@ -28,10 +28,10 @@ if (window.name != "content")
 
 <h1>log2</h1>
 
-<h2>Returns the log base 2 of n, the number 2 must be powered by to
-equal n.</h2>
-
-<h3><b>Syntax:</b>
+<h2>返回以2为底n的对数。（二进制对数）①</h2>
+<br>①：此处删去的内容被证实与后文矛盾，而后文内容显然是合理的。
+<br>
+<h3><b>语法:</b>
 </h3>
 
 <p class="code">log2(n);</p>
@@ -42,13 +42,13 @@ equal n.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>n</td>
-<td>The input value.</td>
+<td>输入值.</td>
 </tr>
 </table>
 </div>
@@ -56,42 +56,41 @@ equal n.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回值:</b> 实数型</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function basically asks "how many 2's do you need to
-multiply to get n?". A common example of use in programming would
-be to calculate the number of bits that are needed to represent a
-number. To do this we calculate the <tt>log2(x)</tt> of the number,
-round it down and add 1 - for example <tt>log2(100)</tt> returns
-6.643856, which rounded down is 6, to which we add one and it gives
-us 7. So we need 7 bits to represent 100. It can also be used for
-describing exponential growth or decay, and is often called a
-<i>binary logarithm</i>.<br>
+<p>从根本上说这个函数求“你需要多少个2乘在一起能得到n？”。
+在编程过程中使用这个数的一个普遍例证是计算表示一个数需要多少位②。
+欲做这个我们就需要计算这个数<tt>以2为底的对数</tt> ，
+向下取整再+1 - 举个例子 <tt>log2(100)</tt> 返回
+6.643856, 向下取整是6, 对它加一然后它就能给我们7。③
+所以表示100我们需要7个位。这也能用于描述指数级增长或衰退的程度，且也常被称为
+<i>二进制对数</i>④.<br>
+<br>②：此处的位为计算机概念，即bit，1B = 8bit。
+<br>③：汗= =……为什么不直接向上取整呢？
+<br>④：简单地说，二进制对数就是n是2的多少次幂，即n对于2的幂指数。
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例:</h3>
 
 <p class="code">colourbits = floor(log2(colour)) - 1;</p>
 
-<p>The above code stores the number of bits needed to represent the
-value stored in the variable "colour".</p>
+<p>上述代码将代表这个数所需要的位数存入变量"colour"中。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Real Number
-Functions</a></div>
+<div style="float:left">上一页: <a href="index.html">实数函数</a></div>
 
-<div style="float:right">Next: <a href="log10.html">log10</a></div>
+<div style="float:right">下一页: <a href="log10.html">log10</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
