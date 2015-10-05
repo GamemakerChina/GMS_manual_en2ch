@@ -65,7 +65,8 @@ if (window.name != "content")
 <p>这个有用的函数只返回整数(完整的数)。
 因此，举个例子，要得到从0到9的随机数可以使用
 <tt>irandom(9)</tt> 并且它将返回一个从0到9闭区间的随机数……实数也能够被使用但上边界将被排除，所以
-<tt>irandom(9.7)</tt>将只会返回[0,9]上的数。这个函数有一个最大上边界$7fffffffffffffffLL,所以如果使用非常大的数字时请务必谨慎。<br>
+<tt>irandom(9.7)</tt>将只会返回[0,9]上的数。这个函数有一个最大上边界$7fffffffffffffffLL①,所以如果使用非常大的数字时请务必谨慎。<br>
+①：$7fffffffffffffffLL表义为long long十六进制数7fffffffffffffff=9223372036854775807D（十进制）
 <br>
 <i><b>注意:</b>这个函数在每次游戏重新运行时将返回相同的数因为事实上GameMaker: Studio
 每次都产生相同的初始随机数种子以使得调试代码成为相当容易的事情。欲避免这个行为请在游戏开始时使用<a href=
