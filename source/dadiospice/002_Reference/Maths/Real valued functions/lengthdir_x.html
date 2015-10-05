@@ -28,10 +28,9 @@ if (window.name != "content")
 
 <h1>lengthdir_x</h1>
 
-<h2>Returns the horizontal x-component of the vector determined by
-the indicated length and direction.<br>返回由指定的长度和方向决定的向量的水平x分量</h2>
+<h2>返回由指定的长度和方向决定的向量的水平x分量<br></h2>
 
-<h3><b>Syntax  语法:</b>
+<h3><b>语法:</b>
 </h3>
 
 <p class="code">lengthdir_x(len, dir);</p>
@@ -42,18 +41,18 @@ the indicated length and direction.<br>返回由指定的长度和方向决定�
 <div class="param">
 <table>
 <tr>
-<th>Argument参数</th>
-<th>Description描述</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>len</td>
-<td>The length away of the point to return.  待返回的点的长度距离。</td>
+<td>待返回的点的长度距离。</td>
 </tr>
 
 <tr>
 <td>dir</td>
-<td>The direction of the point to return.待返回的点的方向</td>
+<td>待返回的点的方向</td>
 </tr>
 </table>
 </div>
@@ -61,24 +60,14 @@ the indicated length and direction.<br>返回由指定的长度和方向决定�
 <p><br>
 </p>
 
-<p><b>Returns  返回值:</b> Real  实数型</p>
+<p><b>返回值:</b>实数型</p>
 
 <p><br>
 </p>
 
-<h3>Description  描述</h3>
+<h3>描述</h3>
 
-<p>This function seems confusing at first, but it's not really. It
-is used to get the x component of a position "len" pixels from the
-starting point and in direction "dir"①. Imagine a circle around your
-instance, then imagine a point anywhere on that circle. To move to
-that point we need to move the object so many pixels in that
-direction... so this function (when used with <a href=
-"lengthdir_y.html"><tt>lengthdir_y</tt></a>) gets the position of
-that point on the circle to be used in code by the instance. See
-the image below for details:
-<br>
-这个函数起初看起来比较令人困惑，但事实并非如此。它被用于去获取一个长度为"len"像素方向为"dir"的向量①的水平分量。
+<p>这个函数起初看起来比较令人困惑，但事实并非如此。它被用于去获取一个长度为"len"个像素，方向为"dir"的向量①的水平分量。
 试想一个实例周围的一个圆，然后再想一下这个圆周上的点。为了移动到这个点我们需要在这个方向上移动这个物体这么多距离……所以这个函数（当和函数<a href=
 "lengthdir_y.html"><tt>lengthdir_y</tt></a>共用的时候）获取在圆周上的这个点来被用于实例的代码中。详情参见下图：<br>
 <br>
@@ -94,19 +83,15 @@ the image below for details:
 <p class="code">instance_create(x + lengthdir_x(64, image_angle), y
 + lengthdir_y(64, image_angle), obj_bullet);</p>
 
-<p>This will create a bullet instance at (x,y), but with 64 pixels
-added in the direction of image_angle. This is typically used for
-syncing a bullets start position with the end of a gun in game.
-<br>这将会在(x,y)处创建一个子弹实例，但是会伴随在image_angle的方向上增加64像素。这在游戏中通常用于同步子弹的起始位置和枪的末端位置</p>
-
+<p>这将会在(x,y)处创建一个子弹实例，但是会伴随在image_angle的方向上增加64像素。这在游戏中通常用于同步子弹的起始位置和枪的末端位置</p>
+<br>
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back上一个: <a href="index.html">Real Number
-Functions实数函数</a></div>
+<div style="float:left">上一页: <a href="index.html">实数函数</a></div>
 
-<div style="float:right">Next下一个: <a href=
+<div style="float:right">下一页: <a href=
 "lengthdir_y.html">lengthdir_y</a></div>
 </div>
 
