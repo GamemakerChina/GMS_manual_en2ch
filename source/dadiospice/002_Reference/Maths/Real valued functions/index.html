@@ -26,20 +26,11 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>Real Number Functions  实数函数</h1>
+<h1>实数函数</h1>
 
-<h2>The following functions exist that deal with real numbers.<br>下面存在一些函数来处理实数。</h2>
+<h2>下面存在一些函数来处理实数。</h2>
 
-<p>Real numbers in <i>GameMaker: Studio</i> are considered
-<i>floating point numbers</i>, that is to say that they have a
-decimal point in them with no fixed number of digits either before
-or after the point. 2, for example, is a binary integer but 2.0 is
-a floating point real. This distinction between integers and floats
-is very important when dealing with cross platform development as
-the precision of calculations made on a Windows pc is <i>not</i>
-the same as the precision of those same calculations when made on a
-mobile device. This means that you should pay particular attention
-when making comparisons, for example:
+<p>
 <br>在<i>GameMaker: Studio</i>中，实数被认为是<i>浮点数</i>，
 也就是说它们中有小数点带有不固定的数字要么在小数点前要么在小数点后。
 比如，
@@ -56,15 +47,6 @@ when making comparisons, for example:
 <p class="code">if image_index == 1 {do something...}</p>
 
 <p><br>
-Now that <i>may</i> appear to work, but due to the way that
-floating point maths works, it may mean that image_index actually
-equals 1.00000000001, in which case the comparison will never
-result in a true result and the code running. These types of errors
-can be quite hard to debug and so it is always good to be aware of
-them and to plan ahead and use other means of checking values or to
-use the appropriate flooring or rounding functions (listed below)
-to convert the number to check into an integer. For example the
-above code could be written as:<br>
 <br>现在这<i>可能</i>会生效，
 但是因为浮点数学的工作原理，
 这可能意味着image_index实际上等于1.00000000001，
@@ -76,15 +58,9 @@ above code could be written as:<br>
 <p class="code">if floor(image_index) == 1 {do something...}</p>
 
 <p><br>
-We can also use a special function available in <i>GameMaker:
-Studio</i> to set the <b>epsilon</b> value for floating point
-maths. When a real number is rounded to the nearest floating point
-number, the epsilon (also know as "machine epsilon") forms an upper
-bound on the relative error, and you can set the epsilon value
-using this special function:<br>
 我们能够在<i>GameMaker:
 Studio</i>中使用一个特殊的可用的函数来为浮点数学设定ε值（精度无穷小值）。
-当一个实数被取舍到了最近的浮点数，
+当一个实数被近似到了最近的浮点数，
 这个ε（也叫做“机器Epsilon”）形成一个相对误差的上界，
 并且你能使用这个特殊的函数来设置ε值。</p>
 
@@ -95,10 +71,7 @@ Studio</i>中使用一个特殊的可用的函数来为浮点数学设定ε值�
 </ol>
 </blockquote>
 
-<p><i><b>NOTE  注意:</b> On the YoYo Compiler target platforms (those
-marked (YYC)), expressions and functions are evaluated from left to
-right, while on all other target platforms they are evaluated from
-right to left, meaning that this:<br>
+<p><i><b>注意:</b>
 在YoYo Compiler目标平台上（被标记了(YYC)），
 表达式和函数都从做到右被计算，
 而其他所有平台上他们是从右到左被计算，
@@ -108,18 +81,15 @@ right to left, meaning that this:<br>
 <p class="code"><i>val = max(num, ++num, num++);<br></i>
 </p>
 
-<p>will give different results depending on the platform.<br>依据平台会给出不同的结果。</p>
+<p>依据平台会给出不同的结果。</p>
 
 <p><br>
-We can split the functions that <i>GameMaker: Studio</i> has for
-dealing with real numbers into various categories:<br>
 我们可以把<i>GameMaker: Studio</i>中有的用于处理实数的函数分为各个目录：<br>
 <br></p>
 
-<h3>Random Functions  随即函数</h3>
+<h3>随机函数</h3>
 
-<p>These functions all deal with using random numbers and
-values:<br>
+<p>
 这些函数全部都是处理随机数和值的：
 </p>
 
@@ -151,15 +121,7 @@ values:<br>
 </ol>
 </blockquote>
 
-<p><i><b>NOTE  注意:</b> When using the random functions, GameMaker:
-Studio maintains the same random seed every time you start the
-game. This makes debugging much easier as you are guaranteed that
-the random functions will always return the same value, however
-should you not wish this to happen, you must first set a new random
-seed at the very start of the game, either using <a href=
-"randomize.html"><tt>randomize</tt></a> or <a href=
-"random_set_seed.html"><tt>random_set_seed</tt></a>.
-<br>当使用这些随机函数时，
+<p><i><b>注意:</b> 当使用这些随机函数时，
 GameMaker: Studio每次你开始游戏都保持同一随机数种子。
 这使得调试更加简单因为你保证了随机函数总是将返回相同的一套数值，
 然而你也不愿意这件事情发生，
@@ -169,9 +131,9 @@ GameMaker: Studio每次你开始游戏都保持同一随机数种子。
 "random_set_seed.html"><tt>random_set_seed</tt></a>函数</i>
 </p>
 
-<h3>Trigonometric Functions  三角函数</h3>
+<h3>三角函数</h3>
 
-<p>These are all trigonometric functions:<br>这里有全部的三角函数</p>
+<p>这里有全部的三角函数：</p>
 
 <blockquote>
 <ol>
@@ -231,7 +193,7 @@ GameMaker: Studio每次你开始游戏都保持同一随机数种子。
 </ol>
 </blockquote>
 
-<h3>Rounding Functions  取舍函数</h3>
+<h3>近似函数</h3>
 
 <p>These are all functions that round or select values:<br>这里有所有的取整或选择性函数：</p>
 
@@ -275,9 +237,9 @@ GameMaker: Studio每次你开始游戏都保持同一随机数种子。
 </ol>
 </blockquote>
 
-<h3>Miscellaneous Functions  杂项函数</h3>
+<h3>杂项函数</h3>
 
-<p>These are various different mathematic functions:<br>有各种各样不同的数学函数</p>
+<p>有各种各样不同的数学函数：</p>
 
 <blockquote>
 <ol>
@@ -312,10 +274,10 @@ GameMaker: Studio每次你开始游戏都保持同一随机数种子。
 
 <div class="clear">
 <div style="float:left">Back上一个: <a href=
-"../index.html">Maths数学</a></div>
+"../index.html">数学</a></div>
 
 <div style="float:right">Next下一个: <a href=
-"../Vector%20Functions/index.html">Vector Functions矢量函数</a></div>
+"../Vector%20Functions/index.html">矢量函数</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
