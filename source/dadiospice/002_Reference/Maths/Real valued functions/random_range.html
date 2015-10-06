@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>random_range</h1>
 
-<h2>Returns a random real number between n1 and n2.</h2>
+<h2>返回一个(n1,n2)上的随机实数.</h2>
 
-<h3><b>Syntax:</b>
+<h3><b>语法:</b>
 </h3>
 
 <p class="code">random_range(n1, n2);</p>
@@ -41,20 +41,18 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>n1</td>
-<td>The low end of the range from which the random number will be
-selected.</td>
+<td>待选择随机数的范围的下边界</td>
 </tr>
 
 <tr class="alt">
 <td>n2</td>
-<td>The high end of the range from which the random number will be
-selected.</td>
+<td>待选择随机数的范围的上边界</td>
 </tr>
 </table>
 </div>
@@ -62,46 +60,42 @@ selected.</td>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回值:</b> 实数型</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function returns a random number between the specified
-range, and this return value does not need to be an integer. For
-example, <tt>random_range(20,50)</tt> will return a random number
-from 20 to 49, but the value may be a real number like 38,65265.
-Real numbers can also be used as input arguments.<br>
+<p>这个函数返回一个在特定区间内的随机数，<!--
+-->并且这个返回值不需要是一个整数。举个例子<tt>random_range(20,50)</tt>将返回一个20到49之间的随机数。<!--
+-->但是这个值可能是一个像38,65265的实数。<!--
+-->实数也可以作为输入参数.<br>
 <br>
-<i><b>NOTE:</b> This function will return the same value every time
-the game is run afresh due to the fact that GameMaker: Studio
-generates the same initial random seed every time to make debugging
-code a far easier task. To avoid this behaviour use <a href=
-"randomize.html"><tt>randomize</tt></a> at the start of your
-game.</i><br>
+<i><b>注意:</b>这个函数在每次游戏重新运行时将返回相同的数因为事实上GameMaker: Studio<!--
+-->每次都产生相同的初始随机数种子以使得调试代码成为相当容易的事情。欲避免这个行为请在游戏开始时使用<a href=
+"randomize.html"><tt>randomize</tt></a>
+</i><br>
 <br></p>
 
+
 <p><br>
 </p>
 
-<h3><b>Example:</b>
+<h3><b>举例:</b>
 </h3>
 
 <p class="code">score += random_range(500, 600);</p>
 
-<p>This will add anywhere between 500 and 600, to the total
-score.</p>
+<p>这将向总分增加500到600之间任意一个实数。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Real Number
-Functions</a></div>
+<div style="float:left">上一页: <a href="index.html">实数函数</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "irandom.html">irandom</a></div>
 </div>
 
