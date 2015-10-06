@@ -26,47 +26,39 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>Normalised Vectors</h1>
+<h1>规范化向量①②</h1>
+<br>①：此处说的规范化向量即定义单位向量。<br>
+<br><b><b><b>②：本文中显示的均不是正规的GML代码，因此请勿直接拷贝！</b></b></b>
+<h2>这节诠释什么是规范化向量并且如何使用。</h2>
 
-<h2>This section explains what a normalised vector is and how it
-can be used.</h2>
-
-<p>Ordinarily, vectors can be used in many situations but sometimes
-you want to constrain their value (like when dealing with angles)
-which is why we <i>normalise</i> them. This is essentially a
-mathematical trick that is used to convert a vector of length
-<i>n</i> to a vector of length 1, meaning that the vector
-components get normalised to be between 0 and 1. These vectors are
-also called <i>unit vectors</i>:<br>
+<p>常规地, 向量可以被用于许多场合中，但有时候你想约束它们的值（比如当处理角度的时候），这也就是为什么我们要<!--
+--><i>规范化</i>它们. 这是一种十分必要的数学手段被用于将一个模②为n向量转换为一个模为1的向量，<!--
+-->也意味着这个向量组件被标准化为0到1之间。这些向量也被叫做<i>单位向量</i>:<br>
+<br>③：向量的长度与向量的模为同义词，下文将可能交叉使用这两个概念。<br>
 <img class="center" src="1d_norm_vector_image.png"></p>
 
-<p>To calculate a normalised vector, we must first have the
-original vector components, then use them to get the length of the
-vector. We then divide each of the vector components by this length
-to get the normalised vector components which form the normalised
-vector in which the sum of the squares of all coordinates is equal
-to 1. Here's how:<br>
+<p>欲计算一个规范化向量，我们必须首先有原始的向量组件。然后使用它们来获得这个向量的模。然后我们用每个向量组件<!--
+-->除以这个向量模来得到形成各坐标平方和为1的规范化向量的规范化向量组件。下面是如何做到这一点的:<br>
 <br>
 <img class="center" src="2d_norm_vector_image_1.png"></p>
 
-<p>First we take the coordinates of the vector and get the
-components:<br>
+<p>首先我们取得向量坐标并获取向量组件：<br>
 <br></p>
 
 <p class="code">vx = (x2 - x1) = (7 - 1) = 6<br>
 vy = (y2 - y1) = (4 - 1) = 3<br></p>
 
 <p><br>
-We then use these values to calculate the length of the vector:<br>
+然后我们用这些值去运算向量的模We then use these values to calculate the length of the vector:<br>
 <br></p>
 
 <p class="code">len = sqr(vx<sup>2</sup> + vy<sup>2</sup>) = sqr(36
-+ 9) = sqr(45) = 6.708203932499369<br></p>
-
++ 9) = sqr(45) = 6.708203932499369//④
+<br>len = √(vx<sup>2</sup> + vy<sup>2</sup>) = √(36
++ 9) = √(45) = 6.708203932499369//修正行<br></p>
+<br>此处用上标表示平方，因此此处的sqr应为开方运算，为使得表述更贴近于数学化，使用修正行进行改写。<br>
 <p><br>
-Now, that gives us the exact length of the vector <i>a</i>, so
-let's use that to normalise the two vector components <i>vx</i> and
-<i>vy</i>:<br>
+现在，这给了我们向量<i>a</i>的精确长度，因此让我们使用这个去规范化两个向量的组件<i>vx</i>和<i>vy</i>:<br>
 <br></p>
 
 <p class="code">vx = (vx/len) = (6 / 6.708203932499369) =
@@ -75,23 +67,17 @@ vy = (vy/len) = (3 / 6.708203932499369) = 0.4472135954999579<br>
 a = 1<br></p>
 
 <p><br>
-Great! We have now normalised the components of the vector! But of
-what <i>practical</i> use is that in the context of <i>GameMaker:
-Studio</i>? Okay, let's give you a practical example...</p>
+好极了！我们现在已经规范化了向量组件！但是这在<i>GameMaker:
+Studio</i>环境下有什么实用意义呢？好的，让我们给你一个切实可行的例证：</p>
 
-<p>Say you have a game where the player has to shoot at an enemy
-and you need to know how much the bullet object has to move along
-the x and y axis each step to hit it:<br>
+<p>就拿你有一个玩家要向敌人射击的游戏说，你需要知道子弹物体需要沿着x轴和y轴分别移动多少来打击它：<br>
 <br>
 <img class="center" src="2d_norm_vector_image_2.png"></p>
 
-<p>For this you would use the player and enemy coordinates to get
-the vector components and the length, then you would normalise them
-to get a value between 0 and 1 which you would finally multiply by
-the speed you wish the bullet to travel at each step. These final
-two values you would then store and add onto the starting x and y
-coordinates each step. Sound complicated? It's not, look (values
-have been rounded to one decimal place for simplicity):<br>
+<p>对于这个你可能会使用玩家和敌人的坐标来得到向量的组件和长度，<!--
+-->然后你就会规范它们以得到一个最终你可以和子弹每步运动速度相乘在0~1之间的数值。<!--
+-->这些储存最终的两个数值你将会接下来存起来然后叠加给每步开始的x和y。听起来很繁琐？<!--
+-->并不是，请看（为了简洁，数值已经精确到一位小数）：<br>
 <br></p>
 
 <p class="code">px = 100;<br>
@@ -104,7 +90,8 @@ vx = (ex - px) = 256<br>
 vy = (ey - py) = -342<br>
 <br>
 len = sqr(vx<sup>2</sup> + vy<sup>2</sup>) = sqr(65536 + 116964) =
-427.2<br>
+427.2//同④
+len = √(vx<sup>2</sup> + vy<sup>2</sup>) = √(65536 + 116964) = 427.2<br>
 <br>
 vx = vx / len = 0.6<br>
 vy = vy / len = 0.8<br>
@@ -114,18 +101,15 @@ speed_y = vy * bullet_speed = 4<br>
 <br></p>
 
 <p><br>
-So, to hit the target we need to add 3 to the bullets x coordinate
-and 4 to its y coordinate every step.</p>
+所以，要击中目标我们需要每步在子弹x坐标上增加3并在y坐标上增加4。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Vector
-Functions</a></div>
+<div style="float:left">上一页: <a href="index.html">向量函数</a></div>
 
-<div style="float:right">Next: <a href="Vectors.html">What Is A
-Vector?</a></div>
+<div style="float:right">下一页: <a href="Vectors.html">什么是向量？</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
