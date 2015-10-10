@@ -28,7 +28,7 @@ if (window.name != "content")
 
 <h1>d3d_draw_cone</h1>
 
-<h2>Draws a simple 3D cone.</h2>
+<h2>绘制一个圆锥体。</h2>
 
 <h3>Syntax:</h3>
 
@@ -41,65 +41,63 @@ vrepeat, closed, steps)</p>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>说明</th>
 </tr>
 
 <tr>
 <td>x1</td>
-<td>The initial x coordinate of the cone.</td>
+<td>起点坐标x</td>
 </tr>
 
 <tr class="alt">
 <td>y1</td>
-<td>The initial y coordinate of the cone.</td>
+<td>起点坐标y</td>
 </tr>
 
 <tr>
 <td>z1</td>
-<td>The initial z coordinate of the cone.</td>
+<td>起点坐标z</td>
 </tr>
 
 <tr class="alt">
 <td>x2</td>
-<td>The opposite x coordinate of the cone.</td>
+<td>相对坐标x</td>
 </tr>
 
 <tr>
 <td>y2</td>
-<td>The opposite y coordinate of the cone.</td>
+<td>相对坐标y</td>
 </tr>
 
 <tr class="alt">
 <td>z2</td>
-<td>The opposite z coordinate of the cone.</td>
+<td>相对坐标z</td>
 </tr>
 
 <tr>
 <td>tex</td>
-<td>The id of the texture to use (-1 for no texture)</td>
+<td>纹理id（不使用纹理，则填写-1）</td>
 </tr>
 
 <tr class="alt">
 <td>hrepeat</td>
-<td>Amount of horizontal repetitions for the texture.</td>
+<td>水平平铺纹理的次数</td>
 </tr>
 
 <tr>
 <td>vrepeat</td>
-<td>Amount of vertical repetitions for the texture.</td>
+<td>垂直平铺纹理的次数</td>
 </tr>
 
 <tr class="alt">
 <td>closed</td>
-<td>Sets whether to close (true) the bottom of the cone or not
-(false).</td>
+<td>绘制圆锥体的底面(true)，否则不绘制底面(false)</td>
 </tr>
 
 <tr>
 <td>steps</td>
-<td>How many steps are used to make the cone "round" (typically
-24)</td>
+<td>圆锥体一圈的面数,建议为24。数值越高，越圆</td>
 </tr>
 </table>
 </div>
@@ -107,12 +105,12 @@ vrepeat, closed, steps)</p>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回值：</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>说明</h3>
 
 <p>This function draws a simple cone in 3D space. You set the first
 bounding corner coordinates (x1,y1,z1) and then the bounding
