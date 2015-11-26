@@ -1821,7 +1821,7 @@ var TITEMS = [
     ["vertex_format_end", "source/dadiospice/002_Reference/Shaders/Vertex Formats/vertex_format_end.html", "11"]
    ]
   ],
-  ["社会化模块", "source/dadiospice/002_Reference/Social Gaming/index.html", "1",
+  ["社交化游戏", "source/dadiospice/002_Reference/Social Gaming/index.html", "1",
    ["shop_leave_rating", "source/dadiospice/002_Reference/Social Gaming/shop_leave_rating.html", "11"],
    ["Achievements and Leaderboards", "source/dadiospice/002_Reference/Social Gaming/Achievements and Leaderboards/index.html", "1",
     ["achievement_available", "source/dadiospice/002_Reference/Social Gaming/Achievements and Leaderboards/achievement_available.html", "11"],
