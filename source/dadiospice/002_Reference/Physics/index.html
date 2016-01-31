@@ -78,79 +78,58 @@ if (window.name != "content")
 </li>
 
 <li>
-Try not to move instances from one point of the room to another
-in any way other than using the physics functions (ie: do not set
-the x/y coordinates manual). Although this can be done and in some
-circumstances it may be necessary, this is generally to be avoided
-due to the unpredictable results that it may have on the physics
-engine, especially when trying to resolve collisions.</li>
+尽量不要将实例使用除了物理函数以外的方式来将实例从一个点移动至另一个点（比如，不要手动设定x或y坐标）<!--
+-->尽管这在一些必要的场合下可以被做到，这通常应当被避免因为在物理引擎上它可能会有不可预料的结果，特别<!--
+-->是在分辨碰撞的时候。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>Care should be taken when binding fixtures, as they can be
-bound to objects and instances independently. This means that if
-you bind a fixture to (for example) "o_Wall", <b>all</b> instances
-of that object will get the fixture. If you only want to bind a
-fixture to one instance, then use that instance's id in the
-appropriate function.</li>
+<li>在绑定支架（Fixture）的时候要小心，因为它们可以独立地绑定在物体和实例上。这也就意味着如果你把支架绑定给（举个例子）<!--
+-->"o_Wall"，<b>所有</b>属于这个物体的实例都将获得这个支架。如果你只想要给一个实例绑定支架，那就请在合适的函数中使用实例的id。
+</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>Please be aware that due to differences in floating point
-precision you may find that versions of your game for different
-target platforms may exhibit subtly different behaviour to the
-standard Windows version, though each version will be
-self-consistent across subsequent executions.</li>
+<li>请注意因为浮点精度的不同，你可能会发现你游戏在不同目标平台上的版本可能会展现出细微地不同于标准Windows版本的行为<!--
+-->，尽管每个版本在接下来的执行中都是相呼应的。</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>To prevent instabilities in the physical simulation Box2D
-constrains to upper limits the amount a body may rotate and
-translate within a single update. The apparent limitations will
-vary according to the accuracy of the physical simulation in
-accordance with the number of updates and update speed of the
-physics world, and also in accordance with the physics world
-scaling. This means that (for example) if you have a world update
-speed of 60, the maximum movement speed would be 20.</li>
+<li>为了防止在物理模拟中的不稳定性，Box2D约束了物体旋转量的上限并且在每次更新迭代中平移。这些明显的限定将会使准确性<!--
+-->根据物理模拟所依据的物理世界的更新数、更新速度以及物理世界的尺度而改变。这也就意味着（比如说）如果你有一个物理世界更新速度为60<!--
+-->，那么最大移动速度将会是20.</li>
 </ul>
 </blockquote>
 
-<p>Information on the physics functions can be found on the
-following pages:</p>
+<p>关于物理功能的信息可以在下列页面中找到：</p>
 
 <blockquote>
 <ol>
-<li><a href="The%20Physics%20World/index.html">The Physics
-World</a><br>
+<li><a href="The%20Physics%20World/index.html">物理世界</a><br>
 </li>
 
-<li><a href="Forces/index.html">Forces</a><br>
+<li><a href="Forces/index.html">作用力</a><br>
 </li>
 
-<li><a href="Fixtures/index.html">Fixtures</a><br>
+<li><a href="Fixtures/index.html">支架</a><br>
 </li>
 
-<li><a href="Joints/index.html">Joints</a><br>
+<li><a href="Joints/index.html">节点</a><br>
 </li>
 
-<li><a href="Soft%20Body%20Particles/index.html">Soft Body
-Particles</a><br>
+<li><a href="Soft%20Body%20Particles/index.html">软体粒子</a><br>
 </li>
 
-<li><a href="Physics%20Variables/index.html">Physics
-Variables</a><br>
+<li><a href="Physics%20Variables/index.html">物理变量</a><br>
 </li>
 </ol>
 </blockquote>
 
-<p>Finally, there are a couple of special physics functions which
-may be useful for more advanced physics simulations. The first is
-for testing for possible collisions at a specific point in the
-room, and the second is for generating custom mass and inertia
-properties within an instance:</p>
+<p>最后，有一些物理功能可能会在更高级的物理模拟中用到。第一个是为测试在房间内一个特定的点处碰撞的可能<!--
+-->，而第二个则是用来生成实例内自定义的质量和惯性属性的：</p>
 
 <blockquote>
 <ol>
@@ -168,8 +147,8 @@ properties within an instance:</p>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../index.html">Reference</a></div>
+<div style="float:left">上一页：<a href=
+"../index.html">语言参考</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
