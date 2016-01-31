@@ -28,10 +28,9 @@ if (window.name != "content")
 
 <h1>physics_mass_properties</h1>
 
-<h2>With this you can apply specific mass properties to a
-fixture.</h2>
+<h2>使用这个函数你能够将特定的质量属性应用于一个支架。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">physics_mass_properties(mass, local_center_x,
 local_center_y, inertia)</p>
@@ -42,28 +41,28 @@ local_center_y, inertia)</p>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>mass</td>
-<td>The new mass that you want the fixture to have.</td>
+<td>你希望支架所拥有的新质量。</td>
 </tr>
 
 <tr class="alt">
 <td>local_center_x</td>
-<td>The local x coordinate of the new center of mass.</td>
+<td>新质心①的相对x坐标。</td>
 </tr>
 
 <tr>
 <td>local_center_y</td>
-<td>The local y coordinate of the new center of mass.</td>
+<td>新质心的相对y坐标。</td>
 </tr>
 
 <tr class="alt">
 <td>inertia</td>
-<td>Set the inertia for the fixture.</td>
+<td>为支架设定的惯量值</td>
 </tr>
 </table>
 </div>
@@ -71,71 +70,53 @@ local_center_y, inertia)</p>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回:</b> 无</p>
+<br>
+<p>①：质心与重心不是同义词，但一般情况下，质心即重心</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function can be used to set custom mass and inertia values
-for a physics enabled instance. Normally the mass, center of mass,
-and inertia for an instance is calculated using a combination the
-surface area of the bound fixtures and their density. However in
-very special occasions you may need to offset the center of mass or
-change the inertia and that is when you would use this function.
-Bear in mind that the mass is calculated in real world weight
-(ie:kilograms) and you should always try and keep values realistic
-for what you are modelling. So if your physics object is meant to
-represent a person, their mass would be approximately 70 kilos.<br>
+<p>这个函数能够被用于给一个启用物理的实例设定一个自定义质量和惯性。正常地一个实例的质量、质心和惯性<!--
+-->是由绑定支架的区域以及他们的密度结合计算的。然而在非常特殊的场合，你可能希望质心偏移或者改变其惯量<!--
+-->要牢记质量将被计算为真实世界中的质量（比如：千克）并且你应该经常尝试并保持这个值对于你正在塑造的东西是现实的<!--
+-->所以如果你的物理物体打算去表示一个人，它们的质量将近似为70千克。<br>
 <br>
-The center of mass is calculated automatically for you based on the
-shape of the fixture (or fixtures) you have defined. To get a
-general idea of where this could be, if you have a sprite that is
-the same shape as the fixtures you wish to create, then select the
-"center origin" option you will see approximately where the center
-of mass will be too. However, this may not be correct or you may be
-looking for a specific effect from your physics object, in which
-case this function can also be used to change the x and y
-coordinates for the center of mass. These are <b>local</b> values,
-so 0,0 is the point at which the fixtures are bound to the instance
-(the origin of the instance). So a center of mass of -4,0 would
-shift the center of mass to the left of the origin.<br>
+质心是自动根据你所定义的支架形状来计算的。为了知道在哪，如果你有一个精灵是和你想要创建的支架形状相同的话<!--
+-->，那么就选择“中心为原点”（Center Origin）的选项，你将会观察到质心也会在的近似位置②。然而这可能并不正确<!--
+-->或者你可能是在从你的物理物体上寻求一个特殊效果，在这些情况中这个函数也能被使用去改变质心的x和y坐标<!--
+-->
+它们是<b>相对</b>值，所以0,0是在支架被绑定给实例（实例原点）的位置。所以一个-4,0的质心将会偏移至原点左侧。<br>
+
 <br>
-As for the inertia, this basically defines how resistant the
-instance is to changes in its direction and velocity, so a higher
-inertia makes it more resistant and a low inertia makes it less
-resistant (inertia and mass cannot be negative values!).<br>
+而对于惯量而言，这根本上定义了物体对于运动状态改变的抗拒程度，所以一个更高的惯量会使得它更有抗拒性而一个更低<!--
+-->的惯量使得它更不具有抗拒性。（惯量和质量不可以是负值）<br>
 <br>
-<i><b>NOTE:</b> This function does not set mass and inertia for
-individual fixtures, but rather for the whole physics enabled
-instance, no matter how many fixtures are bound to it.</i><br>
+<i><b>注意：</b> 这个函数并不为单独的支架设定质量和惯量，而是所有启用了物理的物体，无论在它上绑定了多少个支架。</i><br>
 <br>
-<i><b>NOTE:</b> This function should only be used when necessary as
-the physics simulation is designed for the mass and inertia to be
-optimal based on the density and size of the fixture. Changing
-these values can have unforeseen effects.</i><br>
-<br></p>
+<i><b>注意：</b>这个函数应当只在像为质量和惯量做基于密度和支架大小的优化的物理模拟设计中使用。改变这个值可能会有不可预见的效果。</i><br>
+<br><br>
+<br>②：事实上，这只适用于高度对称且几何中心就在重心处的图形。</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">physics_mass_properties(phy_mass, -10, -10,
 phy_inertia);</p>
 
-<p>The above code will shift the center of mass of the physical
-body to the left.</p>
+<p>上述代码将会偏移质心到物理物体的左侧</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Physics
-Functions</a></div>
+<div style="float:left">上一页<a href="index.html">物理函数</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页<a href=
 "physics_test_overlap.html">physics_test_overlap</a></div>
 </div>
 
