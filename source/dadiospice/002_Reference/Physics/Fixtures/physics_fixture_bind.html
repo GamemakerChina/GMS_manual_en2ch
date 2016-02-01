@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>physics_fixture_bind</h1>
 
-<h2>This function binds a fixture to an instance.</h2>
+<h2>这个函数将一个支架绑定给一个实例。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">physics_fixture_bind(fixture, target)</p>
 
@@ -40,19 +40,18 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>fixture</td>
-<td>the fixture that is to be bound</td>
+<td>待被绑定的支架</td>
 </tr>
 
 <tr class="alt">
 <td>target</td>
-<td>the target instance that is to receive the fixture (can be an
-instance id, an object id, <i>other</i>, or <i>all</i>)</td>
+<td>待接收支架的目标实例（可以是一个实例id、一个物体id、<i>other</i>或者<i>all</i>）</td>
 </tr>
 </table>
 </div>
@@ -60,21 +59,18 @@ instance id, an object id, <i>other</i>, or <i>all</i>)</td>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回：</b> 实数型</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>Once we have defined our fixture it has to be bound to an
-instance. This means that its <i>properties</i> are transferred to
-the selected instance, <b>not the actual fixture itself</b>, so
-that one fixture can be bound to multiple instances if all are to
-have the same properties. You can specify an object index for the
-target and all instances present in the room at the time will
-receive that fixtures properties (but not any new instances of the
-object created later), or you can use the special keywords
+<p>一旦我们已经定义了我们的支架，它就要被绑定给一个实例。这也就是说它的<i>属性</i>被转移给一个实例，<!--
+--><b>而不是实际支架本身</b>，所以一个支架能够被绑定给多个实例如果所有的这些都具有相同的属性。你可以指定<!--
+-->一个物体索引作为目标而房间内此时出现的所有实例都将会收到这个支架属性（而并不是新的接下来创建的物体实例），<!--
+-->
+or you can use the special keywords
 <i>other</i> and <i>all</i>. You can even specify a parent object
 and all children instances with that parent will also receive the
 fixture. Once the fixture has been bound to all the instances that
@@ -134,7 +130,7 @@ longer needed.</p>
 "physics_fixture_bind_ext.html">physics_fixture_bind_ext</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>? Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
