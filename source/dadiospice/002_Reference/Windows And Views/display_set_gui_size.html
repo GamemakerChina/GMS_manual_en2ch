@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
@@ -70,7 +70,7 @@ if (window.name != "content")
 
 <p>此函数只会影响 <a href=
 "../../000_Using%20GameMaker/Events/Draw%20GUI%20Event.html">Draw GUI Event</a> 中的绘制的内容，并可以用来给那个事件中所有GUI组件设定特定的宽度和高度， 不管显示器或窗口之前是怎样显示GUI，都会缩放到适当的效果。GUI放置的位置 (比如 (0,0)位置)取决于你是否使用这个函数 <a href=
-"display_set_gui_maximise.html"><tt>display_set_gui_maximise()</tt></a> 。如果你没有使用这个函数 (默认设置)， GUI层将被放置在同应用表面（游戏绘制的区域）一样的 (0,0)位置，宽度和高度将被拉伸以适合这个表面层，使用这个函数这样设置时宽度为256px的 GUI，当应用表面层是512px时，将会拉伸256像素为表面层的大小，使得像素放大两倍。这是已经在全局游戏设置中开启长宽比校正的理想选择。<br><br>如果你已经使用 <tt>display_set_gui_maximise()</tt> 函数，然后GUI层的 (0,0)位置将默认为游戏窗口或显示器的左上角（全屏或者在移动设备上），用那个函数设置缩放因数，这个函数设置宽度和高度。You can reset the GUI layer at any time to the default configuration by calling this function using -1 as both the width and height - this will set the (0, 0) position to the application surface and the width and height will be reset to 1:1 with the surface too.<br>
+"display_set_gui_maximise.html"><tt>display_set_gui_maximise()</tt></a> 。如果你没有使用这个函数 (默认设置)， GUI层将被放置在同应用表面（游戏绘制的区域）一样的 (0,0)位置，宽度和高度将被拉伸以适合这个表面层，使用这个函数这样设置时宽度为256px的 GUI，当应用表面层是512px时，将会拉伸256像素为表面层的大小，使得像素放大两倍。这是已经在全局游戏设置中开启长宽比校正的理想选择。<br><br>如果你已经使用 <tt>display_set_gui_maximise()</tt> 函数，然后GUI层的 (0,0)位置将默认为游戏窗口或显示器的左上角（全屏或者在移动设备上），用那个函数设置缩放因数，这个函数设置宽度和高度。通过调用这个函数，设置宽和高为-1，你可以在任何时间重置GUI层为默认设置。这个操作将设置GUI层至应用表面左上角的(0,0)坐标，宽和高重置应用表面相同的大小。<br>
 <br></p>
 
 <p><br>
@@ -80,9 +80,7 @@ if (window.name != "content")
 
 <p class="code">display_set_gui_size(768, 1024);</p>
 
-<p>The above code will lock the draw GUI event to the given width
-and height, scaling all components to fit either the application
-surface, or the display, using that proportion.</p>
+<p>上述代码将锁定GUI绘制事件，以指定的宽度和高度，使用那个比例缩放所有的分量以适应应用表面或者显示器。</p>
 
 <p><br>
 </p>
@@ -90,11 +88,11 @@ surface, or the display, using that proportion.</p>
 <div class="clear">
 <div style="float:left">返回: <a href="index.html">Windows and Views</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "display_set_gui_maximise.html">display_set_gui_maximise</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -102,17 +100,6 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
   if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
-</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-
-
-
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table><!-- /CHM2WEB --> 
-
-
+</script>
 </body>
 </html>
