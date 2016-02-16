@@ -10,7 +10,7 @@ Advanced Use  | 6/101,5% | 小狐狸正在进行（调试1节礼程已完成）
 Obsolete Functions  | 1/14,7% | 娜娜米已暂停
 HTML5  | 16/16,100% | AU 已完成
 Surfaces  | 23/23,100% | 断水已完成
-The Display, Windows And Views  | 16/67,23% |  断水进行中 
+The Display, Windows And Views  | 67/67,100% |  断水已完成
 Data Stuctures  | 37/127,29% | 小太部分完成，已停止
 Maths  | 9/61,14% | 小太部分完成，已停止
 Game Assets - Audio  | 8/112,7% | dream部分完成，已暂停
