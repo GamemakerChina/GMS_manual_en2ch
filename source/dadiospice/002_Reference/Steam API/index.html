@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -68,6 +68,10 @@ correct and communicating with your game:</p>
 </li>
 
 <li><a href=
+"steam_get_user_persona_name.html">steam_get_user_persona_name</a>
+</li>
+
+<li><a href=
 "steam_get_user_steam_id.html">steam_get_user_steam_id</a><br>
 </li>
 
@@ -91,6 +95,15 @@ other functions relating to Steam and the Steam Workshop:</p>
 <li><a href=
 "steam_get_user_account_id.html">steam_get_user_account_id</a><br>
 </li>
+
+<li><a href=
+"steam_current_game_language.html">steam_current_game_language</a><br>
+
+</li>
+
+<li><a href=
+"steam_available_languages.html">steam_available_languages</a><br>
+</li>
 </ol>
 </blockquote>
 
@@ -107,6 +120,21 @@ using the following functions:</p>
 <ol>
 <li><a href=
 "steam_activate_overlay.html">steam_activate_overlay</a><br>
+</li>
+
+<li><a href=
+"steam_activate_overlay_browser.html">steam_activate_overlay_browser</a><br>
+
+</li>
+
+<li><a href=
+"steam_activate_overlay_store.html">steam_activate_overlay_store</a><br>
+
+</li>
+
+<li><a href=
+"steam_activate_overlay_user.html">steam_activate_overlay_user</a><br>
+
 </li>
 
 <li><a href=
@@ -268,13 +296,14 @@ reverted, which is a frustrating experience.<br>
 
 <p>The Steam Cloud provides an easy and transparent remote file
 storage system for your game. All files written to disk using the
-<i>GameMaker: Studio</i> functions will be replicated to the Steam
-servers after the game exits. If the user then changes computers,
-the files will then be downloaded to the new computer before the
-game launches, meaning that the game can then access the files by
-reading them using the appropriate functions. The Steam Client does
-the work of ensuring that the files are kept synchronized across
-all computers the user may be accessing.<br>
+<i>GameMaker: Studio</i> cloud functions (listed below) will be
+replicated to the Steam servers after the game exits. If the user
+then changes computers, the files will then be downloaded to the
+new computer before the game launches, meaning that the game can
+then access the files by reading them using the appropriate Steam
+functions. The Steam Client does the work of ensuring that the
+files are kept synchronized across all computers the user may be
+accessing.<br>
 <br></p>
 
 <blockquote><i><b>NOTE:</b> By default, the Cloud is <b>not</b>
@@ -419,7 +448,7 @@ Studio</i> to check for this extra content:</p>
 "../index.html">Contents</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -428,16 +457,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -35,8 +35,9 @@ the Steam API for publishing your game to that platform and that
 want to use the possibilities that the Steam Workshop and Community
 gives you for adding and generating user content in your projects.
 Some of the functions in this page require the Steam App ID for
-your project as well as a User ID for the person playing the game,
-both of which can be found using the following functions:</p>
+your project as well as a User ID for the person playing the game
+or their user name, which can be found using the following
+functions:</p>
 
 <blockquote>
 <ol>
@@ -47,10 +48,13 @@ both of which can be found using the following functions:</p>
 "../steam_get_user_account_id.html">steam_get_user_account_id</a><br>
 
 </li>
+
+<li><a href=
+"../steam_get_user_persona_name.html">steam_get_user_persona_name</a><br>
+
+</li>
 </ol>
 </blockquote>
-
-<h3>Download Content</h3>
 
 <p>Before using any of the built in functions for the Steam UGC API
 you need to have set up your game correctly from the Steam
@@ -59,21 +63,41 @@ documentation found here: <a href=
 "https://partner.steamgames.com/documentation/ugc#Tech" target=
 "_blank">Sharing User Generated Content</a> (note that you need to
 have your game accepted for the Steam network and have access to
-the developer areas of the Steam API documentation). Downloading
-UGC is simply a case of calling the following function:</p>
+the developer areas of the Steam API documentation). All subscribed
+UGC items will be downloaded by the Steam client automatically, and
+you should have code in the <a href=
+"../../../001_Advanced%20Use/More%20About%20Async%20Events/Steam.html">
+Steam Asynchronous Event</a> to catch this and store the ID of the
+UGC that has been downloaded for use in the other UGC
+functions.<br>
+<br>
+The normal workflow for getting UGC into your game would be as
+follows:</p>
 
 <blockquote>
-<ol>
-<li><a href="steam_ugc_download.html">steam_ugc_download</a><br>
-</li>
-</ol>
-</blockquote>
+<ul>
+<li>The user would subscribe to an item (either from your game
+using <a href=
+"steam_ugc_subscribe_item.html"><tt>steam_ugc_subscribe_item()</tt></a>
+or from the client/browser.<br>
+<br></li>
 
-<p>This function will also generate a <a href=
-"../../../001_Advanced%20Use/More%20About%20Async%20Events/Steam.html">
-Steam Asynchronous Event</a> to let your game know that the chosen
-content has finished downloading.<br>
-<br></p>
+<li>Your game would "listen" for new subscriptions with the
+appropriate code in the Steam Async Event.<br>
+<br></li>
+
+<li>When you get a subscription async event, you would then check
+if the item is installed (ie: downloaded) with <a href=
+"steam_ugc_get_item_install_info.html"><tt>steam_ugc_get_item_install_info()</tt></a>.<br>
+
+<br></li>
+
+<li>If the item is <i>not</i> installed, you'll need a check using
+<a href=
+"steam_ugc_get_item_update_info.html"><tt>steam_ugc_get_item_update_info()</tt></a>
+to track the download progress.</li>
+</ul>
+</blockquote>
 
 <h3>Creating And Editing Content</h3>
 
@@ -261,6 +285,18 @@ the Steam API about the UGC items available:</p>
 </ol>
 </blockquote>
 
+<p>You can get a preview image of any UGC item from the workshop by
+using the function <tt>steam_ugc_send_query()</tt> to get the
+preview file handle of the image, and then calling the following
+function:</p>
+
+<blockquote>
+<ol>
+<li><a href="steam_ugc_download.html">steam_ugc_download</a><br>
+</li>
+</ol>
+</blockquote>
+
 <p><br>
 </p>
 
@@ -269,7 +305,7 @@ the Steam API about the UGC items available:</p>
 "../index.html">Contents</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -278,16 +314,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,7 +28,7 @@ if (window.name != "content")
 
 <h1>path_scale</h1>
 
-<h2>Sets the scale of the path.</h2>
+<h2>Sets (or gets) the scale of the path.</h2>
 
 <h3>Syntax:</h3>
 
@@ -44,11 +44,11 @@ if (window.name != "content")
 
 <h3>Description</h3>
 
-<p>This value can be used to get or to set the scale of the current
-path, with a default value of 1 (no scale). Set it to 2, for
-example, and the path will be double in size, so if the path
-instructs the instance to follow a 50x50 pixel square path, it will
-now be a 100x100 square path.<br>
+<p>This value can be used to get or to set the scale of the
+currently assigned path for the instance, with a default value of
+1. This is a scalar value, so 1 is a scale of 1:1, while setting it
+to 2, for example, will be double the scale and setting it to 0.5
+would be halving the scale.<br>
 <br></p>
 
 <p><br>
@@ -58,8 +58,9 @@ now be a 100x100 square path.<br>
 
 <p class="code">path_scale = 1 + random(2);</p>
 
-<p>The above code will make the current path scale to a random size
-greater between 1 times and 2 times its original size.</p>
+<p>The above code will set the current path's scale to a random
+size between 1 (its original size) and 3 (3 times its original
+size).</p>
 
 <p><br>
 </p>
@@ -71,7 +72,7 @@ greater between 1 times and 2 times its original size.</p>
 "path_orientation.html">path_orientation</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -80,16 +81,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

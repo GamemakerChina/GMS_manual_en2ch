@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -52,8 +52,8 @@ if (window.name != "content")
 
 <tr class="alt">
 <td>numb</td>
-<td>The specific event, if one is necessary (otherwise, just use
-0).</td>
+<td>The specific event constant or value, if one is necessary
+(otherwise, just use 0).</td>
 </tr>
 </table>
 </div>
@@ -304,150 +304,6 @@ trigger the event of</td>
 </tr>
 
 <tr>
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick1_left</i>
-</td>
-<td>Joystick 1's left button held down</td>
-</tr>
-
-<tr class="alt">
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick1_right</i>
-</td>
-<td>Joystick 1's right button held down</td>
-</tr>
-
-<tr>
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick1_up</i>
-</td>
-<td>Joystick 1's up button held down</td>
-</tr>
-
-<tr class="alt">
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick1_down</i>
-</td>
-<td>Joystick 1's down button held down</td>
-</tr>
-
-<tr>
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick1_button1</i>
-</td>
-<td>Joystick 1's 1 button held down</td>
-</tr>
-
-<tr class="alt">
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick1_button2</i>
-</td>
-<td>Joystick 1's 2 button held down</td>
-</tr>
-
-<tr>
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick1_button3</i>
-</td>
-<td>Joystick 1's 3 button held down</td>
-</tr>
-
-<tr class="alt">
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick1_button4</i>
-</td>
-<td>Joystick 1's 4 button held down</td>
-</tr>
-
-<tr>
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick1_button5</i>
-</td>
-<td>Joystick 1's 5 button held down</td>
-</tr>
-
-<tr class="alt">
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick1_button6</i>
-</td>
-<td>Joystick 1's 6 button held down</td>
-</tr>
-
-<tr>
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick1_button7</i>
-</td>
-<td>Joystick 1's 7 button held down</td>
-</tr>
-
-<tr class="alt">
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick1_button8</i>
-</td>
-<td>Joystick 1's 8 button held down</td>
-</tr>
-
-<tr>
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick2_left</i>
-</td>
-<td>Joystick 2's left button held down</td>
-</tr>
-
-<tr class="alt">
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick2_right</i>
-</td>
-<td>Joystick 2's right button held down</td>
-</tr>
-
-<tr>
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick2_up</i>
-</td>
-<td>Joystick 2's up button held down</td>
-</tr>
-
-<tr class="alt">
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick2_down</i>
-</td>
-<td>Joystick 2's down button held down</td>
-</tr>
-
-<tr>
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick2_button1</i>
-</td>
-<td>Joystick 2's 1 button held down</td>
-</tr>
-
-<tr class="alt">
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick2_button2</i>
-</td>
-<td>Joystick 2's 2 button held down</td>
-</tr>
-
-<tr>
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick2_button3</i>
-</td>
-<td>Joystick 2's 3 button held down</td>
-</tr>
-
-<tr class="alt">
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick2_button4</i>
-</td>
-<td>Joystick 2's 4 button held down</td>
-</tr>
-
-<tr>
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick2_button5</i>
-</td>
-<td>Joystick 2's 5 button held down</td>
-</tr>
-
-<tr class="alt">
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick2_button6</i>
-</td>
-<td>Joystick 2's 6 button held down</td>
-</tr>
-
-<tr>
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick2_button7</i>
-</td>
-<td>Joystick 2's 7 button held down</td>
-</tr>
-
-<tr class="alt">
-<td><i>&nbsp;&nbsp;&nbsp;---- ev_joystick2_button8</i>
-</td>
-<td>Joystick 2's 8 button held down</td>
-</tr>
-
-<tr>
 <td><b>ev_collision</b>
 </td>
 <td>Collision with an object</td>
@@ -536,15 +392,15 @@ following</td>
 <tr>
 <td><i>&nbsp;&nbsp;&nbsp;---- ev_user0... ev_user15</i>
 </td>
-<td>Can only be triggered with this function</td>
+<td>One of the 16 available user events.</td>
 </tr>
 
 <tr class="alt">
 <td><b>ev_draw</b>
 </td>
-<td>Draw event. <i><b>NOTE:</b> This event cannot be forced and the
-constants are only for identifying the event when
-performed!</i></td>
+<td>Draw event. <i><b>NOTE:</b> This event cannot be forced outside
+of a draw event and the constants and the constants are only for
+identifying the event when performed in these cases.</i></td>
 </tr>
 
 <tr>
@@ -588,34 +444,32 @@ performed!</i></td>
 </td>
 <td>The draw gui end event.</td>
 </tr>
-
-<tr class="alt">
-<td><b>ev_trigger</b>
-</td>
-<td>Trigger event. <i><b>NOTE:</b> Triggers are now obsolete! See
-<a href="../../../017_Obsolete%20Functions/Triggers.html">Obsolete
-Functions: Triggers</a></i></td>
-</tr>
-
-<tr>
-<td><i>&nbsp;&nbsp;&nbsp;---- Use the constant you designated to
-the relevant trigger.</i>
-</td>
-<td>trigger0 for example.</td>
-</tr>
 </table>
 </div>
 
 <p><br>
 </p>
 
-<h3><b>Example</b>
+<h3><b>Extended Example</b>
 </h3>
+
+<p>To help understand how this funcction can be use, please look at
+the following few examples:</p>
 
 <p class="code">event_perform(ev_keypress, ord("W"));</p>
 
 <p>This would perform the event associated with Keyboard Check
-Pressed &gt; W key.</p>
+Pressed "W" key (without actually generating a keyboard press).</p>
+
+<p class="code">event_perform(ev_step, ev_step_begin);</p>
+
+<p>This would perform the <i>Begin Step</i> event (if called from
+any of the step events it would cause the begin step event code to
+be run twice).</p>
+
+<p class="code">event_perform(ev_create, 0);</p>
+
+<p>This would perform the <i>Create</i> event of the instance.</p>
 
 <p><br>
 </p>
@@ -628,7 +482,7 @@ Events</a></div>
 "event_perform_object.html">event_perform_object</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -637,16 +491,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -118,32 +118,44 @@ positive).</td>
 </tr>
 
 <tr>
+<td>buffer_u64</td>
+<td>An unsigned 64bit integer. This can be a positive or negative
+value from -(2<sup>63</sup>) to 2<sup>63</sup> - 1.</td>
+</tr>
+
+<tr class="alt">
 <td>buffer_f16</td>
 <td>A 16bit float. This can be a positive or negative value within
 the range of +/- 65504. <i>(Not currently supported!)</i></td>
 </tr>
 
-<tr class="alt">
+<tr>
 <td>buffer_f32</td>
 <td>A 32bit float. This can be a positive or negative value within
 the range of +/-16777216.</td>
 </tr>
 
-<tr>
+<tr class="alt">
 <td>buffer_f64</td>
 <td>A 64bit float. This can be a positive or negative value from
 -(2<sup>52</sup>) to 2<sup>52</sup> - 1.</td>
 </tr>
 
-<tr class="alt">
+<tr>
 <td>buffer_bool</td>
 <td>A boolean value. Can only be either 1 or 0 (<tt>true</tt> or
 <tt>false</tt>)</td>
 </tr>
 
-<tr>
+<tr class="alt">
 <td>buffer_string</td>
 <td>A string of any size.</td>
+</tr>
+
+<tr>
+<td>buffer_text</td>
+<td>A string of any size, without the final null terminating
+character.</td>
 </tr>
 </table>
 </div>
@@ -175,7 +187,7 @@ variable "buff" a signed 16bit value into the local variable
 "buffer_write.html">buffer_write</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -184,16 +196,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

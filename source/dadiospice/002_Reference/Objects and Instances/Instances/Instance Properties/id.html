@@ -1,8 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -50,34 +50,34 @@ number that is used internally to identify this instance and this
 variable is what you can use to reference it. The id is also
 returned (and can be stored in a variable) when an instance is
 created using <a href=
-"../Instance%20Functions/instance_create.html">instance_create()</a>.<br>
+"../Instance%20Functions/instance_create.html">instance_create()</a>.</p>
 
-<br>
-<i><b>Note:</b> The value of this variable is</i> not the same as
-the identifier that the instance is given in the room editor and is
-also different to the <a href=
-"../Instance%20Functions/instance_id.html">instance_id</a> (which
-is normally used to get the id of an instance).<br>
-<br></p>
+<blockquote><i><b>Note:</b> The value of this variable is</i> not
+the same as the identifier that the instance is given in the room
+editor and is also different to the <a href=
+"../Instance Functions/instance_id.html">instance_id</a> array
+which contains all the ids of all the currently active
+instances.</blockquote>
 
 <p><br>
 </p>
 
 <h3>Example:</h3>
 
-<p class="code">var i;<br>
-for(i = 0; i &lt; instance_count; i += 1;)<br>
+<p class="code">for(var i = 0; i &lt; instance_count; i++;)<br>
 &nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;if instance_id[i] != id instance_id[i].scr +=
-1;<br>
+&nbsp;&nbsp;&nbsp;if instance_id[i] != id<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instance_id[i].scr += 5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code will loop through ALL the instances in the room
-and compare the id of each (returned by the function <a href=
-"../Instance%20Functions/instance_id.html">instance_id</a>) against
-the id of the instance that is running the code. If the id does not
-match, it then uses that id to add 1 onto the variable "scr" of all
-instances.</p>
+<p>The above code adds 5 to the "scr" variable for every active
+instance in the room except the one running the code. It does this
+by looping through ALL the active instances (using the
+"instance_id" array to return each active instance's ID) and
+comparing them against the built in "id" variable, which is the ID
+of the original instance running the code.</p>
 
 <p><br>
 </p>
@@ -89,7 +89,7 @@ Properties</a></div>
 <div style="float:right">Next: <a href="solid.html">solid</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -98,16 +98,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -37,7 +37,7 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A.</p>
+<p><b>Returns:</b> ID</p>
 
 <p><br>
 </p>
@@ -45,8 +45,10 @@ if (window.name != "content")
 <h3>Description</h3>
 
 <p>All resources in <i>GameMaker: Studio</i> have a unique
-identifying number, and the path_index is a read-only variable that
-holds the index value for a path resource.<br>
+identifying number, and the <tt>path_index</tt> is a
+<b>read-only</b> variable that holds the index value for a given
+path resource. If the instance has no path assigned, the variable
+will be set to -1.<br>
 <br></p>
 
 <p><br>
@@ -54,13 +56,15 @@ holds the index value for a path resource.<br>
 
 <h3>Example:</h3>
 
-<p class="code">path_start(choose(pth_enemy1, pth_enemy2,
-pth_enemy3), 4, 3, 0);</p>
+<p class="code">if path_index = -1<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;path_start(pth_enemy3, 4, path_action_reverse,
+0);<br>
+&nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>This will make the calling instance follow one of three paths
-randomly chosen at a speed of 4 pixels per step. It will follow the
-path relative to its own position, and when it reaches the end it
-will reverse direction and go back the way it came.</p>
+<p>The above code checks to see if a path has been assigned to the
+instance, and if not it starts a new path (assigning it to the
+<tt>path_index</tt> at the same time).</p>
 
 <p><br>
 </p>
@@ -72,7 +76,7 @@ will reverse direction and go back the way it came.</p>
 "path_position.html">path_position</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -81,16 +85,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>
