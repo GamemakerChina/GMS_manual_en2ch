@@ -29,7 +29,7 @@ if (window.name != "content")
 
 <h1>dot_product</h1>
 
-<h2>返回向量(x1,y1)与(x2,y2)的数量积（点乘）。</h2>
+<h2>返回向量(x1,y1)与(x2,y2)的点积（数量积）。</h2>
 
 <p><br>
 </p>
@@ -80,31 +80,25 @@ if (window.name != "content")
 
 <h3>描述</h3>
 
-<p>数量积是一个表达两个向量间角度关系并又两个向量相乘然后加上他们的结果
-The dot product is a value expressing the angular relationship
-between two vectors and is found by taking two vectors, multiplying
-them together and then adding the results. The name "dot product"
-is derived from the centered dot "·" that is often used to
-designate this operation (the alternative name "scalar product"
-emphasizes the scalar rather than vector nature of the result).<br>
+<p>点积是一个表达两个向量间角度关系并用两个向量相乘①然后相加的结果。“点积”这个名字源自于经常被用于指明这种运算的中心圆点符号“·”<!--
+-->（又称为“标量积”（数量积），强调了其结果本质是一个标量而不是向量）。<br>
 <br>
-The actual mathematical formula can be written like this:<br>
+实质上的数学公式可以被写成像这样：<br>
 <br>
 <img class="center" src="dot_product_image.png"></p>
 
 <p><br>
-So, in 2D the dot product of vectors a[x1,y1] and b[x2,2] is x1x2 +
-y1y2, meaning that the dot_product in <i>GameMaker: Studio</i> is
-calculated as:<br></p>
+所以在2维中向量<b><tt>a</tt></b>(x<sub>1</sub>,y<sub>1</sub>)和<b><tt>b</tt></b>(x<sub>2</sub>,y<sub>2</sub>)的点积是x<sub>1</sub>y<sub>1</sub>+x<sub>2</sub>y<sub>2</sub>，<!--
+-->意味着在<i>GameMaker: Studio</i>中点积被计算为：
+<br></p>
 
-<p class="code">a · b = (x1*x2)+(y1*y2);<br></p>
+<p class="code"><b>a</b> · <b>b</b> = (x<sub>1</sub>*x<sub>2</sub>)+(y<sub>1</sub>*y<sub>2</sub>);<br></p>
 
-<p>The curious thing about the dot product is the relationship it
-has to the angle formed by the input vectors which can be expressed
-as:</p>
+<p>关于点积最令人好奇的事情就是它与由输入的向量形成的角度的关系，其被表达为：
+</p>
 
-<p class="code">a · b = (length of a) * (length of b) *
-cos(angle)</p>
+<p class="code"><b>a</b> · <b>b</b> = |<b>a</b>| × |<b>b</b>| ×
+cos&lt;<b>a</b>,<b>b</b>&gt; </p>
 
 <p>That is to say, the dot product of two vectors will be equal to
 the cosine of the angle between those vectors, multiplied by the
