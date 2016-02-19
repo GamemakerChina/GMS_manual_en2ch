@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -103,11 +103,13 @@ available characters and their UTF8 value see <a href=
 be needed in all further codes that refer to this font.<br>
 <br>
 For the HTML5 target module, this function can only be used to add
-<i>Web Fonts</i>. The following table shows the fonts that are
-standard across all browsers and that should be be available for
-use without problems. Any other font may or may not exist on the
-computer or device that is running your game, so the use of this
-function should be limited to these standard fonts:<br>
+<i>Web Fonts</i>, but will only work <i>if WebGL is <b>not</b>
+enabled</i> - if WebGL is enabled then you must use an included
+font file. The following table shows the fonts that are standard
+across all browsers and that should be be available for use without
+problems. Any other font may or may not exist on the computer or
+device that is running your game, so the use of this function
+should be limited to these standard fonts:<br>
 <br></p>
 
 <div class="compat">
@@ -259,7 +261,9 @@ care should be taken when using this function as it will increment
 the number of texture swaps when drawing. It is also worth noting
 that fonts may appear slightly larger when drawn, since glyphs may
 have parts that are drawn outside of the bounding box defined for
-the font.<br>
+the font. You should be aware too that there is a limitation of
+around 200 glyphs that can be rendered in a single frame for a
+particular font.<br>
 <br></p>
 
 <blockquote><i><b>NOTE:</b> When you load a font into GameMaker:
@@ -293,7 +297,7 @@ lower case letters, numbers and all common punctuation.</p>
 "font_add_sprite.html">font_add_sprite</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -302,16 +306,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

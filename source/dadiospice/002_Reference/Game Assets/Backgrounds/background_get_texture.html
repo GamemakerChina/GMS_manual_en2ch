@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -77,14 +77,14 @@ functions, as well as the <a href=
 
 <p class="code">var tex;<br>
 tex = background_get_texture(back);<br>
-draw_primitive_begin_texture(pr_trianglefan, tex);<br>
+draw_primitive_begin_texture(pr_trianglestrip, tex);<br>
 draw_vertex_texture(0, 480, 0, 0);<br>
 draw_vertex_texture(640, 480, 1, 0);<br>
 draw_vertex_texture(640, 480, 1, 1);<br>
 draw_vertex_texture(0, 480, 0, 1);<br>
 draw_primitive_end();<br></p>
 
-<p>The above code will draw a 4 vertex triangle fan textured with
+<p>The above code will draw a 4 vertex triangle strip textured with
 the texture held in the "tex" variable.</p>
 
 <p><br>
@@ -98,7 +98,7 @@ the texture held in the "tex" variable.</p>
 "background_get_uvs.html">background_get_uvs</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -107,16 +107,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>
