@@ -28,8 +28,7 @@ if (window.name != "content")
 
 <h1>display_set_windows_vertex_buffer_method</h1>
 
-<h2>Sets the buffer method used on the Windows target
-platform.</h2>
+<h2>设置 Windows 目标平台的几何顶点缓冲区的方法。</h2>
 
 <h3><b>语法：</b>
 </h3>
@@ -50,7 +49,7 @@ display_set_windows_vertex_buffer_method(method);</p>
 
 <tr>
 <td>method</td>
-<td>The buffer method to use (see the constants list below).</td>
+<td>准备使用的缓冲区方法（查看下面所列的常量）。</td>
 </tr>
 </table>
 </div>
@@ -66,12 +65,7 @@ display_set_windows_vertex_buffer_method(method);</p>
 <h3><b>描述</b>
 </h3>
 
-<p>This Windows only function permits you to choose one of various
-different ways of handling the game geometry vertex buffer, some of
-which may work better on different machines. This can be set in the
-Global Game Settings Windows tab too, and will affect performance
-to different degrees depending on the machine. The constants
-available are:<br>
+<p>这个只用于 Windows 的函数允许你选择多个不同的处理游戏几何顶点缓冲区的方法中的一个，它们中的一些在不同的机器上可能表现得更好。这个可也可以在全局游戏设定的 Windows 选项卡中设置，根据不同的机器将会有不同的性能表现。可用的常量如下：<br>
 <br></p>
 
 <div class="compat">
@@ -82,23 +76,18 @@ available are:<br>
 </tr>
 
 <tr>
-<td>vbm_fast</td>
-<td>This is the default method and is the one recommended by Nvidia
-- it should give the highest performance.</td>
+<td>vbm_fastvbm_fast</td>
+<td>这是默认的，且是Nvidia推荐的方法 - 它应该是最高的性能。</td>
 </tr>
 
 <tr class="alt">
 <td>vbm_compatible</td>
-<td>This is the deprecated method that GameMaker: Studio used to
-use before adopting the fast method - poorer performance on newer
-machines</td>
+<td>这是在采用快速方法之前（vbm_fast），GameMaker: Studio 曾经使用过的一个过时的方法 - 在较新的机器上性能较差。</td>
 </tr>
 
 <tr>
 <td>vbm_most_compatible</td>
-<td>This is the legacy method that was used in previous versions of
-GameMaker - performance is poorer than the other two, but it should
-be compatible with almost any machine.</td>
+<td>这是 GameMaker 之前使用的一个传统方法 - 性能不如上面两个，但是应该兼容几乎任何一台机器。</td>
 </tr>
 </table>
 </div>
@@ -115,8 +104,7 @@ vbm_fast<br>
 
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code will check the current geometry method and set it
-to "fast" if it is not already.</p>
+<p>上述代码将检测当前的几何顶点缓冲区的方法，如果没有准备好则设置为 “fast（vbm_fast 方法）”。</p>
 
 <p><br>
 </p>
@@ -124,7 +112,7 @@ to "fast" if it is not already.</p>
 <div class="clear">
 <div style="float:left">返回: <a href="index.html">Windows and Views</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "display_set_windows_alternate_sync.html">display_set_windows_alternate_sync</a></div>
 </div>
 
