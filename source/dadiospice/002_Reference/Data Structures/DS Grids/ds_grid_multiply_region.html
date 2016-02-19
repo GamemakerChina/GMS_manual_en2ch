@@ -29,9 +29,9 @@ if (window.name != "content")
 <h1>ds_grid_multiply_region</h1>
 
 <h2>Multiplies all the values found in the given region by a given
-amount.</h2>
+amount.<br>将在被给定区域内找到的所有值乘以一个被给定的值。</h2>
 
-<h3>Syntax:</h3>
+<h3>Syntax  语法:</h3>
 
 <p class="code">ds_grid_multiply_region(index, x1, y1, x2, y2,
 val);</p>
@@ -42,38 +42,38 @@ val);</p>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>Argument参数</th>
+<th>Description描述</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the grid.</td>
+<td>The index of the grid.栅格结构的索引</td>
 </tr>
 
 <tr class="alt">
 <td>x1</td>
-<td>The x position of the left of the region in the grid.</td>
+<td>The x position of the left of the region in the grid.栅格中这个区域的左端x位置。</td>
 </tr>
 
 <tr>
 <td>y1</td>
-<td>The y position of the top of the region in the grid.</td>
+<td>The y position of the top of the region in the grid.栅格中这个区域的顶端y位置。</td>
 </tr>
 
 <tr class="alt">
 <td>x2</td>
-<td>The x position of the right of the region in the grid.</td>
+<td>The x position of the right of the region in the grid.栅格中这个区域的右端x位置。</td>
 </tr>
 
 <tr>
 <td>y2</td>
-<td>The y position of the bottom of the region in the grid.</td>
+<td>The y position of the bottom of the region in the grid.栅格中这个区域的底端y位置。</td>
 </tr>
 
 <tr class="alt">
 <td>val</td>
-<td>The value to multiply with the region cells.</td>
+<td>The value to multiply with the region cells.待与区域内单元格相乘的值。</td>
 </tr>
 </table>
 </div>
@@ -81,39 +81,41 @@ val);</p>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>Returns  返回值:</b> N/A  无</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>Description  描述</h3>
 
 <p>With this function you can specify a region of the grid in which
 to multiply each cell value by a given amount.<br>
+使用这个函数你能够指定一片每个单元格都要和被给定的值相乘的区域。<br>
 <br>
-<i><b>NOTE:</b> This function will only work with real numbers, not
-strings.</i><br>
+<i><b>NOTE  注意:</b> This function will only work with real numbers, not
+strings.<br>这个函数这个函数将只对实数生效，对字符串无效。</i><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>Example  举例:</h3>
 
 <p class="code">ds_grid_multiply_region( mygrid, 5, 5, 10, 10, 2
 );</p>
 
 <p>The above code will take all the values found within the defined
-rectangular grid area and multiply each one by 2.</p>
+rectangular grid area and multiply each one by 2.<br>
+上述代码将会取得在栅格区域内被定义的矩形区域中的所有值并逐一乘以2.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">DS
-Grids</a></div>
+<div style="float:left">Back上一个: <a href="index.html">DS
+Grids栅格结构</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">Next下一个: <a href=
 "ds_grid_multiply_grid_region.html">ds_grid_multiply_grid_region</a></div>
 </div>
 

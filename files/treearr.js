@@ -303,7 +303,7 @@ var TITEMS = [
   ["数据结构", "source/dadiospice/002_Reference/Data Structures/index.html", "1",
    ["ds_exists", "source/dadiospice/002_Reference/Data Structures/ds_exists.html", "11"],
    ["ds_set_precision", "source/dadiospice/002_Reference/Data Structures/ds_set_precision.html", "11"],
-   ["矩阵结构", "source/dadiospice/002_Reference/Data Structures/DS Grids/index.html", "1",
+   ["栅格结构", "source/dadiospice/002_Reference/Data Structures/DS Grids/index.html", "1",
     ["ds_grid_add", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_add.html", "11"],
     ["ds_grid_add_disk", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_add_disk.html", "11"],
     ["ds_grid_add_grid_region", "source/dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_add_grid_region.html", "11"],
@@ -363,7 +363,7 @@ var TITEMS = [
     ["ds_list_sort", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_sort.html", "11"],
     ["ds_list_write", "source/dadiospice/002_Reference/Data Structures/DS Lists/ds_list_write.html", "11"]
    ],
-   ["比对结构", "source/dadiospice/002_Reference/Data Structures/DS Maps/index.html", "1",
+   ["映射结构", "source/dadiospice/002_Reference/Data Structures/DS Maps/index.html", "1",
     ["ds_map_add", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_add.html", "11"],
     ["ds_map_add_list", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_add_list.html", "11"],
     ["ds_map_add_map", "source/dadiospice/002_Reference/Data Structures/DS Maps/ds_map_add_map.html", "11"],
@@ -545,7 +545,7 @@ var TITEMS = [
     ["merge_colour", "source/dadiospice/002_Reference/Drawing/Colour And Blending/merge_colour.html", "11"]
    ],
    ["3D绘制", "source/dadiospice/002_Reference/Drawing/Drawing 3D/index.html", "1",
-    ["3D Drawing", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/index.html", "1",
+    ["3D 绘图", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/index.html", "1",
      ["d3d_draw_block", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/d3d_draw_block.html", "11"],
      ["d3d_draw_cone", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/d3d_draw_cone.html", "11"],
      ["d3d_draw_cylinder", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/d3d_draw_cylinder.html", "11"],
@@ -560,7 +560,7 @@ var TITEMS = [
      ["d3d_vertex_texture", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/d3d_vertex_texture.html", "11"],
      ["d3d_vertex_texture_colour", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/d3d_vertex_texture_colour.html", "11"]
     ],
-    ["3D Lighting and Fog", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/index.html", "1",
+    ["3D 灯光和雾", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/index.html", "1",
      ["d3d_light_define_ambient", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/d3d_light_define_ambient.html", "11"],
      ["d3d_light_define_direction", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/d3d_light_define_direction.html", "11"],
      ["d3d_light_define_point", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/d3d_light_define_point.html", "11"],
@@ -573,7 +573,7 @@ var TITEMS = [
      ["d3d_vertex_normal_texture", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/d3d_vertex_normal_texture.html", "11"],
      ["d3d_vertex_normal_texture_colour", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Lighting and Fog/d3d_vertex_normal_texture_colour.html", "11"]
     ],
-    ["3D models", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/index.html", "1",
+    ["3D 模型", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/index.html", "1",
      ["d3d_model_block", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/d3d_model_block.html", "11"],
      ["d3d_model_clear", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/d3d_model_clear.html", "11"],
      ["d3d_model_cone", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/d3d_model_cone.html", "11"],
@@ -597,13 +597,13 @@ var TITEMS = [
      ["d3d_model_vertex_texture_colour", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/d3d_model_vertex_texture_colour.html", "11"],
      ["d3d_model_wall", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D models/d3d_model_wall.html", "11"]
     ],
-    ["3D Projections", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Projections/index.html", "1",
+    ["3D 投影", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Projections/index.html", "1",
      ["d3d_set_projection", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Projections/d3d_set_projection.html", "11"],
      ["d3d_set_projection_ext", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Projections/d3d_set_projection_ext.html", "11"],
      ["d3d_set_projection_ortho", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Projections/d3d_set_projection_ortho.html", "11"],
      ["d3d_set_projection_perspective", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Projections/d3d_set_projection_perspective.html", "11"]
     ],
-    ["3D Setup", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/index.html", "1",
+    ["3D 建立", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/index.html", "1",
      ["d3d_end", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/d3d_end.html", "11"],
      ["d3d_set_culling", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/d3d_set_culling.html", "11"],
      ["d3d_set_depth", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/d3d_set_depth.html", "11"],
@@ -612,7 +612,7 @@ var TITEMS = [
      ["d3d_set_zwriteenable", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/d3d_set_zwriteenable.html", "11"],
      ["d3d_start", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Setup/d3d_start.html", "11"]
     ],
-    ["3D Transformations", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Transformations/index.html", "1",
+    ["3D 变换", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Transformations/index.html", "1",
      ["d3d_transform_add_rotation_axis", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Transformations/d3d_transform_add_rotation_axis.html", "11"],
      ["d3d_transform_add_rotation_x", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Transformations/d3d_transform_add_rotation_x.html", "11"],
      ["d3d_transform_add_rotation_y", "source/dadiospice/002_Reference/Drawing/Drawing 3D/3D Transformations/d3d_transform_add_rotation_y.html", "11"],
@@ -1104,7 +1104,7 @@ var TITEMS = [
    ["iap_store_status", "source/dadiospice/002_Reference/In App Purchases/iap_store_status.html", "11"]
   ],
   ["数学", "source/dadiospice/002_Reference/Maths/index.html", "1",
-   ["Real valued functions", "source/dadiospice/002_Reference/Maths/Real valued functions/index.html", "1",
+   ["实数函数", "source/dadiospice/002_Reference/Maths/Real valued functions/index.html", "1",
     ["abs", "source/dadiospice/002_Reference/Maths/Real valued functions/abs.html", "11"],
     ["arccos", "source/dadiospice/002_Reference/Maths/Real valued functions/arccos.html", "11"],
     ["arcsin", "source/dadiospice/002_Reference/Maths/Real valued functions/arcsin.html", "11"],
@@ -1821,7 +1821,7 @@ var TITEMS = [
     ["vertex_format_end", "source/dadiospice/002_Reference/Shaders/Vertex Formats/vertex_format_end.html", "11"]
    ]
   ],
-  ["社会化模块", "source/dadiospice/002_Reference/Social Gaming/index.html", "1",
+  ["社交化游戏", "source/dadiospice/002_Reference/Social Gaming/index.html", "1",
    ["shop_leave_rating", "source/dadiospice/002_Reference/Social Gaming/shop_leave_rating.html", "11"],
    ["Achievements and Leaderboards", "source/dadiospice/002_Reference/Social Gaming/Achievements and Leaderboards/index.html", "1",
     ["achievement_available", "source/dadiospice/002_Reference/Social Gaming/Achievements and Leaderboards/achievement_available.html", "11"],

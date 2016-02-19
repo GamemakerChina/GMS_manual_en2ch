@@ -29,9 +29,9 @@ if (window.name != "content")
 <h1>ds_grid_get_sum</h1>
 
 <h2>Returns the sum of all the cells within a region on a
-grid.</h2>
+grid.<br>返回一个栅格中一片区域内所有单元格的总和。</h2>
 
-<h3>Syntax:</h3>
+<h3>Syntax  语法:</h3>
 
 <p class="code">ds_grid_get_sum(index, x1, y1, x2, y2);</p>
 
@@ -41,33 +41,33 @@ grid.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>Argument参数</th>
+<th>Description描述</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the grid.</td>
+<td>The index of the grid.栅格结构的索引。</td>
 </tr>
 
 <tr class="alt">
 <td>x1</td>
-<td>The left cell column of the region.</td>
+<td>The left cell column of the region.区域的左端单元格列。</td>
 </tr>
 
 <tr>
 <td>y1</td>
-<td>The top cell row of the region.</td>
+<td>The top cell row of the region.区域的顶端单元格行。</td>
 </tr>
 
 <tr class="alt">
 <td>x2</td>
-<td>The right cell column of the region.</td>
+<td>The right cell column of the region.区域的右端单元格列。</td>
 </tr>
 
 <tr>
 <td>y2</td>
-<td>The bottom cell row of the region.</td>
+<td>The bottom cell row of the region.区域的底端单元格行。</td>
 </tr>
 </table>
 </div>
@@ -75,37 +75,40 @@ grid.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>Returns  返回值:</b> Real  实数型</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>Description  描述</h3>
 
 <p>This function can be used to add all the values all the cells
 found within the defined region of a grid together, as shown in the
-image below: <img class="center" src="ds_grid_get_sum.png"><br>
+image below: <br>
+这个函数可以被用于将一个栅格结构中被定义的区域内所有单元格的值加和，
+正如下图所示：<img class="center" src="ds_grid_get_sum.png"><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>Example  举例:</h3>
 
 <p class="code">val = ds_grid_get_sum(grid, 0, 0, 5, 5);</p>
 
 <p>The above code will set the variable "val" to the sum of all
 values contained within the given region of the ds_grid indexed in
-the variable "grid".</p>
+the variable "grid".<br>
+上述代码将设定变量"val"为索引为变量"grid"的栅格结构中被给定区域内所包含值的总和。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">DS
-Grids</a></div>
+<div style="float:left">Back上一个: <a href="index.html">DS
+Grids栅格结构</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">Next下一个: <a href=
 "ds_grid_get_disk_max.html">ds_grid_get_disk_max</a></div>
 </div>
 

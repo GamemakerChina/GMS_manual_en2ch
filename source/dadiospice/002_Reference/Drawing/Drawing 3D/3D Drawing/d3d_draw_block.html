@@ -28,7 +28,7 @@ if (window.name != "content")
 
 <h1>d3d_draw_block</h1>
 
-<h2>Draws a simple 3D block.</h2>
+<h2>绘制一个立方体。</h2>
 
 <h3>Syntax:</h3>
 
@@ -41,53 +41,53 @@ hrepeat, vrepeat)</p>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>说明</th>
 </tr>
 
 <tr>
 <td>x1</td>
-<td>The initial x coordinate of the block.</td>
+<td>起点X</td>
 </tr>
 
 <tr class="alt">
 <td>y1</td>
-<td>The initial y coordinate of the block.</td>
+<td>起点y</td>
 </tr>
 
 <tr>
 <td>z1</td>
-<td>The initial z coordinate of the block.</td>
+<td>起点z</td>
 </tr>
 
 <tr class="alt">
 <td>x2</td>
-<td>The opposite x coordinate of the block.</td>
+<td>终点x</td>
 </tr>
 
 <tr>
 <td>y2</td>
-<td>The opposite y coordinate of the block.</td>
+<td>终点y</td>
 </tr>
 
 <tr class="alt">
 <td>z2</td>
-<td>The opposite z coordinate of the block.</td>
+<td>终点z</td>
 </tr>
 
 <tr>
 <td>tex</td>
-<td>The id of the texture to use (-1 for no texture)</td>
+<td>纹理id (-1 表示不使用纹理)</td>
 </tr>
 
 <tr class="alt">
 <td>hrepeat</td>
-<td>Amount of horizontal repetitions for the texture.</td>
+<td>纹理水平方向平铺的次数</td>
 </tr>
 
 <tr>
 <td>vrepeat</td>
-<td>Amount of vertical repetitions for the texture.</td>
+<td>纹理垂直方向平铺的次数</td>
 </tr>
 </table>
 </div>
@@ -95,48 +95,41 @@ hrepeat, vrepeat)</p>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回值：</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>说明</h3>
 
-<p>This function draws a simple block in 3D space. You set the
-first corner coordinates (x1,y1,z1) and then the coordinates for
-the <i>opposite</i> corner. You can also specify a texture for the
-block and the amount of times that you wish this texture to be
-repeated vertically and horizontally. If you do not wish to use a
-texture you can set this to -1 and the hrepeat and vrepeat values
-will be ignored.<br>
+<p>这个函数绘制一个立方体，参数中的起点位置和终点位置的两个角是对角。如果你不打算使用纹理，可以设参数tex为-1， 
+同时，参数hrepeat、vrepeat将会被忽略。
 <br>
-<i><b>Note</b>:If the texture has to repeat over the block, the
-source texture must be a power of 2 in size (eg: 8x8, 128x128,
-256x256 etc...), otherwise you can use any size texture.</i><br>
+<br>
+<i><b>注意</b>：只有当你打算平铺纹理的时候，纹理的规格才必须为2的N次方（比如：8x8, 128x128,
+256x256）</i><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>示例：</h3>
 
 <p class="code">var tex;<br>
 tex = background_get_texture(bck_Wall);<br>
 d3d_draw_block(20, 20, 20, 80, 40, 200, tex, 1, 1);<br>
 d3d_draw_block(200, 300, -10, 240, 340, 100, tex, 1, 1);<br></p>
 
-<p>The above code stores a texture in the variable "tex" and then
-uses it to texture two blocks that have been drawn at different
-positions.</p>
+<p>以上代码，把 bck_Wall 的纹理 id 存入变量"tex"，并绘制了两个带有此纹理的立方体</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">3D
+<div style="float:left">返回：<a href="index.html">3D
 Drawing</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页：<a href=
 "d3d_draw_cylinder.html">d3d_draw_cylinder</a></div>
 </div>
 

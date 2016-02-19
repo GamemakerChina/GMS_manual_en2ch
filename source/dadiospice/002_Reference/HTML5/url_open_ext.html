@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>url_open_ext</h1>
 
-<h2>Opens a URL on a browser with a specific target.</h2>
+<h2>通过浏览器访问指定链接,并指定打开方式.</h2>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">url_open_ext(url, target);</p>
 
@@ -40,18 +40,18 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>说明</th>
 </tr>
 
 <tr>
 <td>url</td>
-<td>The URL (website address) to link to.</td>
+<td>网站链接.</td>
 </tr>
 
 <tr class="alt">
 <td>target</td>
-<td>This is the target area to open the URL in.</td>
+<td>窗口打开方式.</td>
 </tr>
 </table>
 </div>
@@ -59,59 +59,47 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>说明</h3>
 
-<p>This will open the specified URL on the browser of the chosen
-target device, or, if you are using the HTML5 module, in the
-currently open browser. The "target" parameter that you specify is
-the same as the standard JavaScript "name" value when you use the
-<tt>open()</tt> method, and you should be aware that all but
-'_self' may result in the browser blocking, or asking the user if
-they wish to allow it.<br>
+<p>在对应的设备上，程序自动打开浏览器并访问指定的网址。如果是html5平台，则在当前浏览器中打开链接.
+target 参数用于指定访问链接时，窗口打开方式。
 <br>
-Valid targets are:<br></p>
+<br>
+可用的target参数<br></p>
 
-<blockquote><b>"_self"</b>: Opens the linked document in the same
-frame as it was clicked (this is default).<br>
-<b>"_blank"</b>: Opens the linked document in a new window or tab
-(this will not work if pop-ups are being blocked by the user, in
-which case you can use the <a href=
-"clickable_add.html"><tt>clickable_*</tt></a> functions
-instead).<br>
-<b>"_parent"</b>: Opens the linked document in the parent
-frame.<br>
-<b>"_top"</b>: Opens the linked document in the full body of the
-window.<br></blockquote>
+<blockquote><b>"_self"</b>:(GMS默认)在当前的框架中打开被链接文档.<br>
+<b>"_blank"</b>: 在新窗口中打开被链接文档.对于这类需求，可使用 <a href=
+"clickable_add.html"><tt>clickable_*</tt></a> 函数
+来代替).<br>
+<b>"_parent"</b>: 在父框架集中打开被链接文档.<br>
+<b>"_top"</b>: 页面在当前窗口以独立页面显示被链接文档.<br></blockquote>
 
-<p><i><b>NOTE:</b> On the Windows 8 (JS) target platform, this
-function <b>will</b> work, but additional parameters will be
-ignored and the default browser will be launched with the given
-url.</i><br>
+<p><i><b>NOTE:</b>Windows 8 (JS) 平台上, 这个函数也能正常使用，但target参数会被忽略，浏览器直接访问指定的ur.</i><br>
 <br>
 </p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>示例：</h3>
 
 <p class="code">url_open_ext( 'http://yoyogames.com',
 '_blank');</p>
 
-<p>This would open the YoYo Games homepage in a new window.</p>
+<p>在新的窗口中，访问 YoYo Games 官方网站.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">HTML5</a></div>
+<div style="float:left">返回：<a href="index.html">HTML5</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页：<a href=
 "url_open_full.html">url_open_full</a></div>
 </div>
 

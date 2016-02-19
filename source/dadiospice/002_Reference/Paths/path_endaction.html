@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,7 +28,7 @@ if (window.name != "content")
 
 <h1>path_endaction</h1>
 
-<h2>Sets what to do when the instance hits the end of the
+<h2>Sets what to do when the instance reaches the end of the
 path.</h2>
 
 <h3><b>Syntax:</b>
@@ -39,30 +39,32 @@ path.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A.</p>
+<p><b>Returns:</b> Constant.</p>
 
 <p><br>
 </p>
 
 <h3>Description</h3>
 
-<p>This function can be used to change the reaction of an instance
-when it reaches the end of the current path. Normally you would set
-this when you start the path using <a href=
-"path_start.html"><tt>path_start</tt></a> but you may wish to
-change this behaviour depending any number of events in your game.
-The available values are:</p>
+<p>This <i>variable</i> can be used to get or to change the
+reaction of an instance when it reaches the end of the current
+path. Normally you would set this when you start the path using
+<a href="path_start.html"><tt>path_start</tt></a> but you may wish
+to change this behaviour depending on any number of events in your
+game. The available values are expressed using the following
+constants:</p>
 
 <ul>
-<li>0 = stop the path</li>
+<li><tt>path_action_stop</tt> = stop the path</li>
 
-<li>1 = continue from start position, jumping to the start if the
-path is not closed</li>
+<li><tt>path_action_restart</tt> = continue from start position,
+jumping to the start if the path is not closed</li>
 
-<li>2 = start the path again from the current position</li>
+<li><tt>path_action_continue</tt> = start the path again from the
+current position</li>
 
-<li>3 = reverse the speed of the path (run the path in
-reverse)</li>
+<li><tt>path_action_reverse</tt> = reverse the speed of the path
+(run the path in reverse)</li>
 </ul>
 
 <p><br>
@@ -71,10 +73,14 @@ reverse)</li>
 <h3><b>Example:</b>
 </h3>
 
-<p class="code">path_endaction = irandom(3);</p>
+<p class="code">if path_endaction == path_action_stop<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;path_endaction = choose(path_action_restart,
+path_action_continue, path_action_reverse);<br>
+&nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code will change the path end action randomly to any
-of the three possible choices.</p>
+<p>The above code will check the path end action and if it's set to
+stop, then a new path end action will be selected randomly.</p>
 
 <p><br>
 </p>
@@ -83,10 +89,10 @@ of the three possible choices.</p>
 <div style="float:left">Back: <a href="index.html">Paths</a></div>
 
 <div style="float:right">Next: <a href=
-"path_index.html">path_index</a></div>
+"path_start.html">path_start</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -95,16 +101,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -101,6 +101,11 @@ examples show how this would look in the shader itself:<br>
 <p>Note too that if you want to do compressed normals etc... using
 a 4 byte colour format, then you will also have to use the same
 "in_Colour" format as shown above too.<br>
+<br>
+<i><b>NOTE:</b> All uniforms must be set <b>after</b> calling the
+function <a href="shader_set.html"><tt>shader_set()</tt></a>, and
+before calling <a href=
+"shader_reset.html"><tt>shader_reset</tt></a>.</i><br>
 <br></p>
 
 <p><br>
@@ -108,9 +113,11 @@ a 4 byte colour format, then you will also have to use the same
 
 <h3>Example:</h3>
 
-<p class="code">shader_params = shader_get_uniform(shader_glass,
-"u_vParams");<br>
-shader_set_uniform_f(shader_params, 0.1, 0.8, 0.25);<br></p>
+<p class="code">shader_set(shader_Glass);<br>
+shader_params = shader_get_uniform(shader_glass, "u_vParams");<br>
+shader_set_uniform_f(shader_params, 0.1, 0.8, 0.25);<br>
+draw_self();<br>
+shader_reset();<br></p>
 
 <p>The above code will get the handle of the shader constant
 "u_vParams" ( a <tt>vec3</tt>), then set that constant to the given
@@ -127,7 +134,7 @@ values.</p>
 "shader_set_uniform_f_array.html">shader_set_uniform_f_array</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -136,16 +143,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

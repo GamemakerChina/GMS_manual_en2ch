@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>angle_difference</h1>
 
-<h2>Returns the difference between two angles.</h2>
+<h2>返回两角的角度差。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">angle_difference(ang1, ang2)</p>
 
@@ -40,18 +40,18 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>ang1</td>
-<td>The first angle to use.</td>
+<td>待使用的第一个角度。</td>
 </tr>
 
 <tr class="alt">
 <td>ang2</td>
-<td>The second angle to use.</td>
+<td>待使用的第二个角度。</td>
 </tr>
 </table>
 </div>
@@ -59,42 +59,38 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回值:</b> 实数</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function will return the smallest angle difference between
-two angles as a value between -180 and 180 degrees (where a
-positive angle is anti-clockwise and a negative angle
-clockwise).<br>
+<p>这个函数将会返回两个角度之间最小的角度差为一个在-180到180之间的值（其中，一个正角度是逆时针的而一个负角度是顺时针的）。
+<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例:</h3>
 
 <p class="code">var pd = point_direction(x, y, mouse_x,
 mouse_y);<br>
 var dd = angle_difference(image_angle, pd);<br>
 image_angle += min(abs(dd), 10) * sign(dd);<br></p>
 
-<p>The above code will get the angle of direction from the instance
-to the mouse cursor, then get the difference between that angle and
-the current <tt>image_angle</tt>, using this value to slowly rotate
-towards the mouse.</p>
+<p>上述代码将会获得从实例到鼠标光标的方向角，然后获得其与当前<tt>image_angle</tt>的角度差<!--
+-->，使用这个值来缓慢的朝向鼠标旋转。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Vector
-Functions</a></div>
+<div style="float:left">上一页: <a href="index.html">Vector
+矢量函数</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "point_direction.html">point_direction</a></div>
 </div>
 

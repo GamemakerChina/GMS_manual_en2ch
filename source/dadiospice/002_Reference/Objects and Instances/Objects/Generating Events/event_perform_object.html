@@ -1,8 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -73,20 +73,24 @@ if (window.name != "content")
 
 <h3>Description</h3>
 
-<p>This function will perform the specified event, with the
-designated argument, for all instances of the given object. There
+<p>This functions works the same as <tt>event_perform()</tt> except
+that this time you can specify events from another object. There
 are many options here which allow complete simulation of all
 possible events, but note that this literally just performs all the
 code in the event and the game will not modify anything to make it
 trigger itself manually, for example if you choose to perform a
-keyboard press event, the event will be triggered but relevant key
-will not be recognised as having been pressed. Or if you perform an
-alarm event, the alarm counter will not be set to -1 but rather
-continue to count down. You can find a complete list of the
+keyboard press event, the event will be triggered but the relevant
+key will not be recognised as having been pressed. Or if you
+perform an alarm event, the alarm counter will not be set to -1 but
+rather continue to count down. You can find a complete list of the
 available constants this function requires from the the page for
 the function <a href=
-"event_perform.html"><tt>event_perform</tt></a>.<br>
-<br></p>
+"event_perform.html"><tt>event_perform</tt></a>.</p>
+
+<blockquote><i><b>NOTE:</b> Actions in the event called with this
+function are applied to the <b>current instance</b>, and not to
+instances of the given object.</i>
+</blockquote>
 
 <p><br>
 </p>
@@ -98,7 +102,8 @@ the function <a href=
 ord("W"));</p>
 
 <p>This would perform the event associated with Keyboard Check
-Pressed &gt; W key in all instances of the object "obj_Player".</p>
+Pressed &gt; W key from the object "obj_Player" in the current
+instance.</p>
 
 <p><br>
 </p>
@@ -111,7 +116,7 @@ Events</a></div>
 "event_user.html">event_user</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -120,16 +125,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

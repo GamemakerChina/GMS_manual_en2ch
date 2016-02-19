@@ -4,10 +4,10 @@
 <head>
 <meta name="keywords" content="game maker studio" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>GameMaker: Studio Overview</title>
+<title>GameMaker: Studio 概述</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../style.css" type="text/css" media=
 "screen" title="style" charset="utf-8">
@@ -23,39 +23,83 @@ chmtop.c2wtopf.pageid = "dadiospice/000_Using GameMaker/003_GameMaker Studio Ove
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../index.html?page=source%2Fdadiospice%2F000_Using%20GameMaker%2F003_GameMaker%20Studio%20Overview.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../index.html?page=source%2Fdadiospice%2F000_Using%20GameMaker%2F003_GameMaker%20Studio%20Overview.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
+
 
 <h1>GameMaker: Studio 概述</h1>
-<h2>本篇文章介绍了GMS的几个最重要的概念，掌握了他们，你才能尽快开始上手制作游戏。</h2>
-<h2>&nbsp;</h2>
-<h2>基本理念</h2>
-<p>在使用GMS创作游戏之前，请先了解这款软件的基本理念。GMS制作的游戏，都是在称为&ldquo;房间&rdquo;的地方进行的。这些房间都是2D平面的空间，不过也可以包含3D的图像，这取决于你（游戏设计者）。在房间里面，你要放置一个或者多个&ldquo;物体&rdquo;。这些&ldquo;物体&rdquo;可以是墙、球、玩家控制的主角、敌人、也可以是其他各种你认为游戏中应该出现的东西！有些物体，如墙壁，本身不会动，而另一些物体，如主角，可以移动、可以接收玩家通过键盘、鼠标、手柄发出的指令。比如，当主角遇到敌人时，可能被杀死，也可能杀死敌人并获得分数。所以，&ldquo;物体&rdquo;&nbsp;是GMS游戏中最重要的元素，我们还将进一步讲到它。</p>
-<h2>物体、房间</h2>
-<p>首先，当物体被放置在房间中时，被称为一个&ldquo;实例&rdquo;，他们需要若干图像，来表现出他们的样子。这些图像被称为&ldquo;精灵图像&rdquo;。一个精灵图像通常不是一个单张图片，而是多幅连贯的图像，当他们一张接一张显示在屏幕上时，就能产生动画效果，如角色行走、或者球滚动、或者敌人爆炸，等等。在进行游戏时，一个实例的精灵图像可以发生变化，这样当一个角色向左走和向右走，显示出的样子可以是不一样的。&nbsp;你可以在GMS中创建精灵图像，或者导入图片文件，并在GMS强大的精灵编辑器中进行编辑。一个典型的精灵图像看起来就像下面这样：<img class="center" src="../Images/Form_Object.png" alt="" /><br /> <br />对于&ldquo;有行为&rdquo;的物体，我们需要对其赋予&ldquo;动作&rdquo;，同时还应告诉这些物体在何种条件下触发这些行为。这些满足触发的条件在GMS里又被称为&ldquo;事件&rdquo;。一个&ldquo;事件&rdquo;指的是一个特定的时机，在这个时机中我们可以赋予一个物体若干&ldquo;动作&rdquo;，这样，这些&ldquo;动作&rdquo;当且仅当事件触发时才会发生。在GMS中有非常多种类型的事件，也有非常多种类型的动作可供你（开发者）选择。比如，有一种事件叫做&ldquo;创建事件&rdquo;，按照字面意思，你可能认为这个事件是在物体创建的时候触发。然而，这是错的！物体是不会被创建的，被创建的是物体的一个&ldquo;实例&rdquo;。&ldquo;实例&rdquo;类似于物体的一份拷贝，与物体有完全相同的事件和动作。你可以把物体想象成&ldquo;模板&rdquo;，而实例都是这些模板的副本。例如，为了让一个物体&mdash;&mdash;&ldquo;球&rdquo;在创建实例时运动起来，就应该在物体&ldquo;球&rdquo;的创建事件中添加运动动作。<br /> <br />另一个例子是&ldquo;碰撞事件&rdquo;。碰撞事件指的是两个实例在房间中相碰时触发的事件。在这个事件中，你可以添加让实例停止的动作，或者反向运动的动作，或者若干个其他任何动作，比如&ldquo;播放一个音效&rdquo;或者&ldquo;加分&rdquo;，还有更多的事件，比如&ldquo;键盘事件&rdquo;（玩家按下键时触发）、&ldquo;鼠标事件&rdquo;（按下鼠标键时触发），以及&ldquo;绘制事件&rdquo;（在这个事件中我们可以告诉每个物体应该在房间中绘制什么）。还有更多的事件，我们将在本帮助文档中逐个进行介绍。<br /> <br />一旦你为物体指定了事件和动作，就应该设计&ldquo;房间&rdquo;了。物体（的实例）都是放在房间里面的。房间可以用来设计游戏关卡、显示游戏信息、也可以显示游戏选单。有专门的动作用于在房间之间转换，你可以创建&ldquo;按钮&rdquo;物体，当玩家点击时，就从一个房间跳转到另一个房间。注意：如果你没有创建任何房间，GMS将无法运行游戏。如何创建房间？GMS有一个完整的房间编辑器，你可以用它来创建和设计房间，决定一个房间的外观、行为等各个方面。比如，你可以为一个房间指定&ldquo;背景&rdquo;。背景既可以是纯色，也可以是一张图片。背景可以通过背景编辑器创建，也可以通过导入图片素材来创建。背景也能做很多事情，但在目前这个初学者阶段，你可以仅仅把背景认为是让房间更好看的装饰品。接下来，你可以在创建好的房间中放置一个或多个物体的实例。比如，你想在房间中放置一大片墙的区域，那么你就创建一个&ldquo;墙&rdquo;的物体，然后放置很多个&ldquo;墙&rdquo;的实例在房间中。放置敌人的方法也可以一样操作！制作一个&ldquo;敌人&rdquo;物体，放置多个&ldquo;敌人&rdquo;的实例在房间中，在一个关卡中，可以只设计不多的几种&ldquo;敌人&rdquo;物体，然后放置很多个&ldquo;敌人&rdquo;的实力。房间编辑器看起来大概是下面这样：&nbsp;<img class="center" src="../Images/Getting_Started_Room_Image.png" alt="" /><br /> <br />一旦你完成了房间的设计，你就可以运行游戏了。第一个房间通常用来放置选关界面（关卡列表），游戏运行的时候首先显示的就是第一个房间。现在你所放置的实例已被赋予了生命，因为你为他们的&ldquo;创建时事件&rdquo;指定了动作；这些实例将产生互动，因为你为物体的&ldquo;碰撞事件&rdquo;指定了动作。他们还将对玩家的指令产生反应，因为你为&ldquo;键盘事件&rdquo;或者&ldquo;鼠标事件&rdquo;指定了动作。<br /><br /></p>
-<p>以上涵盖了GMS的两个最重要的方面，同时，还有几个概念也很重要！所有这些概念，在GMS中被称为&ldquo;资源&rdquo;，在GMS界面的左侧列表中（被称为&ldquo;资源树&rdquo;）你可以找到它们。以下为各种资源的介绍，它们在你设计游戏时在不同的方面起到非常重要的作用。</p>
+
+<h2>这部分解释了 <i>GameMaker: Studio</i> 工作的核心概念，这样您就可以尽快开始制作游戏。</h2>
+
+<h3>全局观</h3>
+
+<p>在尽可能深入 <i>GameMaker: Studio</i> 之前最好找到一种感觉。<i>GameMaker: Studio</i> 创建的游戏发生在一个或多个 <i>房间</i> 里。现在，这些 Rooms 是二维空间，但是也可以包含三维图形，取决于您如何使用它。在这些房间里您放置可以用程序定义的 <i>物体</i>。典型的物体是墙、移动的小球，玩家控制的角色、敌人和其他任何您可以从玩过的游戏中想到的元素！一些物体例如墙只是在那儿不动，而其他物体例如主角可以在按下鼠标键盘或操纵杆时移动。例如，当主角遇到敌人，他可能会死，或者他打死敌人获得分数。正如你看到的，物体是 <i>GameMaker: Studio</i> 中最重要的组成部分，所以让我们来看看更多的细节。<br>
+<br></p>
+
+<h3>物体和房间概述</h3>
+
+<p>首先大多数物体作为实例放置在房间里，需要一些图片使得它们在屏幕上可见。这样的图像被称为 <i>精灵</i>。一个精灵往往不是一个单一的形象，而是一整套一个接一个显示的动画，这样它们看起来就像行走的角色、旋转的球或敌人爆炸等。在游戏期间，对任何物体的特定实例的精灵都是可以改变的，所以可以看到角色在不同的时候往左或者往右走。你可以在 <i>GameMaker: Studio</i> 里创建自己的精灵或从文件加载或者自己用强大的 <i>GameMaker: Studio</i> 精灵编辑器制作。下面是一个典型的物体的样子:<br>当我们需要一个物体<i>做</i> 什么的时候，我们需要给它动作，而且还需要告诉它什么时候完成这些动作。我们使用 <i>EVENTS (事件)</i>.完成这项工作。<i>事件</i> 是一个特殊的时刻，可以确保 <i>动作</i> 只在这些 <i>事件</i> 触发。有大量不同的事件和动作。比如，<i>Create Event (创建事件)</i> 只会在物体被创建时发生。事实上，那并不准确！物体 <i>永远不会</i> 被创建，只是创建了它们的 <b>实例</b>... 实例是物体用于你的游戏中拥有完全相同的事件和动作的副本。物体作为蓝本，则实例是蓝图。例如，在房间中创建一个运动的球实例需要在球物体的创建事件中添加动作。<br><br>另一个例子是 <i>Collision Event (碰撞事件)</i>。这会发生在房间中任意两个实例发生碰撞的时候。在这种情况下你可以使实例停止、逆转方向或其他任何行动，例如播放音效或者加分。进一步地，可以包含 <i>Keyboard Event (键盘事件)</i> (比如玩家按下一个键)、<i>Mouse Event (鼠标事件)</i>  (检测鼠标按钮)以及 <i>Draw Event (绘制事件)</i>。还有更多的事件会在后面讲到。.<br><br>一旦你定义了你的物体，你应该定义他们在<i>房间</i> 的位置。房间可以用于显示游戏等级、信息甚至开始菜单。有从一个房间移动到另一个房间的动作，所以你可以创建一个按钮物体做到这件事。需要注意的是，如果没有任何房间，<i>GameMaker: Studio</i>  不会运行游戏。但是如何创建房间？<i>GameMaker: Studio</i> 有一个完善的编辑器创建这些区域，在编辑器里你可以添加或更改许多视觉或游戏性方面的东西。例如，你可以添加 <i>backgrounds (背景)</i> ，可以是单色或者一些图像。这样的背景图像可以在 <i>GameMaker: Studio</i> 里自己编辑，或者从其他文件里加载资源。背景事实上可以做很多事，但是事实上还是作为让房间更好看的东西比较稳妥。接下来，你可以放一个 (或多个!) 实例到房间里。例如，你想有一大块墙，需要定义墙物体并且放置多个它的实例，同样可以制作敌军物体！只需制作一个敌军物体，然后放置多个实例在你的房间里。利用这些你就可以很方便地只用几个物体就做好整个游戏。接下来看一个房间编辑器的例子: <img class="center" src=
+"../Images/Getting_Started_Room_Image.png"><br><br>一旦完成了你的房间设计，你就可以运行游戏了。第一个显示的房间是主列表里的第一个房间，它将在启动时显示。现在你放置的实例拥有生命力了，因为你为它们的物体定义了创建事件所以它们开始彼此发生 碰撞事件等。它们也会触发键盘事件或鼠标事件。<br>这是<i>GameMaker: Studio</i> 里最重要的两个东西，但是还有一些其他的！它们被称作 <b>resources (资源)</b> 和  <b>assets (资产)</b>，并且在 <i>GameMaker: Studio</i> 的主屏幕你可以在左手边称为 <b> resource tree (资源树) </b>的地方找到它们。下面是它们的列表，你应该了解它们，因为它们将在你的游戏中发挥重要的作用:<br>
+<br></p>
+
+<blockquote>
 <ul>
-<li><em><strong>精灵图像</strong></em>: 用来表示物体形象的图片或动画</li>
-<li><em><strong>声音</strong></em>: 背景音乐或音效</li>
-<li><em><strong>背景</strong></em>: 静止的图片，用作房间背景</li>
-<li><em><strong>路径</strong></em>: 预先设计好的路径可以让物体以指定的方式运动</li>
-<li><em><strong>脚本</strong></em>: 脚本就是一段用GML（Game Maker）写成的一段代码，这些代码都是有名字的。</li>
-<li><em><strong>着色器</strong></em>: 着色器是用着色器语言写成的两段程序，用来创造图形特效</li>
-<li><em><strong>字体</strong></em>: 你可以添加各种风格的不同字体在游戏中显示</li>
-<li><em><strong>时间线</strong></em>: 可以用来在设计在指定的时间按指定的顺序做指定的动作</li>
-<li><em><strong>物体</strong></em>: 物体对于游戏，就像一栋大楼的一砖一瓦一样重要</li>
-<li><em><strong>房间</strong></em>: 一个空间(或者关卡)物体（的实例）就放在里面</li>
-<li><em><strong>包含的文件</strong></em>: 在游戏中用到的外置文件</li>
-<li><em><strong>扩展</strong></em>: 为游戏扩展功能</li>
-<li><em>常数</em>: 预先设定好的常数列表</li>
+<li><i><b>精灵</b></i>: 图像 (通常是动画)，用于代表物体<br>
+<br></li>
+
+<li><i><b>声音</b></i>: 可以用于游戏的背景音乐或音效<br>
+<br></li>
+
+<li><i><b>背景</b></i>: 作为房间的背景<br>
+<br></li>
+
+<li><i><b>路径</b></i>: 可以使实例沿预定路径移动<br>
+<br></li>
+
+<li><i><b>脚本</b></i>: 脚本是一个代码块，你需要给它命名，然后像使用GML函数一样使用它们<br>
+<br></li>
+
+<li><i><b>着色器</b></i>: 着色器组合两个程序写在一个 <i>着色器语言</i> 来创建图形效果<br>
+<br></li>
+
+<li><i><b>字体</b></i>: 绘制很多不同风格的字体<br>
+<br></li>
+
+<li><i><b>时间轴</b></i>: 精确控制时间<br>
+<br></li>
+
+<li><i><b>物体</b></i>: 这是你的游戏的基础结构<br>
+<br></li>
+
+<li><i><b>房间</b></i>: 放置物体的空间 (关卡)<br>
+<br></li>
+
+<li><i><b>包含文件</b></i>: 生成目标游戏时需要包含的文件<br>
+<br></li>
+
+<li><i><b>扩展</b></i>: 游戏功能的扩展包<br>
+<br></li>
+
+<li><i><b>常量</b></i>: 你的游戏中自定义的常量列表<br>
+<br></li>
 </ul>
-<p><br /> <br /> <em><strong>Note:</strong> To help you get familiar with</em> GameMaker: Studio, it is strongly recommended that you follow some of the beginner tutorials that come bundled with the program. These can be found from the <strong>Tutorials</strong> tab on the start-up splash screen, and cover all basic functionality.</p>
-<p>&nbsp;</p>
+</blockquote>
+
+<p><br>
+<br>
+<i><b>注意:</b> 了熟悉</i> GameMaker: Studio，我们强烈建议您学习捆绑的初学者教程。这些可以在启动屏幕的 <b>Tutorials (教程)</b> 选项卡中找到它们，它们涵盖了所有的基本功能。<br>
+<br></p>
+
+<p><br>
+</p>
+
 <div class="clear">
-<div style="float: left;">向前 使用<a href="index.html">&nbsp;GameMaker: Studio</a></div>
-<div style="float: right;">下一个: <a href="004_The%20Graphical%20User%20Interface.html">图形界面</a></div>
+<div style="float:left">返回： <a href="index.html">使用 GameMaker: Studio</a></div>
+
+<div style="float:right">下一章: <a href=
+"004_The%20Graphical%20User%20Interface.html">用户图形界面</a></div>
 </div>
-<h5>&copy; Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -63,17 +107,17 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
   if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
-</script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
      WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+
+
+
 <table width="100%" cellspacing="0" cellpadding="0" 
 style="margin-top: 0pt; border-collapse: collapse;"> 
 <tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
 <a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
+</td></tr></table><!-- /CHM2WEB --> 
+
 
 </body>
 </html>

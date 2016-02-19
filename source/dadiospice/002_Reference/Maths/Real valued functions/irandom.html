@@ -28,10 +28,9 @@ if (window.name != "content")
 
 <h1>irandom</h1>
 
-<h2>Returns a random real whole number between 0 and n. This
-includes n if n itself is an integer.</h2>
+<h2>返回一个在[0,n)的随机整实数，如果n本身是一个整数的话则包括n。</h2>
 
-<h3><b>Syntax:</b>
+<h3><b>语法:</b>
 </h3>
 
 <p class="code">irandom(n);</p>
@@ -42,14 +41,13 @@ includes n if n itself is an integer.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>n</td>
-<td>The upper range from which the random number will be
-selected.</td>
+<td>待挑选的随机数范围的上边界。</td>
 </tr>
 </table>
 </div>
@@ -57,33 +55,29 @@ selected.</td>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Integer</p>
+<p><b>返回值:</b> 整数</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This very useful function only returns integers (whole numbers).
-So, for example, to get a random number from 0 to 9 you can use
-<tt>irandom(9)</tt> and it will return a number from 0 to 9
-inclusive... real numbers can also be used but the upper value will
-be excluded, so <tt>irandom(9.7)</tt> will return a value from 0 to
-9 only. The function has an upper bound of $7fffffffffffffffLL, so
-care should be taken if using very large numbers.<br>
-<br>
-<i><b>NOTE:</b> This function will return the same value every time
-the game is run afresh due to the fact that GameMaker: Studio
-generates the same initial random seed every time to make debugging
-code a far easier task. To avoid this behaviour use <a href=
-"randomize.html"><tt>randomize</tt></a> at the start of your
-game.</i><br>
+<p>这个有用的函数只返回整数(完整的数)。
+因此，举个例子，要得到从0到9的随机数可以使用
+<tt>irandom(9)</tt> 并且它将返回一个从0到9闭区间的随机数……实数也能够被使用但上边界将被排除，所以
+<tt>irandom(9.7)</tt>将只会返回[0,9]上的数。这个函数有一个最大上边界$7fffffffffffffffLL①,所以如果使用非常大的数字时请务必谨慎。<br><br>
+①：$7fffffffffffffffLL表义为long long十六进制数7fffffffffffffff=9223372036854775807D（十进制）
+<br><br>
+<i><b>注意:</b>这个函数在每次游戏重新运行时将返回相同的数因为事实上GameMaker: Studio
+每次都产生相同的初始随机数种子以使得调试代码成为相当容易的事情。欲避免这个行为请在游戏开始时使用<a href=
+"randomize.html"><tt>randomize</tt></a>
+</i><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3><b>Example:</b>
+<h3><b>举例:</b>
 </h3>
 
 <p class="code">if irandom(9) = 1<br>
@@ -91,17 +85,15 @@ game.</i><br>
 &nbsp;&nbsp;&nbsp;score += 100;<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>This will produce a one in ten (since 0 is included) chance of
-adding 100 to the score.</p>
+<p>这个函数将会产生1/10的几率(因为0被包含) 增加100分。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Real Number
-Functions</a></div>
+<div style="float:left">上一页: <a href="index.html">实数函数</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "irandom_range.html">irandom_range</a></div>
 </div>
 

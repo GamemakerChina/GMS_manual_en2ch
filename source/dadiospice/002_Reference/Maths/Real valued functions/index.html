@@ -26,45 +26,43 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>Real Number Functions</h1>
+<h1>实数函数</h1>
 
-<h2>The following functions exist that deal with real numbers.</h2>
+<h2>下面存在一些函数来处理实数。</h2>
 
-<p>Real numbers in <i>GameMaker: Studio</i> are considered
-<i>floating point numbers</i>, that is to say that they have a
-decimal point in them with no fixed number of digits either before
-or after the point. 2, for example, is a binary integer but 2.0 is
-a floating point real. This distinction between integers and floats
-is very important when dealing with cross platform development as
-the precision of calculations made on a Windows pc is <i>not</i>
-the same as the precision of those same calculations when made on a
-mobile device. This means that you should pay particular attention
-when making comparisons, for example:<br>
+<p>
+<br>在<i>GameMaker: Studio</i>中，实数被认为是<i>浮点数</i>，
+也就是说它们中有小数点带有不固定的数字要么在小数点前要么在小数点后。
+比如，
+2，
+是一个二进制整数，
+但在浮点数中实际是2.0。
+整数与浮点数这个差别在处理跨平台开发的时候是非常重要的,
+因为在Windows PC上计算的精度与在移动设备上同种计算的精度是<i>不同</i>的。
+这就意味着你在比较的时候应该特别注意，
+比如说：
+<br>
 <br></p>
 
 <p class="code">if image_index == 1 {do something...}</p>
 
 <p><br>
-Now that <i>may</i> appear to work, but due to the way that
-floating point maths works, it may mean that image_index actually
-equals 1.00000000001, in which case the comparison will never
-result in a true result and the code running. These types of errors
-can be quite hard to debug and so it is always good to be aware of
-them and to plan ahead and use other means of checking values or to
-use the appropriate flooring or rounding functions (listed below)
-to convert the number to check into an integer. For example the
-above code could be written as:<br>
+<br>现在这<i>可能</i>会生效，
+但是因为浮点数学的工作原理，
+这可能意味着image_index实际上等于1.00000000001，
+在这种情况下比较将永远不会导致一个true结果以及代码的运行。
+这种错误是相当难调试的并且因此经常小心它们是非常好的并且要预先计划以及使用其他检测值的方法或者使用相应的向下取整或者四舍五入函数（在下方已列出）来把实数转化成整数。
+比如说上述代码就可以被写成：
 <br></p>
 
 <p class="code">if floor(image_index) == 1 {do something...}</p>
 
 <p><br>
-We can also use a special function available in <i>GameMaker:
-Studio</i> to set the <b>epsilon</b> value for floating point
-maths. When a real number is rounded to the nearest floating point
-number, the epsilon (also know as "machine epsilon") forms an upper
-bound on the relative error, and you can set the epsilon value
-using this special function:</p>
+我们能够在<i>GameMaker:
+Studio</i>中使用一个特殊的可用的函数来为浮点数学设定ε值（精度无穷小值）。
+当一个实数被近似到了最近的浮点数，
+这个ε（也叫做“机器Epsilon”）形成一个相对误差的上界，
+并且你能使用这个特殊的函数来设置ε值。</p>
 
 <blockquote>
 <ol>
@@ -73,26 +71,27 @@ using this special function:</p>
 </ol>
 </blockquote>
 
-<p><i><b>NOTE:</b> On the YoYo Compiler target platforms (those
-marked (YYC)), expressions and functions are evaluated from left to
-right, while on all other target platforms they are evaluated from
-right to left, meaning that this:</i>
+<p><i><b>注意:</b>
+在YoYo Compiler目标平台上（被标记了(YYC)），
+表达式和函数都从做到右被计算，
+而其他所有平台上他们是从右到左被计算，
+也就意味着：</i>
 </p>
 
 <p class="code"><i>val = max(num, ++num, num++);<br></i>
 </p>
 
-<p>will give different results depending on the platform.</p>
+<p>依据平台会给出不同的结果。</p>
 
 <p><br>
-We can split the functions that <i>GameMaker: Studio</i> has for
-dealing with real numbers into various categories:<br>
+我们可以把<i>GameMaker: Studio</i>中有的用于处理实数的函数分为各个目录：<br>
 <br></p>
 
-<h3>Random Functions</h3>
+<h3>随机函数</h3>
 
-<p>These functions all deal with using random numbers and
-values:</p>
+<p>
+这些函数全部都是处理随机数和值的：
+</p>
 
 <blockquote>
 <ol>
@@ -122,81 +121,81 @@ values:</p>
 </ol>
 </blockquote>
 
-<p><i><b>NOTE:</b> When using the random functions, GameMaker:
-Studio maintains the same random seed every time you start the
-game. This makes debugging much easier as you are guaranteed that
-the random functions will always return the same value, however
-should you not wish this to happen, you must first set a new random
-seed at the very start of the game, either using <a href=
-"randomize.html"><tt>randomize</tt></a> or <a href=
-"random_set_seed.html"><tt>random_set_seed</tt></a>.</i>
+<p><i><b>注意:</b> 当使用这些随机函数时，
+GameMaker: Studio每次你开始游戏都保持同一随机数种子。
+这使得调试更加简单因为你保证了随机函数总是将返回相同的一套数值，
+然而你也不愿意这件事情发生，
+你必须在每次游戏开始的时候首先使用一个新的随机数种子，
+要么用<a href=
+"randomize.html"><tt>randomize</tt></a>函数要么用<a href=
+"random_set_seed.html"><tt>random_set_seed</tt></a>函数</i>
 </p>
 
-<h3>Trigonometric Functions</h3>
+<h3>三角函数</h3>
 
-<p>These are all trigonometric functions:</p>
+<p>这里有全部的三角函数：</p>
 
 <blockquote>
 <ol>
-<li><a href="arccos.html">arccos</a><br>
+<li><a href="arccos.html">arccos  反余弦</a><br>
 </li>
 
-<li><a href="arcsin.html">arcsin</a><br>
+<li><a href="arcsin.html">arcsin  反正弦</a><br>
 </li>
 
-<li><a href="arctan.html">arctan</a><br>
+<li><a href="arctan.html">arctan  反正切</a><br>
 </li>
 
-<li><a href="arctan2.html">arctan2</a><br>
+<li><a href="arctan2.html">arctan2  反正切值2</a><br>
 </li>
 
-<li><a href="sin.html">sin</a><br>
+<li><a href="sin.html">sin  正弦</a><br>
 </li>
 
-<li><a href="tan.html">tan</a><br>
+<li><a href="tan.html">tan  正切</a><br>
 </li>
 
-<li><a href="cos.html">cos</a><br>
+<li><a href="cos.html">cos  余弦</a><br>
 </li>
 
-<li><a href="darccos.html">darccos</a><br>
+<li><a href="darccos.html">darccos  角度制反余弦</a><br>
 </li>
 
-<li><a href="darcsin.html">darcsin</a><br>
+<li><a href="darcsin.html">darcsin  角度制反正弦</a><br>
 </li>
 
-<li><a href="darctan.html">darctan</a><br>
+<li><a href="darctan.html">darctan  角度制反正切</a><br>
 </li>
 
-<li><a href="darctan2.html">darctan2</a><br>
+<li><a href="darctan2.html">darctan2  角度制反正切值2</a><br>
 </li>
 
-<li><a href="dsin.html">dsin</a><br>
+<li><a href="dsin.html">dsin  角度制正弦</a><br>
 </li>
 
-<li><a href="dtan.html">dtan</a><br>
+<li><a href="dtan.html">dtan  角度制正切</a><br>
 </li>
 
-<li><a href="dcos.html">dcos</a><br>
+<li><a href="dcos.html">dcos  角度制余弦</a><br>
 </li>
 
-<li><a href="degtorad.html">degtorad</a><br>
+<li><a href="degtorad.html">degtorad  角度制转弧度制</a><br>
 </li>
 
-<li><a href="radtodeg.html">radtodeg</a><br>
+<li><a href="radtodeg.html">radtodeg  弧度制转角度制</a><br>
 </li>
 
-<li><a href="lengthdir_x.html">lengthdir_x</a><br>
+<li><a href="lengthdir_x.html">lengthdir_x  水平分量</a><br>
 </li>
 
-<li><a href="lengthdir_y.html">lengthdir_y</a><br>
+<li><a href="lengthdir_y.html">lengthdir_y  竖直分量</a><br>
 </li>
 </ol>
 </blockquote>
 
-<h3>Rounding Functions</h3>
+<h3>近似函数</h3>
 
-<p>These are all functions that round or select values:</p>
+<p>These are all functions that round or select values:<br>这里有所有的取整或选择性函数：</p>
 
 <blockquote>
 <ol>
@@ -238,9 +237,9 @@ seed at the very start of the game, either using <a href=
 </ol>
 </blockquote>
 
-<h3>Miscellaneous Functions</h3>
+<h3>杂项函数</h3>
 
-<p>These are various different mathematic functions:</p>
+<p>有各种各样不同的数学函数：</p>
 
 <blockquote>
 <ol>
@@ -274,11 +273,11 @@ seed at the very start of the game, either using <a href=
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../index.html">Maths</a></div>
+<div style="float:left">Back上一个: <a href=
+"../index.html">数学</a></div>
 
-<div style="float:right">Next: <a href=
-"../Vector%20Functions/index.html">Vector Functions</a></div>
+<div style="float:right">Next下一个: <a href=
+"../Vector%20Functions/index.html">矢量函数</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>

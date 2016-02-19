@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>audio_resume_sound</h1>
 
-<h2>Resumes the indicated sound after it has been paused.</h2>
+<h2>恢复被暂停的指定音乐。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">audio_resume_sound(index);</p>
 
@@ -40,13 +40,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the sound to resume.</td>
+<td>被恢复的声音索引</td>
 </tr>
 </table>
 </div>
@@ -54,29 +54,21 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回值:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>With this function you can resume any sound that is currently
-paused (after using the function <a href=
-"audio_pause_sound.html"><tt>audio_pause_sound</tt></a>). The sound
-can either be a single instance of a sound (the index for
-individual sounds being played can be stored in a variable when
-using the <a href=
-"audio_play_sound.html"><tt>audio_play_sound</tt></a> or <a href=
-"audio_play_sound_at.html"><tt>audio_play_sound_at</tt></a>
-functions) or a sound asset, in which case <i>all</i> instances of
-the given sound will be re-started.<br>
-<br></p>
+<p>有了这个函数，你可以恢复当前暂停的任何声音（使用函数<a href="audio_pause_sound.html">audio_pause_sound</a>后）。可以是一个单一的声音实例 （当你使用<a href="audio_play_sound.html">audio_play_sound</a>或<a href="audio_play_sound_at.html">audio_play_sound_at</a>函数时，可以将被播放的声音索引存储在一个变量） 或是一个原声资源，但在这种情况下，给定声音的所有实例将被重启。</p>
 
 <p><br>
 </p>
+<p><br>
+</p>
 
-<h3>Example:</h3>
+<h3>例子:</h3>
 
 <p class="code">if keyboard_check_pressed(ord("P"))<br>
 &nbsp;&nbsp;&nbsp;{<br>
@@ -93,12 +85,7 @@ the given sound will be re-started.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code checks for a press of the keyboard key "P" and if
-it detects one it sets the global variable "Pause" to <tt>true</tt>
-or false and then either pauses the sound indexed in the variable
-"snd_Waterfall" or it resumes the sound from its paused state.</p>
-
-<p><br>
+<p>上述代码检查按键&quot;P&quot;是否被按下，如果是，则将全局变量Pause设置为true或false， 然后将变量“snd_Waterfall”中的声音暂停或恢复。<br>
 </p>
 
 <div class="clear">

@@ -17,9 +17,7 @@ type="text/css">
 <script type="text/JavaScript" src="../../../../../files/supply.js"></script>
 <script type="text/JavaScript">
 chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Game Assets/Sounds/audio_channel_num.html";
-</script>
-
-</head>
+</script></head>
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FGame%20Assets%2FSounds%2Faudio_channel_num.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FGame%20Assets%2FSounds%2Faudio_channel_num.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
@@ -28,9 +26,9 @@ if (window.name != "content")
 
 <h1>audio_channel_num</h1>
 
-<h2>Set the number of available audio channels.</h2>
+<h2>设定可用声道的数目</h2>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">audio_channel_num(num);</p>
 
@@ -40,13 +38,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th width="18%">参数</th>
+<th width="82%">描述</th>
 </tr>
 
 <tr>
 <td>num</td>
-<td>Number of available audio channels (default is 128).</td>
+<td>可用声道数 （默认为128）.</td>
 </tr>
 </table>
 </div>
@@ -54,29 +52,17 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回值:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述：</h3>
 
-<p>With this function you can set how many audio channels are
-available for playing audio in <i>GameMaker: Studio</i>. What this
-basically means is that you give the number of simultaneous sounds
-that can be played at any one time, and if the number exceeds the
-amount, those sounds with a lower <i>priority</i> are stopped to
-free up a channel for the sounds with a higher <i>priority</i>. You
-can use this function to optimise your game for devices as the
-lower the number of channels for audio the better the performance,
-but bear in mind that this may also cause noticeable cut off of
-certain sounds if many are played at once.<br>
-<br></p>
-
-<p><br>
+<p>用这个函数你可以设定在Gamemaker:Studio中有多少可以用来播放声音的声道数<i></i>。也就是你可以同时播放声音的数目， 并且如果超过了设定量，低优先级的声音将会被停止播放，以腾出声道给高优先级的音乐。你可以用此函数来优化你的游戏，以更少的的声音通道换取更高的性能，但要记住这也会在大量的声音同时播放时，造成一些声音被阉割掉。<br>
 </p>
 
-<h3>Example:</h3>
+<h3>例子：</h3>
 
 <p class="code">switch (os_browser)<br>
 &nbsp;&nbsp;&nbsp;{<br>
@@ -103,9 +89,7 @@ os_macos:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code checks the platform that the game is running on
-and changes the number of available sound channels to increase
-performance.</p>
+<p>上述代码检查运行该游戏的平台，并改变可用声道数，以提高性能。</p>
 
 <p><br>
 </p>

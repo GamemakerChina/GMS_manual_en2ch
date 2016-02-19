@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>random_get_seed</h1>
 
-<h2>Returns the current random seed.</h2>
+<h2>返回当前的随机数种子。</h2>
 
-<h3><b>Syntax:</b>
+<h3><b>语法:</b>
 </h3>
 
 <p class="code">random_get_seed();</p>
@@ -38,48 +38,42 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回值:</b> 实数型</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>To generate a random number <i>GameMaker: Studio</i> starts with
-a random <i>seed</i> number. With this function you can retrieve
-that seed, which can then be stored to reproduce a specific series
-of random events. For example, say you have a procedurally
-generated game, but want the player to be able to go back to
-previously discovered areas. Well, at the start of each area, you
-can store the random seed with this function and so every time you
-need to go back there, you can use <a href=
-"random_set_seed.html"><tt>random_set_seed</tt></a> to set the seed
-to what it was previously and so force <i>GameMaker: Studio</i> to
-reproduce the same set of "random" functions that it used
-previously.<br>
+<p>为了产生一个随机数，<i>GameMaker: Studio</i>以一个随机数种子数值开始。
+使用这个函数你能够找回那个种子，它可以被存储起来以重新生成特定序列的随机事件。
+举个例子，就拿你有一个由程序生成的游戏，但是希望玩家能够回到以前发现过的区域。
+在每个区域的开始你可以使用这个函数存储随机数种子，以便于每次你需要回到那里，
+你可以使用函数<a href=
+"random_set_seed.html"><tt>random_set_seed</tt></a>
+来设定为以前的随机数种子并因此强迫<i>GameMaker: Studio</i>
+重新生成同一组以前用过的随机函数。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3><b>Example:</b>
+<h3><b>举例:</b>
 </h3>
 
 <p class="code">ini_open("Save.ini")<br>
 ini_write_real("Levels", string(level), random_get_seed());<br>
 ini_close();<br></p>
 
-<p>The above code will get the random seed and store it in an ini
-file.</p>
+<p>上述代码将获取这个随机数种子并将其存入一个ini文件中。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Real Number
-Functions</a></div>
+<div style="float:left">上一页: <a href="index.html">实数函数</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "randomize.html">randomize</a></div>
 </div>
 

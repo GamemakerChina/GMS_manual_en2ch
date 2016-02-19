@@ -28,10 +28,10 @@ if (window.name != "content")
 
 <h1>physics_fixture_add_point</h1>
 
-<h2>This function adds a point to create polygon shape or a chain
-shape for a fixture.</h2>
+<h2>这个函数添加一个点去为一个支架创建一个多边形或一个链形
+</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">physics_fixture_add_point(fixture, xpos, ypos)</p>
 
@@ -41,25 +41,23 @@ shape for a fixture.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>fixture</td>
-<td>the index of the fixture</td>
+<td>支架的索引</td>
 </tr>
 
 <tr class="alt">
 <td>xpos</td>
-<td>the x position of the point (<i>relative to the fixture
-origin</i> for polygon shapes)</td>
+<td>点的x坐标（<i>相对于多边形支架原点</i>）</td>
 </tr>
 
 <tr>
 <td>ypos</td>
-<td>the y position of the point (<i>relative to the fixture
-origin</i> for polygon shapes)</td>
+<td>点的y坐标（<i>相对于多边形支架原点</i>）</td>
 </tr>
 </table>
 </div>
@@ -67,74 +65,59 @@ origin</i> for polygon shapes)</td>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> 无</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function defines the points of a polygon which has
-previously been set to the fixture using either <a href=
-"physics_fixture_set_polygon_shape.html"><tt>physics_fixture_set_polygon_shape</tt></a>
-or it can be used to add points to a chain of edge fixtures using
-the function<a href=
-"physics_fixture_set_chain_shape.html"><tt>physics_fixture_set_chain_shape</tt></a>.
-For a polygon shape, the points are relative to the origin of the
-fixture, with the 0,0 position of the x/y axis being the centre,
-and the subsequent coordinates being calculated as usual in
-<i>GameMaker: Studio</i> with down/right being +x,+y and up/left
-being -x,-y. Here is an illustration to help you visualise this
-process:<br>
+<p>这个函数既能为先前使用<a href=
+"physics_fixture_set_polygon_shape.html"><tt>physics_fixture_set_polygon_shape</tt></a>被创建的多边形中定义一个点也能<!--
+-->为使用<a href=
+"physics_fixture_set_chain_shape.html"><tt>physics_fixture_set_chain_shape</tt></a>创建的链形中定义一个点。对于多边形支架，这个点是相对于支架的原点<!--
+-->的，以x/y轴的0,0位置为中心，并且接下来的坐标都被像往常一样在<i>GameMaker: Studio</i>中以向右/向下作为+x、+y，向左/向上作为-x、-y。<!--
+-->去计算。有一幅插图来帮助你可视化这个过程：<br>
 <br>
 <img class="center" src="physics_fixture_add_point_image.png"></p>
 
-<p>As you can see, any simple <b>convex</b> polygon can be modelled
-in this way, but <b>concave</b> polygons are <i>not</i> supported
-at this moment. Finally, to close the polygon, you must bind the
-fixture to an instance. You should note too that you must also have
-at least <b>three</b> points defined for your polygon before
-binding it to an instance or you will get an error and that adding
-a point to a fixture that does not have a polygon shape set
-previously will also cause an error. Note too that the maximum
-number of points permitted for a fixture is <b>eight</b>.<br>
+<p>如你所见，任意一个简单的<b>凸</b>多边形都能以这种方式被塑造
+，但是<b>凹</b>多边形在此刻是<i>不</i>被支持的。最后，为了封闭这个多边形，你必须将其绑定给一个实例<!--
+-->你应该也要注意在将你的多边形绑定给一个实例之前你至少要为多边形定义<b>3</b>个点，否则你将会得到一个错误，<!--
+-->而且如果你向一个先前没有被设定为多边形的支架中添加点也会引发错误。你也要注意一个支架允许的最大点数为<b>8</b>个<!--
+-->。<br>
 <br>
-For chain shapes (which are simply a series connected edge shapes)
-this function will set a point as a "connection" to chain the edges
-together at. Therefore you need to have defined at least two points
-before binding the fixture to the instance otherwise you will get
-an error. However, unlike for polygons, you are not limited to a
-maximum of eight points and can add as many as you require to
-create the chain and the points are defined in actual room
-coordinates, rather than relative to the instance.<br>
+对于链形（只是一系列连接起来的边缘形），这个函数将会设定一个点作为链接起边缘形的“连接处”。因此你需要在将支架绑定给实例之前至少定义两个点<!--
+-->否则你将得到一个错误。然而，不像多边形那样，你不被限制最多8个点而你能够尽可能多的按你的要求添加点来创建链形，并且这些点<!--
+-->被定义于实际的房间坐标，而不是实例的相对坐标。
+<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">physics_fixture_set_polygon_shape(fix_Ship);<br>
 physics_fixture_add_point(fix_Ship, 0,0);<br>
 physics_fixture_add_point(fix_Ship, -40, 100);<br>
 physics_fixture_add_point(fix_Ship, 40, 100);<br></p>
 
-<p>The code above will apply a polygon shape to the fixture indexed
-in the variable "fix_Ship" and then defines three points to create
-a triangular shape.</p>
+<p>上述代码将会将一个多边形应用给一个被索引为变量"fix_Ship"的支架并且接下来定义三个点来创建一个三角形。
+</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href=
-"index.html">Fixtures</a></div>
+<div style="float:left">上一页：<a href=
+"index.html">支架</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页：<a href=
 "physics_fixture_set_density.html">physics_fixture_set_density</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>? Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);

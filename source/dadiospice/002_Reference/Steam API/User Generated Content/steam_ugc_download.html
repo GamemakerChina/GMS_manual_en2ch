@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,7 +28,7 @@ if (window.name != "content")
 
 <h1>steam_ugc_download</h1>
 
-<h2>Find out if the given file exists on the Steam Cloud.</h2>
+<h2>Download a preview image of a given UGC item.</h2>
 
 <h3>Syntax:</h3>
 
@@ -46,12 +46,12 @@ if (window.name != "content")
 
 <tr>
 <td>ugc_handle</td>
-<td>The unique handle for the UGC to be downloaded.</td>
+<td>The unique handle for the preview to be downloaded.</td>
 </tr>
 
 <tr class="alt">
 <td>dest_filename</td>
-<td>The file name to save the UGC with.</td>
+<td>The file name to save the preview with.</td>
 </tr>
 </table>
 </div>
@@ -66,21 +66,19 @@ if (window.name != "content")
 
 <h3>Description</h3>
 
-<p>With this function you can download any given UGC item for your
-game. The <tt>ugc_handle</tt> is the unique identifying value for
-the item (which you can get, for example, using the function
-<a href=
-"steam_ugc_request_item_details"><tt>steam_ugc_request_item_details()</tt></a>),
+<p>With this function you can download a preview image for any
+given UGC item. The <tt>ugc_handle</tt> is the unique identifying
+value for the image (which you can get using the function <a href=
+"steam_ugc_send_query.html"><tt>steam_ugc_send_query()</tt></a>),
 and the destination filename is the name (and local path within the
-Steam sandbox) that you wish to give the file when the download is
-complete. The file type being downloaded will depend on what the
-item is and how it was uploaded.<br>
+Steam sandbox) that you wish to give the image file when the
+download is complete.<br>
 <br>
 When using this function it will trigger an <a href=
 "../../../001_Advanced%20Use/More%20About%20Async%20Events/Steam.html">
-Steam Asynchronous</a> event to report the details of the file
-requested containing the following key/map values with information
-about the requested file in the <tt>async_load</tt> ds_map:</p>
+Steam Asynchronous</a> event to report the details of the image
+file requested containing the following key/value pairs in the
+<tt>async_load</tt> ds_map:</p>
 
 <blockquote>
 <ol>
@@ -109,12 +107,12 @@ values.</li>
 </li>
 
 <li>"<b>original_filename</b>" - This key holds the original name
-of the file <i>on the server</i> (a string)</li>
+of the image file <i>on the server</i> (a string)</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>"<b>dest_filename</b>" - This key holds the file name you
+<li>"<b>dest_filename</b>" - This key holds the image file name you
 passed in (a string)</li>
 
 <li style="list-style: none"><br>
@@ -134,7 +132,7 @@ value that you passed in to the calling function</li>
 ID value in a variable:</p>
 
 <p class="code">steam_get = steam_ugc_download(steam_handle,
-"\UGC\Preview_file.dat");<br></p>
+"\UGC\Preview_file.png");<br></p>
 
 <p>This would then send off a file request to the Steam API,
 generating an async event which we would deal with as follows:</p>
@@ -145,13 +143,15 @@ if event_id == steam_get<br>
 &nbsp;&nbsp;&nbsp;var type = async_load[? "event_type"];<br>
 &nbsp;&nbsp;&nbsp;if type == "ugc_download"<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show_debug_message("Downloading
-content to " + async_load[? "dest_filename"]);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sprite_delete(preview_sprite);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;preview_sprite =
+sprite_add(async_load[? "dest_filename"], 0, false, false, 0,
+0);<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code checks the event type and then outputs a debug
-message with the destination filename.</p>
+<p>The above code checks the event type and then creates a sprite
+from the downloaded image.</p>
 
 <p><br>
 </p>
@@ -164,7 +164,7 @@ Generated Content</a></div>
 "steam_ugc_create_item.html">steam_ugc_create_item</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -173,16 +173,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>
