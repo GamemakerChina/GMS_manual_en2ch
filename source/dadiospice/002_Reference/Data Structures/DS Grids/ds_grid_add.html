@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>ds_grid_add</h1>
 
-<h2>Adds a value to a cell in a grid.<br>将一个值叠加到栅格的一个单元格中。</h2>
+<h2>将一个值叠加到栅格的一个单元格中。</h2>
 
-<h3>Syntax语法:</h3>
+<h3>语法:</h3>
 
 <p class="code">ds_grid_add(index, x, y, val);</p>
 
@@ -40,28 +40,28 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument参数</th>
-<th>Description描述</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the grid.栅格结构的索引</td>
+<td>栅格结构的索引</td>
 </tr>
 
 <tr class="alt">
 <td>x</td>
-<td>The x position of the cell in the grid.栅格中单元格的x位置。</td>
+<td>栅格中单元格的x位置。</td>
 </tr>
 
 <tr>
 <td>y</td>
-<td>The y position of the cell in the grid.栅格中单元格的y位置</td>
+<td>栅格中单元格的y位置</td>
 </tr>
 
 <tr class="alt">
 <td>val</td>
-<td>The value to add to the cell.待叠加到栅格中的值</td>
+<td>待叠加到栅格中的值</td>
 </tr>
 </table>
 </div>
@@ -69,41 +69,34 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns返回值:</b> N/A无</p>
+<p><b>返回值:</b> 无</p>
 
 <p><br>
 </p>
 
-<h3>Description描述</h3>
+<h3>描述</h3>
 
-<p>This function can be used to add a given value (real or string)
-to the value of the given cell within the grid. The value to be
-added must be the same type as that held within the grid cell, ie:
-you cannot add a string to a real or vice-versa, and for strings
-this corresponds to concatenation.
- <br>这个函数能够被用于叠加一个被给定的值（实数或字符串）到栅格中被
-给定的单元格中。这个值必须和单元格内承载的值的类型相同，比如说：你
-不能把一个字符串叠加给一个实数值，反之亦然，并且对于字符串来说这将
-对应到串接字符串的位置。<br>
+<p>这个函数能够被用于叠加一个被给定的值（实数或字符串）到栅格中被<!--
+-->给定的单元格中。这个值必须和单元格内承载的值的类型相同，比如说：你<!--
+-->不能把一个字符串叠加给一个实数值，反之亦然，并且对于字符串来说这将<!--
+-->对应到串接字符串的位置。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example举例:</h3>
+<h3>举例:</h3>
 
 <p class="code">ds_grid_add(grid, 5, 5, 6);</p>
 
-<p>This would add 6 to the given cell within the ds_grid referenced
-by the variable "grid".这将把6叠加到被给定的在被变量grid引用的ds_grid
-中的单元格</p>
+<p>这将把6叠加到被给定的在被变量grid引用的ds_grid<!--
+-->中的单元格</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back上一个: <a href="index.html">DS
-Grids栅格结构</a></div>
+<div style="float:left">Back上一个: <a href="index.html">栅格结构</a></div>
 
 <div style="float:right">Next下一个: <a href=
 "ds_grid_add_region.html">ds_grid_add_region</a></div>
