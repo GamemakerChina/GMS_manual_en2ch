@@ -28,10 +28,9 @@ if (window.name != "content")
 
 <h1>ds_grid_get_disk_min</h1>
 
-<h2>Gets the minimum from all the values within a circular region.
-Only works when the cells are numbers.</h2>
+<h2>从一个圆形区域中获得所有值的最小值，只有在单元格是数字的时候才生效。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">ds_grid_get_disk_min(index, xm, ym, r);</p>
 
@@ -41,28 +40,28 @@ Only works when the cells are numbers.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the grid.</td>
+<td>栅格的索引</td>
 </tr>
 
 <tr class="alt">
 <td>xm</td>
-<td>The x position of the disk on the grid.</td>
+<td>栅格上圆盘的x位置</td>
 </tr>
 
 <tr>
 <td>ym</td>
-<td>The y position of the disk on the grid.</td>
+<td>栅格上圆盘的y位置</td>
 </tr>
 
 <tr class="alt">
 <td>r</td>
-<td>The radius of the disk on the grid.</td>
+<td>栅格上圆盘的半径</td>
 </tr>
 </table>
 </div>
@@ -70,38 +69,34 @@ Only works when the cells are numbers.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real or String</p>
-
+<p><b>返回值:</b> 实数①</p>
+<p>①：此处原文为“Real or string”但根据标题所描述，此函数不应当返回字符串。</p>
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function can be used to find the minimum value for all the
-cells found within the defined disk area of a grid, as shown in the
-image below: <img class="center" src=
+<p>这个函数可以被用于查找在一个栅格结构中一个圆盘区域以内的所有单元格中的最大值，正如下图所示：
+ <img class="center" src=
 "ds_grid_get_disk_min.png"><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例:</h3>
 
 <p class="code">val = ds_grid_get_disk_min(grid, 5, 5, 2);</p>
 
-<p>The above code will set the variable "val" to the minimum value
-contained within the given disk of the ds_grid indexed in the
-variable "grid".</p>
+<p>上述代码将设定变量"val"为索引为变量"grid"的栅格结构中被给定的圆盘区域内包含的最小值。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">DS
-Grids</a></div>
+<div style="float:left">上一页: <a href="index.html">栅格结构</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "ds_grid_get_disk_sum.html">ds_grid_get_disk_sum</a></div>
 </div>
 
