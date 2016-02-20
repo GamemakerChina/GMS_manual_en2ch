@@ -29,13 +29,12 @@ if (window.name != "content")
 
 <h1>dot_product_normalised</h1>
 
-<h2>Returns the normalised dot_product of the vectors x1,y1 and
-x2,y2.</h2>
+<h2>返回向量(x1,y1)和(x2,y2)被正规化的点积</h2>
 
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">dot_product_normalised(x1, y1, x2, y2)</p>
 
@@ -45,28 +44,28 @@ x2,y2.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>x1</td>
-<td>The x coordinate of the first vector.</td>
+<td>第一个向量的x坐标。</td>
 </tr>
 
 <tr class="alt">
 <td>y1</td>
-<td>The y coordinate of the first vector.</td>
+<td>第一个向量的y坐标。</td>
 </tr>
 
 <tr>
 <td>x2</td>
-<td>The x coordinate of the second vector.</td>
+<td>第二个向量的x坐标。</td>
 </tr>
 
 <tr class="alt">
 <td>y2</td>
-<td>The y coordinate of the second vector.</td>
+<td>第二个向量的y坐标。</td>
 </tr>
 </table>
 </div>
@@ -74,43 +73,32 @@ x2,y2.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回值:</b> 实数</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>The dot product is a value expressing the angular relationship
-between two vectors and is found by taking two vectors, multiplying
-them together and then adding the results. The name "dot product"
-is derived from the centered dot "·" that is often used to
-designate this operation (the alternative name "scalar product"
-emphasizes the scalar rather than vector nature of the result).<br>
+<p>点积是一个表达两个向量间角度关系并用两个向量相乘①然后相加的结果。“点积”这个名字源自于<!--
+-->经常被用于指明这种运算的中心圆点符号“·”（又称为“标量积”（数量积），强调了其结果本质是一个标量而不是向量）。<br>
 <br>
-The actual mathematical formula can be written like this:<br>
+实质上的数学公式可以被写成像这样：<br>
 <br>
 <img class="center" src="dot_product_image.png"></p>
-
+<p>①：此处的“相乘”表示两个向量的分量各自相乘，即x1y1和x2y2</p>
 <p><br>
-So, in 2D the dot product of vectors a[x1,y1] and b[x2,2] is x1x2 +
-y1y2, meaning that the dot_product in <i>GameMaker: Studio</i> is
-calculated as:<br></p>
+所以在2维中向量a(x1,y1)和b(x2,y2)的点积是x1y1+x2y2，意味着在GameMaker: Studio中点积被计算为： <br></p>
 
-<p class="code">a · b = (x1*x2)+(y1*y2);<br></p>
+<p class="code">a · b = x1*x2+y1*y2;<br></p>
 
-<p>What about the <i>normalised</i> dot product? The normalised dot
-product has been corrected in such a way as to bring the return
-value into the range of -1 and 1 (see <a href=
-"Normalised%20Vectors.html">Normalised Vectors</a> for more
-detailed information), which is exceptionally useful in many
-circumstances, particularly when dealing with lighting and other 3D
-functions.</p>
+<p>什么是<i>正规化</i>点积呢？正规化点积已经被以一种方式改变来返回一个在[-1,1]之间的值（详情参见<a href=
+"Normalised%20Vectors.html">Normalised Vectors</a>），其在许多场合中格外有用，特别是当处理灯光或者其他3D函数时。</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例:</h3>
 
 <p class="code">var x1, y1, x2, y2;<br>
 x1 = lengthdir_x(1, image_angle);<br>
@@ -120,20 +108,16 @@ y2 = o_Player.y - y;<br>
 if dot_product_normalised(x1, y1, x2, y2) &gt; 0 seen=true else
 seen=false;<br></p>
 
-<p>The above code creates a vector using the instances image angle,
-and then gets the vector of the player object "o_Player" to itself.
-Finally it calculates the dot product of these two vectors and if
-it is greater than 0 it sets the variable "seen" to true, and if it
-is equal to or less than 0 it sets it to "false".</p>
+<p>上述代码使用实例的<tt>image_angle</tt>创建了一个向量，并接下来获取从玩家物体"o_Player"到它自身的向量。最终它计算了这两个向量的点积<!--
+-->并且如果大于0就将变量"seen"设定为<tt>true</tt>，且如果小于等于0则设定为<tt>false</tt>。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Vector
-Functions</a></div>
+<div style="float:left">上一页: <a href="index.html">向量函数</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "dot_product_normalised_3d.html">dot_product_normalised_3d</a></div>
 </div>
 
