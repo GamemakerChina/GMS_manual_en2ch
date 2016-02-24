@@ -491,7 +491,7 @@ var TITEMS = [
   ],
   ["调试", "source/dadiospice/002_Reference/Debugging/index.html", "1",
    ["code_is_compiled", "source/dadiospice/002_Reference/Debugging/code_is_compiled.html", "11"],
-   ["Compile Errors", "source/dadiospice/002_Reference/Debugging/Compile Errors.html", "11"],
+   ["编译错误", "source/dadiospice/002_Reference/Debugging/Compile Errors.html", "11"],
    ["debug_mode", "source/dadiospice/002_Reference/Debugging/debug_mode.html", "11"],
    ["fps", "source/dadiospice/002_Reference/Debugging/fps.html", "11"],
    ["fps_real", "source/dadiospice/002_Reference/Debugging/fps_real.html", "11"],
