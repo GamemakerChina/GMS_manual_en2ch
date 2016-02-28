@@ -12,9 +12,9 @@ HTML5  | 16/16,100% | AU 已完成
 Surfaces  | 23/23,100% | 断水已完成
 The Display, Windows And Views  | 67/67,100% |  断水已完成
 Data Stuctures  | 37/127,29% | 小太部分完成，已停止
-Maths  | 9/61,14% | 小太部分完成，已停止
+Maths  | 61/61,100% | 小太已完成
 Game Assets - Audio  | 8/112,7% | dream部分完成，已暂停
-Paths  | 0/44,0% | XLLI已开启
+Paths  | 0/44,0% | XLII已开启
 Drawing  | 0/121,0% | 玩喵丧志进行中（颜色混合2节完成）
 3D Drawing | 8/88,9% |AU进行中
 云服务  | 4/4,100% | 白昼已完成
