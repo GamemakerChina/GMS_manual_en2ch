@@ -28,10 +28,9 @@ if (window.name != "content")
 
 <h1>get_integer</h1>
 
-<h2>Displays a pop-up message for the user to input an
-integer.</h2>
+<h2>显示一个弹出信息以要求用户输入一个整数</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">get_integer(str, def);</p>
 
@@ -41,18 +40,18 @@ integer.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>str</td>
-<td>The string to show in the pop-up message.</td>
+<td>弹出信息中显示的字符串</td>
 </tr>
 
 <tr class="alt">
 <td>def</td>
-<td>The default value in the text box.</td>
+<td>文本框中的默认值</td>
 </tr>
 </table>
 </div>
@@ -60,22 +59,19 @@ integer.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回值:</b> 实数①<br>①：根据后文内容可知，实际上应当是整数。</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This creates a pop-up window showing a custom message, with a
-button labeled "Ok", and prompts the user to input an integer
-value. The function will return the typed in integer, or the
-default value if nothing has been entered.<br>
+<p>这创建了一个弹出窗口显示一个自定义消息，带有一个标签为"Ok"的按钮，以及用户输入一个整数值的提示。这个函数将会以整数形式返回被输入的内容<!--
+-->，或者如果没有东西被输入的默认值。<br>
 <br>
 <br>
 <br>
-<i><b>NOTE:</b> THIS FUNCTION IS FOR DEBUG USE ONLY. Should you
-require this functionality in your final game, please use <a href=
+<i><b>注意:</b> 这个函数只用于调试用途。若你想在你最终游戏中要求这个功能，请使用<a href=
 "../Asynchronous%20Functions/get_integer_async.html"><tt>get_integer_async</tt></a>.</i><br>
 
 <br></p>
@@ -83,23 +79,21 @@ require this functionality in your final game, please use <a href=
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例:</h3>
 
 <p class="code">global.level = get_integer("Level to test?",
 1);</p>
 
-<p>The above code will display a message prompting the user to
-select a level for testing. The return value will be stored in the
-global variable "global.level".</p>
+<p>上述代码将会显示一个信息要求用户选择关卡用于测试。这个返回值将被存入全局变量"global.level"中。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href=
-"index.html">Debugging</a></div>
+<div style="float:left">上一页: <a href=
+"index.html">调试</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "get_string.html">get_string</a></div>
 </div>
 
