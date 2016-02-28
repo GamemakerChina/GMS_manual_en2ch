@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>show_error</h1>
 
-<h2>Displays a pop-up message with a custom error string.</h2>
+<h2>显示一个带有自定义错误字符串的弹出消息。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">show_error(str, abort);</p>
 
@@ -40,18 +40,18 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>str</td>
-<td>The string to show in the pop-up message.</td>
+<td>弹出消息中显示的字符串。</td>
 </tr>
 
 <tr class="alt">
 <td>abort</td>
-<td>Whether to abort (true) or not (false).</td>
+<td>是(true)否(false)中止</td>
 </tr>
 </table>
 </div>
@@ -59,41 +59,38 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回值:</b> 无</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function will show a custom string as an error message and
-give the option to abort the game afterwards if necessary.<br>
+<p>这个函数将会显示一个自定义字符串作为一个错误信息并且如果必要则会给出选项来中止后续游戏。<br>
 <br>
-<i><b>NOTE:</b> THIS FUNCTION IS FOR DEBUG USE ONLY.</i><br>
+<i><b>注意:</b> 这个函数仅供调试！</i><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例:</h3>
 
 <p class="code">if room != rm_Dungeon<br>
 {<br>
 show_error("Error: Went to wrong area. Aborting game.", true);<br>
 }<br></p>
 
-<p>The above code will check to see if the room that the player is
-in is "rm_Dungeon" and if not it will show an error message and
-force the user to abort the game.</p>
+<p>上述代码将会检查玩家所在房间是否为"rm_Dungeon"，如果不是，则它会显示一个错误消息并且强制用户中止游戏。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href=
-"index.html">Debugging</a></div>
+<div style="float:left">上一页: <a href=
+"index.html">调试</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "show_message.html">show_message</a></div>
 </div>
 
