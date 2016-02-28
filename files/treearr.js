@@ -174,7 +174,7 @@ var TITEMS = [
    ["代码", "source/dadiospice/002_Reference/001_GML Language Overview/401_01_program.html", "11"],
    ["赋值", "source/dadiospice/002_Reference/001_GML Language Overview/401_03_assignments.html", "11"],
    ["表达式", "source/dadiospice/002_Reference/001_GML Language Overview/401_04_expressions.html", "11"],
-   ["定址", "source/dadiospice/002_Reference/001_GML Language Overview/401_05_addressing.html", "11"],
+   ["寻址", "source/dadiospice/002_Reference/001_GML Language Overview/401_05_addressing.html", "11"],
    ["数组", "source/dadiospice/002_Reference/001_GML Language Overview/401_06_arrays.html", "11"],
    ["if", "source/dadiospice/002_Reference/001_GML Language Overview/401_07_if.html", "11"],
    ["repeat", "source/dadiospice/002_Reference/001_GML Language Overview/401_08_repeat.html", "11"],
