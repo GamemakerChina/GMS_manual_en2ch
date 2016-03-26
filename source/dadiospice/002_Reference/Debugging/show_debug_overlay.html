@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>show_debug_overlay</h1>
 
-<h2>Show the debug overlay.</h2>
+<h2>显示调试外观。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">show_debug_overlay(enable);</p>
 
@@ -40,14 +40,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>enable</td>
-<td>switch on (<tt>true</tt>) or off (<tt>false</tt>) the debug
-overlay.</td>
+<td>开启 (<tt>true</tt>) 或关闭 (<tt>false</tt>) 调试外观。</td>
 </tr>
 </table>
 </div>
@@ -55,65 +54,50 @@ overlay.</td>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回值:</b> 无</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function can be used to switch on and off the standard
-debug overlay when testing your game and is disabled by default.
-The debug overlay shows a graphic CPU/GPU usage bar in the actual
-game window itself along with the current real fps value, number of
-texture swaps and the number of vertex batches (note that texture
-swaps and vertex batches will never be zero and will normally show
-values of 2 or 3, since even with an empty room an no objects
-<i>GameMaker: Studio</i> still has to draw and batch things).<br>
+<p>这个函数可以被用于在测试你的游戏时开启或者关闭标准调试外观并且默认是关闭的。<!--
+-->调试外观在实际游戏窗口中显示了一个图像CPU/GPU占用条还有当前的真实fps值、贴图交换数量和顶点批处理的数量<!--
+-->（注意贴图交换数量和顶点批处理数量不会是0并且正常地会显示为值2或3，因为即使一个没有物体的空房间,<i>GameMaker: Studio</i><!--
+-->仍旧需要去绘制并且进行批处理）。<br>
 <br>
-<img class="center" src="../../images/DebugBar.png"><br>
+<img class="center" src="../../Images/DebugBar.png"><br>
 <br>
-This bar is split into sections, with each section being 1/60th of
-a second. As you can see from the image above, the bar is made up
-of various colours:</p>
+这个条被分为许多小节，每一节都是一秒的1/60。正如你能够在上图中看见的那样，这个条由不同的颜色组成：</p>
 
 <blockquote>
 <ul>
-<li><b>Green</b> - Input / Output processing (ie: keyboard, mouse,
-gamepad, networking etc...)</li>
+<li><b>绿色</b> - 输入 / 输出进程（换言之：键盘、鼠标、手柄、网络等……）</li>
 
-<li><b>Red</b> - The update speed of the step event</li>
+<li><b>红色</b> - 步事件更新速度。</li>
 
-<li><b>Yellow</b> - The time required for the draw event</li>
+<li><b>黄色</b> - 绘制事件要求的时间。</li>
 
-<li><b>Orange</b> -Debug update time, which is only normally
-visible when you use the debug module</li>
+<li><b>橙色</b> - 调试更新事件，其通常只在你使用调试模块的时候可见。</li>
 
-<li><b>White</b> - GPU left over time, which is the time spent
-waiting for the GPU to finish the rendering of the frame before the
-next one can start</li>
+<li><b>白色</b> - GPU剩余时间，是被消耗于下一帧能开始之前等待GPU完成帧的渲染的时间。</li>
 
-<li><b>Cyan</b> - The text rendering time</li>
+<li><b>青色</b> - 文本渲染时间。</li>
 
-<li><b>Grey</b> - The time required to clear screen each draw
-step</li>
+<li><b>灰色</b> - 每步绘制清空屏幕所需时间。</li>
 
-<li><b>Dark Red</b> - The GPU flush, which is how long the GPU
-takes to clear images from memory</li>
+<li><b>暗红</b> - GPU冲洗时间，是GPU用来从内存清除图像所用时间。</li>
 </ul>
 </blockquote>
 
-<p>Using this function you can add the overlay whether in debug
-mode or not, and in this way, you can see how efficiently your game
-runs and get a visual cue as to how it is using the available
-resources, without the over-head of having the debugger running
-alongside.<br>
+<p>使用这个函数你无论是否在调试模式都能添加这个外观，并且通过这种方式，你能够看到你的游戏运行的效率有多高并且<!--
+-->得到一个关于它如何使用可用资源的视觉线索，而顶部无需让调试器在旁运行。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3><b>Example:</b>
+<h3><b>举例:</b>
 </h3>
 
 <p class="code">if global.debug<br>
@@ -125,17 +109,16 @@ else<br>
 &nbsp;&nbsp;&nbsp;show_debug_overlay(false);<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code will toggle the debug on or off depending on the
-value of a global variable.</p>
+<p>上述代码将会依据一个全局变量的值来切换调试开启或关闭。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href=
-"index.html">Miscellaneous</a></div>
+<div style="float:left">上一页: <a href=
+"index.html">调试</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "code_is_compiled.html">code_is_compiled</a></div>
 </div>
 

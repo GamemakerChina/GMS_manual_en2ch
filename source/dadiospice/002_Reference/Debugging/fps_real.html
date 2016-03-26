@@ -28,44 +28,35 @@ if (window.name != "content")
 
 <h1>fps_real</h1>
 
-<h2>Returns the real frames per second.</h2>
+<h2>返回实际的帧速率（帧每秒）。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">fps_real</p>
 
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回值:</b> 实数①<br>①：根据后文内容可知，实际上应当是整数。</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>In <i>GameMaker: Studio</i> there are two main ways that can be
-used to tell the speed at which your game runs. The <a href=
-"../Rooms/room_speed.html"><tt>room_speed</tt></a> (as specified in
-the room editor) and the <tt>fps</tt> (frames per second). These
-values are often confused, but basically one is the number of game
-steps that <i>GameMaker: Studio</i> is supposed to be completing in
-a second (room speed), while the other is the number of CPU steps
-that GameMaker: Studio is actually completing in a second (the real
-fps), and this value is generally much higher than the room speed,
-but will drop as your game gets more complex and uses more
-processing power to maintain the set room speed.<br>
+<p>
+在<i>GameMaker: Studio</i>中有两个主要的方式能够被用来识别你的游戏在以什么样的速度运行着。<a href=
+"../Rooms/room_speed.html"><tt>room_speed</tt></a>（和在房间编辑器里所指定的一样）和<tt>fps</tt>（帧每秒）。这些值经常被混淆，但是从根本上说<!--
+-->一个是<i>GameMaker: Studio</i>每秒应当完成的步数，而另一个（fps）是<i>GameMaker: Studio</i>每秒实际完成的CPU步数，而这个值通常比房间速度高德多，<!--
+-->但是会随着你的游戏变得越来越复杂并且使用更多的处理能力来位置房间速度而下降。<br>
 <br>
-This <b>read-only</b> variable returns the current fps as an
-integer value. Please note that the function will only update once
-every step of your game and so may appear to "jump" from one value
-to another, but this is quite normal.<br>
+这个<b>只读</b>变量将当前帧速率返回为一个整数值。请注意这个数只会在游戏的每步更新一次并且可能会从一个值“跳”到另一个，但这是相当正常的。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例:</h3>
 
 <p class="code">if debug_mode<br>
 &nbsp;&nbsp;&nbsp;{<br>
@@ -73,18 +64,17 @@ to another, but this is quite normal.<br>
 string(fps_real));<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code will check to see if the game is in debug mode
-and if it is it will display the current real fps on the
-screen.</p>
+<p>
+上述代码将会检查游戏是否以调试模式运行，并且如果是则它会在屏幕上显示当前真正的帧速率。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href=
-"index.html">Miscellaneous</a></div>
+<div style="float:left">上一页: <a href=
+"index.html">调试</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "debug_mode.html">debug_mode</a></div>
 </div>
 

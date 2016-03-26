@@ -28,10 +28,9 @@ if (window.name != "content")
 
 <h1>point_distance_3d</h1>
 
-<h2>Returns the length of a vector comprised of the specified
-components.</h2>
+<h2>返回由指定的组成点组成的向量的模。</h2>
 
-<h3><b>Syntax:</b>
+<h3><b>语法:</b>
 </h3>
 
 <p class="code">point_distance_3d(x1, y1, z1, x2, y2, z2);</p>
@@ -42,38 +41,38 @@ components.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>x1</td>
-<td>The x coordinate of the first component of the vector</td>
+<td>向量第一个组成点的x坐标</td>
 </tr>
 
 <tr class="alt">
 <td>y1</td>
-<td>The y coordinate of the first component of the vector</td>
+<td>向量第一个组成点的y坐标</td>
 </tr>
 
 <tr>
 <td>z1</td>
-<td>The z coordinate of the first component of the vector</td>
+<td>向量第一个组成点的z坐标</td>
 </tr>
 
 <tr class="alt">
 <td>x2</td>
-<td>The x coordinate of the second component of the vector</td>
+<td>向量第二个组成点的x坐标</td>
 </tr>
 
 <tr>
 <td>y2</td>
-<td>The y coordinate of the second component of the vector</td>
+<td>向量第二个组成点的y坐标</td>
 </tr>
 
 <tr class="alt">
 <td>z2</td>
-<td>The z coordinate of the second component of the vector</td>
+<td>向量第二个组成点的z坐标</td>
 </tr>
 </table>
 </div>
@@ -81,23 +80,20 @@ components.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回值:</b> 实数</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This function takes the supplied components of the vector and
-returns the length (distance) of the vector. It works in exactly
-the same way as <tt>point_distance()</tt> but with the addition of
-factoring in the z value (depth) for use in 3D space.<br>
+<p>这个函数取得所提供的向量组成点并且返回向量的长度（模）。它和<tt>point_distance()</tt>的工作原理相同，但是为3D空间加入了z值（深度）因素。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例:</h3>
 
 <p class="code">var inst, ex, ey, ez;<br>
 inst = instance_nearest(x, y, enemy);<br>
@@ -114,21 +110,17 @@ obj_Missile)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code will get the x and y and z coordinates of the
-nearest enemy and then use them to check the distance (length) of
-the vector formed by them and the player coordinates. If the value
-is less than 200, the player object will create an instance of
-"obj_Missile".<br>
+<p>上述代码将会获得最近的敌人的x、y和z坐标，并且然后用它们来检测由它们和玩家坐标所形成的向量的模（长度）。如果这个值小于200，玩家物体就会创建<!--
+-->"obj_Missile"的实例。<br>
 <br></p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Vector
-Functions</a></div>
+<div style="float:left">上一页: <a href="index.html">向量函数</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "dot_product.html">dot_product</a></div>
 </div>
 

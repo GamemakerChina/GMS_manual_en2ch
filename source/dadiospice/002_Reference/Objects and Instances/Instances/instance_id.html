@@ -28,36 +28,32 @@ if (window.name != "content")
 
 <h1>instance_id</h1>
 
-<h2>Returns the id of an instance in the room.</h2>
+<h2>返回房间内一个实例的id标识。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">instance_id[0 ... n];</p>
 
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回值:</b> 实数</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>This <b>read only</b> array holds all the <a href=
-"Instance%20Properties/id.html"><tt>id</tt>s</a> of every active
-instance within the room. This means that if you have used any of
-the <a href=
-"Deactivating%20Instances/index.html"><tt>instance_deactivate</tt></a>
-functions those instances that have been deactivated will not be
-included in this array (if you have used a value from this array
-previously, it will now return the keyword <i>noone</i>).<br>
+<p>这个<b>只读</b>数组承载了房间内每个活跃实例的所有<a href=
+"Instance%20Properties/id.html"><tt>id</tt></a>标志。这也就意味着如果你使用任意一个<a href=
+"Deactivating%20Instances/index.html"><tt>instance_deactivate</tt></a>函数，那些被冻结的实例将不会被包括在这个数组中<!--
+-->（如果你曾经之前使用过一个来自于这个数组的值，它现在就会返回关键字<i>noone</i>）。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<p><b>Example:</b>
+<p><b>举例:</b>
 </p>
 
 <p class="code">var i;<br>
@@ -66,17 +62,15 @@ for (i = 0; i &lt; instance_count; i += 1;)<br>
 &nbsp;&nbsp;&nbsp;with (instance_id[i]) speed += 0.1;<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code will loop through all instances within the room
-and add 0.1 to their speed.</p>
+<p>上述代码将会迭代房间内所有实例并且将它们的速度增加0.1.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Instance
-Functions</a></div>
+<div style="float:left">上一页: <a href="index.html">实力函数</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "instance_count.html">instance_count</a></div>
 </div>
 

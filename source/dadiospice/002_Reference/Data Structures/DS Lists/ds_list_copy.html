@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>ds_list_copy</h1>
 
-<h2>Copies one list into another.</h2>
+<h2>将一个列表拷贝给另一个。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">ds_list_copy( id, source );</p>
 
@@ -40,18 +40,18 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>id</td>
-<td>The id of the list being copied <i>to</i>.</td>
+<td>待被拷贝<i>到</i>的列表id。</td>
 </tr>
 
 <tr>
 <td>source</td>
-<td>The id of the list to be copied <i>from</i>.</td>
+<td>待被<i>从中</i>拷贝的列表id。</td>
 </tr>
 </table>
 </div>
@@ -59,24 +59,21 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回值:</b> 无</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>With this function you can copy the contents of one list into
-another. Both lists must have been created previously and if the
-list being copied <i>to</i> already has information within it, this
-list will be cleared first. The end result is two independent lists
-which contain the same information.<br>
+<p>使用这个函数你能够将一个列表的内容拷贝到另一个中。两个列表必须在之前已被创建并且如果被拷贝<i>到</i>的列表内已经有信息了，这个列表将被首先清空。<!--
+-->最终结果是两个独立的包含相同信息的列表。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例:</h3>
 
 <p class="code">if !ds_list_empty(main_list)<br>
 &nbsp;&nbsp;&nbsp;{<br>
@@ -85,18 +82,15 @@ which contain the same information.<br>
 &nbsp;&nbsp;&nbsp;ds_list_clear(main_list);<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code will check a ds_list to see if it is empty. If it
-is not empty it is copied into another ds_list (which has been
-created previously) and then the original list is cleared.</p>
+<p>上述代码将会检测一个列表结构来观察它是否是空的。如果不是，它就会被拷贝到另一个列表结构中（在之前已经被创建）并且原始的列表被清空。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">DS
-Lists</a></div>
+<div style="float:left">上一页: <a href="index.html">列表结构</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "ds_list_read.html">ds_list_read</a></div>
 </div>
 
