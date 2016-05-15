@@ -2,12 +2,12 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Arrays</title>
+<title>数组</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../style.css" type="text/css"
 media="screen" title="style" charset="utf-8">
@@ -23,70 +23,49 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/001_GML Language Overview/401_
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_06_arrays.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_06_arrays.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
 
-<h1>Arrays</h1>
 
-<h2>This section deals with arrays, special variables that can hold
-more than one value.</h2>
+<h1>数组</h1>
 
-<p>Arrays may seem confusing at first, but they can be extremely
-useful and are an essential part of making games. Why? Well, here
-are just a few things that would be impossible without arrays -</p>
+<h2>这一部分讨论数组，一个可以容纳超过一个值的特殊变量。</h2>
+
+<p>一开始看到数组可能会混乱，但却是极有用并且是制作游戏时非常基础的部分。为什么呢？有一些事情没有数组将非常为难 -</p>
 
 <ul>
-<li>Menus. An array or two can make it much easier to create a good
-menu system.</li>
+<li>菜单。一两个数组将很容易的建一个好的菜单系统。</li>
 
-<li>RPGs. Arrays are essential for making RPGs, because instead of
-having a jumble of variables, you just have a few lines, which you
-can refer back to at any time.</li>
+<li>RPGs。制作RPG游戏时数据是基础的用法，仅需数行，替代使用混乱的变量，并且可以随时可以重新提及。</li>
 
-<li>Card Games. Good for keeping track of cards and hands and can
-even be shuffled!</li>
+<li>卡牌游戏（Card Games）。有利于跟踪卡牌和手，甚至可以打乱顺序。</li>
 
-<li>High scores and other statistics. Much easier to keep track of
-one array than multiple variables.</li>
+<li>高分榜和其它统计。一个数组更容易跟踪，胜过多个变量。</li>
 </ul>
 
-<p>That's just the tip of the iceberg as arrays are one of the most
-fundamental and useful programming tools you can use, and you'd be
-surprised at the applications they can have! Let's find out a bit
-more about them then...<br>
+<p>这些只是冰山一角，数组是你可以使用的最基础的编程工具之一，他们能应用的地方会让你惊讶。接下来让我们更多关于数组的东西……<br>
 <br></p>
 
-<h3>1D Arrays</h3>
+<h3>一维数组</h3>
 
-<p>Okay, we can use an array for those things mentioned above, but
-what is an array? What does it look like? Well, something like
-this...<br>
+<p>好的，上述情况可以使用数组，不过数组是什么呢？像什么？好吧，就像这样……<br>
 <img class="center" src="1DArrayExample.png"></p>
 
 <p class="code">array[0] = 1.25;</p>
 
 <p><br>
-This is a 1D (one dimensional) array which we are now going to
-break down the parts of to see what it means:<br>
+这是一个一维数组。看起来没什么特别的吧？下面我们把它分解开来看：<br>
 <br></p>
 
 <p class="code">array</p>
 
 <p><br>
-This is the array's name. Just like any other variable, it can be
-anything you want from simply "a" to "mymumscow".<br>
+数组的名字。就像变量的名字，你可以给它取任意的名字，比如“a”或者“mymumscow”。<br>
 <br></p>
 
 <p class="code">[0]</p>
 
 <p><br>
-This is the position within the array that we are checking or
-changing. You see, an array is basically a container with a number
-of spaces to store values, and each position in the container has a
-specific number to identify it, which is what we put in the [].
-It's worth noting that an array <b>always starts at 0</b> and can
-<i>never be negative</i>! Now let's expand our array to include
-different positions...<br>
+这部分指明我们现在所引用的数据在数组中的位置。本质上数组就是一个存储许多数值的一个容器，其中的每个数据在这个容器中都有一个对应的编号，我们把这个编号放在两个中括号“[]”中。需要注意的是数组编号 <b>开始于0</b> 并且 <i>永远不能为负数</i>。现在我们给数组扩展三个位置。<br>
 <br></p>
 
 <p class="code">array[2] = 0;<br>
@@ -94,15 +73,7 @@ array[1] = 0;<br>
 array[0] = 0;<br></p>
 
 <p><br>
-Our array now contains three positions (0, 1 and 2) and we have
-initialized our array to 0. What does that mean? Well, an array has
-to be <i>initialized</i> before we can use it or <i>GameMaker:
-Studio</i> will give us an error. Initializing an array just means
-that we give each position of the array an initial value in
-preparation for it to be used elsewhere in the object or code. This
-is important to remember as it means that you have to do a certain
-amount of planning before using arrays, but it is easy enough to
-initialize one using a repeat loop like this...<br>
+现在我们的数组包含三个位置（0、1和2），并且我们初始化数组为0。为什么这样做呢？数组需要 <i>初始化</i> 之后才能使用，否则 <i>GameMaker: Studio</i> 会报错。初始化数组的意思就是给数组中每一个位置的数据赋予一个初始值，以便我们之后的物体或者代码块中使用。换句话说就是需要我们在使用数组之前就做好规划，可以像这样简单的使用“repeat”循环初始一个数组。<br>
 <br></p>
 
 <p class="code">var i;<br>
@@ -114,60 +85,19 @@ repeat(10)<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
 <p><br>
-This simple code will initialize a ten position array (0-9) to 0,
-in that each position in the array contains the value 0. You will
-notice that the array has been initialised <i>backwards</i>, with
-the last value being defined first. This is not strictly necessary
-but is the optimal way to do it as it will reserve a space in
-memory that is the exact size of the array, whereas if you
-initialize an array from 0 upwards, the memory has to be
-re-allocated for every additional value added. The speed difference
-is negligible for smaller arrays, but larger ones should be
-optimised as much as possible in this way.<br>
-<br>
-But what if we want to initialize the array with different values
-for each position? Well for that we have to manually type each and
-every position ourselves, but there is a nice trick to help us keep
-track of things there too!<br>
+这个简单的代码将初始十个位置（0-9）的数组为0，数组的每个位置储存的数值都是0。你将会注意这个数组是<i>倒序</i>初始化的，最后一个位置是首先定义的。不是严格必要，但却是最好的方式，因为这样会精确地在内存中保留一个数组空间，而如果你从零开始初始化，内存将在每一次添加值时重新分配。对于小的数组，两种速度的差异微乎其微，但是大数组应该用这种方式优化。<br><br>但如果我们想给不同的位置赋予不同的值该怎么做？这种情况就需要我们自己手动输入，不过这里也有一个小技巧。<br>
 <br></p>
 
-<p class="code">count = 3;<br>
-array[count] = "you?"<br>
-count -= 1;<br>
-array[count] = "are "<br>
-count -= 1;<br>
-array[count] = "How "<br>
-count -= 1;<br>
-array[count] = "Hello!"<br>
-count -= 1;<br></p>
+<p class="code">count = 3; // 先用变量定义数组的最大位置<br>array[count] = "you?"; // 用变量作为数组的下标位置，给数组赋值<br>count -= 1; // 位置减1<br>array[count] = "are "; // 再赋值<br>count -= 1; // 再减1<br>array[count] = "How "<br>count -= 1;<br>array[count] = "Hello!"<br>count -= 1;<br></p>
 
 <p><br>
-As you can see, we haven't used any numbers in the actual array,
-rather a variable to count down through the values. This has two
-benefits - One, we don't have to worry about typos or errors when
-writing out the array positions, and two, we have in the variable
-"count" the number of positions that the array contains, which can
-then be used elsewhere in the object. Very useful!<br>
-<br>
-With that done how do we use an array for practical things? Exactly
-the same as we would use a normal variable, as shown by the
-following examples:<br>
+我们并没有用具体数字来标注数据的位置，而是使用了一个变量count。这样做有两个好处。一来可以避免打错数字，二来可以使用count这个变量计算数组包含数据的个数，这个变量可以用到物体的其它地方。很用用吧！！<br><br>然后，我们怎么实际应用呢？确切的说，和变量的变量没有区别，请看下面的例子：<br>
 <br></p>
 
-<p class="code">total = array[0] + array[5]; //Add two array values
-together<br>
-<br>
-if (array[9]) == 10 //Check an array value<br>
-&nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;//do something<br>
-&nbsp;&nbsp;&nbsp;}<br>
-<br>
-draw_text(32, 32, array[3]); //draw an array value<br></p>
+<p class="code">total = array[0] + array[5];  // 两个数组中的值相加<br><br>if (array[9]) == 10  // 检测数组的值<br>&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;// 做些什么<br>&nbsp;&nbsp;&nbsp;}<br><br>draw_text(32, 32, array[3]);  // 绘制数组的值<br></p>
 
 <p><br>
-Since arrays are numbered consecutively, this means you can loop
-through them to perform extra actions too, like we did to
-initialize it:<br>
+另外因为数组的数据是连续的，所以我们可以使用循环来调用数组，就如同数组的初始化：<br>
 <br></p>
 
 <p class="code">var i, total;<br>
@@ -181,24 +111,18 @@ repeat(10)<br>
 draw_text(32, 32 + (i * 32), total);<br></p>
 
 <p><br>
-The above code will add up all the values in our array, draw each
-of them and draw the total value at the end.<br>
+这段程序将数组中的数据依次累加，并绘制数组的值每个值，最后绘制累加的总和。<br>
 <br></p>
 
-<h3>2D Arrays</h3>
+<h3>二维数组</h3>
 
-<p>Now that we know what a normal array looks like, let's look at a
-2D (two dimensional) array.<br>
+<p>现在我们知道了普通的数组，再看看2D（二维）数组。<br>
 <img class="center" src="2DArrayExample.png"></p>
 
 <p class="code">array[0, 0] = 5;</p>
 
 <p><br>
-As before, each number points to a position within the array, only
-this time each position has an "a" <i>and</i> "b" coordinate. Think
-of it as an extra dimension to our container, as it now has height
-<i>and</i> width whereas the 1D array only has height. Here is an
-extended example:<br>
+之前每个数值对应数组的一个位置，但这次一个位置有“a” <i>和</i> “b”两个坐标。想象它是容器的另外一个维度，一个高度 <i>和</i> 一个宽度，而1D数组只有高度。下面有一些例子：<br>
 <br></p>
 
 <p class="code">array[1, 2] = 1;<br>
@@ -209,56 +133,19 @@ array[0, 1] = "world";<br>
 array[0, 0] = -67.89;<br></p>
 
 <p><br>
-A 2D array needs to be initialised before use, the same as a 1D
-array, and can hold real numbers, strings and constants, just like
-any other variable, making them ideal candidates for any game that
-needs to store large amounts of data in an easily accessible way
-(remember, you can loop through an array easily). Here is one final
-example of how this may be used in an actual game... Say you want
-to spawn four different enemies at four different points in your
-game depending on a random value. Well, we can use a 2D array to do
-this and save writing out a load of code.<br>
-<br>
-First we should initialize the array we are going to use in the
-create event of our "controller" object:<br>
+二维数组在使用前同样也需要初始化，和其它的变量一样，也可以存储实数、字符串和常量。在需要便捷地储存大量数据时，二维数组是一个理想的选择（记住，数组中循环非常方便）。实际游戏中怎么用呢，请看下面的你还子：假如你想在随机的位置产生四个不同的怪物。那么，我们可以像这样使用二维数组，相比其它的方式，节省了很多代码。<br><br>首先，我们应该在“控制器”物体的创建事件中初始化即将使用数组：<br>
 <br></p>
 
-<p class="code">enemy[3, 2] = 448; //y position<br>
-enemy[3, 1] = 32; //x position<br>
-enemy[3, 0] = obj_Slime; //Object<br>
-enemy[2, 2] = 448;<br>
-enemy[2, 1] = 608;<br>
-enemy[2, 0] = obj_Skeleton;<br>
-enemy[1, 2] = 32;<br>
-enemy[1, 1] = 608;<br>
-enemy[1, 0] = obj_Knight;<br>
-enemy[0, 2] = 32;<br>
-enemy[0, 1] = 32;<br>
-enemy[0, 0] = obj_Ogre;<br></p>
+<p class="code">enemy[3, 2] = 448; // y 坐标<br>enemy[3, 1] = 32; //x 坐标<br>enemy[3, 0] = obj_Slime; //物体<br>enemy[2, 2] = 448;<br>enemy[2, 1] = 608;<br>enemy[2, 0] = obj_Skeleton;<br>enemy[1, 2] = 32;<br>enemy[1, 1] = 608;<br>enemy[1, 0] = obj_Knight;<br>enemy[0, 2] = 32;<br>enemy[0, 1] = 32;<br>enemy[0, 0] = obj_Ogre;<br></p>
 
 <p><br>
-We now have the objects to spawn instances of and their
-corresponding x and y spawn coordinates within the room all stored
-in our array. This can now be used as follows in another event of
-the controller object (an alarm for example, or a key press
-event):<br>
+现在我们在数组储存的坐标对应的位置产生物体的实例。下面的代码可以在控制器的另外一个事件中使用（比如计时器，或者按键事件）。<br>
 <br></p>
 
-<p class="code">var i;<br>
-i = irandom(3); //get a random number from 0 to 4<br>
-instance_create(enemy[i, 1], enemy[i, 2], enemy[i, 0]); //Use the
-array to create the object<br></p>
+<p class="code">var i;<br>i = irandom(3); // 获取0-4的随机整数<br>instance_create(enemy[i, 1], enemy[i, 2], enemy[i, 0]); // 使用数组创建物体的实例<br></p>
 
 <p><br>
-That short code will now spawn a random enemy in the game room, and
-it uses far less code than an "if / then / else" structure or even
-a "switch", and as the array is initialized all together in the
-create event it is MUCH easier to edit and change any of those
-values as they are not hard-coded into the rest of the object
-codes. It is also worth noting that the length of each 2D array can
-be different, so you can have an array with a height of 2, but
-entry 0 could be 2 in length, entry 1 could be 4 in length and
-entry 2 could be 3 in length:<br>
+上面简短的代码将在游戏房间内产生随机的敌人，这比“if / then / else”结构甚至“switch”结构使用的代码更少。并且由于是统一写在创建事件中，编辑修改起来也更方便。同样值得注意的是，每一个二维数组的长度可以是不同的，所以你可以有一个数组的高度是2，但入口0的长度是2、入口1的长度是4，并且入口2的长度是3：<br>
 <br></p>
 
 <p class="code">array[0, 0] = 1;<br>
@@ -271,31 +158,14 @@ array[2, 0] = "1";<br>
 array[2, 1] = "2";<br>
 array[2, 2] = "3";<br></p>
 
-<h3>Advanced Array Functionality</h3>
+<h3>数组高级功能</h3>
 
-<p>Just like normal variables, you can pass arrays through to
-scripts to be used and then returned to the instance that called
-the script. To do this, you simply have to specify the array
-variable (no need for each of the individual entries, nor the []
-brackets) and the array will be passed by reference into the
-script. However, should you change any of the array values, the
-array will be copied into a temporary array just for the script.
-Note the use of the word <i>temporary</i> here! You are not
-actually passing the array itself into the script (as you would a
-variable), but instead you are requesting that the script create a
-<i>copy</i> of this array, which you will change in the script.
-This means that you <b>must always return the array</b> from the
-script if you wish to change any array values.<br></p>
+<p>就像普通的变量，你也可以传递数组到脚本中，并返回到调用这个脚本的实例中。做到这点，仅需指定指定变量数组（不需要每个入口独立传入）并作为脚本的一个参数。尽管如此，不管你是否更改了数组的值，这个数组都会复制一个临时的数组，以供这个脚本使用。注意这个词 <i>临时</i> ！你不是传递这个数组自身（数组变量），代替的是要求脚本创建这个数组的<i>拷贝（副本）</i>，脚本中可以随意更改。这也意味着，如果你想更改数组里的任何值，你 <b>必须在脚本中返回这个数组</b> 。<br></p>
 
-<blockquote><i><b>NOTE:</b> Due to the way that this works
-internally, passing arrays to scripts may affect performance,
-especially if the array is very large. So use this functionality
-with care!</i><br>
+<blockquote><i><b>注意：</b> 出于这个内在机制，向脚本传递数组将影响运行效率，尤其是数组非常大时。所以请谨慎使用此功能 ！</i><br>
 </blockquote>
 
-<p>As an example, consider the following code. First we create the
-array we want to use, and then we pass that array to the
-script:<br>
+<p>例如，考虑下面的代码。首先创建将要使用的数组，然后传递给脚本：<br>
 <br></p>
 
 <p class="code">for (var i = 9; i &gt; -1; i--;)<br>
@@ -306,7 +176,7 @@ script:<br>
 scr_Return_Array(a);<br></p>
 
 <p><br>
-The script itself is something simple like:<br>
+脚本内容：<br>
 <br></p>
 
 <p class="code">for (var i = 9; i &gt; -1; i--;)<br>
@@ -315,12 +185,7 @@ The script itself is something simple like:<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
 <p><br>
-Now you would expect the final array to hold the values 900, 800,
-700, etc... BUT this will not be the case, since we did <i>not</i>
-return the array from the script, so all we changed was the
-temporary copy that was created when we passed the array as an
-argument into the script. To rectify this we should have formatted
-the code as follows:<br>
+现在你期望最后的数组保存的值是900、 800、 700、等等……但并不是这种情况，既然我们<i>没有</i>从脚本中返回数组，所有改变都只是数组作为参数传递给脚本时创建的临时副本，而不是参数中的数组。为纠正这一点，重写代码如下：<br>
 <br></p>
 
 <p class="code">for (var i = 9; i &gt; -1; i--;)<br>
@@ -331,7 +196,7 @@ the code as follows:<br>
 a = scr_Return_Array(a);<br></p>
 
 <p><br>
-And the script should now look like this:<br>
+脚本这样写：<br>
 <br></p>
 
 <p class="code">for (var i = 9; i &gt; -1; i--;)<br>
@@ -341,44 +206,26 @@ And the script should now look like this:<br>
 <br>
 return argument0;<br></p>
 
-<blockquote><i><b>NOTE:</b> The above is <b>not</b> necessary if
-you are not changing any of the array values, but rather simply
-referencing them. Referencing an array will not copy it and be
-faster to parse.</i>
+<blockquote><i><b>注意：</b> 如果不更改数组的值， <b>没有</b> 必要那写，仅需要引用即可。引用一个数组更快，它不是会复制。</i>
 </blockquote>
 
-<p>You can also delete an array simply by "re-assigning" the
-variable that defines it to a single value. This will free up the
-memory associated with all the entries and values for that array.
-For example:<br>
+<p>删除一个数组仅需要对定义它的变量重新赋予一个值。这会释放数组所有数据关联的内存。比如：<br>
 <br></p>
 
-<p class="code">//Create the array for (var i = 9; i &gt; -1;
-i--;)<br>
-&nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;a[i] = i;<br>
-&nbsp;&nbsp;&nbsp;}<br>
-//Delete the array a = 0;</p>
+<p class="code"> for (var i = 9; i &gt; -1; i--;)  // 创建数组<br>&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;a[i] = i;<br>&nbsp;&nbsp;&nbsp;}<br> a = 0; //删除数组</p>
 
-<p>It is also worth noting that you can use the accessor <tt>@</tt>
-to reference an array from a script and change its values directly,
-which saves the CPU overhead of having it copied into the script.
-You can find out more information on accessors and how they work,
-along with an example for arrays, from the following page:</p>
+<p>值得注意的是，你可以使用访问器 <tt>@</tt> 在脚本中引用并直接更改数组的值，这样可以节省将数组复制到脚本中的CPU开销。关于它的用法，访问器这一节可以找到更多的信息和数组的例子，详情访下面的页面：</p>
 
 <blockquote>
 <ol>
-<li><a href="Accessors.html">Accessors</a>
+<li><a href="Accessors.html">访问器</a>
 </li>
 </ol>
 </blockquote>
 
-<h3>Array Functions</h3>
+<h3>数组函数</h3>
 
-<p>There are a few functions associated with the use of arrays too.
-These are designed to give you flexibility in your code, and will
-permit you to create more functional and dynamic arrays when making
-your games. These functions are:</p>
+<p>下面有一些数组相关的函数。允许你在代码设计中更有弹性，在制作游戏中更好的创建功能强大的动态数组。这些函数是：</p>
 
 <blockquote>
 <ol>
@@ -400,14 +247,13 @@ your games. These functions are:</p>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">GML
-Overview</a></div>
+<div style="float:left">返回: <a href="index.html">GML 概述</a></div>
 
-<div style="float:right">Next: <a href=
-"401_16_functions.html">Functions</a></div>
+<div style="float:right">下一页t: <a href=
+"401_16_functions.html">函数</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -416,16 +262,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

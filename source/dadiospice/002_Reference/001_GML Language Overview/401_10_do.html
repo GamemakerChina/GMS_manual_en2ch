@@ -2,12 +2,12 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>The "Do" Statement</title>
+<title>do 语句</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../style.css" type="text/css"
 media="screen" title="style" charset="utf-8">
@@ -23,26 +23,20 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/001_GML Language Overview/401_
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_10_do.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_10_do.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
 
-<h1>The "Do" Statement</h1>
 
-<h2>Here you can learn about the "do" statement.</h2>
+<h1>do 语句</h1>
 
-<p>A "do" is really the "do... until" statement as you cannot have
-one without the other. It has this form:<br>
+<h2>这一节将学习“do”语句。</h2>
+
+<p>“do”也就是“do... until”，缺一不可。结构如下：<br>
 <br></p>
 
-<p class="code">do &lt;statement&gt; until (&lt;expression&gt;)</p>
+<p class="code">do &lt;语句&gt; until (&lt;表达式&gt;)</p>
 
 <p><br>
-The statement (which can also be a code block) is executed until
-the expression is found true, and the initial statement is always
-executed at least once. Be careful with your do loops, as you can
-easily make them loop forever, in which case your game will hang
-and not react to any user input anymore. Below you can find an
-example of a typical way to use "do... until":<br>
+语句（也可以是代码块）会一直运行直到表达式为真，至少会运行一次。注意这是一个循环，可能会出现死循环，游戏将会挂起不响应输入。下面是“do... until”的一个经典例子：<br>
 <br></p>
 
 <p class="code">{<br>
@@ -54,23 +48,19 @@ do<br>
 until (place_free(x, y)); }<br></p>
 
 <p><br>
-The above program tries to place the current object at a free
-position (this is about the same as the action to <a href=
-"../../000_Using%20GameMaker/Actions/000_Move%20actions.html">move
-an object to a random position</a>).</p>
+上述代码尝试去在一个空闲位置放置当前的实例（这和动作 <a href=
+"../../000_Using%20GameMaker/Actions/000_Move%20actions.html">移动物体至随机位置</a>结果相似）。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">GML
-Overview</a></div>
+<div style="float:left">返回: <a href="index.html">GML 概述</a></div>
 
-<div style="float:right">Next: <a href="401_11_for.html">The "For"
-Statement</a></div>
+<div style="float:right">下一页: <a href="401_11_for.html">“For”语句</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -79,16 +69,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

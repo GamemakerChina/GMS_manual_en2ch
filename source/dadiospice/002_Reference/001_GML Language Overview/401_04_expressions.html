@@ -2,12 +2,12 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Expressions</title>
+<title>表达式</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../style.css" type="text/css"
 media="screen" title="style" charset="utf-8">
@@ -23,29 +23,19 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/001_GML Language Overview/401_
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_04_expressions.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_04_expressions.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
 
-<h1>Expressions</h1>
 
-<h2>This section deals with the different mathematical
-expressions.</h2>
+<h1>表达式</h1>
 
-<p>Expressions can be real numbers (e.g. 3.4), hexadecimal numbers
-starting with a $ sign (e.g. $00FFAA), strings between single or
-double quotes (e.g. 'hello' or "hello") or more complicated
-expressions. For expressions, the following operators exist (in
-order of priority):<br>
+<h2>这一节集中讲述了不同的数学表达式。</h2>
+
+<p>表达式可以是实数数字（比如3.4），或者“$”开始的十六进制数字（$00FFAA），或者是单引号、双引号之间的字符串（'hello'或者"hello"者），或者更复杂的表达式。对于表达式，有下面这些运算符（以优先度排序）：<br>
 <br></p>
 
-<h2>Assigning</h2>
+<h2>赋值运算符</h2>
 
-<p><b>=</b> - Used to assign a value to a variable. Note that this
-can <i>also</i> be used for comparing variables in <i>GameMaker:
-Studio</i> and you may see this in examples and other peoples
-codes. However, this is a legacy from old <i>GameMaker</i> versions
-and you should use the <b>==</b> operators for comparing and
-<b>=</b> for assigning, as shown in these examples:<br>
+<p><b>=</b> - 用来给一个变量赋值。注意，你 <i>也</i> 可以用它 <i>&gt;在GameMaker: Studio</i>中比较变量的大小，这个你可能会在例子里和其它人的代码中看到。然而，这是 <i>GameMaker</i> 老版本遗留下来的，比较运算还是应该使用 <b>==</b> 运算符，以及赋值使用 <b>=</b> ，举例如下：<br>
 <br></p>
 
 <p class="code">a = 12; speed = 5; val = (old_val + 5);</p>
@@ -55,56 +45,42 @@ and you should use the <b>==</b> operators for comparing and
 </blockquote>
 <br>
 
-<h2>Combining</h2>
+<h2>逻辑运算符</h2>
 
-<p><b>&amp;&amp;, ||, ^^ (and, or and xor)</b> - Combine Boolean
-values to give either true or false. If any of the following
-examples resolves to <tt>true</tt> then the code would be run:</p>
+<p><b>&amp;&amp;, ||, ^^（与、或和异或）</b> - 将两个布尔值结合在一起判断是真还是否。如果下面的例子得出 <tt>true</tt> ，“{}”里面的代码将会执行。</p>
 
-<p class="code">if (a == b &amp;&amp; c == d) {do something...}//
-and<br>
-if (a == b || c ==d) {do something...}// or<br>
-if (a == b ^^ c == d) {do something...} // xor<br></p>
+<p class="code">if (a == b &amp;&amp; c == d) {do something...} //  与<br>if (a == b || c ==d) {do something...} // 或<br>if (a == b ^^ c == d) {do something...} // 异或<br></p>
 
 <blockquote>
 <hr>
 </blockquote>
 <br>
 
-<h2>Comparing</h2>
+<h2>比较运算符</h2>
 
-<p><b>&lt;, &lt;=, ==, !=, &gt;, &gt;=</b> - These are comparisons
-and can only give a <tt>true</tt> or <tt>false</tt> result (where
-true can also be interpreted as 1, and false as 0). Examples of
-use:</p>
+<p><b>&lt;, &lt;=, ==, !=, &gt;, &gt;=</b> - 这些都是比较运算，且只会得出 <tt>true</tt> 或者 <tt>false</tt> 的结果（true = 1，false = 0）。使用的例子：</p>
 
-<p class="code">if (a &lt; b) {do something...}<br>
-if (a != b) {do something...}<br></p>
+<p class="code">if (a &lt; b) {做些什么...}<br>if (a != b) {做些什么...}<br></p>
 
 <blockquote>
 <hr>
 </blockquote>
 <br>
 
-<h2>Bitwise</h2>
+<h2>位运算符</h2>
 
-<p><b>|, &amp;, ^, &lt;&lt;, &gt;&gt;</b>: You can perform bitwise
-operations with these, where | = bitwise or, &amp; = bitwise and, ^
-= bitwise xor, &lt;&lt; = shift left, &gt;&gt; = shift right.
-Examples of use:</p>
+<p><b>|, &amp;, ^, &lt;&lt;, &gt;&gt;</b>：你可以使用这些进行位运算， | = 位运算“或”，&amp; = 位运算“与”， ^ = 位运算“异或”， &lt;&lt; = 左移， &gt;&gt; = 右移。使用的例子：</p>
 
-<p class="code">x = (x &amp; $ffffffe0) + 32;<br>
-if (y ^ $1f) &gt; 0 {do something...};<br></p>
+<p class="code">x = (x &amp; $ffffffe0) + 32; // 括号中的运算会将变量偏移为32、64、128等2的倍数，详见 http://wiki.gamemake.org/index.php?doc-view-6  <br>if (y ^ $1f) &gt; 0 {做些什么...}; // <br></p>
 
 <blockquote>
 <hr>
 </blockquote>
 <br>
 
-<h2>Arithmetical</h2>
+<h2>算术运算</h2>
 
-<p><b>+, -, *, /</b> - Add, subtract, multiply and divide. Examples
-of use:</p>
+<p><b>+, -, *, /</b> - 加，减，乘和除。使用的例子：</p>
 
 <p class="code">c = a * b;<br>
 str = a + "world";<br></p>
@@ -114,53 +90,39 @@ str = a + "world";<br></p>
 </blockquote>
 <br>
 
-<h2>Increment/Decrement</h2>
+<h2>递增/递减</h2>
 
-<p><b>++, --</b> - Add or subtract <i>one</i> from a value. It is
-worth noting that placing this before or after the value to be
-added to or subtracted from will have slightly different results.
-For example:</p>
+<p><b>++, --</b> - 递加或递减<i>一</i>。值得注意的是在值之前或之后使用这个运算符结果稍微有些不同。比如：</p>
 
 <ul>
-<li><b>++a</b> will increment the variable and return the
-incremented value.</li>
+<li><b>++a</b> 递增变量并返回增加后的值。</li>
 
-<li><b>a++</b> will increment the variable but return the value
-before it was incremented.</li>
+<li><b>a++</b> 递增变量但是返回增加前的值。</li>
 </ul>
 
-<p>Therefore, if you have something like this:</p>
+<p>因此，如果代码这样写：</p>
 
 <p class="code">var a = 1;<br>
 show_debug_message(string(a++));<br>
 show_debug_message(string(++a));<br></p>
 
-<p>The debug output would be 1 and 3. Here are some examples of
-use:</p>
+<p>调试输出将会有1和3。这里还有一些使用的例子：</p>
 
-<p class="code">for (var i = 0; i &lt; 10; i++;) {do
-something...};<br>
-if hit == true score--;<br></p>
+<p class="code">for (var i = 0; i &lt; 10; i++;) {做些什么...};<br>if hit == true score--;<br></p>
 
-<blockquote><i><b>NOTE:</b> On the YoYo Compiler target platforms
-(those marked (YYC)), these expressions are evaluated from left to
-right, while on all other target platforms they are evaluated from
-right to left, meaning that this:</i>
+<blockquote><i><b>注意：</b> 在YYC目标平台（即标记YYC的目标平台），这些表达式是从左到右进行求值的，而在其它目标平台可能会是从右到左，这意味着：</i>
 <p class="code"><i>val = max(num, ++num, num++);<br></i>
 </p>
-will give different results depending on the platform.</blockquote>
+根据平台不同可能会得出不同的结果。</blockquote>
 
 <blockquote>
 <hr>
 </blockquote>
 <br>
 
-<h2>Division and Modulo</h2>
+<h2>整除与取模（求余）</h2>
 
-<p><b>div, mod (%)</b> - Division and modulo, where div gives you
-the amount a value can be divided into in whole numbers with no
-remainders, while mod gives you only the remainder of a division.
-Examples of use:</p>
+<p><b>div, mod (%)</b> - 整除和取模（求余），“x div y” 的运算是给定两个值相除获取一个整数的商，而 mod 操作符返回其两个操作数相除的余数（GM文档：也就是说，x mod y = x - (x div y) * y ）。使用的例子：</p>
 
 <p class="code">secs = time mod 60;<br>
 time_str = string(time div 60);<br></p>
@@ -170,18 +132,17 @@ time_str = string(time div 60);<br></p>
 </blockquote>
 <br>
 
-<h2>Unary</h2>
+<h2>一元运算符</h2>
 
-<p>Also, the following unary operators exist:</p>
+<p>还存在以下一元运算符：</p>
 
 <blockquote>
 <ul>
-<li><b>! (not)</b>: not, turns true into false and false into
-true</li>
+<li><b>!(not)</b>: 否，“true”转换为“false”，“false”转换为“true”。</li>
 
-<li><b>-</b>: negates the next value</li>
+<li><b>-</b>: 取相反数，比如“a = 100; b = -a;  // b = -100;” </li>
 
-<li><b>~</b>: negates the next value bitwise</li>
+<li><b>~</b>: 按位取反（1变0，0变1），详见度娘查询“按位取反”。</li>
 </ul>
 </blockquote>
 
@@ -190,57 +151,29 @@ true</li>
 </blockquote>
 <br>
 
-<h3>Summary</h3>
+<h3>总结</h3>
 
-<p>As values in all expressions you can use numbers, variables, or
-functions that return a value, and sub-expressions can be placed
-between brackets too. All operators work for real values, but
-comparisons also work for strings and + concatenates strings.<br>
-<br>
-When doing multiple operations in a single expression, it is
-<b>very important</b> that you use brackets () to separate out the
-order of operation, as different platforms may perform them
-differently if nor explicitly stated in this way. For example,
-consider the following code:</p>
+<p>表达式的值可以使用数字、变量，或者有返回值的函数，子表达式放在括号里面。所有运算符都是为实数工作的，但是比较运算符也可以比较字符串，并且 + 号可以连接字符串。<br><br>当一个表达式做多项运算时，使用括号“()”分离出运算顺序，这将 <b>非常重要</b>，如果没有明确的用这种方法表明，不同的平台执行上可能会有所不同。和gm不同，GMS可以在全局游戏设定（Global Game Setting）中开启短路求值（Short-Circuit evaluations）。例如，考虑下面的代码：</p>
 
 <p class="code">a = b == c || d;<br></p>
 
-<p>The different target compilers will perform the operations in
-different orders since they are not explicitly shown, giving rise
-to "odd" results that you may not expect when you play your game.
-to avoid this, use the () to separate out the parts, like this:</p>
+<p>不同平台的编译器用不同的顺序执行运算，如果没有明确体现，可能会导致得出一个奇怪的结果，而影响游戏的体验。为避免这种情况，使用“()”括号隔开不同的部分，像这样：</p>
 
-<p class="code">a = (b == c || d); //better<br>
-a = ((b == c) || d); //best<br></p>
+<p class="code">a = (b == c || d); //这样更好<br>a = ((b == c) || d); //最好是这样<br></p>
 
 <p><br>
 <br>
-Here are some final examples of the various different
-expressions:</p>
+对于不同的表达式，最后还有一些例子以供参考：</p>
 
-<p class="code">{<br>
-x = 23;<br>
-colour = $FFAA00;<br>
-str = 'hello world';<br>
-y += 5;<br>
-x *= y;<br>
-x = y &lt;&lt; 2;<br>
-x = 23 * ((2 + 4) / sin(y));<br>
-str = 'hello' + " world";<br>
-b = (x &lt; 5) &amp;&amp; !(x==2 || x==4);<br>
-}<br></p>
+<p class="code">{<br>x = 23; // x 将勇敢的等于23，不是233<br> colour = $FFAA00; // 十六进制经常用来还你颜色，具体颜色用在线工具查看，ps当然也可以<br>str = 'hello world'; // 世界：“你好，程序员，单引号，双引号里面的东西我都能识别。”<br>y += 5; // 等同于 y = y + 5; 等同于将“ y ++”执行五次。 <br>x *= y; // x腥等鱼歪，等同于 x = x * y; <br>x = y &lt;&lt; 2; // 比如y = 100; 二进制数是 “1100100”，左移两位是“110010000”，转成十进制是400。每左移一位多乘一次2。 <br>x = 23 * ((2 + 4) / sin(y));<br>str = 'hello' + " world";<br>b = (x &lt; 5) &amp;&amp; !(x==2 || x==4);<br>}<br></p>
 
-<h3>Accessors</h3>
+<h3>访问器</h3>
 
-<p>There are also expression "short-cuts" called <b>accessors</b>
-for use with certain Data Structures, which enable you to add, or
-replace data within these formats quickly and easily and without
-the use of any function calls. For full details, please see the
-following page:</p>
+<p>这些是表达式的“捷径”，叫做 <b>访问器</b> ，用于某些特定的数据结构，通过这些格式快捷地添加、替换数据，无需调用数据结构的函数。详情请见以下页面：</p>
 
 <blockquote>
 <ol>
-<li><a href="Accessors.html">Accessors</a><br>
+<li><a href="Accessors.html">访问器</a><br>
 </li>
 </ol>
 </blockquote>
@@ -249,14 +182,12 @@ following page:</p>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">GML
-Overview</a></div>
+<div style="float:left">返回: <a href="index.html">GML 概述</a></div>
 
-<div style="float:right">Next: <a href="401_07_if.html">The "If"
-Statement</a></div>
+<div style="float:right">下一页: <a href="401_07_if.html">“if”语句</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -265,16 +196,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>
