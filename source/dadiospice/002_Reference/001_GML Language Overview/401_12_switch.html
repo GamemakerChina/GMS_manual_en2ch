@@ -2,12 +2,12 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>The "Switch" Statement</title>
+<title>switch 语句</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../style.css" type="text/css"
 media="screen" title="style" charset="utf-8">
@@ -23,54 +23,32 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/001_GML Language Overview/401_
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_12_switch.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_12_switch.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
 
-<h1>The "Switch" Statement</h1>
 
-<h2>This section deals with the uses of "switch" in <i>GameMaker:
-Studio</i>.</h2>
+<h1>switch 语句</h1>
 
-<p>In a number of situations you want to let your instances
-complete an action depending on a particular value. You can do this
-using a number of consecutive <a href="401_07_if.html">"if"</a>
-statements but when the possible choices gets above two or three it
-is usually easier to use the "switch" statement. A switch statement
-has the following form:<br>
+<h2>这一节讨论 <i>GameMaker: Studio</i>里“switch”的用法。</h2>
+
+<p>很多情况下，你想要实例根据一个特定值完成一个动作。通常可以使用多个连续的 <a href="401_07_if.html">"if"</a> 语句，但如果选项在两、三个以上时，“switch”语句使用起来更容易。switch语句结构如下：<br>
 <br></p>
 
-<p class="code">switch (&lt;expression&gt;)<br>
-{<br>
-case &lt;expression1&gt;: &lt;statement1&gt;; ... ; break;<br>
-case &lt;expression2&gt;: &lt;statement2&gt;; ... ; break;<br>
-...<br>
-default: &lt;statement&gt;;<br>
-}<br></p>
+<p class="code">switch (&lt;表达式&gt;)<br>{<br>case &lt;expression1&gt;: &lt;statement1&gt;; ... ; break;<br>case &lt;expression2&gt;: &lt;statement2&gt;; ... ; break;<br>...<br>default: &lt;statement&gt;;<br>}<br></p>
 
 <p><br>
-This works as follows:</p>
+工作流程如下：</p>
 
 <ul>
-<li>First the expression is executed.</li>
+<li>首先括号里面的运行表达式</li>
 
-<li>Next it is compared with the results of the different
-expressions after each of the case statements.</li>
+<li>下一步与case后面的表达式的结果进行比较。</li>
 
-<li>The execution continues after the first case statement with the
-correct value, <i>until a break statement is encountered</i>.</li>
+<li>遇到第一个正确的值后运行会继续，<i>直到出现一个“break”语句。</i>.</li>
 
-<li>If no case statement has the right value, execution is
-continued after the default statement (it is not required to have a
-default statement, in which case no action will be taken).</li>
+<li>如果没有一个case表达式正确，将会在“default”语句后继续（default并非必须，那时没有动作执行）。</li>
 </ul>
 
-<p>Note that multiple case statements can be placed for the same
-statement. Also, the break is not required, and if there is no
-break statement the execution simply continues with the code for
-the next case statement. This means that you can create a hierarchy
-"switch" in which different sections of code are run depending on
-the input value. here is an example of a typical "switch" from a
-game:<br>
+<p>注意，同一个语句前可以出现多个case。同样，“break”也不是必须的，没有它时，简单的继续到下一个case语句。这意味着你可以创建一个分层的“开关”，根据输入值运行不同部分的代码。下面是游戏中的“switch”典型用法：<br>
 <br></p>
 
 <p class="code">{<br>
@@ -96,28 +74,19 @@ switch (keyboard_key)<br>
 }<br></p>
 
 <p><br>
-The above code uses "switch" to check for a keyboard event and then
-compares that to the cases listed. If it meets any of the required
-values then the corresponding code is executed. Note how in the
-code we have used the way that "switch" can check multiple cases
-and continue if no break is encountered to permit various keys to
-be used to get the same result. This is just one of the ways that
-you can permit multiple configurations for movement in your
-games.<br>
+上述代码使用“switch”检测键盘事件，然后和条件列表比较。遇到了适当的条件后运行相应的代码。注意代码中怎么用的，“switch”可以检测多个条件，如果没有“break”就会继续，以允许多个按键得到相同的结果。这仅是允许多个设置处理移动的一种方法。<br>
 <br></p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">GML
-Overview</a></div>
+<div style="float:left">返回: <a href="index.html">GML 概述</a></div>
 
-<div style="float:right">Next: <a href="401_13_break.html">The
-"Break" Statement</a></div>
+<div style="float:right">下一页: <a href="401_13_break.html">“Break”语句</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -126,16 +95,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

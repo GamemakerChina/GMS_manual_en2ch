@@ -2,12 +2,12 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Scripts</title>
+<title>脚本</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../style.css" type="text/css"
 media="screen" title="style" charset="utf-8">
@@ -23,82 +23,35 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/001_GML Language Overview/401_
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_17_scripts.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_17_scripts.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
 
-<h1>Scripts</h1>
 
-<h2>Scripts are an important part of GML and this section explains
-their use.</h2>
+<h1>脚本</h1>
 
-<p>When you create a script, you want to access the arguments
-passed to it, either when using the script action, or when calling
-the script as a function from a program (or from another script).
-These arguments are stored in the <i>built in</i> variables
-<tt>argument0</tt>, <tt>argument1</tt>, ..., etc... up to
-<tt>argument15</tt>. So there can be at most 16 arguments passed
-through to a script when called from code, and if you are using the
-script D'n'D action then only the first 5 arguments can be
-specified.<br>
-<br>
-When using the <tt>argument0...15</tt> variables for a script, you
-must ensure that the script uses all the supplied arguments. For
-example if you have a script that takes two arguments and you only
-supply one then you will get an error for that script. The same
-goes if you supply more arguments than you require. However you can
-supply a variable number of arguments to a script using the
-<i>built in</i> argument array, <tt>argument[0 ... 15]</tt>. When
-passing in arguments as an array of values you can use <a href=
-"argument_count.html"><tt>argument_count</tt></a> to find out how
-many there are and adapt the script to use only those arguments
-supplied.</p>
+<h2>脚本是GML的重要部分，这一节使用它们的使用。</h2>
 
-<blockquote><i><b>NOTE:</b> You cannot mix the two types of
-argument variables when calling a script. You must use
-<b>either</b> <tt>argument0...15</tt> <b>or</b>
-argument[0...15]</i>.</blockquote>
+<p>当你在他j建一个脚本，你或者想向它传递参数，或者使用脚本动作，或者在程序中调用脚本（或者其它脚本中）。这些函数储存在 <i>内置</i> 变量 <tt>argument0</tt>、 <tt>argument1</tt>、 ……等等里面，最大 <tt>argument15</tt>。所以代码中调用的时候最多可以传递16个参数，如果使用脚本D'n'D动作，只能指定前面的5个参数。<br><br>在脚本使用<tt>argument0...15</tt>变量，你必须确保这个脚本使用了所有指定的参数。比如你有一个脚本需要两个参数，而你只是提供了一个参数，这样就会报错。同时，提供的参数数量超过需要的也会报错。而且你也可以使用<i>内置</i>参数数组提供许多参数， 他们是 <tt>argument[0 ... 15]</tt>。当使用参数数组的形式传递参数，你可以使用 <a href=
+"argument_count.html"><tt>argument_count</tt></a>得知使用了多少个参数，从而自动适应只使用传入的参数（即可选参数）。</p>
 
-<p>Scripts can also return a value, so that they can be used in
-expressions. For this end you use the return statement:</p>
+<blockquote><i><b>注：</b> 两种参数形式不能混用。你必须 <b>要么</b> 使用<tt>argument0...15</tt> <b>，要么使用</b> argument[0...15]</i>。</blockquote>
 
-<p class="code">return &lt;expression&gt;</p>
+<p>脚本也可以返回值，所以可以在表达式中使用。为了这个目的，使用“return”语句：</p>
+
+<p class="code">return &lt;表达式&gt;</p>
 
 <p><br>
-It should be noted that the execution of the script ends at the
-return statement, meaning that any code which comes after the
-return has been called <i>will not be run</i>. Here is a short
-example script called "scr_sqr" which calculates the square of
-whatever value is passed to it, and it includes error catching in
-case the argument that it is passed is not a real number:<br>
+应该注意的是“return”语句将结束脚本运行，意味着任何它之后的语句代码<i>将不会运行</i>。下面是一个简单的例子，设计了一个脚本“scr_sqr”用来计算正方形的面积，可以向它传递任何参数，它包含一个错误捕捉，如果传递的不是实例将会跳出：<br>
 <br></p>
 
-<p class="code">{<br>
-if !is_real(argument0)<br>
-&nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;return 0;<br>
-&nbsp;&nbsp;&nbsp;}<br>
-else<br>
-&nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;return (argument0 * argument0);<br>
-&nbsp;&nbsp;&nbsp;}<br>
-}</p>
+<p class="code">{<br>if !is_real(argument0) // 如果不是实数<br>&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;return 0; // 在这里跳出<br>&nbsp;&nbsp;&nbsp;}<br>else<br>&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;return (argument0 * argument0); // 正常的计算面积<br>&nbsp;&nbsp;&nbsp;}<br>}</p>
 
 <p><br>
-To call a script from within a piece of code, just act the same way
-as when calling functions - that is, write the script name with the
-argument values in parentheses. So, the above script would be
-called like this:<br>
+在一个代码块中调用脚本就像调用函数一样 - 使用脚本的名字，括号内填写参数的值。所以，上面的脚本这样使用：<br>
 <br></p>
 
-<p class="code">if keyboard_check_pressed(vk_enter)<br>
-&nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;val = scr_sqr(amount);<br>
-&nbsp;&nbsp;&nbsp;}<br></p>
+<p class="code">if keyboard_check_pressed(vk_enter) // 检测回车键<br>&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;val = scr_sqr(amount);  // 传递变量amount，返回值赋值给val<br>&nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>It is sometimes necessary for you to know how many arguments
-that a script has been passed from the code that calls it, and so
-<i>GameMaker: Studio</i> also provides the following
-<b>read-only</b> variable for this:</p>
+<p>有时候，知道向脚本中传递了多少个参数是非常有必要的，<i>GameMaker: Studio</i>也提供了下面的<b>只读</b>变量来获取这个值：</p>
 
 <blockquote>
 <div style="margin-left: 2em"><a href=
@@ -108,22 +61,20 @@ that a script has been passed from the code that calls it, and so
 
 <p><br>
 <br>
-For more information on scripts please see <a href=
-"../../001_Advanced%20Use/006_Scripts.html">Advanced Use -
-Scripts</a>.</p>
+更多关于脚本的内容将查阅<a href=
+"../../001_Advanced%20Use/006_Scripts.html">高级使用 - 脚本</a>.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">GML
-Overview</a></div>
+<div style="float:left">返回: <a href="index.html">GML 概述</a></div>
 
-<div style="float:right">Next: <a href=
-"401_19_comment.html">Comments in Code</a></div>
+<div style="float:right">下一页: <a href=
+"401_19_comment.html">脚本注释Comments in Code</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -132,16 +83,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>
