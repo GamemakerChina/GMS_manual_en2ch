@@ -1,0 +1,90 @@
+Version 1.4
+by
+YoYo Games Ltd.
+Welcome to the GameMaker: Studio user manual!
+This document is divided into three parts with the aim of getting you introduced to the interface and basic workings of GameMaker: Studio before going on to more advanced usage and the functions available through GML (the GameMaker Language ).
+New users should definitely start at the beginning with the Using GameMaker: Studio section as it has all the information you need to get started as quickly as possible, however users of previous GameMaker versions can probably skip to the Advanced Use section to see what's new in this version.
+Whatever your skill level, we hope that this manual helps you to realise the true power within GameMaker: Studio and make your gaming dreams become reality!
+NOTE: Due to the modular nature of GameMaker: Studio there are certain things that are not included in the manual, particularly those aspects of setting up and connecting the different devices that can be supported.
+For up-to-date information and troubleshooting hints and tips, please see the YoYo Games Knowledge Base .
+Using GameMaker: Studio
+This section describes the basic use of GameMaker: Studio , explaining the idea behind the program and describing how to add sprites, backgrounds and sounds.
+It also covers how to define objects with events and actions, and how to add them into the rooms that you design.
+Please note that the availability of certain tools and the number of certain resources that you can create may be restricted depending on the version of GameMaker: Studio that you use (more information can be found here ).
+The following sections exist to help get you started:
+Introduction
+Installation
+Activation
+GameMaker: Studio Overview
+The Graphical User Interface
+Loading Sprites
+Sounds And Music
+Backgrounds
+Defining Objects
+Events
+Actions
+Creating Rooms
+Distributing Your Game
+Advanced Use
+The GameMaker: Studio IDE (integrated development environment) has a number of advanced options that are of great importance if you wish to get the most out of the product.
+These options include source control integration, project configurations, advanced debugging and a number of extra tools for changing and manipulating the game assets (please note that the availability of some of these advanced tools will depend on the version of GameMaker: Studio that you currently use).
+This section of the manual is split into the following three parts, each with its own subsection dealing with one particular aspect of the IDE:
+Game Assets More About Sprites
+More About Backgrounds
+More About Objects
+More About Rooms
+More About Async Events
+Resource Editors Fonts
+Paths
+Time Lines
+Scripts
+Shaders
+Constants
+Including Files
+Importing Resources
+Game Settings Extension Packages
+Configurations
+Source Control
+Global Game Settings
+GameMaker: Studio Preferences
+Debugging
+Reference
+Here you can find references for many of the GameMaker: Studio features, as well as a rundown of all of the functions, variables and constants that make up the built-in programming language.
+This language gives you much more flexibility and control over your games than the standard actions and we will refer to it as GML (the GameMaker Language).
+You can find descriptions of all the functions available in GML as well as an overview of how they can be used along with examples of code using them.
+We also cover the constants and variables that GML has available to control all aspects of your game.
+This section contains an overview of the GameMaker Language, with the rules for structure and syntax, as well as examples of how to use expressions and different operations:
+GML Overview
+The following sections all detail the many different functions that are available to you when using GML.
+They have been split into different groups of associated functions and, where necessary, have been cross-referenced with related functions and sections.
+Real Numbers And Strings Date and Time
+Maths
+Strings
+Game Play Game Assets
+Mouse, Keyboard and Other Controls
+Movement and Collisions
+Objects and Instances
+Drawing And Display Drawing
+Shaders
+Surfaces
+The Display, Windows And Views
+Advanced Functions Data Structures
+Particles
+Physics
+File Handling
+Operating System
+Buffers
+Networking
+Platform Specific HTML5
+Windows 8
+Social Gaming
+In App Purchases
+Push Notifications
+Asynchronous
+Cloud Services
+Steam API
+Extras Debugging
+Miscellaneous
+Obsolete Functions
+© Copyright YoYo Games Ltd.
+2014 All Rights Reserved Converted from CHM to HTML with chm2web Pro 2.85 (unicode)

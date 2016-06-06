@@ -1,0 +1,82 @@
+music	音乐	音乐和声音(sound)不同，音乐一般指背景音乐，声音包含音乐和音效。
+sounds	声音
+objects	物体	对象或者物体，统一用物体这种表达。
+Player	玩家	个别情况也指玩家市场，如GMS Player市场
+Workshop	创意工坊
+Actions	动作	也指行为，在此特指事件中的动作。涉及到游戏中角色的内容，根据情况译为“行为”
+Versions	版本
+rooms	房间	游戏运行的场景，放置物体的房间。
+assets	资产	game assets 游戏资产
+Surfaces	表面层	表面意义冲突，或者表面图层太长，取中间表面层。
+Masks	遮罩
+Global Game Settings	全局游戏设定
+target platform	目标平台	target platform
+application surface	应用表面层	也称为AS表面
+Steam Workshop	steam 创意工坊
+Create Event	创建事件
+Destroy Event	摧毁事件
+Alarm Events	时钟事件
+Step Events	步事件
+Collision Event	碰撞事件
+Keyboard Events	键盘事件
+Other Events	其他事件
+Draw Event	绘制事件
+Asynchronous Events	异步事件
+Move Actions	运动动作
+Main Actions, Set 1	主动作集1
+Main Actions, Set 2	主动作集2
+Control Actions	控制动作
+Score Actions	分数动作
+Extra Actions	额外动作
+Draw Actions	绘制动作
+Variables	变量
+Expressions	表达式
+Settings	设置
+Backgrounds	背景
+Game Information	游戏信息
+Advanced Use	高级使用 
+YoYo Games Helpdesk	YoYo Games 服务台 
+Modules	模块
+Emulator	模拟器
+Constant	常量	也可翻译为常数。
+Next	下一页
+Back	返回
+instance	实例
+Import	导入
+Demos	演示
+Tutorials	教程
+Resource Tree	资源树
+Toolbar	工具栏
+project	工程
+Workspace	工作区
+Audio Groups	音频组
+Compression	压缩
+Timelines	时间轴	意同时间线，统一译为时间轴。
+Immersion Haptics	触觉反馈	这种反馈一般是振动。
+Maps	配对,映射	作为数据是配对数据，作为按键是按键映射。
+Streaming	流
+Quality	品质
+Volume	音量
+tiles	磁贴
+tile	磁贴
+Persistent	持续
+parents	父对
+Visible	可见
+Solid	固体
+Depth	深度
+Physics	物理
+Tab	选项卡
+views	视野	作为菜单用是视图，GMS中包括房间设置中一般译为视野。
+working directory	工作目录
+DS Grids	栅格结构
+data	数据
+structures	结构
+Configurations Manager	配置管理器
+texture group	纹理分组
+path	路径
+path editor	路径编辑器
+Time Lines	时间轴
+Scripts	脚本
+Key Bindings	热键设定
+viewport	视口	房间视野区域的内容输出到屏幕的区域。
+accessors	访问器
