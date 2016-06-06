@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>display_mouse_get_x</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Windows And Views/display_mouse_get_x.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2Fdisplay_mouse_get_x.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2Fdisplay_mouse_get_x.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script><!-- !chm2web! -->
+
+
+<h1>display_mouse_get_x</h1>
+
+<h2>返回鼠标相对于显示器的x坐标。</h2>
+
+<h3><b>语法：</b>
+</h3>
+
+<p class="code">display_mouse_get_x();</p>
+
+<p><br>
+</p>
+
+<p><b>返回：</b> 实数</p>
+
+<p><br>
+</p>
+
+<h3><b>描述</b>
+</h3>
+
+<p>这个函数返回 <i>屏幕</i>上鼠标指针的x坐标。应该注意的是，这个函数只在windows平台有效。当然HTML5也可以一用，但只是返回<i>相对于</i>画布(0,0)的一个值，鼠标在画布外面时不会返回任何值。其它设备会返回0，这时你应该使用<a href=
+"../Mouse,%20Keyboard%20and%20Other%20Controls/Device%20Input/device_mouse_raw_x.html"> <tt>device_mouse_raw_x</tt></a>和 <a href=
+"../Mouse,%20Keyboard%20and%20Other%20Controls/Device%20Input/device_mouse_raw_y.html"> <tt>device_mouse_raw_y</tt></a> 函数替代它。<br>
+<br></p>
+
+<p><br>
+</p>
+
+<h3>举例：</h3>
+
+<p class="code">my_x = display_mouse_get_x();</p>
+
+<p>上述将设置 my_x 等于相对于显示器的鼠标x坐标。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回: <a href="index.html">窗口和视野</a></div>
+
+<div style="float:right">下一页: <a href=
+"display_mouse_get_y.html">display_mouse_get_y</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>window_get_visible_rects</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../../files/helpindex.css"
+type="text/css">
+
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Windows And Views/The Game Window/window_get_visible_rects.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FThe%20Game%20Window%2Fwindow_get_visible_rects.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FThe%20Game%20Window%2Fwindow_get_visible_rects.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script><!-- !chm2web! -->
+
+
+<h1>window_get_visible_rects</h1>
+
+<h2>查找 (x1,y1) 到 (x2,y2)矩形范围内的每个附加显示器的重叠区域。 </h2>
+
+<h3>语法：</h3>
+
+<p class="code">window_get_visible_rects(x1, y1, x2, y2);</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>x1</td>
+<td>矩形的左边界。</td>
+</tr>
+
+<tr class="alt">
+<td>y1</td>
+<td>矩边的顶部边界。</td>
+</tr>
+
+<tr>
+<td>x2</td>
+<td>矩形的右边界。</td>
+</tr>
+
+<tr class="alt">
+<td>y2</td>
+<td>矩形的底部边界。The bottom edge of the rectangle to check.</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>返回：</b> 数组</p>
+
+<p><br>
+</p>
+
+<h3><b>描述</b>
+</h3>
+
+<p>使用这个函数你可以查找 (x1,y1) 到 (x2,y2)矩形范围内的每个附加显示器的重叠区域。对于每个显示器，这个函数将返回8个值添加到一个数组中（比如你有两个显示器，数组长度将是16），值[0~3] 对应 overlapx1、 overlapy1、 overlapx2、 overlapy  - 定义显示器里的重叠区域，如果无重叠，将设置为  0,0,0,0  - 值 [4~ 7] 对应 monitorx1、 monitory1、 monitorx2、 monitory2 - 它们是虚拟显示器空间上的坐标。这个可以用来测试是否一个保存的窗口位置即将显示或隐藏（用户可能已经断开与外部监视器的连接，或者窗口移出了屏幕，造成了窗口位置保存的是一个无效值），比如下面的例子。<br>
+<br></p>
+
+<p><br>
+</p>
+
+<h3>举例：</h3>
+
+<p class="code">var wx = window_get_x();<br>
+var wy = window_get_y();<br>
+var ww = window_get_width();<br>
+var wh = window_get_height();<br>
+display_data = window_get_visible_rects(wx, wy, wx + ww, wy +
+wh);<br>
+display_num = array_length_1d(display_data) / 8;<br></p>
+
+<p>上述代码将生成一个包含显示器信息的一维数组保存到变量 <tt>display_data</tt>，同时创建变量 <tt>display_num</tt> 保存找到的激活的显示器的数目。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回: <a href="index.html">游戏窗口</a></div>
+
+<div style="float:right">下一页: <a href=
+"window_mouse_get_x.html">window_mouse_get_x</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+</body>
+</html>

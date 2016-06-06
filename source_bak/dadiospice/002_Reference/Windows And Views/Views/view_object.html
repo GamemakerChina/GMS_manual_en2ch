@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>view_object</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../../files/helpindex.css"
+type="text/css">
+
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Windows And Views/Views/view_object.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FViews%2Fview_object.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FViews%2Fview_object.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script><!-- !chm2web! -->
+
+
+<h1>view_object</h1>
+
+<h2>保持在视野中可见的物体。</h2>
+
+<h3>语法：</h3>
+
+<p class="code">view_object[0...7]</p>
+
+<p><br>
+</p>
+
+<p><b>返回：</b> 实数</p>
+
+<p><br>
+</p>
+
+<h3>描述</h3>
+
+<p>有了这个变量，你可以获取（或设置）在任何时候都保持指定在视野（0-7）的物体。如果物体有多个实例，只会跟随其中<i>一个</i>（通常是创建的第一个，但并不保证）。你也可以指定一个单独的实例id给这个变量，视野会跟随这个特别的实例。阻止视野跟随，你可以设置这个变量为特别的 <i>关键词</i> <b>noone</b>.<br><br><img class="center" src="View_hvbor.png"><br><br><i><b>注意:</b> 你可以使用 <a href=
+"view_hborder.html"><tt>view_hborder</tt></a> 和 <a href=
+"view_vborder.html"><tt>view_vborder</tt></a> 函数设置视野开始移动之前实例移动的距离。</i><br>
+<br></p>
+
+<p><br>
+</p>
+
+<h3>举例：</h3>
+
+<p class="code">if instance_exists(obj_Player)<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;view_object[0] = obj_player;<br>
+&nbsp;&nbsp;&nbsp;}<br></p>
+
+<p>上述代码将检测如果物体 “obj_Player”存在一个实例，它将设置 view[0] 跟随那个实例。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回: <a href="index.html">Views</a></div>
+
+<div style="float:right">下一页: <a href=
+"view_angle.html">view_angle</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+</body>
+</html>

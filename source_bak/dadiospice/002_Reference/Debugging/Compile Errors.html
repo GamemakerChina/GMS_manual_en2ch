@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>Compile Errors</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Debugging/Compile Errors.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FDebugging%2FCompile%20Errors.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FDebugging%2FCompile%20Errors.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>编译器错误</h1>
+
+<h2>这节列举了所有可能由资源编译器给出的错误。
+</h2>
+
+<p>当创建你的游戏时，很容易去忘记声明一个变量或者将一个字符串误认为是实数等等……这些错误将会被<i>GameMaker: Studio</i><!--
+-->在游戏即将被编译的时候挑出然后一个带有被给出的错误以及错误<i>出处</i>窗口将会被打开，如下图所示
+<img class=
+"center" src="Compile_Error.png"> 
+你可以点击任意一行显示的文本并且你将会被直接带到抛出错误的这个物体，并且接下来你能够使用这个消息里面的信息<!--
+-->来确定错误发生于物体的什么位置。然而，有些时候这些错误可能有点隐晦，所以下文中你能看到一个全部错误的完整列表<!--
+-->以及它们含义的一个简短解释。</p>
+
+<blockquote>
+<ol>
+<li>
+<p class="code">&gt;unknown function or script</p>
+你引用了一个不存在的函数或脚本。这可能发生于你误拼了一个函数或者移除了还在游戏的物体中被使用的脚本。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Unable to find script</p>
+你引用了一个在资源中不再能被找到的脚本。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Execute script action is not bound to a
+script</p>
+你对一个不存在的脚本使用了"execute script"动作。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Failed to parse action_execute_script() -
+incorrect number of arguments received</p>
+execute script动作被给予了错误数量的参数。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Trying to set a read only variable</p>
+你尝试去对标记为<b>只读</b>的变量进行赋值（实数或字符串）。比如说：<br>
+<code>phy_com_x = 12;</code><br>
+这将会给出一个错误因为<tt>phy_com_x</tt>是只读的。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Constant is invalid here</p>
+你放置了一个对于代码并不合适的<b>常量</b>。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Malformed repeat statement<br></p>
+
+<p class="code">&gt;Malformed if statement<br></p>
+
+<p class="code">&gt;Malformed while statement<br></p>
+
+<p class="code">&gt;Malformed do statement<br></p>
+
+<p class="code">&gt;Malformed for statement<br></p>
+
+<p class="code">&gt;Malformed with statement<br></p>
+
+<p class="code">&gt;Malformed switch statement<br></p>
+
+<p class="code">&gt;Malformed break statement<br></p>
+
+<p class="code">&gt;Malformed continue statement<br></p>
+
+<p class="code">&gt;Malformed exit statement<br></p>
+
+<p class="code">&gt;Malformed return statement</p>
+你的语句的结构不正确。对于具体细节请参见这里的相关章节：
+<a href=
+"../001_GML%20Language%20Overview/index.html">GML 概述</a></li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Keyword until expected</p>
+你建立了一个"do...until"循环但是没能提供"until"部分。参见
+<a href=
+"../001_GML%20Language%20Overview/401_10_do.html">GML 概述 -
+do</a></li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;If requires a then statement</p>
+你遗漏了一个<tt>if</tt>语句的<tt>then</tt>部分。参见：
+<a href=
+"../001_GML%20Language%20Overview/401_07_if.html">GML 概述 -
+if</a></li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Statement in a switch MUST appear after case or
+default</p>
+你在一个<tt>switch</tt>结构内的case或default的外部安插了一个功能语句。比如：<br>
+<code>switch(id)<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;if x == 12 game_end(); break;<br>
+&nbsp;&nbsp;&nbsp;}</code></li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Break used without context</p>
+你在代码中使用了一个<tt>break</tt>，而这个位置中break本不需要或无意义。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Continue used without context</p>
+你在代码中使用了一个<tt>continue</tt>，而这个位置中continue本不需要或无意义。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Calling a function that needs an instance and
+no instance is available</p>
+当你正在使用一个形如<tt>instance_...</tt>的函数而运行这段代码的时候实例不存在时这个错误将被显示。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Calling a function that needs an \"other\" and
+no \"other\" is available</p>
+当你使用<tt>other</tt>引用一个实例而运行这段代码的时候实例不存在，比如说，在一个碰撞事件中你已经销毁了other实例时这个错误将被显示。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Argument naming error, {n} arguments but no
+reference found to {a}</p>
+你对一个脚本提供了一系列的参数，其中一个或多个并不代表任意一个值。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Wrong type of arguments for *<br></p>
+
+<p class="code">&gt;Wrong type of arguments for /<br></p>
+
+<p class="code">&gt;Wrong type of arguments for div<br></p>
+
+<p class="code">&gt;Wrong type of arguments for Mod<br></p>
+
+<p class="code">&gt;Wrong type of arguments for +<br></p>
+
+<p class="code">&gt;Wrong type of arguments for -<br></p>
+
+<p class="code">&gt;Wrong type of arguments for &amp;&amp;<br></p>
+
+<p class="code">&gt;Wrong type of arguments for ||<br></p>
+
+<p class="code">&gt;Wrong type of arguments for &amp;<br></p>
+
+<p class="code">&gt;Wrong type of arguments for |<br></p>
+
+<p class="code">&gt;Wrong type of arguments for ^</p>
+
+<p class="code">&gt;Wrong type of arguments for &lt;&lt;<br></p>
+
+<p class="code">&gt;Wrong type of arguments for &gt;&gt;</p>
+你对一个表达式提供了错误类型的参数（或者实数或者字符串）。比如你遇到向下面这样的东西：<br>
+<code>if "Hello" div 4<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;//do something;<br>
+&nbsp;&nbsp;&nbsp;}</code><br>
+你将会得到这个错误因为你不能对一个字符串使用<tt>div</tt>。对于具体细节请参见这里的相关章节：
+<a href=
+"../001_GML%20Language%20Overview/401_04_expressions.html">GML
+概述 - 表达式</a></li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Division by 0</p>
+除以0是不可能的并且因此你将会在<i>GameMaker: Studio</i>代码尝试做这件事时得到这个错误。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Modulo by 0</p>
+你会在<tt>求余</tt>表达式中尝试用0作为它的运算元的时候得到这个错误。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Cannot compare arguments</p>
+这个错误告诉你一个或多个表达式正在尝试和字符串<i>和</i>实数进行运算，有些东西不被允许。比如：<br>
+<code>if "Hello" == 74<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;//do something;<br>
+&nbsp;&nbsp;&nbsp;}</code><br>
+这将会给出一个错误因为你不能比较两个类型彼此不同的值。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Symbol } expected<br></p>
+
+<p class="code">&gt;Symbol { expected<br></p>
+
+<p class="code">&gt;Symbol ) expected<br></p>
+
+<p class="code">&gt;Symbol ( expected<br></p>
+
+<p class="code">&gt;Symbol: expected<br></p>
+
+<p class="code">&gt;Symbol , or ) expected<br></p>
+
+<p class="code">&gt;Symbol , or ] expected<br></p>
+
+<p class="code">&gt;Symbol ] expected</p>
+你的代码从语法上遗漏了上述符号之一。这个错误正常地在代码编辑器里被挑出并且为你高亮出来。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Assignment operator expected</p>
+这个错误将突发于你遗漏了表达式中的一个运算符。比如：<br>
+<code>if var1 var2 == var3<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;//do something;<br>
+&nbsp;&nbsp;&nbsp;}</code><br>
+上述代码遗漏了"var1"和"var2"之间的运算符并且因此会给出这个错误，尽管正常地，这将会在编译之前被代码编辑器挑出。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Unexpected symbol in expression</p>
+你在表达式中错误的位置存在一个符号（像/,*,+等等等……）。这正常地应当被代码编辑器的语法检查器挑出。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Only 1 or 2 dimensional arrays are
+supported</p>
+<i>GameMaker: Studio</i>只允许一或二维数组并且当你想要尝试去创建任何更大维度的数组你就会得到这个错误，详情请见：
+<a href=
+"../001_GML%20Language%20Overview/401_06_arrays.html">GML 概述
+- 数组</a></li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>
+<p class="code">&gt;Variable name expected</p>
+你写了一个期待着一个变量来被使用的表达式而并没被提供，比如：<br>
+<code>if obj_Control. = "Hello"<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;//do something;<br>
+&nbsp;&nbsp;&nbsp;}</code><br>
+因为在运算"."后面没有变量，你将会得到这个错误。</li>
+
+<li style="list-style: none"><br>
+</li>
+</ol>
+</blockquote>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">上一页: <a href=
+"index.html">调试</a></div>
+
+<div style="float:right">下一页: <a href=
+"Runner%20Errors.html">运行器错误</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+</body>
+</html>

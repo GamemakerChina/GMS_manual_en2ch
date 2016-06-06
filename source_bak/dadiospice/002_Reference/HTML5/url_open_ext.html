@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>url_open_ext</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/HTML5/url_open_ext.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FHTML5%2Furl_open_ext.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FHTML5%2Furl_open_ext.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>url_open_ext</h1>
+
+<h2>通过浏览器访问指定链接,并指定打开方式.</h2>
+
+<h3>语法：</h3>
+
+<p class="code">url_open_ext(url, target);</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+
+<tr>
+<td>url</td>
+<td>网站链接.</td>
+</tr>
+
+<tr class="alt">
+<td>target</td>
+<td>窗口打开方式.</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>返回：</b> N/A</p>
+
+<p><br>
+</p>
+
+<h3>说明</h3>
+
+<p>在对应的设备上，程序自动打开浏览器并访问指定的网址。如果是html5平台，则在当前浏览器中打开链接.
+target 参数用于指定访问链接时，窗口打开方式。
+<br>
+<br>
+可用的target参数<br></p>
+
+<blockquote><b>"_self"</b>:(GMS默认)在当前的框架中打开被链接文档.<br>
+<b>"_blank"</b>: 在新窗口中打开被链接文档.对于这类需求，可使用 <a href=
+"clickable_add.html"><tt>clickable_*</tt></a> 函数
+来代替).<br>
+<b>"_parent"</b>: 在父框架集中打开被链接文档.<br>
+<b>"_top"</b>: 页面在当前窗口以独立页面显示被链接文档.<br></blockquote>
+
+<p><i><b>NOTE:</b>Windows 8 (JS) 平台上, 这个函数也能正常使用，但target参数会被忽略，浏览器直接访问指定的ur.</i><br>
+<br>
+</p>
+
+<p><br>
+</p>
+
+<h3>示例：</h3>
+
+<p class="code">url_open_ext( 'http://yoyogames.com',
+'_blank');</p>
+
+<p>在新的窗口中，访问 YoYo Games 官方网站.</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回：<a href="index.html">HTML5</a></div>
+
+<div style="float:right">下一页：<a href=
+"url_open_full.html">url_open_full</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>

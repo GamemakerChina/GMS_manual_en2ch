@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>instance_id</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../../files/helpindex.css"
+type="text/css">
+
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Objects and Instances/Instances/instance_id.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FObjects%20and%20Instances%2FInstances%2Finstance_id.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FObjects%20and%20Instances%2FInstances%2Finstance_id.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>instance_id</h1>
+
+<h2>返回房间内一个实例的id标识。</h2>
+
+<h3>语法:</h3>
+
+<p class="code">instance_id[0 ... n];</p>
+
+<p><br>
+</p>
+
+<p><b>返回值:</b> 实数</p>
+
+<p><br>
+</p>
+
+<h3>描述</h3>
+
+<p>这个<b>只读</b>数组承载了房间内每个活跃实例的所有<a href=
+"Instance%20Properties/id.html"><tt>id</tt></a>标志。这也就意味着如果你使用任意一个<a href=
+"Deactivating%20Instances/index.html"><tt>instance_deactivate</tt></a>函数，那些被冻结的实例将不会被包括在这个数组中<!--
+-->（如果你曾经之前使用过一个来自于这个数组的值，它现在就会返回关键字<i>noone</i>）。<br>
+<br></p>
+
+<p><br>
+</p>
+
+<p><b>举例:</b>
+</p>
+
+<p class="code">var i;<br>
+for (i = 0; i &lt; instance_count; i += 1;)<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;with (instance_id[i]) speed += 0.1;<br>
+&nbsp;&nbsp;&nbsp;}<br></p>
+
+<p>上述代码将会迭代房间内所有实例并且将它们的速度增加0.1.</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">上一页: <a href="index.html">实力函数</a></div>
+
+<div style="float:right">下一页: <a href=
+"instance_count.html">instance_count</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+</body>
+</html>

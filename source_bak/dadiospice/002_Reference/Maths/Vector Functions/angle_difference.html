@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>angle_difference</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../../files/helpindex.css"
+type="text/css">
+
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Maths/Vector Functions/angle_difference.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FMaths%2FVector%20Functions%2Fangle_difference.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FMaths%2FVector%20Functions%2Fangle_difference.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>angle_difference</h1>
+
+<h2>返回两角的角度差。</h2>
+
+<h3>语法:</h3>
+
+<p class="code">angle_difference(ang1, ang2)</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>ang1</td>
+<td>待使用的第一个角度。</td>
+</tr>
+
+<tr class="alt">
+<td>ang2</td>
+<td>待使用的第二个角度。</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>返回值:</b> 实数</p>
+
+<p><br>
+</p>
+
+<h3>描述</h3>
+
+<p>这个函数将会返回两个角度之间最小的角度差为一个在-180到180之间的值（其中，一个正角度是逆时针的而一个负角度是顺时针的）。
+<br>
+<br></p>
+
+<p><br>
+</p>
+
+<h3>举例:</h3>
+
+<p class="code">var pd = point_direction(x, y, mouse_x,
+mouse_y);<br>
+var dd = angle_difference(image_angle, pd);<br>
+image_angle += min(abs(dd), 10) * sign(dd);<br></p>
+
+<p>上述代码将会获得从实例到鼠标光标的方向角，然后获得其与当前<tt>image_angle</tt>的角度差<!--
+-->，使用这个值来缓慢的朝向鼠标旋转。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">上一页: <a href="index.html">Vector
+矢量函数</a></div>
+
+<div style="float:right">下一页: <a href=
+"point_direction.html">point_direction</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>

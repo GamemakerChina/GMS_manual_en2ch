@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>d3d_draw_block</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../../../files/helpindex.css"
+type="text/css">
+
+<script type="text/JavaScript" src="../../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Drawing/Drawing 3D/3D Drawing/d3d_draw_block.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FDrawing%2FDrawing%203D%2F3D%20Drawing%2Fd3d_draw_block.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FDrawing%2FDrawing%203D%2F3D%20Drawing%2Fd3d_draw_block.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>d3d_draw_block</h1>
+
+<h2>绘制一个立方体。</h2>
+
+<h3>Syntax:</h3>
+
+<p class="code">d3d_draw_block(x1, y1, z1, x2, y2, z2, tex,
+hrepeat, vrepeat)</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+
+<tr>
+<td>x1</td>
+<td>起点X</td>
+</tr>
+
+<tr class="alt">
+<td>y1</td>
+<td>起点y</td>
+</tr>
+
+<tr>
+<td>z1</td>
+<td>起点z</td>
+</tr>
+
+<tr class="alt">
+<td>x2</td>
+<td>终点x</td>
+</tr>
+
+<tr>
+<td>y2</td>
+<td>终点y</td>
+</tr>
+
+<tr class="alt">
+<td>z2</td>
+<td>终点z</td>
+</tr>
+
+<tr>
+<td>tex</td>
+<td>纹理id (-1 表示不使用纹理)</td>
+</tr>
+
+<tr class="alt">
+<td>hrepeat</td>
+<td>纹理水平方向平铺的次数</td>
+</tr>
+
+<tr>
+<td>vrepeat</td>
+<td>纹理垂直方向平铺的次数</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>返回值：</b> N/A</p>
+
+<p><br>
+</p>
+
+<h3>说明</h3>
+
+<p>这个函数绘制一个立方体，参数中的起点位置和终点位置的两个角是对角。如果你不打算使用纹理，可以设参数tex为-1， 
+同时，参数hrepeat、vrepeat将会被忽略。
+<br>
+<br>
+<i><b>注意</b>：只有当你打算平铺纹理的时候，纹理的规格才必须为2的N次方（比如：8x8, 128x128,
+256x256）</i><br>
+<br></p>
+
+<p><br>
+</p>
+
+<h3>示例：</h3>
+
+<p class="code">var tex;<br>
+tex = background_get_texture(bck_Wall);<br>
+d3d_draw_block(20, 20, 20, 80, 40, 200, tex, 1, 1);<br>
+d3d_draw_block(200, 300, -10, 240, 340, 100, tex, 1, 1);<br></p>
+
+<p>以上代码，把 bck_Wall 的纹理 id 存入变量"tex"，并绘制了两个带有此纹理的立方体</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回：<a href="index.html">3D
+Drawing</a></div>
+
+<div style="float:right">下一页：<a href=
+"d3d_draw_cylinder.html">d3d_draw_cylinder</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>
