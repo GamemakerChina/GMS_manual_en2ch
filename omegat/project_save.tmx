@@ -17169,6 +17169,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This section explains the various uses for "with" in &lt;i0&gt;GameMaker: Studio&lt;/i0&gt;.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="deciia" changedate="20160606T041949Z" creationid="deciia" creationdate="20160606T041949Z">
+        <seg>这部分解释了 &lt;i0&gt;GameMaker: Studio&lt;/i0&gt;中“with”的多种用法。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This section explains the various uses for the "break" statement.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="deciia" changedate="20160515T070721Z" creationid="deciia" creationdate="20160515T070721Z">
