@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>physics_apply_torque</h1>
 
-<h2>This function applies torque (spin) to an instance.</h2>
+<h2>这个函数将会对一个实例施加转矩（旋转）。</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">physics_apply_torque(torque)</p>
 
@@ -40,13 +40,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>torque</td>
-<td>The torque (in Newton metres) to be applied</td>
+<td>待被施加的转矩（以N·m（牛顿·米）为单位）</td>
 </tr>
 </table>
 </div>
@@ -54,56 +54,41 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回:</b> 无</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>When we talk about torque, we are generally talking about the
-tendency of a force or impulse to rotate an instance about its
-centre of mass, but in <i>GameMaker: Studio</i> you can also apply
-torque independently to an instance, causing it to rotate in a
-given direction. How much torque you apply to get the desired
-rotation all depends on the size and density of the fixture you
-assign to your instance, as both these properties go towards
-defining its mass, which defines its inertia, which affects torque!
-The general rule of thumb is that if an instance has a lot of
-inertia, you will need a lot of torque to get it to start rotating.
-It should also be noted that other factors like gravity and
-collisions can also affect the torque of an instance. Here is an
-image to help explain:<br>
+<p>当我们谈论转矩时，我们通常会谈论关于其质心旋转一个实例的力或者冲量的趋向，但是在<i>GameMaker: Studio</i>中，<!--
+-->你也能单独为一个实例施加一个转矩，来让它在一个给定方向内旋转。你想施加多大的转矩来得到预计的旋转完全由你分配给实例的支架的大小和密度决定，因为两个属性都旨在定义它的质量，也定义了它的惯量，也就会影响它的转矩！<!--
+-->首要的准则是如果一个实例有很大的惯量，你将会需要很大的转矩来使它开始旋转。同时也应该注意像重力、碰撞等其他因素也会影响一个物体的转矩。下图将帮助解释这些东西：<br>
 <br>
 <img class="center" src="physics_apply_torque_image.png"></p>
 
-<p>As you can see, the amount of torque you need to rotate the
-object depends on the underlying mass and inertia that it gives.
-This is all calculated for you by <i>GameMaker: Studio</i> based on
-the size and density of the fixture that is assigned to the
-instance when it is created. Also note that for anti-clockwise
-rotation, the value should be negative.<br>
+<p>如你所见，你需要用来旋转一个物体的转矩大小取决于它提供的内在的质量和惯量。<i>GameMaker: Studio</i>已经全部基于创建时被分配给实例的支架的大小和密度为你计算好了。还要注意，逆时针转动时，值应当是负的①。
+<br>①在Box2D中，角度定义方向与传统定义方式相反。
+<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例:</h3>
 
 <p class="code">if keyboard_check(vk_left)
 physics_apply_torque(-100);</p>
 
-<p>The code above will rotate the instance to the anti-clockwise
-(to the left) with a torque of 100Nm when the left arrow key is
-pressed.</p>
+<p>上述代码将会在左方向键按下时用100N·m的转矩逆时针地（向左）旋转实例。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Forces</a></div>
+<div style="float:left">上一页: <a href="index.html">力</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页: <a href=
 "physics_apply_angular_impulse.html">physics_apply_angular_impulse</a></div>
 </div>
 
