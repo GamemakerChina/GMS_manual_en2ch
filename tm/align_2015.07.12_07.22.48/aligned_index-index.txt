@@ -1,0 +1,88 @@
+﻿Version 1.4	Version 1.4	index-index
+by	by	index-index
+YoYo Games Ltd.	YoYo Games Ltd.	index-index
+Welcome to the GameMaker: Studio user manual!	欢迎浏览 GameMaker:Studio 用户手册!	index-index
+This document is divided into three parts with the aim of getting you introduced to the interface and basic workings of GameMaker: Studio before going on to more advanced usage and the functions available through GML (the GameMaker Language ). New users should definitely start at the beginning with the Using GameMaker: Studio section as it has all the information you need to get started as quickly as possible, however users of previous GameMaker versions can probably skip to the Advanced Use section to see what's new in this version.	这个文档分为三个部分，主要讲解 GameMaker:Studio 界面和基础使用，更高级的用法和功能需要使用 GML ( the GameMaker Language ). 新用户必须从 Using GameMaker:Studio 部分开始，这部分包括所有快速入门知识, 曾经使用过 GameMaker 的用户可以跳过这部分，请查看 Advanced Use 部分关于新版本更新内容。	index-index
+Whatever your skill level, we hope that this manual helps you to realise the true power within GameMaker: Studio and make your gaming dreams become reality!	不论您的技术水平如何，我们都希望这本说明能够帮助您有效的使用 GameMaker:Studio 并且实现您的梦！	index-index
+NOTE: Due to the modular nature of GameMaker: Studio there are certain things that are not included in the manual, particularly those aspects of setting up and connecting the different devices that can be supported.	NOTE: 由于 GameMaker:Studio 模块化性质，一些技巧在手册中并不能找到，特别是特殊设定和连接不同的设备方面。	index-index
+For up-to-date information and troubleshooting hints and tips, please see the YoYo Games Knowledge Base .	对于最新的信息和故障排除提示和技巧，请参阅 YoYo Games Knowledge Base 。	index-index
+Using GameMaker: Studio	使用 GameMaker: Studio	index-index
+This section describes the basic use of GameMaker: Studio , explaining the idea behind the program and describing how to add sprites, backgrounds and sounds.	本章节介绍 GameMaker:Studio 基础，介绍项目的开始和阐述如何添加 sprites, backgrounds 和 sounds。	index-index
+It also covers how to define objects with events and actions, and how to add them into the rooms that you design.	也包括如何定义 objects 的 events 和 actions, 以及怎样把你设计的这些放入 rooms 。	index-index
+Please note that the availability of certain tools and the number of certain resources that you can create may be restricted depending on the version of GameMaker: Studio that you use (more information can be found here ).	请注意某些工具的有效性和某些资源数量，这取决于你当前使用的 GameMaker:Studio 版本。 （更多信息请点 here ).	index-index
+The following sections exist to help get you started:	以下章节帮助您入门。	index-index
+Introduction	介绍	index-index
+Installation	安装	index-index
+Activation	激活	index-index
+GameMaker: Studio Overview	GameMaker: Studio 概述	index-index
+The Graphical User Interface	用户图形界面	index-index
+Loading Sprites	载入精灵	index-index
+Sounds And Music	声音和音乐	index-index
+Backgrounds	背景	index-index
+Defining Objects	定义对象	index-index
+Events	事件	index-index
+Actions	动作	index-index
+Creating Rooms	创建房间	index-index
+Distributing Your Game	发布你的游戏	index-index
+Advanced Use	进阶使用	index-index
+The GameMaker: Studio IDE (integrated development environment) has a number of advanced options that are of great importance if you wish to get the most out of the product.	GameMaker:Studio IDE (集成开发环境) 有一些高级设置十分重要，能使您的作品更加高效。	index-index
+These options include source control integration, project configurations, advanced debugging and a number of extra tools for changing and manipulating the game assets (please note that the availability of some of these advanced tools will depend on the version of GameMaker: Studio that you currently use).	这些选项包括源代码管理，项目配置，高级调试和一些额外的改变、操作游戏资源工具(请注意一些高级工具的有效性必须适合您当前使用的 version of GameMaker: Studio ). 本章节分为三个部分。	index-index
+This section of the manual is split into the following three parts, each with its own subsection dealing with one particular aspect of the IDE:	每个部分都有自己独特的 IDE：	index-index
+Game Assets More About Sprites	游戏资源 关于精灵	index-index
+More About Backgrounds	关于背景	index-index
+More About Objects	关于物体（对象）	index-index
+More About Rooms	关于房间	index-index
+More About Async Events	关于异步事件	index-index
+Resource Editors Fonts	资源编辑器 字体	index-index
+Paths	路径	index-index
+Time Lines	时间线	index-index
+Scripts	脚本	index-index
+Shaders	着色器	index-index
+Constants	常量	index-index
+Including Files	包含文件	index-index
+Importing Resources	导入资源	index-index
+Game Settings Extension Packages	游戏设置 扩展包	index-index
+Configurations	配置	index-index
+Source Control	源代码控制	index-index
+Global Game Settings	游戏全局设定	index-index
+GameMaker: Studio Preferences	GameMaker: Studio 首选项	index-index
+Debugging		index-index
+Reference	调试debug	index-index
+Here you can find references for many of the GameMaker: Studio features, as well as a rundown of all of the functions, variables and constants that make up the built-in programming language.	参考 手册 在这您可以找到更多关于 GameMaker:Studio 特性的参考，比如查看全部的功能函数，变量，常量这些内置的程序语言。	index-index
+This language gives you much more flexibility and control over your games than the standard actions and we will refer to it as GML (the GameMaker Language).	这种语言比使用标准化动作将赋予您更多设计的弹性和更标准化的对游戏设计的控制，这里称为 GML (GameMaker 语言)。	index-index
+You can find descriptions of all the functions available in GML as well as an overview of how they can be used along with examples of code using them.	在这里可以找到所有 GML语言的描述，以及怎样在代码中使用它们。	index-index
+We also cover the constants and variables that GML has available to control all aspects of your game.	我们已经尽可能的覆盖了您在设计游戏过程中所可能需要的常量。	index-index
+This section contains an overview of the GameMaker Language, with the rules for structure and syntax, as well as examples of how to use expressions and different operations:	这部分概述 GameMaker 语言， 包括结构规则与语法规则，如何使用的公式范例和不同表达。	index-index
+GML Overview	GML 概述	index-index
+The following sections all detail the many different functions that are available to you when using GML.	下面的章节中详细介绍许多不同的函数，这些函数在你使用GML时都可能会用到。	index-index
+They have been split into different groups of associated functions and, where necessary, have been cross-referenced with related functions and sections.	它们已被分成相互关联的不同组别，并在有需要的地方，交叉引用了相关的函数和章节。	index-index
+Real Numbers And Strings Date and Time	实数和字符 日期和时间	index-index
+Maths	数学	index-index
+Strings	字符	index-index
+Game Play Game Assets	游戏动行和操作 游戏内置资源 Game Assets	index-index
+Mouse, Keyboard and Other Controls	鼠标、键盘和其它操作方式	index-index
+Movement and Collisions	移动和碰撞	index-index
+Objects and Instances	物体和实例	index-index
+Drawing And Display Drawing	绘制和显示 绘制	index-index
+Shaders	着色器	index-index
+Surfaces	表面	index-index
+The Display, Windows And Views	显示器、窗口及视野	index-index
+Advanced Functions Data Structures	进阶函数 数据结构	index-index
+Particles	粒子	index-index
+Physics	物理效果	index-index
+File Handling	文件处理	index-index
+Operating System	操作系统	index-index
+Buffers	缓存区	index-index
+Networking	联网	index-index
+Platform Specific HTML5	平台特性 HTML5	index-index
+Windows 8	Windows 8	index-index
+Social Gaming	社会化模块	index-index
+In App Purchases	应用内购	index-index
+Push Notifications	消息推送	index-index
+Asynchronous	异步设计	index-index
+Cloud Services	云服务	index-index
+Steam API	Steam API	index-index
+Extras Debugging	其它 调试	index-index
+Miscellaneous	杂项函数	index-index
+Obsolete Functions	弃用函数	index-index
+© Copyright YoYo Games Ltd. 2014 All Rights Reserved Converted from CHM to HTML with chm2web Pro 2.85 (unicode)	© Copyright YoYo Games Ltd. 2014 All Rights Reserved Converted from CHM to HTML with chm2web Pro 2.85 (unicode)	index-index

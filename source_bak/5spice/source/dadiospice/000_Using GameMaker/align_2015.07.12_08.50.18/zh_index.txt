@@ -1,0 +1,53 @@
+使用 GameMaker: Studio GameMaker:Studio是一个比较容易使用的软件，可以创建你自己的电脑游戏。
+ GameMaker:Studio 可以向windows输出游戏，而专业版可允许向 Windows8平台导出游戏。
+如果你已经通过Steam购买了 GameMaker:Studio ，你将获得额外的模块允许向Steam工场输出游戏。
+你还可以购买其它的附加模块，让你可以制作HTML5、安卓、iOS或者Windows Phone游戏： HTML5模块可以编写即时运行的HTML和 JavaScript代码，然后你可以上传到任何网站 Android模块可以让你创建并发布*.apk文件	 如果你有iOS开发者帐户，并且也有iOS模块，你便可以向iPad、iPhone、iPod发现你的游戏 The Windows Phone 模块允许你制作WP设置能运行的游戏，Windows Surface 设备则使用 Windows 8 模块	 Tizen 模块 支持很多智能设备	 Mac OSX 模块可以向苹果桌面市场发布游戏	 The Linux 模块可以让你制作运行在 Ubuntu 操作系统上的桌面游戏。
+ 这些模块只有当你从免费或者普通版本升级到专业版才可以使用（更多不同版本的信息可以在 here 找到）。
+  这个章节的帮助文档提供给你创建第一个游戏所需要的全部信息。
+之后的部分将讨论更多进阶的话题，比如怎样进一步打磨制作或发布你的游戏，以及使用内置的GML编程语言，为游戏拓展更多的可能性。
+ 你能在下面的章节中找到GMS基础的使用信息。
+  介绍
+安装及系统要求
+激活
+GameMaker: Studio 概述
+用户界面 (GUI)
+- 文件菜单（ File）
+- 编辑菜单（ Edit）
+- 资源菜单（Resources）
+- 脚本菜单（Scripts）
+- 运行菜单(Run)
+- 窗口菜单（Window）
+- 帮助菜单（Help）
+- 插件市场菜单（Marketplace）
+载入精灵
+声音和音乐
+背景
+定义对象物体
+事件
+- 创建事件
+- 破坏事件
+- 计时器事件
+- 步事件
+- 碰撞事件
+- 键盘事件
+- 其它事件
+- 绘制事件
+- 异步事件
+动作
+- 移动动作
+- 主动作设置1
+- 主动作设置2
+- 控制类动作
+- 分数类动作
+- 额外的动作
+- 绘制动作
+- 在动作中使用变量和表达式
+创建房间
+- 房间基本设置
+- 背景设置
+- 对象物体设置 			 游戏信息设置
+发布你的游戏
+ 翻译 by 断水
+返回: 目录	 下一节: 高级使用
+ © Copyright YoYo Games Ltd. 2014 All Rights Reserved
+ Converted from CHM to HTML with chm2web Pro 2.85 (unicode)

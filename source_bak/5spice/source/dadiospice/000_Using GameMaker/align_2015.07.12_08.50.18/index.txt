@@ -1,0 +1,51 @@
+Using GameMaker: Studio GameMaker: Studio is an easy to use program for creating your own computer games.
+GameMaker: Studio - Standard only permits you to export games for Windows, and the Professional version also permits you to compile for Windows 8 .
+If you have bought GameMaker: Studio through Steam , you will also have an additional target module to export your games to the Steam Workshop .
+You can also get additional modules which will permit you to export to additional platforms like HTML5, Android, iOS and Windows Phone:
+The HTML5 module enables you to produce ready-to-run HTML and JavaScript code that you can host or embed on any website The Android module enables you to create and distribute *.apk files If you have an iOS developer account then with the iOS module you can also publish to iPad, iPhone and iPod The Windows Phone module permits you to target those devices for your games (for Windows Surface devices, use the Windows 8 module) With the Tizen module you can target a vast number of "smart" devices With the Mac OSX module you can target the Apple desktop market The Linux module permits you to make desktop games that run on the Ubuntu operating system
+These modules are available only to those who have upgraded from the Free version of GameMaker: Studio to the Professional version (more information on the different versions can be found here ).
+This section of the help file gives you all the information you need for creating your first games.
+Later sections will discuss more advanced topics, how to polish and distribute your game, and the built-in programming language GML that considerably extends the possibilities of the product.
+Information on the basic use of GameMaker: Studio can be found in the following sections:
+Introduction
+Installation and System Requirements
+Activation
+GameMaker: Studio Overview
+The Graphical User Interface (GUI)
+- The File Menu
+- The Edit Menu
+- The Resources Menu
+- The Scripts Menu
+- The Run Menu
+- The Help Menu
+- The Marketplace Menu
+Loading Sprites
+Sounds And Music
+Backgrounds
+Defining Objects
+Events
+- Create Event
+- Destroy Event
+- Alarm Events
+- Step Events
+- Collision Event
+- Keyboard Events
+- Other Events
+- Draw Event
+- Asynchronous Events
+Actions
+- Move Actions
+- Main Actions, Set 1
+- Main Actions, Set 2
+- Control Actions
+- Score Actions
+- Extra Actions
+- Draw Actions
+- Using Variables and Expressions in Actions
+Creating Rooms
+- Settings
+- Backgrounds
+- Objects Game Information
+Distributing Your Game
+Back: Contents Next: Advanced Use © Copyright YoYo Games Ltd.
+2014 All Rights Reserved Converted from CHM to HTML with chm2web Pro 2.85 (unicode)
