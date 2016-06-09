@@ -8566,6 +8566,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Next this new value is set as y-coordinate of all balls, so the result is that all balls get the same y-coordinate, and even if you use the following:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="deciia" changedate="20160609T012858Z" creationid="deciia" creationdate="20160609T012858Z">
+        <seg>然后则是将新值设置给所有球实例，结果是所有的球实例变成相同的y坐标，下面的用法也是同样的效果：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Next you can choose the sprite for the object should you wish it to have one.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="tong" changedate="20150728T083751Z" creationid="tong" creationdate="20150728T083751Z">
@@ -11731,6 +11739,14 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="deciia" changedate="20150726T144227Z" creationid="deciia" creationdate="20150726T143959Z">
         <seg>所以只支持 2xAA（2倍的AA）会输出2，对于 2x 和 4x（2倍或4倍） 的可用性将输出6。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So how &lt;i0&gt;do&lt;/i0&gt; we achieve this?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="deciia" changedate="20160609T013049Z" creationid="deciia" creationdate="20160609T013049Z">
+        <seg>所以怎么 &lt;i0&gt;实现&lt;/i0&gt;上面的需求呢？</seg>
       </tuv>
     </tu>
     <tu>
@@ -20487,6 +20503,14 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="deciia" changedate="20160514T053617Z" creationid="deciia" creationdate="20160514T053617Z">
         <seg>instance_create(enemy[i, 1], enemy[i, 2], enemy[i, 0]); // 使用数组创建物体的实例&lt;br2&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>it will have exactly the same effect because it is simply an abbreviation of the first statement.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="deciia" changedate="20160609T013001Z" creationid="deciia" creationdate="20160609T013001Z">
+        <seg>效果相同的原因是，它是第一种表达的简写。</seg>
       </tuv>
     </tu>
     <tu>
