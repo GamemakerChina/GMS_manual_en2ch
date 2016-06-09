@@ -6020,6 +6020,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For this purpose there exists the &lt;b1&gt;with&lt;/b1&gt; statement in GML.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="deciia" changedate="20160609T013221Z" creationid="deciia" creationdate="20160609T013125Z">
+        <seg>为了这个目的，GML出现了 &lt;b1&gt;with&lt;/b1&gt;语句。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For this reason &lt;i0&gt;GameMaker: Studio&lt;/i0&gt; has &lt;b1&gt;path&lt;/b1&gt; resources and a dedicated &lt;b2&gt;path editor&lt;/b2&gt;.&lt;br3&gt;</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="Noisyfox" changedate="20150816T075656Z" creationid="Noisyfox" creationdate="20150816T075656Z">
@@ -8250,6 +8258,14 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="deciia" changedate="20160514T040819Z" creationid="deciia" creationdate="20160514T040819Z">
         <seg>需要注意的是数组编号 &lt;b0&gt;开始于0&lt;/b0&gt; 并且 &lt;i1&gt;永远不能为负数&lt;/i1&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Its global form is:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="deciia" changedate="20160609T013154Z" creationid="deciia" creationdate="20160609T013147Z">
+        <seg>整体结构是：</seg>
       </tuv>
     </tu>
     <tu>
@@ -20655,6 +20671,14 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="deciia" changedate="20160427T080934Z" creationid="deciia" creationdate="20160426T222044Z">
         <seg>根据平台不同可能会得出不同的结果。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>with (&lt;expression&gt;) &lt;statement&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="deciia" changedate="20160609T013235Z" creationid="deciia" creationdate="20160609T013235Z">
+        <seg>with (&lt;表达式&gt;) &lt;语句&gt;</seg>
       </tuv>
     </tu>
     <tu>
