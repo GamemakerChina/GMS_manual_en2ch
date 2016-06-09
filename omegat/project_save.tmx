@@ -3659,6 +3659,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As indicated in the section &lt;a0&gt;Addressing Variables in Other Instances&lt;/a0&gt;, it is possible to read and change the value of variables in other instances.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="deciia" changedate="20160609T011911Z" creationid="deciia" creationdate="20160609T011911Z">
+        <seg>就像&lt;a0&gt;访问其它实例的变量&lt;/a0&gt;这一节部分说明的一样，是有可能读取或更改变其它实例的变量。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As long as the expression is true, the statement (which can also be a code block) is executed.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="deciia" changedate="20160515T050108Z" creationid="deciia" creationdate="20160515T050108Z">
@@ -4343,6 +4351,14 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="tong" changedate="20150726T073357Z" creationid="tong" creationdate="20150726T073357Z">
         <seg>但是如何创建房间？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But in a number of cases you want to do a lot more than just change a single variable with those other instances.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="deciia" changedate="20160609T012020Z" creationid="deciia" creationdate="20160609T012020Z">
+        <seg>但是有许多情况是你想做得更多，而不仅仅是更改那些实例的一个变量的值。</seg>
       </tuv>
     </tu>
     <tu>
