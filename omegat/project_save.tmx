@@ -4371,6 +4371,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But this is not correct, as the right side of the assignment gets the value of the y-coordinate of the first ball and adds 8 to it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="deciia" changedate="20160609T012628Z" creationid="deciia" creationdate="20160609T012433Z">
+        <seg>但这并不正确，因为右边指向的是获取了第一个球的实例的y坐标，只是对那个实例的y坐标加了8个像素。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But what if we want to initialize the array with different values for each position?</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="deciia" changedate="20160514T044314Z" creationid="deciia" creationdate="20160514T044314Z">
