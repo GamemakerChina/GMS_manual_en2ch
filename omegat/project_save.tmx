@@ -5628,6 +5628,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, imagine that you want to move all the ball objects in your game 8 pixels.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="deciia" changedate="20160609T012121Z" creationid="deciia" creationdate="20160609T012121Z">
+        <seg>比如，想象一下你想在游戏中将所有的“球对象”移动8个像素。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, the &lt;b1&gt;Render State&lt;/b1&gt; watch cannot be viewed in real time.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="SSZZ" changedate="20150804T020621Z" creationid="SSZZ" creationdate="20150804T020527Z">
@@ -19815,6 +19823,14 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="Wonderm" changedate="20150802T140346Z" creationid="Wonderm" creationdate="20150802T140346Z">
         <seg>未能成功登陆到给定的云服务。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may think that this is achieved simply by the following piece of code:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="deciia" changedate="20160609T012213Z" creationid="deciia" creationdate="20160609T012213Z">
+        <seg>你可能觉得通过以下的代码片段就能简单实例：</seg>
       </tuv>
     </tu>
     <tu>
