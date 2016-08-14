@@ -26,26 +26,17 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>DS Queues</h1>
+<h1>队列结构（Queue）</h1>
 
-<h2>A ds_queue is a first-in-first-out data structure.</h2>
+<h2>一个队列结构是一个先进先出（FIFO，First-In-First-Out）的数据结构。</h2>
 
-<p>A ds_queue is somewhat similar to a <a href=
-"../DS%20Stacks/index.html">ds_stack</a> but it works on a first-in
-first-out (FIFO) basis. The value that is put into the queue
-<i>first</i> is also the first to be removed from it. You can think
-of it like a queue in a shop for paying, where the person that is
-first in the queue pays first and then leaves the shop. Queues are
-typically used to store actions or behaviours (in the form of
-scripts, for example) that still need to be done by an instance but
-there are many other uses.<br>
+<p>队列结构是有点类似于<a href=
+"../DS%20Stacks/index.html">堆栈结构</a>，但是它的基本原则是先进先出（FIFO）。<i>首先</i>放入队列中的值也会是首先被移除的值。你可以想象这就是在商场排队交款一样，在那里队伍中靠前的人会首先交款并离开商店<!--
+-->。队列通常被用于存储一个实例即将执行的一系列动作或行为（比如说以脚本的格式）但事实上还有其他用途。<br>
 <br>
-<i><b>NOTE:</b> As with all dynamic resources, data structures take
-up memory and so should <b>always</b> be destroyed when no longer
-needed to prevent memory leaks which will slow down and eventually
-crash your game.</i><br>
+<i><b>注意：</b> 和所有动态资源一样，数据结构会占据大量内存，并且因此应该在不再被使用的时候<b>总是</b>被销毁以防止内存泄漏将拖慢你的游戏并最终使你的游戏崩溃。</i><br>
 <br>
-The following functions exist that deal with ds_queues:</p>
+下列函数用于处理队列结构：</p>
 
 <blockquote>
 <ol>
@@ -87,20 +78,18 @@ The following functions exist that deal with ds_queues:</p>
 </ol>
 </blockquote>
 
-<blockquote><i><b>NOTE:</b> if you need to check if a data
-structure exists, you can use the <a href=
-"../ds_exists.html"><tt>ds_exists()</tt></a> function.</i>
+<blockquote><i><b>注意：</b> 如果你需要检测一个数据结构是否存在，你可以使用函数<a href=
+"../ds_exists.html"><tt>ds_exists()</tt></a></i>
 </blockquote>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="../index.html">Data
-Structures</a></div>
+<div style="float:left">上一页<a href="../index.html">数据结构</a></div>
 
-<div style="float:right">Next: <a href=
-"../DS%20Lists/index.html">DS Lists</a></div>
+<div style="float:right">下一页<a href=
+"../DS%20Lists/index.html">列表结构</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
