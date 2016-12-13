@@ -31,41 +31,39 @@ if (window.name != "content")
 <h2>Sets the base timezone to use for all the date and time
 functions.</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">date_get_timezone();</p>
 
 <p><br>
 </p>
 
-<p><b>Returns:</b> Constant</p>
+<p><b>返回:</b> Constant</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
-<p>Gets the base time zone being used for all the rest of the date
-and time functions. This time zone can either be <i>local</i> (as
-set by the system) or <i>UTC</i>, and the function will return one
-of the following constants:<br>
+<p>返回影响其他时间函数的时区常量. 这个时区可以是本地(如系统设定的)或UTC,函数将返回一个下面的常量:
+  <br>
 <br></p>
 
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
-<th>Description</th>
+<th>常量</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>timezone_local</td>
-<td>use the local time zone as set by the system</td>
+<td>本地时区</td>
 </tr>
 
 <tr class="alt">
 <td>timezone_utc</td>
-<td>use Coordinated Universal Time</td>
+<td>世界协调时</td>
 </tr>
 </table>
 </div>
@@ -73,7 +71,7 @@ of the following constants:<br>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>例子:</h3>
 
 <p class="code">if date_get_timezone() != timezone_utc<br>
 &nbsp;&nbsp;&nbsp;br&gt;

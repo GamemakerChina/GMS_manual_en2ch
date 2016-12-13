@@ -30,7 +30,7 @@ if (window.name != "content")
 
 <h2>Copy all or part of a vertex buffer into a regular buffer.</h2>
 
-<h3>Syntax:</h3>
+<h3>语法:</h3>
 
 <p class="code">buffer_copy_from_vertex_buffer(vertex_buffer,
 start_vertex, num_vertices, dest_buffer, dest_offset);</p>
@@ -41,8 +41,8 @@ start_vertex, num_vertices, dest_buffer, dest_offset);</p>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>内容提要</th>
+<th>描述</th>
 </tr>
 
 <tr>
@@ -75,12 +75,12 @@ start_vertex, num_vertices, dest_buffer, dest_offset);</p>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description</h3>
+<h3>描述</h3>
 
 <p>This function can be used to copy some (or all) of the vertex
 data stored in one vertex buffer into a previously created regular
@@ -104,7 +104,7 @@ data to in the destination buffer.<br>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>例子:</h3>
 
 <p class="code">var v_num = vertex_get_number(model_buff);
 buffer_copy_from_vertex_buffer(model_buffer, 0, v_num - 1,
