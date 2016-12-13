@@ -28,7 +28,7 @@ if (window.name != "content")
 
 <h1>current_weekday</h1>
 
-<h2>Returns the current weekday as a real number.</h2>
+<h2>返回当前星期几</h2>
 
 <h3>语法:</h3>
 
@@ -44,8 +44,7 @@ if (window.name != "content")
 
 <h3>描述</h3>
 
-<p>This <b>read only</b> variable will return the weekday as a
-value, where Sunday is 0 and Saturday is 6.<br>
+<p>这个 <b>只读</b> 变量返回当前星期几，星期天返回 0 星期六返回 6.<br>
 <br></p>
 
 <p><br>
@@ -56,19 +55,17 @@ value, where Sunday is 0 and Saturday is 6.<br>
 <p class="code">var day;<br>
 switch(current_weekday)<br>
 &nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;case 0: day = "Sunday"; break;<br>
-&nbsp;&nbsp;&nbsp;case 1: day = "Monday"; break;<br>
-&nbsp;&nbsp;&nbsp;case 2: day = "Tuesday"; break;<br>
-&nbsp;&nbsp;&nbsp;case 3: day = "Wednesday"; break;<br>
-&nbsp;&nbsp;&nbsp;case 4: day = "Thursday"; break;<br>
-&nbsp;&nbsp;&nbsp;case 5: day = "Friday"; break;<br>
-&nbsp;&nbsp;&nbsp;case 6: day = "Saturday"; break;<br>
+&nbsp;&nbsp;&nbsp;case 0: day = "星期天"; break;<br>
+&nbsp;&nbsp;&nbsp;case 1: day = "星期一"; break;<br>
+&nbsp;&nbsp;&nbsp;case 2: day = "星期二"; break;<br>
+&nbsp;&nbsp;&nbsp;case 3: day = "星期三"; break;<br>
+&nbsp;&nbsp;&nbsp;case 4: day = "星期四"; break;<br>
+&nbsp;&nbsp;&nbsp;case 5: day = "星期五"; break;<br>
+&nbsp;&nbsp;&nbsp;case 6: day = "星期六"; break;<br>
 &nbsp;&nbsp;&nbsp;}<br>
 draw_text(32, 32, "Today is " + day +".");<br></p>
 
-<p>The above code uses the <tt>current_weekday</tt> value to set a
-variable with the correct day in text, then draws that for the user
-to see.</p>
+<p>上面的代码使用 <tt>current_weekday</tt> 的值赋给了一个变量day使用户看到</p>
 
 <p><br>
 </p>
