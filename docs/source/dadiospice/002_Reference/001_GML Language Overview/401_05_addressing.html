@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>访问其它实例的变量</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/001_GML Language Overview/401_05_addressing.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_05_addressing.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_05_addressing.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script><!-- !chm2web! -->
+
+
+<h1>访问其它实例的变量</h1>
+
+<h2>在这里你可以找到多种方法访问其它实例的变量。</h2>
+
+<p>在专属于 <a href=
+"Variables/index.html">变量</a>的这一节，你会发现怎样创建，以及在单个实例中创建和使用变量，或者全局变量，但是如果你想在一个实例中访问另外一个不同的实例的变量会怎么样？在很多情况下你需要做到这一点，比如子弹的一次碰撞中，你可能想要通过访问了弹的变量知道子弹造成了多少伤害，或者你想要在谜题中让所有的球停下来，或者你想要将主角移动到特定地点，或任何你可能会在其它游戏中遇到的任何情况。幸好GML语言有方法可以实现这个。<br><br>在另外一个实例中访问或者更改一个变量，最通常的一个方法是使用物体的名字作为标识符，然后使用一个点“.”告诉 <i>GameMaker</i> 之后使用的变量是在那个物体中指定或者改变。实际看起来是这样的：<br>
+<br></p>
+
+<p class="code">obj_ball.speed = 0;<br></p>
+
+<p><br>
+上述代码中你正在设定“obj_ball”的一个实例的移动速度。然而如果房间里有给定物体的多个实例，那么它将应用于所有的实例 - 除非你你正在使用一个 <b>JS</b> 平台，或者 <b>HTML5</b>输入平台，那种情况它将只会影响一个，但是你不会知道它影响的是哪一个 - 如果你需要访问一个物体的所有实例，应该使用 <a href=
+"401_18_with.html"><tt>with</tt></a>，这会100%兼容所有的平台。基本上，“a.b”这种形式只用于房间内只有单个物体的实例，或者（后面将会看到）当你知道一个特定实例的ID。<br><br>当你知道房间里有一个物体的多个实例时，你也可以访问物体的单个实例，使用 <b>实例的“id”</b>告诉 <i>GameMaker: Studio</i> 具体想要访问哪个实例。 <b>实例的“id”</b>是你游戏中每一个创建的实例的被给定的唯一的识别码。当你在一个房间（房间编辑器）里放置实例，鼠标悬放在实例上会在编辑器状态栏看到实例ID，甚至使用代创建的实例也会有一个独立的id数值。“id值”总是大于或等于100000，这些数值也可以用于点“.”的左手边。</p>
+
+<blockquote><i><b>注意：</b> 英文点可以解读为小数点，为避免这个，用括号括起来。</i>
+</blockquote>
+
+<p>下面的代码解释了怎么写：<br>
+<br></p>
+
+<p class="code">(100012).speed = 0;<br></p>
+
+<p><br>
+注意，这种方法你不能使用特定的<a href=
+"Keywords.html">关键词</a> "<tt>all</tt>"， 但是其它的关键词 "<tt>other</tt>" 和 "<tt>self</tt>" 没有问题。你也可以使用变量，只要这个变储存一个有效的<b>instance id（实例ID）</b>。下面举例说明这点……<br><br>使用变量设置实例的值：<br>
+<br></p>
+
+<p class="code">var inst = instance_position(mouse_x, mouse_y,
+all);<br>
+if instance_exists(inst) &nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;inst.speed = 0;<br>
+&nbsp;&nbsp;&nbsp;}<br></p>
+
+<p><br>
+注意上述代码块调用了 <tt>instance_exists()</tt> 函数。这是因为如果实例不存在的话，使用“.”的方法访问或改变实例的值将会报错以至游戏崩溃。因此，当使用这个方法时如果有可能会出现实例销毁、无效化，或者从房间里删除的情况，你应该 <i>始终</i>检测实例的存在。使用 <tt>instance_exists()</tt> 函数或者 <tt>instance_number()</tt> 函数可以做到这一点。<br><br>读取、改变或设置其它实例的变量，这些都是完美有效的方法，指针点“.”实际上就是一个<i>运算符</i>。它给定一个值作为左边的操作数，以及一个变量（地址）作为右边的操作数，接着返回指定物体或实例中特定变量的地址。所有的物体名称、常量、ID等等……可以当作任何其它值一样处理。<br>
+<br></p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回: <a href="index.html">GML 概述</a></div>
+
+<div style="float:right">下一页: <a href=
+"Keywords.html">Keywords</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+</body>
+</html>

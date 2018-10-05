@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>surface_save_part</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Surfaces/surface_save_part.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FSurfaces%2Fsurface_save_part.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FSurfaces%2Fsurface_save_part.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script><!-- !chm2web! -->
+
+
+<h1>surface_save_part</h1>
+
+<h2>对一个表面层的一部分进行存盘。</h2>
+
+<h3>语法：</h3>
+
+<p class="code">surface_save_part(surface_id, fname, x, y, width,
+height);</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>surface_id</td>
+<td>作为绘制目标的表面层的ID。</td>
+</tr>
+
+<tr class="alt">
+<td>fname</td>
+<td>保存的图像文件的名称。</td>
+</tr>
+
+<tr>
+<td>x</td>
+<td>表面层内的起始x位置</td>
+</tr>
+
+<tr class="alt">
+<td>y</td>
+<td>表面层内的起始y位置。</td>
+</tr>
+
+<tr>
+<td>width</td>
+<td>保存部分的宽度。</td>
+</tr>
+
+<tr class="alt">
+<td>height</td>
+<td>保存部分的高度。</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>返回：</b> N/A</p>
+
+<p><br>
+</p>
+
+<h3>描述</h3>
+
+<p>此函数将使用给定的文件名保存表面层到硬盘上。表面层 <i>只能</i> 保存为 <tt>*.png</tt> 格式的文件，给定的 (x,y)坐标必须是表面层的局部坐标，铭记的表面的左上角总是（0,0）。<br>
+<br></p>
+
+<p><br>
+</p>
+
+<h3>举例：</h3>
+
+<p class="code">if keyboard_check_pressed(ord("S")<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;surface_save_part(surf, "test.png", 0, 0, 100,
+100);<br>
+&nbsp;&nbsp;&nbsp;}<br></p>
+
+<p>上面的代码将检查是否用户按下键盘上的“S”键，如果他们这样操作了，将对变量“surf”索引的表面层的一部分进行存盘保存。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回: <a href=
+"index.html">表面层</a></div>
+
+<div style="float:right">下一页: <a href=
+"surface_exists.html">surface_exists</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table><!-- /CHM2WEB --> 
+
+
+</body>
+</html>

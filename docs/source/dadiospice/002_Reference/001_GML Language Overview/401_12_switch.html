@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>switch 语句</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/001_GML Language Overview/401_12_switch.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_12_switch.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_12_switch.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script><!-- !chm2web! -->
+
+
+<h1>switch 语句</h1>
+
+<h2>这一节讨论 <i>GameMaker: Studio</i>里“switch”的用法。</h2>
+
+<p>很多情况下，你想要实例根据一个特定值完成一个动作。通常可以使用多个连续的 <a href="401_07_if.html">"if"</a> 语句，但如果选项在两、三个以上时，“switch”语句使用起来更容易。switch语句结构如下：<br>
+<br></p>
+
+<p class="code">switch (&lt;表达式&gt;)<br>{<br>case &lt;expression1&gt;: &lt;statement1&gt;; ... ; break;<br>case &lt;expression2&gt;: &lt;statement2&gt;; ... ; break;<br>...<br>default: &lt;statement&gt;;<br>}<br></p>
+
+<p><br>
+工作流程如下：</p>
+
+<ul>
+<li>首先括号里面的运行表达式</li>
+
+<li>下一步与case后面的表达式的结果进行比较。</li>
+
+<li>遇到第一个正确的值后运行会继续，<i>直到出现一个“break”语句。</i>.</li>
+
+<li>如果没有一个case表达式正确，将会在“default”语句后继续（default并非必须，那时没有动作执行）。</li>
+</ul>
+
+<p>注意，同一个语句前可以出现多个case。同样，“break”也不是必须的，没有它时，简单的继续到下一个case语句。这意味着你可以创建一个分层的“开关”，根据输入值运行不同部分的代码。下面是游戏中的“switch”典型用法：<br>
+<br></p>
+
+<p class="code">{<br>
+switch (keyboard_key)<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;case vk_left:<br>
+&nbsp;&nbsp;&nbsp;case ord("A"):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x -= 4;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+&nbsp;&nbsp;&nbsp;case vk_right:<br>
+&nbsp;&nbsp;&nbsp;case ord("D"):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x += 4;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+&nbsp;&nbsp;&nbsp;case vk_up:<br>
+&nbsp;&nbsp;&nbsp;case ord("W"):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y -= 4;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+&nbsp;&nbsp;&nbsp;case vk_down:<br>
+&nbsp;&nbsp;&nbsp;case ord("S"):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y += 4;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+&nbsp;&nbsp;&nbsp;}<br>
+}<br></p>
+
+<p><br>
+上述代码使用“switch”检测键盘事件，然后和条件列表比较。遇到了适当的条件后运行相应的代码。注意代码中怎么用的，“switch”可以检测多个条件，如果没有“break”就会继续，以允许多个按键得到相同的结果。这仅是允许多个设置处理移动的一种方法。<br>
+<br></p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回: <a href="index.html">GML 概述</a></div>
+
+<div style="float:right">下一页: <a href="401_13_break.html">“Break”语句</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+</body>
+</html>

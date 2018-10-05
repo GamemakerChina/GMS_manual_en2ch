@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -26,61 +26,74 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>数据结构</h1>
-  
-<h2>这一节处理不同的、特殊的你能够用于存储不同类型数据的函数
-</h2>
+<h1>Data structures</h1>
 
-<p>在游戏中你通常需要以一个精确的、有序的方式存储信息。比如说，你可能需<!--
--->要存储一个人物携带物品的列表或者你可能想要存储一个仍然需要被访问的地<!--
--->点的栅格。现在你<i>能够</i>使用使用数组来做这件事情，但是如果你想要执<!--
--->行更复杂的操作，比如分类这些数据或者搜索一个特定的项目你需要写一大篇<!--
--->会拖慢执行的、难以调试的并且写起来十分痛苦的GML代码！<br>
+<h2>This section deals with the different, specialist functions
+that you can use to store different types of data.</h2>
+
+<p>In games you often need to store information in a precise and
+ordered way. For example, you may need to store lists of items that
+a person carries or you may want to store a grid of places that
+still need to be visited. Now, you <i>can</i> use the arrays for
+this, but if you want to do more complicated operations, like
+sorting the data or searching for a particular item, you need to
+write large pieces of GML code which can be slow to execute,
+difficult to debug and a real pain to write!<br>
 <br>
-为了改进这个，<i>GameMaker: Studio</i>有许多内置的<b>数据结构</b>能<!--
--->够通过特殊的函数被访问。有六种不同类型的数据结构是可用的，每一个都有<!--
--->取决于自己的优势，这取决于你打算存储信息的类型以及你接下来如何分配：<!--
--->堆栈、队列、列表、比对、优先队列、栅格。<br>
+To remedy this, <i>GameMaker: Studio</i> has a number of built-in
+<b>data structures</b> that can be accessed through specialist
+functions. There are six different types of data structure
+available, each one having its own benefits depending on the type
+of information that you are looking to store and how you wish to
+manipulate it later: stacks, queues, lists, maps, priority queues,
+and grids.<br>
 <br>
-必要地，所有的数据结构工作方式都是同理的——不成功押宝规划部宇哥数据结<!--
--->构并且把他的<i>索引值</i>存入一个变量。之后，你就可以用这个索引表示<!--
--->该数据结构，以便对其进行操作。最终，一旦你完成了，你就又销毁这个这个<!--
--->数据结构并将其移出内存。你可以同时使用你所想要的尽可能多的结构并且所<!--
--->有结构都既能存储字符串又能存储实数<br>
+Essentially, all data structures work in the same way - You create
+a data structure and store its <i>index value</i> in a variable.
+You then use this index to reference the data structure in all
+further function calls that can perform operations on it. Finally,
+once you are done you destroy the data structure again to remove it
+from memory. You can use as many of the structures at the same time
+as you need, and all structures can store both strings and real
+values.<br>
 <br>
-<i><b>注意:</b>和所有的动态资源一样，数据结构将会占用内存并因此应<!--
--->该在不再被使用的时候<b>总是</b>被销毁以防止内存泄漏将拖慢你的游戏并且最终使你的游戏崩溃</i><br>
+<i><b>NOTE:</b> As with all dynamic resources, data structures take
+up memory and so should <b>always</b> be destroyed when no longer
+needed to prevent memory leaks which will slow down and eventually
+crash your game.</i><br>
 <br></p>
 
-<p>关于不同数据结构的信息可以在以下章节中被找到：<br>
-</p>
+<p>Information on the different data structures can be found in the
+following sections:</p>
 
 <blockquote>
 <ol>
-<li><a href="DS%20Stacks/index.html">堆栈结构</a><br>
+<li><a href="DS%20Stacks/index.html">Stacks</a><br>
 </li>
 
-<li><a href="DS%20Queues/index.html">队列结构</a><br>
+<li><a href="DS%20Queues/index.html">Queues</a><br>
 </li>
 
-<li><a href="DS%20Lists/index.html">列表结构</a><br>
+<li><a href="DS%20Lists/index.html">Lists</a><br>
 </li>
 
-<li><a href="DS%20Maps/index.html">映射结构</a><br>
+<li><a href="DS%20Maps/index.html">Maps</a><br>
 </li>
 
-<li><a href="DS%20Priority%20Queues/index.html">优先队列结构</a><br>
+<li><a href="DS%20Priority%20Queues/index.html">Priority
+Queues</a><br>
 </li>
 
-<li><a href="DS%20Grids/index.html">栅格结构</a><br>
+<li><a href="DS%20Grids/index.html">Grids</a><br>
 </li>
 </ol>
 </blockquote>
 
-<p>在在你游戏中使用数据结构之前，你应该也要提防有一些特定的时刻当，<!--
--->因为取舍误差你可能得到并不是你想要的结果。这可能会通过使用下<!--
--->面这个函数来修改数据结构的精度来重新被解决。<br>
-</p>
+<p>Before using data structures in your game, you should also be
+aware that there are certain moments when, due to rounding errors,
+you may get a result that is not what you expected. This may be
+resolved by changing the DS precision using the following
+function:</p>
 
 <blockquote>
 <ol>
@@ -89,8 +102,8 @@ if (window.name != "content")
 </ol>
 </blockquote>
 
-<p>最后，这里还有一个特殊的函数用来检测一个被给定类型的数据结构是否存在：
-</p>
+<p>Finally, there is also a special function for checking to see
+whether a data structure of any given type exists:</p>
 
 <blockquote>
 <ol>
@@ -103,11 +116,11 @@ if (window.name != "content")
 </p>
 
 <div class="clear">
-<div style="float:left">上一个: <a href=
-"../index.html">GML参考</a></div>
+<div style="float:left">Back: <a href=
+"../index.html">Reference</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -116,16 +129,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -1,8 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -48,12 +48,16 @@ completely.<br>
 <br>
 The other two sections of this tab are related to the way your
 final game is shown once started, with the <i>Splash Screen</i>
-being the graphic that is shown while your game is loading, and the
+being the graphic that is shown while your game is loading, which
+can be enabled or disabled using the appropriate check-box, and the
 <i>Options</i> controlling whether you should display the standard
 Windows cursor or not and the icon that your game should show. You
 may also choose where the game bundle is to be installed to, either
-the "%localappdata%" or "%appdata%" folders.<br>
-<br></p>
+the "%localappdata%" or "%appdata%" folders.</p>
+
+<blockquote><i><b>NOTE:</b> Being able to change or enable/disable
+the splash screen is a <b>Pro Only</b> feature.</i>
+</blockquote>
 
 <h3>Graphics</h3>
 
@@ -90,7 +94,10 @@ machines.</li>
 <li><b>Use synchronization to avoid tearing</b> - This toggles
 v-sync on or off. Note, that if you have a game with a room speed
 of 120 and the player has a monitor with a refresh rate of 60,
-turning this option on will lock your game speed to 60 too.</li>
+turning this option on will lock your game speed to 60 too. There
+is an alternative v-sync mode available should the game still have
+issues like stuttering or tearing even with v-sync on - see
+<b>alternative synchronisation method</b> below.</li>
 
 <li style="list-style: none"><br>
 </li>
@@ -121,6 +128,51 @@ maximise and close buttons as well as the game title.</li>
 
 <li style="list-style: none"><br>
 </li>
+</ul>
+</blockquote>
+
+<p>The following are considered advanced options for rendering to
+the Windows target module and should generally be left at their
+default values. However should you be experiencing graphics issues,
+in particular with older machines, then you may benefit from
+changing these:</p>
+
+<blockquote>
+<ul>
+<li><b>Create Textures on Demand</b> - Checking this will make the
+windows target work like all the other targets, ie: texture pages
+will be loaded into memory on demand and can be flushed again when
+required. This can cause a few milliseconds of pause in your game
+as the texture pages are loaded, and so should be optimised such
+that the textures required for a level are loaded at the start of
+the room to minimise impact.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>Vertex Buffer Method</b> - This option can be used to change
+the way that the game geometry uses the vertex buffer. The options
+are:<br>
+<br>
+
+<ul>
+<li>fast - This is the default method and is the one recommended by
+Nvidia - it should give the highest performance.</li>
+
+<li>compatible - This is the deprecated method that GameMaker:
+Studio used to use before adopting the fast method - poorer
+performance on newer machines</li>
+
+<li>most compatible - This is the legacy method that was used in
+previous versions of GameMaker - performance is poorer than the
+other two, but it should be compatible with almost any
+machine.</li>
+</ul></li>
+
+<li>Alternative Synchronisation Method - Change the way that
+vertical synchronisation works to improve compatability and resolve
+any issues with stuttering or tearing that the regular v-sync may
+show on older machines.</li>
 </ul>
 </blockquote>
 
@@ -179,14 +231,14 @@ should you need one.<br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Global Game
+<div style="float:left">Back: <a href="index.html">Global Game
 Settings</a></div>
 
-<div style="float:right">下一个: <a href="Mac%20OS%20Tab.html">The
+<div style="float:right">Next: <a href="Mac%20OS%20Tab.html">The
 Mac Os Tab</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -195,16 +247,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

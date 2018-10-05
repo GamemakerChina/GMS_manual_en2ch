@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>random</h1>
 
-<h2>返回在[0,n)上的一个随机实数。</h2>
+<h2>Returns a random real number between 0 and n.</h2>
 
-<h3><b>语法:</b>
+<h3><b>Syntax:</b>
 </h3>
 
 <p class="code">random(n);</p>
@@ -41,13 +41,14 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>n</td>
-<td>待选择随机数的范围的上边界。</td>
+<td>The upper range from which the random number will be
+selected.</td>
 </tr>
 </table>
 </div>
@@ -55,29 +56,32 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回值:</b> 实数型</p>
+<p><b>Returns:</b> Real</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>这个函数对于不必需要整数的概率是很好的，
-举个例子,
-<tt>random(100)</tt>将会返回0到99的值①，但值将可能会是22.56473！
-你也可以在这个函数中不是用整数而使用实数像这样——<tt>random(0.5)</tt>，将会返回一个从0到0.4999999的一个数值.<br>
-<br><br>①：根据后文内容以及实际测试，此处表述不当，应为返回在[0,100)上的值，即这个值有可能大于99而小于100.
+<p>This function is good for probabilities where returning an
+integer (whole number) is not necessary. For example,
+<tt>random(100)</tt> will return a value from 0 to 99, but that
+value can be 22.56473! You can also use real numbers and not
+integers in this function like this - <tt>random(0.5)</tt>, which
+will return a value between 0 and 0.4999999.<br>
 <br>
-<i><b>注意:</b>这个函数在每次游戏重新运行时将返回相同的数因为事实上GameMaker: Studio
-每次都产生相同的初始随机数种子以使得调试代码成为相当容易的事情。欲避免这个行为请在游戏开始时使用<a href=
-"randomize.html"><tt>randomize</tt></a>
-</i><br>
+<i><b>NOTE:</b> This function will return the same value every time
+the game is run afresh due to the fact that GameMaker: Studio
+generates the same initial random seed every time to make debugging
+code a far easier task. To avoid this behaviour use <a href=
+"randomize.html"><tt>randomize</tt></a> at the start of your
+game.</i><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3><b>举例:</b>
+<h3><b>Example:</b>
 </h3>
 
 <p class="code">if random(10) &gt;= 9<br>
@@ -85,19 +89,21 @@ if (window.name != "content")
 &nbsp;&nbsp;&nbsp;score += 100;<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>这将会近似产生1/10的几率为分数增加100。</p>
+<p>This will produce approximately a one in ten chance of adding
+100 to the score.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">上一页: <a href="index.html">实数函数</a></div>
+<div style="float:left">Back: <a href="index.html">Real Number
+Functions</a></div>
 
-<div style="float:right">下一页: <a href=
+<div style="float:right">Next: <a href=
 "random_range.html">random_range</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -106,16 +112,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

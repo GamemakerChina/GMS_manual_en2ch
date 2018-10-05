@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,10 @@ if (window.name != "content")
 
 <h1>ds_grid_add_disk</h1>
 
-<h2>将一个指定的值叠加给栅格中一个圆形区域内所有的单元格。（可以是一个数字或一个字符串）</h2>
+<h2>Adds to all the cells in a circular region in a grid to an
+indicated value (can both be a number or a string).</h2>
 
-<h3>语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">ds_grid_add_disk(index, xm, ym, r, val);</p>
 
@@ -40,33 +41,33 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>栅格结构的索引</td>
+<td>The index of the grid.</td>
 </tr>
 
 <tr class="alt">
 <td>xm</td>
-<td>栅格中圆盘区域中心的x位置</td>
+<td>The x position of the disk on the grid.</td>
 </tr>
 
 <tr>
 <td>ym</td>
-<td>栅格中圆盘区域中心的y位置</td>
+<td>The y position of the disk on the grid.</td>
 </tr>
 
 <tr class="alt">
 <td>r</td>
-<td>栅格中圆盘区域的半径</td>
+<td>The radius of the disk on the grid.</td>
 </tr>
 
 <tr>
 <td>val</td>
-<td>待叠加给圆盘区域内单元格的值</td>
+<td>The value to add to the cells within the disk.</td>
 </tr>
 </table>
 </div>
@@ -74,39 +75,44 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回值:</b> 无</p>
+<p><b>Returns:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>这个函数能够被用于将一个给定的值（实数或者字符串）叠加给栅格中<!--
--->在一个被定义的圆盘区域内的所有单元格。这个将被叠加出去的值必须和单<!--
--->元格承载的值的类型相同比如说：你 不能把一个字符串叠加给一个实数值，<!--
--->反之亦然，并且对于字符串来说这将 对应到串接字符串的位置。<br>
+<p>This function can be used to add a given value (real or string)
+to all the values of the cells found within the defined disk area
+of a grid. The value to be added must be of the same type as that
+held within the grid cells, ie: you cannot add a string to a real
+or vice-versa, and for strings this corresponds to
+concatenation.<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>举例:</h3>
+<h3>Example:</h3>
 
 <p class="code">ds_grid_add_disk(grid, 7, 6, 5, 2);</p>
 
-<p>这将会把2叠加给由变量"grid"所引用的栅格结构中被指定的圆盘区域中所有单元格所承载的值。</p>
+<p>This would add 2 to all the values held in the cells within the
+defined disk area of the ds_grid referenced by the variable
+"grid".</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">上一个: <a href="index.html">栅格结构</a></div>
+<div style="float:left">Back: <a href="index.html">DS
+Grids</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "ds_grid_add_grid_region.html">ds_grid_add_grid_region</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -115,16 +121,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

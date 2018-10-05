@@ -2,9 +2,9 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>window_mouse_set</title>
@@ -23,14 +23,15 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Windows And Views/The Game Win
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FThe%20Game%20Window%2Fwindow_mouse_set.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FThe%20Game%20Window%2Fwindow_mouse_set.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script><!-- !chm2web! -->
-
+</script>
+<!-- !chm2web! -->
 
 <h1>window_mouse_set</h1>
 
-<h2>设置窗口内的鼠标位置为指定值。</h2>
+<h2>Sets the position of the mouse in the window to the indicated
+values.</h2>
 
-<h3><b>语法：</b>
+<h3><b>Syntax:</b>
 </h3>
 
 <p class="code">window_mouse_set(x, y);</p>
@@ -41,18 +42,18 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>x</td>
-<td>窗口内的x坐标</td>
+<td>The x coordinate in the window.</td>
 </tr>
 
 <tr class="alt">
 <td>y</td>
-<td>窗口内的y坐标</td>
+<td>The y coordinate in the window.</td>
 </tr>
 </table>
 </div>
@@ -60,34 +61,38 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回：</b>N/A</p>
+<p><b>Returns:</b>N/A</p>
 
 <p><br>
 </p>
 
-<h3><b>描述</b>
+<h3><b>Description</b>
 </h3>
 
-<p>有了这个函数，你可以更改游戏窗口的鼠标位置，这在FPS游戏中非常有用。这个函数只有焦点在游戏中时有用，所以使用 alt + tab时 将会解锁鼠标。<br>
+<p>With this function you can change or set the position of the
+mouse within the game window which can be useful for FPS games, for
+example. The function will only work while the game is in focus and
+using alt + tab will unlock the mouse.<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>举例：</h3>
+<h3>Example:</h3>
 
 <p class="code">window_mouse_set(window_get_width() / 2,
 window_get_height() / 2);</p>
 
-<p>上述代码将鼠标在游戏窗口中居中放置。</p>
+<p>The above code would center the mouse in the game window.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">游戏窗口</a></div>
+<div style="float:left">Back: <a href="index.html">The Game
+Window</a></div>
 
-<div style="float:right">下一页: <a href=
+<div style="float:right">Next: <a href=
 "window_center.html">window_center</a></div>
 </div>
 

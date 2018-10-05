@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>choose</h1>
 
-<h2>随机地从16个参数中选出一个</h2>
+<h2>Randomly chooses one of up to 16 arguments.</h2>
 
-<h3><b>语法:</b>
+<h3><b>Syntax:</b>
 </h3>
 
 <p class="code">choose(val0, val1, val2... val15);</p>
@@ -41,13 +41,14 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>val0... val15</td>
-<td>一个可以是字符串、整数、变量或者常量的输入值</td>
+<td>An input value that can be string, integer, variable or
+constant.</td>
 </tr>
 </table>
 </div>
@@ -55,25 +56,32 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回值:</b> 被给定的参数之一</p>
+<p><b>Returns:</b> One of the given arguments.</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>有时候你希望指定某些不是数字内容的随即选项，或者这些数字你希望不是以任何一种真实的顺序或者在任意被设定的范围之内。
-在这些情况中你将使用choose()来生成一个随机结果。
-比如，说你想要创建的物体在开始的时候带有一个随机的精灵，那么你就可以使用这个函数来把精灵索引设置为16个精灵中的一个。<br>
-<i><b>注意:</b>这个函数每次重新运行游戏都将返回同一套结果因为GameMaker:
-Studio每次都生成同一套初始随机数种子来让调试更方便。为了避免这种行为在你游戏开始的时候使用函数<a href=
-"randomize.html"><tt>randomize</tt></a>.<br>
-<br></i></p>
+<p>Sometimes you want to specify something other than numbers for a
+random selection, or the numbers you want are not in any real order
+or within any set range. In these cases you would use choose() to
+generate a random result. For example, say you want to create an
+object with a random sprite at the start, then you could use this
+function to set the sprite index to one of up to 16 sprites.<br>
+<br>
+<i><b>NOTE:</b> This function will return the same value every time
+the game is run afresh due to the fact that GameMaker: Studio
+generates the same initial random seed every time to make debugging
+code a far easier task. To avoid this behaviour use <a href=
+"randomize.html"><tt>randomize</tt></a> at the start of your
+game.</i><br>
+<br></p>
 
 <p><br>
 </p>
 
-<h3><b>举例:</b>
+<h3><b>Example:</b>
 </h3>
 
 <p class="code">sprite_index = choose(spr_Cactus, spr_Flower,
@@ -81,19 +89,21 @@ spr_Tree, spr_Shrub);<br>
 hp = choose(5, 8, 15, 32, 40); name = choose("John", "Steven",
 "Graham", "Jack", "Emily", "Tina", "Jill", "Helen");</p>
 
-<p>上述代码使用choose来设定这个实例的一系列属性。</p>
+<p>The above code uses choose to set a number of properties for the
+instance.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">上一个: <a href="index.html">实数函数</a></div>
+<div style="float:left">Back: <a href="index.html">Real Number
+Functions</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "random.html">random</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -102,16 +112,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

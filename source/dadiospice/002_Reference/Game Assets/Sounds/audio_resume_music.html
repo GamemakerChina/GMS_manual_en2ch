@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,31 +28,37 @@ if (window.name != "content")
 
 <h1>audio_resume_music</h1>
 
-<h2>恢复当前已暂停的音乐（淘汰）。</h2>
+<h2>Resumes the current music track after it has been paused
+(OBSOLETE).</h2>
 
-<h3>语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">audio_resume_music();</p>
 
 <p><br>
 </p>
 
-<p><b>返回值:</b> N/A</p>
+<p><b>Returns:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p><i><b>注意!</b> 这个函数已经被淘汰，你应该用 <a href="audio_resume_sound.html">audio_resume_sound</a> 来代替。</i><br>
+<p><i><b>WARNING!</b> This function has been obsoleted and you
+should use <a href=
+"audio_resume_sound.html"><tt>audio_resume_sound</tt></a>
+instead.</i><br>
 <br>
-使用此函数，你可以恢复当前暂停的音乐曲目（使用函数<a href="audio_pause_music.html">audio_pause_music</a>后）。<br>
+With this function you can resume a music track that is currently
+paused (after using the function <a href=
+"audio_pause_music.html"><tt>audio_pause_music</tt></a>).<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>例子:</h3>
+<h3>Example:</h3>
 
 <p class="code">if keyboard_check_pressed(ord("P"))<br>
 &nbsp;&nbsp;&nbsp;{<br>
@@ -67,19 +73,22 @@ if (window.name != "content")
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>上述代码检查按键&quot;P&quot;是否被按下，如果是，则将全局变量Pause设置为true或false， 然后暂停或恢复音乐曲目。</p>
+<p>The above code checks for a press of the keyboard key "P" and if
+it detects one it sets the global variable "Pause" to <tt>true</tt>
+or false and then either pauses the music or it resumes the music
+from its paused state depending on the returned value.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Audio</a></div>
+<div style="float:left">Back: <a href="index.html">Audio</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "audio_stop_music.html">audio_stop_music</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -88,16 +97,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

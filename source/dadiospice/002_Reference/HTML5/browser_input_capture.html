@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,10 @@ if (window.name != "content")
 
 <h1>browser_input_capture</h1>
 
-<h2>设置捕获用户输入的对象</h2>
+<h2>Set whether the GameMaker: Studio game should get input or the
+browser.</h2>
 
-<h3><b>语法：</b>
+<h3><b>Syntax:</b>
 </h3>
 
 <p class="code">browser_input_capture(enable)</p>
@@ -38,40 +39,40 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回：</b> N/A</p>
+<p><b>Returns:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>说明</h3>
+<h3>Description</h3>
 
-<p>如果参数为 <tt>false</tt>，用户的所有输入被浏览器捕获，否则被游戏捕获。
-<br>
-举个例子：在Chrome浏览器中，用户输入按键“ctrl+j”可打开chrome的“下载内容”，
-如果我们调用browser_input_capture(true),chrome 将不会打开“下载内容”（屏蔽浏览器快捷键），用户的所有输入被我们的游戏捕获。
-<br>
-<br>
-这个函数只能用于HTML5平台</p>
+<p>With this function you can set whether the browser window should
+capture all input (set it to <tt>false</tt>) or whether the game
+should capture the input (set it to <tt>true</tt>). Note that this
+function is for use with the HTML5 module only.<br>
+<br></p>
+
 <p><br>
 </p>
 
-<h3>示例：</h3>
+<h3>Example:</h3>
 
 <p class="code">browser_input_capture(true);</p>
 
-<p>以上代码设置游戏捕获所有的用户输入。</p>
+<p>The above code sets the game to capture al browser input on the
+HTML5 target platform.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回： <a href="index.html">HTML5</a></div>
+<div style="float:left">Back: <a href="index.html">HTML5</a></div>
 
-<div style="float:right">下一页: <a href=
+<div style="float:right">Next: <a href=
 "webgl_enabled.html">webgl_enabled</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -80,16 +81,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

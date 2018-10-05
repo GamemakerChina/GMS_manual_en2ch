@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -49,7 +49,17 @@ and select "Assign audio group" to assign all the sounds contained
 with the folder to a specific audio group.</i>
 </blockquote>
 
-<p>Audio Groups are also linked to the <a href=
+<p>The "default" audio group will include the audio files in the
+game bundle and they will all be loaded into memory on start-up
+(unless flagged as "streamed" in the Audio properties), but when
+you create a custom audio group, the files that are added to it
+will <i>not</i> be loaded into memory until you call the function
+<a href=
+"../../002_Reference/Game%20Assets/Sounds/audio_group_load.html"><tt>
+audio_group_load()</tt></a>. In this way you can control what audio
+is resident in memory at any time.<br>
+<br>
+Audio Groups are also linked to the <a href=
 "../007_Configurations.html">Configurations</a> settings. When you
 select a configuration, you can then open the Audio Groups tab and
 select the export targets from the right hand side for that
@@ -76,14 +86,14 @@ Version</a> of</i> GameMaker: Studio.</blockquote>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Global Game
+<div style="float:left">Back: <a href="index.html">Global Game
 Settings</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "Project%20Info%20Tab.html">The Project Info Tab</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -92,16 +102,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

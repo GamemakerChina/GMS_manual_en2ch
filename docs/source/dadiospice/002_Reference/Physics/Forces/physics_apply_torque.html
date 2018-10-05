@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>physics_apply_torque</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../../files/helpindex.css"
+type="text/css">
+
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Physics/Forces/physics_apply_torque.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FPhysics%2FForces%2Fphysics_apply_torque.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FPhysics%2FForces%2Fphysics_apply_torque.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>physics_apply_torque</h1>
+
+<h2>这个函数将会对一个实例施加转矩（旋转）。</h2>
+
+<h3>语法:</h3>
+
+<p class="code">physics_apply_torque(torque)</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>torque</td>
+<td>待被施加的转矩（以N·m（牛顿·米）为单位）</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>返回:</b> 无</p>
+
+<p><br>
+</p>
+
+<h3>描述</h3>
+
+<p>当我们谈论转矩时，我们通常会谈论关于其质心旋转一个实例的力或者冲量的趋向，但是在<i>GameMaker: Studio</i>中，<!--
+-->你也能单独为一个实例施加一个转矩，来让它在一个给定方向内旋转。你想施加多大的转矩来得到预计的旋转完全由你分配给实例的支架的大小和密度决定，因为两个属性都旨在定义它的质量，也定义了它的惯量，也就会影响它的转矩！<!--
+-->首要的准则是如果一个实例有很大的惯量，你将会需要很大的转矩来使它开始旋转。同时也应该注意像重力、碰撞等其他因素也会影响一个物体的转矩。下图将帮助解释这些东西：<br>
+<br>
+<img class="center" src="physics_apply_torque_image.png"></p>
+
+<p>如你所见，你需要用来旋转一个物体的转矩大小取决于它提供的内在的质量和惯量。<i>GameMaker: Studio</i>已经全部基于创建时被分配给实例的支架的大小和密度为你计算好了。还要注意，逆时针转动时，值应当是负的①。
+<br>①在Box2D中，角度定义方向与传统定义方式相反。
+<br>
+<br></p>
+
+<p><br>
+</p>
+
+<h3>举例:</h3>
+
+<p class="code">if keyboard_check(vk_left)
+physics_apply_torque(-100);</p>
+
+<p>上述代码将会在左方向键按下时用100N·m的转矩逆时针地（向左）旋转实例。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">上一页: <a href="index.html">力</a></div>
+
+<div style="float:right">下一页: <a href=
+"physics_apply_angular_impulse.html">physics_apply_angular_impulse</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>

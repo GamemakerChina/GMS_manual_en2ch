@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -31,7 +31,7 @@ if (window.name != "content")
 <h2>The other events are some of the many events that can be
 triggered in an instance and may contain code or actions.</h2>
 
-<p><b><img src="../../Images/Event_Other.png" align="left">Other
+<p><b><img src="../../images/Event_Other.png" align="left">Other
 Events</b><br>
 There are a number of special events for use when making games with
 <i>GameMaker: Studio</i> and they are mostly grouped together under
@@ -155,11 +155,17 @@ frame of an animation (called a <i>sub-image</i>) has its own
 number, starting at 0, which can be checked in code or even through
 actions, but sometimes all you really need to know is when the
 animation has ended. That's when this event is triggered, right at
-the end of the animation when the sub image index shows that the
-last frame has been reached. This event is really useful for many
+the end of the animation, the moment that the sub image index loops
+back to the beginning (0). This event is really useful for many
 things, for example an explosion object where you can set the
-instance to destroy itself when the last frame of the animation is
-reached.</p>
+instance to destroy itself after the last frame of the animation
+has been shown.</p>
+
+<blockquote><i><b>NOTE:</b> Because the animation has already
+looped when this event fires, if you want to freeze the animation
+on the exact last frame then you will need to manually reset the
+image_index to the last frame (image_number - 1) in this event.</i>
+</blockquote>
 
 <h3>Animation Update</h3>
 
@@ -198,13 +204,13 @@ very useful for creating your own events that happen when
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Events</a></div>
+<div style="float:left">Back: <a href="index.html">Events</a></div>
 
-<div style="float:right">下一个: <a href="Draw%20Event.html">The Draw
+<div style="float:right">Next: <a href="Draw%20Event.html">The Draw
 Event</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -213,16 +219,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

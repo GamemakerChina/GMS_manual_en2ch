@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>ds_exists</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Data Structures/ds_exists.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FData%20Structures%2Fds_exists.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FData%20Structures%2Fds_exists.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>ds_exists</h1>
+
+<h2>Check to see if a data structure of a given type exists.<br>检测一个被给定类型的一个数据结构是否存在。</h2>
+
+<h3>Syntax语法:</h3>
+
+<p class="code">ds_exists(ind, type);</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>Argument参数</th>
+<th>Description描述</th>
+</tr>
+
+<tr>
+<td>ind</td>
+<td>The variable index to check for the data structure.待进行
+数据结构检测的变量索引。</td>
+</tr>
+
+<tr class="alt">
+<td>type</td>
+<td>The type of data structure to check for (see the list of
+constants below)待检测的数据类型（参见下文的常量表）
+</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>Returns返回值:</b> Boolean布尔型</p>
+
+<p><br>
+</p>
+
+<h3>Description描述</h3>
+
+<p>With this function you can check to see if a data structure of
+the given type exists. You supply the "index" value (as held in a
+variable) and the ds "type", which can be any of the constants
+listed below, and the function will return <tt>true</tt> if the
+data structure exists and <tt>false</tt> otherwise.
+<br>使用这个函数你能够检测观察一个属于该类型的数据结构是否存在。你提供
+这个“索引”的值（被承载给一个变量）以及这个数据结构的“类型”，可以是
+下方常量列表中的任意一个，并且如果这个数据结构存在这个函数将会返回
+<tt>true</tt>（真），否则返回<tt>false</tt>（假）<br>
+<br></p>
+
+<div class="compat">
+<table>
+<tr>
+<th>Constant常量</th>
+<th>Description描述</th>
+</tr>
+
+<tr>
+<td>ds_type_map</td>
+<td>A <a href="DS%20Maps/index.html">map</a> data structure.一个<a href="DS%20Maps/index.html">比对</a>数据结构。</td>
+</tr>
+
+<tr class="alt">
+<td>ds_type_list</td>
+<td>A <a href="DS%20Lists/index.html">list</a> data structure.一个<a href="DS%20Lists/index.html">列表</a>数据结构。</td>
+</tr>
+
+<tr>
+<td>ds_type_stack</td>
+<td>A <a href="DS%20Stacks/index.html">stack</a> data
+structure.一个<a href="DS%20Stacks/index.html">堆栈</a>数据结构。</td>
+</tr>
+
+<tr class="alt">
+<td>ds_type_grid</td>
+<td>A <a href="DS%20Grids/index.html">grid</a> data structure.一个<a href="DS%20Grids/index.html">栅格</a>数据结构。</td>
+</tr>
+
+<tr>
+<td>ds_type_queue</td>
+<td>A <a href="DS%20Queues/index.html">queue</a> data
+structure.一个<a href="DS%20Queues/index.html">队列</a>数据结构。</td>
+</tr>
+
+<tr class="alt">
+<td>ds_type_priority</td>
+<td>A <a href="DS%20Priority%20Queues/index.html">priority</a> data
+structure.一个<a href="DS%20Priority%20Queues/index.html">优先队列</a>数据结构。</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<h3>Example举例:</h3>
+
+<p class="code">if !ds_exists(ai_grid, ds_type_grid)<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;ai_grid = ds_grid_create(room_width / 32,
+room_height / 32);<br>
+&nbsp;&nbsp;&nbsp;}<br></p>
+
+<p>The above code checks the (previously initialised) variable
+"ai_grid" to see if it indexes a ds_grid type data structure, and
+if it does not then it creates one and stores its index in the
+variable.
+    <br>上述代码检测变量"ai_grid"（需要提前初始化）来检测它是否索引着
+一个栅格类型的数据结构，并且如果它不是，那么它就创建一个并把它的索
+引存给这个变量。
+</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">Back上一个: <a href="index.html">Data
+Structures数据结构</a></div>
+
+<div style="float:right">Next下一个: <a href=
+"ds_set_precision.html">ds_set_precision</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>

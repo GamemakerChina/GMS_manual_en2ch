@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>ds_grid_get_disk_mean</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../../files/helpindex.css"
+type="text/css">
+
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Data Structures/DS Grids/ds_grid_get_disk_mean.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FData%20Structures%2FDS%20Grids%2Fds_grid_get_disk_mean.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FData%20Structures%2FDS%20Grids%2Fds_grid_get_disk_mean.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>ds_grid_get_disk_mean</h1>
+
+<h2>Gets the mean value from all the values within a circular
+region.<br>从一个圆形区域所有值中获取一个均值</h2>
+
+<p><br>
+</p>
+
+<h3>Syntax语法:</h3>
+
+<p class="code">ds_grid_get_disk_mean(index, xm, ym, r);</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>Argument参数</th>
+<th>Description描述</th>
+</tr>
+
+<tr>
+<td>index</td>
+<td>The index of the grid.栅格结构的索引</td>
+</tr>
+
+<tr class="alt">
+<td>xm</td>
+<td>The x position of the disk on the grid.圆盘在栅格中的x位置。</td>
+</tr>
+
+<tr>
+<td>ym</td>
+<td>The y position of the disk on the grid.圆盘在栅格中的y位置。</td>
+</tr>
+
+<tr class="alt">
+<td>r</td>
+<td>The radius of the disk on the grid.栅格结构中圆盘的半径。</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>Returns返回值:</b> Real or String实数型 或者 字符串型</p>
+
+<p><br>
+</p>
+
+<h3>Description描述</h3>
+
+<p>This function can be used to find the mean value for all the
+cells found within the defined disk area of a grid (all cell values
+are added together and then divided by the total number of cells
+that make up the disk), as shown in the image below: <br>
+    这个函数能够被用于从一个栅格结构中被定义的圆盘区域中所有单元格的
+平均值（所有单元格的值被加在一起然后除以形成圆盘区域的单元格总数），
+正如下图所示：<img class=
+"center" src="ds_grid_get_disk_mean.png"><br>
+<br></p>
+
+<p><br>
+</p>
+
+<h3>Example举例:</h3>
+
+<p class="code">val = ds_grid_get_disk_mean(grid, 5, 5, 2);</p>
+
+<p>The above code will set the variable "val" to the mean value
+contained within the given disk of the ds_grid indexed in the
+variable "grid".<br>
+    上述代码将会设定变量"val"为索引为变量"grid"的栅格中被定义的
+圆盘区域内的所有单元格的平均值。
+</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">Back上一个: <a href="index.html">DS
+Grids栅格结构</a></div>
+
+<div style="float:right">Next下一个: <a href=
+"ds_grid_get_disk_min.html">ds_grid_get_disk_min</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>

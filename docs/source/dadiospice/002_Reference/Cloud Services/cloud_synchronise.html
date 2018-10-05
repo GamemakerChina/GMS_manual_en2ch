@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>cloud_synchronise 云端同步</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Cloud Services/cloud_synchronise.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FCloud%20Services%2Fcloud_synchronise.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FCloud%20Services%2Fcloud_synchronise.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script><!-- !chm2web! -->
+
+
+<h1>cloud_synchronise 云端同步</h1>
+
+<h2>同步您的游戏数据到云端服务器上。</h2>
+
+<h3>语法：</h3>
+
+<p class="code">cloud_synchronise();</p>
+
+<p><br>
+</p>
+
+<p><b>返回：</b> 实数</p>
+
+<p><br>
+</p>
+
+<h3>描述</h3>
+
+<p>这个函数通常在新的游戏的开始被调用，用于检索云端服务器上存储的游戏的启动。这个函数将返回一个唯一 <b>id</b> ，这个值被用于 <a href=
+"../../001_Advanced%20Use/More%20About%20Async%20Events/Cloud.html"> 异步云事件（Asynchronous Cloud Event）</a> 中从已创建的 ds_map 来检索关联信息。<br><br>这个函数用于向云端发送数据, 并触发相应的异步事件。此时，你可以检查返回的 <tt>async_load</tt> <a href=
+"../Data%20Structures/DS%20Maps/index.html">ds_map</a> 为下列值：<br>
+<br></p>
+
+<blockquote>
+<ol>
+<li><b>"status":</b> 这是状态码，其中负值表示错误，错误详情包含在“errorstring”中。
+0 （或者大于0的值） 代表成功(见下文)的返回, “resultString” 中包含返回的消息数据。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>"id":</b> 返回被调用的函数的id，如果你发送了一系列的 <tt>cloud_</tt> 请求，你需要知道被回应的是哪一个，所以你要用这个值来和发送时存储的值进行比较来找到你需要的请求。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>"description":</b> 上传的最后一个文件的描述。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>"resultString":</b> 从云端返回的二进制数据。</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>"errorString":</b> 返回的错误消息。</li>
+</ol>
+</blockquote>
+
+<p>返回值 "status" 的详细映射关系如下如下：</p>
+
+<div class="compat">
+<table class="compat">
+<tr>
+<th>Status 的值</th>
+<th>errorString / resultString</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>-1</td>
+<td>errorString = "Not logged in to &lt;SERVICE&gt;"</td>
+<td>未能成功登陆到给定的云服务。</td>
+</tr>
+
+<tr class="alt">
+<td>0</td>
+<td>resultString = recovered data</td>
+<td>从云端下载新的游戏数据(在 cloud_synchronise后调用)。</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>resultString = "AlreadySynchronized"</td>
+<td>自从上次调用以来cloud_synchronise没有新的数据。</td>
+</tr>
+
+<tr class="alt">
+<td>2</td>
+<td>resultString = "ConflictDeferral"</td>
+<td>遇到冲突,但玩家选择忽略它。</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>resultString = "GameUploadSuccess"</td>
+<td>来自 <a href=
+"../Cloud%20Services/cloud_string_save.html"><tt>cloud_string_save</tt></a> 或 <a href=
+"../Cloud%20Services/cloud_file_save.html"><tt>cloud_file_save</tt></a>的数据被成功的上传到云端。</td>
+</tr>
+
+<tr class="alt">
+<td>-n</td>
+<td>errorString = Description of error</td>
+<td>负数意味着同步失败。</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+<br>
+</p>
+
+<p><br>
+</p>
+
+<h3>扩展示例：</h3>
+
+<p>这个函数会在 <a href=
+"../../000_Using%20GameMaker/Events/Other%20Event.html">开始事件（Game Start Event）</a> 或者当一个 object 被放置在你的游戏的第一个房间中时被调用，通过这种思路来从云端服务器检查是否有数据更新。</p>
+
+<p class="code">cloud_check = cloud_synchronise();</p>
+
+<p>你需要检查从异步 <b>Cloud Event</b> 返回的 <tt>ds_map</tt>来获得返回的 status 和具体字符串。 你可以通过如下代码来获得：:</p>
+
+<p class="code">if ds_map_find_value(async_load, "id") ==
+cloud_check<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;if ds_map_find_value(async_load, "status") &lt;
+0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show_message_async("Cloud
+Services not available. Please check connectivity.");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;else<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if
+ds_map_find_value(async_load, "status") == 0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var file =
+file_text_open_write("Save.txt");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file_text_write_string(file,
+ds_map_find_value(async_load, "resultString"));<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file_text_close(file);<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;}<br></p>
+
+<p>上面的代码通过检查以确保异步调用的函数正确性，然后返回云端 ds_map 的 status。如果 status 是一个负数, 则告知用户这里出现了错误, 否则，代码将继续获取同步的数据并将它写入一个文本文件供以后使用。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">Back: <a href="index.html">Cloud
+Services</a></div>
+
+<div style="float:right">Next: <a href=
+"cloud_string_save.html">cloud_string_save</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table><!-- /CHM2WEB --> 
+
+
+</body>
+</html>

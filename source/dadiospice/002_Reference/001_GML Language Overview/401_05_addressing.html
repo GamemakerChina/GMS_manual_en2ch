@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -57,13 +57,16 @@ it would look like this:<br>
 <p><br>
 With the above code you are setting the speed of an instance of
 "obj_ball". However if you have more than one instance of the given
-object in the room, there is no way for <i>GameMaker: Studio</i> to
-know which one you are referring to, and it will "pick" one from
-those that are available (if you need to access all instances of an
-object, you should be using <a href=
-"401_18_with.html"><tt>with</tt></a>). In general, this format
-should only be used when you have a single instance of the object
-in the room.<br>
+object in the room, then it will apply to ALL of them equally -
+unless you are using one of the <b>JS</b> targets or <b>HTML5</b>,
+in which case it will affect only one, but you have no way of
+knowing which one it will affect - so if you need to access all
+instances of an object, you should be using <a href=
+"401_18_with.html"><tt>with</tt></a>, as that is 100% cross
+platform compatible. In general, this format should only be used
+when you have a single instance of the object in the room, or (as
+you will see in the next part) when you have a specific instance
+ID.<br>
 <br>
 You can also access a single instance of an object when there are
 multiple instances within the room using the <b>instance id</b> to
@@ -129,14 +132,14 @@ these can be dealt with like any other value.<br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">GML
+<div style="float:left">Back: <a href="index.html">GML
 Overview</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "Keywords.html">Keywords</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -145,16 +148,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

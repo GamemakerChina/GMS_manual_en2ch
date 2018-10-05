@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>physics_apply_force</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../../files/helpindex.css"
+type="text/css">
+
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Physics/Forces/physics_apply_force.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FPhysics%2FForces%2Fphysics_apply_force.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FPhysics%2FForces%2Fphysics_apply_force.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>physics_apply_force</h1>
+
+<h2>这个函数对当前实例在房间内一个位置以由一个向量定义的强度施加一个力。</h2>
+
+<h3>语法:</h3>
+
+<p class="code">physics_apply_force(xpos, ypos, xforce, yforce)</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>xpos</td>
+<td>力将被施加的<i>房间内的</i>x坐标</td>
+</tr>
+
+<tr class="alt">
+<td>ypos</td>
+<td>力将被施加的<i>房间内的</i>y坐标</td>
+</tr>
+
+<tr>
+<td>xforce</td>
+<td>力矢量的x分量</td>
+</tr>
+
+<tr class="alt">
+<td>yforce</td>
+<td>力矢量的y分量</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>返回值:</b> 无</p>
+
+<p><br>
+</p>
+
+<h3>描述</h3>
+
+<p>当用物理工作时你不仅需要对物体施加重力，还要施加其他外力。一个作用力是引发物体经历在速度、方向或形状方面改变的任何影响<!--
+-->并且在<i>GameMaker: Studio</i>中和我们定义重力一样被定义，通过从xforce/yforce分量中得到矢量。需要注意的是，外力不被施加于<!--
+-->物体的质心，而是房间内的一个位置并且它们将会改变方向、速度和依赖于施加在这个物体上的其他力（像重力）的转矩（转动）。<!--
+-->这里有一个例证图片来帮助理解：<br>
+<br>
+<img class="center" src="physics_apply_force_image.png"></p>
+
+<p>在上述范例中底端的弹簧物体在球物体上创建了一个力来使它向另一个方向移动。实质上的力被我们从在关于xpos/ypos位<!--
+-->置x/y分量中获得的矢量所定义的，也就是说力被计算为从(xpos,ypos)到(xforce,yforce)的距离以N<!--
+-->（牛顿，1N被定义为将一个1kg物体以1m/s<sup>2</sup>的变化率加速所需要的净力值）为单位并且这个方向是我们<!--
+-->由从(xpos,ypos)到(xforce,yforce)的方位角。这段类似于的碰撞代码将会参与到弹簧物体的碰撞事件中并且将会看起来像下面被提供的<!--
+-->举例中那样。<br>
+<br>
+<i><b>注意:</b>物理世界使用单位m进行所有计算，并且像素/米的比率被定义于房间编辑器中或使用<a href=
+"../The%20Physics%20World/physics_world_create.html"><tt>physics_world_create</tt></a>.</i><br>
+
+<br></p>
+
+<p><br>
+</p>
+
+<h3>举例:</h3>
+
+<p class="code">with (other)<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;physics_apply_force(x, y, 0, -30);<br>
+&nbsp;&nbsp;&nbsp;}<br></p>
+
+<p>上述代码将会对在碰撞中的<tt>other</tt>物体应用一段代码带有一个30N的力和方向。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">上一页: <a href="index.html">作用力</a></div>
+
+<div style="float:right">下一页: <a href=
+"physics_apply_impulse.html">physics_apply_impulse</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>

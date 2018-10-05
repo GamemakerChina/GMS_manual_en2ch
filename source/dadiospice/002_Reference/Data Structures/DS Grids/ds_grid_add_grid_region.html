@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,10 @@ if (window.name != "content")
 
 <h1>ds_grid_add_grid_region</h1>
 
-<h2>将一个源栅格中包含的单元格叠加给靶栅格中。</h2>
+<h2>Adds the contents of the cells in a source grid to the cells in
+a destination grid.</h2>
 
-<h3>语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">ds_grid_add_grid_region(index, source, x1, y1, x2,
 y2, xpos, ypos);</p>
@@ -41,48 +42,54 @@ y2, xpos, ypos);</p>
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>靶栅格的索引</td>
+<td>The index of the destination grid.</td>
 </tr>
 
 <tr class="alt">
 <td>source</td>
-<td>源栅格的索引</td>
+<td>The index of the source grid.</td>
 </tr>
 
 <tr>
 <td>x1</td>
-<td>从源栅格中待拷贝单元格的左端位置。</td>
+<td>The left position of the region of cells to copy from the
+source grid.</td>
 </tr>
 
 <tr class="alt">
 <td>y1</td>
-<td>从源栅格中待拷贝单元格的顶端位置。</td>
+<td>The top position of the region of cells to copy from the source
+grid.</td>
 </tr>
 
 <tr>
 <td>x2</td>
-<td>从源栅格中待拷贝单元格的右端位置。</td>
+<td>The right position of the region of cells to copy from the
+source grid.</td>
 </tr>
 
 <tr class="alt">
 <td>y2</td>
-<td>从源栅格中待拷贝单元格的底端位置。</td>
+<td>The bottom position of the region of cells to copy from the
+source grid.</td>
 </tr>
 
 <tr>
 <td>xpos</td>
-<td>靶栅格上待叠加源栅格区域的x位置。</td>
+<td>The x position on the destination grid to add the source region
+to.</td>
 </tr>
 
 <tr class="alt">
 <td>ypos</td>
-<td>靶栅格上待叠加源栅格区域的y位置。</td>
+<td>The y position on the destination grid to add the source region
+to.</td>
 </tr>
 </table>
 </div>
@@ -90,45 +97,45 @@ y2, xpos, ypos);</p>
 <p><br>
 </p>
 
-<p><b>返回值:</b> 无</p>
+<p><b>Returns:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3></h3>
+<h3>Description</h3>
 
-<p>这个函数能够被用于将从源栅格的区域内找到的所有值叠加给靶栅格，
-正如下面的插图：<img class="center" src=
-"ds_grid_add_grid_region.png"> <i><b>注意:</b>你也能使用这个函数给同一个的栅格中将来自于被存储在一片区域的值叠<!--
--->
-加给另一片区域（参见下方的代码举例）：
-    
-</i><br>
+<p>This function can be used to add all the values of all the cells
+found within the source area of a grid to the values within the
+destination grid, as illustrated below: <img class="center" src=
+"ds_grid_add_grid_region.png"> <i><b>NOTE:</b> You can also use
+this function on the same grid to add values from one region of the
+grid to those stored in another (see code example below).</i><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example举例:</h3>
+<h3>Example:</h3>
 
 <p class="code">ds_grid_add_grid_region(grid, grid, 0, 0, 1, 5, 2,
 0);</p>
 
-<p>上述代码能够拷贝索引为变量"grid"的栅格结构中从(0,0)到(1,5)的区域中单<!--
--->元格的值并将其叠加给同一栅格结构中(2,0)的位置。
-</p>
+<p>The above code would copy the region of cells from (0,0) to
+(1,5) of the ds-grid indexed in the variable "grid" and add them to
+the cells from position (2,0) of the same ds_grid.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">上一个: <a href="index.html">栅格结构</a></div>
+<div style="float:left">Back: <a href="index.html">DS
+Grids</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "ds_grid_multiply.html">ds_grid_multiply</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -137,16 +144,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>ds_grid_copy</h1>
 
-<h2>Copies one grid into another grid.<br>将一个栅格里面的值拷贝给另一个栅格。</h2>
+<h2>Copies one grid into another grid.</h2>
 
-<h3>Syntax语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">ds_grid_copy(destination, source);</p>
 
@@ -40,18 +40,18 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument参数</th>
-<th>Description描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>destination</td>
-<td>This index of the grid to copy to.待拷贝到的靶栅格。</td>
+<td>This index of the grid to copy to.</td>
 </tr>
 
 <tr>
 <td>source</td>
-<td>This index of the grid to copy from.待拷贝于的源栅格。</td>
+<td>This index of the grid to copy from.</td>
 </tr>
 </table>
 </div>
@@ -59,25 +59,23 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns返回值:</b> N/A无</p>
+<p><b>Returns:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description描述</h3>
+<h3>Description</h3>
 
 <p>With this function you can copy the contents of one grid into
 another one. Both grids must have been created previously using the
 <a href="ds_grid_create.html"><tt>ds_grid_create</tt></a>
 function.<br>
-使用这个函数你能够拷贝一个栅格结构内的内容到另一个栅格。两个栅格必须
-都已经被提前使用<a href="ds_grid_create.html"><tt>ds_grid_create</tt></a>函数创建。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example举例:</h3>
+<h3>Example:</h3>
 
 <p class="code">n_grid = ds_grid_create(ds_grid_width(a_grid),
 ds_grid_height(a_grid));<br>
@@ -86,25 +84,21 @@ ds_grid_clear(a_grid, -1);<br></p>
 
 <p>The above code creates a new ds_grid, based on the width and
 height of a previously created grid, then copies the information
-from① the previous grid to the new one. Finally it clears the old
-grid so that all cells have a value of -1.<br>
-    上述代码创建了一个新的栅格结构，基于之前被创建的一个栅格的宽
-度和高度，然后从①之前的内容中拷贝内容给新的栅格。最终，它清空了旧
-栅格以便于所有单元格有值-1。<br>①此处原文为form，疑似为原文错误拼写，已做临时处理
-</p>
+form the previous grid to the new one. Finally it clears the old
+grid so that all cells have a value of -1.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back上一个: <a href="index.html">DS
-Grids栅格结构</a></div>
+<div style="float:left">Back: <a href="index.html">DS
+Grids</a></div>
 
-<div style="float:right">Next下一个: <a href=
+<div style="float:right">Next: <a href=
 "ds_grid_read.html">ds_grid_read</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -113,16 +107,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

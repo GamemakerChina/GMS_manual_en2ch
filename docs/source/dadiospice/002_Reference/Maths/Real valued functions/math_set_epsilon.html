@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>math_set_epsilon</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../../files/helpindex.css"
+type="text/css">
+
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Maths/Real valued functions/math_set_epsilon.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FMaths%2FReal%20valued%20functions%2Fmath_set_epsilon.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FMaths%2FReal%20valued%20functions%2Fmath_set_epsilon.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>math_set_epsilon</h1>
+
+<h2>为浮点计算设定"机器ε"（即机器无穷小值）.</h2>
+
+<h3><b>语法:</b>
+</h3>
+
+<p class="code">math_set_epsilon(epsilon);</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>epsilon</td>
+<td>新的ε值 (从 0 到 0.999999999).</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>返回值:</b> 实数型</p>
+
+<p><br>
+</p>
+
+<h3>描述</h3>
+
+<p>ε是一个值被用于却决定两个以发生浮点误差的数是否足够接近以至于被认为是“相等的。
+这在处理浮点数学的时候是非常有用的因为它能减小使特定的运算符返回不正确的或者与我们预期相反的结果的“浮点误差”。
+举个例子，我们可能会向子图索引添加一个值并且期望是一个单整数，但是因为浮点数学的本性，
+实际结果以一些像5.0000002的东西而告终，所以当我们使用下面这个检测：</p>
+
+<p class="code">if image_index == 5 {do something}</p>
+
+<p>这段代码并不像与其所表现得那样 并且返回 <tt>false</tt>.
+然而，然而如果我们设定ε值为0.000001，image_index
+值将被取整为最近的与原值相差±0.000001的实数使得上述比较返回<tt>true</tt><br>
+<br>
+ε值将被用于下列整型运算符中：
+</p>
+
+<blockquote>
+<ul>
+<li>&lt;: 小于</li>
+
+<li>&gt;: 大于</li>
+
+<li>==: 等于</li>
+
+<li>&lt;=: 小于等于</li>
+
+<li>&gt;=: 大于等于</li>
+
+<li>!=: 不等于</li>
+</ul>
+</blockquote>
+
+<p>注意将ε值设为0则会禁用所有的取舍，而使用1将发生错误。<br>
+<br></p>
+
+<p><br>
+</p>
+
+<h3><b>举例:</b>
+</h3>
+
+<p class="code">math_set_epsilon(0.0001);</p>
+
+<p>这将为接下来所有浮点运算符设定ε值。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">上一页: <a href="index.html">数学</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>

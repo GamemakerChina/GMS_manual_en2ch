@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>physics_test_overlap</h1>
 
-<h2>检验两个支架在一个被给定的位置是否有交叠。</h2>
+<h2>Checks for an overlap of two fixtures at a given position.</h2>
 
-<h3>语法：</h3>
+<h3>Syntax:</h3>
 
 <p class="code">physics_test_overlap(xpos, ypos, angle, obj);</p>
 
@@ -40,28 +40,28 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>xpos</td>
-<td>房间内待检测的x位置</td>
+<td>The x position in the room to check</td>
 </tr>
 
 <tr>
 <td>ypos</td>
-<td>房间内待检测的y位置</td>
+<td>The y position in the room to check</td>
 </tr>
 
 <tr>
 <td>angle</td>
-<td>待检测的角度（调用此函数实例的）</td>
+<td>The angle to check (of the calling instance)</td>
 </tr>
 
 <tr>
 <td>obj</td>
-<td>待检测的物体</td>
+<td>The object to check for</td>
 </tr>
 </table>
 </div>
@@ -69,22 +69,26 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回：</b> 布尔型</p>
+<p><b>Returns:</b> Boolean.</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>这个函数可以被用于检验和观察一个物理实体（例如：实例的支架）是否存在交叠，或者<i>将会</i>发生交叠<!--
--->当旋转到这个角度并发生于房间内被给定的位置。"angle"参数是在待检测位置调用此函数的实例所拥有的（或将会有的）角度<!--
--->，并且"obj"参数可以是单个实例的id，也可以是物体索引或者<i>关键词常量</i><b>all</b> or <b>other</b>.<br>
+<p>This function can be used to check and see if a physical body
+(ie: the fixture of an instance) overlaps, or <i>will</i> overlap,
+when rotated and placed at a given position in the room. the
+"angle" argument is the angle of rotation that the calling instance
+has (or will have) at the position to be checked, and the "obj"
+argument can be either a single instance id, and object index or
+the <i>keywords</i> <b>all</b> or <b>other</b>.<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>举例：</h3>
+<h3>Example:</h3>
 
 <p class="code">if physics_test_overlap(x+20, y-35, 0,
 obj_Bomb)<br>
@@ -93,19 +97,21 @@ obj_Bomb)<br>
 &nbsp;&nbsp;&nbsp;ignited = true;<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>上述代码将会为物理支架的交叠而检测一个位置，并且如果有这个位置，则它就设定一个变量和一个计时器。</p>
+<p>The above code will check a position for a physics fixture
+overlap, and if there is one, it sets a variable and an alarm.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">上一页：<a href="index.html">物理功能</a></div>
+<div style="float:left">Back: <a href="index.html">Physics
+Functions</a></div>
 
-<div style="float:right">下一页：<a href=
+<div style="float:right">Next: <a href=
 "physics_mass_properties.html">physics_mass_properties</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -114,16 +120,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

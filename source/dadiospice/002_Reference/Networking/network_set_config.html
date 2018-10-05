@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>network_set_config</h1>
 
-<h2>设置联网相关的配置</h2>
+<h2>Set different configuration options for the network.</h2>
 
-<h3>语法：</h3>
+<h3>Syntax:</h3>
 
 <p class="code">network_set_config(config_value, setting);</p>
 
@@ -40,18 +40,18 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>说明</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>config_value</td>
-<td>配置项（可用参数在下文列表中）</td>
+<td>The config value constant to set (listed below).</td>
 </tr>
 
 <tr class="alt">
 <td>setting</td>
-<td>配置项的值</td>
+<td>The setting of the config value.</td>
 </tr>
 </table>
 </div>
@@ -59,68 +59,81 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回值：</b>字符串</p>
+<p><b>Returns:</b> String</p>
 
 <p><br>
 </p>
 
-<h3>说明</h3>
+<h3>Description</h3>
 
-<p>这个函数设置联网相关的配置，可配置项是 <b>常数</b>，列于下方列表:<br>
+<p>With this function you can set different network configurations.
+These configurations are given as <b>constants</b> and the setting
+will depend on the constant that you have choosen. The table below
+lists the available constants and their settings:<br>
 <br></p>
 
 <div class="compat">
 <table>
 <tr>
-<th>可配置项</th>
-<th>说明</th>
-<th>可配置项的值</th>
+<th>Constant</th>
+<th>Description</th>
+<th>Setting</th>
 </tr>
 
 <tr>
 <td>network_config_connect_timeout</td>
-<td>设置连接超时</td>
-<td>一个整数，单位毫秒</td>
+<td>Set a connection timeout value</td>
+<td>A value in milliseconds</td>
 </tr>
 
 <tr class="alt">
 <td>network_config_use_non_blocking_socket</td>
-<td>设置 GameMaker: Studio 在连接时是否堵塞程序</td>
-<td>0 = 阻塞, 1 = 不阻塞</td>
+<td>Tell GameMaker: Studio not to block on connect.</td>
+<td>0 = block, 1 = don't block</td>
 </tr>
 </table>
 </div>
 
 <p><br>
 <br>
-可选1 (<tt>network_config_connect_timeout</tt>) 不改变连接状态，除非连接超时。建议不要设置过长或过短，最好局域网1000，网络游戏4000。<br>
+The first option (<tt>network_config_connect_timeout</tt>) doesn't
+change connection behaviour apart from the time you have to wait.
+It is recommended that you don't set this too low and keep it at
+about 1000 for a LAN only game or 4000 or so for internet, or the
+game may fail to connect randomly.<br>
 <br>
-可选2 (<tt>network_config_use_non_blocking_socket</tt>) Socket在连接后触发<a href=
+The second option (<tt>network_config_use_non_blocking_socket</tt>)
+means that the network connect functions will all return a
+<tt>socket_id</tt> instantly, <i>but you can't send or receive on
+that socket until you've received an async network event</i>. The
+event triggered will have the "type" key set to
+<tt>network_type_non_blocking_connect</tt> (you can find further
+details from the page on the <a href=
 "../../001_Advanced%20Use/More%20About%20Async%20Events/Networking.html">
-异步回调事件</a>)，告知程序连接结果。在没有结果前，你不能使用这个 socket id 发送或接收数据。
-<br>
+Networking Asynchronous Event</a>).<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>示例：</h3>
+<h3>Example:</h3>
 
 <p class="code">network_set_config(network_config_connect_timeout,
 1000);<br>
 network_set_config(network_config_use_non_blocking_socket,
 1);<br></p>
 
-<p>以上代码，配置连接超时1000ms，并且连接时不堵塞程序。</p>
+<p>The above code will set the timeout for the network connection
+to 1000ms and tell GameMaker: Studio not to block on connect.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回： <a href=
-"index.html">联网</a></div>
+<div style="float:left">Back: <a href=
+"index.html">Networking</a></div>
 
-<div style="float:right">下一页： <a href=
+<div style="float:right">Next: <a href=
 "network_set_timeout.html">network_set_timeout</a></div>
 </div>
 

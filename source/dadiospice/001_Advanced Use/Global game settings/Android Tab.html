@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -31,7 +31,7 @@ if (window.name != "content")
 <h2>This section deals with the Android tab of the Global Games
 Settings Window.</h2>
 
-<p>This Android tab is split into two separate <i>sub-tabs</i>
+<p>This Android tab is split into various separate <i>sub-tabs</i>
 (accessible on the left of the window) to make changing and
 updating the information for your game clearer and less
 complicated. These tabs are explained in the following
@@ -47,10 +47,21 @@ numbers 0-9, with no symbols or other special characters at all,
 nor should it have uppercase characters. It should follow the
 format <i>“com.domain.myapp”</i>.<br>
 <br>
+Here you can also set the <b>build tools</b> version to use, along
+with the SDK values to use (<b>minimum SDK version</b>, <b>Target
+SDK version</b> and the <b>Compile SDK version</b>). In general you
+will want to leave these at their default values, but if your game
+targets a specific Android version then you can set the build tools
+and SDK values to that which you require here.<br>
+<br>
 To the right of the page, you can add a splash screen to your APK,
-which will be shown while the game loads on the device. This screen
-should be a 24bit PNG file, and is recommended to be the same size
-as the first room (or view) in your game.<br>
+for both landscape and portrait modes, which will be shown while
+the game loads on the device. This screen should be a 24bit PNG
+file, and is recommended to be the same size as the first room (or
+view) in your game. If you require that the splash screen be shown
+for a specific time then you can also set it here from 0 to 10
+seconds (the default time of 0 means that it will only show for the
+duration of the asset loading).<br>
 <br>
 On this page you can also set the following options for your final
 APK file:</p>
@@ -103,19 +114,32 @@ Immersion Haptics</a>.</li>
 <li style="list-style: none"><br>
 </li>
 
-<li>if your game is being created for the <b>OUYA</b> games
-console, then you can specify that the final APK should be packaged
-in accordance with the console specifications here.</li>
-
-<li style="list-style: none"><br>
-</li>
-
 <li>you can set the <b>Install Location</b> for your game. This can
 either be set to <i>auto</i>, in which case the game will be
 installed to the location chosen by the user on their device, or it
 can be set to <i>Prefer External</i> which will always try to
 install the game to the external storage of the device.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>you can add support for <b>Moga Controllers</b> for your game
+here. Note that all Moga functionality is accessed via an
+extension, and when you first check the Use Moga box you will be
+prompted to download and install the Moga extension from the
+Marketplace (you may need to log into your YoYo Account before it
+can be downloaded).</li>
+
+<li style="list-style: none"><br>
+</li>
 </ul></li>
+
+<li><b>OUYA</b> - If your game is being created for the <b>OUYA</b>
+games console, then you can specify that the final APK should be
+packaged in accordance with the console specifications here.</li>
+
+<li style="list-style: none"><br>
+</li>
 </ul>
 </blockquote>
 
@@ -167,8 +191,8 @@ wish to see how the texture pages are structured and to prevent
 having texture pages larger (or smaller) than necessary.<br>
 <br>
 On the right of the page you can set the game icons. These are used
-in various situations on the Store and in your Game, and should be
-creates as 24bit PNG files of the appropriate sizes given.</p>
+in various situations on the Store and in your game, and should be
+created as 24bit PNG files of the appropriate sizes given.</p>
 
 <blockquote><i><b>NOTE:</b> Be aware that the larger the size of
 the texture page, the less compatible your game will be.</i>
@@ -178,24 +202,49 @@ the texture page, the less compatible your game will be.</i>
 
 <p><img class="center" src="Android_Social_Tab.png"> This tab
 permits you to enable social functions for your Android game with
-either <b>Amazon GameCircle</b> or <b>Google Play</b>. Both markets
-permits you to add achievements and leaderboards for your games in
-a simple way, allowing worldwide highscores as well as local ones.
-Once you have ticked the appropriate checkboxes, you will need to
-code the functionality into your game using the <a href=
+either <b>Amazon GameCircle</b>, <b>Google Play</b>, or
+<b>Facebook</b> as well as activate <b>Push Notifications</b>.<br>
+<br>
+If you require the Facebook functions, you need to click the
+"<b>Use Facebook</b>" checkbox and then supply the Facebook <b>App
+ID</b> and <b>Facebook App Display Name</b>. Note that all Facebook
+functionality is accessed via an extension, and when you first
+check the Use Facebook box you will be prompted to download and
+install the Facebook extension from the Marketplace (you may need
+to log into your YoYo Account before it can be downloaded).<br>
+<br>
+In order for your game to use <b>Push Notifications</b> they must
+be enabled here first otherwise they will not work. Local
+notifications on Android do <i>not</i> require the "<b>GCM Sender
+ID</b>", but you must add it should you wish to create remote
+notifications.<br>
+<br>
+If you want to enable achievements and leader boards for the Google
+app store, then you need to check the appropriate check box. Once
+you have ticked one of the services, you will be prompted to
+download and install the corresponding extension from the
+Marketplace (you may need to log into your YoYo Account before it
+can be downloaded), and then code the functionality into your game
+using the <a href=
 "../../002_Reference/Social Gaming/Achievements and Leaderboards/index.html">
-Achievements and Leaderboards</a> functions.<br>
+Achievements and Leader boards</a> functions. Note that if you use
+<b>Google Play</b> you will need to add your <i>App Id</i> into
+this tab for the services to work (this can be found from your
+Google Play Developers dashboard).<br>
 <br>
-If you are using <b>GameCircle</b>, you can also enable
-<b>WhisperSync</b> which is an Amazon based cloud storage service
-(see the section on <a href=
-"../../002_Reference/Cloud Services/index.html">Cloud Services</a>
-for more information).<br>
-<br>
-If you use <b>Google Play</b> you will need to add your <i>App
-Id</i> into this tab for the functions to work (this can be found
-from your Google Play Developers dashboard).<br>
-<br></p>
+If you are using any <b>Amazon Services</b>, you need to tick the
+"Enable Amazon API's" checkbox. Once you have ticked this, you will
+be prompted to download and install the corresponding extension
+from the Marketplace (you may need to log into your YoYo Account
+before it can be downloaded). Unlike previous versions of
+GameMaker: Studio, the Amazon API no longer hooks into the built in
+leader board functions (like the Google APIs do) but instead has
+all the functions included as part of the extension.</p>
+
+<blockquote><i><b>NOTE:</b> This also needs to be ticked if you
+require the use of the Amazon Services along with the Amazon Fire
+target module.</i>
+</blockquote>
 
 <h3>Permissions</h3>
 
@@ -235,6 +284,12 @@ sockets.</li>
 
 <li><b>BLUETOOTH</b> - Will permit your game to connect to paired
 Bluetooth devices.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>RECORD AUDIO</b> - Will permit your game to record audio
+input from the microphone.</li>
 </ul>
 </blockquote>
 
@@ -244,18 +299,57 @@ and let GameMaker: Studio deal with the permissions for your
 game.</i>
 </blockquote>
 
+<h3>Extras</h3>
+
+<p><img class="center" src="Android_Extras_Tab.png"> One of the
+features of using <b>Google Play</b> for your Android games is the
+ability to <i>licence</i> your games. This means that your games
+will be controlled by Google so that only people that have
+downloaded it through their market will be able to play the game,
+thus avoiding illegal copies of your product from getting
+distributed.<br>
+<br>
+To activate this function in your game, you must first flag the
+<b>Enable Google Licensing</b> box and then copy your <b>Public
+Key</b> into the box as shown in the above image. This licence can
+be found by going to your <a href=
+"https://play.google.com/apps/publish" target="_blank">Google Play
+Developers Page</a> and then selecting the option <i>Edit
+profile</i>. Once on the profile page, scroll down to the section
+titled "<i>Licensing &amp; In-app Billing</i>" and there you should
+find the Public key that is needed for this functionality to be
+enabled.<br>
+<br>
+Once activated, if anyone who is not authorised to posses your game
+tries to play it, they will be shown a pop-up message box that will
+inform them that the Licence cannot be found on their device, and
+then give them the option to retry and test again, or exit the
+game.<br>
+<br>
+Another feature of Licensing is that your game can then use apk
+expansions. This is a way to bypass the 50MB maximum application
+size imposed by Google Play (and only Google Play). It will create
+your game in two parts: a small <tt>*.apk</tt> file and a larger
+<tt>*.zip</tt> file which will hold all your games assets, both of
+which are uploaded to the store. When the user first runs your
+game, the zip will be downloaded and unpacked. You can find further
+details of this option <a href=
+"http://help.yoyogames.com/entries/28291426" target=
+"_blank">here</a>.<br>
+<br></p>
+
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Global Game
+<div style="float:left">Back: <a href="index.html">Global Game
 Settings</a></div>
 
-<div style="float:right">下一个: <a href="Win8 Phone Tab.html">The
-Windows Phone Tab</a></div>
+<div style="float:right">Next: <a href="Amazon Fire Tab.html">The
+Amazon Fire Tab</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -264,16 +358,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -31,7 +31,7 @@ if (window.name != "content")
 <h2>Create a more specific UGC query query using defined account,
 creator and consumer details.</h2>
 
-<h3>语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">steam_ugc_create_query_all_ex(list_type,
 match_type, sort_order, page, account_id, creator_app_id,
@@ -43,8 +43,8 @@ consumer_app_id);</p>
 <div class="param">
 <table>
 <tr>
-<th>内容提要</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
@@ -90,12 +90,12 @@ below).</td>
 <p><br>
 </p>
 
-<p><b>返回:</b> Query Handle</p>
+<p><b>Returns:</b> Query Handle</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
 <p>This function can be used to query the UGC data base. The
 function requires the ID values for the user the consumer app and
@@ -109,7 +109,7 @@ items.</p>
 <table>
 <tr>
 <th>List Type Constant</th>
-<th>描述</th>
+<th>Description</th>
 </tr>
 
 <tr>
@@ -165,7 +165,7 @@ Documentation</a>.</td>
 <table>
 <tr>
 <th>Match Type Constant</th>
-<th>描述</th>
+<th>Description</th>
 </tr>
 
 <tr>
@@ -236,7 +236,7 @@ Documentation</a>.</td>
 <table>
 <tr>
 <th>Sort Order Constant</th>
-<th>描述</th>
+<th>Description</th>
 </tr>
 
 <tr>
@@ -292,7 +292,7 @@ refine the search request before it is actually sent.<br>
 <p><br>
 </p>
 
-<h3>例子:</h3>
+<h3>Example:</h3>
 
 <p class="code">query_handle =
 steam_ugc_create_query_user_ex(ugc_list_Published, ugc_match_Items,
@@ -303,10 +303,10 @@ global.GameID);</p>
 a variable for future use.<br></p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Steam API - User
+<div style="float:left">Back: <a href="index.html">Steam API - User
 Generated Content</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "steam_ugc_query_set_cloud_filename_filter.html">steam_ugc_query_set_cloud_filename_filter</a></div>
 </div>
 

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -64,10 +64,19 @@ override the standard loading bar when selected.</li>
 <li>selecting a new name for the title bar of the tab for your game
 in the browser.</li>
 
+<li style="list-style: none"><br>
+</li>
+
 <li>selecting a new name for the folder where your HTML5 game files
 will be stored (default is "html5game").</li>
 
+<li style="list-style: none"><br>
+</li>
+
 <li>selecting a new name other than the default "index.html".</li>
+
+<li style="list-style: none"><br>
+</li>
 </ul>
 </blockquote>
 
@@ -87,6 +96,10 @@ then you normally get a warning informing you that things won't
 work as you may expect due to browser security for local files. You
 can suppress this warning by un-checking the <b>Display "running
 outside server" alert</b> option.<br>
+<br>
+Should you require the cursor to be disabled while the mouse is
+over the canvas area, you can un-check the option "<b>Display Mouse
+Cursor</b>".<br>
 <br>
 You also have the further options to send all debug output to the
 JS console of your browser, and to prepend the <tt>*.js</tt> output
@@ -129,6 +142,18 @@ game.</li>
 <li style="list-style: none"><br>
 </li>
 
+<li><b>Use Built In Particle Sprites</b> - This option will export
+the sprites required for the built in particle system along with
+your game. These sprites are stored in individual texture pages,
+meaning that they are not the most efficient method of generating
+particles for this platform, therefore it is recommended that
+(unless using WebGL) you un-check this option and use your own
+particle sprites which will be stored on the main texture pages all
+together for your game.</li>
+
+<li style="list-style: none"><br>
+</li>
+
 <li><b>WebGL</b> - Choose whether to switch off WebGL support, make
 it optional (auto-detect), or make it a requirement for your game.
 It should be noted that to test performance under all
@@ -136,6 +161,9 @@ circumstances, you should have this as disabled, then normally set
 it to auto-detect for publishing. Making it a requirement may
 reduce considerably the compatibility that your game has with
 different browser types.</li>
+
+<li style="list-style: none"><br>
+</li>
 
 <li><b>Scaling</b> - Your game can be configured to scale the draw
 canvas automatically to maintain the aspect ratio within the
@@ -159,18 +187,31 @@ having texture pages larger (or smaller) than necessary.<br>
 page, the less compatible your game will be.</i><br>
 <br></p>
 
+<h3>Social</h3>
+
+<p><img class="center" src="HTML5_Social_Tab.png"> The social tab
+is used for setting up Facebook communication in your game. If you
+require the Facebook functions, you need to click the "<b>Use
+Facebook</b>" checkbox and then supply the Facebook <b>App ID</b>
+and <b>Facebook App Display Name</b>. Note that all Facebook
+functionality is accessed via an extension, and when you first
+check the Use Facebook box you will be prompted to download and
+install the Facebook extension from the Marketplace (you may need
+to log into your YoYo Account before it can be downloaded).<br>
+<br></p>
+
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Global Game
+<div style="float:left">Back: <a href="index.html">Global Game
 Settings</a></div>
 
-<div style="float:right">下一个: <a href="iOS%20Tab.html">The iOS
+<div style="float:right">Next: <a href="iOS%20Tab.html">The iOS
 Tab</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -179,16 +220,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

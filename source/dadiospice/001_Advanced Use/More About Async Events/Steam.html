@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -301,7 +301,7 @@ this event. However, each function will generate an
 being used for details and examples.<br>
 <br></p>
 
-<h3>Unique Download Events</h3>
+<h3>Unique UGC Events</h3>
 
 <p>The Steam Async event can also be triggered when a user
 subscribes to an item outside of the game - for example, they tab
@@ -329,18 +329,58 @@ the installed item)</li>
 </ol>
 </blockquote>
 
+<p>The Steam Async event can also be triggered when a workshop item
+is subscribed to - either from within the app, or externally from a
+workshop browser - and in these cases the <tt>async_load</tt> map
+will contain the following key/value pairs:</p>
+
+<blockquote>
+<ol>
+<li>"<b>event_type</b>" - This key will hold the value
+"<b>ugc_item_subscribed"</b>"</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>"<b>published_file_id</b>" : This key has the published file ID
+of the newly subscribed item</li>
+
+<li style="list-style: none"><br>
+</li>
+</ol>
+</blockquote>
+
+<p>The event will be triggered should any item be un-subscribed
+too, with the DS map holding the following:</p>
+
+<blockquote>
+<ol>
+<li>"<b>event_type</b>" - This key will hold the value
+"<b>ugc_item_unsubscribed"</b>"</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>"<b>published_file_id</b>" : This key has the published file ID
+of the un-subscribed item</li>
+
+<li style="list-style: none"><br>
+</li>
+</ol>
+</blockquote>
+
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">More About Async
+<div style="float:left">Back: <a href="index.html">More About Async
 Events</a></div>
 
-<div style="float:right">下一个: <a href="Social.html">Social
+<div style="float:right">Next: <a href="Social.html">Social
 Event</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -349,16 +389,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

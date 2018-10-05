@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -54,20 +54,20 @@ target="_blank">Source Control Tutorials</a> available from the
 YoYo Games Knowledge base, although below you can find a general
 outline of the procedure for all SCM solutions.<br>
 <br>
-From this tab you can also choose to have the SCM solution output
-to the <b>Compiler Message</b> window <i>Source Control</i> tab.
-Ticking this will show the log of actions, and should generally be
-left on. The next option "<b>No Folder Commits</b>" is designed
-specifically for the Mercurial SCM solution, and should not be
-ticked for either SVN or GIT. All this does is not commit the SCM
-solution. So, for example, if you have this:
-<tt>C:\FolderA\FileA.txt</tt>. SVN assumes you'll add <i>and</i>
-commit FolderA and then FileA - and will tell at you if you don't.
-Git doesn't really care, but it is best to follow the same as SVN
-anyway for consistency. However Mercurial assumes you'll
-<i>only</i> add and commit FileA - and will error if you attempt to
-add and commit FolderA as well. So, tick this option for Mercurial
-(or any other SCM solution with a similar behaviour).<br>
+You can also choose to have the SCM solution output to the
+<b>Compiler Message</b> window <i>Source Control</i> tab. Ticking
+this will show the log of actions, and should generally be left on.
+The next option "<b>No Folder Commits</b>" is designed specifically
+for the Mercurial SCM solution, and should not be ticked for either
+SVN or GIT. All this does is not commit the SCM solution. So, for
+example, if you have this: <tt>C:\FolderA\FileA.txt</tt>. SVN
+assumes you'll add <i>and</i> commit FolderA and then FileA - and
+will tell at you if you don't. Git doesn't really care, but it is
+best to follow the same as SVN anyway for consistency. However
+Mercurial assumes you'll <i>only</i> add and commit FileA - and
+will error if you attempt to add and commit FolderA as well. So,
+tick this option for Mercurial (or any other SCM solution with a
+similar behaviour).<br>
 <br>
 If you are using anything except the built-in SVN tools, then you
 should also select the <b>Enable Advanced SCM Options</b> check-box
@@ -76,7 +76,13 @@ file for the chosen tools.<br>
 <br>
 If you do not wish to use any of the built-in SCM options, then you
 can disable it completely by ticking the check-box "<b>Disable SCM
-Usage</b>" and then restarting GMS.<br>
+Usage</b>" and then restarting GMS. Note that this will remove all
+SCM options from the user interface, so if you wish to add source
+control to a new project later, you must first enable it here
+again.<br>
+<br>
+Finally, you can choose to have the Conflicts Editor use colour
+coded conflicts or not (default is on).<br>
 <br></p>
 
 <h3>Custom Configurations</h3>
@@ -203,14 +209,14 @@ target="_blank">YoYo Games Knowledge Base</a>.<br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href=
+<div style="float:left">Back: <a href=
 "index.html">Preferences</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "Steam%20Preferences.html">Steam Preferences</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -219,16 +225,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -28,30 +28,38 @@ if (window.name != "content")
 
 <h1>instance_count</h1>
 
-<h2>返回当前在房间内活跃的实例总数。</h2>
+<h2>Returns the total number of instances currently active in the
+room.</h2>
 
-<h3>语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">instance_count</p>
 
 <p><br>
 </p>
 
-<p><b>返回值:</b> 实数</p>
+<p><b>Returns:</b> Real</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>用这个<b>只读</b>变量你能够得到在房间内所有活跃实例的数量。这将包括正在运行代码的实例，但并<i>不</i>包括那些被使用<a href=
-"Deactivating%20Instances/index.html"><tt>instance_deactivate</tt></a>冻结的实例。要注意这个功能只能给你在每步开始时候的实例数量，所以在一步开始之后任意对房间中实例的改变都将忽略不计。<br>
+<p>With this <b>read only</b> variable you can get a count of all
+active instances that are in the room. This will include the
+instance running the code, but does <i>not</i> include those
+instances that have been deactivated using the <a href=
+"Deactivating%20Instances/index.html"><tt>instance_deactivate</tt></a>
+functions. Note that this function will only give you the number of
+instances at the <i>start</i> of the step, so any changes to the
+instances in the room made after the step has started will not be
+taken into consideration.<br>
 <br></p>
 
 <p><br>
 </p>
 
-<p><b>举例:</b>
+<p><b>Example:</b>
 </p>
 
 <p class="code">if (instance_count &lt; 100)<br>
@@ -64,15 +72,17 @@ random(room_height), obj_Star);<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>上述代码将会创建物体"obj_Star"的多个实例直至总的实例数量达到100.</p>
+<p>The above code will create multiple instances of the object
+"obj_Star" until the total instance count reaches 100.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">上一页: <a href="index.html">实例函数</a></div>
+<div style="float:left">Back: <a href="index.html">Instance
+Functions</a></div>
 
-<div style="float:right">下一页: <a href=
+<div style="float:right">Next: <a href=
 "instance_id.html">instance_id</a></div>
 </div>
 

@@ -2,9 +2,9 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>view_hborder</title>
@@ -23,48 +23,68 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Windows And Views/Views/view_h
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FViews%2Fview_hborder.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FViews%2Fview_hborder.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script><!-- !chm2web! -->
-
+</script>
+<!-- !chm2web! -->
 
 <h1>view_hborder</h1>
 
-<h2>视野跟随的水平边界尺寸。</h2>
+<h2>Size of horizontal border for view following.</h2>
 
-<h3>语法：</h3>
+<h3>Syntax:</h3>
 
 <p class="code">view_hborder[0...7]</p>
 
 <p><br>
 </p>
 
-<p><b>返回：</b> 实数</p>
+<p><b>Returns:</b> Real</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>这个变量设置视野跟随的水平边界框的宽度。. 你可以使用变量 <a href="view_object.html"><tt>view_object</tt></a> 设置视野跟随指定的实例 (或者在 <a href=
-"../../../001_Advanced%20Use/More%20about%20rooms/Views.html">房间编辑器</a>中设置)，然后设置这个值控制实例需要移动多远或多近视野才会移动。比如，你的视野宽度是 320，设置横向视野边界为160，视野跟随的物体将会一直保持在视野的中心。然而，设置横向视野边界为0，跟随的实例正好在视野边缘时，视野才会移动<br><br><img class="center" src="View_hvbor.png"><br><br><i><b>注意:</b> 如果没有手动设置视野的x、y位置，视野将不会离开房间的边界。这意味着当视野抵达房间的边缘，会忽略视野的横向或纵向边界，实例将在视野内自由移动。</i><br>
+<p>This variable sets the horizontal border width for view
+following. You can set the view to follow a specific instance using
+the <a href="view_object.html"><tt>view_object</tt></a> variable
+(or in the <a href=
+"../../../001_Advanced%20Use/More%20about%20rooms/Views.html">room
+editor</a>) and by setting this value you can control how near or
+far from the edge of the view the instance needs to be before the
+view will move. For example, if you have a view width of 320 and
+set the horizontal view border to 160, the object that the view
+must follow will always be in the middle of the view. However, make
+the horizontal view border 0 and the instance must be right on the
+edge of the view before it will move.<br>
+<br>
+<img class="center" src="View_hvbor.png"><br>
+<br>
+<i><b>NOTE:</b> if you are not setting the x and y position of the
+view manually, the view never leaves the boundaries of the room.
+This means that when the view reaches the edge of a room, the
+horizontal and vertical borders are ignored and the instance will
+move freely within the view.</i><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>举例：</h3>
+<h3>Example:</h3>
 
 <p class="code">view_hborder[0] = view_wview[0] / 2;<br>
 view_vborder[0] = view_hview[0] / 2;<br></p>
 
-<p>上述代码将设置视野跟随边界为视野宽度和高度的一半，有效的迫使跟随的物体保持在视野的中心。</p>
+<p>The above code will set the view follow borders to half the
+width and height of the view, effectively forcing the view to
+always be centered on the follow object.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Views</a></div>
+<div style="float:left">Back: <a href="index.html">Views</a></div>
 
-<div style="float:right">下一页: <a href=
+<div style="float:right">Next: <a href=
 "view_vborder.html">view_vborder</a></div>
 </div>
 

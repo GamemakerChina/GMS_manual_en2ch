@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -45,7 +45,7 @@ files in the file menu.</li>
 <li style="list-style: none"><br>
 </li>
 
-<li><b>Close compile form when complete</b>: When you run your
+<li><b>Close compile form after execution</b>: When you run your
 game, it is compiled by <i>GameMaker: Studio</i> to run on the
 target platform, and this process is shown in the <b>compile
 window</b>. Normally this window is always open (and can be docked
@@ -116,6 +116,25 @@ the current (newest) backup is always the first! Each time you
 save, previous backups are re-numbered with an increment of one
 (removing those that are numbered larger than the specified number
 of backups) and the latest save is numbered as 0.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>Enable backup on run/debug/create</b>: As above, only this
+will enable or disable the creation of backups when you run the
+game normally or in debug mode, or when you create a final
+executable.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>Toggle resource scoping on resource tree</b>: When you use
+F12 (or the middle mouse button) on a resource in your code, it
+will jump to that resource in the editor and then open its
+properties window. However if you don't want the currently selected
+resource to change when you use this action, you can disable this
+option, and only the properties window will open for the selected
+resource while the scopewill not change in the resource tree.</li>
 
 <li style="list-style: none"><br>
 </li>
@@ -219,11 +238,31 @@ projects, so this option will help to keep things tidy.</li>
 <li style="list-style: none"><br>
 </li>
 
+<li><b>Open properties on Duplicate</b>: This option will enable or
+disable the opening of the resource properties window when you use
+the Duplicate option from the right click menu.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>Show filter tree option on main form</b>: With this option
+you can enable or disable the resource tree filter options in the
+bottom left of the IDE.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>Home directory</b>: Here you can set the directory that you
+want GameMaker: Studio to use for projects by default.</li>
+
+<li style="list-style: none"><br>
+</li>
+
 <li><b>Select Skin</b>: Check to use a different skin for the
 <i>GameMaker: Studio</i> GUI (<i>GameMaker: Studio</i> must be
 restarted for this to show). It should be noted that custom skins
 must placed in the <b>Local</b> app data folder
-(<tt>%localappdata%</tt>) otherwise they may be over-written or
+(<tt>%localappdata%</tt>) otherwise they may be overwritten or
 removed when <i>GameMaker: Studio</i> updates.</li>
 
 <li style="list-style: none"><br>
@@ -235,14 +274,14 @@ removed when <i>GameMaker: Studio</i> updates.</li>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href=
+<div style="float:left">Back: <a href=
 "index.html">Preferences</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "Form%20Preferences.html">Form Preferences</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -251,16 +290,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

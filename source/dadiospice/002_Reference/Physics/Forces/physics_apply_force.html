@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,10 @@ if (window.name != "content")
 
 <h1>physics_apply_force</h1>
 
-<h2>这个函数对当前实例在房间内一个位置以由一个向量定义的强度施加一个力。</h2>
+<h2>This function applies a force to the current instance at a
+position in the room with a strength defined by a vector.</h2>
 
-<h3>语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">physics_apply_force(xpos, ypos, xforce, yforce)</p>
 
@@ -40,28 +41,30 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>xpos</td>
-<td>力将被施加的<i>房间内的</i>x坐标</td>
+<td>The x coordinate <i>in the room</i> where the force will be
+applied</td>
 </tr>
 
 <tr class="alt">
 <td>ypos</td>
-<td>力将被施加的<i>房间内的</i>y坐标</td>
+<td>The y coordinate <i>in the room</i> where the force will be
+applied</td>
 </tr>
 
 <tr>
 <td>xforce</td>
-<td>力矢量的x分量</td>
+<td>the x component of the force vector</td>
 </tr>
 
 <tr class="alt">
 <td>yforce</td>
-<td>力矢量的y分量</td>
+<td>the y component of the force vector</td>
 </tr>
 </table>
 </div>
@@ -69,27 +72,43 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回值:</b> 无</p>
+<p><b>Returns:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>当用物理工作时你不仅需要对物体施加重力，还要施加其他外力。一个作用力是引发物体经历在速度、方向或形状方面改变的任何影响<!--
--->并且在<i>GameMaker: Studio</i>中和我们定义重力一样被定义，通过从xforce/yforce分量中得到矢量。需要注意的是，外力不被施加于<!--
--->物体的质心，而是房间内的一个位置并且它们将会改变方向、速度和依赖于施加在这个物体上的其他力（像重力）的转矩（转动）。<!--
--->这里有一个例证图片来帮助理解：<br>
+<p>When working with physics you need to apply not only gravity to
+objects, but forces as well. A force is any influence that causes
+an object to undergo a change in speed, a change in direction, or a
+change in shape, and is defined in the <i>GameMaker: Studio</i>
+physics world the same as we define gravity, by getting the vector
+from the two xforce/yforce components. It should be noted that
+forces are not applied to the center of mass of the object, but
+rather at a point in the room and they will change the direction
+and speed as well as the torque (spin) dependant on any other
+forces that are working on the object (like gravity). Here is an
+example image to help illustrate:<br>
 <br>
 <img class="center" src="physics_apply_force_image.png"></p>
 
-<p>在上述范例中底端的弹簧物体在球物体上创建了一个力来使它向另一个方向移动。实质上的力被我们从在关于xpos/ypos位<!--
--->置x/y分量中获得的矢量所定义的，也就是说力被计算为从(xpos,ypos)到(xforce,yforce)的距离以N<!--
--->（牛顿，1N被定义为将一个1kg物体以1m/s<sup>2</sup>的变化率加速所需要的净力值）为单位并且这个方向是我们<!--
--->由从(xpos,ypos)到(xforce,yforce)的方位角。这段类似于的碰撞代码将会参与到弹簧物体的碰撞事件中并且将会看起来像下面被提供的<!--
--->举例中那样。<br>
+<p>In the above example the spring object at the bottom has created
+a force on the ball object getting it to move in a different
+direction. The exact force is defined by the vector we get from the
+components xforce/yforce in relation to the xpos/ypos coordinates -
+which simply means that the force is calculated as the distance
+from xpos/ypos to xforce/yforce in Newtons (a Newton being defined
+as the amount of net force required to accelerate a mass of one
+kilogram at a rate of one meter per second squared)and the
+direction is the angle that we get from xpos/ypos to xforce/yforce.
+The code for a collision like the above would go in the collision
+event of the spring object and would look something like that
+provided in the example below.<br>
 <br>
-<i><b>注意:</b>物理世界使用单位m进行所有计算，并且像素/米的比率被定义于房间编辑器中或使用<a href=
+<i><b>NOTE:</b> The physics world uses metres for all its
+calculations, and the ratio of pixels per metre is defined in the
+room editor or using <a href=
 "../The%20Physics%20World/physics_world_create.html"><tt>physics_world_create</tt></a>.</i><br>
 
 <br></p>
@@ -97,26 +116,27 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<h3>举例:</h3>
+<h3>Example:</h3>
 
 <p class="code">with (other)<br>
 &nbsp;&nbsp;&nbsp;{<br>
 &nbsp;&nbsp;&nbsp;physics_apply_force(x, y, 0, -30);<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>上述代码将会对在碰撞中的<tt>other</tt>物体应用一段代码带有一个30N的力和方向。</p>
+<p>The code above will apply code to the <i>other</i> object in the
+collision with a force of 30 Newtons and a direction.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">上一页: <a href="index.html">作用力</a></div>
+<div style="float:left">Back: <a href="index.html">Forces</a></div>
 
-<div style="float:right">下一页: <a href=
+<div style="float:right">Next: <a href=
 "physics_apply_impulse.html">physics_apply_impulse</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -125,16 +145,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

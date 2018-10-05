@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -26,110 +26,162 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>物理功能</h1>
+<h1>Physics Functions</h1>
 
-<h2><i>GameMaker: Studio</i>有一个广泛的，还易于使用的，基于Box2D和Liquid Fun开源物理库的物理功能。</h2>
+<h2><i>GameMaker: Studio</i> has extensive, yet easy to use,
+physics functions based on the Box2D and Liquid Fun open source
+physics libraries.</h2>
 
-<p>这种对于<i>GameMaker: Studio</i>一个专用物理库的整合意味着你能够控制在你游戏世界总物体所有方面的物理行为<!--
--->，特别是碰撞和物体的互动。“传统”的碰撞系统（<i>GameMaker: Studio</i>默认使用的）是一个“活性”机制，其中你<!--
--->检测一个碰撞<i>之后</i>使用你放入各个物体的代码来对那种碰撞做出反应。这对于简单游戏很好，但当你有大量物<!--
--->体并且必须撰写它们在游戏世界中不同情形下做出的所有反应时，很快地这个系统明显就变得不够用了！那你就是时<!--
--->候把目光转向<i>GameMaker: Studio</i>物理系统了!<br>
+<p>The integration of a dedicated physics library to <i>GameMaker:
+Studio</i> means that you can now take control over all aspects of
+the physical behaviour of objects within your game world,
+particularly collisions and object interaction. The "traditional"
+collision system (which <i>GameMaker: Studio</i> defaults to) is a
+"reactive" system, where you check for a collision and <i>then</i>
+react to that collision with code that you place in individual
+objects. This is fine for simple games, but when you have a large
+number of objects and have to code how they all react to different
+situations in the game world, it quickly becomes obvious that this
+system is just not enough! That's when you have to turn to the
+<i>GameMaker: Studio</i> physics system!<br>
 <br>
-这个物理系统以和普通碰撞完全不同的方式运作。它是一个更加“被动”的、你要在其中定义你的物体在游戏世界中所有属<!--
--->性以及游戏世界自身属性的、先于任何碰撞和互动发生的系统。这些编码的“规则”将会接下来统领在你游戏世界中所<!--
--->有互动东西的路线。以这种方式，使用一些简单的代码和正确的房间设定，你能够创建出物体与房间间十分复杂的、<!--
--->其发生与分辨<i>不需要</i>你为每一个单独可能的结果写代码的互动影响。<br>
+The physics system works in a very different way to normal
+collisions. It is more of a "passive" system where you define a
+series of properties for your objects in the game world, as well as
+the properties of the game world itself, before any collisions or
+interactions occur. These coded "rules" will then govern the way
+everything in your game world interacts. In this way, with a few
+simple code and the correct room setup, you can create very complex
+interactions between objects and the world which will occur and
+resolve <i>without</i> you having to code for every single possible
+outcome.<br>
 <br>
-有一些东西你必须在使用<i>GameMaker: Studio</i>物理世界的时候注意:<br>
+There are a few things that you should note when working with the
+<i>GameMaker: Studio</i> physics world:<br>
 <br></p>
 
 <blockquote>
 <ul>
-<li>这个物理系统“独立于”<i>GameMaker: Studio</i>基本的房间和实例结构而存在，意味着它的计时和功能不必像别的东西那样<!--
--->捆绑于<!--
--->房间速度和步的顺序</li>
+<li>The physics system exists "apart" from the basic room and
+instance structure of <i>GameMaker: Studio</i> meaning that its
+timings and functions are not necessarily tied into the room speed
+and step order like everything else.</li>
 
 <li style="list-style: none"><br>
 <br>
 </li>
 
-<li>这个物理系统替换了许多正常实例功能……比如说，替换了设定速度与方向，举个例子，如果它已经被声明为一个完全<!--
--->模拟物理的实体，你将使用一个<i>力</i>或者<i>冲量</i>来使得它在游戏世界中四处移动，或者如果它没有启用物理<!--
--->你将需要自行设定x和y的位置。这个可能需要适应一会，所以请在你尽力将它们整合到你的工程中之前先用物理函数做<!--
--->一下试验并去了解所有东西是如何运作的。</li>
+<li>The physics system replaces many of the normal instance
+functions... for example, rather than set a speed and a direction
+for an instance, if it has been declared as being a fully simulated
+physical body, you would use a <i>force</i> or <i>impulse</i> to
+get it to move around in the game world, or if it is not physics
+enabled you will need to set the x an y positions yourself. This
+takes a bit of getting used to, so experiment with the physics
+functions and get to know how everything works before trying to
+integrate them into your project.</li>
 
 <li style="list-style: none"><br>
 <br>
 </li>
 
-<li>你应该限制被创建的实例数量，以及物理世界需要处理的碰撞与碰撞组的数量。你<i>不要</i>有成千的实例，全部带<!--
--->有物理属性和碰撞并指望所有东西都能正常工作，因为物理需要一些相当高强度的计算，所以自行限制并尽可能的优化。</li>
+<li>You should limit the number of instances that are created, as
+well as the number of collisions and collision groups that the
+physics world has to deal with. You <i>cannot</i> have thousands of
+instances, all with physical properties and collisions and expect
+everything to work fine due to the fact that physics requires some
+pretty intensive calculations, so limit yourself and optimise where
+possible.</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>当建立碰撞时，尽可能多的使用父对象，因为碰撞系统可用于分配给Box2D实例去检测碰撞的<i>碰撞位（bit）</i>数<!--
--->量是有限的。比如说，如果你有5个不同的墙面物体，不要使用5个碰撞，取而代之的，你要创建一个父物体并将其分<!--
--->配给五个墙面物体之后用1个碰撞事件来检测父物体。物体的物理属性仅在碰撞中<i>不被继承</i>。以这种方式，你<!--
--->能够保持游戏最优化和无错误。</li>
+<li>When setting up collisions, use parents as much as possible
+since the collision system has a limited number of <i>collision
+bits</i> available to assign to instances for Box2D to detect
+collisions. For example, if you have five different wall objects,
+don't check for five collisions, rather, create a parent object and
+assign it to the five walls then have ONE collision check with the
+parent. The physical properties of the objects are <i>not
+inherited</i> only the collisions. In this way you can keep your
+game optimised and error free.</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>
-尽量不要将实例使用除了物理函数以外的方式来将实例从一个点移动至另一个点（比如，不要手动设定x或y坐标）<!--
--->尽管这在一些必要的场合下可以被做到，这通常应当被避免因为在物理引擎上它可能会有不可预料的结果，特别<!--
--->是在分辨碰撞的时候。</li>
+<li>Try not to move instances from one point of the room to another
+in any way other than using the physics functions (ie: do not set
+the x/y coordinates manual). Although this can be done and in some
+circumstances it may be necessary, this is generally to be avoided
+due to the unpredictable results that it may have on the physics
+engine, especially when trying to resolve collisions.</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>在绑定支架（Fixture）的时候要小心，因为它们可以独立地绑定在物体和实例上。这也就意味着如果你把支架绑定给（举个例子）<!--
--->"o_Wall"，<b>所有</b>属于这个物体的实例都将获得这个支架。如果你只想要给一个实例绑定支架，那就请在合适的函数中使用实例的id。
-</li>
+<li>Care should be taken when binding fixtures, as they can be
+bound to objects and instances independently. This means that if
+you bind a fixture to (for example) "o_Wall", <b>all</b> instances
+of that object will get the fixture. If you only want to bind a
+fixture to one instance, then use that instance's id in the
+appropriate function.</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>请注意因为浮点精度的不同，你可能会发现你游戏在不同目标平台上的版本可能会展现出细微地不同于标准Windows版本的行为<!--
--->，尽管每个版本在接下来的执行中都是相呼应的。</li>
+<li>Please be aware that due to differences in floating point
+precision you may find that versions of your game for different
+target platforms may exhibit subtly different behaviour to the
+standard Windows version, though each version will be
+self-consistent across subsequent executions.</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>为了防止在物理模拟中的不稳定性，Box2D约束了物体旋转量的上限并且在每次更新迭代中平移。这些明显的限定将会使准确性<!--
--->根据物理模拟所依据的物理世界的更新数、更新速度以及物理世界的尺度而改变。这也就意味着（比如说）如果你有一个物理世界更新速度为60<!--
--->，那么最大移动速度将会是20.</li>
+<li>To prevent instabilities in the physical simulation Box2D
+constrains to upper limits the amount a body may rotate and
+translate within a single update. The apparent limitations will
+vary according to the accuracy of the physical simulation in
+accordance with the number of updates and update speed of the
+physics world, and also in accordance with the physics world
+scaling. This means that (for example) if you have a world update
+speed of 60, the maximum movement speed would be 20.</li>
 </ul>
 </blockquote>
 
-<p>关于物理功能的信息可以在下列页面中找到：</p>
+<p>Information on the physics functions can be found on the
+following pages:</p>
 
 <blockquote>
 <ol>
-<li><a href="The%20Physics%20World/index.html">物理世界</a><br>
+<li><a href="The%20Physics%20World/index.html">The Physics
+World</a><br>
 </li>
 
-<li><a href="Forces/index.html">作用力</a><br>
+<li><a href="Forces/index.html">Forces</a><br>
 </li>
 
-<li><a href="Fixtures/index.html">支架</a><br>
+<li><a href="Fixtures/index.html">Fixtures</a><br>
 </li>
 
-<li><a href="Joints/index.html">节点</a><br>
+<li><a href="Joints/index.html">Joints</a><br>
 </li>
 
-<li><a href="Soft%20Body%20Particles/index.html">软体粒子</a><br>
+<li><a href="Soft%20Body%20Particles/index.html">Soft Body
+Particles</a><br>
 </li>
 
-<li><a href="Physics%20Variables/index.html">物理变量</a><br>
+<li><a href="Physics%20Variables/index.html">Physics
+Variables</a><br>
 </li>
 </ol>
 </blockquote>
 
-<p>最后，有一些物理功能可能会在更高级的物理模拟中用到。第一个是为测试在房间内一个特定的点处碰撞的可能<!--
--->，而第二个则是用来生成实例内自定义的质量和惯性属性的：</p>
+<p>Finally, there are a couple of special physics functions which
+may be useful for more advanced physics simulations. The first is
+for testing for possible collisions at a specific point in the
+room, and the second is for generating custom mass and inertia
+properties within an instance:</p>
 
 <blockquote>
 <ol>
@@ -147,11 +199,11 @@ if (window.name != "content")
 </p>
 
 <div class="clear">
-<div style="float:left">上一页：<a href=
-"../index.html">语言参考</a></div>
+<div style="float:left">Back: <a href=
+"../index.html">Reference</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -160,16 +212,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>ds_grid_read</h1>
 
-<h2>Reads the grid data structure from a string.<br>从字符串中读取这个栅格数据结构</h2>
+<h2>Reads the grid data structure from a string.</h2>
 
-<h3>Syntax  语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">ds_grid_read(index, string [, legacy]);</p>
 
@@ -40,24 +40,24 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument参数</th>
-<th>Description描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the grid to read.待读取的栅格结构索引</td>
+<td>The index of the grid to read.</td>
 </tr>
 
 <tr class="alt">
 <td>string</td>
-<td>The string to read into the ds_grid.待读入栅格结构中的字符串。</td>
+<td>The string to read into the ds_grid.</td>
 </tr>
 
 <tr>
-<td>legacy (<i>optional  可选参数</i>)</td>
+<td>legacy (<i>optional</i>)</td>
 <td>Can be either <tt>true</tt> or <tt>false</tt> or omitted
-completely.<br>可以要么为<tt>true</tt>要么为<tt>false</tt>，也可以被完全忽略</td>
+completely.</td>
 </tr>
 </table>
 </div>
@@ -65,12 +65,12 @@ completely.<br>可以要么为<tt>true</tt>要么为<tt>false</tt>，也可以�
 <p><br>
 </p>
 
-<p><b>Returns  返回值:</b> N/A  无</p>
+<p><b>Returns:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description  描述</h3>
+<h3>Description</h3>
 
 <p>This function can be used to convert a string which has been
 created previously by the function <a href=
@@ -80,15 +80,12 @@ example below). Note that if the data structure was created with
 previous versions of <i>GameMaker</i> you should add the optional
 argument "legacy", setting it to <tt>true</tt> as the string format
 has changed with this version.<br>
-这个函数能够被用于将一段被提前通过函数<a href=
-"ds_grid_write.html"><tt>ds_grid_write()</tt></a>字符串转换回一个栅格结构。
-这个栅格结构必须已经被提前创建（参见下方举例）。注意如果这个数据结构是使用之前版本的<i>GameMaker</i>创建的那么你应该添加可选参数"legacy"，设定它为<tt>true</tt>以将字符串格式改为当前版本。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example  举例:</h3>
+<h3>Example:</h3>
 
 <p class="code">grid = ds_grid_create(room_width div 32,
 room_height div 32);<br>
@@ -99,21 +96,20 @@ ini_close();<br></p>
 <p>The above code creates a ds_grid based on the size of the room
 (each 32x32 square of pixels represents one grid cell) and then
 reads a previously saved set of grid data from an ini file into the
-new ds grid.<br>
-上述代码基于房间的大小创建一个栅格结构（每32×32像素的方块代表一个单元格）并接下来从一个初始化文件中读取一个提前保存好的一组栅格结构成为新的栅格结构。</p>
+new ds grid.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back上一个: <a href="index.html">DS
-Grids栅格结构</a></div>
+<div style="float:left">Back: <a href="index.html">DS
+Grids</a></div>
 
-<div style="float:right">Next下一个: <a href=
+<div style="float:right">Next: <a href=
 "ds_grid_write.html">ds_grid_write</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -122,16 +118,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -2,9 +2,9 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>window_set_max_width</title>
@@ -23,14 +23,14 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Windows And Views/The Game Win
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FThe%20Game%20Window%2Fwindow_set_max_width.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FThe%20Game%20Window%2Fwindow_set_max_width.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script><!-- !chm2web! -->
-
+</script>
+<!-- !chm2web! -->
 
 <h1>window_set_max_width</h1>
 
-<h2>设置窗口的最大宽度。</h2>
+<h2>Sets a maximum width for the game window.</h2>
 
-<h3>语法：</h3>
+<h3>Syntax:</h3>
 
 <p class="code">window_set_max_width(width);</p>
 
@@ -40,13 +40,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>width</td>
-<td>游戏窗口的最大像素宽度。</td>
+<td>The maximum width in pixels for the game window.</td>
 </tr>
 </table>
 </div>
@@ -54,36 +54,47 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回：</b>N/A</p>
+<p><b>Returns:</b>N/A</p>
 
 <p><br>
 </p>
 
-<h3><b>描述</b>
+<h3><b>Description</b>
 </h3>
 
-<p>这个函数可以给游戏设置一个窗口的最大宽度。. 对于目标平台，如果你在全局游戏设定中允许窗口大小调整，那么玩家将可以调整窗口为任意想要的大小，尽管如此，通过这个函数，你可以限制调整的最大宽度为指定值。如果想要回到默认的情况（比如没有最小值限制），只要使用值-1就可以。<br><br><i><b>注意:</b> 这个函数只适用于 <b>Windows</b>、 <b>Mac OSX</b> 和<b>Linux</b> 平台。</i><br>
+<p>This function can be used to set a maximum window width for your
+game. If you enable the window resize option in the Global Game
+Settings for the target platform, then the player can resize the
+game window to any size they wish, however by using this function
+you can limit the maximum width to the size you specify. If you
+wish to go back to the default behaviour (ie: no mimimum), then use
+a value of -1.<br>
+<br>
+<i><b>NOTE:</b> This function is only available on the
+<b>Windows</b>, <b>Mac OSX</b> and <b>Linux</b> platforms.</i><br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>举例：</h3>
+<h3>Example:</h3>
 
 <p class="code">window_set_min_width(640);<br>
 window_set_min_height(480);<br>
 window_set_max_width(1280);<br>
 window_set_max_height(960);<br></p>
 
-<p>上述代码将为游戏窗口设定最大宽高。</p>
+<p>The above code will set the minimum and maximum width and height
+for the game window.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">游戏窗口</a></div>
+<div style="float:left">Back: <a href="index.html">The Game
+Window</a></div>
 
-<div style="float:right">下一页: <a href=
+<div style="float:right">Next: <a href=
 "window_set_min_height.html">window_set_min_height</a></div>
 </div>
 

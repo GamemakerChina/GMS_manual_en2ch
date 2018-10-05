@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -26,31 +26,41 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>栅格结构</h1>
+<h1>DS Grids</h1>
 
-<h2>这一章节解释了各种各样的能够被用于创建和调配栅格的函数。</h2>
+<h2>This section explains the various functions that can be used to
+create and manipulate ds_grids</h2>
 
-<p>一个栅格数据结构是一个基本的<a href=
-"../../001_GML%20Language%20Overview/401_06_arrays.html">二维数组
-</a>你能够通过设定他的整数宽度和高度来定义栅格，这将接下来设定<!--
--->栅格内“单元格”的总数（宽度和高度被相乘）并且这些单元格将被用于<!--
--->承载不同的数据值（实数或者字符串）。<br>
+<p>A ds_grid is basically a type of <a href=
+"../../001_GML%20Language%20Overview/401_06_arrays.html">two-dimensional
+array</a>. You define the grid by setting its integer width and
+height, which then sets the total number of "cells" within the grid
+(the width and height multiplied) and these cells are then used to
+hold different data values (real numbers or strings).<br>
 <br>
-<img class="center" src="ds_grid_basic.png"><br>
-这种类型的结构允许你通过给定它的x和y索引（xy两轴都从0开始并进入到-1）设定并检索单元格里面的值。但是你也能设定在特定的栅格区域<!--
--->内的值，叠加单个值、以及检索一个被给定区域内求和、最大值、最小值和平均值，使得这个数据结构是你所能选择的功能最多的结构。<br>
+<img class="center" src="ds_grid_basic.png"> This type of structure
+allows you to set and retrieve the value of cells in the grid by
+giving the x and y index of it (which starts with 0 for both the x
+and the y axis and goes up to the width - 1 and the height -1). But
+you can also set the value in specific grid regions, add single
+values, and retrieve the sum, maximum, minimum, and mean value over
+a given region, making this data structure the most versatile of
+all those available to you.<br>
 <br>
-当接触栅格数据结构时，你应该总是尽量使用<b>整数数值</b>作为单元格<!--
--->位置，并且如果你不这么做的话，所有非整数索引都会被<i>GameMaker: Studio</i><!--
--->自动取整。如果这不是你所要求的，那么你将需要在传入你想要检测的索引<!--
--->之前自行取整。<br>
+When accessing DS grid data structures, you should always try to
+use <b>integer values</b> for the cell position, and all
+non-integer indices will be floored by GameMaker: Studio if you do
+not. If that is not what you require, then you will need to do the
+rounding yourself previously before passing the index that you wish
+to check.<br>
 <br>
-<i><b>注意:</b>由于使用的都是动态资源，数据结构将会占用内存并因此应该在不再被<!--
--->使用的时候<b>总是</b>被销毁以防止内存泄漏将拖慢你的游戏并且最终使你的游戏崩溃。</i>
-<br><br>
+<i><b>NOTE:</b> As with all dynamic resources, data structures take
+up memory and so should <b>always</b> be destroyed when no longer
+needed to prevent memory leaks which will slow down and eventually
+crash your game.</i><br>
 <br>
 <br>
-下面存在一些结构用于处理栅格结构。<br>
+The following functions exist that deal with DS grids.<br>
 <br></p>
 
 <blockquote>
@@ -185,32 +195,36 @@ if (window.name != "content")
 </ol>
 </blockquote>
 
-<p>除了这些特定的函数，你也可以全都用一个表达式（被称为一个<i>访问器</i><!--
--->）来增加或调节你的<tt>栅格结构</tt>数的内容。这个访问器看起来和二维数组十分相似并有如下<!--
--->的语法规则：</p>
+<p>Apart from these specific functions you can all use an
+expression (called an <i>accessor</i>) to add or modify the
+contents of your <tt>ds_grid</tt>. This accessor looks similar to a
+2D array with the following syntax:</p>
 
 <p class="code">grid_index[# xpos, ypos]</p>
 
-<p>你可以从GML概览页面中 <a href=
-"../../001_GML%20Language%20Overview/Accessors.html">访问器</a>章节找到更多信息、更多范例。<br>
+<p>You can find more information, plus examples, from from the GML
+Overview page on <a href=
+"../../001_GML%20Language%20Overview/Accessors.html">Accessors</a>.<br>
 
 <br></p>
 
-<blockquote><i><b>注意:</b><br>如果你需要检测一个数据结构是否存在，你可以使用函数<a href=
-"../ds_exists.html"><tt>ds_exists()</tt></a></i>
+<blockquote><i><b>NOTE:</b> if you need to check if a data
+structure exists, you can use the <a href=
+"../ds_exists.html"><tt>ds_exists()</tt></a> function.</i>
 </blockquote>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">上一个: <a href="../index.html">数据结构</a></div>
+<div style="float:left">Back: <a href="../index.html">Data
+Structures</a></div>
 
-<div style="float:right">下一个: <a href=
-"../DS%20Stacks/index.html">堆栈结构</a></div>
+<div style="float:right">Next: <a href=
+"../DS%20Stacks/index.html">DS Stacks</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 .
 
 <script type="text/JavaScript">
@@ -220,16 +234,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

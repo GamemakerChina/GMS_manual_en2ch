@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>应用表面层</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Surfaces/The Application Surface.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FSurfaces%2FThe%20Application%20Surface.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FSurfaces%2FThe%20Application%20Surface.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script><!-- !chm2web! -->
+
+
+<h1>应用表面层</h1>
+
+<h2>本节论述了应用表面层，以及它的特定函数。</h2>
+
+<p><i>GameMaker: Studio</i> 并不是将所有东西直接渲染到屏幕，而是相反地渲染到<b>应用表面层</b>。应用表面层本质上是一种表面层，可以随心所欲的使用表面层函数，并因此可以操作表面层函数，绘制、发送到着色器，通常表面可以做到的，应用表面层也可以。</p>
+
+<blockquote><i><b>注：</b> 唯一你 <b>不可以</b> 操作的是释放应用表面层。它一直会存在，尽管访问它的索引值可能会改变。</i>
+</blockquote>
+
+<p>当你运行游戏时，在进入每个新房间调用绘制事件的第一时间会创建这个表面， 这意味着在那之前什么都不会绘制。然而，你仍然可以获取应用表面层的位置并且在 <b>创建事件</b>或任何其它事件中 重置大小，不会出现任何错误，使用的值也会在它创建时建立关联。实际的事件序列如下所示：</p>
+
+<blockquote>
+<ul>
+<li>Pre-draw 事件<br>
+<br></li>
+
+<li>--- &gt; <b>应用表面层创建及渲染目标设置</b><br>
+<br></li>
+
+<li>为每个可见的视野执行一次下述序列，如果没有激活的视野，仅执行一次<br>
+
+<blockquote>Draw begin 事件<br>Draw 事件<br>Draw end 事件<br></blockquote></li>
+
+<li>--- &gt; <b>应用表面层在此重置</b><br>
+<br></li>
+
+<li>Post draw 事件（发布绘制事件）<br>
+<br></li>
+
+<li>--- &gt; <b>应用表面层现在绘制到默认的背面缓存区（虽然你可以关掉这个过程）。</b><br>
+<br></li>
+
+<li>Draw GUI begin 事件<br></li>
+
+<li>Draw GUI 事件<br></li>
+
+<li>Draw GUI end 事件<br></li>
+</ul>
+</blockquote>
+
+
+
+<p>使用这个表面意味着你能够很容易的创建令人难以置信的着色器过渡特效，或者截屏并使其作为3D图形的贴图，或者简单的缩放低分辨率游戏的画面来适应不同的分辨率的屏幕。它有无限种可能性！<br><br>若要访问这个表面层，你需要用到内置变量<tt>application_surface</tt>，接下来的章节会进行解释：</p>
+
+<blockquote>
+<ol>
+<li><a href="application_surface.html">application_surface</a><br>
+</li>
+</ol>
+</blockquote>
+
+<p>你也有只为应用表面专门设计的函数可以使用：</p>
+
+<blockquote>
+<ol>
+<li><a href=
+"application_surface_enable.html">application_surface_enable</a><br>
+
+</li>
+
+<li><a href=
+"application_surface_is_enabled.html">application_surface_is_enabled</a><br>
+
+</li>
+
+<li><a href=
+"application_get_position.html">application_get_position</a><br>
+</li>
+
+<li><a href=
+"application_surface_draw_enable.html">application_surface_draw_enable</a><br>
+
+</li>
+</ol>
+</blockquote>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回: <a href=
+"index.html">表面层</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table><!-- /CHM2WEB --> 
+
+
+</body>
+</html>

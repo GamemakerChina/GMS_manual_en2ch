@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>repeat 语句</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/001_GML Language Overview/401_08_repeat.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_08_repeat.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_08_repeat.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script><!-- !chm2web! -->
+
+
+<h1>repeat 语句</h1>
+
+<h2>这节解释如何使用“repeat”。</h2>
+
+<p>“repeat”语句的结构：<br>
+<br></p>
+
+<p class="code">repeat (&lt;表达式&gt;) &lt;语句&gt;</p>
+
+<p><br>
+语句（statement）被重复执行的次数由表达式（expression）的近似值指定。比如说，下面的程序将会在随机位置创建5个球。<br>
+<br></p>
+
+<p class="code">{<br>
+repeat (5) instance_create(random(400), random(400), obj_ball);<br>
+}<br></p>
+
+<p><br>
+这对于规避键入多次相同的代码、或者使用数组、又或者一些操作中的计数等等是非常有效的。比如：<br>
+<br></p>
+
+<p class="code">{<br>
+var i, total;<br>
+i = 0;<br>
+total = 0;<br>
+repeat (10)<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;total += array[i];<br>
+&nbsp;&nbsp;&nbsp;i += 1<br>
+&nbsp;&nbsp;&nbsp;}<br>
+draw_text(32, 32, total);<br>
+}<br></p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回: <a href="index.html">GML 概述</a></div>
+
+<div style="float:right">下一页: <a href="401_09_while.html">“While”语句</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+</body>
+</html>

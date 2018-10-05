@@ -2,12 +2,12 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio " />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>推送通知</title>
+<title>Push Notifications</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../style.css" type="text/css"
 media="screen" title="style" charset="utf-8">
@@ -23,31 +23,67 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Push Notifications/index.html"
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FPush%20Notifications%2Findex.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FPush%20Notifications%2Findex.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script><!-- !chm2web! -->
+</script>
+<!-- !chm2web! -->
 
+<h1>Push Notifications</h1>
 
-<h1>推送通知</h1>
+<h2>This section deals with the functions for pushing notifications
+to devices.</h2>
 
-<h2>这一章节说明与设备上消息推送的有关函数。</h2>
-
-<p>在移动设备上,通常只有一个应用程序可以在任何时候活跃在前台,但是许多的游戏和应用程序需要基于时间或者其他特定的用户行为来触发事件， 并且<i>不需要</i>活跃在前台。在这些情况下, <b>本地</b>和<b>远程</b>推送通知可以让游戏在事件发生时通知用户。 <br><br>当操作系统推送了一个本地或远程的通知而目标程序并没有在前台运行时，通知将会以banner(横幅) 的形式来展示。如果用户点击了推送的通知，游戏会被启动并且 <a href=
-"../../001_Advanced%20Use/More%20About%20Async%20Events/Push.html">异步推送事件（Asynchronous Push Event）</a> 会被触发，用户需要检查回调的字符串，根据这个值来处理和解决这个推送通知。如果接收到通知时程序正在前台运行，仍会接收到一个异步推送事件（Asynchronous Push Event），但不会有任何消息展示，除非你自己创建一个。<br><br>不同平台会有差异，详情如下：<br>
+<p>On mobile devices, normally only one application can be active
+in the foreground at any time, but many games and applications
+operate in a time-based or interconnected environment where events
+of interest to users can occur when the application is <i>not</i>
+in the foreground. In these cases, <b>Local</b> and <b>Remote</b>
+push notifications can allow these games to notify their users when
+events occur.<br>
+<br>
+When the operating system delivers a local or remote push
+notification and the target application is not running in the
+foreground, it presents the notification to the user in the form of
+a banner. If there is a notification alert and the user taps on it,
+then the game is launched and an <a href=
+"../../001_Advanced%20Use/More%20About%20Async%20Events/Push.html">Asynchronous
+Push Event</a> is called where you can check the callback string
+that you specify and resolve the push based on its value. If the
+application is running in the foreground when the notification is
+delivered, the application will still receive an Asynchronous Push
+Event, but the user will get no message displayed unless you create
+it yourself.<br>
+<br>
+There are a few differences to note between supported
+platforms:<br>
 <br></p>
 
 <ul>
-<li>在 Android 平台， <i>无论</i> 程序是在运行状态还是后台状态，数据都将被存储下来，并通过异步事件的形式在程序下一次运行时被传送。<br>
+<li>On Android, <i>all</i> notifications received when the app is
+not running/in background, will be stored, and the data delivered
+by the async event the next time the app runs.<br>
 <br></li>
 
-<li>在 iOS 平台，一个特定的通知数据只有在通知被选择的时候数据才会传送（或者当收到通知时程序运行在前台时）。 <br>
+<li>On iOS, data for a particular notification will only be
+delivered when the notification is selected (or if the app is
+running in foreground when the notification is received).<br>
 <br></li>
 
-<li>在 Tizen 平台, 本地通知是 <b>不被支持的</b>。<br>
+<li>On Tizen, local notifications are <b>not</b> supported.<br>
 <br></li>
 </ul>
 
-<h3>本地通知</h3>
+<h3>Local Notifications</h3>
 
-<p>本地通知由安装游戏的设备直接推送，并不需要后端服务器。你仅仅需要设置时间日期和通知内容，如果你的程序当前没有在运行的话，通知就会被推送。You simply set the date and time for the notification and it will be displayed to the user if the game is not currently running. 这种类型的通知用于“召回”玩家再次运行游戏，或者用于每日奖励之类的事件......用户点击通知将启动游戏并传递一个字符串，解析数据来给玩家发放奖励或者进行其他你想要的操作。<br><br>以下函数可用于本地通知:</p>
+<p>A local push notification is local to the device that the game
+is installed on, and requires no backend server. You simply set the
+date and time for the notification and it will be displayed to the
+user if the game is not currently running. This type of
+notification is useful to set "reminders" for the user to play your
+game again, or to offer a daily reward for playing, etc... and when
+the user taps the notification it will launch the game and pass in
+a data string which can then be parsed by the game to give a reward
+or whatever.<br>
+<br>
+The following functions are available for local notifications:</p>
 
 <blockquote>
 <ol>
@@ -72,48 +108,94 @@ if (window.name != "content")
 </ol>
 </blockquote>
 
-<p><i><b>提示</b>: 这些函数仅适用于<b>iOS</b> 和 <b>Android</b> 平台。</i>
+<p><i><b>NOTE</b>: This function is limited to the <b>iOS</b> and
+<b>Android</b> target modules.</i>
 </p>
 
-<h3>远程通知</h3>
+<h3>Remote Notifications</h3>
 
-<p>远程通知由对应平台的应用商店提供的推送服务发送，通知将会被发送到所有安装了你的应用的设备上。 <i>GameMaker: Studio</i>目前已支持 iOS, Android, Tizen (Native and JaveScript) 平台。<br><br> <i>GameMaker: Studio</i> 并不提供函数来处理远程通知, 因为他们都必须由服务器生成并需要通过各自的应用程序商店处理。然而，一旦你正确的设置， <i>GameMaker: Studio</i> 开发的游戏将能够接收到这些通知， 然后在 <a href=
-"../../001_Advanced%20Use/More%20About%20Async%20Events/Push.html">异步推送事件（Asynchronous Push Event）</a>中，你将接收到一个本地通知。<br><br>在所有支持的平台上， 一旦你完成了必要的设置， 游戏在设备上运行时会自动 <b>注册</b> 对应平台的推送通知服务。这将触发一个 <b>异步推送通知事件（Asynchronous Push Notification Event）</b>，你会得到一个 <tt>ds_map</tt> 数组，他的key "<i>type</i>" 的值为 "<i>register</i>" ，key"<i>reg_id</i>"的值为 <b>注册ID（registration id）</b> (如果在"<i>error</i>" 的"<i>status</i>" 为 0 的话说明发生了错误)。你必须发送这个注册ID（registration id）到你的服务器，每个设备都拥有独一无二的注册ID（registration id）。你的服务器 <i>必须保存已注册设备的ID列表</i>, 当你从服务器上推送通知消息时.你需要这些注册ID来将消息推送到对应的已注册设备上。<br><br>请注意，远程推送通知不能保证一定传递成功，并且允许传送的数据的负载也非常小。虽然有很多的平台, 但是只有在 iOS 上苹果的服务特别限制仅发送最新的通知，必须通过有效的数据传递给你的异步事件，能够被接收到的有效数据的大小为256个字节。举个例子，通常一个远程推送式通知就表明服务器上有新的数据。</p>
+<p>Remote notification messages are sent by a server to a service
+provided by the device platform App Store, and this then forwards
+those messages onto all the devices on which your application is
+installed. This is supported by <i>GameMaker: Studio</i> on the
+iOS, Android, Tizen (Native and JaveScript) target modules.<br>
+<br>
+There are no functions in <i>GameMaker: Studio</i> to deal with
+remote notifications, as they must all be generated by your server
+and handled by the respective App Stores. However, once set up
+correctly, <i>GameMaker: Studio</i> games will receive these
+notifications, which can then be dealt with in the <a href=
+"../../001_Advanced%20Use/More%20About%20Async%20Events/Push.html">Asynchronous
+Push Event</a>, as you would a local notification.<br>
+<br>
+For all available platforms, once you have done the necessary
+set-up, when the game is run on a device it will <b>register</b>
+that device with the platforms push notification service. This will
+trigger an <b>Asynchronous Push Notification Event</b>, and the
+<tt>ds_map</tt> key "<i>type</i>" will have the value
+"<i>register</i>" as well as a new key, "<i>reg_id</i>", containing
+the <b>registration id</b> (or an error message in the
+"<i>error</i>" key, if "<i>status</i>" is 0). You must then send
+this registration id to your server, and every device that your
+game is installed on will have a different registration id. Your
+server <i>must maintain a list of ids for registered devices</i>,
+as when when you send a push notification message from your server,
+you use the registration ids to send the message to the registered
+devices.<br>
+<br>
+Please note that there is no guarantee that remote push
+notifications will be delivered, and that the allowed data payload
+is fairly small. This varies between platforms, but iOS is
+particularly limited - the apple service only delivers the most
+recent notification, which must be selected by the recipient for
+the payload data to be delivered to your async event, and these
+notifications have a mximum payload size of 256bytes. Typically a
+remote push notification would just indicate that new data is
+available from your server for example.</p>
 
-<blockquote><i><b>提示</b>: Android 平台需要将你的 <b>GCM Sender ID（Google Cloud Messaging for Android 谷歌的安卓云通讯）</b> 加入到 <a href=
-"../../001_Advanced%20Use/Global%20game%20settings/Extras%20Tab.html"> Global Game Settings</a>中。 <b>Project Number</b> 在你创建安卓工程时被创建。</i>
+<blockquote><i><b>NOTE</b>: Android requires that you add the
+<b>GCM Sender ID</b> into the <a href=
+"../../001_Advanced Use/Global game settings/Extras Tab.html">Global
+Game Settings</a>. This is the <b>Project Number</b> that is
+assigned when you create your Google Play API Project.</i>
 </blockquote>
 
-<p>如何搭建一个可用的服务器，或者可用的信息平台,请查看以下页面 <a href=
-"http://help.yoyogames.com/forums" target="_blank">YoYo Games 知识库</a>:<br>
+<p>For further details on how to go about setting up a server, as
+well as information specific to the available platforms, please see
+the following pages on the <a href=
+"http://help.yoyogames.com/forums" target="_blank">YoYo Games
+Knowledge Base</a>:<br>
 <br></p>
 
 <ul>
 <li><a href="http://help.yoyogames.com/entries/28184776" target=
-"_blank">推送通知 - Android</a>
+"_blank">Push Notifications - Android</a>
 </li>
 
 <li><a href="http://help.yoyogames.com/entries/27695268" target=
-"_blank">推送通知 - iOS</a>
+"_blank">Push Notifications - iOS</a>
 </li>
 
 <li><a href="http://help.yoyogames.com/entries/28184916" target=
-"_blank">推送通知 - Tizen</a>
+"_blank">Push Notifications - Tizen</a>
 </li>
 </ul>
 
-<blockquote><i><b>提示</b>: 实现服务器端取决于最终用户，除了基本的设置信息和知识库里提供的信息，YoYo Games不提供任何其他方面的支持。</i>
+<blockquote><i><b>NOTE</b>: Implementing the server-side is
+entirely up to the end user, and YoYo Games do not provide any
+support for that side of things, other than basic set-up
+information available from their Knowledge Base.</i>
 </blockquote>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href=
-"../index.html">GML参考</a></div>
+<div style="float:left">Back: <a href=
+"../index.html">Reference</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -121,17 +203,6 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
   if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
-</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-
-
-
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table><!-- /CHM2WEB --> 
-
-
+</script>
 </body>
 </html>

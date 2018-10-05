@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>audio_system</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../../files/helpindex.css"
+type="text/css">
+
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Game Assets/Sounds/audio_system.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FGame%20Assets%2FSounds%2Faudio_system.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FGame%20Assets%2FSounds%2Faudio_system.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>audio_system</h1>
+
+<h2>检查正在使用的是传统声音系统还是常规声音系统</h2>
+
+<h3>语法:</h3>
+
+<p class="code">audio_system();</p>
+
+<p><br>
+</p>
+
+<p><b>返回值:</b> 常量</p>
+
+<p><br>
+</p>
+
+<h3>描述</h3>
+
+<p>这个函数返回当前的声音系统是否是传统的还是常规的。返回值可以是下列两个常数之一：</p>
+
+<div class="compat">
+<table class="compat">
+<tr>
+<th width="34%">常量</th>
+<th width="66%">描述</th>
+</tr>
+
+<tr>
+<td>audio_old_system</td>
+<td>正在使用传统声音系统</td>
+</tr>
+
+<tr class="alt">
+<td>audio_new_system</td>
+<td>正在使用常规声音系统</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+如果你使用的是html5的目标模块，那么这个函数非常重要。一些浏览器无法与新声音系统兼容，因此Gamemaker:Studio将会自动换回传统声音引擎。<br>
+<br></p>
+
+<p><br>
+</p>
+
+<h3>例子:</h3>
+
+<p class="code">if audio_system() == audio_old_system<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;global.SS = false;<br>
+&nbsp;&nbsp;&nbsp;}<br>
+else<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;global.SS = true;<br>
+&nbsp;&nbsp;&nbsp;}<br></p>
+
+<p>上面的代码检查所使用音响系统的是传统的或新的之中的哪一个，并相应地设置全局变量。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">Back: <a href="index.html">Audio</a></div>
+
+<div style="float:right">Next: <a href=
+"audio_exists.html">audio_exists</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>

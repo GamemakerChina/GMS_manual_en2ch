@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>get_string</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Debugging/get_string.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FDebugging%2Fget_string.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FDebugging%2Fget_string.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>get_string</h1>
+
+<h2>显示一个弹出信息以供用户输入一个字符串。</h2>
+
+<h3>语法:</h3>
+
+<p class="code">get_string(str, def);</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>str</td>
+<td>弹出信息中显示的字符串</td>
+</tr>
+
+<tr class="alt">
+<td>def</td>
+<td>文本框中的默认字符串</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>返回值:</b> 字符串</p>
+
+<p><br>
+</p>
+
+<h3>描述</h3>
+
+<p>这创建了一个弹出窗口显示一个标准消息，带有一个标签为"Ok"的按钮，来提示用户输入一个字符串。这个函数将会返回被输入的字符串<!--
+-->，<i>或者</i>如果没有东西被输入①返回默认值。<br><br>
+<br>①：此处的<b>“没有东西被输入”</b>指的是弹出对话框后<b>不修改文本框内容</b>，<b>而并非文本框清空</b>，<!--
+-->即所返回内容以文本框内容为准。
+<br>
+<br>
+<br>
+<i><b>注意:</b> 这个函数只用于调试用途。若你想在你最终游戏中要求这个功能，请使用<a href=
+"../Asynchronous%20Functions/get_string_async.html"><tt>get_string_async</tt></a>。</i><br>
+
+<br></p>
+
+<p><br>
+</p>
+
+<h3>举例:</h3>
+
+<p class="code">global.test_name = get_string("Test highscore
+name:", "Anonymous");</p>
+
+<p>上述代码将会提示用户给出一个名字，其将接下来会被存入全局变量"test_name"中。如果没有东西被输入并且用户只是按下了<!--
+-->"OK"那么默认值，"Anonymous"，将会被返回。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">上一页: <a href=
+"index.html">调试</a></div>
+
+<div style="float:right">Next: <a href=
+"show_error.html">show_error</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+</body>
+</html>

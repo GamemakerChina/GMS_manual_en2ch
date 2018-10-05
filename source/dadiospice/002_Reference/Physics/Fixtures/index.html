@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -26,61 +26,88 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>支架</h1>
+<h1>Fixtures</h1>
 
-<h2><i>GameMaker: Studio</i>的物理系统中有一些功能来定义一个能够被应用于实例的支架</h2>
+<h2>The <i>GameMaker: Studio</i> physics system has a number of
+functions for defining fixtures which can then be applied to
+instances.</h2>
 
-<p>在一个<i>GameMaker: Studio</i>中的实例能够拥有物理属性之前，它必须要有一个分配给它的支架。一个支架<!--
--->绑定一个形状或者形态给实例并且这会加入材质信息诸如密度、动摩擦因数和碰撞恢复系数。支架可以是方形<!--
--->、圆形、多边形或者其他简单的你想要的逐点定义的形状，因为<i>GameMaker: Studio</i>提供了功能去逐点定义你<!--
--->自己的形状，并且之后一旦你已经有了你的形状你就可以继续进行，也可以定义它的物理属性。这些属性是掌管<!--
--->这个支架所绑定到的实例将会和其他实例在物理世界中的行为，列举如下：<br>
+<p>Before an instance in <i>GameMaker: Studio</i> can have physical
+properties it must have a fixture assigned to it. A fixture binds a
+shape or form to the instance and this adds material properties
+such as density, friction, and restitution. Fixtures can be boxes,
+circles, polygons or any other simple shape you wish as
+<i>GameMaker: Studio</i> provides functions that enable you to
+define your own shape point by point, and then once you have your
+shape you can go ahead and define its physical properties too.
+These properties are what govern the way the instance with the
+fixture assigned to it will react with other instance in the
+physics world and are listed below:<br>
 <br></p>
 
 <blockquote>
 <ul>
-<li><b>密度：</b> 一个材料的密度被定义为单位面积内的质量。从根本上说，它是一种计量物体被压合的紧实程度的量度。<!--
--->如果你想要你的支架是<i>静态的</i>（比如说：不可动）那么质量应当被设为0，从根本上将它的密度设为∞。<i>运动学</i><!--
--->物体能够以一个恒定的速度运动且不会收到碰撞的物理影响，它们的密度也被定义为0（∞）。</li>
+<li><b>Density:</b> A material's density is defined as its mass per
+unit volume. It is, essentially, a measurement of how tightly
+matter is crammed together. If you wish your fixture to be
+<i>static</i> (ie: immovable) then the density should be set to 0,
+essentially making it infinitely dense. <i>Kinematic</i> objects
+that move with constant velocity and are not physically affected by
+collisions are also defined using a density of 0.</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>动摩擦因数：</b> 摩擦力是一种力阻止固体表面、流体层、以及材料元素在彼此上滑动的相对运动。</li>
+<li><b>Friction:</b> Friction is the force resisting the relative
+motion of solid surfaces, fluid layers, and material elements
+sliding against each other.</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>线性阻尼：</b> 这（阻尼力）是一个普遍的使得运动物体损失动量的原因。在“现实世界”中，万物不可能永远进行。<!--
--->比如说，一个纸飞机将会飞行一小会但是最终它将会下落因为有引起它减速的空气阻力。在我们创建了这些东西物理世界中，<!--
--->这很难去模拟并且因此所有的支架都被给定了自己的线性阻尼去模拟这种“普遍的摩擦力”。</li>
+<li><b>Linear Damping:</b> This is the generalised force that
+causes a moving object to lose momentum. In the "real world" things
+don't generally happen forever. For example, A paper aeroplane will
+fly for a short while but eventually it will fall due to the air
+friction that acts upon it causing it to slow down. In the physics
+world that we create such things are difficult to model and so each
+fixture is given its own linear damping to simulate this type of
+"generalised friction".</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>角度阻尼：</b> 正如上文所述，这是一个被施加到物体上的普遍的力来阻止它永恒性的转动。</li>
+<li><b>Angular Damping:</b> As above, this is a generalised force
+that is applied to an object to stop it spinning eternally.</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>碰撞恢复系数：</b> 在物理中，碰撞恢复系数被定义为“物体或系统经历应变（弹性形变）后回到原有形态的反馈作用”<!--
--->但是因为<i>GameMaker: Studio</i>中的支架都是真真正正的刚体而不能变形。把它基本上考虑成这个支架有多“弹”。</li>
+<li><b>Restitution:</b> In physics, restitution is defined as "the
+return of an object or system to its original state after elastic
+deformation", but as the fixtures in the <i>GameMaker: Studio</i>
+are really rigid bodies and cannot be deformed, think of this as
+basically how "bouncy" the fixture is.</li>
 </ul>
 </blockquote>
 
-<p>所以正如你所见，用几个简单的函数，
-<i>GameMaker: Studio</i>能够帮助你去创建一个将会给你的游戏一种前所未有的感觉和体验的复杂的系统和互动。
+<p>So as you can see, with just a few simple functions,
+<i>GameMaker: Studio</i> can help you to create complex systems and
+interactions which will give your games an unprecedented sense of
+realism.<br>
 <br>
 <br>
-<br>
-<i><b>注意：</b>你可以定义一个支架并将其绑定给多个实例（试想一个台球桌，其中所有的球都有相同的物理属性）<!--
--->而每一个都是一个普遍的实体。</i><br>
+<i><b>Note:</b> You can define one fixture and have it bound to
+multiple instances (think of a pool table, where all the balls have
+the same physical properties, yet each one is a discreet
+entity)</i><br>
 <br>
 <br></p>
 
-<h4>创建支架</h4>
+<h4>Creating Fixtures</h4>
 
-<p>下列函数是用来创建、绑定、设定碰撞以及删除支架的：</p>
+<p>The following functions are for creating, binding, setting
+collisions and then deleting fixtures:</p>
 
 <blockquote>
 <ol>
@@ -111,9 +138,11 @@ if (window.name != "content")
 </ol>
 </blockquote>
 
-<h4>定义支架形状</h4>
+<h4>Defining Fixture Shapes</h4>
 
-<p>一个支架必须要被给定一个形状否则将不会被物理世界检测到，并且这个形状可以用下列函数来定义：</p>
+<p>A fixture must be given a shape or else it will not be detected
+by the physics world, and this shape can be defined by the
+following functions:</p>
 
 <blockquote>
 <ol>
@@ -148,10 +177,13 @@ if (window.name != "content")
 </ol>
 </blockquote>
 
-<h4>支架属性</h4>
+<h4>Fixture Properties</h4>
 
-<p>为了你启用物理的实例能够恰当的回应周围的世界，你使用的支架必须有特定的属性来定义支架的弹性、动摩擦因数、<!--
--->质量等……下列函数能够被用于设定这些属性：</p>
+<p>In order for your physics enabled instance to react properly to
+the world around it, the fixtures you use must have specific
+properties defined that will give the fixture bounce, friction,
+mass etc... The following functions are used to set these
+properties of the fixture:</p>
 
 <blockquote>
 <ol>
@@ -196,8 +228,12 @@ if (window.name != "content")
 </ol>
 </blockquote>
 
-<p>你也可以设定某些支架属性在它已经被绑定给一个实例<i>之后</i>。当绑定一个“基本”支架的时候，你也可以选择去<!--
--->存储绑定物理属性的唯一索引到变量中。然后这些能够被用于下列函数中去修改它特定的属性，或者去获取它们的属性：</p>
+<p>You can also set certain properties of the fixture <i>after</i>
+it has been bound to an instance. When binding the "base" fixture,
+you can choose to store the unique index for the bound physical
+properties in a variable. This can then be used in the following
+functions to change certain properties, or to get the current
+values for them:</p>
 
 <blockquote>
 <ol>
@@ -233,13 +269,14 @@ if (window.name != "content")
 </p>
 
 <div class="clear">
-<div style="float:left">上一页：<a href="../index.html">物理功能</a></div>
+<div style="float:left">Back: <a href="../index.html">Physics
+Functions</a></div>
 
-<div style="float:right">下一页：<a href=
-"../Joints/index.html">节点</a></div>
+<div style="float:right">Next: <a href=
+"../Joints/index.html">Joints</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -248,16 +285,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

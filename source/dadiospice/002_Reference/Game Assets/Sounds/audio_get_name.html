@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,10 @@ if (window.name != "content")
 
 <h1>audio_get_name</h1>
 
-<h2 class="clear">返回给定原声资源的名称（字符串）。</h2>
+<h2>Returns the name (as a string) of the given audio
+resource.</h2>
 
-<h3>语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">audio_get_name(index);</p>
 
@@ -40,13 +41,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>被检查的声音索引</td>
+<td>The index of the sound to check.</td>
 </tr>
 </table>
 </div>
@@ -54,37 +55,47 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回值:</b> 字符串<br>
-</p>
-
-<h3>描述</h3>
-
-<p>该函数将以字符串形式返回一个给定的音频资源的名称。"index"值可以是资源自身（就像你在资源树里看到的那样），或者当您播放声音时被赋予唯一的ID值，例如<a href="audio_play_sound.html">audio_play_sound()</a>. 注意，返回的字符串与资源ID不一样，并且不能用来访问资源本身，所以应当只用于显示或错误检查。<br>
-</p>
+<p><b>Returns:</b> String</p>
 
 <p><br>
 </p>
 
-<h3>例子:</h3>
+<h3>Description</h3>
+
+<p>This function will return the name of a given audio resource as
+a string. The "index" value can be that of the resource itself (as
+seen in the resource tree) or the unique ID value that is given
+when you play the sound using, for example, <a href=
+"audio_play_sound.html"><tt>audio_play_sound()</tt></a>. Note that
+the string returned is <i>not</i> the same as the resource ID and
+cannot be used to access the resource itself, so should only be
+used for displaying or error checking.<br>
+<br></p>
+
+<p><br>
+</p>
+
+<h3>Example:</h3>
 
 <p class="code">var snd = audio_play_sound(choose(snd_One, snd_Two,
 snd_Three), 0, false);<br>
 var name = audio_get_name(snd);<br>
 show_debug_message("Sound = " + name);<br></p>
 
-<p>上述代码从三个不同的声音资源中随机选择一个播放，接着显示一个带有其名称的调试信息</p>
+<p>The above code plays a random sound chosen from three different
+sound resources then shows a debug message with its name.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Audio</a></div>
+<div style="float:left">Back: <a href="index.html">Audio</a></div>
 
-<div style="float:right">下一个: <a href=
-"audio_play_sound.html">audio_play_sound</a></div>
+<div style="float:right">Next: <a href=
+"audio_get_type.html">audio_get_type</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -93,16 +104,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

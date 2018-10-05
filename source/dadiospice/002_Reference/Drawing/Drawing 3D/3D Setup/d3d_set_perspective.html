@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>d3d_set_perspective</h1>
 
-<h2>开启或关闭透视投影</h2>
+<h2>Switches on or off perspective projection.</h2>
 
-<h3>语法：</h3>
+<h3>Syntax:</h3>
 
 <p class="code">d3d_set_perspective(enable)</p>
 
@@ -40,13 +40,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>说明</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>enable</td>
-<td>开启 (true) or 关闭 (false) 透视投影</td>
+<td>Enables (true) or disables (false) perspective projection</td>
 </tr>
 </table>
 </div>
@@ -54,41 +54,45 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回值：</b> N/A</p>
+<p><b>Returns:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>说明</h3>
+<h3>Description</h3>
 
-<p>开启 (true) or 关闭 (false) 透视投影。开启透视投影后，呈现在屏幕上的物体大小随深
-度发生变化，深度越大， 大小越小。物体的深度为0，那么呈现出大小为原始大小（除非你做了修改）。  
-摄像机的位置在房间上方（距离等于房间的宽度）,只有处于摄像机前方的物体（深度大于0）
-才会被绘制。因此不要绘制深度小于0，或者说，不要小于-w（w 表示房间或者视野的宽度）。
-<br>
+<p>This turns on (or off) perspective projection. With a
+perspective projection instances that have a greater depth will
+appear smaller, so when the depth is 0 it is equal to the original
+size and the viewpoint for the camera is placed at a distance above
+the room. This default distance is equal to the width of the room
+as that gives a reasonable starting projection, and only instances
+in front of the camera are drawn. Don't use instances with a depth
+smaller than 0 (or at least not smaller than -w where w is the
+width of the room or the view).<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>示例:</h3>
+<h3>Example:</h3>
 
 <p class="code">d3d_set_perspective(true)</p>
 
-<p>开启透视投影。</p>
+<p>The above code switches on perspective projection.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回：<a href="index.html">3D
+<div style="float:left">Back: <a href="index.html">3D
 Setup</a></div>
 
-<div style="float:right">下一页：<a href=
+<div style="float:right">Next: <a href=
 "d3d_set_depth.html">d3d_set_depth</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -97,16 +101,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -29,9 +29,9 @@ if (window.name != "content")
 <h1>ds_grid_value_x</h1>
 
 <h2>Returns the x position of a value within a region of a
-grid.<br>返回栅格中一个区域内y位置的值。</h2>
+grid.</h2>
 
-<h3>Syntax  语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">ds_grid_value_x(index, x1, y1, x2, y2, val);</p>
 
@@ -41,38 +41,38 @@ grid.<br>返回栅格中一个区域内y位置的值。</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument参数</th>
-<th>Description描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the grid.栅格结构的索引。</td>
+<td>The index of the grid.</td>
 </tr>
 
 <tr class="alt">
 <td>x1</td>
-<td>The x position of the left of the region in the grid.栅格中这个区域的左端位置。</td>
+<td>The x position of the left of the region in the grid.</td>
 </tr>
 
 <tr>
 <td>y1</td>
-<td>The y position of the top of the region in the grid.栅格中这个区域的右端位置。</td>
+<td>The y position of the top of the region in the grid.</td>
 </tr>
 
 <tr class="alt">
 <td>x2</td>
-<td>The x position of the right of the region in the grid.栅格中这个区域的顶端位置。</td>
+<td>The x position of the right of the region in the grid.</td>
 </tr>
 
 <tr>
 <td>y2</td>
-<td>The y position of the bottom of the region in the grid.栅格中这个区域的底端位置。</td>
+<td>The y position of the bottom of the region in the grid.</td>
 </tr>
 
 <tr class="alt">
 <td>val</td>
-<td>The value to find.待寻找的值</td>
+<td>The value to find.</td>
 </tr>
 </table>
 </div>
@@ -80,12 +80,12 @@ grid.<br>返回栅格中一个区域内y位置的值。</h2>
 <p><br>
 </p>
 
-<p><b>Returns  返回值:</b> Real  实数型</p>
+<p><b>Returns:</b> Real</p>
 
 <p><br>
 </p>
 
-<h3>Description  描述</h3>
+<h3>Description</h3>
 
 <p>With this function you can get the x coordinate (within the
 given rectangular grid region) of the value being searched for. Be
@@ -96,15 +96,12 @@ exists <i>first</i> with <a href=
 run this function (along with the <a href=
 "ds_grid_value_y.html"><tt>ds_grid_value_y</tt></a> function) to
 get the exact position within region being searched.<br>
-<br>使用这个函数你能够得到正在被搜索的值的x坐标（在被给定的矩形栅格区域内）。 请提防如果这个被搜索的值不存在，这个函数将会返回0，所以先用函数<a href=
-"ds_grid_value_exists.html"><tt>ds_grid_value_exists</tt></a>检测该值是否存在再运行这个函数是一个非常好的想法（(沿袭了函数<a href=
-"ds_grid_value_y.html"><tt>ds_grid_value_y</tt></a>）来得到在被搜索区域中确切位置。
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example  举例:</h3>
+<h3>Example:</h3>
 
 <p class="code">if ds_grid_value_exists(grid, 0, 1, 5, 6, val)<br>
 &nbsp;&nbsp;&nbsp;{<br>
@@ -116,21 +113,20 @@ val);<br>
 
 <p>The above code checks a ds_grid for a specific value within a
 rectangular region. if it is found, it then stores the x and y
-position of the value in two variables for later use.<br>
-上述代码检测一个栅格结构中一个矩形区域下的特定的一个值。如果被找到，则接下来它存储这个x和y位置到两个变量中以便后续使用。</p>
+position of the value in two variables for later use.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back上一个: <a href="index.html">DS
-Grids栅格结构</a></div>
+<div style="float:left">Back: <a href="index.html">DS
+Grids</a></div>
 
-<div style="float:right">Next下一个: <a href=
+<div style="float:right">Next: <a href=
 "ds_grid_value_y.html">ds_grid_value_y</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -139,16 +135,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -36,7 +36,7 @@ or check conditions.</h2>
 control the more complex workings of your game like asking
 questions, checking conditions or adding GML code. These actions
 are generally used in groups as outlined in the following image:
-<img class="center" src="../../Images/form_control_actions.png"> In
+<img class="center" src="../../images/form_control_actions.png"> In
 the above example, the actions check to see if a position is
 collision free and if it returns true (there is no collision) then
 a "code block" is opened and in that we have another two actions.
@@ -76,7 +76,7 @@ instances of an object, the result will be true (or whatever)
 example, you can check all instances of an object to see if the
 position slightly to the right is collision free.<br>
 <br>
-<img src="../../Images/if_empty.png" align="left"><b>Check
+<img src="../../images/if_empty.png" align="left"><b>Check
 Empty</b><br>
 This question returns true if the current instance, placed at the
 indicated position does not generate a collision with an object.
@@ -89,7 +89,7 @@ particular position.<br>
 has a mask index or a sprite with a valid collision mask assigned
 to it.<br>
 <br>
-<img src="../../Images/if_collision.png" align="left"><b>Check
+<img src="../../images/if_collision.png" align="left"><b>Check
 Collision</b><br>
 This is the opposite of the previous action. It returns true if
 there <i>is</i> a collision when the current instance is placed at
@@ -99,7 +99,7 @@ those instances flagged as being solid or all instances.<br>
 has a mask index or a sprite with a valid collision mask assigned
 to it.<br>
 <br>
-<img src="../../Images/if_object.png" align="left"><b>Check
+<img src="../../images/if_object.png" align="left"><b>Check
 Object</b><br>
 This question returns true if the instance placed at the indicate
 position meets an instance of the indicated object. These
@@ -110,7 +110,7 @@ be based on whether their bounding box overlaps or not.<br>
 check and the instance being checked has a mask index or a sprite
 with a valid collision mask assigned to it.<br>
 <br>
-<img src="../../Images/if_number.png" align="left"><b>Test Instance
+<img src="../../images/if_number.png" align="left"><b>Test Instance
 Count</b><br>
 For his action you specify an object and a number. If the current
 number of instances of the object is equal to the number the
@@ -121,7 +121,7 @@ typically used to check whether all instances of a particular type
 are gone, and so influence things like score, health or the game
 state.<br>
 <br>
-<img src="../../Images/if_dice.png" align="left"><b>Test
+<img src="../../images/if_dice.png" align="left"><b>Test
 Chance</b><br>
 This action takes the result of a "one in X" chance, where "X" is
 the number you input to test. For example, if you set the number to
@@ -139,14 +139,14 @@ in each step you could have a bomb check to see if it should
 explode, or an enemy check to see if it should change
 direction.<br>
 <br>
-<img src="../../Images/if_question.png" align="left"><b>Check
+<img src="../../images/if_question.png" align="left"><b>Check
 Question</b><br>
 Here you can specify a question for the player to answer either yes
 or no to, with the subsequent actions running (or block of actions)
 if the result is yes (true). The question is shown in an
 independent pop-up dialogue.<br>
 <br>
-<img src="../../Images/if.png" align="left"><b>Test
+<img src="../../images/if.png" align="left"><b>Test
 Expression</b><br>
 This is the most general question action whereby you can enter an
 arbitrary expression and evaluate it. If the expression evaluates
@@ -156,7 +156,7 @@ expressions see this section of the manual - <a href=
 "007_Using%20expressions%20and%20variables.html">Using Expressions
 and Variables in Actions</a>.<br>
 <br>
-<img src="../../Images/if_mouse.png" align="left"><b>Check
+<img src="../../images/if_mouse.png" align="left"><b>Check
 Mouse</b><br>
 This action will return true if the indicated mouse button is
 pressed. For example, in the step event of an object you can check
@@ -164,7 +164,7 @@ whether a mouse button is pressed and, if so, move the instance to
 that position (you would use the jump to a point action with values
 <tt>mouse_x</tt> and <tt>mouse_y</tt>).<br>
 <br>
-<img src="../../Images/if_alligned.png" align="left"><b>Check
+<img src="../../images/if_alligned.png" align="left"><b>Check
 Grid</b><br>
 Returns true if the position of the instance lies on an imaginary
 grid, made up of spaces defined by you in action when you add
@@ -176,19 +176,19 @@ PacMan works).<br>
 
 <h3>Other</h3>
 
-<p><img src="../../Images/begin.png" align="left"><b>Start
+<p><img src="../../images/begin.png" align="left"><b>Start
 Block</b><br>
 This indicates the start of a block of actions. Using the start and
 end block markers you are able to group a series of actions
 together so that if a conditional results as true, then all the
 actions are performed and not just the one directly below the
 question. the following image illustrates this: <img class="center"
-src="../../Images/Action_Blocks.png"> <img src=
-"../../Images/end.png" align="left"><b>End Block</b><br>
+src="../../images/Action_Blocks.png"> <img src=
+"../../images/end.png" align="left"><b>End Block</b><br>
 Indicates the end of a block of actions. See the above image and
 "Start Block" action for more information.<br>
 <br>
-<img src="../../Images/else.png" align="left"><b>Else</b><br>
+<img src="../../images/else.png" align="left"><b>Else</b><br>
 When you ask a question you may often wish to have a reply for if
 the answer is true <i>or</i> false, and so <i>GameMaker: Studio</i>
 provides you with the "else" action so you can re-create this with
@@ -197,7 +197,7 @@ actions if it is true, then "else", then the block of actions for
 if it is false. See the image at the top of the page for an example
 of how this looks.<br>
 <br>
-<img src="../../Images/repeat.png" align="left"><b>Repeat</b><br>
+<img src="../../images/repeat.png" align="left"><b>Repeat</b><br>
 Another useful action is the "Repeat" action. With this action, all
 you do is specify the number of times you wish the next action (or
 block of actions) to repeat and it will be done without you having
@@ -206,10 +206,10 @@ used for many things, for example spawning number of pickup
 objects, or adding a value many times onto another or any manner of
 things.<br>
 <br>
-<img src="../../Images/exit.png" align="left"><b>Exit Event</b><br>
+<img src="../../images/exit.png" align="left"><b>Exit Event</b><br>
 When this action is encountered no further actions in this
 <b>event</b> are executed.<br>
-<img src="../../Images/inherited.png" align="left"><b>Call Parent
+<img src="../../images/inherited.png" align="left"><b>Call Parent
 Event</b><br>
 This action is only useful when the object has a parent object as
 it calls the corresponding event in the parent object. When working
@@ -228,7 +228,7 @@ flexibility than using the standard DnD actions as it covers far
 more things , but code and actions are not mutually exclusive and
 can be mixed in events to get the behaviours you require.<br>
 <br>
-<img src="../../Images/execute_code.png" align="left"><b>Execute
+<img src="../../images/execute_code.png" align="left"><b>Execute
 Code</b><br>
 When you add this action, a window will open showing the GM Script
 Editor where you can write the code that you wish the event to
@@ -239,7 +239,7 @@ scripts (see <a href=
 Scripts</a>) for longer pieces of code as it makes structuring your
 game far easier.<br>
 <br>
-<img src="../../Images/execute_script.png" align="left"><b>Execute
+<img src="../../images/execute_script.png" align="left"><b>Execute
 Script</b><br>
 With this action you can execute a script that you have previously
 added to the game resources, passing a maximum of five arguments to
@@ -248,7 +248,7 @@ the manual - <a href=
 "../../001_Advanced%20Use/006_Scripts.html">Advanced Use:
 Scripts</a>.<br>
 <br>
-<img src="../../Images/comment.png" align="left"><b>Comment</b><br>
+<img src="../../images/comment.png" align="left"><b>Comment</b><br>
 Use this action to add a line of comment to the action list. A
 comment is usually a short sentence to remind you of what a
 particular set of actions is meant to do and a comment in itself
@@ -272,7 +272,7 @@ certainly not enough to build your game around, and so you will
 need to use the following actions (or code) to set, test and change
 variables as your game progresses.<br>
 <br>
-<img src="../../Images/set_variable.png" align="left"><b>Set
+<img src="../../images/set_variable.png" align="left"><b>Set
 Variable</b><br>
 This action sets a variable to a value. If that variable does not
 exists then it creates it and gives it the specified value. This
@@ -284,7 +284,7 @@ current value of the variable, but please note that this can only
 be done if the variable has already been created and has had a
 value assigned to it!<br>
 <br>
-<img src="../../Images/if_variable.png" align="left"><b>Test
+<img src="../../images/if_variable.png" align="left"><b>Test
 Variable</b><br>
 With this action you can check what the value of a particular
 variable is. If the value of the variable is equal to the number
@@ -295,7 +295,7 @@ specified and you can even use this action also to compare two
 expressions or variables to see if they are the same as, greater
 than or equal to each other.<br>
 <br>
-<img src="../../Images/draw_variable.png" align="left"> <b>Draw
+<img src="../../images/draw_variable.png" align="left"> <b>Draw
 Variable</b><br>
 With this action you can draw the value of a variable at a
 particular position on the screen. Note that this can only be used
@@ -306,14 +306,14 @@ in the draw event of an object.<br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href=
+<div style="float:left">Back: <a href=
 "index.html">Actions</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "004_Score%20actions.html">Score Actions</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -322,16 +322,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

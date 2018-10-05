@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>surface_getpixel</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Surfaces/surface_getpixel.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FSurfaces%2Fsurface_getpixel.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FSurfaces%2Fsurface_getpixel.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script><!-- !chm2web! -->
+
+
+<h1>surface_getpixel</h1>
+
+<h2>返回表面层对应位置的像素颜色。</h2>
+
+<h3>语法：</h3>
+
+<p class="code">surface_getpixel(surface_id, x, y);</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>surface_id</td>
+<td>表面层的ID。</td>
+</tr>
+
+<tr>
+<td>x</td>
+<td>表面上的x坐标，用于获取对应的像素。</td>
+</tr>
+
+<tr>
+<td>y</td>
+<td>表面上的y坐标，用于获取对应的像素。</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>返回：</b> 实数</p>
+
+<p><br>
+</p>
+
+<h3>描述</h3>
+
+<p>此函数使用局部坐标，可用于从一个表面获取特定像素的颜色，其中（0,0）是表面层的左上角。此函数建议 <i>不要</i>频繁使用，因为它是极其缓慢，并且可能导致游戏脱帧。<br><br><i><b>注:</b> 由于储存在显存里，表面层运行时存在随时停止并退出的可能性。在直接引用它们之前，你需要 <b>一直</b> 使用 <a href=
+"surface_exists.html"><tt>surface_exists</tt></a> 检测表面层是否退出。更多信息请查阅 <a href=
+"index.html">表面层</a>.</i><br>
+<br></p>
+
+<p><br>
+</p>
+
+<h3>举例：</h3>
+
+<p class="code">col = surface_getpixel(surf, 56, 78 );</p>
+
+<p>这将返回索引为“surf”的表面在在坐标（56,78）位置的像素的颜色。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回: <a href=
+"index.html">表面层</a></div>
+
+<div style="float:right">下一页: <a href=
+"surface_getpixel_ext.html">surface_getpixel_ext</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table><!-- /CHM2WEB --> 
+
+
+</body>
+</html>

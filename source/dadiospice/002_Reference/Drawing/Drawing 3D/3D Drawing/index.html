@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -26,17 +26,26 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>3D 绘图</h1>
+<h1>3D Drawing</h1>
 
-<h2>这部分详解 3D 图元、几何的绘制.</h2>
+<h2>This section details all the functions available for drawing
+primitives and shapes in 3D.</h2>
 
-<p>3D绘制，我们要注意：当我们在2D模式下绘制一个三角形的时候，三个角（顶点）的深度（depth）是一样的。然而，3D 模式下的加入了一个深度值，我们通常叫做Z轴。这时候，我们用（x,y,z)来表示一个3D空间的顶点。此外，我们可以使用<a href=
+<p>The problem with drawing in the traditional (2D) way is that a
+sprite or polygon always lies in the xy-plane, that is, all corners
+have the same depth. For true 3D you want to be able to have
+vertices at different depths, and this depth is called the z-axis.
+So from this moment on we will talk about z-coordinate rather than
+depth, and we will specify coordinates as (x,y,z) tuples. It should
+also be noted that unless the colour or alpha is set by the
+function itself, you can use <a href=
 "../../colour%20And%20Blending/draw_set_colour.html"><tt>draw_set_colour</tt></a>
 and <a href=
 "../../colour%20And%20Blending/draw_set_alpha.html"><tt>draw_set_alpha</tt></a>
-来改变将绘制的物体的颜色和透明度。<br>
+to set the drawing colour and alpha of the object being drawn.<br>
 <br>
-可用的3d图元基本函数如下：</p>
+For drawing basic primitives in 3D mode with these x,y,z
+coordinates we have the following functions:</p>
 
 <blockquote>
 <ol>
@@ -54,8 +63,9 @@ and <a href=
 </ol>
 </blockquote>
 
-<p>对于带纹理的3D图元如下 (结束本批次可以使用上面提到的函数
-<tt>d3d_primitive_end()</tt>):</p>
+<p>For drawing textured primitives in 3D mode with these x,y,z
+coordinates we have the following functions (to end drawing use the
+<tt>d3d_primitive_end()</tt> function above):</p>
 
 <blockquote>
 <ol>
@@ -72,8 +82,13 @@ and <a href=
 </ol>
 </blockquote>
 
-<p>以下是一些内置的预先定义好的几何体，你可以设置是否带纹理，并且3D相关的“环境参数”也能影响这些几何体的绘制，比如<a href=
-"../3D%20Setup/d3d_set_culling.html">backface culling</a> 开启背面剔除): </p>
+<p>You are not limited to just drawing your own shapes made from
+primitives either , as <i>GameMaker: Studio</i> has a set of
+functions that allow you to draw pre-defined shapes at any point in
+the 3D environment, with (or without) a texture mapping too (note
+that these functions can also be used with <a href=
+"../3D%20Setup/d3d_set_culling.html">backface culling</a> switched
+on):</p>
 
 <blockquote>
 <ol>
@@ -101,14 +116,14 @@ and <a href=
 </p>
 
 <div class="clear">
-<div style="float:left">上一页：<a href="../index.html">Working With
+<div style="float:left">Back: <a href="../index.html">Working With
 3D</a></div>
 
-<div style="float:right">下一页：<a href=
+<div style="float:right">Next: <a href=
 "../3D%20Projections/index.html">3D Projections</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -117,16 +132,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>d3d_draw_cone</h1>
 
-<h2>绘制一个圆锥体。</h2>
+<h2>Draws a simple 3D cone.</h2>
 
-<h3>语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">d3d_draw_cone(x1, y1, z1, x2, y2, z2, tex, hrepeat,
 vrepeat, closed, steps)</p>
@@ -41,63 +41,65 @@ vrepeat, closed, steps)</p>
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>说明</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>x1</td>
-<td>起点坐标x</td>
+<td>The initial x coordinate of the cone.</td>
 </tr>
 
 <tr class="alt">
 <td>y1</td>
-<td>起点坐标y</td>
+<td>The initial y coordinate of the cone.</td>
 </tr>
 
 <tr>
 <td>z1</td>
-<td>起点坐标z</td>
+<td>The initial z coordinate of the cone.</td>
 </tr>
 
 <tr class="alt">
 <td>x2</td>
-<td>相对坐标x</td>
+<td>The opposite x coordinate of the cone.</td>
 </tr>
 
 <tr>
 <td>y2</td>
-<td>相对坐标y</td>
+<td>The opposite y coordinate of the cone.</td>
 </tr>
 
 <tr class="alt">
 <td>z2</td>
-<td>相对坐标z</td>
+<td>The opposite z coordinate of the cone.</td>
 </tr>
 
 <tr>
 <td>tex</td>
-<td>纹理id（不使用纹理，则填写-1）</td>
+<td>The id of the texture to use (-1 for no texture)</td>
 </tr>
 
 <tr class="alt">
 <td>hrepeat</td>
-<td>水平平铺纹理的次数</td>
+<td>Amount of horizontal repetitions for the texture.</td>
 </tr>
 
 <tr>
 <td>vrepeat</td>
-<td>垂直平铺纹理的次数</td>
+<td>Amount of vertical repetitions for the texture.</td>
 </tr>
 
 <tr class="alt">
 <td>closed</td>
-<td>绘制圆锥体的底面(true)，否则不绘制底面(false)</td>
+<td>Sets whether to close (true) the bottom of the cone or not
+(false).</td>
 </tr>
 
 <tr>
 <td>steps</td>
-<td>圆锥体一圈的面数,建议为24。数值越高，越圆</td>
+<td>How many steps are used to make the cone "round" (typically
+24)</td>
 </tr>
 </table>
 </div>
@@ -105,12 +107,12 @@ vrepeat, closed, steps)</p>
 <p><br>
 </p>
 
-<p><b>返回值：</b> N/A</p>
+<p><b>Returns:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>说明</h3>
+<h3>Description</h3>
 
 <p>This function draws a simple cone in 3D space. You set the first
 bounding corner coordinates (x1,y1,z1) and then the bounding
@@ -133,7 +135,7 @@ source texture must be a power of 2 in size (eg: 8x8, 128x128,
 <p><br>
 </p>
 
-<h3>例子:</h3>
+<h3>Example:</h3>
 
 <p class="code">var tex;<br>
 tex = background_get_texture(bck_Wall);<br>
@@ -149,14 +151,14 @@ been drawn at different positions.</p>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">3D
+<div style="float:left">Back: <a href="index.html">3D
 Drawing</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "d3d_draw_ellipsoid.html">d3d_draw_ellipsoid</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -165,16 +167,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

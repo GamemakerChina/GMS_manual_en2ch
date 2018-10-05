@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>DS Queues</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../../files/helpindex.css"
+type="text/css">
+
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Data Structures/DS Queues/index.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FData%20Structures%2FDS%20Queues%2Findex.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FData%20Structures%2FDS%20Queues%2Findex.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>队列结构（Queue）</h1>
+
+<h2>一个队列结构是一个先进先出（FIFO，First-In-First-Out）的数据结构。</h2>
+
+<p>队列结构是有点类似于<a href=
+"../DS%20Stacks/index.html">堆栈结构</a>，但是它的基本原则是先进先出（FIFO）。<i>首先</i>放入队列中的值也会是首先被移除的值。你可以想象这就是在商场排队交款一样，在那里队伍中靠前的人会首先交款并离开商店<!--
+-->。队列通常被用于存储一个实例即将执行的一系列动作或行为（比如说以脚本的格式）但事实上还有其他用途。<br>
+<br>
+<i><b>注意：</b> 和所有动态资源一样，数据结构会占据大量内存，并且因此应该在不再被使用的时候<b>总是</b>被销毁以防止内存泄漏将拖慢你的游戏并最终使你的游戏崩溃。</i><br>
+<br>
+下列函数用于处理队列结构：</p>
+
+<blockquote>
+<ol>
+<li><a href="ds_queue_create.html">ds_queue_create</a><br>
+</li>
+
+<li><a href="ds_queue_destroy.html">ds_queue_destroy</a><br>
+</li>
+
+<li><a href="ds_queue_clear.html">ds_queue_clear</a><br>
+</li>
+
+<li><a href="ds_queue_empty.html">ds_queue_empty</a><br>
+</li>
+
+<li><a href="ds_queue_size.html">ds_queue_size</a><br>
+</li>
+
+<li><a href="ds_queue_dequeue.html">ds_queue_dequeue</a><br>
+</li>
+
+<li><a href="ds_queue_enqueue.html">ds_queue_enqueue</a><br>
+</li>
+
+<li><a href="ds_queue_head.html">ds_queue_head</a><br>
+</li>
+
+<li><a href="ds_queue_tail.html">ds_queue_tail</a><br>
+</li>
+
+<li><a href="ds_queue_copy.html">ds_queue_copy</a><br>
+</li>
+
+<li><a href="ds_queue_read.html">ds_queue_read</a><br>
+</li>
+
+<li><a href="ds_queue_write.html">ds_queue_write</a><br>
+</li>
+</ol>
+</blockquote>
+
+<blockquote><i><b>注意：</b> 如果你需要检测一个数据结构是否存在，你可以使用函数<a href=
+"../ds_exists.html"><tt>ds_exists()</tt></a></i>
+</blockquote>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">上一页<a href="../index.html">数据结构</a></div>
+
+<div style="float:right">下一页<a href=
+"../DS%20Lists/index.html">列表结构</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+</body>
+</html>

@@ -2,9 +2,9 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>display_set_gui_maximise</title>
@@ -23,14 +23,14 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Windows And Views/display_set_
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2Fdisplay_set_gui_maximise.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2Fdisplay_set_gui_maximise.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script><!-- !chm2web! -->
-
+</script>
+<!-- !chm2web! -->
 
 <h1>display_set_gui_maximise</h1>
 
-<h2>缩放GUI为指定的长宽。</h2>
+<h2>Scales the GUI to the given width or height.</h2>
 
-<h3><b>语法：</b>
+<h3><b>Syntax:</b>
 </h3>
 
 <p class="code">display_set_gui_maximise(<i>xscale, yscale,
@@ -42,28 +42,30 @@ xoffset, yoffset</i>);</p>
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>xscale</td>
-<td><i>&lt;可选&gt;</i> 水平缩放因数（使用-1重置为默认）</td>
+<td><i>&lt;Optional&gt;</i> The horizontal scaling factor (use -1
+to reset to default).</td>
 </tr>
 
 <tr class="alt">
 <td>yscale</td>
-<td><i>&lt;可选&gt;</i> 垂直缩放因数（使用-1重置为默认）。</td>
+<td><i>&lt;Optional&gt;</i> The vertical scaling factor (use -1 to
+reset to default).</td>
 </tr>
 
 <tr>
 <td>xoffset</td>
-<td><i>&lt;Optional&gt;</i> 偏移x位置进行绘制</td>
+<td><i>&lt;Optional&gt;</i> The x offset position for drawing.</td>
 </tr>
 
 <tr class="alt">
 <td>yoffset</td>
-<td><i>&lt;Optional&gt;</i> 偏移y位置进行绘制</td>
+<td><i>&lt;Optional&gt;</i> The y offset position for drawing.</td>
 </tr>
 </table>
 </div>
@@ -71,55 +73,83 @@ xoffset, yoffset</i>);</p>
 <p><br>
 </p>
 
-<p><b>返回：</b>N/A</p>
+<p><b>Returns:</b>N/A</p>
 
 <p><br>
 </p>
 
-<h3><b>描述</b>
+<h3><b>Description</b>
 </h3>
 
-<p>这个函数最大化GUI层，相对于屏幕尺寸进行缩放和偏移设置，而不是相对于默认的应用表面层的位置和尺寸。默认情况下，GUI层与应用表面层分辨率比例是1:1，绘制位置也是在表面层的(0,0)。然而你不想总是这种情况，所以可以设置为相对于屏幕和窗口的绝对位置(0,0)。<br><br>函数提供什么参数，决定于想要在GUI层表达什么样的效果。简单的无参数调用这个函数，GUI层将被绘制在屏幕或窗口的(0,0)位置，宽度和高度将被拉伸适应整个区域。</p>
+<p>This function can be used to maximise the GUI layer and set it
+to be scaled and offset in relation to the screen dimensions,
+rather than the default application surface position and
+dimensions. By default, the GUI layer is 1:1 with the application
+surface resolution and drawn at the (0,0) position of the surface
+too. However this is not always what you want and so you can use
+this function to set it to be drawn relative to the absolute (0,0)
+position of the display or game window.<br>
+<br>
+What arguments you provide to this function will depend on the
+effect you wish it to have on the GUI layer. Simply calling the
+function with no arguments will set the GUI layer to be drawn at
+the (0,0) position of the screen or game window, with the width and
+height being scaled to fit the whole area.</p>
 
 <p class="code">display_set_gui_maximise();</p>
 
 <p><br>
 <br>
-然而，也可以为GUI层设置 <i>缩放因数</i> ，缩放的宽度取决于这个值的大小。记住，GUI层一向是主动适应显示器或游戏窗口的大小，或者应用表面层，所以设置这个为除1之外的任何其它值，基本是根据它们的宽高缩放像素值。如果显示器是1024x768 ，设置缩放因数为 0.5，GUI层将是显示器大小的一半，有效的增加了一倍的像素（翻译修改建议 @断水）。</p>
+However, you can set the <i>scaling factor</i> for the GUI layer,
+and the width and height will be scaled by that amount. Remember
+that the GUI layer is always made to fit the size of the display or
+game window, or the application surface, so setting this value to
+anything other than 1 basically scales the pixel count along the
+width and height. If your display is 1024x768 and you set the
+scaling factor to scale by 0.5, then your GUI layer will be half
+the size of the display, effectively doubling the pixel size.</p>
 
 <p class="code">display_set_gui_maximise(0.5, 0.5);</p>
 
 <p><br>
 <br>
-用这种方式设置的值也包括在显示器或游戏窗口中GUI绘制的位置，可以通过提供一对偏移值去“移动或改变”这个(0,0)位置。</p>
+Setting the values in this way will also set the draw position to
+the (0,0) of the display or game window, so you can provide offset
+values to "move" the (0,0) position:</p>
 
 <p class="code">var pos = application_get_position();<br>
 display_set_gui_maximise(0.5, 0.5, pos[0], pos[1]);</p>
 
 <p><br>
 <br>
-最后，你可以尝试将将缩放因数设置为-1，重置GUI层。这个操作会再次设置以1:1的比例，(0,0)的位置，相对于应用表面层作出改变，而不是显示器或窗口。</p>
+Finally, you can reset the GUI layer using this function by setting
+the scaling factors to -1. This will set the GUI layer to have a
+1:1 scale again and set the draw position to the (0,0) position of
+the application surface rather than the display or window.</p>
 
 <p class="code">display_set_gui_maximise(-1, -1);</p>
 
 <p><br>
 </p>
 
-<h3>举例：</h3>
+<h3>Example:</h3>
 
 <p class="code">display_set_gui_size(display_get_width() / 2,
 display_get_height() / 2;<br>
 display_set_gui_maximise(2, 2, 0, 0);<br></p>
 
-<p>上述代码将锁定GUI绘制事件，以指定的宽度，使用那个比例缩放所有的分量以适应显示器。</p>
+<p>The above code will lock the draw GUI event to the given width
+and height, scaling all components to fit the display, using that
+proportion.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Windows and Views</a></div>
+<div style="float:left">Back: <a href="index.html">Windows and
+Views</a></div>
 
-<div style="float:right">下一页t: <a href=
+<div style="float:right">Next: <a href=
 "display_get_gui_width.html">display_get_gui_width</a></div>
 </div>
 

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -29,9 +29,9 @@ if (window.name != "content")
 <h1>ds_grid_multiply_grid_region</h1>
 
 <h2>Multiplies the contents of the cells in a source grid with the
-cells in a destination grid.<br>将源栅格中包含的单元格与靶栅格中单元格相乘。</h2>
+cells in a destination grid.</h2>
 
-<h3>Syntax  语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">ds_grid_multiply_grid_region(index, source, x1, y1,
 x2, y2, xpos, ypos);</p>
@@ -42,54 +42,54 @@ x2, y2, xpos, ypos);</p>
 <div class="param">
 <table>
 <tr>
-<th>Argument参数</th>
-<th>Description描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>index</td>
-<td>The index of the destination grid.靶栅格的索引</td>
+<td>The index of the destination grid.</td>
 </tr>
 
 <tr class="alt">
 <td>source</td>
-<td>The index of the source grid.源栅格的索引</td>
+<td>The index of the source grid.</td>
 </tr>
 
 <tr>
 <td>x1</td>
 <td>The left position of the region of cells to copy from the
-source grid.从源栅格中待拷贝单元格的左端位置。</td>
+source grid.</td>
 </tr>
 
 <tr class="alt">
 <td>y1</td>
 <td>The top position of the region of cells to copy from the source
-grid.从源栅格中待拷贝单元格的顶端位置。</td>
+grid.</td>
 </tr>
 
 <tr>
 <td>x2</td>
 <td>The right position of the region of cells to copy from the
-source grid.从源栅格中待拷贝单元格的右端位置。</td>
+source grid.</td>
 </tr>
 
 <tr class="alt">
 <td>y2</td>
 <td>The bottom position of the region of cells to copy from the
-source grid.从源栅格中待拷贝单元格的底端位置。</td>
+source grid.</td>
 </tr>
 
 <tr>
 <td>xpos</td>
 <td>The x position on the destination grid to multiply the source
-region with.靶栅格上待相乘源栅格区域的x位置。</td>
+region with.</td>
 </tr>
 
 <tr class="alt">
 <td>ypos</td>
 <td>The y position on the destination grid to multiply the source
-region with.靶栅格上待相乘源栅格区域的y位置。</td>
+region with.</td>
 </tr>
 </table>
 </div>
@@ -97,12 +97,12 @@ region with.靶栅格上待相乘源栅格区域的y位置。</td>
 <p><br>
 </p>
 
-<p><b>Returns  返回值:</b> N/A  无</p>
+<p><b>Returns:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>Description  描述</h3>
+<h3>Description</h3>
 
 <p>With this function you can define an area within a given
 ds_grid, then take those values and multiply them with those found
@@ -110,36 +110,32 @@ in a separate region of either the same ds_grid, or another one
 (which has been previously created). The original region will
 remain unchanged, while the region that they have been multiplied
 with will now store the new values for each cell.<br>
-使用这个函数你能够在一个被给定的栅格结构中定义一片区域，
-然后取得这些值并将其与另一片要么是相同栅格结构中要么是另一个栅格（已经被提前创建过）相乘。
-原始区域将保持不变，而被与之相乘的区域此时在每个单元个将会存入新的数值。<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>Example  举例:</h3>
+<h3>Example:</h3>
 
 <p class="code">ds_grid_multiply_grid_region(mygrid, mygrid, 0, 0,
 5, 5, 0, 0);</p>
 
 <p>This would take the region of cells from (0,0) to (5,5) of the
 ds_grid "mygrid" and multiply them with the cells from position
-(0,0) of the same ds_grid.<br>
-这将会取得栅格"mygrid"中从(0,0)到(5,5)区域的单元格并将其乘给同一个栅格上单元格从(0,0)开始的区域。</p>
+(0,0) of the same ds_grid.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back上一个: <a href="index.html">DS
-Grids栅格结构</a></div>
+<div style="float:left">Back: <a href="index.html">DS
+Grids</a></div>
 
-<div style="float:right">Next下一个: <a href=
+<div style="float:right">Next: <a href=
 "ds_grid_value_exists.html">ds_grid_value_exists</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -148,16 +144,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

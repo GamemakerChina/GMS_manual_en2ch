@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>round</h1>
 
-<h2>返回被给定值取整最近的整数。</h2>
+<h2>Returns the given number rounded to the nearest integer.</h2>
 
-<h3><b>语法:</b>
+<h3><b>Syntax:</b>
 </h3>
 
 <p class="code">round(n);</p>
@@ -41,13 +41,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>n</td>
-<td>待取整的数</td>
+<td>The number to round.</td>
 </tr>
 </table>
 </div>
@@ -55,47 +55,55 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回值:</b> 整数</p>
+<p><b>Returns:</b> Integer</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>正如所说的那样。<tt>round()</tt>向上或向下取整为最近的整数。<!--
--->在特殊情况下像提供的数正好是一个半整数（含.5的数）(1.5, 17.5, -2.5, 等等……)<!--
--->，这个数值将被取整为最近的<i>偶数</i>值，举个例子，2.5将被取整为2<!--
--->，而3.5将被取整为4。这种取整类型被称为
-<i>银行家舍入法</i>①，并且在大数值循环或者使用浮点数学的时候，他给出一个统计学上比起传统的“四舍五入”方法更好的结果
+<p>Just as it says, <tt>round()</tt> takes a real number and rounds
+it up or down to the nearest integer. In the special case where the
+number supplied is exactly a half-integer (1.5, 17.5, -2.5, etc),
+the number will be rounded to the nearest <i>even</i> value, for
+example, 2.5 would be rounded to 2, while 3.5 will be rounded to 4.
+This type of rounding is called <i>bankers rounding</i> and over
+large numbers of iterations or when using floating point maths, it
+gives a statistically better rounding than the more traditional
+"round up if over .5 and round down otherwise" approach.<br>
 <br>
-<br>
-这所意味着的就是如果小数值为0.5，那么取证结果将是输入值最近的<i>偶数</i>。所以比如说，23.5会变成24<!--
--->而24.5也一样，而-23.5将变成-24，-24.5也一样。 这个方法会对称地处理正值和负值，<!--
--->所以因此有符号忽略，并且更重要地是，对于合理的值的分布，取整后数的期望（均值）和原始数值是相同的。<br>
-<br><br>①：银行家舍入法，又称为高斯舍入法，是被广泛用于计算机领域、金融领域、统计学领域的一种取代传统四舍五入法的新型取整方案，原则为四舍六入，五近偶数。<!--
--->但在少数其他语言下，也可能会有四舍六入五奇进的原则。
+What this means is that if the fraction of a value is 0.5, then the
+rounded result is the <i>even integer</i> nearest to the input
+value. So, for example, 23.5 becomes 24, as does 24.5, while -23.5
+becomes -24, as does -24.5. This method treats positive and
+negative values symmetrically, so is therefore free of sign bias,
+and, more importantly, for reasonable distributions of values, the
+expected (average) value of the rounded numbers is the same as that
+of the original numbers.<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3><b>举例:</b>
+<h3><b>Example:</b>
 </h3>
 
 <p class="code">score += round(hp / 5);</p>
 
-<p>上述代码会给分数值增加一个取整后的整数</p>
+<p>The above code will add a rounded integer onto the score
+value.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">上一页: <a href="index.html">实数函数</a></div>
+<div style="float:left">Back: <a href="index.html">Real Number
+Functions</a></div>
 
-<div style="float:right">下一页: <a href="floor.html">floor</a></div>
+<div style="float:right">Next: <a href="floor.html">floor</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -104,16 +112,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>What Is A Vector?</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../../files/helpindex.css"
+type="text/css">
+
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Maths/Vector Functions/vectors.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FMaths%2FVector%20Functions%2Fvectors.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FMaths%2FVector%20Functions%2Fvectors.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>什么是向量？</h1>
+
+<h2>这节解释向量是什么？</h2>
+
+<p>在创建一个任何复杂程度的游戏情况下，你都有可能需要去处理<i>向量</i>。它们被用于物理、人工智能（AI）、三角学以及许多其余场合中，<!--
+-->但究竟什么是向量呢？好吧，通俗的说，一个向量就是一个被方向化的量。我们可以通过观察一个一维向量开始，其与一个单独的数字等效，通过<!--
+-->绘制一个有限长的线段，标一个从0开始到5结束的箭头。这就是一个等于5的向量<b>a</b>，并且如果我们绘制另一个箭头从5开始到8结束，我们就会得到<!--
+-->等于3的向量<b>b</b>。<br>
+<img class="center" src="1d_vector_image.png"></p>
+
+<p>你应当意识到无论向量从哪开始，所有取决于的因素是它的长度以及它的指向。所以向量<b>b</b>从5开始，具有3个单位长并且方向向“右”，使得<!--
+-->它和一个从0开始指向3的向量等效。现在，你也能把这些向量加起来，通过向量将这两个向量<b>a</b>和<b>b</b>首位相连的放在一起来获得等于8的向量<!--
+--><b>c</b>。那么负数会怎样呢？好吧，在上图中，如果一个指向“右”的向量与一个正数对应，你就会发现一个指向“左”的向量对应一个负数，这使得一个<!--
+-->一维向量无非就是一个含符号（+/-）的数。这解释了向量的基本概念：只取决于长度和方向（在上述情况中是“左”和“右”），<i>而与位置无关</i>①。
+<br>
+<br>①：这个性质通常被称为向量的可平移性或向量的平移不变原理。<br>
+<br>
+那么，二维向量会怎样呢？好吧，我们可以把它们考虑成不仅仅由“左”和“右”组成的，而是也包含“上”和“下”的：<br>
+<img class="center" src="2d_vector_image_1.png"></p>
+
+<p>现在，这些实际上嗨不是向量因为我们还需要用它们的起始和结束坐标来制约它们。观察向量<b>a</b>我们可以发现它有一个起始坐标为(2,2)以及一个<!--
+-->结束坐标(4,3)，并且因此为了从中得到向量，我们需要通过用结束坐标减去起始坐标来制约它，像这样：[x2-x1,y2-y1]=[4-2,3-2]=[2,1]。我们同样可以<!--
+-->对向量b做这件事：[x2-x1,y2-y1]=[-1.2-(-3.2),(2.1-1.1)]=[2,1]。注意到没有？这两个向量是相等的！这也是另一个说明了向量与位置无关，只和长度和方向有关的演示，<!--
+-->并且我们可以把这些向量画到一个局部(0,0)坐标系的周围：<br>
+<img class="center" src="2d_vector_image_2.png"></p>
+
+<p>这也就意味着一个二维向量由两个值定义，相对于局部(0,0)坐标系的一个<i>x</i>位置和一个<i>y</i>位置。那么接下来三维向量呢？他们具有了附加的“深度”维度<!--
+-->来竞争并且将被计算为一个像这样的局部坐标系周围的位置(x,y,z)：<br>
+<img class="center" src="3d_vector_image.png"></p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">上一页: <a href="index.html">向量函数</a></div>
+
+<div style="float:right">下一页: <a href=
+"Normalised%20Vectors.html">正规化向量</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>

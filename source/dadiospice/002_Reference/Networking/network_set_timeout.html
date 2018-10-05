@@ -28,9 +28,10 @@ if (window.name != "content")
 
 <h1>network_set_timeout</h1>
 
-<h2>设置客户端的socket，在发送请求和获得响应时的最大时间（超时）</h2>
+<h2>Set the timeout for reading and writing data through a
+socket.</h2>
 
-<h3>语法：</h3>
+<h3>Syntax:</h3>
 
 <p class="code">network_set_timeout(socket, read_timeout,
 write_timeout);</p>
@@ -41,8 +42,8 @@ write_timeout);</p>
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>说明</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
@@ -52,12 +53,14 @@ write_timeout);</p>
 
 <tr>
 <td>read_timeout</td>
-<td>从服务端下载数据，可容忍的最大时间（毫秒），超时会失败且不会触发任何事件。</td>
+<td>The milliseconds in which a transfer from a server will
+timeout.</td>
 </tr>
 
 <tr>
 <td>write_timeout</td>
-<td>向服务端上传数据，可容忍的最大时间（毫秒），超时会失败且不会触发任何事件。</td>
+<td>The milliseconds in which a transfer to a server will
+timeout.</td>
 </tr>
 </table>
 </div>
@@ -65,35 +68,37 @@ write_timeout);</p>
 <p><br>
 </p>
 
-<p><b>返回值</b> N/A</p>
+<p><b>Returns:</b> N/A</p>
 
 <p><br>
 </p>
 
-<h3>说明</h3>
+<h3>Description</h3>
 
-<p>这个函数用于设置传输数据的超时，如果超过时间还没有结果，那么传输会被终止，同时不会有任何返回值以及事件被触发，所以（比如）你需要自己设置一个alarm
-来处理。如果你想设置socket连接超时，可以使用<a href="network_set_config.html"><tt>network_set_config</tt></a>。
-<br>
+<p>With this function you can set the timeout for reading and
+writing data to/from a server through the given socket. Note that
+the timeout does not generate any type of event, so you will need
+to deal with timeouts yourself using alarms (for example).<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>示例：</h3>
+<h3>Example:</h3>
 
 <p class="code">network_set_timeout(sock, 3000, 3000);</p>
 
-<p>以上代码设置了变量 sock 所存储的 socket id 的传输超时为3秒钟。</p>
+<p>The above code will set the timeout for reading and writing data
+through the socket indexed in the variable "sock" to 3 seconds.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回：<a href=
+<div style="float:left">Back: <a href=
 "index.html">Networking</a></div>
 
-<div style="float:right">下一页：<a href=
+<div style="float:right">Next: <a href=
 "network_send_broadcast.html">network_send_broadcast</a></div>
 </div>
 

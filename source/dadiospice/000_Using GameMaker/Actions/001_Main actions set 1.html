@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -39,7 +39,7 @@ instances, sprites, sounds and moving from room to room.<br>
 
 <h3>Instances</h3>
 
-<p><img src="../../Images/createinstance.png" align=
+<p><img src="../../images/createinstance.png" align=
 "left"><b>Create Instance</b><br>
 With this action you can create an instance of an object. You
 specify which object to create and the position for the new
@@ -51,7 +51,7 @@ you will have some controller object that from time to time creates
 monsters or other objects. For the newly created instance the
 creation event is executed.<br>
 <br>
-<img src="../../Images/create_motion.png" align="left"><b>Create
+<img src="../../images/create_motion.png" align="left"><b>Create
 Moving</b><br>
 This action works the same as the action above but with two
 additional fields. You can now also specify the speed and direction
@@ -65,7 +65,7 @@ word <tt>direction</tt>. (This actually is a variable that always
 indicates the current direction in which the instance is
 moving.)<br>
 <br>
-<img src="../../Images/create_multiple.png" align="left"><b>Create
+<img src="../../images/create_multiple.png" align="left"><b>Create
 Random</b><br>
 This action lets you create an instance of one out of four objects.
 You specify the four objects and the position. An instance of one
@@ -75,7 +75,7 @@ position of the current instance. If you need a choice out of less
 than four objects you can use No Object for some of them. This is
 for example useful to generate a random enemy at a location.<br>
 <br>
-<img src="../../Images/change.png" align="left"><b>Change
+<img src="../../images/change.png" align="left"><b>Change
 Instance</b><br>
 With this action you can change the current instance into an
 instance of another object. So for example, you can change an
@@ -84,12 +84,12 @@ motion and the value of variables, will stay the same. You can
 indicate whether or not to perform the destroy event for the
 current object and the creation event for the new object.<br>
 <br>
-<img src="../../Images/destroy.png" align="left"><b>Destroy
+<img src="../../images/destroy.png" align="left"><b>Destroy
 Instance</b><br>
 With this action you destroy the current instance. The destroy
 event for the instance is executed.<br>
 <br>
-<img src="../../Images/destroy_at.png" align="left"><b>Destroy at
+<img src="../../images/destroy_at.png" align="left"><b>Destroy at
 Position</b><br>
 With this action you destroy all instances whose bounding box
 contains a given position. This is useful, for example, when you
@@ -100,7 +100,7 @@ instance.<br>
 
 <h3>Sprites</h3>
 
-<p><img src="../../Images/set_sprite.png" align="left"><b>Change
+<p><img src="../../images/set_sprite.png" align="left"><b>Change
 Sprite</b><br>
 Use this action to change the sprite for the instance. You indicate
 which new sprite. You can also indicate with subimage must be
@@ -117,7 +117,7 @@ in which it walks. This can be achieved by making different sprites
 for each of the (four) directions. Within the keyboard events for
 the arrow keys you set the direction of motion and the sprite.<br>
 <br>
-<img src="../../Images/set_sprite_scale.png" align=
+<img src="../../images/set_sprite_scale.png" align=
 "left"><b>Transform Sprite</b><br>
 Use this action to change the size and orientation of the sprite
 for the instance. Use the scale factors to make it larger or
@@ -127,7 +127,7 @@ of motion use as a value <tt>direction</tt>. For example, this is
 useful for a car. You can also indicate whether the sprite should
 be mirrored horizontally and/or flipped vertically.<br>
 <br>
-<img src="../../Images/set_sprite_colour.png" align=
+<img src="../../images/set_sprite_colour.png" align=
 "left"><b>colour Sprite</b><br>
 Normally the sprite is drawn as it is defined. Using this action
 you can change the colour of the sprite. This colour is blended
@@ -143,19 +143,19 @@ making explosions.<br>
 
 <h3>Sounds</h3>
 
-<p><img src="../../Images/sound_play.png" align="left"><b>Play
+<p><img src="../../images/sound_play.png" align="left"><b>Play
 Sound</b><br>
 With this action you play one of the sound resources you added to
 your game. You can select the sound you want to play and choose
 whether it should play only once (the default) or loop
 continuously. Multiple sounds can play at once.<br>
 <br>
-<img src="../../Images/sound_stop.png" align="left"><b>Stop
+<img src="../../images/sound_stop.png" align="left"><b>Stop
 Sound</b><br>
 This action stops the indicated sound. If multiple instances of
 this sound are playing all are stopped.<br>
 <br>
-<img src="../../Images/if_sound.png" align="left"><b>Check
+<img src="../../images/if_sound.png" align="left"><b>Check
 Sound</b><br>
 If the indicated sound is playing the next action is performed.
 Otherwise it is skipped. You can select <b>Not</b> to indicate that
@@ -172,33 +172,33 @@ still return true.<br>
 
 <h3>Rooms</h3>
 
-<p><img src="../../Images/previous_room.png" align=
+<p><img src="../../images/previous_room.png" align=
 "left"><b>Previous Room</b><br>
 Move to the previous room, as defined by the order of the room
 assets in the resource tree. If you are in the first room of the
 game and call this function you will get an error.<br>
 <br>
-<img src="../../Images/next_room.png" align="left"><b>Next
+<img src="../../images/next_room.png" align="left"><b>Next
 Room</b><br>
 Move to the next room, as defined by the order of the room assets
 in the resource tree. If you are in the last room of the game and
 call this function you will get an error.<br>
 <br>
-<img src="../../Images/current_room.png" align="left"><b>Restart
+<img src="../../images/current_room.png" align="left"><b>Restart
 Room</b><br>
 This will restart the current room.<br>
 <br>
-<img src="../../Images/goto_room.png" align="left"><b>Different
+<img src="../../images/goto_room.png" align="left"><b>Different
 Room</b><br>
 With this action you can go to a particular room, selecting the
 room to go to from the drop-down list.<br>
 <br>
-<img src="../../Images/previous_room.png" align="left"> <b>Check
+<img src="../../images/previous_room.png" align="left"> <b>Check
 Previous</b><br>
 This action tests whether the previous room exists. If so, the next
 action is executed.<br>
 <br>
-<img src="../../Images/if_next_room.png" align="left"><b>Check
+<img src="../../images/if_next_room.png" align="left"><b>Check
 Next</b><br>
 This action tests whether the next room exists. If so, the next
 action is executed.<br>
@@ -208,14 +208,14 @@ action is executed.<br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href=
+<div style="float:left">Back: <a href=
 "index.html">Actions</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "002_Main%20actions%20set%202.html">Main Actions - Set 2</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -224,16 +224,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

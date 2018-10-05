@@ -2,9 +2,9 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>window_get_cursor</title>
@@ -23,36 +23,40 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Windows And Views/The Game Win
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FThe%20Game%20Window%2Fwindow_get_cursor.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FThe%20Game%20Window%2Fwindow_get_cursor.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script><!-- !chm2web! -->
-
+</script>
+<!-- !chm2web! -->
 
 <h1>window_get_cursor</h1>
 
-<h2>获取游戏窗口内当前使用的指针。</h2>
+<h2>Gets the current cursor being used in the game window.</h2>
 
-<h3>语法：</h3>
+<h3>Syntax:</h3>
 
 <p class="code">window_get_cursor();</p>
 
 <p><br>
 </p>
 
-<p><b>返回:</b>Constant</p>
+<p><b>Returns:</b>Constant</p>
 
 <p><br>
 </p>
 
-<h3><b>描述</b>
+<h3><b>Description</b>
 </h3>
 
-<p>可以用这个函数获得当前游戏窗口使用的鼠标指针，返回值将下面所列的常量中的一个（设置当前的鼠标指针可以使用这个函数 <a href=
-"window_set_cursor.html"><tt>window_set_cursor</tt></a> ，同样也是使用下面的常量）：<br>
+<p>With this function you can get the current cursor being used in
+the game window, with the return value being any one of the
+constants listed below (to set the current cursor being used you
+can use the function <a href=
+"window_set_cursor.html"><tt>window_set_cursor</tt></a> which also
+takes these constants):<br>
 <br></p>
 
 <div class="compat">
 <table class="compat">
 <tr>
-<th>常量</th>
+<th>Constant</th>
 <th>Cursor</th>
 </tr>
 
@@ -152,7 +156,7 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<h3>举例：</h3>
+<h3>Example:</h3>
 
 <p class="code">if mouse_check_button_pressed(mb_left)<br>
 &nbsp;&nbsp;&nbsp;{<br>
@@ -160,15 +164,18 @@ if (window.name != "content")
 window_set_cursor(cr_drag);<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>如果之前不是拖放指针，上述代码将在按下鼠标左键时切换窗口鼠标指针为拖放指针。</p>
+<p>The above code will change the window cursor to the standard
+windows drag cursor if the left mouse button has been pressed and
+it has not already been changed previously.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">游戏窗口</a></div>
+<div style="float:left">Back: <a href="index.html">The Game
+Window</a></div>
 
-<div style="float:right">下一页: <a href=
+<div style="float:right">Next: <a href=
 "window_get_visible_rects.html">window_get_visible_rects</a></div>
 </div>
 

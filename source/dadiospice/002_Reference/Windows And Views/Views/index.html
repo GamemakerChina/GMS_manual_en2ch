@@ -2,12 +2,12 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>视野</title>
+<title>Views</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../../style.css" type="text/css"
 media="screen" title="style" charset="utf-8">
@@ -23,15 +23,48 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Windows And Views/Views/index.
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FViews%2Findex.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FViews%2Findex.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script><!-- !chm2web! -->
+</script>
+<!-- !chm2web! -->
 
+<h1>Views</h1>
 
-<h1>视野</h1>
+<h2>This section deals with the functions for defining view
+properties.</h2>
 
-<h2>本节论述了定义视野的相关函数。</h2>
-
-<p>视野是<i>GameMaker: Studio</i>可以操作的显示属性中最重要的一个。视野，基本上是进入游戏世界的小窗口，它们可能是展示房间的一部分，也可能是与房间大小1:1的缩放，因此在房间比显示器更大时视野是必须的。无需代码在房间编辑器内设置视野的更多信息，请查看章节<a href=
-"../../../001_Advanced%20Use/More%20about%20rooms/Views.html">More About Rooms - Views</a>.<br><br><i>GameMaker: Studio</i> 允许8个独立的视野（编号0-7），所有的视野都可以在任何时候激活，而且都可以展示相同房间的不同地方。这意味着可以使用视野绘制HUD界面（抬头显视系统，如血条、金钱），或者分裂屏幕效果。每个视野都有关联的<i>视口（视见区域）</i>. 如果说视野是玩家看见的房间的一部分，而视口是视野绘制在屏幕上的区域，所以如果视野不同于视口时，你可以对视野进行变形或缩放。<br><br>关于视野和视口需要注意的是，游戏第一个房间所有活动视口边框<i>总面积</i> ，便是定义背景画布大小的东西（或者MacOS、Ubuntu（Linux）和Windows的窗口大小），参考下图的说明： <img class="center" src="viewport_canvas.png"> 最后，你应该注意多个视野的情况，因为对于 <i>所有</i>实例的绘制事件，每次视野都会调用一次，如果你一个房间有三个活动视野，绘制事件每步都会运行三次（基本上是三倍的运行量），如果游戏太而复杂，这会导致游戏运行速度减慢。不过， <a href="view_current.html"><tt>view_current</tt></a> 变量可以用来限制绘制的调用。<br><br>存在下面的函数或变量处理视野的问题：</p>
+<p>Views are one of the most important of the display properties
+that you can manipulate with <i>GameMaker: Studio</i>. They are,
+basically, little windows into your game world that enable you to
+show the player parts of a room, either scaled or 1:1, and as such
+they are essential when your game room is larger than the display
+size. For information on how views can be set up without code
+directly from the room editor, please see the section <a href=
+"../../../001_Advanced%20Use/More%20about%20rooms/Views.html">More
+About Rooms - Views</a>.<br>
+<br>
+<i>GameMaker: Studio</i> permits you 8 independent views (numbered
+from 0 - 7), all of which can be active at any one time, and all of
+which can show different parts of the same room. This means that
+you can use views to draw HUD elements or to have split screen
+effects for example. Each view also has its own associated <i>view
+port</i>. If the view is a section of the room that the player can
+see, the port is the area of the screen on which this view is
+drawn, and as such you can distort and scale the view if it is a
+size other than the view port.<br>
+<br>
+Something to note about views and view ports is that the <i>total
+area</i> of the bounding box for all active view ports in the first
+room of the game is what defines the background canvas size (or
+window size for MacOS, Ubuntu (Linux) and Windows), as illustrated
+by the image below: <img class="center" src="viewport_canvas.png">
+Finally, you should take care when using multiple views as the draw
+event for <i>all</i> instances is called once for each view, so if
+you have three views active in one room, the draw event will be run
+three times every step (basically doing three times the work) which
+can be a cause for slowdown if the game is large or complex. The
+<a href="view_current.html"><tt>view_current</tt></a> variable can
+be used to help limit these draw calls however.<br>
+<br>
+The following functions exist that deal with views:</p>
 
 <blockquote>
 <ol>
@@ -111,7 +144,8 @@ if (window.name != "content")
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="../index.html">Windows and Views</a></div>
+<div style="float:left">Back: <a href="../index.html">Windows and
+Views</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>

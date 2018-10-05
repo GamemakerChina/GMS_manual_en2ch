@@ -31,7 +31,7 @@ if (window.name != "content")
 <h2>Opens a dialogue to select a file with the given filter,
 directory and window caption.</h2>
 
-<h3>语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">get_open_filename_ext(filter, fname, directory,
 caption);</p>
@@ -42,8 +42,8 @@ caption);</p>
 <div class="param">
 <table>
 <tr>
-<th>内容提要</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
@@ -71,18 +71,18 @@ caption);</p>
 <p><br>
 </p>
 
-<p><b>返回:</b> String.</p>
+<p><b>Returns:</b> String.</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
 <p>This function opens a dialogue and asks the player for a
 filename to open with the given filter. The filter has the form
 "<i>name1|mask1|name2|mask2|...</i>", where the mask may contain
 the different options with a semicolon between them and you can
-also use a "*" to mean any string. For 例子:
+also use a "*" to mean any string. For example:
 "<i>bitmaps|*.bmp;*.wmf</i>", would ask the user to select the name
 of a bitmap file from the system, but only those that have the two
 specified extensions (<tt>bmp</tt> and <tt>png</tt>). this function
@@ -108,7 +108,7 @@ permission using the function <a href=
 <p><br>
 </p>
 
-<h3>例子:</h3>
+<h3>Example:</h3>
 
 <p class="code">var file;<br>
 file = get_open_filename_ext("text file|*.txt", "",
@@ -127,10 +127,10 @@ for reading.</p>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">File System
+<div style="float:left">Back: <a href="index.html">File System
 Functions</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "get_save_filename.html">get_save_filename</a></div>
 </div>
 

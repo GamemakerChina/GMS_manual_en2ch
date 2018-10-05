@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>clickable_add_ext</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/HTML5/clickable_add_ext.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FHTML5%2Fclickable_add_ext.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FHTML5%2Fclickable_add_ext.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>clickable_add_ext</h1>
+
+<h2>创建一个画布之外的，可点击的DOM元素,并且你可以控制缩放和透明度.</h2>
+
+<h3>语法：</h3>
+
+<p class="code">clickable_add_ext(x, y, tpe, url, target, params,
+scale, alpha);</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+
+<tr>
+<td>x</td>
+<td>相对当前浏览器显示窗口的坐标 x 值.</td>
+</tr>
+
+<tr class="alt">
+<td>y</td>
+<td>相对当前浏览器显示窗口的坐标 y 值.</td>
+</tr>
+
+<tr>
+<td>tpe</td>
+<td>精灵图像的材质页映射坐标 (调用 <a href=
+"../Game%20Assets/Sprites/sprite_get_tpe.html"><tt>sprite_get_tpe</tt></a>获取).</td>
+</tr>
+
+<tr class="alt">
+<td>url</td>
+<td>URL 地址或者 "GML脚本名+()"(脚本资源名以gmcallback_为前缀).</td>
+</tr>
+
+<tr>
+<td>target</td>
+<td>指定在何处打开链接(具体说明看下文).</td>
+</tr>
+
+<tr class="alt">
+<td>params</td>
+<td>指定打开窗口的属性 (具体说明看下文).</td>
+</tr>
+
+<tr>
+<td>scale</td>
+<td>图标的缩放（默认为1）.</td>
+</tr>
+
+<tr class="alt">
+<td>alpha</td>
+<td>图标的透明度（默认为1）.</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>返回：</b> 实数</p>
+
+<p><br>
+</p>
+
+<h3>说明</h3>
+
+<p>
+这个函数与 <a href=
+"clickable_add.html"><tt>clickable_add</tt></a> 很相似.
+<br>
+调用这个函数，你能够创建一个可自定义属性，可触发点击事件的 图标，并返回这个元素的id，以备后面操作的正常进行.
+<br>
+这个图标就像一个按钮，可以让浏览器创建一个窗口.<br>
+<br>
+</p>
+
+<p>
+如果你想访问URL，那么前缀必须是<tt><b>http://</b></tt> 
+，如果你想调用脚本，那么GMS脚本名的前缀必须是<tt><b>gmcallback_</b></tt>
+<br>
+当你调用脚本时，参数 "target" 和 "params" 可以留空字符串("").<br>
+<br>
+</p>
+
+<p><br>
+</p>
+
+<h3>示例：</h3>
+
+<p class="code">home_but = clickable_add_ext(32, 32,sprite_get_tpe(spr_MS_Home, 0), "http://macsweeney_games.com",
+"_blank", "width=700, height=500, menubar=0, toolbar=0,
+scrollbars=0", 2, 1);
+    
+<br>    
+或者：<br> home_but = clickable_add_ext(32, 32,sprite_get_tpe(spr_MS_Home, 0), "gmcallback_scr_home()" ,
+"", "", 1, 1);
+
+</p>
+
+<p>以上代码，在浏览器显示区域坐标(32,
+32)处创建一个图标，图标的图像来至于精灵"spr_MS_Home"，并且这个按钮被放大2倍，透明度为1.触发点击事件时，打开一个新的带有指定属性的窗口，并访问指定的 URL 地址,或者调用脚本"gmcallback_scr_home".</p>
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回：<a href="index.html">HTML5</a></div>
+
+<div style="float:right">下一页：<a href=
+"clickable_change.html">clickable_change</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>

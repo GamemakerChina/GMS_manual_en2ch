@@ -1,8 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -80,7 +80,10 @@ permits you to add separate graphics as splash screens (the image
 that will be shown briefly while your app loads) for each of the
 different iOS target devices. These images must be authored as
 individual 32bit <tt>*.png</tt> images with no transparencies and
-at the correct size for each of the devices.</p>
+at the correct size for each of the devices and orientations
+required. You can also set a minimum time for showing the splash
+screens from the drop down menu on the right (from 0 to 10
+seconds).</p>
 
 <h3>Graphics</h3>
 
@@ -90,31 +93,36 @@ two more available options on the Graphics tab. The first is the
 <b>Interpolate colours Between Pixels</b> option that (when
 checked) turns on interpolation, which basically "smooths" pixels.
 For crisp pixel graphics, it should be off, but if you have nice
-alpha blends and smoothed edge graphics it is better left on.<br>
+alpha blends and smoothed edge graphics it is better left on. Here
+you can also choose to halve texture pages when targeting the iPad1
+(which has a lower specification and may not run larger games
+otherwise).<br>
 <br>
-Next there is the option to set the size of the <b>Texture
+Next there is the option for scaling to the device screen. Here you
+can choose to maintain aspect ratio (so a 4:3 room, for example,
+will be "letter boxed" on a 16:9) or to scale fully (stretching the
+image to fit the full screen).</p>
+
+<blockquote><i><b>WARNING!</b> Switching off the application
+surface in your code will disable all the scaling options set here
+in the Global Game Settings until it has been switched back on
+again. See <a href=
+"../../002_Reference/Surfaces/The%20Application%20Surface.html">The
+Application Surface</a> for further details.</i>
+</blockquote>
+
+<p>Finally there is the option to set the size of the <b>Texture
 Page</b>. The default (and most compatible) size is 1024x1024, but
 you can choose from anywhere between 256x256 up to 2048x2048. There
 is also a button marked <b>View</b> which will generate the texture
 pages for this platform and then open a window so that you can see
 how they look. This can be very useful if you wish to see how the
 texture pages are structured and to prevent having texture pages
-larger (or smaller) than necessary.<br>
-<br>
-<i><b>NOTE:</b> Be aware that the larger the size of the texture
-page, the less compatible your game will be.</i><br>
-<br>
-Finally there is the option for scaling to the device screen. Here
-you can choose to maintain aspect ratio (so a 4:3 room, for
-example, will be "letter boxed" on a 16:9) or to scale fully
-(stretching the image to fit the full screen).<br>
-<br>
-<i><b>WARNING!</b> Switching off the application surface will
-disable all the scaling options set in the Global Game Settings
-until it has been switched back on again. See <a href=
-"../../002_Reference/Surfaces/The%20Application%20Surface.html">The
-Application Surface</a> for further details.</i><br>
-<br></p>
+larger (or smaller) than necessary.</p>
+
+<blockquote><i><b>NOTE:</b> Be aware that the larger the size of
+the texture page, the less compatible your game will be.</i>
+</blockquote>
 
 <h3>Provisioning</h3>
 
@@ -130,18 +138,31 @@ have set up GameMaker: Studio correctly to communicate with your
 Mac computer where this information is stored.<br>
 <br></p>
 
+<h3>Social</h3>
+
+<p><img class="center" src="iOS_Social_Tab.png"> The social tab is
+used for setting up Facebook communication in your game. If you
+require the Facebook functions, you need to click the "<b>Use
+Facebook</b>" checkbox and then supply the Facebook <b>App ID</b>
+and <b>Facebook App Display Name</b>. Note that all Facebook
+functionality is accessed via an extension, and when you first
+check the Use Facebook box you will be prompted to download and
+install the Facebook extension from the Marketplace (you may need
+to log into your YoYo Account before it can be downloaded).<br>
+<br></p>
+
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Global Game
+<div style="float:left">Back: <a href="index.html">Global Game
 Settings</a></div>
 
-<div style="float:right">下一个: <a href="Android%20Tab.html">The
+<div style="float:right">Next: <a href="Android%20Tab.html">The
 Android Tab</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -150,16 +171,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

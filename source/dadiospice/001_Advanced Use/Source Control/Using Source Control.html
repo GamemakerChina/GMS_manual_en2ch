@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -49,30 +49,21 @@ your source control repository:</p>
 
 <blockquote>
 <ul>
-<li>Create the resource and add the codes, objects, sprites
+<li>Create the resources by adding the scripts, objects, sprites
 etc...</li>
 
 <li style="list-style: none"><br>
 </li>
 
 <li>Save the project as the resources do not exist outside of the
-IDE (<i>this is very important!</i>).</li>
+IDE and this will add them to the SCM repository for
+committing.</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li>After saving the project, if you have not previously added any
-resources of this type to your repository for this project, right
-click on the resources root folder (so, for example, for a room it
-would be the "Rooms "group in the resource tree), and select
-<i>Source Control -&gt; add</i>. <b>This only needs to be done
-<i>once</i> for each resource type.</b></li>
-
-<li style="list-style: none"><br>
-</li>
-
-<li>Right click on the new resource and also select <i>Source
-Control -&gt; add</i>.</li>
+<li>OR run/test the project which will also add the resources to
+the SCM project repository for committing.</li>
 
 <li style="list-style: none"><br>
 </li>
@@ -80,18 +71,11 @@ Control -&gt; add</i>.</li>
 </blockquote>
 
 <p>Now that you have added your resources to the repository, you
-can continue working on them as before, only now when you change
-something in them, you will have to use the "Commit" function to
-save them to the repository, which is covered in the next
-section.<br>
+can continue working on them as before, with each save or test run
+of the game updating the files to be added to the repository.
+however, just adding them does not actually <i>commit</i> the
+changes. This is explained in the following section.<br>
 <br></p>
-
-<blockquote><i><b>Important!</b> Don't forget to save the game
-project before adding to the repository! And you only need to add
-each resource group once to the repository, and each subsequent
-resource created in the group also only needs to be added only once
-after it has been created.</i>
-</blockquote>
 
 <h3>Committing Files</h3>
 
@@ -130,7 +114,8 @@ to commit here by deselecting items in this dialog. The left panel
 shows file names and the check-boxes for deselecting and selecting
 them, while the right panel shows you the status of the file
 (<b>A</b>=added, <b>M</b>=modified, <b>D</b>=deleted,
-<b>?</b>=un-versioned).</li>
+<b>?</b>=un-versioned, <b>C</b>=Conflicted and
+<b>!</b>=Missing).</li>
 
 <li style="list-style: none"><br>
 </li>
@@ -156,7 +141,12 @@ be more or less the same from now onwards, with you editing
 something, saving the project and then committing the change(s) to
 the repository, either using the <i>commit all</i> or simple
 <i>commit</i> commands from the right click menu of the resource
-tree.<br>
+tree. Note that you can right click on files in the list and
+revert, if need be. This is useful when files become missing
+because of conflicts, or even just accidental modifications. Also
+note that the actual status information is dependent on the SCM
+system being used. The ones mentioned above are specific to SVN but
+may not match up with Git or Mercurial.<br>
 <br></p>
 
 <h3>Reverting Changes</h3>
@@ -224,14 +214,14 @@ will appear beside it to let you know that it is now different to
 the last version in the repository.<br>
 <br>
 &nbsp;&nbsp;&nbsp;<img src="SC_Icon_4.png">&nbsp;&nbsp;&nbsp;
-<b>Not Versioned</b>: if you see this icon it means that the
+<b>Not Versioned</b>: If you see this icon it means that the
 resource is not recognised by the SCM solution and should therefore
 be added to the repository. There is an "add" command provided for
 this in the right-click menu from the resource tree.<br>
 <br>
 &nbsp;&nbsp;&nbsp;<img src="SC_Icon_5.png">&nbsp;&nbsp;&nbsp;
-<b>Conflict</b>: if you get this icon it means there is a conflict
-between two resources. this can only usually happen when two or
+<b>Conflict</b>: If you get this icon it means there is a conflict
+between two resources. This can only usually happen when two or
 more people work on the same source and cannot be resolved through
 <i>GameMaker: Studio</i>. For that you will have to use your
 windows SVN Client to merge the two files or manually edit the
@@ -252,28 +242,30 @@ there are two most common actions that need to be performed:<br>
 
 <blockquote>
 <ul>
-<li><b>Add</b>: This will add a resource to the repository. When
-you see the <img src="SC_Icon_4.png"> "Not Versioned" icon showing
-you will need to use this action.</li>
+<li><b>Add To Source Control</b>: This will add a resource to the
+repository. When you see the <img src="SC_Icon_4.png"> "Not
+Versioned" icon showing you will need to use this action.</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>Commit</b>: This will commit the selected resource to the
-source control repository. If you have a folder selected then
-everything in that folder will be committed, otherwise it will only
-commit the selected resource. When you commit something you will
-also be prompted to add a comment where you can briefly explain
-what you have added or changed, and this will then be stored along
-with the updated version of your project.</li>
+<li><b>Commit To Source Control</b>: This will commit the selected
+resource to the source control repository. If you have a folder
+selected then everything in that folder will be committed,
+otherwise it will only commit the selected resource. When you
+commit something you will also be prompted to add a comment where
+you can briefly explain what you have added or changed, and this
+will then be stored along with the updated version of your
+project.</li>
 
 <li style="list-style: none"><br>
 </li>
 
-<li><b>Update</b>: This will update the selected resource (or
-resources if you have a folder selected) in your local copy of the
-project from the repository. Any changes, additions or conflicts
-will now show up in <i>GameMaker: Studio</i></li>
+<li><b>Update from Source Control</b>: This will update the
+selected resource (or resources if you have a folder selected) in
+your local copy of the project from the repository. Any changes,
+additions or conflicts will now show up in <i>GameMaker:
+Studio</i></li>
 </ul>
 </blockquote>
 
@@ -285,7 +277,9 @@ listed here:<br>
 <blockquote>
 <ul>
 <li><b>Edit Conflicts</b>: Edit any conflicts that have been found
-using the SCM interface.</li>
+using the SCM interface set in the <a href=
+"../Preferences/Source%20Control%20Preferences.html">SCM
+Preferences</a>.</li>
 
 <li style="list-style: none"><br>
 </li>
@@ -371,19 +365,69 @@ time through the <a href=
 Preferences</a>.<br>
 <br></p>
 
+<h3>Conflicts</h3>
+
+<p>If you have any conflicts when committing your added files, you
+can select the <b>Edit Conflicts</b> option from the context menu
+(see the section above). This will open up the <b>Conflicts
+Editor</b>, where you can decide what to do. <img class="center"
+src="SC_Conflicts.png"> This editor will list the conflicting files
+on the left and present you with a number of options for what to
+do, available from the buttons on the right:<br>
+<br></p>
+
+<blockquote>
+<ul>
+<li><b>Edit Conflict</b>: Edit any conflicts that have been found
+using the SCM interface set in the <a href=
+"../Preferences/Source%20Control%20Preferences.html">SCM
+Preferences</a>.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>Resolved</b>: Mark the conflict as resolved.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>Use Theirs</b>: Update the conflicted file to use the other
+version.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>Use Mine</b>: Update the conflicted file to use the version
+being committed.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>Refresh</b>: This simply refreshes the current versioned
+status.</li>
+
+<li style="list-style: none"><br>
+</li>
+</ul>
+</blockquote>
+
+<p>When finished you can close the Conflict Editor and then
+re-commit the conflicted files as normal.<br>
+<br></p>
+
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Source Control
+<div style="float:left">Back: <a href="index.html">Source Control
 Index</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "Getting%20Started%20With%20Source%20Control.html">Getting Started
 With Source Control</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -392,16 +436,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

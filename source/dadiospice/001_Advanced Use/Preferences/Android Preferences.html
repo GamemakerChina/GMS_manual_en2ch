@@ -1,8 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -33,18 +33,23 @@ if (window.name != "content")
 <p><img class="center" src="Android_Prefs.png"> For <i>GameMaker:
 Studio</i> to work with Android device, a number of things need to
 be set up. First, you <b>must</b> have installed the <b>Android
-SDK</b>, with support for Android 2.1 (API 7), Android 2.2 (API 8),
-Android 3.0 (API 11), as well as the most recent version of
-Android, and you must also have installed the <b>Java SE
+SDK</b> along with the API packages required for your game to run
+(as well as a test device with Android installed), the <b>Android
+NDK</b>, and you must also have installed the <b>Java SE
 Development Kit (JDK)</b>. Once you have them installed and updated
 you should set up your <a href="Server%20Preferences.html">Web
 Server Preferences</a> before continuing with the configuration of
-this tab.</p>
+this tab. You can get up-to-date information on whgat version of
+the SDK and NDK is currently required from this helpdesk article:
+<a href="http://help.yoyogames.com/entries/91625158" target=
+"_blank">SDK Version Support</a>.</p>
 
 <h3>Keystore</h3>
 
 <p>The KeyStore is a file that will be used to "sign" all your
-Android apps so please fill in all the details correctly:</p>
+Android apps - <b>including those created for the <i>Amazon
+Fire</i> target platform</b> - so please fill in all the details
+correctly:</p>
 
 <blockquote>
 <ul>
@@ -196,6 +201,14 @@ directory (see below).</li>
 <li><b>ADB Directory on Mac</b>: When you have the above option,
 <b>Use Mac for ADB connection</b>, enabled you can set the
 directory for ADB here.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>ADB IP Address</b>: By default this is blank, but you can
+input a specific device IP and use this to force ADB to connect to
+that over Wifi rather than over USB for testing (useful for the
+Amazon Fire target platform, for example).</li>
 </ul>
 </blockquote>
 
@@ -203,14 +216,14 @@ directory for ADB here.</li>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href=
+<div style="float:left">Back: <a href=
 "index.html">Preferences</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "Windows8%20Preferences.html">Windows8 Preferences</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -219,16 +232,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

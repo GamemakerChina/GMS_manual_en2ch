@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>application_get_position</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Surfaces/application_get_position.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FSurfaces%2Fapplication_get_position.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FSurfaces%2Fapplication_get_position.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script><!-- !chm2web! -->
+
+
+<h1>application_get_position</h1>
+
+<h2>获取应用表面层默认绘制的位置</h2>
+
+<h3>语法：</h3>
+
+<p class="code">application_get_position();</p>
+
+<p><br>
+</p>
+
+<p><b>返回：</b> 数组</p>
+
+<p><br>
+</p>
+
+<h3>描述</h3>
+
+<p>当你在全局游戏设定中为一个目标平台打开“保持纵横比”，<i>GameMaker: Studio</i> 将自动设置应用表面层的绘制位置，让显示器正确的居中放大显示。但是如果你想自己操作表面进行绘制，这个函数可以让你 <i>在显示器或窗口</i>方便的找到表面层绘制的位置，然后在那里绘制，或者对齐GUI图片或者上面绘制图片。<br><br>这个函数将返回包含四个键值的数组，键0和键1是表面左上角x/y的位置，键2和键3是表面右下x/y的位置，所有的这些值响应显示器及窗口发生变化。<br>
+<br></p>
+
+<p><br>
+</p>
+
+<h3>举例：</h3>
+
+<p class="code">var a = application_get_position();<br>
+xx = a[0];<br>
+yy = a[1];<br>
+ww = a[2] - a[0];<br>
+hh = a[3] - a[1];<br></p>
+
+<p>上述代码获取应用表面层的位置，以及相对于显示器或窗口的绝对长宽值，保存到四个变量上备用。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回: <a href=
+"index.html">表面层</a></div>
+
+<div style="float:right">下一页: <a href=
+"application_surface_draw_enable.html">application_surface_draw_enable</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table><!-- /CHM2WEB --> 
+
+
+</body>
+</html>

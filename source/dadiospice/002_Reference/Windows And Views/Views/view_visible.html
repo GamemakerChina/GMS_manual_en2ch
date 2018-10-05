@@ -2,9 +2,9 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>view_visible</title>
@@ -23,49 +23,53 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Windows And Views/Views/view_v
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FViews%2Fview_visible.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FViews%2Fview_visible.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script><!-- !chm2web! -->
-
+</script>
+<!-- !chm2web! -->
 
 <h1>view_visible</h1>
 
-<h2>是否指定的视野会在屏幕上显示。</h2>
+<h2>Whether the particular view is visible on the screen.</h2>
 
-<h3>语法：</h3>
+<h3>Syntax:</h3>
 
 <p class="code">view_visible[0...7]</p>
 
 <p><br>
 </p>
 
-<p><b>返回:</b> 布尔值</p>
+<p><b>Returns:</b> Boolean</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>这个变量可以用来发现一个特定的视野当前是否可见。可以通过设置这个变量的值的<tt>true</tt> (可见) or <tt>false</tt> (不可见)，来“打开”或“关闭”一个视野。<br>
+<p>This variable can be used to find out if a particular view is
+currently visible or not. You can also set this variable to
+effectively turn "on" or "off" a view by setting the value to
+<tt>true</tt> (visible) or <tt>false</tt> (invisible).<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>举例：</h3>
+<h3>Example:</h3>
 
 <p class="code">if !view_visible[0]<br>
 &nbsp;&nbsp;&nbsp;{<br>
 &nbsp;&nbsp;&nbsp;view_visible[0] = true;<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>上述代码检测 view[0] 是否可见，如果不可见，则设置为可见。</p>
+<p>The above code checks to see if view[0] is visible or not and if
+it is not, it then sets it to be visible.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Views</a></div>
+<div style="float:left">Back: <a href="index.html">Views</a></div>
 
-<div style="float:right">下一页: <a href=
+<div style="float:right">Next: <a href=
 "view_object.html">view_object</a></div>
 </div>
 

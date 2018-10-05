@@ -1,8 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -48,7 +48,7 @@ Studio</i> using views.<br>
 
 <h3>The Views Tab</h3>
 
-<p><img class="center" src="../../Images/form_room_views.png"> At
+<p><img class="center" src="../../images/form_room_views.png"> At
 the top of the views tab there is a box labelled <b>Enable the use
 of Views</b>, and this must be flagged before any of the views can
 be active in a game. The next checkbox is the one that says Clear
@@ -56,30 +56,7 @@ Background with Window colour, which clears the application surface
 with the window colour, and can be unchecked if you know that you
 are drawing to cover the whole surface.<br>
 <br>
-After that you have the option to <b>Clear Display Buffer With
-Window Colour</b>. This option is similar to the previous one, only
-it fills the backbuffer with a colour. If you <i>know</i> that the
-views are going to be covering the whole screen at all times or
-that you have a fullscreen background being drawn, then you can
-un-check this (which saves a redraw and so helps optimise your
-game), but if you have overlapping views that, when on the screen
-leave open spaces, or your background has any transparency, you
-should check this so that those area where there is no view are
-filled in with the draw colour of your choice. Currently this
-colour can only be set through code using <a href=
-"../../002_Reference/Windows%20and%20Views/The%20Game%20Window/window_set_colour.html">
-<tt>window_set_colour()</tt></a>.</p>
-
-<blockquote><i><b>NOTE:</b> If you are using automatic aspect ratio
-correction (as set in the <b>Global Game Settings</b>, then you
-should always have this checked otherwise you can get odd effects
-over the "letterbox" that your game is drawn in. If you do not use
-this option then you can uncheck this and get a small boost to your
-games performance (especially noticeable on Android and other
-mobile platforms).</i>
-</blockquote>
-
-<p>Below this you see the list of available views (you can define a
+Below this you see the list of available views (you can define a
 maximum of eight) with the information about where these views are
 to be drawn contained in the boxes below. First of all you must
 indicate whether the view should be <b>Visible when the room
@@ -170,14 +147,14 @@ setting the <b>Hsp</b> to 5 will have the view follow the object at
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">More About
+<div style="float:left">Back: <a href="index.html">More About
 Rooms</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "Physics.html">Physics</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -186,16 +163,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

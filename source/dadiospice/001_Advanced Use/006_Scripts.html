@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -120,7 +120,7 @@ resource in the resource tree and select <b>Create Script</b>, or
 just click the create script button on the toolbar at the top of
 the main <i>GameMaker: Studio</i> screen. Whatever method you
 choose will open the following window: <img class="center" src=
-"../Images/form_script.png"> <i><b>Note:</b> The script editor
+"../images/form_script.png"> <i><b>Note:</b> The script editor
 window and the code editor window for objects have exactly the same
 functionality. The only difference between them is that the script
 editor has a <b>name</b> box whereas the code editor has the choice
@@ -144,7 +144,7 @@ Once you have done that you can start to write your script using
 standard GML functions and variables, using the many options along
 the Toolbar at the top to help you in this process. Here is a brief
 explanation of what each of the toolbar buttons does: <img class=
-"center" src="../Images/Script_Toolbar.png"></p>
+"center" src="../images/Script_Toolbar.png"></p>
 
 <blockquote>
 <div style="float:left"><img src=
@@ -178,7 +178,7 @@ This will save your current script as a *.txt file, ready to be
 used in another game.<br>
 <br>
 
-<div style="float:left"><img src="../Images/Print.png">
+<div style="float:left"><img src="../images/Print.png">
 </div>
 <br>
 <b>Print Script</b><br>
@@ -240,16 +240,16 @@ stored in the clipboard (with cut, or copy) into the current
 script.<br>
 <br>
 
-<div style="float:left"><img src="../Images/Search.png">
+<div style="float:left"><img src="../images/Search.png">
 </div>
 <br>
-<b>Check Syntax</b><br>
+<b>Search And Replace</b><br>
 <br>
 Clicking this button will open the search/find and replace tab in
 the script editor. See below for more details.<br>
 <br>
 
-<div style="float:left"><img src="../Images/Debug_Script.png">
+<div style="float:left"><img src="../images/Debug_Script.png">
 </div>
 <br>
 <b>Check Syntax</b><br>
@@ -263,7 +263,7 @@ script will be tested, together with the existence of functions
 used.<br>
 <br>
 
-<div style="float:left"><img src="../Images/Autocomplete.png">
+<div style="float:left"><img src="../images/Autocomplete.png">
 </div>
 <br>
 <b>Auto Complete</b><br>
@@ -273,7 +273,7 @@ auto-complete window will pop up and you can then use the cursor
 keys or mouse to navigate to the function that you are looking for.
 The image below illustrates this:<br>
 <br>
-<img class="center" src="../Images/AutoComplete_Image.png"><br>
+<img class="center" src="../images/AutoComplete_Image.png"><br>
 <br></blockquote>
 
 <h3>Keyboard Shortcuts</h3>
@@ -286,17 +286,24 @@ the most from this powerful tool:</p>
 <ul>
 <li>By pressing <b>f2</b> you get the <b>code snippet</b> pop-up,
 which permits you to select one of the commonly used code methods.
-You can define your own code snippets if you want to, as the
-snippets are stored in the file <tt>snippets.txt</tt> in the folder
-in which GameMaker: Studio is installed. You can edit this file
-with any text editor, and each snippet is on a separate line (there
-should be no blank lines). It starts with the name of the snippet
-(which is what is shown in the menu) followed by the colon (:)
-followed by the actual snippet of code. Use # for a newline and put
-the text that needs to be selected first between | symbols. See the
-examples that are already in the file, and it is strongly
+You can define your own code snippets if you want to, saving them
+to the Local App Data directory (ie:
+<i>C:\Users\MyUserName\AppData\Local\GameMaker-Studio</i>) for
+future use using the name "<tt>snippets.txt</tt>". If there are no
+snippets defined then GameMaker: Studio will copy the defaults from
+the Roaming directory (ie:
+<i>C:\Users\MyUserName\AppData\Roaming\GameMaker-Studio</i>). You
+can edit this file with any text editor, and each snippet is on a
+separate line (there should be no blank lines). It starts with the
+name of the snippet (which is what is shown in the menu) followed
+by the colon (:) followed by the actual snippet of code. Use # for
+a newline and put the text that needs to be selected first between
+| symbols. See the examples that are already in the file in the
+Roaming directory to see how it is set up, and it is strongly
 recommended that you make a backup of it before you start changing
-it.</li>
+anything, although the base file will be re-installed when you
+update GameMaker: Studio (but the Local App Data version will
+remain).</li>
 
 <li style="list-style: none"><br>
 </li>
@@ -320,9 +327,22 @@ and replace</b> options (see below).</li>
 </li>
 
 <li>If you are using multiple scripts, then you can press
-<b>f12</b> when the mouse is over any of the other script names to
-have it opened in a new window, ready for editing. If no script is
-selected, then the manual will be opened.</li>
+<b>f12</b> (or click the Middle Mouse Button) when the mouse is
+over any of the other script names to have it opened in a new
+window, ready for editing. If no script is selected, then the
+manual will be opened.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li>You can press <b>&lt;Shift&gt;</b> + <b>f12</b> (or
+<b>&lt;Shift&gt;</b> and the Middle Mouse Button) when the mouse is
+over any selected text to have it open the <a href=
+"../000_Using%20GameMaker/Drop%20Down%20Menus/The%20Scripts%20Menu.html">
+Search In Scripts</a> window, already populated with the selected
+text. You can also do this on a function (without selecting it) and
+the function will be used to populate the search feild of the
+window.</li>
 
 <li style="list-style: none"><br>
 </li>
@@ -410,7 +430,7 @@ Commenting your code is simple, as you just have to use
 "<tt>//</tt>" before any line of text or you can comment out whole
 paragraphs by using "<tt>/* text here */</tt>". The following image
 illustrates a script using both these methods: <img class="center"
-src="../Images/Form_CodeComments.png"> If you are in the
+src="../images/Form_CodeComments.png"> If you are in the
 <b>code</b> editor, then you can also give your code box a title by
 making a comment for the first line using the following format:<br>
 <br></p>
@@ -422,13 +442,13 @@ This comment will then be used for the "name" of that codebox (this
 works for codeboxes added to <a href=
 "005_Time%20lines.html">Timelines</a> too) as illustrated by the
 following image: <img class="center" src=
-"../Images/Form_CodeboxName.png"> If you use make a comment in this
+"../images/Form_CodeboxName.png"> If you use make a comment in this
 way in the <b>script</b> editor, then the comment text will be used
 as the auto-complete text in the code editor when you type the
 script. So, in the example script image above above we have the
 script "MovePlayer", and it starts with a "///" comment, which
 would then show in the code editor like this: <img class="center"
-src="../Images/Form_ScriptComments.png"></p>
+src="../images/Form_ScriptComments.png"></p>
 
 <h3>Script Tabs</h3>
 
@@ -445,7 +465,7 @@ various <i>child</i> scripts. These child scripts are no different
 to any other scripts in your game, and will work as they should.
 However they will <i>not</i> appear in the resource tree, and to
 access them you must first open the parent script. <img class=
-"center" src="../Images/Form_ScriptsTabs.png"> To create a new
+"center" src="../images/Form_ScriptsTabs.png"> To create a new
 child script you simply click on the empty tab that is always to
 the right of the current tab (if you can't see this, then try
 scrolling the rest of the tabs using the arrows in the top right
@@ -479,7 +499,7 @@ lies within the function. To this end, the <i>GameMaker: Studio</i>
 script editor has a search, find and replace function that can be
 accessed by pressing the Search button in the toolbar. This will
 open up a panel on the right of the code window which looks as
-follows: <img class="center" src="../Images/form_script2.png"> You
+follows: <img class="center" src="../images/form_script2.png"> You
 can type the find string at the top (note that in the code all
 occurrences of the find string are immediately shown with a yellow
 background), and you can indicate whether the search must be case
@@ -514,9 +534,9 @@ very handy way to track script changes while testing your game, and
 is activated simply by moving the cursor to the line of the script
 you want to bookmark and the holding <i>&lt;Shift&gt; +
 &lt;Control&gt; + &lt;NUM&gt;</i>, where <i>&lt;NUM&gt;</i> is a
-number from 0 to 9 on the keyboard. The script editor will now show
+number from 1 to 9 on the keyboard. The script editor will now show
 your bookmark beside the code in the editor. <img class="center"
-src="../Images/form_script3.png"> To open the bookmarked script
+src="../images/form_script3.png"> To open the bookmarked script
 again at any time, you should use the keyboard combination
 <i>&lt;Control&gt; + &lt;NUM&gt;</i>, where <i>&lt;NUM&gt;</i> is
 the number key of the bookmark.<br>
@@ -526,14 +546,14 @@ the number key of the bookmark.<br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Advanced Use
+<div style="float:left">Back: <a href="index.html">Advanced Use
 Index</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "009_Shaders.html">Shaders</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -542,16 +562,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

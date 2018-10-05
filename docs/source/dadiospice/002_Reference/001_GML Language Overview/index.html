@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>GML 概述</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/001_GML Language Overview/index.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2Findex.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2Findex.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>GML 概述</h1>
+
+<h2><b>GameMaker Language</b>（简称<b>GML</b>），是<i>GameMaker: Studio</i> 的专有编程语言。</h2>
+
+<p><b>GML</b>相当的灵活，是拖按钮所不及的。比如：</p>
+
+<blockquote>
+<ul>
+<li><b>脚本：</b>一段代码，也是常说的函数。 
+<br></li>
+
+<li><b>事件：</b>在对象事件中加入GML代码，你能够更好的控制这个对象的行为，或者与其他对象的交互。此外，GML代码块能与按钮混用！
+<br><br></li>
+
+<li><b>房间创建时代码（Room Creation Code）：</b>每次房间被创建的时候，程序就会触发带有GML片段的特殊事件：“创建事件”。<br>
+<br></li>
+
+<li><b>实例创建时代码（Instance Creation Code）：</b>正如你在对象的创建事件中加入的代码片段，你也可以给放置在房间中的对象实例，加入特有的脚本。<b>实例创建时事件</b>在<b>对象创建时事件</b>之
+后执行。(之后的教程
+中进行详解）。<br></li>
+</ul>
+</blockquote>
+
+<p>本章节讲解GML的语法知识，告诉你如何编写自己的脚本，并控制游戏逻辑。 
+<br>
+<b>注意：</b>GM使用者的资源名的命名潜规则，比如精灵资源开头为“spr_”。更多细节，你会在实际项目或者教程中看到。
+<br>
+你可以搜索整个项目中的脚本，找出指定的字符串的位置。相关细节可查阅<a href=
+"../../000_Using%20GameMaker/Drop%20Down%20Menus/The%20Scripts%20Menu.html">
+Scripts</a> 。</p>
+
+<p>GML的全部内容都列于下文：</p>
+
+<blockquote>
+<ol>
+<li><a href="401_01_program.html">代码</a><br>
+</li>
+
+<li><a href="Variables/index.html">变量和变量的作用域</a><br>
+</li>
+
+<li><a href="401_05_addressing.html">访问别的对象实例的变量</a><br>
+</li>
+
+<li><a href="Data%20Types.html">数据类型</a><br>
+</li>
+
+<li><a href="401_06_arrays.html">数组</a><br>
+</li>
+
+<li><a href="401_16_functions.html">函数</a><br>
+</li>
+
+<li><a href="401_03_assignments.html">赋值</a><br>
+</li>
+
+<li><a href="401_04_expressions.html">表达式</a><br>
+</li>
+
+<li><a href="Accessors.html">访问器</a><br>
+</li>
+
+<li><a href="401_07_if.html"> if 语句</a><br>
+</li>
+
+<li><a href="401_08_repeat.html"> repeat 语句</a><br>
+</li>
+
+<li><a href="401_09_while.html"> while 语句</a><br>
+</li>
+
+<li><a href="401_10_do.html"> do 语句</a><br>
+</li>
+
+<li><a href="401_11_for.html"> for 语句</a><br>
+</li>
+
+<li><a href="401_12_switch.html"> switch 语句</a><br>
+</li>
+
+<li><a href="401_13_break.html"> break 语句</a><br>
+</li>
+
+<li><a href="401_14_continue.html"> continue 语句</a><br>
+</li>
+
+<li><a href="401_15_exit.html"> exit 语句</a><br>
+</li>
+
+<li><a href="401_18_with.html"> with 语句</a><br>
+</li>
+
+<li><a href="401_17_scripts.html">脚本（函数）</a><br>
+</li>
+
+<li><a href="401_19_comment.html">代码注释</a><br>
+</li>
+
+<li><a href="401_20_evaluation_order.html">求值顺序</a><br>
+</li>
+</ol>
+</blockquote>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回：<a href=
+"../index.html">参考</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>

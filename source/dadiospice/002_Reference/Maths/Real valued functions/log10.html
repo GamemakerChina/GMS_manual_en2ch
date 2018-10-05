@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>log10</h1>
 
-<h2>返回n以10为底的对数.（即“常用对数”）</h2>
+<h2>Returns the log base 10 of n.</h2>
 
-<h3><b>语法:</b>
+<h3><b>Syntax:</b>
 </h3>
 
 <p class="code">log10(n);</p>
@@ -41,13 +41,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>n</td>
-<td>输入值。</td>
+<td>The input value.</td>
 </tr>
 </table>
 </div>
@@ -55,43 +55,47 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回值:</b> 实数型</p>
+<p><b>Returns:</b> Real</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>这个函数和函数 <a href=
-"log2.html"><tt>log2(n)</tt></a>很相似, 只不过
-<tt>log10(n)</tt>获取我们为了得到n需要把若干10相乘在一起的个数。所以
-<tt>log10(100)</tt> 返回 2, 因为10乘以自身就会得到100， <tt>log10(1000)</tt> 返回 3 因为
-10×10×10=1000 等等... 这个数 <i>不必是</i>能被10整除的数，然而，这也仍然会返回一个近似值，
-举个例子 如果我们有<tt>log10(101)</tt> 我们会得到2.00432137... 就是101能除以10的次数。⑩<br>
-<br>
-<br>⑩：简单的说，n的常用对数就是n是10的多少次幂，即10的多少次方是n。
-</p>
+<p>This function is similar to the <a href=
+"log2.html"><tt>log2(n)</tt></a> function, only that
+<tt>log10(n)</tt> gets the number of 10's that we need to multiply
+together to get n. So <tt>log10(100)</tt> returns 2, as multiplying
+10 by itself gives 100, <tt>log10(1000)</tt> returns 3 as
+10x10x10=1000 etc... The number does <i>not</i> have to be
+divisible by ten, however, but this will still return an
+appropriate value, for example if we have <tt>log10(101)</tt> we
+get 2.00432137... which is how many times you could divide 101 by
+10.<br>
+<br></p>
 
 <p><br>
 </p>
 
-<h3><b>举例:</b>
+<h3><b>Example:</b>
 </h3>
 
 <p class="code">logval = log10(num);</p>
 
-<p>上述代码会得到被存储进变量"num"的<tt>常用对数</tt> 。</p>
+<p>The above code gets the <tt>log10</tt> of the value stored in
+"num".</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">上一页: <a href="index.html">实数函数</a></div>
+<div style="float:left">Back: <a href="index.html">Real Number
+Functions</a></div>
 
-<div style="float:right">下一页: <a href="logn.html">logn</a></div>
+<div style="float:right">Next: <a href="logn.html">logn</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -100,16 +104,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

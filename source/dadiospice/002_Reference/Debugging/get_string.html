@@ -28,9 +28,9 @@ if (window.name != "content")
 
 <h1>get_string</h1>
 
-<h2>显示一个弹出信息以供用户输入一个字符串。</h2>
+<h2>Displays a pop-up message for the user to input a string.</h2>
 
-<h3>语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">get_string(str, def);</p>
 
@@ -40,18 +40,18 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>str</td>
-<td>弹出信息中显示的字符串</td>
+<td>The string to show in the pop-up message.</td>
 </tr>
 
 <tr class="alt">
 <td>def</td>
-<td>文本框中的默认字符串</td>
+<td>The default string in the text box.</td>
 </tr>
 </table>
 </div>
@@ -59,44 +59,47 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回值:</b> 字符串</p>
+<p><b>Returns:</b> String</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>这创建了一个弹出窗口显示一个标准消息，带有一个标签为"Ok"的按钮，来提示用户输入一个字符串。这个函数将会返回被输入的字符串<!--
--->，<i>或者</i>如果没有东西被输入①返回默认值。<br><br>
-<br>①：此处的<b>“没有东西被输入”</b>指的是弹出对话框后<b>不修改文本框内容</b>，<b>而并非文本框清空</b>，<!--
--->即所返回内容以文本框内容为准。
+<p>This creates a pop-up window showing a standard message, with a
+button labeled "Ok", that prompts the user to input a string. The
+function will return the input string, <i>or</i> the default value
+if nothing has been entered.<br>
 <br>
 <br>
 <br>
-<i><b>注意:</b> 这个函数只用于调试用途。若你想在你最终游戏中要求这个功能，请使用<a href=
-"../Asynchronous%20Functions/get_string_async.html"><tt>get_string_async</tt></a>。</i><br>
+<i><b>NOTE:</b> THIS FUNCTION IS FOR DEBUG USE ONLY. Should you
+require this functionality in your final game, please use <a href=
+"../Asynchronous%20Functions/get_string_async.html"><tt>get_string_async</tt></a>.</i><br>
 
 <br></p>
 
 <p><br>
 </p>
 
-<h3>举例:</h3>
+<h3>Example:</h3>
 
 <p class="code">global.test_name = get_string("Test highscore
 name:", "Anonymous");</p>
 
-<p>上述代码将会提示用户给出一个名字，其将接下来会被存入全局变量"test_name"中。如果没有东西被输入并且用户只是按下了<!--
--->"OK"那么默认值，"Anonymous"，将会被返回。</p>
+<p>The above code will prompt the user to give a name which will
+then be stored in the global variable "test_name". If nothing is
+entered and the user just presses "Ok" then the default
+value,"Anonymous", will be returned.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">上一页: <a href=
-"index.html">调试</a></div>
+<div style="float:left">Back: <a href=
+"index.html">Debugging</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "show_error.html">show_error</a></div>
 </div>
 

@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="game maker studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>audio_get_name</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../../files/helpindex.css"
+type="text/css">
+
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Game Assets/Sounds/audio_get_name.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FGame%20Assets%2FSounds%2Faudio_get_name.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FGame%20Assets%2FSounds%2Faudio_get_name.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<h1>audio_get_name</h1>
+
+<h2 class="clear">返回给定原声资源的名称（字符串）。</h2>
+
+<h3>语法:</h3>
+
+<p class="code">audio_get_name(index);</p>
+
+<p><br>
+</p>
+
+<div class="param">
+<table>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>index</td>
+<td>被检查的声音索引</td>
+</tr>
+</table>
+</div>
+
+<p><br>
+</p>
+
+<p><b>返回值:</b> 字符串<br>
+</p>
+
+<h3>描述</h3>
+
+<p>该函数将以字符串形式返回一个给定的音频资源的名称。"index"值可以是资源自身（就像你在资源树里看到的那样），或者当您播放声音时被赋予唯一的ID值，例如<a href="audio_play_sound.html">audio_play_sound()</a>. 注意，返回的字符串与资源ID不一样，并且不能用来访问资源本身，所以应当只用于显示或错误检查。<br>
+</p>
+
+<p><br>
+</p>
+
+<h3>例子:</h3>
+
+<p class="code">var snd = audio_play_sound(choose(snd_One, snd_Two,
+snd_Three), 0, false);<br>
+var name = audio_get_name(snd);<br>
+show_debug_message("Sound = " + name);<br></p>
+
+<p>上述代码从三个不同的声音资源中随机选择一个播放，接着显示一个带有其名称的调试信息</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">Back: <a href="index.html">Audio</a></div>
+
+<div style="float:right">Next: <a href=
+"audio_play_sound.html">audio_play_sound</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>

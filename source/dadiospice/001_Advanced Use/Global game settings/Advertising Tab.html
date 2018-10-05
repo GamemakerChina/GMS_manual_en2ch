@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -31,30 +31,32 @@ if (window.name != "content")
 <h2>This section deals with the Advertising tab of the Global Game
 Settings window.</h2>
 
-<blockquote><span style="font-size:18px"><i><b>WARNING!</b> As of
-the 1.3 update to GameMaker: Studio, this tab is no longer
-applicable to the Android and iOS target platforms. Instead, please
-see the section on <a href=
-"../../001_Advanced%20Use/Extensions/index.html">Extensions</a> as
-advertising on these platforms is now supported through Extension
-Packages.</i></span>
-</blockquote>
-
 <p><img class="center" src="Advertising_Tab.png"> This tab can be
 used to set up and control the add providers you use for your
 games, as well as how their adverts are displayed within your game.
 There are three <i>sub-tabs</i> provided for each of the target
-platforms that permit advertising (Android, iOS, HTML5 and Windows
+platforms that permit advertising (HTML5, Windows 8, and Windows
 Phone), but they all have the same layout as that pictured in the
 above window example.<br>
 <br></p>
 
 <h3>Enabling Ads</h3>
 
-<p>To switch advertising on for your game, you must first check the
-box labelled "<b>Enable Advertising</b>" and then select the
-advertiser that you wish to use as the provider from the drop down
-menu shown: <img class="center" src="Advertisers.png"></p>
+<p>To switch advertising on for your game, you will need to do
+either one of two things depending on the target platform. If your
+game targets iOS or Android, then you will need to check the box
+for the ads provider that you require and then download the
+provider as an extension from the Marketplace (you can find more
+information on this here: <a href=
+"http://help.yoyogames.com/entries/95639987" target="_blank">Ad
+Provider Demos V3</a>). If you require a demo of the ad providers
+on iOS or Android then you can click the link provided beside each
+provider to download a demo - which contains a help file - from the
+Marketplace. For all other platforms, ads support is built into
+GameMaker: Studio and you must first check the box labelled
+"<b>Enable Advertising</b>" and then select the advertiser that you
+wish to use as the provider from the drop down menu shown:
+<img class="center" src="Advertisers.png"></p>
 
 <h3>Testing Ads</h3>
 
@@ -67,8 +69,12 @@ counting towards your ad revenue. For more information on this
 feature and to see which companies support it, please see the
 section <a href=
 "../../002_Reference/Advertising%20and%20Analytics/index.html">Reference
-- Advertising and Analytics</a>.<br>
-<br></p>
+- Advertising and Analytics</a>.</p>
+
+<blockquote><i><b>NOTE:</b> For iOS and Android the process for
+getting test ads is slightly different and you should consult the
+Knowledge Base article for each ad extension.</i>
+</blockquote>
 
 <h3>Ad Providers</h3>
 
@@ -76,13 +82,13 @@ section <a href=
 image above is just an example) and the list will change as more
 become available. Once you have chosen your provider, you should
 then choose which advert type you wish to display in your game.
-this is done by supplying the <b>Key</b> that the provider has
+This is done by supplying the <b>Key</b> that the provider has
 given you for the advert type and by selecting the <b>shape</b> of
 the advert as it should be shown within your game. These shapes
 will vary from provider to provider, so you you should check with
 them for the exact size and layout of each ad.<br>
 <br>
-You should note that there is one final add-type that may be
+You should note that there is one final ad-type that may be
 available for your provider, and that is <i>interstitial ads</i>.
 These normally take the form of full page adverts which can be
 offer walls (essentially a page to promote several different
@@ -111,14 +117,14 @@ Version</a> of</i> GameMaker: Studio.<br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Global Game
+<div style="float:left">Back: <a href="index.html">Global Game
 Settings</a></div>
 
-<div style="float:right">下一个: <a href="Extras%20Tab.html">The
-Extras Tab</a></div>
+<div style="float:right">Next: <a href="Windows%20Tab.html">The
+Windows Tab</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -127,16 +133,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

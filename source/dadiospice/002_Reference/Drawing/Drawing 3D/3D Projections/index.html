@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -26,20 +26,26 @@ if (window.name != "content")
 </script>
 <!-- !chm2web! -->
 
-<h1>3D 投影</h1>
+<h1>3D Projections</h1>
 
-<h2>本章节详解 3D 投影相关的函数</h2>
+<h2>This section deals with the 3D projection functions.</h2>
 
-<p>3D游戏中，我们需要改变观察世间的方式。比如FPS类游戏，你需要摄像机站在 X-Y 平面的上方，视线沿着这个X-Y平面，望向远方。
-为了能够正确设置投影，你应该在房间的第一个对象中进行配置（你能在 <i>Room Editor</i>-Setting-<b>Instance Order</b> 窗口中设置）。尽早进行相关的设置，否则会造成一些异常情
-况。
-
-<i><b>注意：</b>   When GameMaker starts drawing a room it will set the
+<p>Often in 3D games you want to change how you look at the world.
+For example, in a first person shooter you probably want to have
+the camera look from a position a bit above the xy-plane along the
+xy-plane, which, in graphics terms, involves setting the correct
+<i>projection</i>. This projection should be set in an instance
+that is created before all other instances (you can set this from
+the <b>Instance Order</b> window in the <i>Room Editor</i>), and it
+should be at a very low depth so that is drawn before all other
+instances in your room, otherwise you will get issues when drawing.
+<i><b>NOTE</b> When GameMaker starts drawing a room it will set the
 view point back to the default position, so the first thing you
 must do when drawing the scene is set is to the projection you
 want. This must be done in the draw event of an instance!</i></p>
 
-<p>你可以使用以下这些函数，变更观察3D世界的方式。</p>
+<p>To change the way you look at the 3D world the following
+functions exist:</p>
 
 <blockquote>
 <ol>
@@ -64,14 +70,14 @@ want. This must be done in the draw event of an instance!</i></p>
 </p>
 
 <div class="clear">
-<div style="float:left">返回：<a href="../index.html">Working With
+<div style="float:left">Back: <a href="../index.html">Working With
 3D</a></div>
 
-<div style="float:right">下一页：<a href=
-"../3D%20Transformations/index.html">3D 变换</a></div>
+<div style="float:right">Next: <a href=
+"../3D%20Transformations/index.html">3D Transformations</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -80,16 +86,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

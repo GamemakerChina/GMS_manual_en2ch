@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>do 语句</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<link rel="stylesheet" href="../../style.css" type="text/css"
+media="screen" title="style" charset="utf-8">
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "dadiospice/002_Reference/001_GML Language Overview/401_10_do.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_10_do.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2F001_GML%20Language%20Overview%2F401_10_do.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script><!-- !chm2web! -->
+
+
+<h1>do 语句</h1>
+
+<h2>这一节将学习“do”语句。</h2>
+
+<p>“do”也就是“do... until”，缺一不可。结构如下：<br>
+<br></p>
+
+<p class="code">do &lt;语句&gt; until (&lt;表达式&gt;)</p>
+
+<p><br>
+语句（也可以是代码块）会一直运行直到表达式为真，至少会运行一次。注意这是一个循环，可能会出现死循环，游戏将会挂起不响应输入。下面是“do... until”的一个经典例子：<br>
+<br></p>
+
+<p class="code">{<br>
+do<br>
+&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;x = random(room_width);<br>
+&nbsp;&nbsp;&nbsp;y = random(room_height);<br>
+&nbsp;&nbsp;&nbsp;}<br>
+until (place_free(x, y)); }<br></p>
+
+<p><br>
+上述代码尝试去在一个空闲位置放置当前的实例（这和动作 <a href=
+"../../000_Using%20GameMaker/Actions/000_Move%20actions.html">移动物体至随机位置</a>结果相似）。</p>
+
+<p><br>
+</p>
+
+<div class="clear">
+<div style="float:left">返回: <a href="index.html">GML 概述</a></div>
+
+<div style="float:right">下一页: <a href="401_11_for.html">“For”语句</a></div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+</body>
+</html>

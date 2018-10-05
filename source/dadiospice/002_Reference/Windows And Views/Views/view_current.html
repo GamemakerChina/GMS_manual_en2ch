@@ -2,9 +2,9 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="online documentation, web online help, web help, chm2web " />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>view_current</title>
@@ -23,34 +23,44 @@ chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Windows And Views/Views/view_c
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FViews%2Fview_current.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FWindows%20And%20Views%2FViews%2Fview_current.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script><!-- !chm2web! -->
-
+</script>
+<!-- !chm2web! -->
 
 <h1>view_current</h1>
 
-<h2>返回当前正在渲染的视野。</h2>
+<h2>Returns the current view being rendered.</h2>
 
-<h3>语法：</h3>
+<h3>Syntax:</h3>
 
 <p class="code">view_current</p>
 
 <p><br>
 </p>
 
-<p><b>返回：</b> 实数</p>
+<p><b>Returns:</b> Real</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>这个 <b>只读</b> 变量只在<b>Draw Event</b> 中有效，并返回当前被渲染的视野。当存在多个视野时，每个视野将在绘制事件中依次调用一次，这个变量的返回值也会在绘制时同时改变。所以当（比如）你在游戏房间中使用view[0] 和 view[1]，<i>所有</i>实例的绘制事件将运行两次，每个视野一次，通过这个变量可以检测出当前正在绘制哪个视野。一般情况下，当多个视野同时可见时，这个变量只用来渲染某个视野的特定细节。请看下面示例代码：<br>
+<p>This <b>read only</b> variable is only valid in the <b>Draw
+Event</b> and returns the current view being rendered. The return
+value will change during the draw event when you have various views
+as the draw event is called once for each view in succession. So
+when (for example) you are using view[0] and view[1] in your game
+room, the draw event for <i>ALL</i> instances will be run twice,
+once for each view, and with this variable you can check to see
+what view is currently being drawn. In general, this is used to
+only render specific details to a single view when multiple views
+are visible in the room at the same time. See the example code
+below.<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>举例：</h3>
+<h3>Example:</h3>
 
 <p class="code">if view_current = 0<br>
 &nbsp;&nbsp;&nbsp;{<br>
@@ -63,15 +73,17 @@ else<br>
 "Player 2");<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>上述代码将基于返回值检测当前绘制的是哪个视野并绘制不同的文字。</p>
+<p>The above code checks to see which view is currently being drawn
+and then draws a different text to each view based on the return
+value.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">返回: <a href="index.html">Views</a></div>
+<div style="float:left">Back: <a href="index.html">Views</a></div>
 
-<div style="float:right">下一页: <a href=
+<div style="float:right">Next: <a href=
 "view_visible.html">view_visible</a></div>
 </div>
 

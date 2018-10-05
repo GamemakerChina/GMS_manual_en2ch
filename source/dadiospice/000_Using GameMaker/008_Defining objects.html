@@ -2,12 +2,12 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>定义物体</title>
+<title>Defining Objects</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../style.css" type="text/css" media=
 "screen" title="style" charset="utf-8">
@@ -23,80 +23,248 @@ chmtop.c2wtopf.pageid = "dadiospice/000_Using GameMaker/008_Defining objects.htm
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../index.html?page=source%2Fdadiospice%2F000_Using%20GameMaker%2F008_Defining%20objects.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../index.html?page=source%2Fdadiospice%2F000_Using%20GameMaker%2F008_Defining%20objects.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script><!-- !chm2web! -->
+</script>
+<!-- !chm2web! -->
 
+<h1>Defining Objects</h1>
 
-<h1>定义物体</h1>
+<h2>Objects are the fundamental "building blocks" within
+<i>GameMaker: Studio</i>.</h2>
 
-<h2>Objects 是 <i>GameMaker: Studio</i> 中的 "积木"。</h2>
-
-<p>到目前为止你可以添加漂亮的图像和优美的声音资源，但是它们还没有在游戏内做任何事！为此我们需要 <i>GameMaker: Studio</i> 中最重要的资源: <b>objects (物体)</b>。物体是一个用来控制游戏各方面的具体事件的特殊资源。大多数时候它们拥有一个精灵使得你可以在房间中看到它们。但有时它们也作为 "幕后" 操控者，控制玩家相关信息、分数或时间等等... 你可以赋予它们行动，它们也可以对一些事件做出反应，就像你看到的大多数游戏中它们之间的相互作用。物体的 <b>实例</b> 和物体是两码事，实例是物体的拷贝 (喜欢的话也可以称为克隆)。这很重要，因为这意味着物体和实例 <i>不</i> 同，每一个实例均有自己的一套功能。<br>
+<p>With the resources you have seen so far you can add some nice
+images and sounds to the game resource tree, but they don't do
+anything in the game itself yet! For that we need the most
+important resource of <i>GameMaker: Studio</i>, the <b>objects</b>.
+Objects are a special resource that we use to control aspects of a
+game and to do specific things. Most of the time they have a sprite
+associated with them so that you see them in the game rooms, but
+sometimes they are used as a "behind the scenes" controller to do
+things related to the user or for timing, etc... They can be given
+behaviors and they can react to certain events as well as to each
+other, and most of the things you see in a game are based on
+objects and their interactions. Now, I say "based on" because you
+don't actually place objects directly into the game rooms, but
+rather you place <b>instances</b> of these objects which are
+basically copies (or clones if you prefer) of the object resource.
+This is a very important thing to remember as instances and objects
+are <i>not</i> the same thing and each have their own set of
+functions that can affect them.<br>
 <br></p>
 
-<h3>物体和实例</h3>
+<h3>Objects and Instances</h3>
 
-<p><i>GameMaker: Studio</i> 制作的游戏中，角色、怪物、墙等都是一个个放置在房间中的物体的实例。所以当我们讨论改变实例，只是讨论这一个拷贝而其余的实例并不受影响。但是当我们讨论改变物体的时候，那么房间里的所有相关实例均会受到影响。所以， 物体可以说是实例的模板，而实例就是我们制作游戏时放在房间里的具体实例。<br>
+<p>In a game made with <i>GameMaker: Studio</i>, the characters,
+monsters, balls, walls, etc... are all instances copied from a
+basic object template that is found in the resource tree and then
+placed in a room. So when we talk about something affecting or
+changing an instance, we mean that one particular copy of an object
+in a room is being affected while all the rest are not, but when we
+talk about affecting or changing an object we mean that anything we
+do to it will be reflected in all the instances created from that
+point on too. So, the object is the template for the instance, and
+the instance is what we place in a room to make our game.<br>
 <br></p>
 
 <h3>Creating an Object</h3>
 
-<p>选择 <b>Resources</b> 菜单的 <b>Create Object</b> 按钮 (或点击工具栏上相应的按钮) 就可以打开下列窗口:</p>
+<p>To create an object in your game, choose <b>Create Object</b>
+from the <b>Resources</b> menu (or click the equivalent button on
+the toolbar) and the following window will open:</p>
 
-<p><img class="center" src="../Images/Form_Object.png">
+<p><img class="center" src="../images/form_object.png">
 </p>
 
-<p>一开始看到这个界面可能会迷茫，我们会讲解一下这个界面的概述。首先是左侧，是一些关于这个物体的信息，然后中间的列表是 events (事件)，右边是动作，最右边的是可以拖拽的预定义动作，这些预定义动作被归类在不同的选项卡中。事件和动作的详细信息在手册接下来的部分会提到。如果你使用 "Uses Physics" 选项卡，就会看到物理相关的选项，但是更多的会在后面讲到！<br><br>正如你期望的，你可以 (并且必须) 给你的物体命名。可以的话加上 obj 前缀或后缀加以区别会有好处。接下来你可以为你的物体选择一个精灵。单机左边的精灵框或其右边的按钮，就可以选择精灵了。如果没有合适的精灵，可以点击 <b>New</b> 按钮来新建精灵资源并且按照你的意愿编辑它，就像手动创建精灵一样，只不过按下 "OK" 按钮就会自动把这个精灵分配给物体。一旦你已经选择了一个精灵就可以按下 <b>Edit</b> 按钮来编辑它，这样就可以更快地编辑该资源。This can be faster than first finding the resource in the list of resources and then indicating you want to edit it.<br><br>下面是更多选项的介绍:<br>
+<p>At first glance this may seem rather confusing, but the window
+is split into sections and we shall cover each one individually so
+you can get an overview of what they are for. Starting on the left,
+there is some general information about the object, then in the
+middle there is the list of events (moments in time) for the object
+and the window to place the actions that are to be performed in
+those events, and finally on the right there are the actions
+themselves which you can select for the object to perform, grouped
+under different tabs for ease of use. Events and actions will be
+discussed in more detail in following sections of the manual. If
+you have "Uses Physics" selected then there will be another part
+visible in this window related to the physics options, but more on
+that later!<br>
+<br>
+As you would expect, you can (and should always) give your object a
+name. This should never contain spaces nor unauthorized characters
+and should be short but memorable so that you can easily identify
+resources later when you may have many of them, for example may
+people use a prefix or a suffix to identify the differences between
+resources, like "obj_Ship" or "Ship_obj". Next you can choose the
+sprite for the object should you wish it to have one. To this end,
+click with the left mouse button on the sprite box or the menu
+button next to it and a pop-up dialogue will appear with a list of
+all the available sprites from the resource tree, then just select
+the one you want to use for the object. You can also drag a sprite
+resource from the resource tree and drop it onto the object sprite
+properties and it will be added to the object that way.<br>
+<br>
+If you do not have an appropriate sprite yet, you can click the
+button <b>New</b> to create a new sprite resource and edit it as
+you wish, just as if you had created the resource through the
+standard creation options, only now when you click "Ok", it will
+automatically be assigned to the object that you had open when you
+started to create it. Once you select a resource there will be an
+additional <b>Edit</b> button here that you can use to change the
+sprite too. This can be faster than first finding the resource in
+the list of resources and then indicating you want to edit it.<br>
+<br>
+Below this there are many other options which are all outlined
+below:<br>
 <br></p>
 
-<h3>可见</h3>
+<h3>Visible</h3>
 
-<p>可见指的是房间开始时该物体的实例是否可见。通常选择可见，但是有时不可见也是有用的。例如，可以使用点方式控制怪物移动，或者跟踪并进行一定的动作。不可见的物体仍然会对事件作出反应，如果他们有精灵或者遮罩也会发生碰撞事件，他们只不过是不可见并且不会执行绘制事件。<br>
+<p>Visible indicates whether instances of this object are visible
+when the room starts. Normally most instances are visible but
+sometimes it is useful to have invisible ones - for example, you
+can use them for way-points to control a moving monster, or to keep
+track values and perform certain timed actions. Invisible objects
+will still react to events and if they have a sprite or a mask
+assigned to them, they will also react should other instances
+collide with them... they just can't be seen and do not perform
+their draw event.<br>
 <br></p>
 
-<h3>固体</h3>
+<h3>Solid</h3>
 
-<p><i>GameMaker: Studio</i> 里对固体物体的碰撞处理不同于非固体，所以，尽量只把墙这种不能动的物体设置为 <b>固体</b>。<br>
+<p>By checking solid you are indicating to <i>GameMaker: Studio</i>
+that it should consider instances of this object to be a solid
+object (like a wall). Collisions with instances of solid objects
+are treated differently from collisions with non-solid objects and
+as such you are strongly advised to use <b>Solid</b> only for
+objects that are not moving.<br>
 <br></p>
 
-<h3>深度</h3>
+<h3>Depth</h3>
 
-<p>你可以为物体的实例设置 <b>深度</b>，用来控制实例是位于其他实例之上还是之下，深度越高越先绘制。如下图: <img class="center" src="../Images/Depth_Order.png"> 要注意相同的深度 <b>不</b> 能保证谁先绘制。If you want to guarantee that an object lies on top of the others then you must give it a negative (or low) depth. 如果你想保证物体位于顶端请给它最小值。相反，如果想让它位于底部给它最大值即可。深度是一个变量，可以通过动作或者代码在游戏中改变它。<br>
+<p>You can set the <b>Depth</b> of the instances of an object,
+which basically controls whether they go below or above other
+objects at other depths. When instances are drawn on the screen
+they are drawn in order of depth, with instances that have the
+highest depth being drawn first and instances with the lowest depth
+being drawn last. The following image illustrates this behaviour:
+<img class="center" src="../images/Depth_Order.png"> It should be
+noted here that instances of the same depth that overlap each other
+in the room editor (or in game) have <b>no</b> guaranteed priority
+over which one will be "on top" of the other and. If you want to
+guarantee that an object lies on top of the others then you must
+give it a negative (or low) depth. Conversely If you want to make
+sure it lies below other instances then you have to give it a
+positive (high) depth. Depth can also be changed in-game as it has
+its own variable that can be changed and manipulated by actions or
+in code.<br>
 <br></p>
 
-<h3>持续性物体</h3>
+<h3>Persistent objects</h3>
 
-<p>深度的上面是持续性设置。一个持续性的物体不会随着房间的改变而被摧毁，而是仍然呆在相同的位置，除非你明确地让它摧毁。这意味着它会在下一个房间里继续执行动作，这是很方便的。然而这需要你保持一个清晰的思路，如果没有正确地创建或摧毁它，就很有可能影响整个工程。<br>需要注意的是持续性物体也有它自己的 <b>Game Start</b>、<b>Game End</b>、<b>Room Start</b> 和 <b>Room End</b> 事件触发器，但是当重启游戏 (例如使用 <tt>game_restart()</tt> 函数)，所有现存的物体将会被移除并且再次被创建一次。还需要注意的是如果你 <i>deactivate (停用)</i> 一个持续性物体，它将不会从一个房间到另一个房间，直到被重新激活。</p>
+<p>Below depth there is the option to make an object persistent. A
+persistent object is one that does not go away when the room is
+changed, but rather it "persists" and is carried over into the new
+room. It will only disappear when you explicitly destroy it, either
+with a destroy action or in code. This means that if you place a
+persistent object in one room, it will still be available in all
+subsequent rooms and will continue to perform any actions assigned
+to the events in its object properties. This is handy for when you
+have, for example, a main character that moves from room to room
+and you want to maintain the variables within that object the same,
+but unless you take great care to create and destroy persistent
+objects correctly, you can easily get errors creeping into your
+project.<br>
+<br>
+Note too that a persistent object will still have its <b>Game
+Start</b>, <b>Game End</b>, <b>Room Start</b> and <b>Room End</b>
+events triggered, however if you restart the game (with, for
+example, the <tt>game_restart()</tt> function) all persistent
+objects will be removed and only exist when created again by the
+game. Also note that if you <i>deactivate</i> a persistent object,
+it will no longer pass from one room to another unless re-activated
+before the Room End event is triggered.</p>
 
-<h3>父对</h3>
+<h3>Parents</h3>
 
-<p>物体属性选项里最强大的功能就是父对了。游戏里每个物体都有一个父对，但是那是什么意思？好吧，当一个物体有一个父对，它就可以共享它的父对的代、动作和事件。这就是所谓的 "继承"，有父对的物体被称为 "child (子对)"。但这并不是全部！你也可以在检测和执行父对代码的同时自动包含子对去节省大量的时间和精力。从另一个角度来看父对就是 "group (组)"，分享某些事情而又不失去自己的身份。更多有关父对的信息 (和其他高级物体属性) 请查阅 <a href=
-"../001_Advanced%20Use/More%20about%20Objects/index.html">更多关于物体</a>。<br><br>请注意你可以点击 <b>Parent</b> 按钮自动打开指定父对物体，也可以看到它的子对列表。双击列表中的物体名称会打开属性窗口以便编辑。<br>
+<p>One of the most powerful options within the object properties is
+the ability to assign a parent. Every object in the game can have a
+parent object, but what does this mean? Well, when an object has a
+parent, it can share code, actions and events with that parent.
+This is called "inheritance" and an object that has a parent is
+called a "child". But that's not all! You can also do checks and
+run code on parent objects which automatically include the child
+objects too which saves a lot of time and energy. Another way to
+look at a parent object is as a way to "group" objects together
+under the same umbrella and have them share certain things without
+losing their own identity. For more information on parents (and
+other advanced object properties) see <a href=
+"../001_Advanced%20Use/More%20about%20Objects/index.html">More
+About objects</a>.<br>
+<br>
+Please note that you can click the <b>Parent</b> button to
+automatically open the assigned parent object, and you can also see
+a list of "child" objects for the object if it is selected as the
+"parent" of anything else. Double-clicking on the object name from
+this list will open its properties window for editing. You can also
+drag an object from the resource tree onto the Parent option or the
+Child option and it will be added as a parent or child as
+required.<br>
 <br></p>
 
-<h3>遮罩</h3>
+<h3>Masks</h3>
 
-<p>当物体有一个精灵，它也有一个遮罩。这通常定义于精灵本身 (可以在精灵编辑器修改)，但有时你可能想要让物体拥有和精灵不同形状的遮罩，甚至 <i>没有</i> 精灵但却有一个遮罩。This is usually defined by the sprite itself (and can be changed in the sprite editor) but sometimes you may want an object to have a different shaped mask to its sprite, or even have <i>no</i> sprite but still a mask. 为什么呢？遮罩是 <i>GameMaker: Studio</i> 中支配碰撞事件的主角。当两个实例重叠，<i>GameMaker: Studio</i> 就决定是否发生碰撞，这依赖于遮罩 (可以是精灵的遮罩或是物体本身的遮罩)。如果没有遮罩就没有碰撞！如果你同时为物体制定了精灵和遮罩，<i>GameMaker: Studio</i> 在检测碰撞事件的时候总是检测遮罩而不是精灵。例如，如果你要制作一个等轴测游戏，物体通常有一个高度 (给他们一个 3D 视角)，但是你只想使用精灵的 "脚" 部分来进行碰撞。这可以通过创建一个单独的精灵并且指定为物体的碰撞遮罩。请注意你可以点击 Mask 按钮自动打开指定的遮罩。<br>
+<p>When an object has a sprite, it also has a mask. This is usually
+defined by the sprite itself (and can be changed in the sprite
+editor) but sometimes you may want an object to have a different
+shaped mask to its sprite, or even have <i>no</i> sprite but still
+a mask. Why? Well, masks are what govern collisions in
+<i>GameMaker: Studio</i>. When two instances come together,
+<i>GameMaker: Studio</i> has to decide whether a collision has
+occurred and to do this it relies on the mask of the object, either
+the one defined here or the one that is defined in the sprite
+properties. If you have no mask then you have no collision! It
+should also be noted that if you have assigned a sprite to the
+object and then assign a mask, <i>GameMaker: Studio</i> will always
+base collisions off of the assigned mask and NOT the sprite. For
+example, if you make an isometric game, objects typically have a
+height (to give them a 3D view), but for collisions you only want
+to use the "feet" part of the sprite. This can be achieved by
+creating a separate sprite and then assigning that to be used as
+the collision mask for the object. Please note that you can click
+the <b>Mask</b> button to automatically open the assigned mask
+sprite.<br>
 <br></p>
 
-<h3>信息</h3>
+<h3>Information</h3>
 
-<p><b>Show Information</b> 按钮是物体的概述，可以打印或另存为 HTML 文档。当你想要对你的物体有个大体了解这将非常有用。<br>
+<p>The button <b>Show Information</b> gives an overview of all
+information for the object that can also be printed out or saved as
+an HTML file. This is particularly useful when you want a loose
+overview of all your actions, code and events or if you want to
+debug something within the object.<br>
 <br></p>
 
-<h3>使用物理</h3>
+<h3>Uses Physics</h3>
 
-<p>当你选中这个复选框的时候，就是告诉 <i>GameMaker: Studio</i> 这个物体应该作为物理世界的一部分。这将会打开物体窗口的另一部分，在这里你可以定义物体的物理属性。更多信息请查看 <a href=
-"../001_Advanced%20Use/More%20about%20Objects/index.html">更多关于物体</a>。<br>
+<p>When you check this box you are telling <i>GameMaker: Studio</i>
+that this object should be part of a physics world. This will also
+open another part of the object window where you can define the
+physical properties of all instances of this object. More
+information on this can be found in the Advanced Use section of the
+manual under <a href=
+"../001_Advanced%20Use/More%20about%20Objects/index.html">More
+About objects</a>.<br>
 <br></p>
 
 <div class="clear">
-<div style="float:left">返回： <a href="index.html">使用 GameMaker: Studio</a></div>
+<div style="float:left">Back: <a href="index.html">Using GameMaker:
+Studio</a></div>
 
-<div style="float:right">下一个: <a href=
+<div style="float:right">Next: <a href=
 "Events/index.html">Events</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -104,17 +272,6 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
   if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
-</script><!-- CHM2WEB --><!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-
-
-
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table><!-- /CHM2WEB --> 
-
-
+</script>
 </body>
 </html>

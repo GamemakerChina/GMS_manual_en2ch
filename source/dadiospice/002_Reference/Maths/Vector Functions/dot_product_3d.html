@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -29,13 +29,13 @@ if (window.name != "content")
 
 <h1>dot_product_3d</h1>
 
-<h2>返回三维向量(x1,y1,z1)和(x2,y2,z2)<!--
--->的点积。</h2>
+<h2>Returns the dot_product of the vectors x1,y1,z1 and
+x2,y2,z2.</h2>
 
 <p><br>
 </p>
 
-<h3>语法：</h3>
+<h3>Syntax:</h3>
 
 <p class="code">dot_product_3d(x1, y1, z1, x2, y2, z2)</p>
 
@@ -45,38 +45,38 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>x1</td>
-<td>第一个向量的x坐标。</td>
+<td>The x coordinate of the first vector.</td>
 </tr>
 
 <tr class="alt">
 <td>y1</td>
-<td>第一个向量的y坐标。</td>
+<td>The y coordinate of the first vector.</td>
 </tr>
 
 <tr>
 <td>z1</td>
-<td>第一个向量的z坐标。</td>
+<td>The z coordinate of the first vector.</td>
 </tr>
 
 <tr class="alt">
 <td>x2</td>
-<td>第二个向量的x坐标。</td>
+<td>The x coordinate of the second vector.</td>
 </tr>
 
 <tr>
 <td>y2</td>
-<td>第二个向量的y坐标。</td>
+<td>The y coordinate of the second vector.</td>
 </tr>
 
 <tr class="alt">
 <td>z2</td>
-<td>第二个向量的z坐标。</td>
+<td>The z coordinate of the second vector.</td>
 </tr>
 </table>
 </div>
@@ -84,64 +84,84 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回值:</b> 实数</p>
+<p><b>Returns:</b> Real</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>点积是一个被表达为两个向量间夹角关系的值并且是通过取得两个向量，相乘在一起然后将结果相加得到的。<!--
--->“点积”这个名字源自于经常被用于指明这种运算的中心圆点符号“·”<!--
--->（又称为“标量积”（数量积），强调了其结果本质是一个标量而不是向量）。<br>
+<p>The dot product is a value expressing the angular relationship
+between two vectors and is found by taking two vectors, multiplying
+them together and then adding the results. The name "dot product"
+is derived from the centered dot "·" that is often used to
+designate this operation (the alternative name "scalar product"
+emphasizes the scalar rather than vector nature of the result).<br>
 <br>
-实质上的数学公式可以被写成像这样：<br>
+The actual mathematical formula can be written like this:<br>
 <br>
 <img class="center" src="dot_product_image.png"></p>
 
 <p><br>
-在2D中，向量<b><tt>a</tt></b>(x<sub>1</sub>,y<sub>1</sub>)和<b><tt>b</tt></b>(x<sub>2</sub>,y<sub>2</sub>)的点积是<!--
--->x<sub>1</sub>x<sub>2</sub>+y<sub>1</sub>y<sub>2</sub>，3D中也是一样，<!--
--->向量<b><tt>a</tt></b>(x<sub>1</sub>,y<sub>1</sub>,z<sub>1</sub>)和<b><tt>b</tt></b>(x<sub>2</sub>,y<sub>2</sub>,z<sub>2</sub>)的点积是<!--
--->x<sub>1</sub>x<sub>2</sub>+y<sub>1</sub>y<sub>2</sub>+z<sub>1</sub>z<sub>2</sub>。所以dot_product_3d在<i>GameMaker: Studio</i>中被计算为：<br></p>
+In 2D, the dot product of vectors a[x1,y1] and b[x2,y2] is x1x2 +
+y1y2, so in 3D, the dot product of vectors a[x1,y1,z1] and
+b[x1,y1,z1] is x1x2 + y1y2 + z1z2. So, the dot_product_3d in
+<i>GameMaker: Studio</i> is calculated as:<br></p>
 
-<p class="code"><b>a</b> · <b>b</b> = x<sub>1</sub>x<sub>2</sub>+y<sub>1</sub>y<sub>2</sub>+z<sub>1</sub>z<sub>2</sub>;<br></p>
+<p class="code">a · b = (x1*x2) + (y1*y2) + (z1*z2);<br></p>
 
-<p>关于点积最令人好奇的事情就是它与由输入的向量形成的角度的关系，其被表达为：</p>
+<p>The curious thing about the dot product is the relationship it
+has to the angle formed by the input vectors which can be expressed
+as:</p>
 
-<p class="code"><b>a</b> · <b>b</b> = |<b>a</b>| × |<b>b</b>| ×
-cos&lt;<b>a</b>,<b>b</b>&gt;<br />//&lt;<b>a</b>,<b>b</b>&gt;表示向量<b>a</b>与向量<b>b</b>的夹角 </p>
+<p class="code">a · b = (length of a) * (length of b) *
+cos(angle)</p>
 
-<p>这就是说，两个向量的点积将等于那些向量的夹角的余弦，乘以它们各自的模。这里有一张插图：<br>
+<p>That is to say, the dot product of two vectors will be equal to
+the cosine of the angle between those vectors, multiplied by the
+lengths of each of them. Here is an image to illustrate:<br>
 <br>
 <img class="center" src="dot_product_image_2.png"></p>
 
-<p>有一些事情我们现在能够从任意两个向量有关的点积中阐明：</p>
+<p>There are a few things that we can now state from any two
+vectors in relation to the result of their dot product:</p>
 
 <ul>
-<li>如果 <b><tt>a</tt></b> 和 <b><tt>b</tt></b> 是相互垂直的（对彼此成90°角），这个点积的结果将是0，因为cos&lt;<b><tt>a</tt></b>,<b><tt>b</tt></b>&gt;<!--
--->会是0.</li>
+<li>If a and b are perpendicular (at 90 degrees to each other), the
+result of the dot product will be zero, because cos(ang) will be
+zero</li>
 
-<li>如果 <b><tt>a</tt></b> 和 <b><tt>b</tt></b> 的夹角小于90°，这个点积就会是正的（大于0），因为cos&lt;<b><tt>a</tt></b>,<b><tt>b</tt></b>&gt;<!--
--->将是正数。</li>
+<li>If the angle between a and b are less than 90 degrees, the dot
+product will be positive (greater than zero), as cos(ang) will be
+positive</li>
 
-<li>如果 <b><tt>a</tt></b> 和 <b><tt>b</tt></b> 的夹角大于90°，这个点积就会是负的（小于0），因为cos&lt;<b><tt>a</tt></b>,<b><tt>b</tt></b>&gt;<!--
--->将是负数。</li>
+<li>If the angle between a and b are greater than 90 degrees, the
+dot product will be negative (less than zero), as cos(ang) will be
+negative</li>
 </ul>
 
-<p>那么这对于我们这些做游戏的人意味着什么呢？好吧，这个数学关系可以被用于相当多的场合中，但最好观察它的方式就是去建立一个真正的<!--
--->情形并由你自己来观察发生了什么。做到这一点的最简单方式之一就是去生成一个单独的用于检测敌人是否在内的“等高线”，比方说，一个这样的平台游戏，敌人将会“观测”玩家是否<!--
--->在由敌人的<i>法</i>向量和3D地面形成的平面的上方。<br>
+<p>So what does this mean for those of us that make games? Well,
+this mathematical relationship can be used in quite a few
+circumstances, but the best way to see it is to build an actual
+scenario and see for yourself what is going on. One of the simplest
+ways to do this is to generate a simple "height" check for an enemy
+in, say, a platform game so that the enemy will "see" the player if
+they are above the plane formed by the enemy <i>normal</i> vector
+and the 3d floor.<br>
 <br>
 <img class="center" src="dot_product_3d_image.png"></p>
 
-<p>根本上说，我们需要获取到敌人的基向量①（换言之：包含了方向和视野距离）并且接下来我们需要去获得玩家到敌人的向量<!--
--->我们然后将得到这些向量的点积，并且如果结果为正则玩家已经被发现，而如果是负的则没有。来达成这种运作的实际代码被提供于下方的范例中。</p>
-<p>①：此处基向量即单位向量，而非基底向量。</p>
+<p>Basically, we are getting the vector normal from the enemy
+perpendicular to the floor and then we are getting the vector of
+the player to the enemy. We will then get the dot_product of these
+vectors, and if the result is positive the player is "above" the
+enemy floor plane and if it is negative he is below. The actual
+code to get this working is supplied in the example below.</p>
+
 <p><br>
 </p>
 
-<h3>举例:</h3>
+<h3>Example:</h3>
 
 <p class="code">var x1, y1, x2, y2;<br>
 x1 = 0;<br>
@@ -152,21 +172,25 @@ y2 = o_Player.y - y;<br>
 z2 = o_Player.z - z; if dot_product_3d(x1, y1, z1, x2, y2, z2) &gt;
 0 above=true else above=false;<br></p>
 
-<p>上述代码沿着实例的y（向上）轴创建一个基向量，并且接下来获取玩家物体"o_Player"到它自身的向量。<!--
--->最终它计算了这两个向量的点积并且如果大于0就将变量"seen"设定为<tt>true</tt>，且如果小于等于0则设定为<tt>false</tt>。
-</p>
+<p>The above code creates a vector normal along the instances y
+(up) axis, and then gets the vector of the player object "o_Player"
+to itself. Finally it calculates the dot product of these two
+vectors and if it is greater tan 0 it sets the variable "above" to
+true, and if it is less than or equal to 0 it sets it to
+"false".</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">上一页: <a href="index.html">向量函数</a></div>
+<div style="float:left">Back: <a href="index.html">Vector
+Functions</a></div>
 
-<div style="float:right">下一页: <a href=
+<div style="float:right">Next: <a href=
 "dot_product_normalised.html">dot_product_normalised</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -175,16 +199,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>

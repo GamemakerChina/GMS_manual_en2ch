@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta name="keywords" content="game maker studio" />
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -28,9 +28,10 @@ if (window.name != "content")
 
 <h1>lerp</h1>
 
-<h2>返回两个两个值根据被给定的值的线性插值。</h2>
+<h2>Returns the linear interpolation of two input values by the
+given amount.</h2>
 
-<h3>语法:</h3>
+<h3>Syntax:</h3>
 
 <p class="code">lerp(a, b, amt)</p>
 
@@ -40,23 +41,23 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>参数</th>
-<th>描述</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
 
 <tr>
 <td>a</td>
-<td>第一个值.</td>
+<td>The first value.</td>
 </tr>
 
 <tr class="alt">
 <td>b</td>
-<td>第二个值.</td>
+<td>The second value.</td>
 </tr>
 
 <tr>
 <td>amt</td>
-<td>插值量.</td>
+<td>The amount to interpolate.</td>
 </tr>
 </table>
 </div>
@@ -64,44 +65,52 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>返回值:</b> 实数型</p>
+<p><b>Returns:</b> Real.</p>
 
 <p><br>
 </p>
 
-<h3>描述</h3>
+<h3>Description</h3>
 
-<p>使用这个函数你能够得到一个等同于在两个不同值的被给定百分比的位置。因此，如果你这样做，举个例子:</p>
+<p>With this function you can find the value that equates to the
+position between two other values for a given percentage. So if you
+do, for example:</p>
 
 <p class="code">lerp(0, 10, 0.5)<br></p>
 
-<p>你将得到5，是输入值的50%处。你也可利用这个函数进行外插值， 通过提供一个正值或负值作为插值量像做这种:</p>
+<p>you would get the return value of 5, which is 50% of the input
+values. You can extrapolate using this function too, by supplying a
+positive or negative value for the interpolation amount so that
+doing something like:</p>
 
 <p class="code">lerp(0, 10, 2)<br></p>
 
-<p>将返回20.<br>
+<p>will return a value of 20.<br>
 <br></p>
 
 <p><br>
 </p>
 
-<h3>举例:</h3>
+<h3>Example:</h3>
 
-<p class="code">xx = lerp(x, x + hspeed, room_speed); yy = lerp(y,
-y + vspeed, room_speed);</p>
+<p class="code">xx = lerp(x, x + hspeed, room_speed);<br>
+yy = lerp(y, y + vspeed, room_speed);<br></p>
 
-<p>上述代码使用线性插值函数预测一个实例将会在下一秒游戏时间移动到什么位置。</p>
+<p>The above code uses the linear interpolation function to predict
+where an instance would have moved to after one second of game
+time.</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">上一页: <a href="index.html">实数函数</a></div>
+<div style="float:left">Back: <a href="index.html">Real Number
+Functions</a></div>
 
-<div style="float:right">下一页: <a href="clamp.html">clamp</a></div>
+<div style="float:right">Next: <a href="clamp.html">clamp</a></div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2014 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>
 
 <script type="text/JavaScript">
 var fe = FindFrame("toc", top);
@@ -110,16 +119,5 @@ if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
     chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
 }
 </script>
-
-<!-- CHM2WEB -->
-<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
-     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
-<table width="100%" cellspacing="0" cellpadding="0" 
-style="margin-top: 0pt; border-collapse: collapse;"> 
-<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
-<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
-</td></tr></table> 
-<!-- /CHM2WEB -->
-
 </body>
 </html>
